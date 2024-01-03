@@ -7,8 +7,8 @@
     position: relative;
     width: 100dvw;
     height: 100dvh;
-    background-color: #101020;
-    background-image: linear-gradient(180deg, transparent, #000010);
+    background-color: #101010;
+    background-image: linear-gradient(180deg, transparent, #050505);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
     top: 100%;
     width: 100%;
     height: 200px;
-    background-color: #000010;
+    background-color: #050505;
     rotate: 180deg;
     animation-name: HomeMainWater;
     animation-duration: 2s;
@@ -92,4 +92,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home-sections[data-lang="CSS"] {
+    background-color: #90b0d0;
+}
+
+.home-sections[data-lang="JavaScript"] {
+    background-color: #7060a0;
+}
+
+.home-sections-mains {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-sections-articles {
+    padding: 20px;
+}
+
+.home-sections-asides {
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .home-sections {
+        height: 75dvh;
+    }
+
+    .home-sections-asides {
+        display: none;
+    }
 }

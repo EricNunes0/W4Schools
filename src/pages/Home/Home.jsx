@@ -1,6 +1,7 @@
 import "./Home.css";
+import "./HomePanel.css";
 import HomeBackgroundStars from "./HomeBackgroundStars";
-import HomeHTML from "./HomeHTML";
+import HomeSection from "./HomeSection";
 import { HomeSearchBar } from "./HomeSearchBar";
 import { HomeSearchButton } from "./HomeSearchButton";
 import { HomeSubtitle } from "./HomeSubtitle";
@@ -29,7 +30,9 @@ export default function Home() {
                     </div>
                 </article>
             </main>
-            <HomeHTML></HomeHTML>
+            <HomeSection language = "HTML"></HomeSection>
+            <HomeSection language = "CSS"></HomeSection>
+            <HomeSection language = "JavaScript"></HomeSection>
         </div>
     );
 };
