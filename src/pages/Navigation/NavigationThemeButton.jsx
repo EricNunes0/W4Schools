@@ -19,4 +19,9 @@ export const NavigationThemeButton = styled.button`
     &:hover {
         background-color: rgba(0, 0, 0, 0.2);
     }
+
+    @media screen and (max-width: 480px) {
+        margin-left: unset;
+        margin-right: unset;
+    }
 `;

@@ -18,4 +18,8 @@ export const NavigationSearchButton = styled.button`
     &:hover {
         background-color: rgba(0, 0, 0, 0.1);
     }
+    
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `;

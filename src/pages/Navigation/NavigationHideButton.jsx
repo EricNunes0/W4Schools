@@ -13,7 +13,7 @@ const NavigationHideButtonArrowAnimation = keyframes`
 
 export const NavigationHideButton = styled.button`
     position: relative;
-    background-color: #202020;
+    background-color: #101015;
     width: ${navigationHideButtonWidth}px;
     height: 20px;
     border-bottom-left-radius: 5px;

@@ -3,6 +3,7 @@ import NavigationHide from "./NavigationHide";
 import { NavigationButton } from "./NavigationButton";
 import { NavigationHideButton } from "./NavigationHideButton";
 import { NavigationListButton } from "./NavigationListButton";
+import { NavigationListMenuButton } from "./NavigationListMenuButton";
 import { NavigationLoginButton } from "./NavigationLoginButton";
 import { NavigationLogo } from "./NavigationLogo";
 import { NavigationRightButton } from "./NavigationRightButton";
@@ -12,9 +13,11 @@ import { NavigationSignupButton } from "./NavigationSignUpButton";
 import { NavigationThemeButton } from "./NavigationThemeButton";
 
 export default function Navigation() {
+    var navigationClosed = true;
+
     return (
         <div id = "navigation">
-            <main id = "navigation-main">
+            <main id = "navigation-main" data-closed = {navigationClosed}>
                 <header id = "navigation-header">
                     <section className = "navigation-header-sections" id = "left">
                         <div id = "navigation-logo-div">
@@ -22,6 +25,7 @@ export default function Navigation() {
                             <NavigationLogo></NavigationLogo>
                         </div>
                         <div id = "navigation-list-buttons-div">
+                            <NavigationListMenuButton>Menu</NavigationListMenuButton>
                             <NavigationListButton>Tutoriais</NavigationListButton>
                             <NavigationListButton>Exercícios</NavigationListButton>
                             <NavigationListButton>Certificados</NavigationListButton>
@@ -89,7 +93,7 @@ export default function Navigation() {
                     <NavigationButton>DATA SCIENCE</NavigationButton>
                 </section>
             </main>
-            <NavigationHideButton data-closed = "false" id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
+            <NavigationHideButton data-closed = {navigationClosed} id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
         </div>
     )
 };

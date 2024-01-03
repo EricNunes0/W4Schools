@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavigationListButton = styled.button`
+export const NavigationListMenuButton = styled.button`
     position: relative;
     width: 100px;
     height: 50px;
@@ -45,7 +45,7 @@ export const NavigationListButton = styled.button`
         width: 100%;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 480px) {
         display: none;
     }
 `;

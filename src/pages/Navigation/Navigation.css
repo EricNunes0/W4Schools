@@ -1,12 +1,19 @@
 #navigation {
     position: fixed;
+    z-index: 1;
     inset: 0;
     width: 100dvw;
+    pointer-events: none;
 }
 
 #navigation-main {
     width: 100%;
     background-color: #13131F;
+    transition: all 0.3s ease;
+    pointer-events: all;
+}
+#navigation-main[data-closed="false"] {
+    transform: translateY(-95px);
 }
 
 /* Header da barra de navegação (parte superior) */
@@ -91,4 +98,24 @@
 #navigation-sign-area {
     position: relative;
     border-radius: 25px;
+}
+
+/* Botão de esconder barra de navegação */
+#navigation-hide-button {
+    pointer-events: all;
+}
+#navigation-hide-button[data-closed="false"] {
+    transform: translateY(-95px);
+}
+
+@media screen and (max-width: 768px) {
+    #navigation-right-buttons-div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navigation-search-div {
+        display: none;
+    }
 }
