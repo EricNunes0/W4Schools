@@ -22,7 +22,7 @@ export default function Navigation() {
                     <section className = "navigation-header-sections" id = "left">
                         <div id = "navigation-logo-div">
                             <i id = "navigation-logo"></i>
-                            <NavigationLogo></NavigationLogo>
+                            <NavigationLogo href = "/"></NavigationLogo>
                         </div>
                         <div id = "navigation-list-buttons-div">
                             <NavigationListMenuButton>Menu</NavigationListMenuButton>

@@ -22,7 +22,7 @@ export default function Home() {
                     <HomeTitle>Aprenda a programar</HomeTitle>
                     <HomeSubtitle backgroundColor = "#a0c0f0">Com o maior site para desenvolvedores web</HomeSubtitle>
                     <div id = "home-search-div">
-                        <HomeSearchBar width = "300" height = "45"></HomeSearchBar>
+                        <HomeSearchBar width = "300" height = "45" placeholder = "Pesquise por tutoriais"></HomeSearchBar>
                         <HomeSearchButton width = "100" height = "45"></HomeSearchButton>
                     </div>
                     <div id = "home-begin-div">
