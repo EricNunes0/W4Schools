@@ -14,6 +14,6 @@ export const FooterBottomLink = styled.a`
 
     &:hover {
         background-position: 100% 100%; 
-    color: ${FooterBottomLinkColor};
+        color: ${FooterBottomLinkColor};
     }
 `;

@@ -12,6 +12,8 @@ export const NavigationListButton = styled.button`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.3s;
 
     &::before {
