@@ -108,7 +108,7 @@ export default function Footer() {
                             </div>
                         </section>
                         <section id = "footer-bottom-center">
-                            <FooterBottomDescription>W4Schools é um site criado como uma forma de aprendizado e treino.</FooterBottomDescription>
+                            <FooterBottomDescription>W4Schools é um site criado como uma forma de aprendizado e treino. Este projeto é só uma cópia genérica do W3Schools e não possui nenhum envolvimento com os criadores do mesmo.</FooterBottomDescription>
                         </section>
                         <section id = "footer-bottom-bottom">
                             <FooterBottomCreatedBy>Criado por Eric Nunes</FooterBottomCreatedBy>

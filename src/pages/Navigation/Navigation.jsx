@@ -13,6 +13,7 @@ import { NavigationSearchButton } from "./NavigationSearchButton";
 import { NavigationSignupButton } from "./NavigationSignUpButton";
 import { NavigationThemeButton } from "./NavigationThemeButton";
 import { NavigationMenuCloseButton } from "./NavigationMenuCloseButton";
+import NavigationMenuClose from "./NavigationMenuClose";
 import NavigationMenus from "./NavigationMenus";
 import NavigationListTutorials from "./NavigationListTutorials";
 
@@ -99,7 +100,7 @@ export default function Navigation() {
                     </section>
                     <section id = "navigation-menu" data-closed = "true">
                         <div id = "navigation-menu-close-div">
-                            <NavigationMenuCloseButton></NavigationMenuCloseButton>
+                            <NavigationMenuCloseButton onClick = {NavigationMenuClose}></NavigationMenuCloseButton>
                         </div>
                         <NavigationMenus></NavigationMenus>
                     </section>
