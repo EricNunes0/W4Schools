@@ -7,7 +7,7 @@ export default function NavigationMenuArticleLinks(topics) {
     function ArticleButton(data) {
         console.log(data);
         return (
-            <NavigationMenuArticleButton href = {data.url} data-type = {data.type}>{data.text}</NavigationMenuArticleButton>
+            <NavigationMenuArticleButton href = {data.url} data-type = {data.type} data-hot = {data.hot} data-new = {data.new}>{data.text}</NavigationMenuArticleButton>
         )
     };
 
