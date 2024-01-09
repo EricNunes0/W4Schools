@@ -81,4 +81,27 @@ export const NavigationMenuArticleButton = styled.a`
     &[data-type="2"][data-hot="true"][data-new="true"]::before {
         left: calc(100% - 80px - 7.5px);
     }
+
+    &[data-type="3"] {
+        width: 200px;
+        background-color: #354050;
+        color: #ffffaa;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
+        text-decoration: none;
+    }
+    &[data-type="3"]:hover {
+        background-color: #152030;
+    }
+    &[data-type="3"][data-sparkles="true"]::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: #c46cf7;
+        clip-path: polygon(50% 0, 40% 40%, 0 50%, 40% 60%, 50% 100%, 60% 60%, 100% 50%, 60% 40%);
+    }
 `;

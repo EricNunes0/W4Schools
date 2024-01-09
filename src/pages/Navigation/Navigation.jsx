@@ -15,7 +15,8 @@ import { NavigationThemeButton } from "./NavigationThemeButton";
 import { NavigationMenuCloseButton } from "./NavigationMenuCloseButton";
 import NavigationMenuClose from "./NavigationMenuClose";
 import NavigationMenus from "./NavigationMenus";
-import NavigationListTutorials from "./NavigationListTutorials";
+import NavigationListMenu from "./NavigationListMenu";
+import { NavigationMoveButton } from "./NavigationMoveButton";
 
 export default function Navigation() {
     var navigationClosed = true;
@@ -31,10 +32,10 @@ export default function Navigation() {
                         </div>
                         <div id = "navigation-list-buttons-div">
                             <NavigationListMenuButton>Menu</NavigationListMenuButton>
-                            <NavigationListButton onClick = {NavigationListTutorials}>Tutoriais</NavigationListButton>
-                            <NavigationListButton>Exercícios</NavigationListButton>
-                            <NavigationListButton>Certificados</NavigationListButton>
-                            <NavigationListButton>Serviços</NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("tutorials")}>Tutoriais</NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("exercises")}>Exercícios</NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("certificates")}>Certificados</NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("services")}>Serviços</NavigationListButton>
                         </div>
                         <div id = "navigation-search-div">
                             <NavigationSearchBar></NavigationSearchBar>
@@ -97,6 +98,8 @@ export default function Navigation() {
                         <NavigationButton>SCIPY</NavigationButton>
                         <NavigationButton>CIBERSEGURANÇA</NavigationButton>
                         <NavigationButton>DATA SCIENCE</NavigationButton>
+                        <NavigationMoveButton id = "left"></NavigationMoveButton>
+                        <NavigationMoveButton id = "right"></NavigationMoveButton>
                     </section>
                     <section id = "navigation-menu" data-closed = "true">
                         <div id = "navigation-menu-close-div">
