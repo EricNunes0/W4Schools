@@ -28,4 +28,8 @@ export const NavigationMenuCloseButton = styled.button`
     &:hover::after {
         background-color: rgba(0, 0, 0, 1);
     }
+
+    @media screen and (max-width: 480px) {
+        left: 0%;
+    }
 `;

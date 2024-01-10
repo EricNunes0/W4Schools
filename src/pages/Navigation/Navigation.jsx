@@ -17,6 +17,7 @@ import NavigationMenuClose from "./NavigationMenuClose";
 import NavigationMenus from "./NavigationMenus";
 import NavigationListMenu from "./NavigationListMenu";
 import { NavigationMoveButton } from "./NavigationMoveButton";
+import NavigationMobileMenuOpen from "./NavigationMobileMenuOpen";
 
 export default function Navigation() {
     var navigationClosed = true;
@@ -31,7 +32,7 @@ export default function Navigation() {
                             <NavigationLogo href = "/"></NavigationLogo>
                         </div>
                         <div id = "navigation-list-buttons-div">
-                            <NavigationListMenuButton>Menu</NavigationListMenuButton>
+                            <NavigationListMenuButton onClick = {() => {NavigationMobileMenuOpen()}}>Menu</NavigationListMenuButton>
                             <NavigationListButton onClick = {() => NavigationListMenu("tutorials")}>Tutoriais</NavigationListButton>
                             <NavigationListButton onClick = {() => NavigationListMenu("exercises")}>Exercícios</NavigationListButton>
                             <NavigationListButton onClick = {() => NavigationListMenu("certificates")}>Certificados</NavigationListButton>

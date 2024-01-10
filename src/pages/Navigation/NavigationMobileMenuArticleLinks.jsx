@@ -1,7 +1,7 @@
 import MenuJSON from "./NavigationMenu.json";
 import { NavigationMenuArticleButton } from "./NavigationMenuArticleButton";
 
-export default function NavigationMenuArticleLinks(topics) {
+export default function NavigationMobileMenuArticleLinks(topics) {
     let buttons = [];
 
     function ArticleButton(data) {

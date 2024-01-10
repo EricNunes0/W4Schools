@@ -18,7 +18,7 @@ export default function HomeSectionsPanelsTexts(prop) {
         };
 
         return (
-            <div className = "home-sections-panels-codes-divs display-flex-column" key = {prop.language}>
+            <div className = "home-sections-panels-codes-divs display-flex-column" key = {`${prop.language}-${Math.floor(Math.random() * (1000 * 1000))}`}>
                 {allCodes}
             </div>
         );

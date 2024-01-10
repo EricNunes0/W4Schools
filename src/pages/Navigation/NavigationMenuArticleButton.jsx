@@ -104,4 +104,13 @@ export const NavigationMenuArticleButton = styled.a`
         background-color: #c46cf7;
         clip-path: polygon(50% 0, 40% 40%, 0 50%, 40% 60%, 50% 100%, 60% 60%, 100% 50%, 60% 40%);
     }
+
+    @media screen and (max-width: 480px) {
+        &[data-type="1"] {
+            border: 1px solid #ffffaa;
+            border-radius: 25px;
+            padding: 4px 10px;
+
+        }
+    }
 `;

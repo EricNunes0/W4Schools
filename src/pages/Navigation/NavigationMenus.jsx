@@ -1,5 +1,6 @@
 import MenuJSON from "./NavigationMenu.json";
 import NavigationMenusMains from "./NavigationMenusMains";
+import NavigationMobileMenu from "./NavigationMobileMenu";
 
 export default function NavigationMenus() {
     let menus = [];
@@ -11,6 +12,7 @@ export default function NavigationMenus() {
     return (
         <div id = "navigation-menus-div">
             {menus}
+            <NavigationMobileMenu></NavigationMobileMenu>
         </div>
     )
 };

@@ -109,3 +109,107 @@
     align-items: flex-start;
     gap: 5px;
 }
+
+/* Mobile */
+#navigation-mobile-menu {
+    display: none;
+}
+
+.navigation-mobile-menu-sections {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-mobile-menu-lists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-mobile-menu-lists[data-closed="true"] {
+    display: none;
+}
+
+.navigation-mobile-menus-headers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-mobile-menus-columns {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.navigation-mobile-menus-search-divs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-mobile-menu-search-bars ~ .navigation-mobile-menu-search-buttons {
+    position: absolute;
+    background-color: unset;
+    top: 0;
+    left: calc(100% - calc(80px));
+    transform: translateX(-5px);
+}
+
+.navigation-mobile-menus-columns-headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation--mobile-menus-articles-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-mobile-menu-columns-divs {
+    width: 100%;
+}
+
+.navigation-mobile-menu-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-menus-articles-divs {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    #navigation-menu {
+        padding: 0;
+    }
+
+    #navigation-menu-close-div {
+        position: absolute;
+        right: 0%;
+    }
+
+    .navigation-menu-article-buttons-divs {
+        margin-top: 5px;
+    }
+
+    #navigation-mobile-menu {
+        display: block;
+        padding-top: 65px;
+    }
+}

@@ -22,4 +22,8 @@ export const NavigationMenuSearchBar = styled.input`
         color: #aaa;
         font-style: italic;
     }
+
+    @media screen and (max-width: 480px) {
+        width: 60%;
+    }
 `;
