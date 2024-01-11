@@ -19,8 +19,8 @@ export const HomeBackgroundStar = styled.span`
     height: ${(prop) => prop.height}px;
     clip-path: polygon(50% 0%, 40% 40%, 0 50%, 40% 60%, 50% 100%, 60% 60%, 100% 50%, 60% 40%);
     animation-name: ${homeBackgroundStarAnimation};
-    animation-duration: 2s;
-    animation-delay: ${(prop) => prop.animationDelay}s;
+    animation-duration: ${(prop) => prop.animationduration}s;
+    animation-delay: ${(prop) => prop.animationdelay}s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     transform: scale(0);

@@ -8,6 +8,7 @@ import { HomeSubtitle } from "./HomeSubtitle";
 import { HomeTitle } from "./HomeTitle";
 import { HomeBegin } from "./HomeBegin";
 import { HomeFox } from "./HomeFox";
+import HomeTypingTitle from "./HomeTypingTitle";
 
 export default function Home() {
     return (
@@ -19,7 +20,8 @@ export default function Home() {
                     <HomeBackgroundStars count = "30"></HomeBackgroundStars>
                 </div>
                 <article id = "home-article">
-                    <HomeTitle>Aprenda a programar</HomeTitle>
+                    <HomeTitle></HomeTitle>
+                    <HomeTypingTitle text = "W4Schools" animationduration = "0.15" stepduration = "0.15"></HomeTypingTitle>
                     <HomeSubtitle backgroundColor = "#a0c0f0">Com o maior site para desenvolvedores web</HomeSubtitle>
                     <div id = "home-search-div">
                         <HomeSearchBar width = "300" height = "45" placeholder = "Pesquise por tutoriais"></HomeSearchBar>
