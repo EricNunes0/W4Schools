@@ -1,11 +1,13 @@
 import HomeSectionsPanelsTexts from "./HomeSectionsPanelsTexts";
 import { HomeSectionsPanelsDots } from "./HomeSectionsPanelsDots";
 import { HomeSectionsPanelsTitles } from "./HomeSectionsPanelsTitles";
+import { HomeSectionPanelPlanet } from "./HomeSectionPanelPlanet";
 
 export default function HomeSectionsPanel(prop) {
     return (
         <div className = "home-sections-panels-divs">
-            <div className = "home-sections-panels">
+            <div className = "home-sections-panels" data-language = {prop.language}>
+                <HomeSectionPanelPlanet language = {prop.language.toLocaleLowerCase()}></HomeSectionPanelPlanet>
                 <header className = "home-sections-panels-headers display-flex-row">
                     <div className = "home-sections-panels-dots-divs display-flex-row">
                         <HomeSectionsPanelsDots data-color = "red"></HomeSectionsPanelsDots>

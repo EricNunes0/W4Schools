@@ -1,7 +1,6 @@
 import "./Navigation.css";
 import "./NavigationMenu.css";
 import NavigationHide from "./NavigationHide";
-import { NavigationButton } from "./NavigationButton";
 import { NavigationHideButton } from "./NavigationHideButton";
 import { NavigationListButton } from "./NavigationListButton";
 import { NavigationListMenuButton } from "./NavigationListMenuButton";
@@ -16,15 +15,14 @@ import { NavigationMenuCloseButton } from "./NavigationMenuCloseButton";
 import NavigationMenuClose from "./NavigationMenuClose";
 import NavigationMenus from "./NavigationMenus";
 import NavigationListMenu from "./NavigationListMenu";
-import { NavigationMoveButton } from "./NavigationMoveButton";
 import NavigationMobileMenuOpen from "./NavigationMobileMenuOpen";
+import NavLanguageButtons from "./NavLanguageButtons";
 
 export default function Navigation() {
-    var navigationClosed = true;
 
     return (
         <div id = "navigation">
-            <main id = "navigation-main" data-closed = {navigationClosed}>
+            <main id = "navigation-main" data-closed = "true">
                 <header id = "navigation-header">
                     <section className = "navigation-header-sections" id = "left">
                         <div id = "navigation-logo-div">
@@ -33,10 +31,10 @@ export default function Navigation() {
                         </div>
                         <div id = "navigation-list-buttons-div">
                             <NavigationListMenuButton onClick = {() => {NavigationMobileMenuOpen()}}>Menu</NavigationListMenuButton>
-                            <NavigationListButton onClick = {() => NavigationListMenu("tutorials")}>Tutoriais</NavigationListButton>
-                            <NavigationListButton onClick = {() => NavigationListMenu("exercises")}>Exercícios</NavigationListButton>
-                            <NavigationListButton onClick = {() => NavigationListMenu("certificates")}>Certificados</NavigationListButton>
-                            <NavigationListButton onClick = {() => NavigationListMenu("services")}>Serviços</NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("tutorials")}><p>Tutoriais</p></NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("exercises")}><p>Exercícios</p></NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("certificates")}><p>Certificados</p></NavigationListButton>
+                            <NavigationListButton onClick = {() => NavigationListMenu("services")}><p>Serviços</p></NavigationListButton>
                         </div>
                         <div id = "navigation-search-div">
                             <NavigationSearchBar></NavigationSearchBar>
@@ -61,47 +59,7 @@ export default function Navigation() {
                     </section>
                 </header>
                 <article id = "navigation-article">
-                    <section id = "navigation-languages-section" data-closed = "false">
-                        <NavigationButton>HTML</NavigationButton>
-                        <NavigationButton>CSS</NavigationButton>
-                        <NavigationButton>JS</NavigationButton>
-                        <NavigationButton>SQL</NavigationButton>
-                        <NavigationButton>Python</NavigationButton>
-                        <NavigationButton>Java</NavigationButton>
-                        <NavigationButton>PHP</NavigationButton>
-                        <NavigationButton>C</NavigationButton>
-                        <NavigationButton>C++</NavigationButton>
-                        <NavigationButton>C#</NavigationButton>
-                        <NavigationButton>Bootstrap</NavigationButton>
-                        <NavigationButton>React</NavigationButton>
-                        <NavigationButton>MySQL</NavigationButton>
-                        <NavigationButton>jQuery</NavigationButton>
-                        <NavigationButton>Excel</NavigationButton>
-                        <NavigationButton>XML</NavigationButton>
-                        <NavigationButton>Django</NavigationButton>
-                        <NavigationButton>Numpy</NavigationButton>
-                        <NavigationButton>Pandas</NavigationButton>
-                        <NavigationButton>Node.js</NavigationButton>
-                        <NavigationButton>R</NavigationButton>
-                        <NavigationButton>TypeScript</NavigationButton>
-                        <NavigationButton>Angular</NavigationButton>
-                        <NavigationButton>Git</NavigationButton>
-                        <NavigationButton>PostgreSQL</NavigationButton>
-                        <NavigationButton>MongoDB</NavigationButton>
-                        <NavigationButton>ASP</NavigationButton>
-                        <NavigationButton>AWS</NavigationButton>
-                        <NavigationButton>AI</NavigationButton>
-                        <NavigationButton>GO</NavigationButton>
-                        <NavigationButton>KOTLIN</NavigationButton>
-                        <NavigationButton>SASS</NavigationButton>
-                        <NavigationButton>VUE</NavigationButton>
-                        <NavigationButton>GEN AI</NavigationButton>
-                        <NavigationButton>SCIPY</NavigationButton>
-                        <NavigationButton>CIBERSEGURANÇA</NavigationButton>
-                        <NavigationButton>DATA SCIENCE</NavigationButton>
-                        <NavigationMoveButton id = "left"></NavigationMoveButton>
-                        <NavigationMoveButton id = "right"></NavigationMoveButton>
-                    </section>
+                    <NavLanguageButtons></NavLanguageButtons>
                     <section id = "navigation-menu" data-closed = "true">
                         <div id = "navigation-menu-close-div">
                             <NavigationMenuCloseButton onClick = {NavigationMenuClose}></NavigationMenuCloseButton>
@@ -110,7 +68,7 @@ export default function Navigation() {
                     </section>
                 </article>
             </main>
-            <NavigationHideButton data-closed = {navigationClosed} id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
+            <NavigationHideButton data-closed = "true" id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
         </div>
     )
 };

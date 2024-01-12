@@ -17,4 +17,8 @@ export const HomeSectionsSubtitles = styled.h1`
     &[data-lang="javascript"]::before {
         content: "Linguagem de programação para páginas web"
     }
+
+    &[data-lang="python"]::before {
+        content: "Linguagem de programação popular"
+    }
 `;

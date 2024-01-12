@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from './pages/Navigation/Navigation';
 import Home from "./pages/Home/Home";
 import Footer from './pages/Footer/Footer';
+import TutorialMain from './pages/HTML/TutorialMain';
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
 					</>
 				)}>
 				</Route>
-				<Route exact path = "/home" element = {(
+				<Route exact path = "/html/default" element = {(
 					<>
-					<Home></Home>
+					<Navigation></Navigation>
+					<TutorialMain></TutorialMain>
+					<Footer></Footer>
 					</>
 				)}></Route>
     		</Routes>

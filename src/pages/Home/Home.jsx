@@ -1,7 +1,6 @@
 import "./Home.css";
 import "./HomePanel.css";
 import HomeBackgroundStars from "./HomeBackgroundStars";
-import HomeSection from "./HomeSection";
 import { HomeSearchBar } from "./HomeSearchBar";
 import { HomeSearchButton } from "./HomeSearchButton";
 import { HomeSubtitle } from "./HomeSubtitle";
@@ -9,6 +8,8 @@ import { HomeTitle } from "./HomeTitle";
 import { HomeBegin } from "./HomeBegin";
 import { HomeFox } from "./HomeFox";
 import HomeTypingTitle from "./HomeTypingTitle";
+import HomeMoons from "./HomeMoons";
+import HomeSections from "./HomeSections";
 
 export default function Home() {
     return (
@@ -30,11 +31,10 @@ export default function Home() {
                     <div id = "home-begin-div">
                         <HomeBegin>Não sabe por onde começar?</HomeBegin>
                     </div>
+                    <HomeMoons></HomeMoons>
                 </article>
             </main>
-            <HomeSection language = "HTML"></HomeSection>
-            <HomeSection language = "CSS"></HomeSection>
-            <HomeSection language = "JavaScript"></HomeSection>
+            <HomeSections></HomeSections>
         </div>
     );
 };

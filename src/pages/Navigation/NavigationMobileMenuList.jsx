@@ -7,7 +7,6 @@ import NavigationMobileMenuColumns from "./NavigationMobileMenusColumns";
 
 export default function NavigationMobileMenuList(prop) {
     let menu = prop.menu;
-    console.log(menu)
     let columns = [];
 
     MenuJSON[menu].columns.forEach((column) => {

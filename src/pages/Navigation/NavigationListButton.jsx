@@ -14,6 +14,7 @@ export const NavigationListButton = styled.button`
     gap: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
     transition: all 0.3s;
 
     &::before {
@@ -32,6 +33,9 @@ export const NavigationListButton = styled.button`
 
     &::after {
         content: "";
+        position: absolute;
+        top: 30px;
+        left: calc(100px / 2 - calc(20px / 2));
         display: block;
         background-color: #f0f0f0;
         clip-path: polygon(50% 70%, 12% 35%, 87% 35%);

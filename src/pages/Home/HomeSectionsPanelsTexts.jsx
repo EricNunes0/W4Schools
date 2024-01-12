@@ -26,7 +26,6 @@ export default function HomeSectionsPanelsTexts(prop) {
         let languageCodes = codes[prop.language];
         let allCodes = [];
         for(let i = 0; i <= languageCodes.length - 1; i++) {
-            console.log(languageCodes[i])
             allCodes.push(PanelCode(i, languageCodes[i]));
         };
 
