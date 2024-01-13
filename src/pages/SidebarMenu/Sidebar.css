@@ -1,7 +1,36 @@
-.sidebars {
+.sidebar-menus {
     position: fixed;
-    inset: 0;
+    top: 95px;
+    left: 0;
+    height: calc(100dvh - 95px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+.sidebar-menus[data-nav="true"] {
+    top: 0px;
     height: 100dvh;
-    width: 200px;
+}
+.sidebar-menus[data-closed="true"] {
+    overflow-y: hidden;
+}
+.sidebar-menus[data-closed="true"] > .sidebars-mains {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.sidebars-mains {
     background-color: #101015;
+    min-width: 200px;
+    margin-left: 70px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-links-divs {
+    width: 100%;
 }
