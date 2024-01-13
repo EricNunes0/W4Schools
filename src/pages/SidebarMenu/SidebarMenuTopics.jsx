@@ -1,4 +1,4 @@
-import menu from "./SidebarMenu.json";
+import menu from "../../pages.json";
 import { SidebarMenuLink } from "./SidebarMenuLink";
 import { SidebarMenuTitle } from "./SidebarMenuTitle";
 

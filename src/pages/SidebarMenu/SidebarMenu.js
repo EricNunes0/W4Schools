@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 import "./SidebarLateral.css";
-import menu from "./SidebarMenu.json";
+import menu from "../../pages.json";
 import SidebarMenuLateral from "./SidebarMenuLateral";
 import SidebarMenuTopics from "./SidebarMenuTopics";
 

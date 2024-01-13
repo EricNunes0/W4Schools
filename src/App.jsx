@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from './pages/Navigation/Navigation';
 import Home from "./pages/Home/Home";
 import Footer from './pages/Footer/Footer';
-import TutorialMain from './pages/HTML/TutorialMain';
+import TutorialMain from './pages/Tutorial/TutorialMain';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
 				<Route exact path = "/html/default" element = {(
 					<>
 					<Navigation></Navigation>
-					<TutorialMain></TutorialMain>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML HOME"></TutorialMain>
 					<Footer></Footer>
 					</>
 				)}></Route>
