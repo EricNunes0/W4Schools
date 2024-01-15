@@ -6,6 +6,10 @@ export default function HomeSectionsPanelsTexts(prop) {
         let paragraphs = code[0];
 
         function Paragraph(paragraph) {
+            for(let i = 0; i <= paragraph[2] - 1; i++) {
+                paragraph[0] = ` ${paragraph[0]}`;
+            };
+
             return (
                 <p style = {{color: paragraph[1], paddingLeft: 6 * paragraph[2]}}>{paragraph[0]}</p>
             );

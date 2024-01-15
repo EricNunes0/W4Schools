@@ -5,12 +5,18 @@
     width: 50px;
     height: 100dvh;
     background-color: #101015;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom-right-radius: 10px;
     padding: 10px;
     overflow-y: hidden;
     transition: all 0.3s;
 }
 
-.sidebar-menus[data-closed="true"] > .sidebars-mains > #sidebar-menu-lateral {
-    height: calc(100dvh - 95px)
+@media screen and (max-width: 480px) {
+    #sidebar-menu-lateral {
+        height: fit-content;
+    }
+
+    .sidebar-menus[data-closed="false"] > #sidebar-menu-lateral {
+        height: calc(100dvh - 95px);
+    }
 }

@@ -37,4 +37,9 @@ export const SidebarMenuLink = styled.a`
         opacity: 1;
         transform: translateX(0px);
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 16px;
+        height: 32px;
+    };
 `;
