@@ -8,8 +8,6 @@ export default function NavLanguageButtons() {
     let navigationButtons = [];
 
     function NavLanguageButtonCreate(language, link) {
-
-
         return (
             <NavigationButton href = {link}>
                 <p className = "navigation-buttons-texts">{language}</p>
@@ -21,9 +19,9 @@ export default function NavLanguageButtons() {
     for(const button of navButtons.buttons) {
         navigationButtons.push(NavLanguageButtonCreate(button.language, button.link));
     };
-
+    let key = `navigation-languages-main-${parseInt(Math.floor(Math.random(10000 * 10000)))}`;
     return (
-        <main id = "navigation-languages-main">
+        <main className = "navigation-languages-mains" id = "navigation-languages-main" key = {key}>
             <section id = "navigation-languages-section">
             {navigationButtons}
             </section>

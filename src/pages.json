@@ -108,10 +108,56 @@
                             "content": "Faça exercícios para reforçar o que você aprendeu sobre HTML!"
                         },
                         {
-                            "tag": "button",
+                            "tag": "exercise",
                             "content": {
-                                "text": "Ver exercícios!",
-                                "type": 1
+                                "title": "Teste seus conhecimentos com exercícios!",
+                                "description": "Adicione uma \"dica\" ao parágrafo abaixo com o texto \"Descrição do parágrafo\"",
+                                "answer": "title",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answer",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "text",
+                                            "content": {
+                                                "text": "Sobre o site",
+                                                "index": 1,
+                                                "color": "#f5f565",
+                                                "spaces": 0
+                                            }
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Este é um site para desenvolvedores web."
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
                             }
                         }
                     ],
@@ -122,7 +168,7 @@
                         },
                         {
                             "tag": "p",
-                            "content": "Teste os seus conhecimentos de HTML com nosso quis de HTML!"
+                            "content": "Teste os seus conhecimentos de HTML com nosso quiz de HTML!"
                         },
                         {
                             "tag": "button",

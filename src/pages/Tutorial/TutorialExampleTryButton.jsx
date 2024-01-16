@@ -6,7 +6,7 @@ export const TutorialExampleTryButton = styled.button`
     background-color: #5075d0;
     color: #ffffff;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 100;
     border-radius: 3px;
     transition: all 0.3s ease;
 

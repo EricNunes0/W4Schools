@@ -5,6 +5,7 @@ import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
 import TutorialManagePages from "./TutorialManagePages";
 import TutorialSectionsExample from "./TutorialSectionsExample";
+import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 
 export default function TutorialSectionTags(tag, content) {
@@ -43,9 +44,11 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsImg alt = {content.alt} src = {content.src}></TutorialSectionsImg>);
         case "example":
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
+        case "exercise":
+            return (<TutorialSectionsExercise content = {content}></TutorialSectionsExercise>);
         case "kickstart":
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>)
-        default:  
+        default:
             return (
                 <div>
                 </div>
