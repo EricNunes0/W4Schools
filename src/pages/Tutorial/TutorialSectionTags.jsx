@@ -11,6 +11,7 @@ import TutorialSectionsExample from "./TutorialSectionsExample";
 import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 import TutorialSectionTableRow from "./TutorialSectionTableRow";
+import { TutorialSectionsNote } from "./TutorialSectionsNote";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -75,7 +76,11 @@ export default function TutorialSectionTags(tag, content) {
         case "exercise":
             return (<TutorialSectionsExercise content = {content}></TutorialSectionsExercise>);
         case "kickstart":
-            return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>)
+            return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
+        case "note":
+            return (<TutorialSectionsNote>
+                <p>{content}</p>
+            </TutorialSectionsNote>);
         default:
             return (
                 <div>
