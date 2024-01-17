@@ -10,6 +10,7 @@ import TutorialManagePages from "./TutorialManagePages";
 import TutorialSectionsExample from "./TutorialSectionsExample";
 import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
+import TutorialSectionTableRow from "./TutorialSectionTableRow";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -53,12 +54,22 @@ export default function TutorialSectionTags(tag, content) {
             let items = [];
             for(let i = 0; i <= content.items.length - 1; i++) {
                 const item = content.items[i];
-                console.log(i, item, content.items.length);
                 items.push(
                     <li>{item.text}</li>
                 );
             };
             return (<TutorialSectionsList data-list = {tag}>{items}</TutorialSectionsList>);
+        case "table":
+            let tableRows = [];
+            for(let i = 0; i <= content.rows.length - 1; i++) {
+                const row = content.rows[i];
+                tableRows.push(TutorialSectionTableRow(row));
+            };
+            return (
+                <table className = "tutorial-sections-tables">
+                    <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>
+                </table>
+            )
         case "example":
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
         case "exercise":
