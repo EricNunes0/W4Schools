@@ -42,7 +42,8 @@ export const TutorialExerciseSubmitButton = styled.button`
     transition: all 0.3s ease;
 
     &:hover {
-        transform: scale(1.1) translateX(5px);
+        filter: brightness(0.9);
+        /*transform: scale(1.1) translateX(5px);*/
     }
 
     &::before {
@@ -95,7 +96,6 @@ export const TutorialExerciseSubmitButton = styled.button`
     /* Resposta correta */
     &[data-right="true"] {
         pointer-events: none;
-        animation: ${wrongAnimation} 200ms ease-in-out infinite;
         transition: all 0s ease;
     }
     &[data-right="true"]::before {

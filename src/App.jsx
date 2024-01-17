@@ -25,6 +25,13 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
+				<Route exact path = "/html/intro" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Introdução"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
     		</Routes>
       	</Router>
     </div>

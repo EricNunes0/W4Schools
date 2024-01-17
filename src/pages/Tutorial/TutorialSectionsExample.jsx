@@ -7,12 +7,13 @@ export default function TutorialSectionsExample(content) {
     let id = `tutorial-example-article-${Math.floor(Math.random() * (10000 * 10000))}`;
 
     let articleContents = []
-    for(const part of content.parts) {
-        if(part.type === "code") {
-            articleContents.push(new TutorialManagePages().convertTextToCode(part.code, part.content || null, part.contentIndex || null, part.tabs || 0));
+    if(content.parts) {
+        for(const part of content.parts) {
+            if(part.type === "code") {
+                articleContents.push(new TutorialManagePages().convertTextToCode(part.code, part.content || null, part.contentIndex || null, part.tabs || 0));
+            };
         };
     };
-
     return (
         <div className = "tutorials-sections-examples">
             <main className = "tutorials-examples-mains">
