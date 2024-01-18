@@ -5,8 +5,8 @@ export const TutorialSectionsP = styled.p`
     font-size: 14px;
     font-weight: 100;
     text-align: left;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: all 0.3s ease;
 
     &[data-bold="true"] {

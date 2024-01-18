@@ -4,6 +4,7 @@ import Navigation from './pages/Navigation/Navigation';
 import Home from "./pages/Home/Home";
 import Footer from './pages/Footer/Footer';
 import TutorialMain from './pages/Tutorial/TutorialMain';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -38,6 +39,16 @@ function App() {
 					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Editores"></TutorialMain>
 					<Footer></Footer>
 					</>
+				)}></Route>
+				<Route exact path = "/html/basic" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Básico"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
+				<Route path = "*" element = {(
+					<NotFound></NotFound>
 				)}></Route>
     		</Routes>
       	</Router>

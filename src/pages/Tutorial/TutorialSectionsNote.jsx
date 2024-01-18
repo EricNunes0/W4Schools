@@ -14,6 +14,7 @@ export const TutorialSectionsNote = styled.div`
     width: 90%;
     background-color: #ffffa0!important;
     font-size: 14px;
+    border-radius: 10px;
     margin: 25px 0;
     padding: 2% 5%;
 
