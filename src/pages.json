@@ -360,22 +360,95 @@
                             "content": {
                                 "items": [
                                     {
-                                        "text": "“<!DOCTYPE html>” é a declaração que define que este é um documento HTML5;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "doctype"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é a declaração que define que este é um documento HTML5;"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "text": "“<html>” é o elemento raiz de uma página HTML, onde todo o conteúdo é armazenado;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "html tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento raiz de uma página HTML, onde todo o conteúdo é armazenado;"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "text": "“<head>” é o elemento contém os metadados da página HTML;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento contém os metadados da página HTML;"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "text": "“<body>” é o elemento que define o corpo do documento e é um contêiner para todos os conteúdos visíveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "title tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento que define o título da barra de título do navegador ou na aba da página;"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "text": "“<h1>” é o elemento que define um título grande;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento que define o corpo do documento e é um contêiner para todos os conteúdos visíveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.;"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "text": "“<p>” é o elemento que define um parágrafo;"
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "h1 tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento que define um título grande;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "p tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é o elemento que define um parágrafo;"
+                                            }
+                                        ]
                                     }
                                 ]
                             }
@@ -495,6 +568,65 @@
                                 "alt": "Navegador",
                                 "src": "https://cdn.discordapp.com/attachments/1145459828005814333/1197021697790988288/image.png?ex=65b9c054&is=65a74b54&hm=c2d7f5b6c12852e65074f45fef2eae793e00e8e89a077dcea89d63105cae8578&"
                             }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estrutura das páginas HTML"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira abaixo a estrutura base de uma página HTML:"
+                        },
+                        {
+                            "tag": "structure",
+                            "content": {
+                                "divs": [
+                                    {
+                                        "header": "<html>",
+                                        "footer": "</html>",
+                                        "divs": [
+                                            {
+                                                "header": "<head>",
+                                                "footer": "</head>",
+                                                "divs": [
+                                                    {
+                                                        "header": "<title>",
+                                                        "footer": "</title>",
+                                                        "text": "Título da página"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "header": "<body>",
+                                                "footer": "</body>",
+                                                "divs": [
+                                                    {
+                                                        "header": "<h1>",
+                                                        "footer": "</h1>",
+                                                        "text": "Meu primeiro título"
+                                                    },
+                                                    {
+                                                        "header": "<p>",
+                                                        "footer": "</p>",
+                                                        "text": "Meu primeiro parágrafo"
+                                                    },
+                                                    {
+                                                        "header": "<a href = \"#\">",
+                                                        "footer": "</a>",
+                                                        "text": "Meu primeiro hyperlink"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O conteúdo da seção <body> será exibido em um navegador. O conteúdo dentro do elemento <title> será exibido na barra de título do navegador ou na aba da página."
                         }
                     ],
                     [

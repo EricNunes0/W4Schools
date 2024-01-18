@@ -32,6 +32,13 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
+				<Route exact path = "/html/editors" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Editores"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
     		</Routes>
       	</Router>
     </div>

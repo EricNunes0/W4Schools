@@ -30,8 +30,8 @@ export const TutorialSectionsNote = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         background-image: url("../images/note.png");
         background-position: center;
         background-repeat: no-repeat;

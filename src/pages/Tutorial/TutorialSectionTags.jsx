@@ -12,6 +12,8 @@ import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 import TutorialSectionTableRow from "./TutorialSectionTableRow";
 import { TutorialSectionsNote } from "./TutorialSectionsNote";
+import TutorialSectionsStructure from "./TutorialSectionsStructure";
+import TutorialListItemMultiple from "./TutorialListItemMultiple";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -55,8 +57,14 @@ export default function TutorialSectionTags(tag, content) {
             let items = [];
             for(let i = 0; i <= content.items.length - 1; i++) {
                 const item = content.items[i];
+                let liContent;
+                if(item.type === "multiple") {
+                    liContent = TutorialListItemMultiple(item.codes);
+                } else {
+                    liContent = item.text;
+                };
                 items.push(
-                    <li>{item.text}</li>
+                    <li className = "tutorial-sections-lists-items">{liContent}</li>
                 );
             };
             return (<TutorialSectionsList data-list = {tag}>{items}</TutorialSectionsList>);
@@ -78,9 +86,9 @@ export default function TutorialSectionTags(tag, content) {
         case "kickstart":
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
         case "note":
-            return (<TutorialSectionsNote>
-                <p>{content}</p>
-            </TutorialSectionsNote>);
+            return (<TutorialSectionsNote><p>{content}</p></TutorialSectionsNote>);
+        case "structure":
+            return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>)
         default:
             return (
                 <div>
