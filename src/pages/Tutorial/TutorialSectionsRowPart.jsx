@@ -1,7 +1,8 @@
 import TutorialManagePages from "./TutorialManagePages"
 
-export default function TutorialListItemMultiple(codes) {
+export default function TutorialSectionsRowPart(codes) {
     let parts = [];
+    console.log(codes)
     for(const code of codes) {
         switch(code.type) {
             case "code":
@@ -15,19 +16,24 @@ export default function TutorialListItemMultiple(codes) {
                     }
                 };
                 parts.push(
-                    <div className = "tutorial-sections-lists-items-codes-divs">{codeParts}</div>
+                    <div className = "tutorial-sections-rows-codes-divs">{codeParts}</div>
                 );
                 break;
             case "text":
                 parts.push(
-                    <p className = "tutorial-sections-lists-items-paragraphs">{code.code}</p>
+                    <p className = "tutorial-sections-rows-paragraphs">{code.text}</p>
+                );
+                break;
+            case "link":
+                parts.push(
+                    <a href = {code.link} target = {code.target || "_self"} className = "tutorial-sections-rows-links">{code.text}</a>
                 );
                 break;
         };
     };
 
     return (
-        <div className = "tutorial-sections-lists-items-parts">
+        <div className = "tutorial-sections-rows-subparts">
             {parts}
         </div>
     );

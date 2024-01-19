@@ -2,6 +2,7 @@ import "./Tutorials.css";
 import "./TutorialExamples.css";
 import "./TutorialKickstarts.css";
 import "./TutorialStructures.css";
+import "./TutorialSectionsRow.css";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";
 import TutorialHeader from "./TutorialHeader";
 import TutorialSectionMain from "./TutorialSectionMain";

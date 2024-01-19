@@ -15,6 +15,7 @@ import { TutorialSectionsNote } from "./TutorialSectionsNote";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialListItemMultiple from "./TutorialListItemMultiple";
 import { TutorialSectionsH4 } from "./TutorialSectionsH4";
+import TutorialSectionsRow from "./TutorialSectionsRow";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -90,6 +91,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
         case "note":
             return (<TutorialSectionsNote><p>{content}</p></TutorialSectionsNote>);
+        case "row":
+            return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
         case "structure":
             return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>)
         default:
