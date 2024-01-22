@@ -9,7 +9,7 @@ export default function NavigationMenusArticlesDivs(column, categorie) {
     });
 
     return (
-        <div className = "navigation-menus-articles-divs">
+        <div className = "navigation-menus-articles-divs" key = {categorie}>
             <div className = "navigation-menus-articles-titles-divs">
                 <NavigationMenuArticleTitle>{categorie}</NavigationMenuArticleTitle>
             </div>

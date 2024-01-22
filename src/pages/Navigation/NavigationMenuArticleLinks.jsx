@@ -6,7 +6,7 @@ export default function NavigationMenuArticleLinks(topics) {
 
     function ArticleButton(data) {
         return (
-            <NavigationMenuArticleButton href = {data.url} data-type = {data.type} data-hot = {data.hot} data-new = {data.new} data-sparkles = {data.sparkles}>{data.text}</NavigationMenuArticleButton>
+            <NavigationMenuArticleButton key = {`${data.url}-${data.type}-${data.hot}-${data.new}-${data.sparkles}`} href = {data.url} data-type = {data.type} data-hot = {data.hot} data-new = {data.new} data-sparkles = {data.sparkles}>{data.text}</NavigationMenuArticleButton>
         )
     };
 

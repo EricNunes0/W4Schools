@@ -8,7 +8,6 @@ export default function NavigationMenus() {
         menus.push(NavigationMenusMains(menu));
     });
 
-
     return (
         <div id = "navigation-menus-div">
             {menus}

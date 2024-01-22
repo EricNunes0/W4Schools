@@ -14,7 +14,7 @@ export default function TutorialSectionsExercise(content) {
     };
     
     const idNumber = Math.floor(Math.random(10000 * 10000));
-    const answer = content.answer;
+    const answer = content.answer || content.answers;
     const wrongAnimationDuration = 1;
 
     return (
@@ -32,6 +32,16 @@ export default function TutorialSectionsExercise(content) {
                         type = "button"
                         onClick = {
                             function() {
+                                function validateAnswers(answers, userAnswers) {
+                                    for(let i = 0; i <= answers.length; i++) {
+                                        if(answers[i] !== userAnswers[i]) {
+                                            return false;
+                                        };
+                                    };
+                                    return true;
+                                };
+
+
                                 function buttonAnimation(alert) {
                                     const exerciseButton = document.querySelector(`#tutorial-exercise-button-${idNumber}`);
                                     exerciseButton.dataset[alert] = "true";
@@ -40,10 +50,12 @@ export default function TutorialSectionsExercise(content) {
                                     }, wrongAnimationDuration * 1000);
                                 };
                                 const form = document.querySelector(`#tutorial-section-exercise-${idNumber}`);
-                                const userAnswer = form.querySelectorAll("input")[0].value;
-                                const message = document.querySelector(`#tutorial-exercise-message-${idNumber}`);
+                                const inputs = form.querySelectorAll("input");
 
-                                if(userAnswer === answer) {
+                                let userAnswer = [];
+                                inputs.forEach((input) => {userAnswer.push(input.value)});
+                                const message = document.querySelector(`#tutorial-exercise-message-${idNumber}`);
+                                if(validateAnswers(answer, userAnswer) === true) {
                                     message.innerHTML = "Resposta correta!";
                                     message.dataset.color = "green";
                                     buttonAnimation("right");

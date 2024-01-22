@@ -5,8 +5,9 @@ export default function NavigationMobileMenuArticleLinks(topics) {
     let buttons = [];
 
     function ArticleButton(data) {
+        let mobileMenuArticleLinkId = `navigation-mobile-menu-article-link-${Math.floor(Math.random() * (1000 * 1000))}`;
         return (
-            <NavigationMenuArticleButton href = {data.url} data-type = {data.type} data-hot = {data.hot} data-new = {data.new} data-sparkles = {data.sparkles}>{data.text}</NavigationMenuArticleButton>
+            <NavigationMenuArticleButton key = {mobileMenuArticleLinkId} href = {data.url} data-type = {data.type} data-hot = {data.hot} data-new = {data.new} data-sparkles = {data.sparkles}>{data.text}</NavigationMenuArticleButton>
         )
     };
 

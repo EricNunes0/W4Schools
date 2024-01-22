@@ -116,6 +116,7 @@ export default class TutorialManagePages {
             <span className = "tutorial-sections-lines-parts">{codeText}</span>
         );
     };
+    /* Obter códigos (tags) do JSON */
     lineCodesFromJSON(text) {
         let codeFound = null;
         for(const key of Object.keys(codes)) {
@@ -124,6 +125,13 @@ export default class TutorialManagePages {
             };
         };
         return codeFound;
+    };
+    /* Obter atributos do JSON */
+    lineAttributesFromJSON(name) {
+        let attributes = codes.attributes;
+        let attributesCodes = JSON.parse(JSON.stringify(attributes));
+        attributesCodes.splice(0, 0, [name, "#65f040"]);
+        return attributesCodes;
     };
     /* Converter códigos/conteúdos em HTML */
     lineCodeToHTML(content) {
@@ -135,10 +143,10 @@ export default class TutorialManagePages {
         */
 
         for(let i = 0; i <= content[2] - 1; i++) {
-            content[0] = `\xa0${content[0]}`
+            content[0] = `\xa0${content[0]}`;
         };
         for(let i = 0; i <= content[3] - 1; i++) {
-            content[0] = `${content[0]}\xa0`
+            content[0] = `${content[0]}\xa0`;
         };
         return (
             <code style = {{color: content[1]}}>{content[0]}</code>
@@ -152,17 +160,6 @@ export default class TutorialManagePages {
     };
 
 
-
-    /* Corrigir depois nos exemplos */
-    getCodes(text) {
-        let codeFound = null;
-        for(const key of Object.keys(codes)) {
-            if(key === text) {
-                codeFound = codes[key];
-            };
-        };
-        return codeFound;
-    };
     convertCodeToHTML(content) {
         for(let i = 0; i <= content[2] - 1; i++) {
             content[0] = `\xa0${content[0]}`
@@ -171,8 +168,32 @@ export default class TutorialManagePages {
             <code style = {{color: content[1]}}>{content[0]}</code>
         );
     };
-    convertTextToCode(text, content, contentIndex, tabs) {
-        let codes = this.getCodes(text);
+    convertTextToCode(part) {
+        const text = part.code;
+        const content = part.content || null;
+        const contentIndex = part.contentIndex || null;
+        const tabs = part.tabs || 0;
+        const attributes = part.attributes || [];
+        
+        let codesGot = this.lineCodesFromJSON(text);
+        if(attributes.length !== 0) {
+            let index = attributes.index;
+            for(let i = 0; i <= attributes.items.length - 1; i++) {
+                const attribute = attributes.items[i];
+                const attributeName = attribute.name;
+                const attributeValue = attribute.value;
+                const attributeValueIndex = attribute.valueIndex || 0;
+                let attributeCodesGot = this.lineAttributesFromJSON(attributeName);
+                let attributeCodes = JSON.parse(JSON.stringify(attributeCodesGot));
+                attributeCodes[0][0] = `\xa0${attributeCodes[0][0]}` /* Adiciona um espaço antes de todo atributo */
+                attributeCodes.splice(attributeValueIndex, 0, [attributeValue, "#f5f565"]); /* Adiciona o texto dentro do valor do atributo */
+                for(const atCode of attributeCodes) {
+                    codesGot[0].splice(index, 0, atCode);
+                    index++;
+                };
+            }
+        };
+        let codes = JSON.parse(JSON.stringify(codesGot));
         if(codes) {
             let paragraph = [];
             for(let code of codes) {

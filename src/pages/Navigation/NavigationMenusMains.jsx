@@ -13,9 +13,9 @@ export default function NavigationMenusMains(menu) {
         columns.push(NavigationMenusColumns(menu, column));
     })
     let title = MenuJSON[menu].title;
-
+    let menuMainId = `navigation-menu-main-${Math.floor(Math.random() * (1000 * 1000))}`;
     return (
-        <main className = "navigation-menus-mains" id = {menu} data-closed = "true">
+        <main className = "navigation-menus-mains" id = {menuMainId} key = {menuMainId} data-closed = "true">
             <header className = "navigation-menus-headers">
                 <div className = "navigation-menus-headers-columns">
                     <header className = "navigation-menus-columns-headers">

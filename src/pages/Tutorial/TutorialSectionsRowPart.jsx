@@ -2,7 +2,6 @@ import TutorialManagePages from "./TutorialManagePages"
 
 export default function TutorialSectionsRowPart(codes) {
     let parts = [];
-    console.log(codes)
     for(const code of codes) {
         switch(code.type) {
             case "code":

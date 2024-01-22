@@ -11,7 +11,7 @@ export default function TutorialSectionsExample(content) {
     if(content.parts) {
         for(const part of content.parts) {
             if(part.type === "code") {
-                articleContents.push(new TutorialManagePages().convertTextToCode(part.code, part.content || null, part.contentIndex || null, part.tabs || 0));
+                articleContents.push(new TutorialManagePages().convertTextToCode(part));
             };
         };
     };

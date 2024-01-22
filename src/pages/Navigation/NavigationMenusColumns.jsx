@@ -7,15 +7,13 @@ import NavigationMenusArticlesDivs from "./NavigationMenusArticlesDivs";
 
 export default function NavigationMenusColumns(menu, column) {
     let articleDivs = [];
-
-
     Object.keys(column.categories).forEach((categorie) => {
         articleDivs.push(NavigationMenusArticlesDivs(column, categorie));
     });
-
+    let columnId = Math.floor(Math.random() * (1000 * 1000));
     return (
-        <main className = "navigation-menus-columns-divs">
-            <article className = "navigation-menus-articles">
+        <main className = "navigation-menus-columns-divs" id = {`${menu}-${columnId}`} key = {`${menu}-${columnId}`}>
+            <article className = "navigation-menus-articles" id = {`${menu}-${columnId}`} key = {`${menu}-${columnId}`}>
                 {articleDivs}
             </article>
         </main>
