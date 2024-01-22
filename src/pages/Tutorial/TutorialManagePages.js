@@ -77,27 +77,44 @@ export default class TutorialManagePages {
         );
     };
     lineCode(part) {
-        const codes = this.lineCodesFromJSON(part.code);
-        const spacesBefore = part.spacesBefore || 0;
-        const spacesAfter = part.spacesAfter || 0;
-        if(codes) {
-            let codeText = [];
-            for(const code of codes) {
-                if(part.content) {
-                    const text = part.content.text;
-                    const index = part.content.index || 0;
-                    const color = part.content.color || "#ffffff";
-                    const spaces = part.content.spaces || 0;
-                    code.splice(index, 0, [text, color, spaces]);
+        const text = part.code;
+        const content = part.content || null;
+        const contentIndex = part.contentIndex || null;
+        const tabs = part.tabs || 0;
+        const attributes = part.attributes || [];
+        
+        let codesGot = this.lineCodesFromJSON(text);
+        if(attributes.length !== 0) {
+            let index = attributes.index;
+            for(let i = 0; i <= attributes.items.length - 1; i++) {
+                const attribute = attributes.items[i];
+                const attributeName = attribute.name;
+                const attributeValue = attribute.value;
+                const attributeValueIndex = attribute.valueIndex || 0;
+                let attributeCodesGot = this.lineAttributesFromJSON(attributeName);
+                let attributeCodes = JSON.parse(JSON.stringify(attributeCodesGot));
+                attributeCodes[0][0] = `\xa0${attributeCodes[0][0]}` /* Adiciona um espaço antes de todo atributo */
+                attributeCodes.splice(attributeValueIndex, 0, [attributeValue, "#f5f565"]); /* Adiciona o texto dentro do valor do atributo */
+                for(const atCode of attributeCodes) {
+                    codesGot[0].splice(index, 0, atCode);
+                    index++;
                 };
-                for(let content of code) {
-                    content[2] = spacesBefore;
-                    content[3] = spacesAfter;
-                    codeText.push(this.lineCodeToHTML(content));
+            }
+        };
+        let codes = JSON.parse(JSON.stringify(codesGot));
+        console.log(codes);
+        if(codes) {
+            let paragraph = [];
+            for(let code of codes) {
+                if(content && contentIndex) {
+                    code.splice(contentIndex, 0, [content, "#ffffff"]);
+                };
+                for(const content of code) {
+                    paragraph.push(this.convertCodeToHTML(content));
                 };
             };
             return (
-                <span className = "tutorial-sections-lines-parts">{codeText}</span>
+                <div style = {{paddingLeft: `${parseInt(40 * tabs)}px`}}>{paragraph}</div>
             );
         };
     };
@@ -167,46 +184,5 @@ export default class TutorialManagePages {
         return (
             <code style = {{color: content[1]}}>{content[0]}</code>
         );
-    };
-    convertTextToCode(part) {
-        const text = part.code;
-        const content = part.content || null;
-        const contentIndex = part.contentIndex || null;
-        const tabs = part.tabs || 0;
-        const attributes = part.attributes || [];
-        
-        let codesGot = this.lineCodesFromJSON(text);
-        if(attributes.length !== 0) {
-            let index = attributes.index;
-            for(let i = 0; i <= attributes.items.length - 1; i++) {
-                const attribute = attributes.items[i];
-                const attributeName = attribute.name;
-                const attributeValue = attribute.value;
-                const attributeValueIndex = attribute.valueIndex || 0;
-                let attributeCodesGot = this.lineAttributesFromJSON(attributeName);
-                let attributeCodes = JSON.parse(JSON.stringify(attributeCodesGot));
-                attributeCodes[0][0] = `\xa0${attributeCodes[0][0]}` /* Adiciona um espaço antes de todo atributo */
-                attributeCodes.splice(attributeValueIndex, 0, [attributeValue, "#f5f565"]); /* Adiciona o texto dentro do valor do atributo */
-                for(const atCode of attributeCodes) {
-                    codesGot[0].splice(index, 0, atCode);
-                    index++;
-                };
-            }
-        };
-        let codes = JSON.parse(JSON.stringify(codesGot));
-        if(codes) {
-            let paragraph = [];
-            for(let code of codes) {
-                if(content && contentIndex) {
-                    code.splice(contentIndex, 0, [content, "#ffffff"]);
-                };
-                for(const content of code) {
-                    paragraph.push(this.convertCodeToHTML(content));
-                };
-            };
-            return (
-                <div style = {{paddingLeft: `${parseInt(40 * tabs)}px`}}>{paragraph}</div>
-            );
-        };
     };
 };

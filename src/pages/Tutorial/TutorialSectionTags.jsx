@@ -2,6 +2,7 @@ import { TutorialSectionsA } from "./TutorialSectionsA";
 import { TutorialSectionsH1 } from "./TutorialSectionsH1";
 import { TutorialSectionsH2 } from "./TutorialSectionsH2";
 import { TutorialSectionsH3 } from "./TutorialSectionsH3";
+import { TutorialSectionsH4 } from "./TutorialSectionsH4";
 import { TutorialSectionsP } from "./TutorialSectionsP";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
@@ -14,8 +15,8 @@ import TutorialSectionTableRow from "./TutorialSectionTableRow";
 import { TutorialSectionsNote } from "./TutorialSectionsNote";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialListItemMultiple from "./TutorialListItemMultiple";
-import { TutorialSectionsH4 } from "./TutorialSectionsH4";
 import TutorialSectionsRow from "./TutorialSectionsRow";
+import { TutorialSectionsWarning } from "./TutorialSectionsWarning";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -94,7 +95,9 @@ export default function TutorialSectionTags(tag, content) {
         case "row":
             return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
         case "structure":
-            return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>)
+            return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>);
+        case "warning":
+            return (<TutorialSectionsWarning><p>{content}</p></TutorialSectionsWarning>);
         default:
             return (
                 <div>

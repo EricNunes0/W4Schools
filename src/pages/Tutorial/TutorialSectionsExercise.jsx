@@ -13,7 +13,7 @@ export default function TutorialSectionsExercise(content) {
         lines.push(new TutorialManagePages().convertLine(line));
     };
     
-    const idNumber = Math.floor(Math.random(10000 * 10000));
+    const idNumber = Math.floor(Math.random() * (10000 * 10000));
     const answer = content.answer || content.answers;
     const wrongAnimationDuration = 1;
 

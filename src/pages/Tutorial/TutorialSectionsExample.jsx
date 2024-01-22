@@ -11,7 +11,7 @@ export default function TutorialSectionsExample(content) {
     if(content.parts) {
         for(const part of content.parts) {
             if(part.type === "code") {
-                articleContents.push(new TutorialManagePages().convertTextToCode(part));
+                articleContents.push(new TutorialManagePages().lineCode(part));
             };
         };
     };
@@ -19,7 +19,7 @@ export default function TutorialSectionsExample(content) {
         <div className = "tutorials-sections-examples">
             <main className = "tutorials-examples-mains">
                 <header className = "tutorials-examples-headers">
-                    <TutorialExampleHeaderTitle>Exemplo</TutorialExampleHeaderTitle>
+                    <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
                 </header>
                 <article className = "tutorials-examples-articles" id = {articleId}>
                     {articleContents}

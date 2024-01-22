@@ -9,7 +9,7 @@ export default function TutorialSectionsRow(prop) {
         if(item.type === "multiple") {
             part = TutorialSectionsRowPart(item.codes);
         } else {
-            part = item.text;
+            part = (<p>{item.text}</p>);
         };
         rowParts.push(
             <div className = "tutorial-sections-rows-parts">{part}</div>
