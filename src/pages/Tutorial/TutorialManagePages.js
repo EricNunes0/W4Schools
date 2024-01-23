@@ -83,7 +83,7 @@ export default class TutorialManagePages {
         const tabs = part.tabs || 0;
         const attributes = part.attributes || [];
         
-        let codesGot = this.lineCodesFromJSON(text);
+        let codesGot = this.lineCodesFromJSON(text, content);
         if(attributes.length !== 0) {
             let index = attributes.index;
             for(let i = 0; i <= attributes.items.length - 1; i++) {
@@ -91,7 +91,8 @@ export default class TutorialManagePages {
                 const attributeName = attribute.name;
                 const attributeValue = attribute.value;
                 const attributeValueIndex = attribute.valueIndex || 0;
-                let attributeCodesGot = this.lineAttributesFromJSON(attributeName);
+                const attributeSingleQuote = attribute.singleQuote || false;
+                let attributeCodesGot = this.lineAttributesFromJSON(attributeName, attributeSingleQuote);
                 let attributeCodes = JSON.parse(JSON.stringify(attributeCodesGot));
                 attributeCodes[0][0] = `\xa0${attributeCodes[0][0]}` /* Adiciona um espaço antes de todo atributo */
                 attributeCodes.splice(attributeValueIndex, 0, [attributeValue, "#f5f565"]); /* Adiciona o texto dentro do valor do atributo */
@@ -102,7 +103,6 @@ export default class TutorialManagePages {
             }
         };
         let codes = JSON.parse(JSON.stringify(codesGot));
-        console.log(codes);
         if(codes) {
             let paragraph = [];
             for(let code of codes) {
@@ -134,19 +134,31 @@ export default class TutorialManagePages {
         );
     };
     /* Obter códigos (tags) do JSON */
-    lineCodesFromJSON(text) {
+    lineCodesFromJSON(text, content) {
         let codeFound = null;
         for(const key of Object.keys(codes)) {
             if(key === text) {
-                codeFound = codes[key];
+                codeFound = JSON.parse(JSON.stringify(codes[key]));
             };
         };
+        if(content && content.text) {
+            console.log(content);
+            console.log(codeFound);
+            const text = content.text;
+            const index = content.index;
+            const color = content.color;
+            codeFound[0].splice(index, 0, [text, color]);
+        }
+
         return codeFound;
     };
     /* Obter atributos do JSON */
-    lineAttributesFromJSON(name) {
-        let attributes = codes.attributes;
-        let attributesCodes = JSON.parse(JSON.stringify(attributes));
+    lineAttributesFromJSON(name, singleQuote) {
+        let attributesCodes = JSON.parse(JSON.stringify(codes.attributes));        
+        if(singleQuote) {
+            attributesCodes[1][0] = "'"
+            attributesCodes[2][0] = "'"
+        }
         attributesCodes.splice(0, 0, [name, "#65f040"]);
         return attributesCodes;
     };
@@ -166,7 +178,7 @@ export default class TutorialManagePages {
             content[0] = `${content[0]}\xa0`;
         };
         return (
-            <code style = {{color: content[1]}}>{content[0]}</code>
+            <code style = {{color: content[1], fontSize: 14}}>{content[0]}</code>
         );
     };
     /* Converter inputs em HTML */
@@ -182,7 +194,7 @@ export default class TutorialManagePages {
             content[0] = `\xa0${content[0]}`
         };
         return (
-            <code style = {{color: content[1]}}>{content[0]}</code>
+            <code style = {{color: content[1], fontSize: 14}}>{content[0]}</code>
         );
     };
 };
