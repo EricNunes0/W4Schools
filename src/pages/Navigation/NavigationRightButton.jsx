@@ -33,12 +33,12 @@ export const NavigationRightButton = styled.button`
     }
 
     &[data-right="jobs"]::before {
-        background-image: url("svgs/briefcase.svg");
+        background-image: url("../svgs/briefcase.svg");
     }
     &[data-right="spaces"]::before {
-        background-image: url("svgs/code.svg");
+        background-image: url("../svgs/code.svg");
     }
     &[data-right="certified"]::before {
-        background-image: url("svgs/cart.svg");
+        background-image: url("../svgs/cart.svg");
     }
 `;

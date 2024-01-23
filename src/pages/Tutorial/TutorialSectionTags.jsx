@@ -3,6 +3,8 @@ import { TutorialSectionsH1 } from "./TutorialSectionsH1";
 import { TutorialSectionsH2 } from "./TutorialSectionsH2";
 import { TutorialSectionsH3 } from "./TutorialSectionsH3";
 import { TutorialSectionsH4 } from "./TutorialSectionsH4";
+import { TutorialSectionsH5 } from "./TutorialSectionsH5";
+import { TutorialSectionsH6 } from "./TutorialSectionsH6";
 import { TutorialSectionsP } from "./TutorialSectionsP";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
@@ -43,13 +45,23 @@ export default function TutorialSectionTags(tag, content) {
                 );
             };
         case "h1":
-            return (<TutorialSectionsH1>{content}</TutorialSectionsH1>);
+            const h1 = content.text ? (<TutorialSectionsH1 data-css = {content.css}>{content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{content}</TutorialSectionsH1>);
+            return h1;
         case "h2":
-            return (<TutorialSectionsH2>{content}</TutorialSectionsH2>);
+            const h2 = content.text ? (<TutorialSectionsH2 data-css = {content.css}>{content.text}</TutorialSectionsH2>) : (<TutorialSectionsH2>{content}</TutorialSectionsH2>);
+            return h2;
         case "h3":
-            return (<TutorialSectionsH3>{content}</TutorialSectionsH3>);
+            const h3 = content.text ? (<TutorialSectionsH3 data-css = {content.css}>{content.text}</TutorialSectionsH3>) : (<TutorialSectionsH3>{content}</TutorialSectionsH3>);
+            return h3;
         case "h4":
-            return (<TutorialSectionsH4>{content}</TutorialSectionsH4>);
+            const h4 = content.text ? (<TutorialSectionsH4 data-css = {content.css}>{content.text}</TutorialSectionsH4>) : (<TutorialSectionsH4>{content}</TutorialSectionsH4>);
+            return h4;
+        case "h5":
+            const h5 = content.text ? (<TutorialSectionsH5 data-css = {content.css}>{content.text}</TutorialSectionsH5>) : (<TutorialSectionsH5>{content}</TutorialSectionsH5>);
+            return h5;
+        case "h6":
+            const h6 = content.text ? (<TutorialSectionsH6 data-css = {content.css}>{content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
+            return h6;
         case "p":
             return (<TutorialSectionsP>{content}</TutorialSectionsP>);
         case "b":

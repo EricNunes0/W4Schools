@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const TutorialSectionsH2 = styled.h2`
+export const TutorialSectionsH6 = styled.h6`
     color: #f0f0f0!important;
     display: block!important;
-    font-size: 32px!important;
+    font-size: 16px!important;
     font-weight: 100!important;
     width: 100%!important;
     margin-top: 15px;

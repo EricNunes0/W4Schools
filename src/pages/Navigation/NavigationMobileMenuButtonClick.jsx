@@ -6,6 +6,9 @@ export default function NavigationMobileMenuButtonClick(title) {
     const mobileMenuList = document.querySelector(`.navigation-mobile-menu-lists#${title}`);
     if(mobileButton) {
         mobileButton.dataset.closed = mobileButton.dataset.closed === "true" ? "false" : "true";
+    };
+    console.log(mobileMenuList)
+    if(mobileMenuList) {    
         mobileMenuList.dataset.closed = mobileMenuList.dataset.closed === "true" ? "false" : "true";
     };
 };

@@ -31,13 +31,15 @@ export const SidebarMenuLink = styled.a`
     }
 
     &:hover {
-        background-color: #5075d0;
+        background-color: rgba(255, 255, 255, 0.2);
     }
     &:hover::after {
         opacity: 1;
         transform: translateX(0px);
     }
-
+    &[data-active="true"] {
+        background-color: #5075d0;
+    }
     @media screen and (max-width: 480px) {
         font-size: 16px;
         height: 32px;

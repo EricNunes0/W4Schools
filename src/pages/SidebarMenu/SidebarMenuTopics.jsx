@@ -2,15 +2,14 @@ import menu from "../../pages.json";
 import { SidebarMenuLink } from "./SidebarMenuLink";
 import { SidebarMenuTitle } from "./SidebarMenuTitle";
 
-export default function SidebarMenuTopics(language, topicName) {
-
+export default function SidebarMenuTopics(language, topicName, title) {
     let links = [];
 
     function SidebarMenuLinkCreate(item) {
-        let title = item.title;
+        let itemTitle = item.title;
         let link = item.link;
         return (
-            <SidebarMenuLink href = {link}>{title}</SidebarMenuLink>
+            <SidebarMenuLink href = {link} data-active = {title === itemTitle ? true : false}>{itemTitle}</SidebarMenuLink>
         );
     };
 
@@ -27,5 +26,5 @@ export default function SidebarMenuTopics(language, topicName) {
                 {links}
             </div>
         </div>
-    )
+    );
 };

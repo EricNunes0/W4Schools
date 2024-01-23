@@ -5,7 +5,7 @@ export const NavigationThemeButton = styled.button`
     width: 40px;
     height: 40px;
     background-color: transparent;
-    background-image: url("svgs/theme.svg");
+    background-image: url("../svgs/theme.svg");
     background-position: center;
     background-size: 60% 60%;
     background-repeat: no-repeat;

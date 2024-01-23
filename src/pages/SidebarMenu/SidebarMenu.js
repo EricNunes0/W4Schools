@@ -6,10 +6,11 @@ import SidebarMenuTopics from "./SidebarMenuTopics";
 
 export default function SidebarMenu(prop) {
     let language = prop.language;
+    let title = prop.title;
     let menuLanguage = menu[language];
     let topics = [];
     Object.keys(menuLanguage).forEach((topicName) => {
-        topics.push(SidebarMenuTopics(language, topicName));
+        topics.push(SidebarMenuTopics(language, topicName, title));
     });
 
     return (

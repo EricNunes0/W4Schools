@@ -26,7 +26,7 @@ export const NavigationHideButton = styled.button`
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url("svgs/arrow.svg");
+        background-image: url("../svgs/arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

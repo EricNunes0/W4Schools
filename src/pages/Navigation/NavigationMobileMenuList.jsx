@@ -15,7 +15,7 @@ export default function NavigationMobileMenuList(prop) {
     let title = MenuJSON[menu].title;
     const id = `navigation-mobile-menu-list-${Math.floor(Math.random() * (1000 * 1000))}`;
     return(
-        <div className = "navigation-mobile-menu-lists" id = {id} key = {id} data-closed = "true">
+        <div className = "navigation-mobile-menu-lists" id = {menu} key = {id} data-closed = "true">
             <header className = "navigation-mobile-menus-headers">
                 <div className = "navigation-mobile-menus-columns">
                     <header className = "navigation-mobile-menus-search-divs">

@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const TutorialSectionsH1 = styled.h1`
-    color: #f0f0f0;
-    font-size: 28px;
-    font-weight: 100;
+    color: #f0f0f0!important;
+    display: block!important;
+    font-size: 40px!important;
+    font-weight: 100!important;
+    width: 100%!important;
     margin-top: 15px;
     margin-bottom: 15px;
-    text-align: left;
-    transition: all 0.3s ease;
+    text-align: left!important;
+    transition: all 0.3s ease !important;
+
+    &[data-css="false"] {
+        all: unset;
+    }
 `;

@@ -9,6 +9,7 @@ export const NavigationMenuArticleButton = styled.a`
     border-radius: 3px;
     padding: 5px;
     transition: all 0.3s ease;
+    white-space: nowrap;
 
     &[data-type="0"] {
         color: #e0e0e0;

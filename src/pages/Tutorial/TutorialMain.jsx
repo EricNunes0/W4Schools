@@ -8,6 +8,7 @@ import TutorialHeader from "./TutorialHeader";
 import TutorialSectionMain from "./TutorialSectionMain";
 import TutorialFooter from "./TutorialFooter";
 import pageTitle from "../../functions/pageTitle";
+import Sidebar from "../SidebarMenu/Sidebar";
 
 export default function TutorialMain(prop) {
     const language = prop.language;
@@ -17,7 +18,7 @@ export default function TutorialMain(prop) {
     
     return (
         <div className = "tutorials">
-            <SidebarMenu language = "html"></SidebarMenu>
+            <Sidebar language = {language} title = {title}></Sidebar>
             <main className = "tutorials-mains">
                 <TutorialHeader language = {language} topic = {topic} title = {title}></TutorialHeader>
                 <TutorialSectionMain language = {language} topic = {topic} title = {title}></TutorialSectionMain>
