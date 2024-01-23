@@ -75,6 +75,13 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
+				<Route exact path = "/html/styles" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Estilos"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TutorialSectionsH3 = styled.h3`
-    color: #f0f0f0!important;
+    color: ${(prop) => prop.color || "#f0f0f0"}!important;
     display: block!important;
     font-size: 24px!important;
     font-weight: 100!important;
