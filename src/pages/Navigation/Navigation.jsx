@@ -18,11 +18,12 @@ import NavigationListMenu from "./NavigationListMenu";
 import NavigationMobileMenuOpen from "./NavigationMobileMenuOpen";
 import NavLanguageButtons from "./NavLanguageButtons";
 
-export default function Navigation() {
+export default function Navigation(prop) {
+    let closed = prop.closed || true;
 
     return (
         <div id = "navigation">
-            <main id = "navigation-main" data-closed = "true">
+            <main id = "navigation-main" data-closed = {closed}>
                 <header id = "navigation-header">
                     <section className = "navigation-header-sections" id = "left">
                         <div id = "navigation-logo-div">
@@ -68,7 +69,7 @@ export default function Navigation() {
                     </section>
                 </article>
             </main>
-            <NavigationHideButton data-closed = "true" id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
+            <NavigationHideButton data-closed = {closed} id = "navigation-hide-button" onClick = {NavigationHide}></NavigationHideButton>
         </div>
     )
 };

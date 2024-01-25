@@ -6,6 +6,8 @@ import { TutorialSectionsH4 } from "./TutorialSectionsH4";
 import { TutorialSectionsH5 } from "./TutorialSectionsH5";
 import { TutorialSectionsH6 } from "./TutorialSectionsH6";
 import { TutorialSectionsP } from "./TutorialSectionsP";
+import { TutorialSectionsSub } from "./TutorialSectionsSub";
+import { TutorialSectionsSup } from "./TutorialSectionsSup";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
 import { TutorialSectionsList } from "./TutorialSectionsList";
@@ -45,23 +47,29 @@ export default function TutorialSectionTags(tag, content) {
                 );
             };
         case "h1":
-            const h1 = content.text ? (<TutorialSectionsH1 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{content}</TutorialSectionsH1>);
+            const h1 = content.text ? (<TutorialSectionsH1 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{content}</TutorialSectionsH1>);
             return h1;
         case "h2":
-            const h2 = content.text ? (<TutorialSectionsH2 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH2>) : (<TutorialSectionsH2>{content}</TutorialSectionsH2>);
+            const h2 = content.text ? (<TutorialSectionsH2 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH2>) : (<TutorialSectionsH2>{content}</TutorialSectionsH2>);
             return h2;
         case "h3":
-            const h3 = content.text ? (<TutorialSectionsH3 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH3>) : (<TutorialSectionsH3>{content}</TutorialSectionsH3>);
+            const h3 = content.text ? (<TutorialSectionsH3 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH3>) : (<TutorialSectionsH3>{content}</TutorialSectionsH3>);
             return h3;
         case "h4":
-            const h4 = content.text ? (<TutorialSectionsH4 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH4>) : (<TutorialSectionsH4>{content}</TutorialSectionsH4>);
+            const h4 = content.text ? (<TutorialSectionsH4 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH4>) : (<TutorialSectionsH4>{content}</TutorialSectionsH4>);
             return h4;
         case "h5":
-            const h5 = content.text ? (<TutorialSectionsH5 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH5>) : (<TutorialSectionsH5>{content}</TutorialSectionsH5>);
+            const h5 = content.text ? (<TutorialSectionsH5 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH5>) : (<TutorialSectionsH5>{content}</TutorialSectionsH5>);
             return h5;
         case "h6":
-            const h6 = content.text ? (<TutorialSectionsH6 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null}>{content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
+            const h6 = content.text ? (<TutorialSectionsH6 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
             return h6;
+        case "sub":
+            const sub = content.text ? (<TutorialSectionsSub data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsSub>) : (<TutorialSectionsSub>{content}</TutorialSectionsSub>);
+            return sub;
+        case "sup":
+            const sup = content.text ? (<TutorialSectionsSup data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsSup>) : (<TutorialSectionsSup>{content}</TutorialSectionsSup>);
+            return sup;
         case "p":
             return (<TutorialSectionsP>{content}</TutorialSectionsP>);
         case "b":

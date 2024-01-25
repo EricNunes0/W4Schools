@@ -82,6 +82,20 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
+				<Route exact path = "/html/formatting" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Formatação"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
+				<Route exact path = "/html/quotations" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Citações"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>

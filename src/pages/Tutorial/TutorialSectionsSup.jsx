@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const TutorialSectionsH2 = styled.h2`
+export const TutorialSectionsSup = styled.sup`
     color: ${(prop) => prop.color || "#f0f0f0"}!important;
-    display: block!important;
-    font-size: 32px!important;
+    font-size: ${(prop) => prop.fontsize || "smaller"}!important;
     font-weight: ${(prop) => prop.fontweight || "100"};
+    vertical-align: super;
     width: 100%!important;
     margin-top: 15px;
     margin-bottom: 15px;

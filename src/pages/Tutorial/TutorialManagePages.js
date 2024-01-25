@@ -184,7 +184,7 @@ export default class TutorialManagePages {
     /* Converter inputs em HTML */
     lineInputToHTML(part) {
         return (
-            <TutorialExerciseInput type = {part.inputType} name = {part.name} className = "tutorial-sections-exercises-inputs" width = {part.width} maxLength = {part.maxLength} spacesbefore = {part.spacesBefore}></TutorialExerciseInput>
+            <TutorialExerciseInput type = {part.inputType} name = {part.name} className = "tutorial-sections-exercises-inputs" width = {part.width} maxLength = {part.maxLength} spacesbefore = {part.spacesBefore} spacesafter = {part.spacesAfter}></TutorialExerciseInput>
         );
     };
 

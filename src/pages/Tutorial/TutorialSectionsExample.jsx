@@ -1,6 +1,7 @@
 import { TutorialExampleHeaderTitle } from "./TutorialExampleHeaderTitle";
 import { TutorialExampleButton } from "./TutorialExampleButton";
 import TutorialManagePages from "./TutorialManagePages";
+import { TutorialExampleDescription } from "./TutorialExampleDescription";
 
 export default function TutorialSectionsExample(content) {
     content = content.content;
@@ -8,7 +9,11 @@ export default function TutorialSectionsExample(content) {
     let articleId = `tutorial-example-article-${id}`;
     let exampleButtonId = `tutorial-example-button-${id}`;
     let articleContents = []
-    if(content.parts) {
+    if(content.lines) {
+        for(const line of content.lines) {
+            articleContents.push(new TutorialManagePages().convertLine(line));
+        };
+    } else if(content.parts) {
         for(const part of content.parts) {
             if(part.type === "code") {
                 articleContents.push(new TutorialManagePages().lineCode(part));
@@ -20,6 +25,7 @@ export default function TutorialSectionsExample(content) {
             <main className = "tutorials-examples-mains">
                 <header className = "tutorials-examples-headers">
                     <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
+                    <TutorialExampleDescription>{content.description || ""}</TutorialExampleDescription>
                 </header>
                 <article className = "tutorials-examples-articles" id = {articleId}>
                     {articleContents}

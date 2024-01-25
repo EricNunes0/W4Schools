@@ -66,7 +66,7 @@ export default function TutorialSectionsExercise(content) {
                                 };
                             }
                         }
-                    >Enviar</TutorialExerciseSubmitButton>
+                    >Corrigir</TutorialExerciseSubmitButton>
                     <TutorialExerciseMessage id = {`tutorial-exercise-message-${idNumber}`} data-color = "white"></TutorialExerciseMessage>
                 </footer>
             </main>
