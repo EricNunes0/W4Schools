@@ -1,6 +1,7 @@
 import pages from "../../pages.json";
 import codes from "../../codes.json";
 import { TutorialExerciseInput } from "./TutorialExerciseInput";
+import { TutorialCode } from "./TutorialCode";
 
 export default class TutorialManagePages {
     getSections(language, topic, title) {
@@ -62,8 +63,14 @@ export default class TutorialManagePages {
                 case "code":
                     sectionLine.push(this.lineCode(part));
                     break;
+                case "comment":
+                    sectionLine.push(this.lineComment(part));
+                    break;
                 case "content":
                     sectionLine.push(this.lineContent(part));
+                    break;
+                case "empty":
+                    sectionLine.push(this.lineEmpty());
                     break;
                 case "input":
                     sectionLine.push(this.lineInput(part));
@@ -110,7 +117,7 @@ export default class TutorialManagePages {
                     code.splice(contentIndex, 0, [content, "#ffffff"]);
                 };
                 for(const content of code) {
-                    paragraph.push(this.convertCodeToHTML(content));
+                    paragraph.push(this.lineCodeToHTML(content));
                 };
             };
             return (
@@ -118,6 +125,17 @@ export default class TutorialManagePages {
             );
         };
     };
+    /* Comentários */
+    lineComment(part) {
+        console.log(part)
+        const content = [part.code, "#6070a0", part.spacesBefore || 0, part.spacesAfter || 0];
+        let codeText = [];
+        codeText.push(this.lineCodeToHTML(content));
+        return (
+            <span className = "tutorial-sections-lines-parts">{codeText}</span>
+        );
+    };
+    /* Conteúdos */
     lineContent(part) {
         const content = [part.code, "#ffffff", 0, 0];
         let codeText = [];
@@ -125,6 +143,12 @@ export default class TutorialManagePages {
         return (
             <span className = "tutorial-sections-lines-parts">{codeText}</span>
         );
+    };
+    /* Linha vazia */
+    lineEmpty() {
+        return (
+            <br></br>
+        )
     };
     lineInput(part) {
         let codeText = [];
@@ -178,23 +202,13 @@ export default class TutorialManagePages {
             content[0] = `${content[0]}\xa0`;
         };
         return (
-            <code style = {{color: content[1], fontSize: 14}}>{content[0]}</code>
+            <TutorialCode className = "tutorial-codes" style = {{color: content[1]}}>{content[0]}</TutorialCode>
         );
     };
     /* Converter inputs em HTML */
     lineInputToHTML(part) {
         return (
             <TutorialExerciseInput type = {part.inputType} name = {part.name} className = "tutorial-sections-exercises-inputs" width = {part.width} maxLength = {part.maxLength} spacesbefore = {part.spacesBefore} spacesafter = {part.spacesAfter}></TutorialExerciseInput>
-        );
-    };
-
-
-    convertCodeToHTML(content) {
-        for(let i = 0; i <= content[2] - 1; i++) {
-            content[0] = `\xa0${content[0]}`
-        };
-        return (
-            <code style = {{color: content[1], fontSize: 14}}>{content[0]}</code>
         );
     };
 };

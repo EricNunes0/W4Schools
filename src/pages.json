@@ -7210,11 +7210,390 @@
             },
             {
                 "title": "HTML Comentários",
-                "link": "/html/comments"
+                "link": "/html/comments",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Os comentários não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag de comentário"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "Escreva os seus comentários aqui!",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os comentários não são exibidos pelo navegador, mas podem ajudar a documentar seu código-fonte HTML."
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Insira um ponto de exclamação (!) apenas na tag inicial, não na tag final!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicione comentários"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode adicionar comentários como forma de notificações e lembretes em seu código:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentários:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "Este é um comentário!",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "Lembrar de adicionar uma informação aqui!",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Esconda conteúdos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Comentários podem ser usados para esconder conteúdos de páginas HTML. Este recurso pode ser muito útil caso você precise esconder um conteúdo temporariamente:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "<p>Este é outro parágrafo.</p>",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo também.",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você também pode ocultar mais de uma linha. Tudo entre <!-- e --> ficará oculto na tela."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "<p>Ei, veja está imagem incrível:.</p>",
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "<img src=\"image.png\" alt=\"Imagem incrível\" width=\"200\" height=\"150\">",
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo também.",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML, uma de cada vez, para procurar erros."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Esconda conteúdos embutidos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os comentários podem ser usados para ocultar partes no meio do código HTML:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Este parágrafo é",
+                                            "contentIndex": 3,
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag open",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "legal",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comment tag close",
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": ".",
+                                            "contentIndex": -3,
+                                            "tabs": 0
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Use a tag de comentário HTML para fazer um comentário no texto \"Este é um comentário\":",
+                                "answers": ["<!--", "-->"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "40px",
+                                            "maxLength": 4,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "Este é um comentário",
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Cores",
-                "link": "/html/colors"
+                "link": "/html/colors",
+                "subtitles": [
+                    {
+                        "subtitle": "Cores",
+                        "link": "/html/colors/default"
+                    },
+                    {
+                        "subtitle": "RGB",
+                        "link": "/html/colors/rgb"
+                    },
+                    {
+                        "subtitle": "HEX",
+                        "link": "/html/colors/hex"
+                    },
+                    {
+                        "subtitle": "HSL",
+                        "link": "/html/colors/hsl"
+                    }
+                ]
             },
             {
                 "title": "HTML CSS",
