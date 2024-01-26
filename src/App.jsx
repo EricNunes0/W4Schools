@@ -96,6 +96,13 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
+				<Route exact path = "/html/comments" element = {(
+					<>
+					<Navigation></Navigation>
+					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Comentários"></TutorialMain>
+					<Footer></Footer>
+					</>
+				)}></Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>
