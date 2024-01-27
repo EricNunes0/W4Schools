@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SidebarMenuLink = styled.a`
+export const SidebarMenuLinkSub = styled.a`
     position: relative;
     width: 100%;
     height: 24px;

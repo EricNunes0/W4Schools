@@ -5,12 +5,13 @@ import SidebarMenuLateral from "./SidebarMenuLateral";
 import SidebarMenuTopics from "./SidebarMenuTopics";
 
 export default function SidebarMenu(prop) {
-    let language = prop.language;
-    let title = prop.title;
+    const language = prop.language;
+    const title = prop.title;
+    const subtitle = prop.subtitle || null;
     let menuLanguage = menu[language];
     let topics = [];
     Object.keys(menuLanguage).forEach((topicName) => {
-        topics.push(SidebarMenuTopics(language, topicName, title));
+        topics.push(SidebarMenuTopics(language, topicName, title, subtitle));
     });
 
     return (

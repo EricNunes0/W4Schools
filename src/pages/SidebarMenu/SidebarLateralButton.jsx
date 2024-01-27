@@ -5,7 +5,7 @@ export const SidebarLateralButton = styled.button`
     height: 50px;
     border-radius: 10px;
     background-color: transparent;
-    background-image: url("../svgs/menu.svg");
+    background-image: url("/svgs/menu.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;

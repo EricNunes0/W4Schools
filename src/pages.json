@@ -7578,314 +7578,1084 @@
                 "link": "/html/colors",
                 "subtitles": [
                     {
-                        "subtitle": "Cores",
-                        "link": "/html/colors/default"
+                        "subtitle": "Introdução",
+                        "link": "/html/colors",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "As cores são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Nomes de cores"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No HTML, uma cor pode ser especificada usando um nome de cor:"
+                                },
+                                {
+                                    "tag": "color-blocks",
+                                    "content": {
+                                        "blocks": [
+                                            {
+                                                "text": "Red",
+                                                "backgroundColor": "red",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Orange",
+                                                "backgroundColor": "orange",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Yellow",
+                                                "backgroundColor": "yellow",
+                                                "color": "black"
+                                            },
+                                            {
+                                                "text": "Green",
+                                                "backgroundColor": "green",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Blue",
+                                                "backgroundColor": "blue",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Purple",
+                                                "backgroundColor": "purple",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "White",
+                                                "backgroundColor": "white",
+                                                "color": "black"
+                                            },
+                                            {
+                                                "text": "Black",
+                                                "backgroundColor": "black",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "type": "multiple",
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "HTML suporta"
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "140 nomes de cores.",
+                                                        "link": "https://www.google.com/search?q=case+sensitive",
+                                                        "target": "_blank"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Cor de fundo"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você pode definir a cor de fundo dos elementos HTML:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Hello World",
+                                        "style": {
+                                            "backgroundColor": "blue",
+                                            "color": "white",
+                                            "fontSize": "42px",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "br"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                                        "style": {
+                                            "backgroundColor": "red",
+                                            "color": "white",
+                                            "fontSize": "14px",
+                                            "padding": "15px",
+                                            "textAlign": "left",
+                                            "width": "calc(100% - calc(15px * 2))"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de cor de fundo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Hello World",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:blue;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Lorem Ipsum...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:red;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Cor de textos"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você também pode definir a cor dos textos:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Hello World",
+                                        "style": {
+                                            "color": "red",
+                                            "fontSize": "42px",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+                                        "style": {
+                                            "color": "blue",
+                                            "fontSize": "14px",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                                        "style": {
+                                            "color": "green",
+                                            "fontSize": "14px",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de cor de textos:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Hello World",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "color:red;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Lorem Ipsum...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "color:blue;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Ut wisi enim...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "color:green;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Cor de bordas"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você pode definir a cor das bordas das tags:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Hello World",
+                                        "style": {
+                                            "border": "2px solid red",
+                                            "color": "#f0f0f0",
+                                            "fontSize": "42px",
+                                            "margin": "10px 0",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Hello World",
+                                        "style": {
+                                            "border": "2px solid orange",
+                                            "color": "#f0f0f0",
+                                            "fontSize": "42px",
+                                            "margin": "10px 0",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Hello World",
+                                        "style": {
+                                            "border": "2px solid yellow",
+                                            "color": "#f0f0f0",
+                                            "fontSize": "42px",
+                                            "margin": "10px 0",
+                                            "textAlign": "left",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de cor de fundo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Hello World",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "border:2px solid red;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Hello World",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "border:2px solid orange;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Hello World",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "border:2px solid yellow;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Valores das cores"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em HTML, as cores também podem ser especificadas usando RGB, HEX, HSL, RGBA e HSLA."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Os três elementos <div> a seguir têm sua cor de fundo definida com valores RGB, HEX e HSL:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "rgb(48, 96, 255)",
+                                        "style": {
+                                            "backgroundColor": "rgb(48, 96, 255)",
+                                            "color": "white",
+                                            "fontSize": "24px",
+                                            "margin": "10px 0",
+                                            "padding": "15px 0",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "#3060ff",
+                                        "style": {
+                                            "backgroundColor": "#3060ff",
+                                            "color": "white",
+                                            "fontSize": "24px",
+                                            "margin": "10px 0",
+                                            "padding": "15px 0",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "hsl(226, 100%, 59%)",
+                                        "style": {
+                                            "backgroundColor": "hsl(226, 100%, 59%)",
+                                            "color": "white",
+                                            "fontSize": "24px",
+                                            "margin": "10px 0",
+                                            "padding": "15px 0",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Os dois elementos <h3> a seguir têm sua cor de fundo definida com valores RGBA e HSLA, que adicionam um canal Alpha à cor (aqui temos 50% de transparência):"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "rgba(48, 96, 255, 0.5)",
+                                        "style": {
+                                            "backgroundColor": "rgba(48, 96, 255, 0.5)",
+                                            "color": "white",
+                                            "fontSize": "24px",
+                                            "margin": "10px 0",
+                                            "padding": "15px 0",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "hsla(226, 100%, 59%, 0.5)",
+                                        "style": {
+                                            "backgroundColor": "hsla(226, 100%, 59%, 0.5)",
+                                            "color": "white",
+                                            "fontSize": "24px",
+                                            "margin": "10px 0",
+                                            "padding": "15px 0",
+                                            "textAlign": "center",
+                                            "width": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de cor de fundo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h3 tag",
+                                                    "content": "...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:rgb(48, 96, 255);",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h3 tag",
+                                                    "content": "...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:#3060ff;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h3 tag",
+                                                    "content": "...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:hsl(226, 100%, 59%);",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h3 tag",
+                                                    "content": "...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:rgba(48, 96, 255, 0.5);",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h3 tag",
+                                                    "content": "...",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-color:hsla(226, 100%, 59%, 0.5);",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Altere a cor do texto abaixo para azul:",
+                                        "answers": ["style", "color:blue;"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag open start"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "50px",
+                                                    "maxLength": 5,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "106px",
+                                                    "maxLength": 11,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "Este é um parágrafo."
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     },
                     {
                         "subtitle": "RGB",
-                        "link": "/html/colors/rgb"
+                        "link": "/html/colors/rgb",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Um valor de cor RGB representa as cores:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "content",
+                                                "text": "Vermelho (red);"
+                                            },
+                                            {
+                                                "type": "content",
+                                                "text": "Verde (green);"
+                                            },
+                                            {
+                                                "type": "content",
+                                                "text": "Azul (blue);"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Um valor de cor RGBA é uma extensão de RGB com um canal \"Alpha\" para definir a opacidade."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "subtitle": "HEX",
-                        "link": "/html/colors/hex"
+                        "link": "/html/colors/hex",
+                        "sections": []
                     },
                     {
                         "subtitle": "HSL",
-                        "link": "/html/colors/hsl"
+                        "link": "/html/colors/hsl",
+                        "sections": []
                     }
                 ]
             },
             {
                 "title": "HTML CSS",
-                "link": "/html/css"
+                "link": "/html/css",
+                "sections": []
             },
             {
                 "title": "HTML Links",
-                "link": "/html/links"
+                "link": "/html/links",
+                "sections": []
             },
             {
                 "title": "HTML Imagens",
-                "link": "/html/images"
+                "link": "/html/images",
+                "sections": []
             },
             {
                 "title": "HTML Favicon",
-                "link": "/html/favicon"
+                "link": "/html/favicon",
+                "sections": []
             },
             {
                 "title": "HTML Título da página",
-                "link": "/html/page_title"
+                "link": "/html/page_title",
+                "sections": []
             },
             {
                 "title": "HTML Tabelas",
-                "link": "/html/tables"
+                "link": "/html/tables",
+                "sections": []
             },
             {
                 "title": "HTML Listas",
-                "link": "/html/lists"
+                "link": "/html/lists",
+                "sections": []
             },
             {
                 "title": "HTML Block & Inline",
-                "link": "/html/blocks"
+                "link": "/html/blocks",
+                "sections": []
             },
             {
                 "title": "HTML Div",
-                "link": "/html/div"
+                "link": "/html/div",
+                "sections": []
             },
             {
                 "title": "HTML Classes",
-                "link": "/html/classes"
+                "link": "/html/classes",
+                "sections": []
             },
             {
                 "title": "HTML Id",
-                "link": "/html/id"
+                "link": "/html/id",
+                "sections": []
             },
             {
                 "title": "HTML Iframes",
-                "link": "/html/iframe"
+                "link": "/html/iframe",
+                "sections": []
             },
             {
                 "title": "HTML JavaScript",
-                "link": "/html/scripts"
+                "link": "/html/scripts",
+                "sections": []
             },
             {
                 "title": "HTML File Paths",
-                "link": "/html/filepaths"
+                "link": "/html/filepaths",
+                "sections": []
             },
             {
                 "title": "HTML Head",
-                "link": "/html/head"
+                "link": "/html/head",
+                "sections": []
             },
             {
                 "title": "HTML Layout",
-                "link": "/html/layout"
+                "link": "/html/layout",
+                "sections": []
             },
             {
                 "title": "HTML Responsível",
-                "link": "/html/responsive"
+                "link": "/html/responsive",
+                "sections": []
             },
             {
                 "title": "HTML Computercode",
-                "link": "/html/computercode"
+                "link": "/html/computercode",
+                "sections": []
             },
             {
                 "title": "HTML Semântica",
-                "link": "/html/semantics"
+                "link": "/html/semantics",
+                "sections": []
             },
             {
                 "title": "HTML Guia de estilos",
-                "link": "/html/syntax"
+                "link": "/html/syntax",
+                "sections": []
             },
             {
                 "title": "HTML Entidades",
-                "link": "/html/entities"
+                "link": "/html/entities",
+                "sections": []
             },
             {
                 "title": "HTML Símbolos",
-                "link": "/html/symbols"
+                "link": "/html/symbols",
+                "sections": []
             },
             {
                 "title": "HTML Emojis",
-                "link": "/html/emojis"
+                "link": "/html/emojis",
+                "sections": []
             },
             {
                 "title": "HTML Charsets",
-                "link": "/html/charsets"
+                "link": "/html/charsets",
+                "sections": []
             },
             {
                 "title": "HTML URL encode",
-                "link": "/html/urlencode"
+                "link": "/html/urlencode",
+                "sections": []
             },
             {
                 "title": "HTML vs. XHTML",
-                "link": "/html/xhtml"
+                "link": "/html/xhtml",
+                "sections": []
             }
         ],
         "HTML Formulários": [
             {
                 "title": "HTML Formulários",
-                "link": "/html/forms"
+                "link": "/html/forms",
+                "sections": []
             },
             {
                 "title": "HTML Atributos de formulários",
-                "link": "/html/forms_attributes"
+                "link": "/html/forms_attributes",
+                "sections": []
             },
             {
                 "title": "HTML Elementos de formulários",
-                "link": "/html/forms_elements"
+                "link": "/html/forms_elements",
+                "sections": []
             },
             {
                 "title": "HTML Tipos de Input",
-                "link": "/html/forms_inputs_types"
+                "link": "/html/forms_inputs_types",
+                "sections": []
             },
             {
                 "title": "HTML Atributos de Inputs",
-                "link": "/html/forms_attributes"
+                "link": "/html/forms_attributes",
+                "sections": []
             },
             {
                 "title": "HTML Atributos de Inputs",
-                "link": "/html/input_form-attributes"
+                "link": "/html/input_form-attributes",
+                "sections": []
             }
         ],
         "HTML Gráficos": [
             {
                 "title": "HTML Canvas",
-                "link": "/html/canvas"
+                "link": "/html/canvas",
+                "sections": []
             },
             {
                 "title": "HTML SVG",
-                "link": "/html/svg"
+                "link": "/html/svg",
+                "sections": []
             }
         ],
         "HTML Mídia": [
             {
                 "title": "HTML Mídia",
-                "link": "/html/media"
+                "link": "/html/media",
+                "sections": []
             },
             {
                 "title": "HTML Vídeo",
-                "link": "/html/video"
+                "link": "/html/video",
+                "sections": []
             },
             {
                 "title": "HTML Áudio",
-                "link": "/html/audio"
+                "link": "/html/audio",
+                "sections": []
             },
             {
                 "title": "HTML Plug-ins",
-                "link": "/html/object"
+                "link": "/html/object",
+                "sections": []
             },
             {
                 "title": "HTML YouTube",
-                "link": "/html/youtube"
+                "link": "/html/youtube",
+                "sections": []
             }
         ],
         "HTML APIs": [
             {
                 "title": "HTML Geolocalização",
-                "link": "/html/geolocalization"
+                "link": "/html/geolocalization",
+                "sections": []
             },
             {
                 "title": "HTML Drag/Drop",
-                "link": "/html/drag_drop"
+                "link": "/html/drag_drop",
+                "sections": []
             },
             {
                 "title": "HTML Armazenamento web",
-                "link": "/html/web_storage"
+                "link": "/html/web_storage",
+                "sections": []
             },
             {
                 "title": "HTML Web Workers",
-                "link": "/html/web_workers"
+                "link": "/html/web_workers",
+                "sections": []
             },
             {
                 "title": "HTML SSE",
-                "link": "/html/sse"
+                "link": "/html/sse",
+                "sections": []
             }
         ],
         "HTML Exemplos": [
             {
                 "title": "HTML Exemplos",
-                "link": "/html/examples"
+                "link": "/html/examples",
+                "sections": []
             },
             {
                 "title": "HTML Editor",
-                "link": "/html/editor"
+                "link": "/html/editor",
+                "sections": []
             },
             {
                 "title": "HTML Quiz",
-                "link": "/html/quiz"
+                "link": "/html/quiz",
+                "sections": []
             },
             {
                 "title": "HTML Exercícios",
-                "link": "/html/exercises"
+                "link": "/html/exercises",
+                "sections": []
             },
             {
                 "title": "HTML Website",
-                "link": "/html/website"
+                "link": "/html/website",
+                "sections": []
             },
             {
                 "title": "HTML Bootcamp",
-                "link": "/html/bootcamp"
+                "link": "/html/bootcamp",
+                "sections": []
             },
             {
                 "title": "HTML Certificado",
-                "link": "/html/exam"
+                "link": "/html/exam",
+                "sections": []
             },
             {
                 "title": "HTML Resumo",
-                "link": "/html/summary"
+                "link": "/html/summary",
+                "sections": []
             },
             {
                 "title": "HTML Acessibilidade",
-                "link": "/html/accessibility"
+                "link": "/html/accessibility",
+                "sections": []
             }
         ],
         "HTML Referências": [
             {
                 "title": "HTML Lista de tags",
-                "link": "/html/tags/default"
+                "link": "/html/tags/default",
+                "sections": []
             },
             {
                 "title": "HTML Atributos",
-                "link": "/html/tags/attributes"
+                "link": "/html/tags/attributes",
+                "sections": []
             },
             {
                 "title": "HTML Atributos globais",
-                "link": "/html/tags/global_attributes"
+                "link": "/html/tags/global_attributes",
+                "sections": []
             },
             {
                 "title": "HTML Navegadores",
-                "link": "/html/tags/browser_support"
+                "link": "/html/tags/browser_support",
+                "sections": []
             },
             {
                 "title": "HTML Eventos",
-                "link": "/html/tags/events"
+                "link": "/html/tags/events",
+                "sections": []
             },
             {
                 "title": "HTML Cores",
-                "link": "/html/tags/colors"
+                "link": "/html/tags/colors",
+                "sections": []
             },
             {
                 "title": "HTML Canvas",
-                "link": "/html/tags/canvas"
+                "link": "/html/tags/canvas",
+                "sections": []
             },
             {
                 "title": "HTML Áudio/Vídeo",
-                "link": "/html/tags/audios_videos"
+                "link": "/html/tags/audios_videos",
+                "sections": []
             },
             {
                 "title": "HTML Doctypes",
-                "link": "/html/tags/doctypes"
+                "link": "/html/tags/doctypes",
+                "sections": []
             },
             {
                 "title": "HTML Conjuntos de caracteres",
-                "link": "/html/tags/character_sets"
+                "link": "/html/tags/character_sets",
+                "sections": []
             },
             {
                 "title": "HTML URL encode",
-                "link": "/html/tags/urlencode"
+                "link": "/html/tags/urlencode",
+                "sections": []
             },
             {
                 "title": "HTML Linguagens",
-                "link": "/html/tags/lang_codes"
+                "link": "/html/tags/lang_codes",
+                "sections": []
             },
             {
                 "title": "HTML Country Codes",
-                "link": "/html/tags/country_codes"
+                "link": "/html/tags/country_codes",
+                "sections": []
             },
             {
                 "title": "HTTP Mensagens",
-                "link": "/html/tags/http_messages"
+                "link": "/html/tags/http_messages",
+                "sections": []
             },
             {
                 "title": "HTTP Métodos",
-                "link": "/html/tags/http_methods"
+                "link": "/html/tags/http_methods",
+                "sections": []
             },
             {
                 "title": "Conversor de PX para EM",
-                "link": "/html/tags/px_em_converter"
+                "link": "/html/tags/px_em_converter",
+                "sections": []
             },
             {
                 "title": "Atalhos de teclado",
-                "link": "/html/tags/keyboard_shortcuts"
+                "link": "/html/tags/keyboard_shortcuts",
+                "sections": []
             }
         ]
     }

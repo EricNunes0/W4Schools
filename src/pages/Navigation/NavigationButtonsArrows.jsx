@@ -5,7 +5,7 @@ export const NavigationButtonsArrows = styled.i`
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url("../svgs/nav-arrow.svg");
+    background-image: url("/svgs/nav-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;

@@ -4,7 +4,7 @@ export const NavigationSearchButton = styled.button`
     position: absolute;
     right: 0px;
     background-color: transparent;
-    background-image: url("../svgs/search.svg");
+    background-image: url("/svgs/search.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% 50%;

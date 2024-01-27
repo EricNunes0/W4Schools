@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterHeaderLogo = styled.a`
     width: 50px;
     height: 50px;
-    background-image: url("images/logo.png");
+    background-image: url("/images/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;

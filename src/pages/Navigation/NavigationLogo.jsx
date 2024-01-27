@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationLogo = styled.a`
-    background-image: url("../images/logo.png");
+    background-image: url("/images/logo.png");
     background-size: 100% 100%;
     color: #ffffff;
     cursor: pointer;

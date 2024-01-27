@@ -5,7 +5,8 @@ export default function TutorialSectionMain(prop) {
     const language = prop.language;
     const topic = prop.topic;
     const title = prop.title;
-    const sections =  new TutorialManagePages().getSections(language, topic, title);
+    const subtitle = prop.subtitle || null;
+    const sections =  new TutorialManagePages().getSections(language, topic, title, subtitle);
     let tutorialSections = [];
     if(sections) {
         for(let i = 0; i <= sections.length - 1; i++) {

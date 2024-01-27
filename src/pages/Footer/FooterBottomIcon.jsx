@@ -11,16 +11,16 @@ export const FooterBottomIcon = styled.a`
     transition: all 0.3s ease;
 
     &[media="facebook"] {
-        background-image: url("svgs/facebook.svg");
+        background-image: url("/svgs/facebook.svg");
     }
     &[media="discord"] {
-        background-image: url("svgs/discord.svg");
+        background-image: url("/svgs/discord.svg");
     }
     &[media="linkedin"] {
-        background-image: url("svgs/linkedin.svg");
+        background-image: url("/svgs/linkedin.svg");
     }
     &[media="instagram"] {
-        background-image: url("svgs/instagram.svg");
+        background-image: url("/svgs/instagram.svg");
     }
 
     &:hover {

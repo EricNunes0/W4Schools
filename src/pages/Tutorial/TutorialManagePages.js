@@ -4,12 +4,20 @@ import { TutorialExerciseInput } from "./TutorialExerciseInput";
 import { TutorialCode } from "./TutorialCode";
 
 export default class TutorialManagePages {
-    getSections(language, topic, title) {
+    getSections(language, topic, title, subtitle) {
         let sections = null;
         if(pages[language][topic]) {
             for(const page of pages[language][topic]) {
                 if(page.title === title) {
-                    sections = page.sections;
+                    if(page.subtitles && subtitle) {
+                        for(const sub of page.subtitles) {
+                            if(sub.subtitle === subtitle) {
+                                sections = sub.sections;
+                            };
+                        }
+                    } else if(page.sections) {
+                        sections = page.sections;
+                    };
                 };
             };
         };
@@ -33,22 +41,52 @@ export default class TutorialManagePages {
         };
         return link;
     }
-    getPreviousLink(language, topic, title) {
+    getPreviousLink(language, topic, title, subtitle) {
         let link = null;
         let datas = pages[language][topic]
         for(let i = 0; i <= datas.length - 1; i++){
             if(datas[i].title === title) {
-                link = datas[i - 1] ? datas[i - 1].link : "/";
+                if(datas[i].subtitles) {
+                    let subtitles = datas[i].subtitles;
+                    for(let j = 0; j <= subtitles.length - 1; j++) {
+                        if(subtitles[j].subtitle) {
+                            if(subtitles[j].subtitle === subtitle) {
+                                if(subtitles[j - 1]) {
+                                    link = subtitles[j - 1].link;
+                                } else {
+                                    link = datas[i - 1] ? datas[i - 1].link : "/";
+                                };
+                            };
+                        };
+                    };
+                } else {
+                    link = datas[i - 1] ? datas[i - 1].link : "/";
+                };
             };
         };
         return link;
     }
-    getNextLink(language, topic, title) {
+    getNextLink(language, topic, title, subtitle) {
         let link = null;
         let datas = pages[language][topic]
         for(let i = 0; i <= datas.length - 1; i++){
             if(datas[i].title === title) {
-                link = datas[i + 1] ? datas[i + 1].link : "/";
+                if(datas[i].subtitles) {
+                    let subtitles = datas[i].subtitles;
+                    for(let j = 0; j <= subtitles.length - 1; j++) {
+                        if(subtitles[j].subtitle) {
+                            if(subtitles[j].subtitle === subtitle) {
+                                if(subtitles[j + 1]) {
+                                    link = subtitles[j + 1].link;
+                                } else {
+                                    link = datas[i + 1] ? datas[i + 1].link : "/";
+                                };
+                            };
+                        };
+                    };
+                } else {
+                    link = datas[i + 1] ? datas[i + 1].link : "/";
+                };
             };
         };
         return link;
@@ -127,7 +165,6 @@ export default class TutorialManagePages {
     };
     /* Comentários */
     lineComment(part) {
-        console.log(part)
         const content = [part.code, "#6070a0", part.spacesBefore || 0, part.spacesAfter || 0];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));

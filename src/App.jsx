@@ -1,10 +1,11 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navigation from './pages/Navigation/Navigation';
 import Home from "./pages/Home/Home";
 import Footer from './pages/Footer/Footer';
 import TutorialMain from './pages/Tutorial/TutorialMain';
 import NotFound from './pages/NotFound/NotFound';
+import Page from './Page';
 
 function App() {
   return (
@@ -103,13 +104,27 @@ function App() {
 					<Footer></Footer>
 					</>
 				)}></Route>
-				<Route exact path = "/html/colors" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
+				<Route path = "/html/colors" >
+					{/* Introdução */}
+					<Route path = "" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "Introdução"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* RGB */}
+					<Route path = "rgb" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "RGB"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* HEX */}
+					<Route path = "hex" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HEX"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* RGB */}
+					<Route path = "hsl" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HSL"></TutorialMain>)}></Page>
+					)}></Route>
+					<Route path = "*" element = {(
+						<Navigate to = ""></Navigate>
+					)}></Route>
+				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>

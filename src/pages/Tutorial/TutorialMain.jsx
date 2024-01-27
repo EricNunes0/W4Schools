@@ -14,15 +14,16 @@ export default function TutorialMain(prop) {
     const language = prop.language;
     const topic = prop.topic;
     const title = prop.title;
+    const subtitle = prop.subtitle || null;
     pageTitle(title);
     
     return (
         <div className = "tutorials">
-            <Sidebar language = {language} title = {title}></Sidebar>
+            <Sidebar language = {language} title = {title} subtitle = {subtitle}></Sidebar>
             <main className = "tutorials-mains">
-                <TutorialHeader language = {language} topic = {topic} title = {title}></TutorialHeader>
-                <TutorialSectionMain language = {language} topic = {topic} title = {title}></TutorialSectionMain>
-                <TutorialFooter language = {language} topic = {topic} title = {title}></TutorialFooter>
+                <TutorialHeader language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialHeader>
+                <TutorialSectionMain language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialSectionMain>
+                <TutorialFooter language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialFooter>
             </main>
         </div>
     );

@@ -32,7 +32,7 @@ export const TutorialKickstartsMedals = styled.a`
         display: flex;
         width: 70px;
         height: 70px;
-        background-image: url(${(prop) => `"../svgs/languages/${prop.language}.svg"`});
+        background-image: url(${(prop) => `"/svgs/languages/${prop.language}.svg"`});
         background-position: center;
         background-repeat: no-repeat;
         background-size: 110% 110%;

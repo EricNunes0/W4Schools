@@ -11,16 +11,17 @@ import { TutorialSectionsSup } from "./TutorialSectionsSup";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
 import { TutorialSectionsList } from "./TutorialSectionsList";
+import { TutorialSectionsNote } from "./TutorialSectionsNote";
+import { TutorialSectionsWarning } from "./TutorialSectionsWarning";
 import TutorialManagePages from "./TutorialManagePages";
 import TutorialSectionsExample from "./TutorialSectionsExample";
 import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 import TutorialSectionTableRow from "./TutorialSectionTableRow";
-import { TutorialSectionsNote } from "./TutorialSectionsNote";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialListItemMultiple from "./TutorialListItemMultiple";
 import TutorialSectionsRow from "./TutorialSectionsRow";
-import { TutorialSectionsWarning } from "./TutorialSectionsWarning";
+import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -46,6 +47,11 @@ export default function TutorialSectionTags(tag, content) {
                     </div>
                 );
             };
+        case "br":
+            return (<br></br>);
+        case "div":
+            const divStyle = content.style;
+            return (<div style = {divStyle}>{content.text}</div>);
         case "h1":
             const h1 = content.text ? (<TutorialSectionsH1 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null}>{content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{content}</TutorialSectionsH1>);
             return h1;
@@ -104,6 +110,8 @@ export default function TutorialSectionTags(tag, content) {
                     <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>
                 </table>
             )
+        case "color-blocks":
+            return (<TutorialSectionsColorBlocks content = {content}></TutorialSectionsColorBlocks>);
         case "example":
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
         case "exercise":
