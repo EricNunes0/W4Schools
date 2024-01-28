@@ -22,6 +22,7 @@ import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialListItemMultiple from "./TutorialListItemMultiple";
 import TutorialSectionsRow from "./TutorialSectionsRow";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
+import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -112,6 +113,8 @@ export default function TutorialSectionTags(tag, content) {
             )
         case "color-blocks":
             return (<TutorialSectionsColorBlocks content = {content}></TutorialSectionsColorBlocks>);
+        case "color-result":
+            return (<TutorialSectionsColorResults content = {content}></TutorialSectionsColorResults>);
         case "example":
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
         case "exercise":

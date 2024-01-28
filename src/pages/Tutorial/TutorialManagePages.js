@@ -113,6 +113,9 @@ export default class TutorialManagePages {
                 case "input":
                     sectionLine.push(this.lineInput(part));
                     break;
+                case "value":
+                    sectionLine.push(this.lineValue(part));
+                    break;
             };
         };
         return (
@@ -127,6 +130,8 @@ export default class TutorialManagePages {
         const contentIndex = part.contentIndex || null;
         const tabs = part.tabs || 0;
         const attributes = part.attributes || [];
+        const spacesBefore = part.spacesBefore || 0;
+        const spacesAfter = part.spacesAfter || 0;
         
         let codesGot = this.lineCodesFromJSON(text, content);
         if(attributes.length !== 0) {
@@ -150,6 +155,13 @@ export default class TutorialManagePages {
         let codes = JSON.parse(JSON.stringify(codesGot));
         if(codes) {
             let paragraph = [];
+            if(spacesBefore) {
+                codes[0][0][2] = spacesBefore;
+            };
+            if(spacesAfter) {
+                codes[0][0][3] = spacesAfter;
+            };
+
             for(let code of codes) {
                 if(content && contentIndex) {
                     code.splice(contentIndex, 0, [content, "#ffffff"]);
@@ -190,6 +202,15 @@ export default class TutorialManagePages {
     lineInput(part) {
         let codeText = [];
         codeText.push(this.lineInputToHTML(part));
+        return (
+            <span className = "tutorial-sections-lines-parts">{codeText}</span>
+        );
+    };
+    /* Valores de atributos */
+    lineValue(part) {
+        const content = [part.code, "#f5f565", part.spacesBefore || 0, part.spacesAfter || 0];
+        let codeText = [];
+        codeText.push(this.lineCodeToHTML(content));
         return (
             <span className = "tutorial-sections-lines-parts">{codeText}</span>
         );
