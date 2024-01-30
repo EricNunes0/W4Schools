@@ -11380,7 +11380,7 @@
                                             },
                                             {
                                                 "type": "text",
-                                                "code": ": altera o tamanho do espaçamento fora da borda;"
+                                                "code": ": altera o tamanho do espaçamento fora da borda."
                                             }
                                         ]
                                     }
@@ -11613,6 +11613,951 @@
                     {
                         "subtitle": "Introdução",
                         "link": "/html/links",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Links são encontrados em quase todas as páginas da web. Os links permitem que os usuários cliquem de uma página para outra."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Links - Hyperlinks"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Links no HTML são chamados de \"hiperlinks\". Eles permitem que você clique em um link e ir para outro documento."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão."
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Um link não precisa ser texto. Um link pode ser uma imagem ou qualquer outro elemento HTML!"
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Links HTML - Sintaxe"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "a tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- define um hyperlink. Confira a sintaxe abaixo:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de hyperlink:",
+                                        "description": "Usando a tag <a> para criar um hyperlink:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Este é um link.",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "url",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "href"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- é o atributo mais importante de um hyperlink, visto que é responsável por indicar o destino do link."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "O texto do link é a parte que ficará visível ao leitor."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Clicar no texto do link enviará o leitor ao endereço URL especificado."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de hyperlink:",
+                                        "description": "Usando a tag <a> para criar um hyperlink para um site fictício:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Visite este site!",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Por padrão, os links aparecerão da seguinte forma em todos os navegadores:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Link não visitado: sublinhado e azul"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Link visitado: sublinhado e roxo"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Link ativo: sublinhado e vermelho"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Os links podem ser estilizados com CSS, para dar outra cara à eles!"
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Links HTML - Atributo target"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "target"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- especifica onde abrir o documento vinculado."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Este atributo pode ter os seguintes valores:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "_self yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": Padrão. Abre o documento na mesma janela/aba em que foi clicado;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "_blank yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": Abre o documento em uma nova janela ou guia;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "_parent yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": Abre o documento em um frame;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "_top yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": Abre o documento em todo o corpo da janela."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo target:",
+                                        "description": "Usando o atributo target=\"_blank\" para abrir o documento vinculado em uma nova janela ou guia do navegador:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Visite este site!",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "target",
+                                                                "value": "_blank",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Links HTML - URLs absolutos e relativos"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Ambos os exemplos acima usam uma URL absoluta (um endereço da web completo) no atributo href."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Um link local (um link para uma página dentro do mesmo site) é especificado com um URL relativo (sem a parte “https://www”):"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de URLs absolutos e relativos:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h2 tag",
+                                                    "content": "URLs absolutos",
+                                                    "contentIndex": -3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Exemplo",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Google",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.google.com",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h2 tag",
+                                                    "content": "URLs relativos",
+                                                    "contentIndex": -3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "HTML Imagens",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "html/images",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "CSS Tutorial",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/css/default",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Links HTML - Imagens como links"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Para usar uma imagem como link, basta colocar a tag"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "img tag"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "dentro de um link:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de imagem como link:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "exemplo.gif",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Imagem de Exemplo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "style",
+                                                                "value": "width:42px;height:42px;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Link para um endereço de e-mail"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "mailto: yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "é usado dentro do atributo"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "href"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Serve para criar um link que abre o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de e-mail com link:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Enviar e-mail!",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "mailto:nome@exemplo.com",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Botão como um link"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Para usar um botão HTML como link, você deve adicionar algum código JavaScript."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de botão como link:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "button tag",
+                                                    "content": "HTML Imagens",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "onclick",
+                                                                "value": "document.location='/html/images'",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Saiba mais sobre JavaScript em nosso"
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Tutorial de JavaScript",
+                                                        "link": "/javascript/default"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Títulos dos links"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "title"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- especifica informações extras sobre um elemento."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse passa sobre o elemento."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo title em um link:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Visite nosso tutorial de HTML!",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com/html/",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "title",
+                                                                "value": "Vá para a seção de HTML",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Mais sobre URLs absolutos e relativos"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de link:",
+                                        "description": "Usando um URL completo para vincular a uma página da web:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Tutorial de HTML",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "https://www.exemplo.com/html/",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de link:",
+                                        "description": "Link para uma página localizada na pasta html do site atual:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Tutorial de HTML",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/html/default",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de link:",
+                                        "description": "Link para uma página localizada na mesma pasta da página atual:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "content": "Tutorial de HTML",
+                                                    "contentIndex": -3,
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "default",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Resumo do capítulo"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "a tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um link;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "href"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define o endereço do link;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "target"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define onde abrir o documento vinculado;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "img tag"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": usado dentro de um link para usar uma imagem como link;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "mailto: yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": " - usado dentro do atributo href para criar um link que abre o programa de e-mail do usuário."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Altere a cor de fundo da página para preto:",
+                                        "answers": ["<a", ["href=\"default.html\"", "href='default.html'"], "</a>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "20px",
+                                                    "maxLength": 2,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "184px",
+                                                    "maxLength": 19,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "Conheça o nosso tutorial."
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<a>",
+                                                    "href": "/tags/a"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um hyperlink"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Cores",
+                        "link": "/html/links/colors",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Um link HTML é exibido em uma cor diferente dependendo se foi visitado, não foi visitado ou está ativo."
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Bookmarks",
+                        "link": "/html/links/bookmarks",
                         "sections": []
                     }
                 ]

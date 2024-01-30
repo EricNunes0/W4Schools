@@ -14,7 +14,7 @@ export default function SidebarMenuTopics(language, topicName, title, subtitle) 
         if(item.subtitles) {
             let subtitlesLinks = [];
             for(const sub of item.subtitles) {
-                subtitlesLinks.push(<SidebarMenuLinkSub href = {sub.link} data-active = {subtitle === sub.subtitle ? true : false}>{sub.subtitle}</SidebarMenuLinkSub>);
+                subtitlesLinks.push(<SidebarMenuLinkSub href = {sub.link} data-active = {title === itemTitle && subtitle === sub.subtitle ? true : false}>{sub.subtitle}</SidebarMenuLinkSub>);
             };
             let id = Math.floor(Math.random() * (1000 * 1000))
             let subtitleButtonId = `sidebar-subtitles-button-${id}`;

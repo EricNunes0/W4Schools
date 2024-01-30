@@ -13,13 +13,17 @@ export const TutorialSectionsNote = styled.div`
     position: relative;
     width: 90%;
     background-color: #ffffa0!important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
     font-size: 14px;
     border-radius: 10px;
     margin: 25px 0;
     padding: 2% 5%;
 
     &::before {
-        content: "Nota:";
+        content: "Nota: ";
         font-weight: bold;
     }
 
@@ -40,6 +44,10 @@ export const TutorialSectionsNote = styled.div`
         filter: invert(0.1);
         transform-origin: top;
         animation: ${noteAnimation} 1.5s ease-in-out infinite;
+    }
+
+    & > a {
+        color: #000
     }
 
     @media screen and (max-width: 480px) {

@@ -10,7 +10,6 @@ import { TutorialSectionsSub } from "./TutorialSectionsSub";
 import { TutorialSectionsSup } from "./TutorialSectionsSup";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
-import { TutorialSectionsNote } from "./TutorialSectionsNote";
 import { TutorialSectionsWarning } from "./TutorialSectionsWarning";
 import TutorialManagePages from "./TutorialManagePages";
 import TutorialSectionsExample from "./TutorialSectionsExample";
@@ -22,6 +21,7 @@ import TutorialSectionsRow from "./TutorialSectionsRow";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 import TutorialSectionsList from "./TutorialSectionsList";
+import TutorialSectionsNotes from "./TutorialSectionsNotes";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -108,7 +108,7 @@ export default function TutorialSectionTags(tag, content) {
         case "kickstart":
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
         case "note":
-            return (<TutorialSectionsNote><p>{content}</p></TutorialSectionsNote>);
+            return (<TutorialSectionsNotes content = {content}></TutorialSectionsNotes>);
         case "row":
             return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
         case "structure":

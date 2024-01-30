@@ -1,0 +1,42 @@
+.tutorial-sections-notes-parts {
+    color: #000000;
+    font-size: 14px;
+}
+
+.tutorial-sections-notes-subparts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+/* Parágrafos */
+.tutorial-sections-notes-paragraphs {
+    color: #000000;
+    font-size: 14px;
+    /*white-space: nowrap;*/
+}
+.tutorial-sections-notes-paragraphs[data-bold="true"] {
+    font-weight: bold;
+}
+
+/* Links */
+.tutorial-sections-notes-links {
+    color: #000000;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.tutorial-sections-notes-codes-divs {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+    .tutorial-sections-notes-paragraphs {
+        white-space: unset;
+    }
+}
