@@ -98,6 +98,33 @@ export default function TutorialSectionsColorResults(content) {
                                 colorResult.textContent = colorCode.code;
                                 output.innerHTML = colorCode[name] || "00";
                             };
+                            /* Função para alterar HSL */
+                            var HSLAddPercent = ["g", "b"];
+                            function changeHSL(name, value) {
+                                colorResult.dataset[name] = value;
+                                HSLAddPercent.includes(name) ? output.innerHTML = value + "%" : output.innerHTML = value;
+                                let dataR = parseInt(colorResult.dataset.r);
+                                let dataG = parseInt(colorResult.dataset.g);
+                                let dataB = parseInt(colorResult.dataset.b);
+                                let colorCode = `hsl(${dataR}, ${dataG}%, ${dataB}%)`;
+                                colorResult.style.backgroundColor = colorCode;
+                                colorResult.textContent = colorCode;
+                            };
+                            /* Função para alterar HSLA */
+                            function changeHSLA(name, value) {
+                                if(inputDivide) {
+                                    value = parseFloat(value / inputDivide).toFixed(1);
+                                };
+                                colorResult.dataset[name] = value;
+                                HSLAddPercent.includes(name) ? output.innerHTML = value + "%" : output.innerHTML = value;
+                                let dataR = parseInt(colorResult.dataset.r);
+                                let dataG = parseInt(colorResult.dataset.g);
+                                let dataB = parseInt(colorResult.dataset.b);
+                                let dataA = parseFloat(colorResult.dataset.a);
+                                let colorCode = `hsla(${dataR}, ${dataG}%, ${dataB}%, ${dataA})`;
+                                colorResult.style.backgroundColor = colorCode;
+                                colorResult.textContent = colorCode;
+                            };
                             
                             if(input) {
                                 if(content.type === "rgb" || content.type === "rgba") {
@@ -112,6 +139,12 @@ export default function TutorialSectionsColorResults(content) {
                                     } else {
                                         changeHEX(input.name, input.value);
                                     };
+                                } else if(content.type === "hsl" || content.type === "hsla") {
+                                    if(colorResult.dataset.a) {
+                                        changeHSLA(input.name, input.value);
+                                    } else {
+                                        changeHSL(input.name, input.value);
+                                    };
                                 };
                             };
                         }
@@ -123,7 +156,14 @@ export default function TutorialSectionsColorResults(content) {
                 outputValue = input.value;
             } else if(content.type === "hex" || content.type === "hexa") {
                 outputValue = parseInt(input.value).toString(16);
-            };
+            } else if(content.type === "hsl" || content.type === "hsla") {
+                let HSLAddPercent = ["g", "b"];
+                if(HSLAddPercent.includes(input.name)) {
+                    outputValue = input.value + "%";
+                } else {
+                    outputValue = input.value;
+                };
+            } ;
             colorResultInputs.push(
                 <div className = "tutorials-sections-color-result-input-divs" id = {colorResultinputDivId}>
                     <label id = {labelId} style = {{color: "#fff"}}>{input.label}</label>

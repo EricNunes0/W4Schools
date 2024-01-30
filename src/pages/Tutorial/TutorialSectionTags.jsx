@@ -10,7 +10,6 @@ import { TutorialSectionsSub } from "./TutorialSectionsSub";
 import { TutorialSectionsSup } from "./TutorialSectionsSup";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
 import { TutorialSectionsImg } from "./TutorialSectionsImg";
-import { TutorialSectionsList } from "./TutorialSectionsList";
 import { TutorialSectionsNote } from "./TutorialSectionsNote";
 import { TutorialSectionsWarning } from "./TutorialSectionsWarning";
 import TutorialManagePages from "./TutorialManagePages";
@@ -19,10 +18,10 @@ import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 import TutorialSectionTableRow from "./TutorialSectionTableRow";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
-import TutorialListItemMultiple from "./TutorialListItemMultiple";
 import TutorialSectionsRow from "./TutorialSectionsRow";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
+import TutorialSectionsList from "./TutorialSectionsList";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -86,20 +85,7 @@ export default function TutorialSectionTags(tag, content) {
         case "img":
             return (<TutorialSectionsImg alt = {content.alt} src = {content.src}></TutorialSectionsImg>);
         case "ol": case "ul":
-            let items = [];
-            for(let i = 0; i <= content.items.length - 1; i++) {
-                const item = content.items[i];
-                let liContent;
-                if(item.type === "multiple") {
-                    liContent = TutorialListItemMultiple(item.codes);
-                } else {
-                    liContent = item.text;
-                };
-                items.push(
-                    <li className = "tutorial-sections-lists-items">{liContent}</li>
-                );
-            };
-            return (<TutorialSectionsList data-list = {tag}>{items}</TutorialSectionsList>);
+            return (<TutorialSectionsList tag = {tag} content = {content}></TutorialSectionsList>);
         case "table":
             let tableRows = [];
             for(let i = 0; i <= content.rows.length - 1; i++) {

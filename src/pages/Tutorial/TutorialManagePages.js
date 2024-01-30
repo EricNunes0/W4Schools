@@ -186,7 +186,7 @@ export default class TutorialManagePages {
     };
     /* Conteúdos */
     lineContent(part) {
-        const content = [part.code, "#ffffff", 0, 0];
+        const content = [part.code, part.color || "#ffffff", part.spacesBefore || 0, 0];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));
         return (

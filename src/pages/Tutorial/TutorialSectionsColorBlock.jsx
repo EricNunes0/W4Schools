@@ -10,6 +10,7 @@ export const TutorialSectionsColorBlock = styled.div`
     align-items: center;
     width: 20%;
     height: 80px;
+    font-size: 14px;
     border: 2px outset #aaa;
     border-radius: 5px;
     margin: 10px 0;
@@ -48,9 +49,11 @@ export const TutorialSectionsColorBlock = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 45%;
+        font-size: 14px;
     }
 
     @media screen and (max-width: 480px) {
         width: 100%;
+        font-size: 14px;
     }
 `;

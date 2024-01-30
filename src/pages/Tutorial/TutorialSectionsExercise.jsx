@@ -33,9 +33,17 @@ export default function TutorialSectionsExercise(content) {
                         onClick = {
                             function() {
                                 function validateAnswers(answers, userAnswers) {
-                                    for(let i = 0; i <= answers.length; i++) {
-                                        if(answers[i] !== userAnswers[i]) {
-                                            return false;
+                                    console.log(answers)
+                                    for(let i = 0; i <= answers.length - 1; i++) {
+                                        console.log(answers[i], userAnswers[i])
+                                        if(typeof answers[i] === "object") {
+                                            if(!answers[i].includes(userAnswers[i])) {
+                                                    return false;
+                                            };
+                                        } else if(typeof answers[i] === "string") {
+                                            if(answers[i] !== userAnswers[i]) {
+                                                return false;
+                                            };
                                         };
                                     };
                                     return true;

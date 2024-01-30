@@ -125,6 +125,15 @@ function App() {
 						<Navigate to = ""></Navigate>
 					)}></Route>
 				</Route>
+				<Route exact path = "/html/css" element = {(
+					<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML CSS"></TutorialMain>)}></Page>
+				)}></Route>
+				<Route path = "/html/links" >
+					{/* Introdução */}
+					<Route path = "" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Introdução"></TutorialMain>)}></Page>
+					)}></Route>
+				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>
