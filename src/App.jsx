@@ -137,6 +137,28 @@ function App() {
 					<Route path = "colors" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Cores"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Bookmarks */}
+					<Route path = "bookmarks" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Marcadores"></TutorialMain>)}></Page>
+					)}></Route>
+				</Route>
+				<Route path = "/html/images" >
+					{/* Introdução */}
+					<Route path = "" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Introdução"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Mapeamento */}
+					<Route path = "map" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Mapeamento"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Imagens de fundo */}
+					<Route path = "background_images" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Imagens de fundo"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Elemento Picture */}
+					<Route path = "picture" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Elemento Picture"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
