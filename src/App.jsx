@@ -6,6 +6,7 @@ import Footer from './pages/Footer/Footer';
 import TutorialMain from './pages/Tutorial/TutorialMain';
 import NotFound from './pages/NotFound/NotFound';
 import Page from './Page';
+import ImageMapExample from './pages/Examples/ImageMapExample';
 
 function App() {
   return (
@@ -148,9 +149,20 @@ function App() {
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Introdução"></TutorialMain>)}></Page>
 					)}></Route>
 					{/* Mapeamento */}
-					<Route path = "map" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Mapeamento"></TutorialMain>)}></Page>
-					)}></Route>
+					<Route path = "map">
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Mapeamento"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "square" element = {(
+							<ImageMapExample shape = "square"></ImageMapExample>
+						)}></Route>
+						<Route path = "circle" element = {(
+							<ImageMapExample shape = "circle"></ImageMapExample>
+						)}></Route>
+						<Route path = "triangle" element = {(
+							<ImageMapExample shape = "triangle"></ImageMapExample>
+						)}></Route>
+					</Route>
 					{/* Imagens de fundo */}
 					<Route path = "background_images" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Imagens de fundo"></TutorialMain>)}></Page>

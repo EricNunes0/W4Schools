@@ -22,6 +22,7 @@ import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 import TutorialSectionsList from "./TutorialSectionsList";
 import TutorialSectionsNotes from "./TutorialSectionsNotes";
+import TutorialSectionsMaps from "./TutorialSectionsMaps";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -84,6 +85,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsButton data-type = {content.type}>{content.text}</TutorialSectionsButton>);
         case "img":
             return (<TutorialSectionsImg alt = {content.alt} src = {content.src}></TutorialSectionsImg>);
+        case "map":
+            return (<TutorialSectionsMaps content = {content}></TutorialSectionsMaps>)
         case "ol": case "ul":
             return (<TutorialSectionsList tag = {tag} content = {content}></TutorialSectionsList>);
         case "table":

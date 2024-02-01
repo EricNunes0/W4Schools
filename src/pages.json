@@ -15244,6 +15244,331 @@
                                     "tag": "p",
                                     "content": "Com mapeamentos de imagens HTML, você pode criar áreas clicáveis em uma imagem."
                                 }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Mapas de imagens"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "map tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- define um mapa de imagem."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Um mapa de imagem é uma imagem com áreas clicáveis."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "area tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- define uma área clicável."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Tente clicar no quadrado, círculo ou no triângulo da imagem abaixo:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "33,128,229,322",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "406,224,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "563,322,760,323,662,128",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1"
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de mapeamento de imagem:",
+                                        "description": "Aqui está o código-fonte HTML do mapeamento da imagem acima:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "map-example.png",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Formas",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "usemap",
+                                                                "value": "#image-map-1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "map tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "name",
+                                                                "value": "image-map-1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "rect",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "33,128,229,322",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Quadrado",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/square",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "circle",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "406,224,97",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Círculo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/circle",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "poly",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "563,322,760,323,662,128",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Triângulo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/triangle",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "map tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Como funciona?"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A ideia por trás de um mapa de imagem é que você seja capaz de realizar diferentes ações dependendo de onde clicar na imagem."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Para criar um mapa de imagem você precisa de uma imagem e um código HTML que descreva as áreas clicáveis."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Insira uma imagem"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "A imagem é inserida usando a tag <img>. A única diferença de outras imagens é que você deve adicionar o seguinte atributo:"
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "usemap green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- usado para criar um relacionamento entre a imagem e o mapeamento."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "o valor começa com uma hash tag # seguida pelo nome do mapa de imagem."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de inserção de imagem com usemap:",
+                                        "description": "Criando um relacionamento entre a imagem e o mapeamento:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "map-example.png",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Formas",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "usemap",
+                                                                "value": "#image-map-1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
                             ]
                         ]
                     },
