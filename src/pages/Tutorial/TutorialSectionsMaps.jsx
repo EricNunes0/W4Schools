@@ -1,9 +1,11 @@
+import TutorialSectionsMapsMarks from "./TutorialSectionsMapsMarks";
 import { TutorialSectionsMapsTouch } from "./TutorialSectionsMapsTouch";
 
 export default function TutorialSectionsMaps(prop) {
     const content = prop.content;
     let src = content.src || null;
     let usemap = content.usemap || null;
+    let marks = content.marks || null;
     let mapAreas = [];
     if(content.areas) {
         for(const area of content.areas) {
@@ -46,6 +48,7 @@ export default function TutorialSectionsMaps(prop) {
             <map className = "tutorial-sections-maps" id = {mapId} key = {mapId}  name = {usemap}>
                 {mapAreas}
             </map>
+            <TutorialSectionsMapsMarks marks = {marks}></TutorialSectionsMapsMarks>
             <TutorialSectionsMapsTouch className = "tutorial-sections-maps-touch-icons" id = {mapTouchIconId}></TutorialSectionsMapsTouch>
         </div>
     );

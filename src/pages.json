@@ -15297,7 +15297,7 @@
                                         "areas": [
                                             {
                                                 "shape": "rect",
-                                                "coords": "33,128,229,322",
+                                                "coords": "30,125,227,321",
                                                 "alt": "Quadrado",
                                                 "title": "Quadrado",
                                                 "href": "map/square",
@@ -15305,7 +15305,7 @@
                                             },
                                             {
                                                 "shape": "circle",
-                                                "coords": "406,224,97",
+                                                "coords": "404,223,97",
                                                 "alt": "Círculo",
                                                 "title": "Círculo",
                                                 "href": "map/circle",
@@ -15313,7 +15313,7 @@
                                             },
                                             {
                                                 "shape": "poly",
-                                                "coords": "563,322,760,323,662,128",
+                                                "coords": "561,321,758,321,659,125",
                                                 "alt": "Triângulo",
                                                 "title": "Triângulo",
                                                 "href": "map/triangle",
@@ -15393,7 +15393,7 @@
                                                             },
                                                             {
                                                                 "name": "coords",
-                                                                "value": "33,128,229,322",
+                                                                "value": "30,125,227,321",
                                                                 "valueIndex": 3
                                                             },
                                                             {
@@ -15425,7 +15425,7 @@
                                                             },
                                                             {
                                                                 "name": "coords",
-                                                                "value": "406,224,97",
+                                                                "value": "404,223,97",
                                                                 "valueIndex": 3
                                                             },
                                                             {
@@ -15457,7 +15457,7 @@
                                                             },
                                                             {
                                                                 "name": "coords",
-                                                                "value": "563,322,760,323,662,128",
+                                                                "value": "561,321,758,321,659,125",
                                                                 "valueIndex": 3
                                                             },
                                                             {
@@ -15564,6 +15564,1240 @@
                                                         ]
                                                     },
                                                     "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Crie um mapeamento"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "usemap green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- use para criar o mapeamento e relacione-o com a imagem."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "name green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- use para vincular o mapeamento com a imagem."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de tag <map>:",
+                                        "description": "Criando um mapeamento:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "map tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "name",
+                                                                "value": "image-map-1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O atributo \"name\" deve ter o mesmo valor que o atributo \"usemap\" da imagem."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "As áreas"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em seguida, adicione as áreas clicáveis."
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "area tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- usado para criar uma área clicável."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Formato"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você deve definir o formato da área clicável. Você pode escolher um destes valores:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "rect yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma região retangular;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "circle yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma região circular;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "poly yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma região poligonal;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "default yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define a região inteira;"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você também deve definir as coordenadas para poder colocar a área clicável na imagem."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h3",
+                                    "content": "Shape=\"rect\""
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "shape=\"rect\""
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- As coordenadas vêm em pares, uma para o eixo x e outra para o eixo y."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Portanto, as coordenadas \"30,125\" estão localizadas a 30 pixels da margem esquerda e a 125 pixels do topo:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "30,125,227,321",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "404,223,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "561,321,758,321,659,125",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1",
+                                        "marks": [
+                                            {
+                                                "x": 30,
+                                                "y": 125
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "As coordenadas 227,321 está localizada a 270 pixels da margem esquerda e 321 pixels da parte superior:"
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "30,125,227,321",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "404,223,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "561,321,758,321,659,125",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1",
+                                        "marks": [
+                                            {
+                                                "x": 227,
+                                                "y": 321
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Agora temos dados suficientes para criar uma área retangular clicável:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de <area>:",
+                                        "description": "Área clicável do quadrado:",
+                                        "lines": [
+                                            
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "rect",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "30,125,227,321",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Quadrado",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/square",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h3",
+                                    "content": "Shape=\"circle\""
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "shape=\"circle\""
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- adiciona uma área circular."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro localize as coordenadas do centro do círculo: 404,223"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "30,125,227,321",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "404,223,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "561,321,758,321,659,125",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1",
+                                        "marks": [
+                                            {
+                                                "x": 404,
+                                                "y": 223,
+                                                "color": "#00ff00"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em seguida, especifique o raio do círculo: 97px"
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "30,125,227,321",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "404,223,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "561,321,758,321,659,125",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1",
+                                        "marks": [
+                                            {
+                                                "x": 404,
+                                                "y": 223,
+                                                "radius": 97,
+                                                "color": "#00ff00"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Agora temos dados suficientes para criar uma área circular clicável:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de <area>:",
+                                        "description": "Área clicável do círculo:",
+                                        "lines": [
+                                            
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "circle",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "404,223,97",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Círculo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/circle",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h3",
+                                    "content": "Shape=\"poly\""
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "shape=\"poly\""
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- adiciona uma área poligonal."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Este contém vários pontos coordenados, o que cria uma forma formada por linhas retas (um polígono)."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Isso pode ser usado para criar qualquer forma, como um triângulo que faremos no exemplo abaixo"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Temos que encontrar as coordenadas xey para todas as arestas do triângulo:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "map",
+                                    "content": {
+                                        "areas": [
+                                            {
+                                                "shape": "rect",
+                                                "coords": "30,125,227,321",
+                                                "alt": "Quadrado",
+                                                "title": "Quadrado",
+                                                "href": "map/square",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "circle",
+                                                "coords": "404,223,97",
+                                                "alt": "Círculo",
+                                                "title": "Círculo",
+                                                "href": "map/circle",
+                                                "target": "_blank"
+                                            },
+                                            {
+                                                "shape": "poly",
+                                                "coords": "561,321,758,321,659,125",
+                                                "alt": "Triângulo",
+                                                "title": "Triângulo",
+                                                "href": "map/triangle",
+                                                "target": "_blank"
+                                            }
+                                        ],
+                                        "src": "/images/map-example.png",
+                                        "usemap": "image-map-1",
+                                        "marks": [
+                                            {
+                                                "x": 561,
+                                                "y": 321,
+                                                "color": "#ff0000"
+                                            },
+                                            {
+                                                "x": 758,
+                                                "y": 321,
+                                                "color": "#ff0000"
+                                            },
+                                            {
+                                                "x": 659,
+                                                "y": 125,
+                                                "color": "#ff0000"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Agora temos dados suficientes para criar uma área poligonal clicável:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de <area>:",
+                                        "description": "Área clicável do polígono:",
+                                        "lines": [
+                                            
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "poly",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "561,321,758,321,659,125",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Triângulo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/triangle",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Image Map e JavaScript"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "onclick green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- Adiciona um evento em uma área clicável para acionar uma função JavaScript."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de onclick em <area>:",
+                                        "description": "Área clicável acionando uma função JavaScript:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "map tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "name",
+                                                                "value": "image-map-1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "shape",
+                                                                "value": "rect",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "30,125,227,321",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Quadrado",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "map/square",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "map tag close",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "script tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "function",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "squareFunction",
+                                                    "color": "#65f040",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "alert cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"Você clicou no quadrado!\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "script tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Coordenadas"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Agora que vimos que é necessário encontrar as coordenadas na imagem para fazer o mapeamento, você deve estar se perguntando:"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "\"Mas como posso obter estas coordenadas para minhas imagens? 🤔\""
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Para isto, você poderá utilizar aplicações online para obtê-las. Como exemplo, estaremos usando o site:"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Image Map Generator",
+                                                        "link": "https://www.image-map.net/",
+                                                        "target": "_blank"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Passo 1: Selecionar uma imagem"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Selecione a imagem em seu dispositivo (ou de um website) que será mapeada."
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-map/step-1.png",
+                                        "alt": "Image Map - Passo 1"
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Passo 2: Selecionar o formato"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Selecione o tipo de forma que deseja mapear (rect, circle ou poly)."
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-map/step-2.png",
+                                        "alt": "Image Map - Passo 2"
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Passo 3: Marcações"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Clique nos locais onde deseja criar os pontos para criar a forma."
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-map/step-3.png",
+                                        "alt": "Image Map - Passo 3"
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Passo 4: Informações (opcional)"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Insira as informações restantes: link, title e target."
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-map/step-4.png",
+                                        "alt": "Image Map - Passo 4"
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Passo 5: Confira os resultados"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Por fim, basta clicar em \"Show me the code\" e o site lhe retornará o código HTML do mapeamento. Agora basta colar em seu código e seu mapeamento estará concluído!"
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-map/step-5.png",
+                                        "alt": "Image Map - Passo 5"
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Resumo do capítulo"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "map tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um mapeamento de uma imagem;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "area tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define as áreas clicáveis no mapeamento da imagem;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "usemap green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": atributo da imagem para apontar para um mapeamento de imagem."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira o valor necessário para criar o mapeamento de imagem para um quadrado:",
+                                        "answers": ["rect"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "shape green",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "href",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "map/square",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Insira o valor necessário para criar o mapeamento de imagem para um círculo:",
+                                        "answers": ["circle"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "shape green",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "60px",
+                                                    "maxLength": 6,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "href",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "map/circle",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 3:",
+                                        "description": "Insira o valor necessário para criar o mapeamento de imagem para um polígono:",
+                                        "answers": ["poly"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "area tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "shape green",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "href",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "map/triangle",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<img>",
+                                                    "href": "/tags/img"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<map>",
+                                                    "href": "/tags/map"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<area>",
+                                                    "href": "/tags/area"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma área clicável dentro do mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<picture>",
+                                                    "href": "/tags/picture"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um contêiner para vários recursos de imagem"
                                                 }
                                             ]
                                         ]
