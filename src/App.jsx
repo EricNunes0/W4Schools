@@ -164,7 +164,7 @@ function App() {
 						)}></Route>
 					</Route>
 					{/* Imagens de fundo */}
-					<Route path = "background_images" element = {(
+					<Route path = "background" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Imagens de fundo"></TutorialMain>)}></Page>
 					)}></Route>
 					{/* Elemento Picture */}

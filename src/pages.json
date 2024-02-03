@@ -16808,13 +16808,1291 @@
                     },
                     {
                         "subtitle": "Imagens de fundo",
-                        "link": "/html/images/background_images",
-                        "sections": []
+                        "link": "/html/images/background",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Uma imagem de fundo pode ser especificada para quase qualquer elemento HTML."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Imagem de fundo em um elemento HTML"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-image yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- adiciona uma imagem de fundo em um elemento HTML."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-image:",
+                                        "description": "Adicionando uma imagem de fundo em um parágrafo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "background-image: url('exemplo.png');",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você também pode especificar a imagem de fundo com um CSS interno ou externo:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-image:",
+                                        "description": "Adicionando uma imagem de fundo em todos os parágrafos:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Imagem de fundo de uma página"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se quiser que a página inteira tenha uma imagem de fundo, você deve especificar a imagem de fundo no elemento"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "body tag open"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-image:",
+                                        "description": "Adicionando uma imagem de fundo na página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Repetição da imagem de fundo"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Se a imagem de fundo for menor que o elemento, a imagem se repetirá, horizontalmente e verticalmente, até chegar ao final do elemento:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "style": {
+                                            "backgroundImage": "url('/images/examples/image-background/example-1.png')",
+                                            "backgroundSize": "25% 37.5%",
+                                            "border": "2px inset #000000",
+                                            "width": "calc(100% - calc(2px * 2))",
+                                            "height": "300px"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-image:",
+                                        "description": "Adicionando uma imagem de fundo na página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para evitar que a imagem de fundo se repita, use:"
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-repeat cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "com o valor"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "no-repeat"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-repeat:",
+                                        "description": "Evitando que a imagem de fundo se repita:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "no-repeat",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Imagem de fundo - Cover"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se quiser que a imagem de fundo cubra todo o elemento, você pode definir:"
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-size cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- atribua o valor"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "cover"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Além disso, para garantir que todo o elemento esteja sempre coberto, defina:"
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-attachment cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- atribua o valor"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "fixed"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Desta forma, a imagem de fundo cobrirá todo o elemento, sem esticar (a imagem manterá as proporções originais):"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-size:",
+                                        "description": "Fazendo a imagem preencher o elemento inteiro:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "no-repeat",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-attachment cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "fixed",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-size cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "cover",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Imagem de fundo esticada"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se quiser que a imagem de fundo se estique para caber em todo o elemento, você pode definir:"
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-size cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- atribua o valor \"100% 100%\""
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "style": {
+                                            "backgroundImage": "url('/images/examples/image-background/example-1.png')",
+                                            "backgroundSize": "100% 100%",
+                                            "border": "2px inset #000000",
+                                            "width": "calc(100% - calc(2px * 2))",
+                                            "height": "300px"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo background-size:",
+                                        "description": "Fazendo a imagem preencher o elemento inteiro:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "no-repeat",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-attachment cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "fixed",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-size cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "100",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "%",
+                                                    "color": "#f565c5",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "100",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "%",
+                                                    "color": "#f565c5",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira o valor necessário para adicionar a imagem de fundo \"image.png\" no elemento HTML:",
+                                        "answers": [["url(\\\"image.png\\\");", "url('image.png');", "url(\\\"image.png\\\")", "url('image.png')"]],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "style",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "background-image:",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "186px",
+                                                    "maxLength": 19,
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Insira o valor necessário para impedir que a imagem de fundo se repita:",
+                                        "answers": ["no-repeat"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "style",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "background-repeat:",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "90px",
+                                                    "maxLength": 9,
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": ";",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 3:",
+                                        "description": "Insira o valor necessário para fazer com que a imagem de fundo cubra todo o elemento:",
+                                        "answers": ["cover"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url cyan",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses left",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.png\"",
+                                                    "color": "#f5f565",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "no-repeat",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-attachment cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "fixed",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1,
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-size cyan",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon",
+                                                    "tabs": 0
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "50px",
+                                                    "maxLength": 5,
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<img>",
+                                                    "href": "/tags/img"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<map>",
+                                                    "href": "/tags/map"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<area>",
+                                                    "href": "/tags/area"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma área clicável dentro do mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<picture>",
+                                                    "href": "/tags/picture"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um contêiner para vários recursos de imagem"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     },
                     {
                         "subtitle": "Elemento Picture",
                         "link": "/html/images/picture",
-                        "sections": []
+                        "sections": [
+                            [
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "picture tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- permite exibir imagens diferentes para diferentes dispositivos ou tamanhos de tela."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     }
                 ]
             },
