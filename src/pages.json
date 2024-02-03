@@ -18090,6 +18090,472 @@
                                             }
                                         ]
                                     }
+                                },
+                                {
+                                    "tag": "img",
+                                    "content": {
+                                        "src": "/images/examples/image-picture/example-1.png",
+                                        "alt": "Exemplo de Picture"
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Elemento Picture"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "picture tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "oferece aos desenvolvedores web mais flexibilidade na especificação de recursos de imagem."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "O elemento"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "picture tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "contém um ou mais elementos"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "source tag open"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Cada um desses elementos referem-se a imagens diferentes através do atributo"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "srcset"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " Desta forma o navegador pode escolher a imagem que melhor se adapta à visualização e/ou dispositivo atual."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Cada elemento"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "source tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "possui um atributo"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "media"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "que define quando a imagem é mais adequada."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de <picture>:",
+                                        "description": "Mostre imagens diferentes para tamanhos de tela diferentes:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "picture tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "media",
+                                                                "value": "(min-width: 768px)",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "square.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "media",
+                                                                "value": "(min-width: 480px)",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "circle.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "triangle.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "picture tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "warning",
+                                    "content": "Sempre especifique um elemento <img> como o último elemento filho do elemento <picture>. O elemento <img> é usado por navegadores que não suportam o elemento <picture> ou se nenhuma das tags <source> corresponder."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Quando usar o elemento Picture"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Existem dois propósitos principais para este elemento:"
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "1. Largura da banda"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Se você tiver uma tela ou dispositivo pequeno, não é necessário carregar um arquivo de imagem grande. O navegador usará o primeiro elemento <source> com valores de atributos correspondentes e ignorará qualquer um dos elementos a seguir."
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "2. Suporte de formato"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. Ao usar este elemento, você pode adicionar imagens de todos os formatos, e o navegador usará o primeiro formato que reconhecer e ignorará qualquer um dos elementos a seguir."
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de <picture>:",
+                                        "description": "O navegador usará o primeiro formato de imagem que reconhecer:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "picture tag open",
+                                                    "tabs": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "square.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "circle.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "triangle.png",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Triângulo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "style",
+                                                                "value": "width:auto;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "picture tag close",
+                                                    "tabs": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "O navegador usará o primeiro elemento <source> com valores de atributo correspondentes e ignorará quaisquer elementos <source> seguintes."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira a tag para exibir imagens diferentes para diferentes dispositivos:",
+                                        "answers": ["<picture>", "</picture>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "90px",
+                                                    "maxLength": 9,
+                                                    "spacesBefore": 0
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "square.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "source tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "srcset",
+                                                                "value": "circle.png",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "img tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "src",
+                                                                "value": "triangle.png",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "alt",
+                                                                "value": "Triângulo",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "style",
+                                                                "value": "width:auto;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "100px",
+                                                    "maxLength": 10,
+                                                    "spacesBefore": 0
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<img>",
+                                                    "href": "/tags/img"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<map>",
+                                                    "href": "/tags/map"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<area>",
+                                                    "href": "/tags/area"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma área clicável dentro do mapeamento de uma imagem"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<picture>",
+                                                    "href": "/tags/picture"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um contêiner para vários recursos de imagem"
+                                                }
+                                            ]
+                                        ]
+                                    }
                                 }
                             ]
                         ]
@@ -18099,12 +18565,515 @@
             {
                 "title": "HTML Favicon",
                 "link": "/html/favicon",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Um favicon é uma pequena imagem exibida ao lado do título da página na guia do navegador."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Como adicionar um favicon"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode usar qualquer imagem que desejar como favicon. Você também pode criar seu próprio favicon em sites como:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "https://www.favicon.cc",
+                                                "link": "https://www.favicon.cc",
+                                                "target": "_blank"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Um favicon é uma imagem pequena, portanto deve ser uma imagem simples com alto contraste."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma imagem de favicon é exibida à esquerda do título da página na guia do navegador, assim:"
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/examples/html/favicon/example-1.png"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para adicionar um favicon ao seu site, salve sua imagem de favicon no diretório raiz do seu servidor web ou crie uma pasta no diretório raiz chamada imagens e salve sua imagem de favicon nesta pasta. Um nome comum para uma imagem de favicon é \"favicon.ico\"."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "link tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- adicione este ao seu arquivo \"index.html\", após o elemento"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "title tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de favicon:",
+                                "description": "Adicionando um favicon na página:",
+                                "lines": [ 
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "link tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "rel",
+                                                        "value": "icon",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "type",
+                                                        "value": "image/x-icon",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "href",
+                                                        "value": "/images/favicon.ico",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora salve o arquivo \"index.html\" e recarregue-o em seu navegador. A guia do seu navegador agora deve exibir a imagem do seu favicon à esquerda do título da página."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Suporte ao formato de arquivo Favicon"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A tabela a seguir mostra o suporte ao formato de arquivo para uma imagem de favicon:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Navegador"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "ICO"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "PNG"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "GIF"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "JPEG"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "SVG"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg",
+                                            "href": "",
+                                            "target": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg",
+                                            "href": "",
+                                            "target": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg",
+                                            "href": "",
+                                            "target": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg",
+                                            "href": "",
+                                            "target": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg",
+                                            "href": "",
+                                            "target": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Resumo do capítulo"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "link tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": usado para inserir um favicon."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Qual o nome da tag HTML que é usada para adicionar um favicon como ícone da página?",
+                                "answers": ["link"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "40px",
+                                            "maxLength": 4,
+                                            "spacesBefore": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "rel",
+                                                        "value": "icon.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "type",
+                                                        "value": "image/x-icon",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "href",
+                                                        "value": "/images/favicon.ico",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<link>",
+                                            "href": "/tags/link"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o relacionamento entre um documento e um recurso externo"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Título da página",
                 "link": "/html/page_title",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Cada página da web deve ter um título para descrever o significado da página."
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Tabelas",

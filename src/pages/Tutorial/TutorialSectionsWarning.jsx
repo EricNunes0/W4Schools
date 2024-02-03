@@ -38,7 +38,7 @@ export const TutorialSectionsWarning = styled.div`
         align-items: center;
         width: 40px;
         height: 40px;
-        background-image: url("../images/warning.png");
+        background-image: url("/images/warning.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

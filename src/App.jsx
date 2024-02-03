@@ -21,155 +21,134 @@ function App() {
 					</>
 				)}>
 				</Route>
-				<Route exact path = "/html/default" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML HOME"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/intro" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Introdução"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/editors" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Editores"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/basic" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Básico"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/elements" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Elementos"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/attributes" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Atributos"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/headings" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Títulos"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/paragraphs" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Parágrafos"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/styles" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Estilos"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/formatting" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Formatação"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/quotations" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Citações"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route exact path = "/html/comments" element = {(
-					<>
-					<Navigation></Navigation>
-					<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Comentários"></TutorialMain>
-					<Footer></Footer>
-					</>
-				)}></Route>
-				<Route path = "/html/colors" >
+
+				<Route path = "/html">
+					{/* HOME */}
+					<Route path = "default" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML HOME"></TutorialMain>)}></Page>
+					)}></Route>
 					{/* Introdução */}
-					<Route path = "" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "Introdução"></TutorialMain>)}></Page>
+					<Route path = "intro" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Introdução"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* RGB */}
-					<Route path = "rgb" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "RGB"></TutorialMain>)}></Page>
+					{/* Editores */}
+					<Route path = "editors" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Editores"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* HEX */}
-					<Route path = "hex" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HEX"></TutorialMain>)}></Page>
+					{/* Básico */}
+					<Route path = "basic" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Básico"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* RGB */}
-					<Route path = "hsl" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HSL"></TutorialMain>)}></Page>
+					{/* Elementos */}
+					<Route path = "elements" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Elementos"></TutorialMain>)}></Page>
 					)}></Route>
-					<Route path = "*" element = {(
-						<Navigate to = ""></Navigate>
+					{/* Atributos */}
+					<Route path = "attributes" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Atributos"></TutorialMain>)}></Page>
 					)}></Route>
-				</Route>
-				<Route exact path = "/html/css" element = {(
-					<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML CSS"></TutorialMain>)}></Page>
-				)}></Route>
-				<Route path = "/html/links" >
-					{/* Introdução */}
-					<Route path = "" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Introdução"></TutorialMain>)}></Page>
+					{/* Títulos */}
+					<Route path = "headings" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Títulos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Parágrafos */}
+					<Route path = "paragraphs" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Parágrafos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Estilos */}
+					<Route path = "styles" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Estilos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Formatação */}
+					<Route path = "formatting" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Formatação"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Citações */}
+					<Route path = "quotations" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Citações"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Comentários */}
+					<Route path = "comments" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Comentários"></TutorialMain>)}></Page>
 					)}></Route>
 					{/* Cores */}
-					<Route path = "colors" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Cores"></TutorialMain>)}></Page>
-					)}></Route>
-					{/* Bookmarks */}
-					<Route path = "bookmarks" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Marcadores"></TutorialMain>)}></Page>
-					)}></Route>
-				</Route>
-				<Route path = "/html/images" >
-					{/* Introdução */}
-					<Route path = "" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Introdução"></TutorialMain>)}></Page>
-					)}></Route>
-					{/* Mapeamento */}
-					<Route path = "map">
+					<Route path = "colors">
+						{/* Introdução */}
 						<Route path = "" element = {(
-							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Mapeamento"></TutorialMain>)}></Page>
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "Introdução"></TutorialMain>)}></Page>
 						)}></Route>
-						<Route path = "square" element = {(
-							<ImageMapExample shape = "square"></ImageMapExample>
+						{/* RGB */}
+						<Route path = "rgb" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "RGB"></TutorialMain>)}></Page>
 						)}></Route>
-						<Route path = "circle" element = {(
-							<ImageMapExample shape = "circle"></ImageMapExample>
+						{/* HEX */}
+						<Route path = "hex" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HEX"></TutorialMain>)}></Page>
 						)}></Route>
-						<Route path = "triangle" element = {(
-							<ImageMapExample shape = "triangle"></ImageMapExample>
+						{/* RGB */}
+						<Route path = "hsl" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Cores" subtitle = "HSL"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
-					{/* Imagens de fundo */}
-					<Route path = "background" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Imagens de fundo"></TutorialMain>)}></Page>
+					{/* CSS */}
+					<Route path = "css" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML CSS"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* Elemento Picture */}
-					<Route path = "picture" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Elemento Picture"></TutorialMain>)}></Page>
+					{/* Links */}
+					<Route path = "links">
+						{/* Introdução */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Introdução"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Cores */}
+						<Route path = "colors" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Cores"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Bookmarks */}
+						<Route path = "bookmarks" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Links" subtitle = "Marcadores"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
+					{/* Imagens */}
+					<Route path = "images">
+						{/* Introdução */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Introdução"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Mapeamento */}
+						<Route path = "map">
+							<Route path = "" element = {(
+								<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Mapeamento"></TutorialMain>)}></Page>
+							)}></Route>
+							<Route path = "square" element = {(
+								<ImageMapExample shape = "square"></ImageMapExample>
+							)}></Route>
+							<Route path = "circle" element = {(
+								<ImageMapExample shape = "circle"></ImageMapExample>
+							)}></Route>
+							<Route path = "triangle" element = {(
+								<ImageMapExample shape = "triangle"></ImageMapExample>
+							)}></Route>
+						</Route>
+						{/* Imagens de fundo */}
+						<Route path = "background" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Imagens de fundo"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Elemento Picture */}
+						<Route path = "picture" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Imagens" subtitle = "Elemento Picture"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
+					{/* Favicon */}
+					<Route path = "favicon" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Favicon"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Título da página */}
+					<Route path = "page_title" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Título da página"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
