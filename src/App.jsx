@@ -150,6 +150,44 @@ function App() {
 					<Route path = "page_title" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Título da página"></TutorialMain>)}></Page>
 					)}></Route>
+
+
+
+					{/* Tabelas */}
+					<Route path = "tables">
+						{/* Principal */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Principal"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Bordas */}
+						<Route path = "borders" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Bordas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Tamanhos */}
+						<Route path = "sizes" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Tamanhos"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Cabeçalhos */}
+						<Route path = "headers" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Cabeçalhos"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Preenchimento e espaçamento */}
+						<Route path = "padding_spacing" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Preenchimento e espaçamento"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Colspan e Rowspan */}
+						<Route path = "colspan_rowspan" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Colspan e Rowspan"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Estilização */}
+						<Route path = "styling" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Estilização"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Colgroup */}
+						<Route path = "colgroup" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Colgroup"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
