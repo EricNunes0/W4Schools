@@ -15,7 +15,6 @@ import TutorialManagePages from "./TutorialManagePages";
 import TutorialSectionsExample from "./TutorialSectionsExample";
 import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
-import TutorialSectionTableRow from "./TutorialSectionTableRow";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialSectionsRow from "./TutorialSectionsRow";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
@@ -23,6 +22,7 @@ import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 import TutorialSectionsList from "./TutorialSectionsList";
 import TutorialSectionsNotes from "./TutorialSectionsNotes";
 import TutorialSectionsMaps from "./TutorialSectionsMaps";
+import TutorialSectionsTables from "./TutorialSectionsTables";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -90,16 +90,7 @@ export default function TutorialSectionTags(tag, content) {
         case "ol": case "ul":
             return (<TutorialSectionsList tag = {tag} content = {content}></TutorialSectionsList>);
         case "table":
-            let tableRows = [];
-            for(let i = 0; i <= content.rows.length - 1; i++) {
-                const row = content.rows[i];
-                tableRows.push(TutorialSectionTableRow(row));
-            };
-            return (
-                <table className = "tutorial-sections-tables">
-                    <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>
-                </table>
-            )
+            return (<TutorialSectionsTables content = {content}></TutorialSectionsTables>)
         case "color-blocks":
             return (<TutorialSectionsColorBlocks content = {content}></TutorialSectionsColorBlocks>);
         case "color-result":

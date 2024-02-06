@@ -1,8 +1,16 @@
-export default function TutorialSectionTableData(data) {
+export default function TutorialSectionTableData(data, styles) {
     switch(data.tag) {
         case "th":
+            /* Definindo estilo */
+            let thStyle;
+            if(data.style) {
+                thStyle = data.style;
+            } else if(styles) {
+                thStyle = styles.th || null;
+            };
+
             return (
-                <th className = "tutorial-sections-th" data-italic = {data.italic || false}>
+                <th className = "tutorial-sections-th" colSpan={data.colSpan || null} style = {thStyle} data-italic = {data.italic || false}>
                     {data.text}
                 </th>
             );
@@ -33,8 +41,16 @@ export default function TutorialSectionTableData(data) {
                 supports = (<i className = "tutorial-sections-td-supports" style = {{backgroundImage: `url("${supportsIcon}")`}}></i>);
             };
 
+            /* Definindo estilo */
+            let tdStyle;
+            if(data.style) {
+                tdStyle = data.style;
+            } else if(styles) {
+                tdStyle = styles.td || null;
+            };
+
             return (
-                <td className = "tutorial-sections-td" data-italic = {data.italic || false}>
+                <td className = "tutorial-sections-td" style = {tdStyle} data-italic = {data.italic || false}>
                     {content || data.text}
                     {supports}
                 </td>

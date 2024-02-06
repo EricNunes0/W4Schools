@@ -18,6 +18,11 @@ export default function TutorialListItemMultiple(codes) {
                     <div className = "tutorial-sections-lists-items-codes-divs">{codeParts}</div>
                 );
                 break;
+            case "div":
+                parts.push(
+                    <div className = "tutorial-sections-lists-items-divs" style = {code.style}>{code.code || code.text || ""}</div>
+                );
+                break;
             case "text":
                 parts.push(
                     <p className = "tutorial-sections-lists-items-paragraphs">{code.code}</p>
