@@ -37,7 +37,7 @@ export const TutorialSectionsNote = styled.div`
         align-items: center;
         width: 50px;
         height: 50px;
-        background-image: url("../images/note.png");
+        background-image: url("/images/note.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;

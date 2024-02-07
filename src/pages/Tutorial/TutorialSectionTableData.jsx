@@ -10,7 +10,7 @@ export default function TutorialSectionTableData(data, styles) {
             };
 
             return (
-                <th className = "tutorial-sections-th" colSpan={data.colSpan || null} style = {thStyle} data-italic = {data.italic || false}>
+                <th className = "tutorial-sections-th" colSpan = {data.colSpan || null} rowSpan = {data.rowSpan || null} style = {thStyle} data-italic = {data.italic || false}>
                     {data.text}
                 </th>
             );
@@ -50,7 +50,7 @@ export default function TutorialSectionTableData(data, styles) {
             };
 
             return (
-                <td className = "tutorial-sections-td" style = {tdStyle} data-italic = {data.italic || false}>
+                <td className = "tutorial-sections-td" colSpan = {data.colSpan || null} rowSpan = {data.rowSpan || null} style = {tdStyle} data-italic = {data.italic || false}>
                     {content || data.text}
                     {supports}
                 </td>
