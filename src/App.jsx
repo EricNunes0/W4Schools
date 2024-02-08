@@ -150,9 +150,6 @@ function App() {
 					<Route path = "page_title" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Título da página"></TutorialMain>)}></Page>
 					)}></Route>
-
-
-
 					{/* Tabelas */}
 					<Route path = "tables">
 						{/* Principal */}
@@ -186,6 +183,34 @@ function App() {
 						{/* Colgroup */}
 						<Route path = "colgroup" element = {(
 							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Tabelas" subtitle = "Colgroup"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
+
+
+
+					{/* Listas */}
+					<Route path = "lists">
+						{/* Principal */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Listas" subtitle = "Principal"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Ordenadas */}
+						<Route path = "ordered" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Listas" subtitle = "Listas ordenadas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Não ordenadas */}
+						<Route path = "unordered" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Listas" subtitle = "Listas não ordenadas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Outras */}
+						<Route path = "others" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Listas" subtitle = "Outras listas"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
 				</Route>

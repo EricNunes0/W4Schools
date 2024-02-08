@@ -1,4 +1,5 @@
 import TutorialSectionTableRow from "./TutorialSectionTableRow";
+import TutorialSectionsTablesColgroup from "./TutorialSectionsTablesColgroup";
 
 export default function TutorialSectionsTables(prop) {
     const content = prop.content;
@@ -16,9 +17,16 @@ export default function TutorialSectionsTables(prop) {
         caption = (<caption className = "tutorial-sections-table-captions">{content.caption}</caption>);
     };
 
+    /* Colgroup */
+    let colgroup;
+    if(content.colgroup) {
+        colgroup = TutorialSectionsTablesColgroup(content.colgroup);
+    };
+
     return (
-        <table className = "tutorial-sections-tables" style={styles ? styles.table : null}>
+        <table className = {`tutorial-sections-tables ${content.className || ""}`} style={styles ? styles.table : null}>
             {caption}
+            {colgroup}
             <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>
         </table>
     )
