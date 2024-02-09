@@ -1,3 +1,4 @@
+import pageExists from "../../functions/pageExists";
 import menu from "../../pages.json";
 import { SidebarMenuLink } from "./SidebarMenuLink";
 import { SidebarMenuLinkSub } from "./SidebarMenuLinkSub";
@@ -49,8 +50,10 @@ export default function SidebarMenuTopics(language, topicName, title, subtitle) 
         }
         /* Para criar links comuns sem subtítulos */
         if(item.sections) {
+            let exists = pageExists(language, topicName, itemTitle);
+
             return (
-                <SidebarMenuLink href = {itemLink} data-active = {title === itemTitle ? true : false}>{itemTitle}</SidebarMenuLink>
+                <SidebarMenuLink href = {itemLink} data-active = {title === itemTitle ? true : false} data-exists = {exists}>{itemTitle}</SidebarMenuLink>
             );
         };
     };

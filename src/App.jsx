@@ -188,9 +188,6 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
-
-
-
 					{/* Listas */}
 					<Route path = "lists">
 						{/* Principal */}
@@ -213,6 +210,10 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Block & Inline */}
+					<Route path = "blocks" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Block & Inline"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

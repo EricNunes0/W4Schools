@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const TutorialSectionsOl = styled.ol`
+export const TutorialSectionsUl = styled.ul`
     color: #f0f0f0;
     font-size: 14px;
     font-weight: 100;
+    list-style-type: ${(prop) => prop.liststyle || "disc"};
     text-align: left;
     margin-top: 15px;
     margin-left: 20px;

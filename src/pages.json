@@ -30884,7 +30884,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "code": ": descreve cada item:"
+                                                        "code": ": descreve cada item."
                                                     }
                                                 ]
                                             }
@@ -31257,17 +31257,2858 @@
                     {
                         "subtitle": "Listas ordenadas",
                         "link": "/html/lists/ordered",
-                        "sections": []
+                        "sections": [
+                            [
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ol tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- define uma lista ordenada, que pode ser númerica ou alfabética."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Lista ordenada"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Uma lista ordenada começa com a tag "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ol tag open"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Cada item da lista começa com a tag "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "li tag open"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Os itens da lista serão marcados com números por padrão:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de lista:",
+                                        "description": "Criando uma lista ordenada com 4 itens:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Lista ordenada - Atributo type"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "type green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Define o tipo do marcador dos itens de uma lista:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tipo",
+                                                    "style": {
+                                                        "width": "20%",
+                                                        "textAlign": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição",
+                                                    "style": {
+                                                        "width": "80%",
+                                                        "textAlign": "left"
+                                                    }
+                                                }  
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "type=\"1\""
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Os itens da lista serão numerados com números (padrão)"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "type=\"A\""
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Os itens da lista serão numerados com letras maiúsculas"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "type=\"a\""
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Os itens da lista serão numerados com letras minúsculas"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "type=\"I\""
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Os itens da lista serão numerados com números romanos maiúsculos"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "type=\"i\""
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Os itens da lista serão numerados com números romanos minúsculos"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "table": {
+                                                "borderRadius": "unset",
+                                                "width": "100%",
+                                                "height": "120px",
+                                                "marginTop": "20px"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Números:"
+                                },
+                                {
+                                    "tag": "ol",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "type",
+                                                                "value": "1",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Letras maiúsculas:"
+                                },
+                                {
+                                    "tag": "ol",
+                                    "content": {
+                                        "type": "A",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "type",
+                                                                "value": "A",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Letras minúsculas:"
+                                },
+                                {
+                                    "tag": "ol",
+                                    "content": {
+                                        "type": "a",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "type",
+                                                                "value": "a",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Números romanos maiúsculos:"
+                                },
+                                {
+                                    "tag": "ol",
+                                    "content": {
+                                        "type": "I",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "type",
+                                                                "value": "I",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Números romanos minúsculos:"
+                                },
+                                {
+                                    "tag": "ol",
+                                    "content": {
+                                        "type": "i",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "type",
+                                                                "value": "i",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Definir início da contagem de uma lista"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, uma lista ordenada começará a contar a partir de 1."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "start green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - use este atributo para começar a contar a partir de um número especificado:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de atributo start:",
+                                        "description": "Definindo o início da contagem para 50:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "start",
+                                                                "value": "50",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Café",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Chá",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Leite",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Suco",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Listas aninhadas"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "As listas podem ser aninhadas, ou seja, inseridas dentro de outras listas:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de listas aninhadas:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Café",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "content": "Chá",
+                                                    "contentIndex": 3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Chá preto",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Chá verde",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Leite",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "content": "Suco",
+                                                    "contentIndex": 3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Suco de laranja",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Suco de maracujá",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Um item de lista (<li>) pode conter uma nova lista e outros elementos HTML, como imagens e links, etc."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Resumo do capítulo"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ol tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma lista ordenada;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "type green"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define o tipo de numeração;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "li tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um item de uma lista;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Listas podem ser aninhadas, ou seja, inseridas dentro de outras listas;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Os itens da lista podem conter outros elementos HTML."
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira os elementos necessários para criar uma lista ordenada:",
+                                        "answers": ["<ol>", "</ol>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "50px",
+                                                    "maxLength": 5
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Insira o atributo necessário para definir o marcador da lista para letras maiúsculas:",
+                                        "answers": ["type"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open start"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4,
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"A\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 3:",
+                                        "description": "Insira o atributo necessário para iniciar a contagem no número 20:",
+                                        "answers": ["start"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag open start"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "50px",
+                                                    "maxLength": 5,
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"20\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ol tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ol>",
+                                                    "href": "/tags/ol"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ul>",
+                                                    "href": "/tags/ul"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista não ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<li>",
+                                                    "href": "/tags/li"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o item de uma lista"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dl>",
+                                                    "href": "/tags/dl"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dt>",
+                                                    "href": "/tags/dt"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um item de uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dd>",
+                                                    "href": "/tags/dd"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a descrição de um item de uma lista de descrição"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     },
                     {
                         "subtitle": "Listas não ordenadas",
                         "link": "/html/lists/unordered",
-                        "sections": []
+                        "sections": [
+                            [
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ul tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "- define uma lista não ordenada, onde seus itens são marcados por pequenos círculos pretos."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Lista não ordenada"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Uma lista não ordenada começa com a tag "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ul tag open"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Cada item da lista começa com a tag "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "li tag open"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Os itens da lista serão marcados com pequenos círculos pretos por padrão:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de lista:",
+                                        "description": "Criando uma lista não ordenada com 4 itens:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Lista não ordenada - Marcadores"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "list-style-type yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - você pode usar este atributo para definir o estilo do marcador dos itens da lista."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Pode ter um dos seguintes valores:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Valor",
+                                                    "style": {
+                                                        "width": "20%",
+                                                        "textAlign": "left"
+                                                    }
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição",
+                                                    "style": {
+                                                        "width": "80%",
+                                                        "textAlign": "left"
+                                                    }
+                                                }  
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "disc"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o marcador como um círculo preto preenchido (padrão)"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "circle"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o marcador como um círculo não preenchido"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "square"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o marcador como um quadrado"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "none"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Remove os marcadores dos itens"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "table": {
+                                                "borderRadius": "unset",
+                                                "width": "100%",
+                                                "height": "120px",
+                                                "marginTop": "20px"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Disc:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "list-style-type": "disc",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "list-style-type:disc;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Circle:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "list-style-type": "circle",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "list-style-type:circle;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Square:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "list-style-type": "square",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "list-style-type:square;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "None:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "list-style-type": "none",
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Primeiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Segundo item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Terceiro item"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Quarto item"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "list-style-type:none;",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Listas aninhadas"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "As listas podem ser aninhadas, ou seja, inseridas dentro de outras listas:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de listas aninhadas:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Café",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "content": "Chá",
+                                                    "contentIndex": 3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Chá preto",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Chá verde",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Leite",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "content": "Suco",
+                                                    "contentIndex": 3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Suco de laranja",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Suco de maracujá",
+                                                    "contentIndex": -3,
+                                                    "tabs": 3
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close",
+                                                    "tabs": 2
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Um item de lista (<li>) pode conter uma nova lista e outros elementos HTML, como imagens e links, etc."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Resumo do capítulo"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ul tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma lista não ordenada;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "list-style-type yellow"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define o tipo de marcador dos itens;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "li tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um item de uma lista;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Listas podem ser aninhadas, ou seja, inseridas dentro de outras listas;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Os itens da lista podem conter outros elementos HTML."
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira os elementos necessários para criar uma lista não ordenada:",
+                                        "answers": ["<ul>", "</ul>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "50px",
+                                                    "maxLength": 5
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Insira o atributo necessário para definir o marcador da lista para um quadrado:",
+                                        "answers": ["list-style-type:square"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open start"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "style green",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "equal sign"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "double-quote"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "213px",
+                                                    "maxLength": 22
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": ";\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "tag close end"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Primeiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Segundo item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Terceiro item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag",
+                                                    "content": "Quarto item",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ol>",
+                                                    "href": "/tags/ol"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ul>",
+                                                    "href": "/tags/ul"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista não ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<li>",
+                                                    "href": "/tags/li"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o item de uma lista"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dl>",
+                                                    "href": "/tags/dl"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dt>",
+                                                    "href": "/tags/dt"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um item de uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dd>",
+                                                    "href": "/tags/dd"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a descrição de um item de uma lista de descrição"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     },
                     {
                         "subtitle": "Outras listas",
                         "link": "/html/lists/others",
-                        "sections": []
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "O HTML também oferece suporte a listas de descrição."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Lista de descrição"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "O HTML também oferece suporte a \"listas de descrição\", onde cada item possui sua própria descrição."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Para criar uma lista de descrição, utilize os seguintes elementos:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dl tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma lista de descrição;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dt tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um item;"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dd tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": descreve cada item."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de lista de descrição:",
+                                        "description": "Criando uma lista de descrição com 2 itens e suas descrições:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dt tag",
+                                                    "content": "Rosas",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dd tag",
+                                                    "content": "- são vermelhas",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dt tag",
+                                                    "content": "Violetas",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dd tag",
+                                                    "content": "- são azuis",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Resumo do capítulo"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dl tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define uma lista de descrição;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dt tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": define um item;"
+                                                    }
+                                                    
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes":  [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dd tag open"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "code": ": descreve cada item."
+                                                    }
+                                                    
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Insira os elementos necessários para criar uma lista de descrição:",
+                                        "answers": ["<dl>", "</dl>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "40px",
+                                                    "maxLength": 4
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dt tag",
+                                                    "content": "Café",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dd tag",
+                                                    "content": "Com leite",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dt tag",
+                                                    "content": "Leite",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dd tag",
+                                                    "content": "Com achocolatado",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "50px",
+                                                    "maxLength": 5
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Adicione o item \"Chá\" na lista de descrição:",
+                                        "answers": ["<dt>Chá</dt>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "117px",
+                                                    "maxLength": 12
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 3:",
+                                        "description": "Adicione a descrição \"Verde\" ao item \"Chá\" na lista de descrição:",
+                                        "answers": ["<dd>Verde</dd>"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dt tag",
+                                                    "content": "Chá",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "136px",
+                                                    "maxLength": 14
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "dl tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "HTML Tags"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Tag"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ol>",
+                                                    "href": "/tags/ol"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<ul>",
+                                                    "href": "/tags/ul"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista não ordenada"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<li>",
+                                                    "href": "/tags/li"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o item de uma lista"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dl>",
+                                                    "href": "/tags/dl"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dt>",
+                                                    "href": "/tags/dt"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define um item de uma lista de descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "<dd>",
+                                                    "href": "/tags/dd"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a descrição de um item de uma lista de descrição"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
                     }
                 ]
             },

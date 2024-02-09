@@ -1,4 +1,5 @@
 import { TutorialSectionsOl } from "./TutorialSectionsOl";
+import { TutorialSectionsUl } from "./TutorialSectionsUl";
 import TutorialListItemMultiple from "./TutorialListItemMultiple"
 
 export default function TutorialSectionsList(prop) {
@@ -17,5 +18,10 @@ export default function TutorialSectionsList(prop) {
             <li className = "tutorial-sections-lists-items">{liContent}</li>
         );
     };
-    return (<TutorialSectionsOl data-list = {tag}>{items}</TutorialSectionsOl>);
+    switch(tag) {
+        case "ol":
+            return (<TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>);
+        case "ul":
+            return (<TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>);
+    };
 };

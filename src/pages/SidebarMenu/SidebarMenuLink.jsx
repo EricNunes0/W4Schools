@@ -40,6 +40,12 @@ export const SidebarMenuLink = styled.a`
     &[data-active="true"] {
         background-color: #5075d0;
     }
+
+    &[data-exists="false"] {
+        background: #555;
+        pointer-events: none;
+    }
+
     @media screen and (max-width: 480px) {
         font-size: 16px;
         height: 32px;
