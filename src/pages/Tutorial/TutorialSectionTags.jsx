@@ -5,7 +5,6 @@ import { TutorialSectionsH3 } from "./TutorialSectionsH3";
 import { TutorialSectionsH4 } from "./TutorialSectionsH4";
 import { TutorialSectionsH5 } from "./TutorialSectionsH5";
 import { TutorialSectionsH6 } from "./TutorialSectionsH6";
-import { TutorialSectionsP } from "./TutorialSectionsP";
 import { TutorialSectionsSub } from "./TutorialSectionsSub";
 import { TutorialSectionsSup } from "./TutorialSectionsSup";
 import { TutorialSectionsButton } from "./TutorialSectionsButton";
@@ -23,6 +22,8 @@ import TutorialSectionsList from "./TutorialSectionsList";
 import TutorialSectionsNotes from "./TutorialSectionsNotes";
 import TutorialSectionsMaps from "./TutorialSectionsMaps";
 import TutorialSectionsTables from "./TutorialSectionsTables";
+import TutorialSectionsParagraph from "./TutorialSectionsParagraph";
+import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -78,9 +79,9 @@ export default function TutorialSectionTags(tag, content) {
             const sup = content.text ? (<TutorialSectionsSup data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsSup>) : (<TutorialSectionsSup>{content}</TutorialSectionsSup>);
             return sup;
         case "p":
-            return (<TutorialSectionsP>{content}</TutorialSectionsP>);
+            return (<TutorialSectionsParagraph content = {content}></TutorialSectionsParagraph>);
         case "b":
-            return (<TutorialSectionsP data-bold = "true">{content}</TutorialSectionsP>);
+            return (<TutorialSectionsParagraph content = {content} bold = {true}></TutorialSectionsParagraph>);
         case "button":
             return (<TutorialSectionsButton data-type = {content.type}>{content.text}</TutorialSectionsButton>);
         case "img":
@@ -107,6 +108,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
         case "structure":
             return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>);
+        case "tags-flex":
+            return <TutorialSectionsTagsFlex content = {content}></TutorialSectionsTagsFlex>
         case "warning":
             return (<TutorialSectionsWarning><p>{content}</p></TutorialSectionsWarning>);
         default:

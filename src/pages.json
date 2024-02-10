@@ -34115,12 +34115,961 @@
             {
                 "title": "HTML Block & Inline",
                 "link": "/html/blocks",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os dois valores de exibição mais comuns são \"block\" e \"inline\"."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Block"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um elemento do tipo \"block\" sempre começa em uma nova linha e os navegadores adicionam automaticamente espaço (uma margem) antes e depois do elemento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estes elementos sempre ocupam toda a largura disponível (da esquerda para a direita)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos de elementos do tipo \"block\":"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "p tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define um parágrafo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "div tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma divisão ou uma seção em um documento."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": {
+                                "text": "O elemento <p> é um elemento do tipo \"block\".",
+                                "style": {
+                                    "border": "1px solid #3060ff",
+                                    "padding": "5px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "O elemento <div> é um elemento do tipo \"block\".",
+                                "style": {
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #3060ff",
+                                    "fontSize": "14px",
+                                    "padding": "5px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de elementos do tipo block:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Hello World",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "content": "Hello World",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estes são os elementos do tipo \"block\" do HTML:"
+                        },
+                        {
+                            "tag": "tags-flex",
+                            "content": {
+                                "tags": [
+                                    {
+                                        "code": "address tag open",
+                                        "link": "/tags/address"
+                                    },
+                                    {
+                                        "code": "article tag open",
+                                        "link": "/tags/article"
+                                    },
+                                    {
+                                        "code": "aside tag open",
+                                        "link": "/tags/aside"
+                                    },
+                                    {
+                                        "code": "blockquote tag open",
+                                        "link": "/tags/blockquote"
+                                    },
+                                    {
+                                        "code": "canvas tag open",
+                                        "link": "/tags/canvas"
+                                    },
+                                    {
+                                        "code": "dd tag open",
+                                        "link": "/tags/dd"
+                                    },
+                                    {
+                                        "code": "div tag open",
+                                        "link": "/tags/div"
+                                    },
+                                    {
+                                        "code": "dl tag open",
+                                        "link": "/tags/dl"
+                                    },
+                                    {
+                                        "code": "dt tag open",
+                                        "link": "/tags/dt"
+                                    },
+                                    {
+                                        "code": "fieldset tag open",
+                                        "link": "/tags/fieldset"
+                                    },
+                                    {
+                                        "code": "figcaption tag open",
+                                        "link": "/tags/figcaption"
+                                    },
+                                    {
+                                        "code": "figure tag open",
+                                        "link": "/tags/figure"
+                                    },
+                                    {
+                                        "code": "footer tag open",
+                                        "link": "/tags/footer"
+                                    },
+                                    {
+                                        "code": "form tag open",
+                                        "link": "/tags/form"
+                                    },
+                                    {
+                                        "code": "<h1>-<h6>",
+                                        "link": "/tags/hn"
+                                    },
+                                    {
+                                        "code": "header tag open",
+                                        "link": "/tags/header"
+                                    },
+                                    {
+                                        "code": "hr tag open",
+                                        "link": "/tags/hr"
+                                    },
+                                    {
+                                        "code": "li tag open",
+                                        "link": "/tags/li"
+                                    },
+                                    {
+                                        "code": "main tag open",
+                                        "link": "/tags/main"
+                                    },
+                                    {
+                                        "code": "nav tag open",
+                                        "link": "/tags/nav"
+                                    },
+                                    {
+                                        "code": "noscript tag open",
+                                        "link": "/tags/noscript"
+                                    },
+                                    {
+                                        "code": "ol tag open",
+                                        "link": "/tags/ol"
+                                    },
+                                    {
+                                        "code": "p tag open",
+                                        "link": "/tags/p"
+                                    },
+                                    {
+                                        "code": "pre tag open",
+                                        "link": "/tags/pre"
+                                    },
+                                    {
+                                        "code": "section tag open",
+                                        "link": "/tags/section"
+                                    },
+                                    {
+                                        "code": "table tag open",
+                                        "link": "/tags/table"
+                                    },
+                                    {
+                                        "code": "tfoot tag open",
+                                        "link": "/tags/tfoot"
+                                    },
+                                    {
+                                        "code": "ul tag open",
+                                        "link": "/tags/ul"
+                                    },
+                                    {
+                                        "code": "video tag open",
+                                        "link": "/tags/video"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Inline"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um elemento do tipo \"inline\" não começam em uma nova linha e ocupam apenas o espaço necessário para exibí-los."
+                        },
+                        {
+                            "tag": "p",
+                            "content": {
+                                "text": "Este é dentro de um parágrafo.",
+                                "spans": [
+                                    {
+                                        "text": "um elemento <span> ",
+                                        "index": 2,
+                                        "style": {
+                                            "border": "1px solid #3060ff",
+                                            "padding": "5px 0px 5px 5px",
+                                            "margin": "0 5px"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de elementos do tipo inline:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "content": "Hello World",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estes são os elementos do tipo \"inline\" do HTML:"
+                        },
+                        {
+                            "tag": "tags-flex",
+                            "content": {
+                                "tags": [
+                                    {
+                                        "code": "a tag open",
+                                        "link": "/tags/a"
+                                    },
+                                    {
+                                        "code": "abbr tag open",
+                                        "link": "/tags/abbr"
+                                    },
+                                    {
+                                        "code": "acronym tag open",
+                                        "link": "/tags/acronym"
+                                    },
+                                    {
+                                        "code": "b tag open",
+                                        "link": "/tags/b"
+                                    },
+                                    {
+                                        "code": "bdo tag open",
+                                        "link": "/tags/bdo"
+                                    },
+                                    {
+                                        "code": "big tag open",
+                                        "link": "/tags/big"
+                                    },
+                                    {
+                                        "code": "br tag open",
+                                        "link": "/tags/br"
+                                    },
+                                    {
+                                        "code": "button tag open",
+                                        "link": "/tags/button"
+                                    },
+                                    {
+                                        "code": "cite tag open",
+                                        "link": "/tags/cite"
+                                    },
+                                    {
+                                        "code": "code tag open",
+                                        "link": "/tags/code"
+                                    },
+                                    {
+                                        "code": "dfn tag open",
+                                        "link": "/tags/dfn"
+                                    },
+                                    {
+                                        "code": "em tag open",
+                                        "link": "/tags/em"
+                                    },
+                                    {
+                                        "code": "i tag open",
+                                        "link": "/tags/i"
+                                    },
+                                    {
+                                        "code": "img tag open",
+                                        "link": "/tags/img"
+                                    },
+                                    {
+                                        "code": "input tag open",
+                                        "link": "/tags/input"
+                                    },
+                                    {
+                                        "code": "kbd tag open",
+                                        "link": "/tags/kbd"
+                                    },
+                                    {
+                                        "code": "label tag open",
+                                        "link": "/tags/label"
+                                    },
+                                    {
+                                        "code": "map tag open",
+                                        "link": "/tags/map"
+                                    },
+                                    {
+                                        "code": "object tag open",
+                                        "link": "/tags/object"
+                                    },
+                                    {
+                                        "code": "output tag open",
+                                        "link": "/tags/output"
+                                    },
+                                    {
+                                        "code": "q tag open",
+                                        "link": "/tags/q"
+                                    },
+                                    {
+                                        "code": "samp tag open",
+                                        "link": "/tags/samp"
+                                    },
+                                    {
+                                        "code": "script tag open",
+                                        "link": "/tags/script"
+                                    },
+                                    {
+                                        "code": "select tag open",
+                                        "link": "/tags/select"
+                                    },
+                                    {
+                                        "code": "small tag open",
+                                        "link": "/tags/small"
+                                    },
+                                    {
+                                        "code": "span tag open",
+                                        "link": "/tags/span"
+                                    },
+                                    {
+                                        "code": "strong tag open",
+                                        "link": "/tags/strong"
+                                    },
+                                    {
+                                        "code": "sub tag open",
+                                        "link": "/tags/sub"
+                                    },
+                                    {
+                                        "code": "sup tag open",
+                                        "link": "/tags/sup"
+                                    },
+                                    {
+                                        "code": "textarea tag open",
+                                        "link": "/tags/textarea"
+                                    },
+                                    {
+                                        "code": "time tag open",
+                                        "link": "/tags/time"
+                                    },
+                                    {
+                                        "code": "tt tag open",
+                                        "link": "/tags/tt"
+                                    },
+                                    {
+                                        "code": "var tag open",
+                                        "link": "/tags/var"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Um elemento \"inline\" não pode conter um elemento \"bloco\"!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Elemento <div>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "div tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é frequentemente usado como contêiner para outros elementos HTML."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este elementos não possuí atributos obrigatórios, porém este são os mais comuns:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma identificação única para um elemento;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "class green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma identificação múltipla para vários elementos;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "style green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define a estilização de um elemento;"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quando usado junto com CSS, o elemento pode ser usado para estilizar blocos de conteúdo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <div>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "background-color:black;color:white;padding:20px;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Título 2",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Elemento <span>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "span tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um contêiner \"inline\" (embutido) usado para marcar uma parte de um texto ou parte de um documento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este elementos não possuí atributos obrigatórios, porém este são os mais comuns:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma identificação única para um elemento;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "class green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma identificação múltipla para vários elementos;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "style green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define a estilização de um elemento;"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quando usado junto com CSS, o elemento pode ser usado para estilizar partes de um texto:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <span>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Rosas são ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "content": "vermelhas",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "color:red;font-weight:bold;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ","
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "content": "Violetas são ",
+                                            "contentIndex": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "content": "azuis",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "color:blue;font-weight:bold;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "."
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Resumo do capítulo"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Um elemento de tipo \"bloco\" sempre começa em uma nova linha e ocupa toda a largura disponível."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um elemento de tipo \"inline\" não começa em uma nova linha e ocupa apenas a largura necessária."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "div tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é usado como contêiner para outros elementos HTML;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "span tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": é usado para marcar uma parte de um texto ou parte de um documento."
+                                            }
+                                            
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira qualquer elemento do tipo \"block\":",
+                                "answers": [
+                                    [
+                                        "<address>",
+                                        "<article>",
+                                        "<aside>",
+                                        "<blockquote>",
+                                        "<canvas>",
+                                        "<dd>",
+                                        "<div>",
+                                        "<dl>",
+                                        "<dt>",
+                                        "<fieldset>",
+                                        "<figcaption>",
+                                        "<figure>",
+                                        "<footer>",
+                                        "<form>",
+                                        "<h1>",
+                                        "<h2>",
+                                        "<h3>",
+                                        "<h4>",
+                                        "<h5>",
+                                        "<h6>",
+                                        "<header>",
+                                        "<hr>",
+                                        "<li>",
+                                        "<main>",
+                                        "<nav>",
+                                        "<noscript>",
+                                        "<ol>",
+                                        "<p>",
+                                        "<pre>",
+                                        "<section>",
+                                        "<table>",
+                                        "<tfoot>",
+                                        "<ul>",
+                                        "<video>"
+                                    ]
+                                ],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "117px",
+                                            "maxLength": 12
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira qualquer elemento do tipo \"inline\":",
+                                "answers": [
+                                    [
+                                        "<a>",
+                                        "<abbr>",
+                                        "<acronym>",
+                                        "<b>",
+                                        "<bdo>",
+                                        "<big>",
+                                        "<br>",
+                                        "<button>",
+                                        "<cite>",
+                                        "<code>",
+                                        "<dfn>",
+                                        "<em>",
+                                        "<i>",
+                                        "<img>",
+                                        "<input>",
+                                        "<kbd>",
+                                        "<label>",
+                                        "<map>",
+                                        "<object>",
+                                        "<output>",
+                                        "<q>",
+                                        "<samp>",
+                                        "<script>",
+                                        "<select>",
+                                        "<small>",
+                                        "<span>",
+                                        "<strong>",
+                                        "<sub>",
+                                        "<sup>",
+                                        "<textarea>",
+                                        "<time>",
+                                        "<tt>",
+                                        "<var>"
+                                    ]
+                                ],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "117px",
+                                            "maxLength": 12
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<div>",
+                                            "href": "/tags/div"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma seção em um documento (block)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<span>",
+                                            "href": "/tags/span"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma seção em um documento (inline)"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Div",
                 "link": "/html/div",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "div tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado como contêiner para outros elementos HTML."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Classes",

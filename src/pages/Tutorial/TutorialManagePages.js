@@ -269,4 +269,20 @@ export default class TutorialManagePages {
             <TutorialExerciseInput type = {part.inputType} name = {part.name} className = "tutorial-sections-exercises-inputs" width = {part.width} maxLength = {part.maxLength} spacesbefore = {part.spacesBefore} spacesafter = {part.spacesAfter}></TutorialExerciseInput>
         );
     };
+    /* Gerar array dos códigos para inserir nas divs finais */
+    lineCodeParts(code) {
+        let codeParts = [];
+        let codesArrays = new TutorialManagePages().lineCodesFromJSON(code.code);
+        if(code.spacesBefore) {
+            codesArrays[0][0][2] = code.spacesBefore;
+        };
+        for(const codesArray of codesArrays) {
+            for(const codeContent of codesArray) {
+                const content = [codeContent[0], codeContent[1], codeContent[2] || 0, codeContent[3] || 0];
+                const codeHTML = new TutorialManagePages().lineCodeToHTML(content);
+                codeParts.push(codeHTML);
+            }
+        };
+        return codeParts;
+    }
 };
