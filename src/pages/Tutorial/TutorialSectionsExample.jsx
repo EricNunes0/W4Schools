@@ -2,10 +2,12 @@ import { TutorialExampleHeaderTitle } from "./TutorialExampleHeaderTitle";
 import { TutorialExampleButton } from "./TutorialExampleButton";
 import TutorialManagePages from "./TutorialManagePages";
 import { TutorialExampleDescription } from "./TutorialExampleDescription";
+import TutorialExampleResults from "./TutorialExampleResults";
 
 export default function TutorialSectionsExample(content) {
     content = content.content;
     let id = Math.floor(Math.random() * (10000 * 10000));
+    let exampleId = `tutorial-example-${id}`;
     let articleId = `tutorial-example-article-${id}`;
     let exampleButtonId = `tutorial-example-button-${id}`;
     let articleContents = []
@@ -20,8 +22,9 @@ export default function TutorialSectionsExample(content) {
             };
         };
     };
+
     return (
-        <div className = "tutorials-sections-examples">
+        <div className = "tutorials-sections-examples" id = {exampleId} key = {exampleId}>
             <main className = "tutorials-examples-mains">
                 <header className = "tutorials-examples-headers">
                     <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
@@ -54,6 +57,8 @@ export default function TutorialSectionsExample(content) {
                         }
                     } data-copy = {false}>Copiar</TutorialExampleButton>
                 </footer>
+                {/* Resultados */}
+                <TutorialExampleResults results = {content.results}></TutorialExampleResults>
             </main>
         </div>
     )
