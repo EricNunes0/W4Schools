@@ -24,6 +24,7 @@ import TutorialSectionsMaps from "./TutorialSectionsMaps";
 import TutorialSectionsTables from "./TutorialSectionsTables";
 import TutorialSectionsParagraph from "./TutorialSectionsParagraph";
 import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
+import TutorialSectionsIframe from "./TutorialSectionsIframe";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -84,6 +85,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsParagraph content = {content} bold = {true}></TutorialSectionsParagraph>);
         case "button":
             return (<TutorialSectionsButton data-type = {content.type}>{content.text}</TutorialSectionsButton>);
+        case "iframe":
+            return (<TutorialSectionsIframe content = {content}></TutorialSectionsIframe>);
         case "img":
             return (<TutorialSectionsImg alt = {content.alt} src = {content.src}></TutorialSectionsImg>);
         case "map":

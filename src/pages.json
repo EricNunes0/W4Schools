@@ -39720,13 +39720,760 @@
                             "tag": "p",
                             "content": "Um iframe HTML é usado para exibir uma página da web dentro de uma página da web."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/html/default",
+                                "title": "html-iframe-example"
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sintaxe do elemento iframe"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "iframe tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica um frame embutido, que pode ser usado para incorporar outro documento HTML na página atual."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Sintaxe do elemento <iframe>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "url",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Descrição",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "É uma boa prática sempre incluir um atributo title para o <iframe>. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Largura e altura do elemento iframe"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode definir a largura e a altura do elemento iframe utilizando os seguintes atributos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "width green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": " - define a largura do iframe;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "height green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": " - define a altura do iframe."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por padrão, a altura e a largura são especificadas em pixels:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Definindo a largura e a altura:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/html/default",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "300",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "200",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Exemplo de Iframe",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "text",
+                                                "text": "Ou você pode adicionar o atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "style green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e usar as propriedades CSS "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "width yellow"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "height yellow"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Definindo a largura e a altura:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/html/default",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "width:300px;height:200px;",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Exemplo de Iframe",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Remover a borda do elemento iframe"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por padrão, um iframe possui uma borda ao seu redor, mas você pode removê-la adicione o atributo abaixo:"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "content",
+                                                "code": "style",
+                                                "color": "#65f040"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "equal sign" 
+                                            },
+                                            {
+                                                "type": "content",
+                                                "code": "\"border:none;\"",
+                                                "color": "#f5f565"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Removendo a borda do <iframe>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/html/default",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "border:none;",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Exemplo de Iframe",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Estilizando a borda do <iframe>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/html/default",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "border:2px solid red;",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Exemplo de Iframe",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Target para um link"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um iframe pode ser usado como quadro de destino para um link."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "text",
+                                                "text": "O atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "target"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " do link deve fazer referência ao atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "name green" 
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " do iframe:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <iframe>:",
+                                "description": "Removendo a borda do <iframe>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/html/default",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "iframe-1",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "title",
+                                                        "value": "Exemplo de Iframe",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "content": "www.exemplo.com",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "https://www.exemplo.com",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "iframe-1",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Resumo do capítulo"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "iframe tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define um quadro embutido;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "src"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": atributo que define o URL da página a ser incorporada;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "title"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": sempre inclua este atributo para leitores de tela;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "width green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "-"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "height green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define a largura e a altura do iframe, respectivamente;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "border green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": estiliza a borda do iframe."
+                                            }
+                                            
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira o elemento necessário para criar um quadro embutido:",
+                                "answers": ["<iframe>", "</iframe>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "78px",
+                                            "maxLength": 8
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "88px",
+                                            "maxLength": 9,
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira o atributo necessário para inserir uma URL no quadro embutido:",
+                                "answers": ["src"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"https://www.exemplo.com\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira o atributo necessário para inserir um título no quadro embutido:",
+                                "answers": ["title"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Iframe principal\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "iframe tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<iframe>",
+                                            "href": "/tags/iframe"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um quadro embutido"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
                     ]
                 ]
             },
             {
                 "title": "HTML JavaScript",
                 "link": "/html/scripts",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que é o JavaScript?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "JavaScript (abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Também é utilizada em vários outros ambientes sem browser, tais como:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text":  "Node.js;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text":  "Apache CouchDB;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text":  "Adobe Acrobat;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text":  "e muitos outros."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "JavaScript torna as páginas HTML mais dinâmicas e interativas."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Exemplo de uso do JavaScript:",
+                                    "code": "<h2 style = \"color:white;font-size:34px;font-weight:100;\">Meu código JavaScript</h2><button onclick = \"document.getElementById('demo').innerHTML=Date()\" style = \"border-radius:2px;padding:3px;margin:5px 0;\">Clique aqui para ver a data e a hora</button><p id = \"demo\" style = \"color:white;margin:5px 0;\"></p>"
+                                }
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML File Paths",

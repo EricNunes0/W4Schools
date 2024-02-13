@@ -10,30 +10,42 @@ export default function TutorialSectionsExample(content) {
     let exampleId = `tutorial-example-${id}`;
     let articleId = `tutorial-example-article-${id}`;
     let exampleButtonId = `tutorial-example-button-${id}`;
-    let articleContents = []
+
+    let article;
+    let articleContents = [];
     if(content.lines) {
         for(const line of content.lines) {
             articleContents.push(new TutorialManagePages().convertLine(line));
         };
+
+        article = (
+            <article className = "tutorials-examples-articles" id = {articleId}>
+                {articleContents}
+            </article>
+        );
     } else if(content.parts) {
         for(const part of content.parts) {
             if(part.type === "code") {
                 articleContents.push(new TutorialManagePages().lineCode(part));
             };
         };
+
+        article = (
+            <article className = "tutorials-examples-articles" id = {articleId}>
+                {articleContents}
+            </article>
+        );
     };
 
     return (
         <div className = "tutorials-sections-examples" id = {exampleId} key = {exampleId}>
             <main className = "tutorials-examples-mains">
-                <header className = "tutorials-examples-headers">
+                <header className = "tutorials-examples-headers" data-hidden = {content.headerHide || content.exampleHide || false}>
                     <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
                     <TutorialExampleDescription>{content.description || ""}</TutorialExampleDescription>
                 </header>
-                <article className = "tutorials-examples-articles" id = {articleId}>
-                    {articleContents}
-                </article>
-                <footer className = "tutorials-examples-footers">
+                {article}
+                <footer className = "tutorials-examples-footers" data-hidden = {content.footerHide || content.exampleHide || false}>
                     <TutorialExampleButton id = {exampleButtonId} onClick = {
                         function() {
                             function exampleButtonAnimation() {

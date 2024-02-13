@@ -224,8 +224,6 @@ export default class TutorialManagePages {
             };
         };
         if(content && content.text) {
-            console.log(content);
-            console.log(codeFound);
             const text = content.text;
             const index = content.index;
             const color = content.color;

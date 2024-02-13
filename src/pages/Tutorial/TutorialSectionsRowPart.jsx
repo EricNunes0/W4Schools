@@ -18,6 +18,10 @@ export default function TutorialSectionsRowPart(codes) {
                     <div className = "tutorial-sections-rows-codes-divs">{codeParts}</div>
                 );
                 break;
+            case "content":
+                const content = new TutorialManagePages().lineContent(code)
+                parts.push(<div className = "tutorial-sections-rows-contents-divs">{content}</div>);
+                break;
             case "text":
                 const bold = code.bold || false;
                 parts.push(
