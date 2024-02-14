@@ -41198,13 +41198,561 @@
                             "tag": "p",
                             "content": "Um caminho de arquivo descreve a localização de um arquivo na estrutura de pastas de um site."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exemplos de caminhos de arquivo"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Caminho"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<img src=\"fox.png\">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O arquivo \"fox.png\" está localizado na mesma pasta da página atual"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<img src=\"images/fox.png\">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O arquivo \"fox.png\" está localizado na pasta de imagens da pasta atual"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<img src=\"/images/fox.png\">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O arquivo \"fox.png\" está localizado na pasta de imagens na raiz da web atual"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<img src=\"../fox.png\">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O arquivo \"fox.png\" está localizado na pasta um nível acima da pasta atual"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Caminhos de arquivo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um caminho de arquivo descreve a localização de um arquivo na estrutura de pastas de um site."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os caminhos de arquivo são usados ​​ao vincular arquivos externos, como:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Páginas Web;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Imagens;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Arquivos CSS;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Arquivos JavaScript."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Caminhos de arquivo absolutos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um caminho de arquivo absoluto é o URL completo de um arquivo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caminho de arquivo absoluto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "https://www.exemplo.com/images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Raposa",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Caminhos de arquivo relativos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um caminho de arquivo relativo aponta para um arquivo relativo à página atual."
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Caminho de arquivo relativo: raiz do projeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na raiz do projeto atual:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caminho de arquivo relativo:",
+                                "description": "Exibindo uma imagem localizada na raiz do projeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Raposa",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Caminho de arquivo relativo: pasta atual"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na pasta atual:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caminho de arquivo relativo:",
+                                "description": "Exibindo uma imagem localizada na pasta atual:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Raposa",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Caminho de arquivo relativo: pasta acima"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na pasta um nível acima da pasta atual:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caminho de arquivo relativo:",
+                                "description": "Exibindo uma imagem localizada na pasta um nível acima:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "../images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Raposa",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Boas práticas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "É uma boa prática usar caminhos de arquivo relativos sempre que possível!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao usar caminhos de arquivo relativos, suas páginas da web não serão vinculadas ao seu URL base atual. Todos os links funcionarão em seu próprio computador (localhost), bem como em seu domínio público atual e em seus domínios públicos futuros."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira o caminho relativo à imagem \"image.png\" da pasta \"images\", localizada na raiz do projeto:",
+                                "answers": ["/images/image.png"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "src green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "165px",
+                                            "maxLength": 17
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "alt green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Exemplo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira o caminho relativo à imagem \"image.png\" da pasta \"images\", localizada na pasta atual:",
+                                "answers": ["images/image.png"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "src green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "156px",
+                                            "maxLength": 16
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "alt green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Exemplo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira o caminho relativo à imagem \"image.png\" da pasta \"images\", localizada um nível acima da pasta atual:",
+                                "answers": ["../images/image.png"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "src green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "185px",
+                                            "maxLength": 19
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "double-quote"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "alt green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Exemplo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
                     ]
                 ]
             },
             {
                 "title": "HTML Head",
                 "link": "/html/head",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O elemento HTML "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um contêiner para os seguintes elementos:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "title tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "style tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "meta tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "link tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "script tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "base tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        
+                    ]
+                ]
             },
             {
                 "title": "HTML Layout",
