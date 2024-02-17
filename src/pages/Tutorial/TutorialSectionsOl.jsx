@@ -5,9 +5,7 @@ export const TutorialSectionsOl = styled.ol`
     font-size: 14px;
     font-weight: 100;
     text-align: left;
-    margin-top: 15px;
     margin-left: 20px;
-    margin-bottom: 15px;
     transition: all 0.3s ease;
 
     & > li {

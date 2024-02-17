@@ -18,10 +18,28 @@ export default function TutorialSectionsList(prop) {
             <li className = "tutorial-sections-lists-items">{liContent}</li>
         );
     };
+
+    /* Imagem lateral */
+    let image;
+    if(content.image) {
+        const img = content.image;
+        image = (<img src = {img.src || ""} alt = {img.alt || ""} style = {img.style || {}}></img>);
+    };
+
     switch(tag) {
         case "ol":
-            return (<TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>);
+            return (
+                <div style={{display: "flex", justifyContent: "flex-start", flexWrap: "wrap"}}>
+                    {image}
+                    <TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>
+                </div>
+            );
         case "ul":
-            return (<TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>);
+            return (
+                <div style={{display: "flex", justifyContent: "flex-start", flexWrap: "wrap"}}>
+                    {image}
+                    <TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>
+                </div>
+            );
     };
 };

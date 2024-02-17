@@ -6,9 +6,7 @@ export const TutorialSectionsUl = styled.ul`
     font-weight: 100;
     list-style-type: ${(prop) => prop.liststyle || "disc"};
     text-align: left;
-    margin-top: 15px;
     margin-left: 20px;
-    margin-bottom: 15px;
     transition: all 0.3s ease;
 
     & > li {

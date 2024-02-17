@@ -43178,12 +43178,443 @@
             {
                 "title": "HTML Layout",
                 "link": "/html/layout",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Os sites geralmente exibem conteúdo em várias colunas (como uma revista ou jornal)."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Exemplo",
+                                    "codes": [
+                                        "<header style=\"background-color: #666;color: white;font-size: 35px;padding: 30px;text-align: center;\"><h1>Região Sudeste</h1></header>",
+                                        [
+                                            "<section style=\"display:block;overflow:auto;\">",
+                                            "<nav style=\"float:left;width:25%;height:300px;background:#aaa;padding:2.5%;\">",
+                                            "<ul style=\"list-style-type: none;\"><li><a href=\"javascript:void(0)\">Rio de Janeiro</a></li><li><a href=\"javascript:void(0)\">São Paulo</a></li><li><a href=\"javascript:void(0)\">Minas Gerais</a></li><li><a href=\"javascript:void(0)\">Espírito Santo</a></li></ul>",
+                                            "</nav>",
+                                            "<article style=\"float:left;padding:2.5%;width:65%;background-color:#eee;color:#000;height:300px;\">",
+                                            "<h1 style=\"font-size:42px;\">Rio de Janeiro</h1><p>É um estado localizado na região sudeste do Brasil.</p><p>Possui aproximadamente 7 milhões de habitantes.</p>",
+                                            "</article>",
+                                            "</section>"
+                                        ],
+                                        [
+                                            "<footer style=\"background-color: #777;padding: 20px;text-align: center;color: white;\">",
+                                            "<p style=\"margin:15px 0\">Rodapé</p>",
+                                            "</footer>"
+                                        ]
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tags de layout"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O HTML possui vários elementos semânticos que definem as diferentes partes de uma página web:"
+                        },
+                        {
+                            "tag": "map",
+                            "content": {
+                                "areas": [
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,5,215,40",
+                                        "alt": "<header>",
+                                        "title": "Tag <header>",
+                                        "href": "/tags/header",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,45,215,80",
+                                        "alt": "<nav>",
+                                        "title": "Tag <nav>",
+                                        "href": "/tags/nav",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "poly",
+                                        "coords": "5,85,130,85,130,215,5,215,5,85,18,116,18,205,118,205,117,115,18,116,18,116",
+                                        "alt": "<article>",
+                                        "title": "Tag <article>",
+                                        "href": "/tags/article",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "18,115,118,205",
+                                        "alt": "<section>",
+                                        "title": "Tag <section>",
+                                        "href": "/tags/section",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "135,84,215,216",
+                                        "alt": "<aside>",
+                                        "title": "Tag <aside>",
+                                        "href": "/tags/aside",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,220,215,255",
+                                        "alt": "<footer>",
+                                        "title": "Tag <footer>",
+                                        "href": "/tags/footer",
+                                        "target": "_blank"
+                                    }
+                                ],
+                                "src": "/images/examples/html/layout/example-1.png",
+                                "usemap": "image-map-1"
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "header tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define um cabeçalho para um documento ou seção"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "nav tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define um conjunto de links de navegação"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define uma seção em um documento"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define um conteúdo independente"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "aside tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define conteúdo ao lado do conteúdo (como uma barra lateral)"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "footer tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define um rodapé para um documento ou seção"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "details tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define detalhes adicionais que o usuário pode abrir e fechar sob demanda"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "summary tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": Define um título para o elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "details tag open",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Técnicas de layout"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem quatro técnicas diferentes para criar layouts de múltiplas colunas. Cada técnica tem seus prós e contras:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "CSS Framework;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CSS Propriedade float;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CSS Flexbox;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CSS Grid;"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Layout Float"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "É comum fazer layouts web inteiros usando a propriedade CSS"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "float cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Float é a forma mais fácil de aprender. Você apenas precisa lembrar como funcionam as propriedades:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "float cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "clear cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Apesar de ser o método mais fácil, os elementos flutuantes estão vinculados ao fluxo do documento, o que pode prejudicar a flexibilidade da página."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Exemplo",
+                                    "codes": [
+                                        "<header style=\"background-color: #666;color: white;font-size: 35px;padding: 30px;text-align: center;\"><h1>Região Sudeste</h1></header>",
+                                        [
+                                            "<section style=\"display:block;overflow:auto;\">",
+                                            "<nav style=\"float:left;width:25%;height:300px;background:#aaa;padding:2.5%;\">",
+                                            "<ul style=\"list-style-type: none;\"><li><a href=\"javascript:void(0)\">Rio de Janeiro</a></li><li><a href=\"javascript:void(0)\">São Paulo</a></li><li><a href=\"javascript:void(0)\">Minas Gerais</a></li><li><a href=\"javascript:void(0)\">Espírito Santo</a></li></ul>",
+                                            "</nav>",
+                                            "<article style=\"float:left;padding:2.5%;width:65%;background-color:#eee;color:#000;height:300px;\">",
+                                            "<h1 style=\"font-size:42px;\">Rio de Janeiro</h1><p>É um estado localizado na região sudeste do Brasil.</p><p>Possui aproximadamente 7 milhões de habitantes.</p>",
+                                            "</article>",
+                                            "</section>"
+                                        ],
+                                        [
+                                            "<footer style=\"background-color: #777;padding: 20px;text-align: center;color: white;\">",
+                                            "<p style=\"margin:15px 0\">Rodapé</p>",
+                                            "</footer>"
+                                        ]
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Layout Flexbox"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O uso do flexbox garante que os elementos se comportem de maneira previsível quando o layout da página precisar acomodar diferentes tamanhos de tela e diferentes dispositivos de exibição."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Exemplo",
+                                    "codes": [
+                                        "<header style=\"background-color: #666;color: white;font-size: 35px;padding: 30px;text-align: center;\"><h1>Região Sudeste</h1></header>",
+                                        [
+                                            "<section style=\"display:flex;\">",
+                                            "<nav style=\"float:left;width:25%;background:#aaa;padding:2.5%;\">",
+                                            "<ul style=\"list-style-type: none;\"><li><a href=\"javascript:void(0)\">Rio de Janeiro</a></li><li><a href=\"javascript:void(0)\">São Paulo</a></li><li><a href=\"javascript:void(0)\">Minas Gerais</a></li><li><a href=\"javascript:void(0)\">Espírito Santo</a></li></ul>",
+                                            "</nav>",
+                                            "<article style=\"float:left;padding:2.5%;width:65%;background-color:#eee;color:#000;\">",
+                                            "<h1 style=\"font-size:42px;\">Rio de Janeiro</h1><p>É um estado localizado na região sudeste do Brasil.</p><p>Possui aproximadamente 7 milhões de habitantes.</p>",
+                                            "</article>",
+                                            "</section>"
+                                        ],
+                                        [
+                                            "<footer style=\"background-color: #777;padding: 20px;text-align: center;color: white;\">",
+                                            "<p style=\"margin:15px 0\">Rodapé</p>",
+                                            "</footer>"
+                                        ]
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Layout Grid"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O \"CSS Grid Layout Module\" oferece um sistema de layout baseado em grade, com linhas e colunas, facilitando o design de páginas web sem a necessidade de usar flutuadores e posicionamento."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Exemplo",
+                                    "codes": [
+                                        "<header style=\"background-color: #666;color: white;font-size: 35px;padding: 30px;text-align: center;\"><h1>Região Sudeste</h1></header>",
+                                        [
+                                            "<section style=\"display:grid;grid-template-columns: 25% 75%;\">",
+                                            "<nav style=\"float:left;width:95%;background:#aaa;padding:2.5%;\">",
+                                            "<ul style=\"list-style-type: none;\"><li><a href=\"javascript:void(0)\">Rio de Janeiro</a></li><li><a href=\"javascript:void(0)\">São Paulo</a></li><li><a href=\"javascript:void(0)\">Minas Gerais</a></li><li><a href=\"javascript:void(0)\">Espírito Santo</a></li></ul>",
+                                            "</nav>",
+                                            "<article style=\"float:left;padding:2.5%;width:95%;background-color:#eee;color:#000;\">",
+                                            "<h1 style=\"font-size:42px;\">Rio de Janeiro</h1><p>É um estado localizado na região sudeste do Brasil.</p><p>Possui aproximadamente 7 milhões de habitantes.</p>",
+                                            "</article>",
+                                            "</section>"
+                                        ],
+                                        [
+                                            "<footer style=\"background-color: #777;padding: 20px;text-align: center;color: white;\">",
+                                            "<p style=\"margin:15px 0\">Rodapé</p>",
+                                            "</footer>"
+                                        ]
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                ]
             },
             {
-                "title": "HTML Responsível",
+                "title": "HTML Responsividade",
                 "link": "/html/responsive",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Web design responsivo consiste em criar páginas da web que ficam bem em todos os dispositivos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um web design responsivo se ajustará automaticamente a diferentes tamanhos de tela e janelas de visualização."
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Computercode",
