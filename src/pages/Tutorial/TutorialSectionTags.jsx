@@ -25,6 +25,8 @@ import TutorialSectionsTables from "./TutorialSectionsTables";
 import TutorialSectionsParagraph from "./TutorialSectionsParagraph";
 import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
 import TutorialSectionsIframe from "./TutorialSectionsIframe";
+import TutorialSectionsImgFlex from "./TutorialSectionsImgFlex";
+import TutorialSectionsPicture from "./TutorialSectionsPicture";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -88,11 +90,13 @@ export default function TutorialSectionTags(tag, content) {
         case "iframe":
             return (<TutorialSectionsIframe content = {content}></TutorialSectionsIframe>);
         case "img":
-            return (<TutorialSectionsImg alt = {content.alt} src = {content.src}></TutorialSectionsImg>);
+            return (<TutorialSectionsImg alt = {content.alt} src = {content.src} style = {content.style || {}}></TutorialSectionsImg>);
         case "map":
             return (<TutorialSectionsMaps content = {content}></TutorialSectionsMaps>)
         case "ol": case "ul":
             return (<TutorialSectionsList tag = {tag} content = {content}></TutorialSectionsList>);
+        case "picture":
+            return (<TutorialSectionsPicture content = {content}></TutorialSectionsPicture>);
         case "table":
             return (<TutorialSectionsTables content = {content}></TutorialSectionsTables>)
         case "color-blocks":
@@ -103,6 +107,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
         case "exercise":
             return (<TutorialSectionsExercise content = {content}></TutorialSectionsExercise>);
+        case "img-flex":
+            return (<TutorialSectionsImgFlex content = {content}></TutorialSectionsImgFlex>);
         case "kickstart":
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
         case "note":

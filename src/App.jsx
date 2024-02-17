@@ -250,6 +250,14 @@ function App() {
 					<Route path = "responsive" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Responsividade"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Códigos / Computer Code */}
+					<Route path = "computercode" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Códigos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Semântica */}
+					<Route path = "semantics" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Semântica"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

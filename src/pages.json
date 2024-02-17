@@ -43613,18 +43613,3486 @@
                             "tag": "p",
                             "content": "Um web design responsivo se ajustará automaticamente a diferentes tamanhos de tela e janelas de visualização."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/examples/html/responsive/example-1.png",
+                                "alt": "Exemplo de Responsividade"
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "O que é Web Design Responsivo?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Web design responsivo trata do uso de HTML e CSS para redimensionar, ocultar, reduzir ou ampliar automaticamente um site, para que tenha uma boa aparência em todos os dispositivos (desktops, tablets, telefones, etc.)."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Configurando a janela de visualização"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para criar um site responsivo, adicione a seguinte tag a todas as suas páginas da web:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Configurando a janela de visualização:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "viewport",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "content",
+                                                        "value": "width=device-width, initial-scale=1.0",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Isso definirá a janela de visualização da sua página, o que fornecerá instruções ao navegador sobre como controlar as dimensões e o dimensionamento da página."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira abaixo um exemplo de uma página sem a meta tag da janela de visualização e a mesma página com a meta tag da janela de visualização:"
+                        },
+                        {
+                            "tag": "img-flex",
+                            "content": {
+                                "justifyContent": "space-around",
+                                "alignItems": "flex-start",
+                                "flexWrap": "wrap",
+                                "images": [
+                                    {
+                                        "src": "/images/examples/html/responsive/viewport-1.png",
+                                        "alt": "Sem a tag <meta>",
+                                        "title": "Sem a tag <meta>:"
+                                    },
+                                    {
+                                        "src": "/images/examples/html/responsive/viewport-2.png",
+                                        "alt": "Com a tag <meta>",
+                                        "title": "Com a tag <meta>:"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Imagens responsivas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Imagens responsivas são imagens que se adaptam perfeitamente a qualquer tamanho de navegador."
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Usando a propriedade width"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "width yellow"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - defina para 100% para tornar a imagem responsiva:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/fox.png",
+                                "alt": "Raposa",
+                                "style": {
+                                    "width": "100%"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Imagem responsiva:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "width:100%;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Observe que no exemplo acima, a imagem pode ser ampliada para ser maior que seu tamanho original."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma solução melhor, em muitos casos, seria usar a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "max-width yellow"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Usando a propriedade max-width"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "max-width yellow"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- configure esta propriedade para 100%."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Deste modo, a imagem será reduzida se for necessário, mas nunca será ampliada para ser maior que seu tamanho original:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/fox.png",
+                                "alt": "Raposa"
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de propriedade max-width:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/images/fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "max-width:100%;height:auto;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h4",
+                            "content": "Mostre imagens diferentes de acordo com a largura do navegador"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "picture tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - defina imagens diferentes para diferentes tamanhos de janela do navegador."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Redimensione a janela do navegador para ver como a imagem abaixo muda dependendo da largura:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "picture",
+                            "content": {
+                                "img": {
+                                    "src": "/images/examples/html/responsive/picture-diamond.png",
+                                    "alt": "Raposa"
+                                },
+                                "sources": [
+                                    {
+                                        "srcset": "/images/examples/html/responsive/picture-ruby.png",
+                                        "media": "(max-width: 480px)"
+                                    },
+                                    {
+                                        "srcset": "/images/examples/html/responsive/picture-sapphire.png",
+                                        "media": "(max-width: 768px)"
+                                    },
+                                    {
+                                        "srcset": "/images/examples/html/responsive/picture-emerald.png",
+                                        "media": "(max-width: 1080px)"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <picture>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "picture tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "source tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "srcset",
+                                                        "value": "ruby.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "media",
+                                                        "value": "(max-width: 480px)",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "source tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "srcset",
+                                                        "value": "sapphire.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "media",
+                                                        "value": "(max-width: 768px)",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "source tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "srcset",
+                                                        "value": "emerald.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "media",
+                                                        "value": "(max-width: 1080px)",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "diamond.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Joia",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "picture tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tamanho de texto responsivo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O tamanho do texto pode ser definido com uma unidade \"vw\", que significa \"viewport width\" (largura da janela de visualização, em português)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Dessa forma, o tamanho do texto seguirá o tamanho da janela do navegador."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tamanho de texto responsivo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Hello World",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "font-size:10vw;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<div style = \"background-color:#d0d0d0;border-radius:3px;\"><h1 style = \"font-size:10vw;\">Hello World</h1><p style = \"padding: 0px 0px 20px 10px;\">Redimensione a janela do navegador para ver como o tamanho do texto é dimensionado.</p></div>"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Viewport é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw terá 0,5 cm."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Media Queries"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Além de redimensionar textos e imagens, também é comum usar \"media queries\" em páginas web responsivas."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com \"media queries\", você pode definir estilos completamente diferentes para diferentes tamanhos de navegador."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplo: redimensione a janela do navegador para ver que os três elementos div abaixo serão exibidos horizontalmente em telas grandes e empilhados verticalmente em telas pequenas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de media queries:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".left",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".right",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "float cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "left",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "width cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "20",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "%",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* A largura é 20%, por padrão */",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".main",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "float cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "left",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "width cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "60",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "%",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* A largura é 60%, por padrão */",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Use uma media query para adicionar um breakpoint em 768px: */",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "media query 768px",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".left",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".main",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".right",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "width cyan",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "100",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "%",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* A largura é 100%, quando a janela de visualização é 800px ou menor */",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<style>.left,.main,.right{height:  100px;padding: 1.25% 2.5%;} .left{background-color:#2090ff;float:left;width:15%} .main{background-color:#d0d0d0;float:left;width:55%} .right{background-color:#00b070;float:left;width:15%} @media screen and (max-width:768px) {.left,.main,.right{width: 95%}}</style><div style = \"overflow:auto;\"><div class = \"left\">Esquerda</div><div class = \"main\">Conteúdo principal</div><div class = \"right\">Direita</div></div>"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Página responsiva – Exemplo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma página da web responsiva deve ficar bem em telas grandes de desktop e em telefones celulares pequenos."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Exemplo:",
+                                    "codes": [
+                                        "<style>#example-header, #example-footer {background-color: rgba(255, 255, 255, 0.2); width:100%; height: 60px; margin: 5px 0;} #example-article {display:grid; grid-template-columns: 30% 40% 30%; height: 120px; margin: 5px 0;} .example-sections {background-color: rgba(255, 255, 255, 0.2); width:98%; height: 100%; margin:auto;}</style>",
+                                        "<div>",
+                                        "<header id = \"example-header\">",
+                                        "</header>",
+                                        "<article id = \"example-article\">",
+                                        "<section class = \"example-sections\"></section>",
+                                        "<section class = \"example-sections\"></section>",
+                                        "<section class = \"example-sections\"></section>",
+                                        "</article>",
+                                        "<footer id = \"example-footer\">",
+                                        "</footer>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Frameworks"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Todos os frameworks CSS populares oferecem design responsivo. Eles são gratuitos e fáceis de usar."
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Bootstrap"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Bootstrap é um framework CSS moderna com suporte para desktop, tablet e design móvel por padrão:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Bootstrap:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "lang",
+                                                        "value": "pt-BR",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "charset",
+                                                        "value": "UTF-8",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "viewport",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "content",
+                                                        "value": "width=device-width, initial-scale=1.0",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "link tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "rel",
+                                                        "value": "stylesheet",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "href",
+                                                        "value": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "container-fluid p-5 bg-primary text-white text-center",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha página com Bootstrap",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Redimensione a página para ver o efeito!",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "container mt-5",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "row",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "col-sm-4",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h3 tag",
+                                            "content": "Coluna 1",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Lorem Ipsum...",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "col-sm-4",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h3 tag",
+                                            "content": "Coluna 2",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Lorem Ipsum...",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "col-sm-4",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h3 tag",
+                                            "content": "Coluna 3",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Lorem Ipsum...",
+                                            "contentIndex": -3,
+                                            "tabs": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "type": "multiple",
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para saber mais sobre o Bootstrap, confira o nosso"
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "Tutorial de Bootstrap.",
+                                                "link": "/bootstrap",
+                                                "target": "_self"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 ]
             },
             {
-                "title": "HTML Computercode",
+                "title": "HTML Códigos",
                 "link": "/html/computercode",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "O HTML contém várias tags para definir a entrada do usuário e códigos de computador."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de código:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x = 5;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y = 6;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z = x + y;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <kbd> para entrada de teclado"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "kbd tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma entrada do teclado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O conteúdo interno é exibido na fonte padrão do navegador: \"monospace\"."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tag <kbd>:",
+                                "description": "Definindo um texto como entrada de teclado em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Salve este documento pressionando as teclas ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "kbd tag",
+                                            "content": "Ctrl + S",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<p style = \"color:#f0f0f0;font-size:14px;\">Salve este documento pressionando as teclas <kbd>Ctrl + S</kbd></p>"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <samp> para saída de programas"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "samp tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma saída de um programa de computador."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O conteúdo interno é exibido na fonte padrão do navegador: \"monospace\"."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tag <samp>:",
+                                "description": "Definindo um texto como saída de programa em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Mensagem do programa:",
+                                            "contentIndex": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "samp tag open",
+                                            "content": "Arquivo não encontrado.",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "samp tag close",
+                                            "content": "Pressione F1 para continuar",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<p style = \"color:#f0f0f0;font-size:14px;\">Mensagem do programa:</p><p style = \"color:#f0f0f0;font-size:14px;\"><samp>Arquivo não encontrado.<br>Pressione F1 para continuar</samp></p>"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <code> para códigos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "code tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um pedaço de código de computador."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O conteúdo interno é exibido na fonte padrão do navegador: \"monospace\"."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tag <code>:",
+                                "description": "Definindo um texto como código em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x = 5;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y = 6;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z = x + y;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<code style = \"color:#f0f0f0;font-family:monospace;\">x = 5; y = 6; z = x + y;</code>"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Observe que a tag de códigos não preserva espaços em branco e quebras de linha extras."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para corrigir isso, insira-a dentro da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "pre tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tag <code>:",
+                                "description": "Definindo um texto como código em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "pre tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x = 5;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y = 6;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z = x + y;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "code tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "pre tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "inner",
+                                    "title": "Resultado:",
+                                    "code": "<code style = \"color:#f0f0f0;font-family:monospace;\">x = 5;<br>y = 6;<br>z = x + y;</code>"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <var> para variáveis"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "var tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um variável em programação."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O conteúdo interno normalmente é exibido em itálico."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tag <var>:",
+                                "description": "Definindo um texto como varíavel em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "A variável ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "var tag",
+                                            "content": "x",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "vale 5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "A variável ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "var tag",
+                                            "content": "y",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "vale 6",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "A variável ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "var tag",
+                                            "content": "z",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "é igual a:",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "var tag",
+                                            "content": "x",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "+",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "var tag",
+                                            "content": "y",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado:",
+                                    "codes": [
+                                        "<p style = \"color: #f0f0f0;font-size:14px\">A variável <var>x</var> vale 5</p>",
+                                        "<p style = \"color: #f0f0f0;font-size:14px\">A variável <var>y</var> vale 6</p>",
+                                        "<p style = \"color: #f0f0f0;font-size:14px\">A variável <var>z</var> é igual a: <var>x</var> + <var>y</var></p>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Resumo do capítulo"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "kbd tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma entrada de teclado;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "samp tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma saída de um programa de computador;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "code tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define um código de computador;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "var tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define uma variável;"
+                                            }
+                                            
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes":  [
+                                            {
+                                                "type": "code",
+                                                "code": "pre tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define um texto pré-formatado."
+                                            }
+                                            
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira a tag para definir uma entrada de teclado:",
+                                "answers": ["<kbd>", "</kbd>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Para copiar um texto, pressione ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Ctrl + C"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "59px",
+                                            "maxLength": 6
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira a tag para definir uma variável:",
+                                "answers": ["<var>", "</var>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Exemplo de variável: ",
+                                            "contentIndex": 3
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "var name;"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "59px",
+                                            "maxLength": 6
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira a tag para definir uma saída de um programa:",
+                                "answers": ["<samp>", "</samp>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Mensagem do programa:",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Pressione F1 para continuar"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "69px",
+                                            "maxLength": 7
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 4:",
+                                "description": "Insira a tag para definir um código:",
+                                "answers": ["<code>", "</code>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x = 10;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y = 15;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z = x + y;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "69px",
+                                            "maxLength": 7
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<code>",
+                                            "href": "/tags/code"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um código de programação"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<kbd>",
+                                            "href": "/tags/kbd"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma entrada de teclado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<samp>",
+                                            "href": "/tags/samp"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma saída de um programa"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<var>",
+                                            "href": "/tags/var"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma variável"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<pre>",
+                                            "href": "/tags/pre"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um texto pré-formatado"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Semântica",
                 "link": "/html/semantics",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Um HTML semântico consiste no uso de tags para reforçar a semântica, ou significado, das informações em páginas e aplicativos, em vez de meramente definir sua apresentação ou aparência."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Nesse tópico, você conhecerá tags que melhor definem as diferentes seções e o layout das páginas web."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que são tags semânticas?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma tag semântica descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor."
+                        },
+                        {
+                            "tag": "h4",
+                            "content": "Exemplos de tags não semânticas:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "div tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "span tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Tags não semânticas não descrevem nada sobre seu conteúdo."
+                        },
+                        {
+                            "tag": "h4",
+                            "content": "Exemplos de tags semânticas:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "form tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "table tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Tags semânticas descrevem seu conteúdo."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tags semânticas do HTML"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Muitos sites contêm código HTML como: <div id=\"nav\"> <div class=\"header\"> <div id=\"footer\"> para indicar navegação, cabeçalho e rodapé."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, esta não é a única forma de definir diferentes partes de uma página. O próprio HTML possui algumas tags semânticas que podem ser usadas para este fim:"
+                        },
+                        {
+                            "tag": "map",
+                            "content": {
+                                "areas": [
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,5,215,40",
+                                        "alt": "<header>",
+                                        "title": "Tag <header>",
+                                        "href": "/tags/header",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,45,215,80",
+                                        "alt": "<nav>",
+                                        "title": "Tag <nav>",
+                                        "href": "/tags/nav",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "poly",
+                                        "coords": "5,85,130,85,130,215,5,215,5,85,18,116,18,205,118,205,117,115,18,116,18,116",
+                                        "alt": "<article>",
+                                        "title": "Tag <article>",
+                                        "href": "/tags/article",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "18,115,118,205",
+                                        "alt": "<section>",
+                                        "title": "Tag <section>",
+                                        "href": "/tags/section",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "135,84,215,216",
+                                        "alt": "<aside>",
+                                        "title": "Tag <aside>",
+                                        "href": "/tags/aside",
+                                        "target": "_blank"
+                                    },
+                                    {
+                                        "shape": "rect",
+                                        "coords": "5,220,215,255",
+                                        "alt": "<footer>",
+                                        "title": "Tag <footer>",
+                                        "href": "/tags/footer",
+                                        "target": "_blank"
+                                    }
+                                ],
+                                "src": "/images/examples/html/semantics/example-1.png",
+                                "usemap": "image-map-1"
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "aside tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "details tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "figcaption tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "figure tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "footer tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "header tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "main tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "mark tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "nav tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "summary tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "time tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <section>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma seção em um documento."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "De acordo com a documentação HTML do W3C: \"Uma seção é um agrupamento de conteúdo, normalmente com um título.\""
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos de onde usar a tag:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Capítulos;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Introduções;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Notícias;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Informações de contato."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma página da web pode ser dividida em seções para introdução, conteúdo e informações de contato."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <section>:",
+                                "description": "Definindo duas seções em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "O que é o HTML?",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "HTML (abreviação para a expressão inglesa HyperText Markup Language,",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "que significa: \"Linguagem de Marcação de Hipertexto\") é uma linguagem de"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "marcação utilizada na construção de páginas na Web.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "O que é o CSS?",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "CSS (abreviação para a expressão inglesa Cascading Style Sheets) é um mecanismo",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "para adicionar estilos (cores, fontes, espaçamento, etc.) a uma página web,"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <article>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um conteúdo independente."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos de onde usar a tag:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Postagens de fóruns;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Postagens de blogs;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Comentários de usuários;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Cartões de produto;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Artigos de notícias."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <article>:",
+                                "description": "Definindo três artigos em um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Google Chrome",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "O Google Chrome é um navegador desenvolvido pelo Google, lançado em 2008.",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Chrome é o navegador mais popular do mundo atualmente!",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Mozilla Firefox",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Mozilla Firefox é um navegador de código aberto desenvolvido pela Mozilla.",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Firefox é o segundo navegador mais popular desde janeiro de 2018.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Microsoft Edge",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Microsoft Edge é um navegador desenvolvido pela Microsoft, lançado em 2015.",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Microsoft Edge substituiu o Internet Explorer.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de estilização de <article>:",
+                                "description": "Estilizando os artigos de um documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".all-browsers",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "margin cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "padding cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background-color cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "lightgray",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".all-browsers",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "h1",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".browser",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "margin cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "padding cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".browser",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "white",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".browser",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "h2",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "p",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "margin cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "font-size cyan",
+                                            "tabs": 4
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "90",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "%",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "all-browsers",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Navegadores mais populares",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "browser",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Google Chrome",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "O Google Chrome é um navegador desenvolvido pelo Google, lançado em 2008.",
+                                            "contentIndex": 3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Chrome é o navegador mais popular do mundo atualmente!",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "browser",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Mozilla Firefox",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Mozilla Firefox é um navegador de código aberto desenvolvido pela Mozilla.",
+                                            "contentIndex": 3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Firefox é o segundo navegador mais popular desde janeiro de 2018.",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "browser",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Microsoft Edge",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Microsoft Edge é um navegador desenvolvido pela Microsoft, lançado em 2015.",
+                                            "contentIndex": 3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "content": "O Microsoft Edge substituiu o Internet Explorer.",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "article tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Aninhando <article> em <section> ou vice-versa"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um conteúdo independente."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma seção em um documento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No entanto, mesmo sendo usados para propósitos diferentes, podemos aninha-los de acordo com a nossa preferência."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Portanto, você encontrará páginas HTML com:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": contendo tags "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "article tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": contendo tags "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "section tag open",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Guia de estilos",
