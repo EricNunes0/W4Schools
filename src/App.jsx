@@ -258,6 +258,10 @@ function App() {
 					<Route path = "semantics" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Semântica"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Guia de estilos */}
+					<Route path = "syntax" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Guia de estilos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
