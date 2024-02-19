@@ -48525,22 +48525,3556 @@
             {
                 "title": "HTML Guia de estilos",
                 "link": "/html/syntax",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Um código HTML consistente, limpo e organizado torna mais fácil para outras pessoas lerem e compreenderem seu código."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Aqui estão algumas diretrizes e dicas para criar um bom código HTML."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sempre declare o tipo de documento"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Sempre declare o tipo de documento como a primeira linha do seu documento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O tipo de documento correto para HTML é:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tipo de documento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Use nomes de tags em letras minúsculas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "HTML permite misturar letras maiúsculas e minúsculas nos nomes das tags."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, recomendamos usar nomes de tags em letras minúsculas porque:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Misturar nomes maiúsculos e minúsculos não fica bom;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os desenvolvedores normalmente usam nomes em letras minúsculas;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Letras minúsculas parecem mais limpas;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Letras minúsculas são mais fáceis de escrever."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "arrow left"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "BODY",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "arrow left",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "P",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Este é um parágrafo."
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow left"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "P",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "arrow left"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "BODY",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Feche todas as tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Em HTML, você não precisa fechar todas as tags. No entanto, recomendamos fortemente que as feche, deste modo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é outro parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "content": "Este é outro parágrafo.",
+                                            "contentIndex": 3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "section tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Use nomes de atributos em letras minúsculas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "HTML permite misturar letras maiúsculas e minúsculas nos nomes de atributos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, recomendamos usar nomes de atributos em letras minúsculas porque:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Misturar nomes maiúsculos e minúsculos não fica bom;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os desenvolvedores normalmente usam nomes em letras minúsculas;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Letras minúsculas parecem mais limpas;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Letras minúsculas são mais fáceis de escrever."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "content": "Conheça nosso tutorial de HTML",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "https://www.exemplo.com/html/",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "content": "Conheça nosso tutorial de HTML",
+                                            "contentIndex": -3,
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "HREF",
+                                                        "value": "https://www.exemplo.com/html/",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sempre use aspas em valores de atributos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O HTML permite valores de atributos sem aspas."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, recomendamos adicionar aspas nos valores de atributos porque:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os desenvolvedores normalmente adicionam aspas nos valores;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Valores com aspas são mais legíveis;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "É obrigatório usar aspas se o valor tiver espaços."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "table tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "striped",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "table tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "class green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "striped",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Errado:",
+                                "description": "Este exemplo não funcionará, pois o valor do atributo possui espaços:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "table tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "class green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "table",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "striped",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Especifique alt, width e height para imagens"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "alt green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - sempre espefique este atributo em uma imagem."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este atributo é importante se a imagem, por algum motivo, não puder ser exibida."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Também sempre adicione os seguintes atributos nas imagens:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "width yellow"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define a largura de uma imagem;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "height yellow"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": ": define a altura de uma imagem."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Adicionar estes atributos reduz a oscilação, pois o navegador pode reservar espaço para a imagem antes de carregá-la."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "fox.png",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Raposa",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "width:128px;height:128px;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "fox.png",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Espaços e sinais de igual"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "HTML permite espaços em torno de sinais de igual. Mas sem espaço é mais fácil de ler e agrupa melhor as entidades."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "link tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "rel",
+                                                        "value": "stylesheet",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "href",
+                                                        "value": "styles.css",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Ruim:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "link tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "rel green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"stylesheet\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "href green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"styles.css\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Evite linhas de código longas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao usar um editor HTML, não é conveniente rolar para a direita e para a esquerda para ler o código HTML. Tente evitar linhas de código muito longas."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Linhas em branco e recuo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Não adicione linhas em branco, espaços ou recuos sem motivo."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para facilitar a leitura, adicione linhas em branco para separar blocos de código grandes ou lógicos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para facilitar a leitura, adicione dois espaços de recuo. Não use a tecla Tab."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom exemplo de tabela:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "table tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "th tag",
+                                            "content": "Nome",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "th tag",
+                                            "content": "Descrição",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "td tag",
+                                            "content": "A",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "td tag",
+                                            "content": "Descrição de A",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "td tag",
+                                            "content": "B",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "td tag",
+                                            "content": "Descrição de B",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "tr tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "table tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Bom exemplo de lista:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "ul tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Primeiro item",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Segundo item",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Terceiro item",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Quarto item",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "ul tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Nunca esqueca a tag <title>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "title tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é obrigatório no HTML."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O conteúdo do título de uma página é muito importante para a otimização de mecanismos de pesquisa (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "title tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é importante para:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Definir um título na barra de ferramentas do navegador;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Fornecer um título para a página quando ela é adicionada aos favoritos;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Exibir um título para a página nos resultados do mecanismo de pesquisa."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Portanto, tente tornar o título o mais preciso e significativo possível:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <title>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Guia do HTML",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Omitir <html> e <body>?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma página HTML será validada sem as tags:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "html tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de página sem <html> e <body>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, recomendamos sempre adicionar estas tags. Omiti-las pode:"
+                        },
+                        
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Gerar erros em navegadores mais antigos;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Travar os softwares DOM e XML."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Omitir <head>?"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A página HTML também será validada sem a tag:"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Os navegadores adicionarão todos os elementos antes de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", a um elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " padrão."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de página sem <head>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, recomendamos sempre adicionar esta tag."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Fechar tags vazias?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No HTML, é opcional fechar tags vazias."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Permitido:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "charset",
+                                                        "value": "UTF-8",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Também é permitido:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "charset",
+                                                        "value": "UTF-8",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você espera que um software XML/XHTML acesse sua página, mantenha a barra de fechamento (/), pois ela é obrigatória em XML e XHTML."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicione o atributo lang"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "lang"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - sempre inclua este atributo na tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "html tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Sua função é declarar o idioma da página da Web. O objetivo é ajudar os mecanismos de pesquisa e navegadores."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo lang:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "lang",
+                                                        "value": "pt-br",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Meta Data"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para garantir a interpretação adequada e a indexação correta do mecanismo de pesquisa, tanto o idioma quanto a codificação de caracteres <meta charset=\"charset\"> devem ser definidos o mais cedo possível em um documento HTML:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <meta>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "lang",
+                                                        "value": "pt-br",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "charset",
+                                                        "value": "UTF-8",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "title tag",
+                                            "content": "Título da página",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Configurando a janela de visualização"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A janela de visualização é a área visível do usuário em uma página da web. Varia de acordo com o dispositivo – será menor em um telefone celular do que na tela de um computador."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você deve incluir a seguinte tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "meta tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em todas as suas páginas da web:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <meta>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "meta tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "viewport",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "content",
+                                                        "value": "width=device-width, initial-scale=1.0",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Isso fornece instruções ao navegador sobre como controlar as dimensões e o dimensionamento da página."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "content",
+                                                "code": "width=device-width",
+                                                "color": "#f5f565"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define a largura da página para seguir a largura da tela do dispositivo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "content",
+                                                "code": "initial-scale=1.0",
+                                                "color": "#f5f565"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira abaixo um exemplo de uma página sem a meta tag da janela de visualização e a mesma página com a meta tag da janela de visualização:"
+                        },
+                        {
+                            "tag": "img-flex",
+                            "content": {
+                                "justifyContent": "space-around",
+                                "alignItems": "flex-start",
+                                "flexWrap": "wrap",
+                                "images": [
+                                    {
+                                        "src": "/images/examples/html/responsive/viewport-1.png",
+                                        "alt": "Sem a tag <meta>",
+                                        "title": "Sem a tag <meta>:"
+                                    },
+                                    {
+                                        "src": "/images/examples/html/responsive/viewport-2.png",
+                                        "alt": "Com a tag <meta>",
+                                        "title": "Com a tag <meta>:"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Comentários no HTML"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Comentários curtos devem ser escritos em uma linha, assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário curto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "<!-- Este é um comentário -->"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Comentários que ocupam mais de uma linha devem ser escritos assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comentário longo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "<!--"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "Este é um exemplo de comentário muito longo.",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "Este é um exemplo de comentário muito longo.",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "-->"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Comentários longos são mais fáceis de observar se forem recuados com dois espaços."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando arquivos CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira a sintaxe abaixo para vincular arquivos CSS à uma página:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Vinculando um arquivo CSS:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "link tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "rel",
+                                                        "value": "stylesheet",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "href",
+                                                        "value": "styles.css",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estlizações CSS curtas podem ser escritas compactadas, assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de estilização curta:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".intro",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "font-family cyan"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Verdana",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "font-size cyan"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "16",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "em",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estlizações CSS longas devem ser escritas em múltiplas linhas, assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de estilização longa:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background-color cyan",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "lightgrey",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "font-family cyan",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Arial Black\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Helvetica",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "sans-serif",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "font-size cyan",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "16",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "em",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "color cyan",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "black",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Coloque o colchete de abertura na mesma linha do seletor;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Use um espaço antes do colchete de abertura;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Use dois espaços de recuo;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Use ponto e vírgula após cada par propriedade-valor, incluindo o último;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Use aspas apenas em valores se o valor contiver espaços;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coloque o colchete de fechamento em uma nova linha, sem espaços iniciais."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Carregando arquivos JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira a sintaxe abaixo para vincular arquivos JavaScript à uma página:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Vinculando um arquivo JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "script.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acessando tags com JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Usar código HTML \"desarrumado\" pode resultar em erros de JavaScript."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estes dois códigos JavaScript produzirão resultados diferentes:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de código JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "getElementById("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Demo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ")."
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "innerHTML"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello World\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "getElementById("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"demo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ")."
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "innerHTML"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello World\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Use nomes de arquivos com letras minúsculas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Alguns servidores web (Apache, Unix) diferenciam maiúsculas de minúsculas em relação aos nomes de arquivos: \"fox.jpg\" não pode ser acessado como \"Fox.jpg\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Outros servidores web (Microsoft, IIS) não diferenciam maiúsculas de minúsculas: \"fox.jpg\" pode ser acessado como \"Fox.jpg\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você usar uma mistura de letras maiúsculas e minúsculas, deve estar ciente disso."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você passar de um servidor que não diferencia maiúsculas de minúsculas para um que diferencia maiúsculas de minúsculas, mesmo pequenos erros danificarão sua web!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para evitar esses problemas, use sempre nomes de arquivos apenas com letras minúsculas!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Extensões de arquivo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os arquivos HTML devem ter uma extensão \".html\" (ou \".htm\")."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os arquivos CSS devem ter uma extensão \".css\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os arquivos JavaScript devem ter uma extensão \".js\"."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Há diferenças entre .html e .htm?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Não, não há diferença entre as extensões de arquivo \".html\" e \".htm\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ambos serão tratados como HTML por qualquer navegador e servidor web."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Nomes de arquivos padrão"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quando um URL não especifica um nome de arquivo no final (como \"https://www.w3schools.com/\"), o servidor apenas adiciona um nome de arquivo padrão, como \"index.html\", \"index.htm\", \" default.html\" ou \"default.htm\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se o seu servidor estiver configurado apenas com \"index.html\" como nome de arquivo padrão, seu arquivo deverá ser denominado \"index.html\" e não \"default.html\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Entretanto, os servidores podem ser configurados com mais de um nome de arquivo padrão; normalmente você pode configurar quantos nomes de arquivos padrão desejar."
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Entidades",
                 "link": "/html/entities",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Caracteres reservados no HTML devem ser substituídos por entidades:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "< (menor que) = ",
+                                                "fontWeight": "100"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "&lt;",
+                                                "fontWeight": "bold",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "> (maior que) = ",
+                                                "fontWeight": "100"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "&gt;",
+                                                "fontWeight": "bold",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Entidades de Caracteres"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Alguns caracteres são reservados no HTML."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você usar os sinais de menor que (<) ou maior que (>) em seu texto HTML, o navegador poderá misturá-los com tags."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Nomes ou números de entidades podem ser usados ​​para exibir caracteres HTML reservados."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os nomes das entidades são assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "&entidade_nome;"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os números das entidades são assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "&#entidade_numero;"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para exibir um sinal de menor que (<) devemos escrever: &lt; ou &#60;"
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os nomes das entidades são mais fáceis de lembrar do que os números das entidades."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Espaço rígido"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma entidade HTML comumente usada é o espaço rígido: &nbsp;"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um espaço rígido é um espaço que não irá quebrar uma linha."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Duas palavras separadas por um espaço inseparável ficarão juntas (não serão divididas em uma nova linha)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "§ 10"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "10 km/h"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "10 PM"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Outro uso comum do espaço rígido é evitar que os navegadores trunquem espaços em páginas HTML."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você escrever 10 espaços no seu texto, o navegador removerá 9 deles. Para adicionar espaços reais ao seu texto, você pode usar o &nbsp; entidade de caractere."
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O hífen rígido (&#8209;) é usado para definir um caractere de hífen (‑) que não se divide em uma nova linha."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Algumas entidades de caracteres"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Resultado"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Nome"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Número"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Espaço"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&nbsp;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#160;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Menor que"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&lt;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#60;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Maior que"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&gt;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#62;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "&"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "E comercial"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&amp;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#38;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Aspas duplas"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&quot;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#34;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "'"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Aspas simples"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&apos;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#39;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "¢"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Centavo"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&cent;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#162;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "£"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Libra"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&pound;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#163;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "¥"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Yen"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&yen;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#165;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "€"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Euro"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&euro;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8364;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "©"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Direitos autorais"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&copy;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#169;"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "®"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Registrado"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&reg;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#174;"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os nomes das entidades são case sensitive, ou seja, diferenciam maiúsculas de minúsculas."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Combinando sinais diacríticos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um sinal diacrítico é um \"glifo\" adicionado a uma letra."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Alguns sinais diacríticos, como grave (`) e agudo (´) são chamadas de acentos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Sinais diacríticos podem ser usados em combinação com caracteres alfanuméricos para produzir um caractere que não esteja presente no conjunto de caracteres (codificação) usado na página."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Sinal"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Caractere"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Como fazer"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Resultado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "`"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a&#768;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "à"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "´"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a&#769;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "á"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "^"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a&#770;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "â"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "~"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a&#771;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "ã"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "`"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O&#768;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Ò"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "´"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O&#769;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Ó"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "^"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O&#770;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Ô"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "~"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O&#771;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Õ"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Confira mais exemplos no próximo capítulo."
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Símbolos",
                 "link": "/html/symbols",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Símbolos ou letras que não estão presentes no teclado podem ser adicionados ao HTML usando entidades."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Entidades de Símbolo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As entidades HTML foram descritas no capítulo anterior."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para adicionar esses símbolos a uma página HTML, você pode usar o nome da entidade ou o número da entidade (uma referência decimal ou hexadecimal) para o símbolo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de entidade:",
+                                "description": "Exibindo um símbolo de euro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Eu vou exibir um &euro;",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Eu vou exibir um &#8364;",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Eu vou exibir um &#x20AC;",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado que será exibido:",
+                                    "codes": [
+                                        "<style>.symbols-p {color: #f0f0f0;}</style>",
+                                        "<p class = \"symbols-p\">Eu vou exibir um &euro;</p>",
+                                        "<p class = \"symbols-p\">Eu vou exibir um &#8364;</p>",
+                                        "<p class = \"symbols-p\">Eu vou exibir um &#x20AC;</p>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Símbolos matemáticos suportados no HTML"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Caractere"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Número"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Entidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∀"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8704;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&forall;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Para todos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∂"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8706;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&part;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Diferencial parcial"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∃"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8707;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&exist;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Existe"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∅"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8709;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&empty;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Conjuntos vazios"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∇"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8711;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&nabla;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Nabla"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∈"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8712;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&isin;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Elemento de"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∉"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8713;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&notin;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Não é um elemento de"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∋"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8715;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&ni;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Contém como membro"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∏"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8719;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&prod;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Produto de uma série de termos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "∑"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8721;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&sum;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Soma de uma série de termos"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de símbolos matemáticos",
+                                                "link": "/charsets/math"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Letras gregas suportadas no HTML"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Caractere"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Número"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Entidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Α"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#913;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Alpha;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Alpha grego"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Β"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#914;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Beta;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Beta grego"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Γ"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#915;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Gamma;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Gamma grego"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Δ"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#916;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Delta;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Delta grego"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Ε"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#917;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Epsilon;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Epsilon grego"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Ζ"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#918;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&Zeta;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Zeta grego"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de letras gregas",
+                                                "link": "/charsets/greek"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Outras entidades suportadas no HTML"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Caractere"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Número"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Entidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "©"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#169;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&copy;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Direitos autorais"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "®"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#174;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&reg;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Registrado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "€"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8364;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&euro;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Euro"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "™"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8482;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&trade;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Marca comercial"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "←"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8592;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&larr;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seta para esquerda"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "↑"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8593;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&uarr;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seta para cima"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "→"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8594;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&rarr;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seta para direita"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "↓"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#8595;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&darr;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seta para baixo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "♠"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#9824;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&spades;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Espadas"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "♣"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#9827;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&clubs;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Paus"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "♥"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#9829;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&hearts;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Copas"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "♦"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&#9830;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "&diams;"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Ouro"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de moedas",
+                                                "link": "/charsets/currency"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de setas",
+                                                "link": "/charsets/arrows"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de símbolos",
+                                                "link": "/charsets/symbols"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Emojis",
                 "link": "/html/emojis",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Emojis são caracteres do conjunto de caracteres UTF-8: 😎 🤣 🤩"
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Charsets",

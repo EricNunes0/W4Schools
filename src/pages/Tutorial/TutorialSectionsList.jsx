@@ -1,3 +1,4 @@
+import { TutorialSectionsListParagraph } from "./TutorialSectionsListParagraph";
 import { TutorialSectionsOl } from "./TutorialSectionsOl";
 import { TutorialSectionsUl } from "./TutorialSectionsUl";
 import TutorialListItemMultiple from "./TutorialListItemMultiple"
@@ -11,8 +12,8 @@ export default function TutorialSectionsList(prop) {
         let liContent;
         if(item.type === "multiple") {
             liContent = TutorialListItemMultiple(item.codes);
-        } else {
-            liContent = item.text;
+        } else if(item.type === "text") {
+            liContent = (<TutorialSectionsListParagraph fontweight = {item.fontWeight || ""}>{item.text}</TutorialSectionsListParagraph>);
         };
         items.push(
             <li className = "tutorial-sections-lists-items">{liContent}</li>
@@ -26,20 +27,17 @@ export default function TutorialSectionsList(prop) {
         image = (<img src = {img.src || ""} alt = {img.alt || ""} style = {img.style || {}}></img>);
     };
 
-    switch(tag) {
-        case "ol":
-            return (
-                <div style={{display: "flex", justifyContent: "flex-start", flexWrap: "wrap"}}>
-                    {image}
-                    <TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>
-                </div>
-            );
-        case "ul":
-            return (
-                <div style={{display: "flex", justifyContent: "flex-start", flexWrap: "wrap"}}>
-                    {image}
-                    <TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>
-                </div>
-            );
+    let listTag;
+    if(tag === "ol") {
+        listTag = (<TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>);
+    } else if(tag === "ul") {
+        listTag = (<TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>);
     };
+
+    return (
+        <div style={{display: "flex", justifyContent: "flex-start", flexWrap: "wrap"}}>
+            {image}
+            {listTag}
+        </div>
+    );
 };

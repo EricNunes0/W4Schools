@@ -262,6 +262,18 @@ function App() {
 					<Route path = "syntax" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Guia de estilos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Entidades */}
+					<Route path = "entities" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Entidades"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Símbolos */}
+					<Route path = "symbols" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Símbolos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Emojis */}
+					<Route path = "emojis" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Emojis"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
