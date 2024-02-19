@@ -274,6 +274,10 @@ function App() {
 					<Route path = "emojis" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Emojis"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Charsets / Conjuntos de caracteres */}
+					<Route path = "charsets" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Charsets"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
