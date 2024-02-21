@@ -278,9 +278,13 @@ function App() {
 					<Route path = "charsets" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Charsets"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* URL encode */}
+					{/* URL Encode / Codificação de URL */}
 					<Route path = "urlencode" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML URL encode"></TutorialMain>)}></Page>
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Codificação de URL"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* HTML vs. XHTML */}
+					<Route path = "xhtml" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML vs. XHTML"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(

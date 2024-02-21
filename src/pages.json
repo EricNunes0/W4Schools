@@ -58955,7 +58955,7 @@
                 ]
             },
             {
-                "title": "HTML URL encode",
+                "title": "HTML Codificação de URL",
                 "link": "/html/urlencode",
                 "sections": [
                     [
@@ -58971,13 +58971,460 @@
                             "tag": "p",
                             "content": "A maioria das pessoas insere o nome quando navega, porque os nomes são mais fáceis de lembrar do que os números."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "URL - Uniform Resource Locator"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os navegadores da Web solicitam páginas de servidores da Web usando um URL."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um Uniform Resource Locator (URL) é usado para endereçar um documento (ou outros dados) na web."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um endereço da web segue estas regras de sintaxe:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de sintaxe de URL:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "protocolo://prefixo.domínio:porta/caminho/arquivo"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Explicação:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Protocolo:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define o tipo de serviço de Internet (os mais comuns são http ou https)",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Prefixo:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define um prefixo de domínio (o padrão para http é www)",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Domínio:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define o nome de um domínio de internet (como \"exemplo.com\")",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Porta:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define o número da porta na hospedagem (o padrão para http é 80)",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Caminho:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define um caminho no servidor (se não informado: o diretório raiz do site)",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "code": "Arquivo:",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "code": "Define o nome de um documento ou recurso",
+                                                "fontWeight": "100",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Protocolos de URL comuns"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A tabela abaixo lista alguns protocolos comuns:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Protocolo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Abreviatura de"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Usado para"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "http"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "HyperText Transfer Protocol"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Páginas da web comuns. Não criptografado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "https"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Secure HyperText Transfer Protocol"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Páginas da web seguras. Criptografado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "ftp"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "File Transfer Protocol"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Fazer download ou upload de arquivos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "file"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": ""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Um arquivo no seu computador"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Codificação de URL"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "URLs só podem ser enviados pela Internet usando o conjunto de caracteres ASCII. Se um URL contiver caracteres fora do conjunto ASCII, o URL deverá ser convertido."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A codificação de URL converte caracteres não ASCII em um formato que pode ser transmitido pela Internet."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A codificação de URL substitui caracteres não ASCII por \"%\" seguido de dígitos hexadecimais."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "URLs não podem conter espaços. A codificação de URL normalmente substitui um espaço por um sinal de mais (+) ou% 20."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exemplos de codificação ASCII"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Seu navegador codificará a entrada de acordo com o conjunto de caracteres usado em sua página."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O conjunto de caracteres padrão em HTML5 é UTF-8."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Caractere"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Do Windows-1252"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Do UTF-8"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "€"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%80"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%E2%82%AC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "£"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%A3"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C2%A3"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "©"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%A9"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C2%A9"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "®"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%AE"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C2%AE"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "À"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C0"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%80"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Á"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C1"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%81"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Â"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C2"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%82"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Ã"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%83"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Ä"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C4"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%84"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Å"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C5"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "%C3%85"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de conjuntos de caracteres.",
+                                                "link": "/html/tags/urlencode"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
                     ]
                 ]
             },
             {
                 "title": "HTML vs. XHTML",
                 "link": "/html/xhtml",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "XHTML é uma versão do HTML mais rígida e baseada em XML."
+                        }
+                    ]
+                ]
             }
         ],
         "HTML Formulários": [

@@ -27,8 +27,9 @@ export default function TutorialListItemMultiple(codes) {
                 );
                 break;
             case "text":
+                let text = code.code || code.text || "";
                 parts.push(
-                    <p className = "tutorial-sections-lists-items-paragraphs" style = {{fontWeight: code.fontWeight, paddingLeft: `${code.spacesBefore * 6}px`}}>{code.code}</p>
+                    <p className = "tutorial-sections-lists-items-paragraphs" style = {{fontWeight: code.fontWeight, paddingLeft: `${code.spacesBefore * 6}px`}}>{text}</p>
                 );
                 break;
         };
