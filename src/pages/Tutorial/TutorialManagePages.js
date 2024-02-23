@@ -60,7 +60,17 @@ export default class TutorialManagePages {
                         };
                     };
                 } else {
-                    link = datas[i - 1] ? datas[i - 1].link : "/";
+                    if(datas[i - 1]) {
+                        link = datas[i - 1].link;
+                    } else {
+                        let topics = Object.keys(pages[language]);
+                        let previousTopic = topics[topics.indexOf(topic) - 1];
+                        if(pages[language][previousTopic]) {
+                            link = pages[language][previousTopic][0].link;
+                        } else {
+                            link = "/";
+                        }
+                    };
                 };
             };
         };
@@ -85,7 +95,13 @@ export default class TutorialManagePages {
                         };
                     };
                 } else {
-                    link = datas[i + 1] ? datas[i + 1].link : "/";
+                    if(datas[i + 1]) {
+                        link = datas[i + 1].link;
+                    } else {
+                        let topics = Object.keys(pages[language]);
+                        let nextTopic = topics[topics.indexOf(topic) + 1];
+                        link = pages[language][nextTopic][0].link;
+                    };
                 };
             };
         };

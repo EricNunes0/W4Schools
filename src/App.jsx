@@ -286,6 +286,11 @@ function App() {
 					<Route path = "xhtml" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML vs. XHTML"></TutorialMain>)}></Page>
 					)}></Route>
+
+					{/* Formulários */}
+					<Route path = "forms" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Formulários"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
