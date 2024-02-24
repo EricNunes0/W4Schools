@@ -66,7 +66,7 @@ export default class TutorialManagePages {
                         let topics = Object.keys(pages[language]);
                         let previousTopic = topics[topics.indexOf(topic) - 1];
                         if(pages[language][previousTopic]) {
-                            link = pages[language][previousTopic][0].link;
+                            link = pages[language][previousTopic][pages[language][previousTopic].length - 1].link;
                         } else {
                             link = "/";
                         }

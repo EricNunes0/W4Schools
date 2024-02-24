@@ -62323,13 +62323,1816 @@
                             "tag": "p",
                             "content": "Este capítulo descreve os diferentes atributos de um formulário no HTML."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo action"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "action green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define a ação a ser executada quando o formulário for enviado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No exemplo abaixo, os dados do formulário são enviados para um caminho chamado \"/html/forms/action\". Este arquivo contém um script do lado do servidor que trata os dados do formulário:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de formulário:",
+                                "description": "Ao enviar, envie os dados do formulário para \"/html/forms/action\":",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Rodrigo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Souza",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do formulário:",
+                                    "codes": [
+                                        "<style>.submit-labels {color: #f0f0f0;} .submit-inputs {font-size: 14px; padding: 4px 7px; border-radius: 3px;}</style>",
+                                        "<form action=\"/html/forms/action\" target=\"_blank\">",
+                                        "<label class=\"submit-labels\" for=\"fname\">Primeiro nome:</label><br>",
+                                        "<input class=\"submit-inputs\" type=\"text\" id=\"fname\" name=\"fname\" value=\"Rodrigo\"><br>",
+                                        "<label class=\"submit-labels\" for=\"lname\">Último nome:</label><br>",
+                                        "<input class=\"submit-inputs\" type=\"text\" id=\"lname\" name=\"lname\" value=\"Souza\"><br><br>",
+                                        "<input class=\"submit-inputs\" type=\"submit\" value=\"Enviar\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Se o atributo action não for definido, a ação será definida para a página atual."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo target"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "target green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica onde exibir a resposta recebida após o envio do formulário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este atributo pode ter um dos seguintes valores:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "_blank"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A resposta é exibida em uma nova janela ou guia"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "_self"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A resposta é exibida na janela atual (padrão)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "_parent"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A resposta é exibida em um quadro"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "_top"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A resposta é exibida em todo o corpo da janela"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "*nome do iframe"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A resposta é exibida em um iframe nomeado"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo target:",
+                                "description": "O resultado enviado será aberto em uma nova aba do navegador:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo method"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "method green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica o método HTTP a ser usado ao enviar os dados do formulário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os dados do formulário podem ser enviados como:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "method=\"get\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ": Variáveis ​​​​de URL"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "method=\"post\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ": Pós-transação HTTP "
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo method:",
+                                "description": "Este exemplo usa o método GET ao enviar os dados do formulário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "get",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo method:",
+                                "description": "Este exemplo usa o método POST ao enviar os dados do formulário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Notas sobre GET:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Acrescenta os dados do formulário ao URL, em pares nome/valor;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado ficam visíveis no URL!);"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O comprimento de um URL é limitado (2.048 caracteres);"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Útil para envios de formulários onde um usuário deseja marcar o resultado;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "GET é bom para dados não seguros, como strings de consulta no Google."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Notas sobre POST:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Acrescenta os dados do formulário ao corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL);"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os envios de formulários com POST não podem ser marcados como favoritos;"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Sempre use POST se os dados do formulário contiverem informações confidenciais ou pessoais!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo autocomplete"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "autocomplete green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica se um formulário deve ter o preenchimento automático ativado ou desativadoio."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Quando o preenchimento automático está ativado, o navegador completa automaticamente os valores com base nos valores inseridos anteriormente pelo usuário."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo autocomplete:",
+                                "description": "Um formulário com preenchimento automático ativado:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "autocomplete",
+                                                        "value": "on",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo novalidate"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "novalidate green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é um atributo booleano."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Quando presente, especifica que os dados do formulário (input) não devem ser validados antes de serem enviados."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo novalidate:",
+                                "description": "Um formulário com um atributo novalidate:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "action green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"/html/forms/action\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "novalidate green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira o atributo para especificar para onde os dados do formulário devem ser enviados:",
+                                "answers": ["action"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"/action.php\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira o atributo para especificar para onde a resposta recebida deverá ser exibida:",
+                                "answers": ["target"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "...",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"_blank\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira o método HTTP a ser usado para enviar os dados do formulário:",
+                                "answers": ["method"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "...",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"get\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Lista de todos os atributos do <form>"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Atributo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "accept-charset",
+                                            "href": "/tags/forms/accept-charset"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica as codificações de caracteres usadas para envio de formulários"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "action",
+                                            "href": "/tags/forms/action"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica para onde enviar os dados do formulário quando um formulário é enviado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "autocomplete",
+                                            "href": "/tags/forms/autocomplete"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica se um formulário deve ter o preenchimento automático ativado ou desativado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "enctype",
+                                            "href": "/tags/forms/enctype"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (apenas para method=\"post\")"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "method",
+                                            "href": "/tags/forms/method"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o método HTTP a ser usado ao enviar dados de formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "name",
+                                            "href": "/tags/forms/name"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o nome do formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "novalidate",
+                                            "href": "/tags/forms/novalidate"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica que o formulário não deve ser validado quando enviado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "rel",
+                                            "href": "/tags/forms/rel"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica a relação entre um recurso vinculado e o documento atual"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "target",
+                                            "href": "/tags/forms/target"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica onde exibir a resposta recebida após o envio do formulário"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
                     ]
                 ]
             },
             {
                 "title": "HTML Tags de formulários",
                 "link": "/html/forms/elements",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Este capítulo descreve todas as diferentes tags de um formulário."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tags do <form>"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um formulário no HTML pode conter um ou mais dos seguintes elementos de formulário:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "label tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "select tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "textarea tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "button tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "fieldset tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "legend tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "datalist tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "output tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "option tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "optgroup tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <input>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é uma das tags mais utilizadas em formulários."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "type green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define como o campo de entrada será exibido."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Todos os diferentes valores deste atributo são abordados no próximo capítulo:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "HTML Tipos de Inputs.",
+                                                "link": "/html/forms/inputs/types"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <input>:",
+                                "description": "Definindo um campo de entrada de texto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <label>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "label tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma label (rótulo) para as entradas do formulário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Labels são úteis para usuários de leitores de tela, visto que o leitor de tela lerá a label em voz alta quando o usuário focar no elemento de entrada."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A tag também ajuda usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro da tag, ele alterna o botão de opção/caixa de seleção."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "for green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "label tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " deve ser igual ao atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para ligá-los."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <select>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "select tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma lista suspensa:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <select>:",
+                                "description": "Definindo uma lista suspensa:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Escolha um carro:",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "volvo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Volvo",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "saab",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Saab",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "fiat",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Fiat",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "audi",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Audi",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "option tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma opção que pode ser selecionada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Por padrão, o primeiro item da lista é selecionado."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "selected green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- define uma opção pré-selecionada."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo selected:",
+                                "description": "Definindo uma opção pré-selecionada:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "value green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"fiat\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "selected green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Fiat"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "option tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Valores visíveis"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "size green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica o número de valores visíveis:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo size:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Escolha um carro:",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "size",
+                                                        "value": "3",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "volvo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Volvo",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "saab",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Saab",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "fiat",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Fiat",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "audi",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Audi",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Permitir múltiplas seleções:"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "multiple green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - permitir que o usuário selecione mais de um valor:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo multiple:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "cars",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Escolha um carro:",
+                                            "contentIndex": -3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "id green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"cars\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "name green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"cars\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "size green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"4\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "multiple green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "volvo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Volvo",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "saab",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Saab",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "fiat",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Fiat",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "audi",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Audi",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "select tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    []
+                ]
             },
             {
                 "title": "HTML Tipos de Input",
