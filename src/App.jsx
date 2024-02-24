@@ -286,11 +286,17 @@ function App() {
 					<Route path = "xhtml" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML vs. XHTML"></TutorialMain>)}></Page>
 					)}></Route>
-
+					
 					{/* Formulários */}
-					<Route path = "forms" element = {(
-						<Page content = {(<TutorialMain language = "html" topic = "HTML Tutorial" title = "HTML Formulários"></TutorialMain>)}></Page>
-					)}></Route>
+					<Route path = "forms">
+						{/* Principal */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Formulários"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "attributes" element = {(
+							<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Atributos de formulários"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
