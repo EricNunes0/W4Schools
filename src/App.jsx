@@ -301,6 +301,19 @@ function App() {
 						<Route path = "elements" element = {(
 							<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Tags de formulários"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Input */}
+						<Route path = "input">
+							{/* Tipos */}
+							<Route path = "types" element = {(
+								<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Tipos de Input"></TutorialMain>)}></Page>
+							)}></Route>
+							<Route path = "*" element = {(
+							<Navigate to = "types"></Navigate>
+						)}></Route>
+						</Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

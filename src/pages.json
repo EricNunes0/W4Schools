@@ -64131,22 +64131,1603 @@
                             }
                         }
                     ],
-                    []
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <textarea>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "textarea tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um campo de entrada para múltiplas linhas (uma área de texto):"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <textarea>:",
+                                "description": "Definindo um campo de entrada para múltiplas linhas:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "textarea tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "message",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "rows",
+                                                        "value": "10",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "cols",
+                                                        "value": "30",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "O gato estava brincando no jardim."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "textarea tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado da <textarea>:",
+                                    "codes": [
+                                        "<textarea name=\"message\" rows=\"10\" cols=\"30\" style=\"font-family:Verdana;max-width:100%;\"></textarea>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "rows green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica o número visível de linhas em uma área de texto."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "cols green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- especifica a largura visível de uma área de texto."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você também pode definir o tamanho da área de texto usando CSS:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <textarea>:",
+                                "description": "Definindo um campo de entrada para múltiplas linhas:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "textarea tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "message",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "width:200px; height:600px;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "O gato estava brincando no jardim."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "textarea tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <button>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "button tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define um botão clicável:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <button>:",
+                                "description": "Definindo um botão clicável:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "button",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "alert('Hello World!')",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Clique aqui!",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado da <button>:",
+                                    "codes": [
+                                        "<button type=\"button\" onclick=\"alert('Hello World!')\" style=\"font-family:Verdana;max-width:100%;padding:5px;border-radius:3px;font-size:14px;\">Clique aqui!</button>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Sempre especifique o atributo type para o elemento de botão. Diferentes navegadores podem usar diferentes tipos padrão para o elemento de botão."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tags <fieldset> e <legend>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "fieldset tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é usado para agrupar dados relacionados em um formulário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "legend tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define uma legenda para a tag"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "fieldset tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <fieldset> e <legend>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "fieldset tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "legend tag",
+                                            "content": "Dados pessoais:",
+                                            "contentIndex": -3, 
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "fname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Rodrigo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "lname",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Souza",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "fieldset tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do formulário:",
+                                    "codes": [
+                                        "<style>.submit-labels {color: #f0f0f0;} .submit-inputs {font-size: 14px; padding: 4px 7px; border-radius: 3px;}</style>",
+                                        "<form action=\"/html/forms/action\" target=\"_blank\">",
+                                        "<fieldset>",
+                                        "<legend class=\"submit-labels\">Dados pessoais:</legend>",
+                                        "<div style=\"margin: 0px 0px 10px 10px\">",
+                                        "<label class=\"submit-labels\" for=\"fname\">Primeiro nome:</label><br>",
+                                        "<input class=\"submit-inputs\" type=\"text\" id=\"fname\" name=\"fname\" value=\"Rodrigo\"><br>",
+                                        "<label class=\"submit-labels\" for=\"lname\">Último nome:</label><br>",
+                                        "<input class=\"submit-inputs\" type=\"text\" id=\"lname\" name=\"lname\" value=\"Souza\"><br><br>",
+                                        "<input class=\"submit-inputs\" type=\"submit\" value=\"Enviar\">",
+                                        "</div>",
+                                        "</fieldset>",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Sempre especifique o atributo type para o elemento de botão. Diferentes navegadores podem usar diferentes tipos padrão para o elemento de botão."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <datalist>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "datalist tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica uma lista de opções predefinidas para uma tag"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os usuários verão uma lista suspensa de opções predefinidas à medida que inserem os dados."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " deve referir-se ao atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "datalist tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <datalist>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "list",
+                                                        "value": "browsers",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "datalist tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "browsers",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Chrome",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Edge",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Firefox",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Opera",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "option tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Safari",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "datalist tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado da <datalist>:",
+                                    "codes": [
+                                        "<style>.datalist-inputs {font-size: 14px; padding: 4px 7px; border-radius: 3px;}</style>",
+                                        "<form action=\"/html/forms/action\">",
+                                        "<input class=\"datalist-inputs\" list=\"browsers\">",
+                                        "<datalist id=\"browsers\">",
+                                        "<option value=\"Chrome\">",
+                                        "<option value=\"Edge\">",
+                                        "<option value=\"Firefox\">",
+                                        "<option value=\"Opera\">",
+                                        "<option value=\"Safari\">",
+                                        "</datalist>",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Sempre especifique o atributo type para o elemento de botão. Diferentes navegadores podem usar diferentes tipos padrão para o elemento de botão."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tag <output>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "output tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - representa o resultado de um cálculo (como um realizado por um script)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de <output>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "oninput",
+                                                        "value": "x.value=parseInt(a.value)+parseInt(b.value)",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "range",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "a",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "a",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "50",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "100 +"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "number",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "b",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "b",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "50",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "="
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "output tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "name",
+                                                        "value": "x",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "for",
+                                                        "value": "a b",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado de <output>:",
+                                    "codes": [
+                                        "<style>.output-labels {color:#f0f0f0}</style>",
+                                        "<form action=\"/html/forms/action\" oninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">",
+                                        "<span class=\"output-labels\">0</span>",
+                                        "<input style=\"transform:translateY(2px);margin:0 5px;\" type=\"range\"  id=\"a\" name=\"a\" value=\"50\">",
+                                        "<span class=\"output-labels\">100 +</span>",
+                                        "<input style=\"font-size: 14px; padding: 4px 7px; border-radius: 3px;margin:0 5px;\" type=\"number\"  id=\"b\" name=\"b\" value=\"50\">",
+                                        "<span class=\"output-labels\">=</span>",
+                                        "<output class=\"output-labels\" style=\"margin: 0 5px;\" name=\"x\" for=\"a b\"></output>",
+                                        "<br><br>",
+                                        "<input type=\"submit\" style=\"font-size: 14px; padding: 4px 7px; border-radius: 3px;margin:0 5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Defina o tipo do campo de entrada para um campo de texto:",
+                                "answers": ["type=\"text\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "107px",
+                                            "maxLength": 11,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Adicione uma lista suspensa vazia com o nome \"browsers\":",
+                                "answers": ["<select name=\"browsers\">", "</select>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "233px",
+                                            "maxLength": 24
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "88px",
+                                            "maxLength": 9
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira a tag necessária para criar um campo de entrada para múltiplas linhas:",
+                                "answers": ["<textarea", "</textarea>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "88px",
+                                            "maxLength": 9
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "name green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"message\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "107px",
+                                            "maxLength": 11
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 4:",
+                                "description": "Use as tags necessárias para agrupar dados de um formulário e adicionar uma legenda:",
+                                "answers": ["<fieldset>", "<legend>", "</legend>", "</fieldset>"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "98px",
+                                            "maxLength": 10
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "79px",
+                                            "maxLength": 8
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Dados pessoais:"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "88px",
+                                            "maxLength": 9
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "...",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-4",
+                                            "width": "107px",
+                                            "maxLength": 11
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<form>",
+                                            "href": "/tags/form"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<input>",
+                                            "href": "/tags/input"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um campo de entrada para o usuário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<textarea>",
+                                            "href": "/tags/textarea"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um campo de entrada multilinha (área de texto)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<label>",
+                                            "href": "/tags/label"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um rótulo para um campo de entrada"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<fieldset>",
+                                            "href": "/tags/fieldset"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Agrupa elementos relacionados em um formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<legend>",
+                                            "href": "/tags/legend"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma legenda para um elemento <fieldset>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<select>",
+                                            "href": "/tags/select"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma lista suspensa"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<optgroup>",
+                                            "href": "/tags/optgroup"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um grupo de opções relacionadas em uma lista suspensa"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<option>",
+                                            "href": "/tags/option"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define uma opção em uma lista suspensa"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<button>",
+                                            "href": "/tags/button"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um botão clicável"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<datalist>",
+                                            "href": "/tags/datalist"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica uma lista de opções predefinidas para controles de entrada"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<output>",
+                                            "href": "/tags/output"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o resultado de um cálculo"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
                 ]
             },
             {
                 "title": "HTML Tipos de Input",
-                "link": "/html/forms/inputs/types",
-                "sections": []
+                "link": "/html/forms/input/types",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Este capítulo descreve os diferentes tipos de campos de entrada de dados do usuário."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tipos de <input>"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem vários tipos de campos de entrada de dados no HTML. Abaixo estão todos que você pode usar:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"button\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"checkbox\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"color\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"date\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"datetime-local\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"email\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"file\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"hidden\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"image\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"month\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"number\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"radio\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"range\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"reset\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"search\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"submit\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"tel\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"text\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"time\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"url\">"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "<input type=\"week\">"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O valor padrão do atributo type é \"text\"."
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML Atributos de Inputs",
-                "link": "/html/forms/inputs/attributes",
+                "link": "/html/forms/input/attributes",
                 "sections": []
             },
             {
                 "title": "HTML Atributos* de Inputs",
-                "link": "/html/forms/inputs/form-attributes",
+                "link": "/html/forms/input/form-attributes",
                 "sections": []
             }
         ],
