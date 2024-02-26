@@ -307,13 +307,14 @@ function App() {
 							<Route path = "types" element = {(
 								<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Tipos de Input"></TutorialMain>)}></Page>
 							)}></Route>
-							<Route path = "*" element = {(
-							<Navigate to = "types"></Navigate>
-						)}></Route>
+							{/* Atributos */}
+							<Route path = "attributes" element = {(
+								<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Atributos de Input"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
-						<Route path = "*" element = {(
+						{/*<Route path = "*" element = {(
 							<Navigate to = ""></Navigate>
-						)}></Route>
+						)}></Route>*/}
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
