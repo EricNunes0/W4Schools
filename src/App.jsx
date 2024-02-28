@@ -320,6 +320,10 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>*/}
 					</Route>
+					{/* HTML vs. XHTML */}
+					<Route path = "canvas" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Gráficos" title = "HTML Canvas"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

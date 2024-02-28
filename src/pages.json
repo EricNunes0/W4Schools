@@ -72719,6 +72719,2069 @@
                                 ]
                             }
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo form"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "form green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica o formulário ao qual a tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "input tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pertence."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "value green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - deve ser igual ao atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " da tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "form tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ao qual pertence."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo form:",
+                                "description": "Definindo um campo de entrada localizado fora de um formulário (mas que ainda faz parte dele):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "form-1",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "form",
+                                                        "value": "form-1",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo form:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\" target=\"_blank\" id =\"form-1\" style=\"border:1px solid #f0f0f0;margin-bottom:15px;\">",
+                                        "<label for=\"first-name\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name\" name=\"first-name\" style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "</form>",
+                                        "<label for=\"last-name\" style=\"color:#f0f0f0;\">Último nome:</label><br>",
+                                        "<input type=\"text\" id=\"last-name\" name=\"last-name\" form=\"form-1\" style=\"padding:5px;border-radius:3px;font-size:14px;\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo formaction"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "formaction green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica a URL do arquivo que processará a entrada quando o formulário for enviado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona com os seguintes tipos de entrada: submit e image."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Este atributo substitui o atributo action da tag <form>."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo formaction:",
+                                "description": "Definindo um formulário com dois botões de envio, com ações diferentes:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "formaction",
+                                                        "value": "/html/forms/action-2",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar como administrador",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo formaction:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\" target=\"_blank\">",
+                                        "<label for=\"first-name-1\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name-1\" name=\"first-name-1\" style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<label for=\"last-name-1\" style=\"color:#f0f0f0;\">Último nome:</label><br>",
+                                        "<input type=\"text\" id=\"last-name-1\" name=\"last-name-1\"style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "<input type=\"submit\" formaction=\"/html/forms/action-2\" value=\"Enviar como administrador\" style=\"border-radius:3px;font-size:14px;padding:5px;margin-left:5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo formenctype"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "formenctype green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica como os dados do formulário devem ser codificados quando enviados."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona apenas em formulários com method=\"post\"."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona com os seguintes tipos de entrada: submit e image."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Este atributo substitui o atributo enctype da tag <form>."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo formenctype:",
+                                "description": "Definindo um formulário com dois botões de envio. O primeiro envia os dados do formulário com codificação padrão, o segundo envia os dados do formulário codificados como \"multipart/form-data\":",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "formenctype",
+                                                        "value": "multipart/form-data",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar como Multipart/form-data",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo formenctype:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\" method=\"post\" target=\"_blank\">",
+                                        "<label for=\"first-name-2\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name-2\" name=\"first-name-2\" style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<label for=\"last-name-2\" style=\"color:#f0f0f0;\">Último nome:</label><br>",
+                                        "<input type=\"text\" id=\"last-name-2\" name=\"last-name-2\"style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "<input type=\"submit\" formenctype=\"multipart/form-data\" value=\"Enviar como Multipart/form-data\" style=\"border-radius:3px;font-size:14px;padding:5px;margin-left:5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo formmethod"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "formmethod green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - define o método HTTP para enviar dados de formulário para a URL de ação."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona com os seguintes tipos de entrada: submit e image."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os dados do formulário podem ser enviados como variáveis de URL (method=\"get\") ou como uma pós-transação HTTP (method=\"post\")."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Este atributo substitui o atributo method da tag <form>."
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Notas sobre GET:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Acrescenta os dados do formulário ao URL, em pares nome/valor;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Útil para envios de formulários onde um usuário deseja marcar o resultado;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Há um limite para a quantidade de dados que você pode colocar em uma URL (varia entre navegadores), portanto, você não pode ter certeza de que todos os dados do formulário serão transferidos corretamente;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado ficam visíveis no URL!);"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Notas sobre POST:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Acrescenta os dados do formulário ao corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL);"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os envios de formulários com POST não podem ser marcados como favoritos;"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Sempre use POST se os dados do formulário contiverem informações confidenciais ou pessoais!"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo formmethod:",
+                                "description": "Definindo um formulário com dois botões de envio. O primeiro envia os dados do formulário com o método GET, e o segundo envia como POST:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "get",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar com GET",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "formmethod",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar com POST",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo formmethod:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\" method=\"get\" target=\"_blank\">",
+                                        "<label for=\"first-name-3\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name-3\" name=\"first-name-3\" style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<label for=\"last-name-3\" style=\"color:#f0f0f0;\">Último nome:</label><br>",
+                                        "<input type=\"text\" id=\"last-name-3\" name=\"last-name-3\"style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar com GET\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "<input type=\"submit\" formmethod=\"post\" value=\"Enviar com POST\" style=\"border-radius:3px;font-size:14px;padding:5px;margin-left:5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo formtarget"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "formtarget green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica onde exibir a resposta recebida após o envio do formulário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona com os seguintes tipos de entrada: submit e image."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Este atributo substitui o atributo target da tag <form>."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo formtarget:",
+                                "description": "Definindo um formulário com dois botões de envio. O primeiro envia os dados do formulário na mesma página, e o segundo envia em uma nova aba:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Primeiro nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "first-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Último nome:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "last-name",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar aqui",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "formtarget",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar em uma nova página/aba",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo formtarget:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\">",
+                                        "<label for=\"first-name-4\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name-4\" name=\"first-name-4\" style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<label for=\"last-name-4\" style=\"color:#f0f0f0;\">Último nome:</label><br>",
+                                        "<input type=\"text\" id=\"last-name-4\" name=\"last-name-4\"style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar aqui\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "<input type=\"submit\" formtarget=\"_blank\" value=\"Enviar em uma nova página/aba\" style=\"border-radius:3px;font-size:14px;padding:5px;margin-left:5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo formnovalidate"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "formnovalidate green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - especifica que um campo de entrada não deve ser validado quando enviado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funciona com o seguinte tipo de entrada: submit."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Este atributo substitui o atributo novalidate da tag <form>."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo formnovalidate:",
+                                "description": "Definindo um formulário com dois botões de envio. O primeiro com validação, e o segundo sem validação:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "email",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Insira seu e-mail:",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "email",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "email",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "email",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "formnovalidate",
+                                                        "value": "formnovalidate",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar sem validar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "type": "innerjoin",
+                                    "title": "Resultado do atributo formnovalidate:",
+                                    "codes": [
+                                        "<form action=\"/html/forms/action\">",
+                                        "<label for=\"email\" style=\"color: #f0f0f0;\">Insira seu e-mail:</label><br>",
+                                        "<input type=\"email\" id=\"email\" name=\"email\" required style=\"padding:5px;border-radius:3px;font-size:14px;\"><br><br>",
+                                        "<input type=\"submit\" value=\"Enviar\" style=\"border-radius:3px;font-size:14px;padding:5px;\">",
+                                        "<input type=\"submit\" formnovalidate=\"formnovalidate\" value=\"Enviar sem validar\" style=\"border-radius:3px;font-size:14px;padding:5px;margin-left:5px;\">",
+                                        "</form>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Atributo novalidate"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "novalidate green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é um atributo booleano."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Quando presente, especifica que os dados do formulário (input) não devem ser validados antes de serem enviados."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de atributo novalidate:",
+                                "description": "Um formulário com um atributo novalidate:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "action green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"/html/forms/action\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "novalidate green",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Insira os atributos e valores para que um campo de entrada pertença a um formulário com id \"form-1\", mesmo sem estar dentro dele:",
+                                "answers": ["id=\"form-1\"", "form=\"form-1\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "107px",
+                                            "maxLength": 11,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "label tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "for",
+                                                        "value": "username",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Nome de usuário:",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "id",
+                                                        "value": "username",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "name",
+                                                        "value": "username",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "127px",
+                                            "maxLength": 13,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Insira o atributo e valor para que um botão de envio envie os dados de um formulário para a \"submit.php\":",
+                                "answers": ["formaction=\"submit.php\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "223px",
+                                            "maxLength": 23,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Insira o atributo e valor para que um botão de envio envie os dados de um formulário codificados como \"multipart/form-data\":",
+                                "answers": ["formenctype=\"multipart/form-data\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "319px",
+                                            "maxLength": 33,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 4:",
+                                "description": "Insira o atributo e valor para que um botão de envio envie os dados com o método \"post\":",
+                                "answers": ["formmethod=\"post\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "165px",
+                                            "maxLength": 17,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 5:",
+                                "description": "Insira o atributo e valor para que um botão de envio exiba o resultado em uma nova página/aba:",
+                                "answers": ["formtarget=\"_blank\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "185px",
+                                            "maxLength": 19,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 6:",
+                                "description": "Insira o atributo e valor para que um botão de envio envie os dados do formulário sem valida-los:",
+                                "answers": ["formnovalidate=\"formnovalidate\""],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "action",
+                                                        "value": "/html/forms/action",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "method",
+                                                        "value": "post",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "input tag open start",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "submit",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "value": "Enviar",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "300px",
+                                            "maxLength": 31,
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "tag close end"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "form tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Tags"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência de tags contém informações adicionais sobre essas tags e seus atributos."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tag"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<form>",
+                                            "href": "/tags/form"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<input>",
+                                            "href": "/tags/input"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define um campo de entrada para o usuário"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
                     ]
                 ]
             }
@@ -72727,7 +74790,30 @@
             {
                 "title": "HTML Canvas",
                 "link": "/html/canvas",
-                "sections": []
+                "sections": [
+                    [
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "canvas tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - é usado para desenhar gráficos em uma página web."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             },
             {
                 "title": "HTML SVG",
