@@ -311,6 +311,10 @@ function App() {
 							<Route path = "attributes" element = {(
 								<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "HTML Atributos de Input"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Inputs - Atributos de formulário */}
+							<Route path = "form-attributes" element = {(
+								<Page content = {(<TutorialMain language = "html" topic = "HTML Formulários" title = "Inputs - Atributos de formulário"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 						{/*<Route path = "*" element = {(
 							<Navigate to = ""></Navigate>
