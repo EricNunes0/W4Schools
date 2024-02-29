@@ -2,6 +2,7 @@ import "./Tutorials.css";
 import "./TutorialExamples.css";
 import "./TutorialKickstarts.css";
 import "./TutorialStructures.css";
+import "./TutorialSectionsCanvas.css";
 import "./TutorialSectionsIframe.css";
 import "./TutorialSectionsImgFlex.css";
 import "./TutorialSectionsNote.css";

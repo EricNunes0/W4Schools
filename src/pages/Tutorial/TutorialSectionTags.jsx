@@ -16,6 +16,7 @@ import TutorialSectionsExercise from "./TutorialSectionsExercise";
 import TutorialKickstart from "./TutorialKickstart";
 import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialSectionsRow from "./TutorialSectionsRow";
+import TutorialSectionsCanvas from "./TutorialSectionsCanvas";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 import TutorialSectionsList from "./TutorialSectionsList";
@@ -87,6 +88,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsParagraph content = {content} bold = {true}></TutorialSectionsParagraph>);
         case "button":
             return (<TutorialSectionsButton data-type = {content.type}>{content.text}</TutorialSectionsButton>);
+        case "canvas":
+            return (<TutorialSectionsCanvas content = {content}></TutorialSectionsCanvas>);
         case "iframe":
             return (<TutorialSectionsIframe content = {content}></TutorialSectionsIframe>);
         case "img":
