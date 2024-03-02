@@ -1,16 +1,28 @@
-function getColor(ctx, x, y, width, height, color) {
-    let newColor;
-    if(color.type === "text") {
-        newColor = color.text;
-    } else if(color.type === "gradient") {
-        if(color.gradient === "linear") {
-            newColor = linearGradient(ctx, color);
+function getColor({ctx, color}) {
+    let newColor = null;
+    if(color) {
+        if(color.type === "text") {
+            newColor = color.text;
+        } else if(color.type === "gradient") {
+            if(color.gradient === "linear") {
+                newColor = linearGradient({ctx: ctx, color: color});
+            } else if(color.gradient === "circular") {
+                newColor = circularGradient({ctx: ctx, color: color});
+            };
         };
     };
     return newColor;
 };
 
-function linearGradient(ctx, color) {
+function circularGradient({ctx, color}) {
+    let gradient = ctx.createRadialGradient(color.x0, color.y0, color.r0, color.x1, color.y1, color.r1);
+    for(const stop of color.stops) {
+        gradient.addColorStop(stop.offset, stop.color);
+    };
+    return gradient;
+};
+
+function linearGradient({ctx, color}) {
     let gradient = ctx.createLinearGradient(color.x0, color.y0, color.x1, color.y1);
     for(const stop of color.stops) {
         gradient.addColorStop(stop.offset, stop.color);
@@ -18,11 +30,42 @@ function linearGradient(ctx, color) {
     return gradient;
 };
 
-function drawRect(ctx, x, y, width, height, color) {
-    let colorToFill = getColor(ctx, x, y, width, height, color);
-    console.log(colorToFill)
+function drawCircle({ctx, data}) {
+    let colorToFill = getColor({ctx: ctx, color: data.color});
     ctx.fillStyle = colorToFill;
-    ctx.fillRect(x, y, width, height);
+    ctx.beginPath();
+    ctx.arc(data.x, data.y, data.radius, data.startAngle, data.endAngle * Math.PI);
+    ctx.stroke();
+};
+
+function drawLine({ctx, data}) {
+    let colorToFill = getColor({ctx: ctx, color: data.color});
+    ctx.fillStyle = colorToFill;
+    ctx.moveTo(data.x0, data.y0);
+    ctx.lineTo(data.x1, data.y1);
+    ctx.stroke();
+};
+
+function drawRect({ctx, data}) {
+    let colorToFill = getColor({ctx: ctx, color: data.color});
+    ctx.fillStyle = colorToFill;
+    ctx.fillRect(data.x, data.y, data.width, data.height);
+};
+
+function drawText({ctx, data}) {
+    ctx.font = `${data.size}px ${data.font}`;
+    if(data.color) {
+        let fillColor = getColor({ctx: ctx, color: data.color});
+        ctx.fillStyle = fillColor;
+        ctx.fillText(data.content, data.x, data.y);
+
+    };
+    if(data.stroke) {
+        let strokeColor = getColor({ctx: ctx, color: data.stroke});
+        ctx.strokeStyle = strokeColor;
+        ctx.strokeText(data.content, data.x, data.y);
+    };
+    
 };
 
 export default function TutorialSectionsCanvas(prop) {
@@ -36,14 +79,20 @@ export default function TutorialSectionsCanvas(prop) {
             const ctx = canvas.getContext("2d");
             for(const draw of content.draws) {
                 if(draw.draw === "rect") {
-                    drawRect(ctx, draw.x, draw.y, draw.width, draw.height, draw.color);
+                    drawRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "text") {
+                    drawText({ctx: ctx, data: draw});
+                } else if(draw.draw === "line") {
+                    drawLine({ctx: ctx, data: draw});
+                } else if(draw.draw === "circle") {
+                    drawCircle({ctx: ctx, data: draw});
                 };
             };
         };
 
         setTimeout(function() {
             addDraws();
-        }, 0.1 * 1000);
+        }, 0 * 1000);
 
         return (
             <canvas className = "tutorial-sections-canvas" id = {canvasId} width = {content.width || ""} height = {content.height || ""}

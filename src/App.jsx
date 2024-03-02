@@ -320,9 +320,13 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>*/}
 					</Route>
-					{/* HTML vs. XHTML */}
+					{/* Canvas */}
 					<Route path = "canvas" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Gráficos" title = "HTML Canvas"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* SVG */}
+					<Route path = "svg" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Gráficos" title = "HTML SVG"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
