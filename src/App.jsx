@@ -320,6 +320,7 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>*/}
 					</Route>
+
 					{/* Canvas */}
 					<Route path = "canvas" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Gráficos" title = "HTML Canvas"></TutorialMain>)}></Page>
@@ -327,6 +328,11 @@ function App() {
 					{/* SVG */}
 					<Route path = "svg" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Gráficos" title = "HTML SVG"></TutorialMain>)}></Page>
+					)}></Route>
+
+					{/* Media */}
+					<Route path = "media" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Mídia"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(

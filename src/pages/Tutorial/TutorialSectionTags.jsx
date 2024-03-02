@@ -24,6 +24,7 @@ import TutorialSectionsNotes from "./TutorialSectionsNotes";
 import TutorialSectionsMaps from "./TutorialSectionsMaps";
 import TutorialSectionsTables from "./TutorialSectionsTables";
 import TutorialSectionsParagraph from "./TutorialSectionsParagraph";
+import TutorialSectionsSvg from "./TutorialSectionsSvg";
 import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
 import TutorialSectionsIframe from "./TutorialSectionsIframe";
 import TutorialSectionsImgFlex from "./TutorialSectionsImgFlex";
@@ -100,6 +101,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsList tag = {tag} content = {content}></TutorialSectionsList>);
         case "picture":
             return (<TutorialSectionsPicture content = {content}></TutorialSectionsPicture>);
+        case "svg":
+            return (<TutorialSectionsSvg content = {content}></TutorialSectionsSvg>);
         case "table":
             return (<TutorialSectionsTables content = {content}></TutorialSectionsTables>)
         case "color-blocks":
