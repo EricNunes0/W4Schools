@@ -334,6 +334,14 @@ function App() {
 					<Route path = "media" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Mídia"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Vídeo */}
+					<Route path = "video" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Vídeo"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Áudio */}
+					<Route path = "audio" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Áudio"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
