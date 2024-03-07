@@ -342,6 +342,14 @@ function App() {
 					<Route path = "audio" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Áudio"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Objeto / Plug-Ins */}
+					<Route path = "object" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML Plug-ins"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* YouTube */}
+					<Route path = "youtube" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML YouTube"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
