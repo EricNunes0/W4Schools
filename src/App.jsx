@@ -350,6 +350,11 @@ function App() {
 					<Route path = "youtube" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Mídia" title = "HTML YouTube"></TutorialMain>)}></Page>
 					)}></Route>
+
+					{/* Geolocalização */}
+					<Route path = "geolocation" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Geolocalização"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
