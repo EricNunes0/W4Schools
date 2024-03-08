@@ -355,6 +355,10 @@ function App() {
 					<Route path = "geolocation" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Geolocalização"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Drag/Drop */}
+					<Route path = "drag_drop" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Drag/Drop"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
