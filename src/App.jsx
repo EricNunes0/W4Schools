@@ -359,6 +359,10 @@ function App() {
 					<Route path = "drag_drop" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Drag/Drop"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Armazenamento web */}
+					<Route path = "web_storage" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Armazenamento web"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
