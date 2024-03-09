@@ -363,6 +363,10 @@ function App() {
 					<Route path = "web_storage" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Armazenamento web"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Web Workers */}
+					<Route path = "web_workers" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Web Workers"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
