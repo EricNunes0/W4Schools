@@ -367,6 +367,10 @@ function App() {
 					<Route path = "web_workers" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML Web Workers"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* SSE */}
+					<Route path = "sse" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML APIs" title = "HTML SSE"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
