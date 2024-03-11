@@ -37,41 +37,56 @@ export default function TutorialSectionsExample(content) {
         );
     };
 
+    const exampleMain = (
+        <main className = "tutorials-examples-mains">
+            <header className = "tutorials-examples-headers" data-hidden = {content.headerHide || content.exampleHide || false}>
+                <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
+                <TutorialExampleDescription>{content.description || ""}</TutorialExampleDescription>
+            </header>
+            {article}
+            <footer className = "tutorials-examples-footers" data-hidden = {content.footerHide || content.exampleHide || false}>
+                <TutorialExampleButton id = {exampleButtonId} onClick = {
+                    function() {
+                        function exampleButtonAnimation() {
+                            const exampleButton = document.querySelector(`#${exampleButtonId}`);
+                            const exampleAnimationDuration = 1;
+                            exampleButton.dataset.copy = true;
+                            setTimeout(function() {
+                                exampleButton.dataset.copy = false;
+                            }, exampleAnimationDuration * 1000);
+                        };
+                        const article = document.querySelector(`#${articleId}`);
+                        const codes = article.querySelectorAll("code");
+                        let copyText = "";
+                        for(const code of codes) {
+                            copyText = `${copyText}${code.innerHTML.replace("&lt;", "<").replace("&gt;", ">").replace("&nbsp;", " ")}`;
+                        };
+                        copyText = copyText.replace("&lt;", "<").replace("&gt;", ">").replace("&nbsp;", " ");
+                        navigator.clipboard.writeText(copyText);
+                        exampleButtonAnimation();
+                    }
+                } data-copy = {false}>Copiar</TutorialExampleButton>
+            </footer>
+            {/* Resultados */}
+            <TutorialExampleResults results = {content.results}></TutorialExampleResults>
+        </main>
+    );
+    
+    let exampleContent;
+    if(content.accordion) {
+        exampleContent = (
+            <details className = "tutorials-sections-examples-accordions">
+                <summary className = "tutorials-sections-examples-summaries">{content.accordion.title || ""}</summary>
+                {exampleMain}
+            </details>
+        );
+    } else {
+        exampleContent = exampleMain;
+    };
+
     return (
         <div className = "tutorials-sections-examples" id = {exampleId} key = {exampleId}>
-            <main className = "tutorials-examples-mains">
-                <header className = "tutorials-examples-headers" data-hidden = {content.headerHide || content.exampleHide || false}>
-                    <TutorialExampleHeaderTitle>{content.title}</TutorialExampleHeaderTitle>
-                    <TutorialExampleDescription>{content.description || ""}</TutorialExampleDescription>
-                </header>
-                {article}
-                <footer className = "tutorials-examples-footers" data-hidden = {content.footerHide || content.exampleHide || false}>
-                    <TutorialExampleButton id = {exampleButtonId} onClick = {
-                        function() {
-                            function exampleButtonAnimation() {
-                                const exampleButton = document.querySelector(`#${exampleButtonId}`);
-                                const exampleAnimationDuration = 1;
-                                exampleButton.dataset.copy = true;
-                                setTimeout(function() {
-                                    exampleButton.dataset.copy = false;
-                                }, exampleAnimationDuration * 1000);
-                            };
-
-                            const article = document.querySelector(`#${articleId}`);
-                            const codes = article.querySelectorAll("code");
-                            let copyText = "";
-                            for(const code of codes) {
-                                copyText = `${copyText}${code.innerHTML.replace("&lt;", "<").replace("&gt;", ">").replace("&nbsp;", " ")}`;
-                            };
-                            copyText = copyText.replace("&lt;", "<").replace("&gt;", ">").replace("&nbsp;", " ");
-                            navigator.clipboard.writeText(copyText);
-                            exampleButtonAnimation();
-                        }
-                    } data-copy = {false}>Copiar</TutorialExampleButton>
-                </footer>
-                {/* Resultados */}
-                <TutorialExampleResults results = {content.results}></TutorialExampleResults>
-            </main>
+            {exampleContent}
         </div>
     )
 };

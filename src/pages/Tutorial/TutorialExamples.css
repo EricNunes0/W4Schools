@@ -6,11 +6,36 @@
     margin: 20px 0;
 }
 
+/* Accordion */
+.tutorials-sections-examples-accordions {
+    color: #f0f0f0;
+    width: 100%;
+}
+
+.tutorials-sections-examples-summaries {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+.tutorials-sections-examples-summaries:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.tutorials-sections-examples-accordions[open] > .tutorials-sections-examples-summaries {
+    /*background-color: #5075d0;*/
+    border-bottom: unset;
+}
+
 .tutorials-examples-mains {
     width: 96%;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 2%;
+}
+.tutorials-sections-examples-summaries ~ .tutorials-examples-mains {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 /* Headers */
