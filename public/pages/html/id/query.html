@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #myHeader {
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="myHeader">Este é um título</h1>
+        <button onclick="displayResult()">Alterar texto</button>
+
+        <script>
+            function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Tenha um bom dia!";
+            }
+        </script>
+    </body>
+</html>
