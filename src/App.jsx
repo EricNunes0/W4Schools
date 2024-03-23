@@ -376,6 +376,10 @@ function App() {
 					<Route path = "examples" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Exemplos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Editor */}
+					<Route path = "editor" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Editor"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

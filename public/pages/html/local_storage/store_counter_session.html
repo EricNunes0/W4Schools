@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function clickCounter() {
+                if (typeof(Storage) !== "undefined") {
+                    if (sessionStorage.clickcount) {
+                        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                    } else {
+                        sessionStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "Você clicou no botão " + sessionStorage.clickcount + " vezes.";
+                } else {
+                    document.getElementById("result").innerHTML = "Seu navegador não suporta armazenamento web";
+                }
+            }
+            </script>
+        </head>
+        <body>
+            <p id="result"></p>
+            <p><button type="button" onclick="clickCounter()">Clique aqui!</button></p>
+        </body>
+</html>

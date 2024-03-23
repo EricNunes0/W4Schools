@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Clique no botão para ver as suas coordenadas:</p>
+        <button onclick="getLocation()">Clique aqui!</button>
+        <p id="demo"></p>
+        <script>
+            const x = document.getElementById("demo");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                } else {
+                    x.innerHTML = "A geolocalização não é suportada por este navegador.";
+                }
+            }
+            
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            }
+
+            function showError(error) {
+                switch(error.code) {
+                    case error.PERMISSION_DENIED:
+                        x.innerHTML = "Usuário negou solicitação de geolocalização.";
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        x.innerHTML = "As informações de localização não estão disponíveis.";
+                        break;
+                    case error.TIMEOUT:
+                        x.innerHTML = "A requisição para obter a localização do usuário expirou.";
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        x.innerHTML = "Ocorreu um erro desconhecido.";
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
