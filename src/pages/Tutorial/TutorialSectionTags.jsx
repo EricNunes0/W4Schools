@@ -88,7 +88,12 @@ export default function TutorialSectionTags(tag, content) {
         case "b":
             return (<TutorialSectionsParagraph content = {content} bold = {true}></TutorialSectionsParagraph>);
         case "button":
-            return (<TutorialSectionsButton data-type = {content.type}>{content.text}</TutorialSectionsButton>);
+            const button = (<TutorialSectionsButton data-type = {content.type} width = {content.width || null} height = {content.height || null}>{content.text}</TutorialSectionsButton>);
+            if(content.href || content.link) {
+                return (<a href={content.href || content.link || ""} target={content.target || "_self"}>{button}</a>);
+            } else {
+                return (button);
+            };
         case "canvas":
             return (<TutorialSectionsCanvas content = {content}></TutorialSectionsCanvas>);
         case "iframe":

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const TutorialSectionsButton = styled.button`
-    width: 150px;
-    height: 35px;
+    width: ${(prop) => prop.width || "150px"};
+    height: ${(prop) => prop.height || "35px"};
     color: #f0f0f0;
     font-size: 14px;
     font-weight: 100;
