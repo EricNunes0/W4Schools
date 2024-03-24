@@ -392,6 +392,14 @@ function App() {
 					<Route path = "website" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Website"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Resumo */}
+					<Route path = "summary" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Resumo"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Acessibilidade */}
+					<Route path = "accessibility" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Acessibilidade"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
