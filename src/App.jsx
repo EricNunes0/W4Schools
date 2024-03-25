@@ -401,6 +401,13 @@ function App() {
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Acessibilidade"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
+
+				<Route path = "/tags">
+					{/* HOME */}
+					<Route path = "default" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML por alfabeto"></TutorialMain>)}></Page>
+					)}></Route>
+				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
 				)}></Route>

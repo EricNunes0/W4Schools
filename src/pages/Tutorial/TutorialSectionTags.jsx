@@ -29,6 +29,7 @@ import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
 import TutorialSectionsIframe from "./TutorialSectionsIframe";
 import TutorialSectionsImgFlex from "./TutorialSectionsImgFlex";
 import TutorialSectionsPicture from "./TutorialSectionsPicture";
+import Section from "../Sections/Section";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -126,6 +127,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsNotes content = {content}></TutorialSectionsNotes>);
         case "row":
             return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
+        case "sections":
+            return (<Section content = {content}></Section>);
         case "structure":
             return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>);
         case "tags-flex":
