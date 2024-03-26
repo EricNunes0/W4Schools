@@ -1,28 +1,60 @@
-#html-website-section-first {
+/* Sessões */
+.html-website-sections {
+    text-align: center;
+}
+.html-website-sections#first {
     background-image: url("https://www.w3schools.com/spaces/workspace.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top 0px center;
     position: relative;
 }
+.html-website-sections#second {
+    background-color: #DAF0E0 !important;
+    color: black !important;
+    text-align: center;
+}
+.html-website-sections#third {
+    background-color: #202A35 !important;
+    color: #ddd !important;
+    text-align: center;
+}
+.html-website-sections#fourth {
+    background-color: #DAF0E0 !important;
+    color: black !important;
+    text-align: center;
+}
 
-#html-website-section-first-content {
+.html-website-section-contents {
     margin-left: auto;
     margin-right: auto;
     max-width: 980px;
 }
 
-#html-website-section-first-content-top {
-    padding-top: 100px;
+.html-website-section-content-tops#first {
     color: #ffffff;
+    padding-top: 100px;
     padding-left: 25px;
     padding-right: 25px;
 }
 @media only screen and (min-width: 600px) {
-    #html-website-section-first-content-top {
+    .html-website-section-content-tops#first {
         padding-bottom: 80px;
     }
 }
+.html-website-section-content-tops#second {
+    padding: 40px 25px 90px 25px;
+}
+.html-website-section-content-tops#third {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.html-website-section-content-tops#fourth {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
 #ai-ribbon {
     position: absolute;
     top: 0px;
@@ -109,7 +141,7 @@
 }
 
 .html-website-section-first-columns-h4 {
-    color: #D9EEE1;
+    color: #DAF0E0;
     font-size: 22px;
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
@@ -123,22 +155,6 @@
     font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: bold;
-}
-
-#html-website-section-second {
-    background-color: #D9EEE1 !important;
-    color: black !important;
-    text-align: center;
-}
-
-#html-website-section-second-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 980px;
-}
-
-#html-website-section-second-content-top {
-    padding: 40px 25px 90px 25px;
 }
 
 .html-website-section-second-content-top-h1 {
@@ -164,23 +180,6 @@
     height: auto;
     display: block;
     border-radius: 4px;
-}
-
-#html-website-section-third {
-    background-color: #1d2a35 !important;
-    color: #ddd !important;
-    text-align: center;
-}
-
-#html-website-section-third-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 980px;
-}
-
-#html-website-section-third-content-top {
-    padding-top: 70px;
-    padding-bottom: 80px;
 }
 
 .html-website-section-third-content-top-h1 {
@@ -221,4 +220,60 @@
     margin-top: 20px;
     display: inline-block;
     text-decoration: none;
+}
+
+.html-website-section-fourth-content-top-h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.html-website-section-fourth-content-top-h4 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.html-website-section-templates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.html-website-section-template-items {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.html-website-section-template-items-img {
+    width: 95%;
+    height: 220px;
+}
+
+.html-website-section-template-items-a {
+    background-color: #DAF0E0;
+    border: 1px solid #ccc !important;
+    border-color: #04AA6D !important;
+    border-width: 1px !important;
+    color: #282A35;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: medium;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.html-website-section-template-items-a.black {
+    background-color: rgb(13, 23, 33) !important;
+    color: white !important;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 60px;
 }
