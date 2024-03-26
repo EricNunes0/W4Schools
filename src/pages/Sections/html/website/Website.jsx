@@ -3,48 +3,44 @@ import WebsiteStyle from "./WebsiteStyle.css";
 export default function Website() {
     return (
         <section id="html-website-section">
-            <div className="html-website-sections" id="first">
+            <div className="html-website-sections" id="first" style={{backgroundImage: "url('/images/examples/html/website/background-1.png')"}}>
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="first">
-                        <a href="" title="O que é o AI?"><img id="ai-ribbon" src="https://www.w3schools.com/spaces/kai_ribbon.png"></img></a>
-                        <h1 id="html-website-section-first-content-top-title">Crie seu próprio site com HTML</h1>
-                        <h4 id="html-website-section-first-content-top-details-description">Hospede sites com <span style={{color: "#FFC0C7"}}>W3Schools Spaces</span></h4>
+                        <a href=""><img id="ribbon" src="/images/examples/html/website/ribbon.png"></img></a>
+                        <h1 className="html-website-section-h1">Crie seu próprio site com HTML</h1>
+                        <h4 id="html-website-section-first-content-top-details-description">Hospede sites com <span style={{color: "#C0CAFF"}}>Spaces</span></h4>
                         <div id="html-website-section-first-content-top-spaces-button-div">
                             <a id="html-website-section-first-content-top-spaces-button" href="">Inicie gratuitamente</a>
                         </div>
                     </div>
                 </div>
-                <div id="html-website-section-first-row">
-                    <div className="html-website-section-first-columns">
-                        <div>
-                            <img className="html-website-section-first-columns-img" src="https://www.w3schools.com/spaces/puzzle.svg"></img>
+                <div id="html-website-section-first-flex">
+                    <div className="html-website-section-first-rows">
+                        <div className="html-website-section-first-columns">
+                            <img className="html-website-section-first-columns-img" src="/images/examples/html/website/puzzle.svg"></img>
                             <div className="html-website-section-first-columns-divs">
                                 <h4 className="html-website-section-first-columns-h4">Pratique</h4>
                                 <p className="html-website-section-first-columns-p">Programação</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="html-website-section-first-columns">
-                        <div>
-                            <img className="html-website-section-first-columns-img" src="https://www.w3schools.com/spaces/puzzle.svg"></img>
+                        <div className="html-website-section-first-columns">
+                        <img className="html-website-section-first-columns-img" src="/images/examples/html/website/robot.svg"></img>
                             <div className="html-website-section-first-columns-divs">
                                 <h4 className="html-website-section-first-columns-h4">AI</h4>
                                 <p className="html-website-section-first-columns-p">Inteligência artifical</p>
                             </div>
                         </div>
                     </div>
-                    <div className="html-website-section-first-columns">
-                        <div>
-                            <img className="html-website-section-first-columns-img" src="https://www.w3schools.com/spaces/boxes.svg"></img>
+                    <div className="html-website-section-first-rows">
+                        <div className="html-website-section-first-columns">
+                            <img className="html-website-section-first-columns-img" src="/images/examples/html/website/boxes.svg"></img>
                             <div className="html-website-section-first-columns-divs">
                                 <h4 className="html-website-section-first-columns-h4">Construa</h4>
                                 <p className="html-website-section-first-columns-p">Projetos</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="html-website-section-first-columns">
-                        <div>
-                            <img className="html-website-section-first-columns-img" src="https://www.w3schools.com/spaces/globe.svg"></img>
+                        <div className="html-website-section-first-columns">
+                            <img className="html-website-section-first-columns-img" src="/images/examples/html/website/globe.svg"></img>
                             <div className="html-website-section-first-columns-divs">
                                 <h4 className="html-website-section-first-columns-h4">Hospede</h4>
                                 <p className="html-website-section-first-columns-p">De forma segura</p>
@@ -115,6 +111,31 @@ export default function Website() {
                 <svg style={{width: "100%", marginBottom: "-10px"}} viewBox="0 0 5950 410" fill="none" xmlns="http://www.w3.org/2000/svg" id="kai-landed">
                     <path id="wavepath3" fill-rule="evenodd" clip-rule="evenodd" d="M141.726 45.4514L0 0V409.063H140.486H851.18H1698.23H2549.41H3400.59H4251.77H5098.82H5950V189.243C5938.41 191.46 5926.82 193.683 5915.25 195.905C5642.01 248.332 5371.94 300.154 5098.82 265.271C4981.35 249.378 4863.23 216.296 4744.97 183.176C4580.38 137.076 4415.51 90.9028 4251.77 90.9028C4061.21 90.9028 3871.39 151.819 3682.05 212.577C3588.12 242.721 3494.31 272.826 3400.59 295.434C3115.49 363.611 2833.27 363.611 2549.41 318.16C2445.26 301.311 2340.53 278.217 2235.46 255.045C2057.07 215.705 1877.65 176.138 1698.23 166.517C1557.84 159.704 1416.73 170.738 1275.46 181.783C1134 192.843 992.382 203.916 851.18 197.094C567.058 181.858 285.398 91.5281 143.195 45.9227L141.726 45.4514Z" fill="#282A35"></path>
                 </svg>
+            </div>
+            <div className="html-website-sections" id="fifth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="fifth">
+                        <div id="html-website-section-fifth-content-top-div">
+                            <div id="html-website-section-fifth-content-top-left">
+                                <h1 className="html-website-section-fifth-content-top-left-h1">k<span style={{fontSize: "150px"}}>AI</span></h1>
+                                <h5 className="html-website-section-fifth-content-top-left-h5">Just landed in <span style={{color: "#FFF4A3"}}>Spaces</span></h5>
+                                <p className="html-website-section-fifth-content-top-left-p">Aprenda a codificar com mais eficiência<br></br> e de forma inteligente com kAI - AI tutor</p>
+                                <a className="html-website-section-fifth-content-top-left-a" href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fspaces.w3schools.com%2F">Iniciar gratuitamente</a>
+                            </div>
+                            <img id="html-website-section-fifth-content-top-img" src="https://www.w3schools.com/images/planet2.png"></img>
+                            <div id="html-website-section-fifth-content-top-right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#D9EEE1" class="bi bi-robot" viewBox="0 0 16 16">
+                                    <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"></path>
+                                    <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"></path>
+                                </svg>
+                                <p className="html-website-section-fifth-content-top-right-p">Oi! Eu sou kAI, Tutor de IA...</p>
+                                <p className="html-website-section-fifth-content-top-right-p">Sinta-se à vontade para me fazer qualquer pergunta relacionada à codificação e farei o possível para ajudá-lo.</p>
+                                <p className="html-website-section-fifth-content-top-right-p">Posso ajudá-lo a verificar se há erros no seu código, melhorar a estrutura do seu código, explicar conceitos de codificação de forma clara e compreensível e muito mais...</p>
+                                <p className="html-website-section-fifth-content-top-right-p">Posso até criar sites completos para você com base em suas informações, então o que você está esperando?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
