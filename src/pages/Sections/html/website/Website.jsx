@@ -8,8 +8,8 @@ export default function Website() {
                     <div className="html-website-section-content-tops" id="first">
                         <a href=""><img id="ribbon" src="/images/examples/html/website/ribbon.png"></img></a>
                         <h1 className="html-website-section-h1">Crie seu próprio site com HTML</h1>
-                        <h4 id="html-website-section-first-content-top-details-description">Hospede sites com <span style={{color: "#C0CAFF"}}>Spaces</span></h4>
-                        <div id="html-website-section-first-content-top-spaces-button-div">
+                        <h4 className="html-website-section-h4">Hospede sites com <span style={{color: "#C0CAFF"}}>Spaces</span></h4>
+                        <div className="display-flex-row">
                             <a id="html-website-section-first-content-top-spaces-button" href="">Inicie gratuitamente</a>
                         </div>
                     </div>
@@ -55,8 +55,8 @@ export default function Website() {
             <div className="html-website-sections" id="second">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="second">
-                        <h1 className="html-website-section-second-content-top-h1">Editor de código poderoso</h1>
-                        <h5 className="html-website-section-second-content-top-h5">Front-end, Back-end ou Full-stack - a escolha é sua</h5>
+                        <h1 className="html-website-section-h1 dark">Editor de código poderoso</h1>
+                        <h5 className="html-website-section-h5 dark">Front-end, Back-end ou Full-stack - a escolha é sua</h5>
                         <img id="html-website-section-second-content-top-img" src="https://www.w3schools.com/spaces/dynamicspaces.gif" alt="Dynamic Spaces" loading="lazy"></img>
                     </div>
                 </div>
@@ -201,6 +201,132 @@ export default function Website() {
                 </div>
                 <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
             </div>
+            <div className="html-website-sections" id="nineth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="nineth">
+                        <article id="html-website-section-nineth-content-top-article">
+                            <div>
+                                <h6 className="html-website-section-h6">Baseado em nuvem</h6>
+                                <h3 className="html-website-section-h3">Economize tempo e dinheiro.</h3>
+                                <h6 className="html-website-section-h6">Nenhuma instalação necessária. Acesse tudo no seu navegador. Comece em segundos.</h6>
+                                <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
+                            </div>
+                            <img id="html-website-section-nineth-content-top-article-img" src="https://www.w3schools.com/spaces/spaces.png"></img>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="tenth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="tenth">
+                        <div id="html-website-section-tenth-content-top-article">
+                            <img id="html-website-section-tenth-content-top-article-img" src="https://www.w3schools.com/spaces/files.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6 dark">Explorador de arquivos</h6>
+                                <h3 className="html-website-section-h3 dark">Todos os seus arquivos em um só lugar.</h3>
+                                <h6 className="html-website-section-h6 dark">Encontre e alterne facilmente entre seus arquivos de código sem sair do editor de código.</h6>
+                                <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="eleventh">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="eleventh">
+                        <div id="html-website-section-eleventh-content-top-article">
+                            <img id="html-website-section-eleventh-content-top-article-img" src="https://www.w3schools.com/spaces/debug.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6">Terminal e Log</h6>
+                                <h3 className="html-website-section-h3">Corrija seu código rapidamente.</h3>
+                                <h6 className="html-website-section-h6">Monitore seu código, depure e solucione problemas de seu trabalho durante o desenvolvimento.</h6>
+                                <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="twelfth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="twelfth">
+                        <div id="html-website-section-twelfth-content-top-article">
+                            <img id="html-website-section-twelfth-content-top-article-img" src="https://www.w3schools.com/spaces/database.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6 dark">Banco de dados</h6>
+                                <h3 className="html-website-section-h3 dark">Obtenha visibilidade total dos dados.</h3>
+                                <h6 className="html-website-section-h6 dark">Encontre e visualize todos os dados armazenados no seu site. A qualquer hora, de qualquer lugar.</h6>
+                                <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="thirteenth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="thirteenth">
+                        <div id="html-website-section-thirteenth-content-top-article">
+                            <img id="html-website-section-thirteenth-content-top-article-img" src="https://www.w3schools.com/spaces/env.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6">Gerenciamento de ambiente</h6>
+                                <h3 className="html-website-section-h3">Maior controle e segurança</h3>
+                                <h6 className="html-website-section-h6">Controle os pontos de acesso do seu site para estabelecer conexões seguras.</h6>
+                                <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="fourteenth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="fourteenth">
+                        <div id="html-website-section-fourteenth-content-top-article">
+                            <img id="html-website-section-fourteenth-content-top-article-img" src="https://www.w3schools.com/spaces/package.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6 dark">Gerenciador de pacotes</h6>
+                                <h3 className="html-website-section-h3 dark">Encontre o que você precisa com mais rapidez</h3>
+                                <h6 className="html-website-section-h6 dark">Pesquise e instale frameworks e bibliotecas com apenas um clique.</h6>
+                                <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="fifteenth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="fifteenth">
+                        <div id="html-website-section-fifteenth-content-top-article">
+                            <img id="html-website-section-fifteenth-content-top-article-img" src="https://www.w3schools.com/spaces/analytics.png"></img>
+                            <div>
+                                <h6 className="html-website-section-h6">Análise do usuário</h6>
+                                <h3 className="html-website-section-h3">Obtenha informações de tráfego</h3>
+                                <h6 className="html-website-section-h6">Aprenda com os visitantes do seu site para oferecer uma melhor experiência ao usuário.</h6>
+                                <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="sixteenth">
+                <div style={{backgroundColor: "rgba(40, 42, 54, 0.69)"}}>
+                    <svg id="html-website-section-sixteenth-content-top-svg" viewBox="0 0 5950 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 123.957V0.00038491H5950L5950 151.641C5619.44 172.921 5288.89 210.418 4958.33 247.915C4627.78 285.413 4297.22 322.91 3966.67 344.19C3305.56 384.27 2644.44 359.478 1983.33 309.895C1322.22 260.311 661.111 194.2 330.556 158.252L0 123.957Z" fill="#5075d0"></path>
+                    </svg>
+                    <div className="html-website-section-contents">
+                        <div className="html-website-section-content-tops" id="sixteenth">
+                            <h2 className="html-website-section-h2">Inspire-se</h2>
+                            <h4 className="html-website-section-h4"><b>Conecte</b> e <b>compartilhe</b> seu site com a comunidade para obter feedback instantâneo</h4>
+                            <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="html-website-section-content-bottoms" id="sixteenth">
+                    <img id="html-website-section-sixteenth-content-bottom-img" src="https://www.w3schools.com/spaces/discord.png"></img>
+                    <svg id="html-website-section-sixteenth-content-bottom-svg" viewBox="0 0 5950 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path id="wavepath4" fill-rule="evenodd" clip-rule="evenodd" d="M110.323 220.233L0 280.973V371.875H111.563H661.111H1322.22H1983.33H2644.44H3305.56H3966.67H4627.78H5288.89H5950V273.535C5731.01 326.424 5509.12 326.424 5288.89 303.698C5069.9 280.973 4848.01 235.521 4627.78 167.344C4582.25 153.169 4536.59 138.011 4490.85 122.826C4316.59 64.9747 4141.11 6.71801 3966.67 0.826898C3798.76 -6.14263 3629.16 38.3802 3459.91 82.8117C3408.41 96.3317 3356.94 109.843 3305.56 121.893C3086.56 173.542 2864.68 206.598 2644.44 235.521C2622.76 238.385 2601.04 241.29 2579.31 244.198C2381.52 270.655 2181.76 297.378 1983.33 296.261C1764.34 297.5 1542.45 264.445 1322.22 197.507C1271.46 181.417 1220.54 163.505 1169.53 145.559C1000.45 86.0849 830.294 26.2288 661.111 30.9901C450.288 36.9568 236.784 152.062 123.085 213.359C118.679 215.734 114.423 218.029 110.323 220.233Z" fill="#DAF0E0"></path>
+                    </svg>                      
+                </div>
+            </div>
+            <div className="html-website-sections" id="seventeenth"></div>
         </section>
     );
 };
