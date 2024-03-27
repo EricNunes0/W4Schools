@@ -137,6 +137,53 @@ export default function Website() {
                     </div>
                 </div>
             </div>
+            <div className="html-website-sections" id="sixth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="sixth">
+                        <h2 className="html-website-section-h2">Super simples de compartilhar to Share</h2>
+                        <h5 className="html-website-section-h5">Hospede e publique sites rapidamente</h5>
+                        <div>
+                            <article id="html-website-section-sixth-content-top-article">
+                                <div>
+                                    <h3 className="html-website-section-h3">Incluído gratuitamente em todos os planos</h3>
+                                    <h6 className="html-website-section-h6">Subdomínio, hospedagem e certificado SSL.</h6>
+                                    <h3 className="html-website-section-h3">Quer domínios personalizados?</h3>
+                                    <h6 className="html-website-section-h6">Compre um domínio ou transfira um já existente e conecte-o ao seu espaço.</h6>
+                                </div>
+                                <img id="html-website-section-sixth-content-top-img" src="https://www.w3schools.com/spaces/domain.png"></img>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="html-website-sections" id="seventh">
+                <svg style={{width: "100%", marginTop: "-150px"}} viewBox="0 0 5950 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M330.556 118.216L0 152.511V193.831H330.556H1983.33H3966.67H5950V0.869141C5804.56 6.95963 5659.11 13.7101 5513.67 20.4605C4998 44.3939 4482.33 68.3273 3966.67 62.8483C3674.12 60.4714 3381.57 47.8189 3089.02 35.1665C2720.46 19.2265 2351.9 3.2864 1983.33 7.89345C1322.22 16.1573 661.111 82.2684 330.556 118.216Z" fill="#282A35"></path>
+                </svg>
+                <div className="html-website-section-contents">
+                    <div>
+                    <h2>Como funciona</h2>
+                    <div id="html-website-section-seventh-content-top-article">
+                        <section>
+                            <img src="https://www.w3schools.com/spaces/space.svg"></img>
+                            <div class="step">1. Junte-se <br></br>- e crie um espaço</div>
+                        </section>
+                        <section>
+                            <img src="https://www.w3schools.com/spaces/templates.svg"></img>
+                            <div class="step">2. Escolha um modelo<br></br>- ou comece do zero</div>              
+                        </section>
+                        <section>
+                            <img src="https://www.w3schools.com/spaces/editor.svg"></img>
+                            <div class="step">3. Edite o código diretamente<br></br>no seu navegador</div>
+                        </section>
+                        <section>
+                            <img src="https://www.w3schools.com/spaces/world.svg"></img>
+                            <div class="step">4. Compartilhe seu site<br></br>com o mundo</div>
+                        </section>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
