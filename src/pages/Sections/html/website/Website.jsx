@@ -184,6 +184,23 @@ export default function Website() {
                     </div>
                 </div>
             </div>
+            <div className="html-website-sections" id="eighty">
+                <div className="html-website-section-contents">
+                    <h2 className="html-website-section-h2 dark">Codificação facilitada</h2>
+                    <h6 className="html-website-section-h6 dark">Tudo ao seu alcance com nosso <b>editor de código</b></h6>
+                    <div className="html-website-section-content-tops" id="eighty">
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Baseado em nuvem</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Terminal &amp; Log</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Como fazer bibliotecas</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Banco de dados</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Explorador de arquivos</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Gerenciador de pacotes</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Análises</b></p>
+                        <p className="html-website-section-eighty-content-top-p"><img className="html-website-section-eighty-content-top-img" src="/images/examples/html/website/check.svg"></img><b>Gerenciador de ambiente</b></p>
+                    </div>
+                </div>
+                <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
+            </div>
         </section>
     );
 };
