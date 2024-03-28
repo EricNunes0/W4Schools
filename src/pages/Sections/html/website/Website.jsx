@@ -121,7 +121,7 @@ export default function Website() {
                                 <h1 className="html-website-section-fifth-content-top-left-h1">k<span style={{fontSize: "150px"}}>AI</span></h1>
                                 <h5 className="html-website-section-fifth-content-top-left-h5">Just landed in <span style={{color: "#FFF4A3"}}>Spaces</span></h5>
                                 <p className="html-website-section-fifth-content-top-left-p">Aprenda a codificar com mais eficiência<br></br> e de forma inteligente com kAI - AI tutor</p>
-                                <a className="html-website-section-fifth-content-top-left-a" href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fspaces.w3schools.com%2F">Iniciar gratuitamente</a>
+                                <a className="html-website-section-buttons" href="">Iniciar gratuitamente</a>
                             </div>
                             <img id="html-website-section-fifth-content-top-img" src="https://www.w3schools.com/images/planet2.png"></img>
                             <div id="html-website-section-fifth-content-top-right">
@@ -424,29 +424,56 @@ export default function Website() {
                             </div>
                         </div>
                     </article>
-                    <div>
-                        <div>
-                            <div>
-                                <h4>NEW SUBSCRIBER DEAL</h4>
-                                <h2>25% OFF</h2>
-                                <h4>FOR A YEAR</h4>
+                    <section id="html-website-section-seventeenth-main-section">
+                        <div id="html-website-section-seventeenth-main-section-flex" style={{padding: "0 8px"}}>
+                            <div className="html-website-section-seventeenth-main-section-columns">
+                                <h4 className="html-website-section-h4">NOVO NEGÓCIO DE ASSINANTE</h4>
+                                <h2 className="html-website-section-h2" style={{color: "#ffc0ca"}}>25% DE DESCONTO</h2>
+                                <h4 className="html-website-section-h4">POR UM ANO</h4>
                             </div>
-                            <div>
-                                <h4>USE PROMO CODE:</h4><br></br>
-                                <span>SPACES25</span>
-                                <h4>&nbsp;</h4>
+                            <div className="html-website-section-seventeenth-main-section-columns">
+                                <h4 className="html-website-section-h4" style={{color: "#ffc0ca"}}>USE PROMO CODE:</h4><br></br>
+                                <span className="html-website-section-h4 dark" style={{backgroundColor: "#ffc0ca", padding: "10px 15px", borderRadius: "50px"}}>SPACES25</span>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <h4>Want custom domains?</h4>
-                        <p>You can also buy a domain or connect an existing one.</p>
-                        <h4>Looking to add multiple users?</h4>
-                        <a href="" target="_blank">
-                            Read here for how to get in touch
-                        </a>
+                    </section>
+                    <div style={{marginBottom: "70px", marginTop: "45px"}}>
+                        <h4 className="html-website-section-h4" style={{marginBottom: "10px", marginTop: "10px"}}>Quer domínios personalizados?</h4>
+                        <h6  className="html-website-section-h6" style={{marginBottom: "30px"}}>Você também pode comprar um domínio ou conectar um já existente.</h6>
+                        <h4 className="html-website-section-h4">Quer adicionar vários usuários?</h4>
+                        <a href="" target="_blank" className="html-website-section-h6" style={{color: "#5075d0", textDecoration: "none"}}>Leia aqui como entrar em contato</a>
                     </div>
                 </main>
+            </div>
+            <div className="html-website-sections" id="eighteenth">
+                <div className="html-website-section-contents">
+                    <div className="html-website-section-content-tops" id="eighteenth">
+                        <h2 className="html-website-section-h2" style={{color: "#ffc0ca"}}>Perguntas mais comuns</h2><br></br>
+                        <button className="html-website-section-eighteenth-questions"><b>Qual é a diferença entre os espaços 'Basic' e 'Full Stack'?</b></button>
+                        <div className="html-website-section-eighteenth-panels">
+                            <p>Com o Basic Spaces, você pode criar sites front-end. Já com Fullstack Spaces, você pode criar sites front-end e back-end.</p>
+                        </div>   
+                        <button className="html-website-section-eighteenth-questions"><b>Quais linguagens de programação estão incluídas nos espaços 'Basic' e 'Full Stack'?</b></button>
+                        <div className="html-website-section-eighteenth-panels">
+                            <p>Os espaços básicos incluem HTML, CSS e Javascript. Full Stack Spaces inclui tudo em Basic Spaces, além de PHP, Python, React.js, Vue.js, Node.js, Handlebars e Django.</p>
+                        </div>
+                        <button className="html-website-section-eighteenth-questions"><b>Como as assinaturas são renovadas?</b></button>
+                        <div className="html-website-section-eighteenth-panels">
+                            <p>Sua assinatura será renovada automaticamente todos os meses.</p>
+                        </div>
+                        <button className="html-website-section-eighteenth-questions"><b>O que acontece se eu cancelar minha assinatura?</b></button>
+                        <div className="html-website-section-eighteenth-panels">
+                            <p>Seu acesso a todos os benefícios pelo período pago continuará. No entanto, a assinatura não será renovada automaticamente.</p>
+                        </div>
+                        <button className="html-website-section-eighteenth-questions"><b>Posso assinar várias contas ao mesmo tempo?</b></button>
+                        <div className="html-website-section-eighteenth-panels">
+                            <p>Para assinar contas para vários usuários, você pode entrar em contato com nome@exemplo.com</p>
+                        </div>
+                    </div>
+                    <h5 className="html-website-section-h5">Tem outras perguntas? <a href="" target="_blank" style={{color: "#ffffff"}}>Visite nossa página de suporte</a></h5>
+                    <a href="" className="html-website-section-buttons">Assine por R$4.99/mês</a>
+                    <h6 className="html-website-section-h6">Cancele quando quiser.</h6><br></br>
+                </div>
             </div>
         </section>
     );
