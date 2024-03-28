@@ -67,11 +67,11 @@ export default function Website() {
             <div className="html-website-sections" id="third">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="third">
-                        <h1 className="html-website-section-third-content-top-h1">Prática leva a perfeição</h1>
-                        <h4 className="html-website-section-third-content-top-h4">Aprimore e domine suas habilidades de desenvolvimento com essas tecnologias usando o <b>Spaces</b>.</h4>
-                        <img id="html-website-section-third-content-top-img" src="https://www.w3schools.com/spaces/languages.png" alt="Languages"></img>
+                        <h1 className="html-website-section-h1">Prática leva a perfeição</h1>
+                        <h5 className="html-website-section-h5">Aprimore e domine suas habilidades de desenvolvimento com essas tecnologias usando o <b>Spaces</b>.</h5>
+                        <img id="html-website-section-third-content-top-img" src="https://www.w3schools.com/spaces/languages.png"></img>
                         <div className="display-flex-row">
-                            <a id="html-website-section-third-content-top-spaces-button" href="">Inicie gratuitamente</a>
+                            <a href="" className="html-website-section-buttons">Inicie gratuitamente</a>
                         </div>
                     </div>
                 </div>
@@ -82,31 +82,32 @@ export default function Website() {
             <div className="html-website-sections" id="fourth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="fourth">
-                        <h2 className="html-website-section-fourth-content-top-h2">Economize tempo usando modelos prontos</h2>
-                        <h4 className="html-website-section-fourth-content-top-h4">Crie sites poderosos com apenas alguns cliques</h4>
+                        <h2 className="html-website-section-h2 dark">Economize tempo usando modelos prontos</h2>
+                        <h5 className="html-website-section-h5 dark">Crie sites poderosos com apenas alguns cliques</h5>
                     </div>
                     <div className="html-website-section-templates">
                         <div className="html-website-section-template-items">
-                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/portfolio_template.png" alt="Gamer website template"></img><br></br>
-                            <a className="html-website-section-template-items-a" href="https://spaces.w3schools.com/createspace?template=blackandwhiteportfolio"><b>Portfolio</b></a> <br></br>
+                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/portfolio_template.png"></img><br></br>
+                            <a href="" className="html-website-section-buttons bold transparent">Portfolio</a>
                         </div>
                         <div className="html-website-section-template-items">
-                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/blog_template.png" alt="Blog website template"></img><br></br>
-                            <a className="html-website-section-template-items-a" href="https://spaces.w3schools.com/createspace?template=node-handlebars-blog"><b>Blog</b></a> <br></br>
+                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/blog_template.png"></img><br></br>
+                            <a href="" className="html-website-section-buttons bold transparent">Blog</a>
                         </div>
                     </div>
                     <div className="html-website-section-templates">
                         <div className="html-website-section-template-items">
-                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/webshop_template.png" alt="AI website template"></img><br></br>
-                            <a className="html-website-section-template-items-a" href="https://spaces.w3schools.com/createspace?template=node-none-webshop"><b>Webshop</b></a> <br></br>
+                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/webshop_template.png"></img><br></br>
+                            <a href="" className="html-website-section-buttons bold transparent">Workshop</a>
                         </div>
                         <div className="html-website-section-template-items">
-                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/tutor_template.png" alt="Tutor website template"></img><br></br>
-                            <a className="html-website-section-template-items-a" href="https://spaces.w3schools.com/createspace?template=node-react-the_tutor"><b>Tutor</b></a> <br></br>
+                            <img className="html-website-section-template-items-img" src="https://www.w3schools.com/spaces/tutor_template.png"></img><br></br>
+                            <a href="" className="html-website-section-buttons bold transparent">Tutorial</a>
                         </div>
                     </div>
-                    <a className="html-website-section-template-items-a" href="https://spaces.w3schools.com/createspace">Explore All Templates</a> <br></br>
-                    <a className="html-website-section-template-items-a black" href="https://profile.w3schools.com/sign-up?redirect_url=https%3A%2F%2Fspaces.w3schools.com%2F">Get Started for Free</a>
+                    <a href="" className="html-website-section-buttons bold transparent">Explorar modelos</a>
+                    <br></br>
+                    <a href="" className="html-website-section-buttons dark">Inicie gratuitamente</a>
                 </div>
                 <svg style={{width: "100%", marginBottom: "-10px"}} viewBox="0 0 5950 410" fill="none" xmlns="http://www.w3.org/2000/svg" id="kai-landed">
                     <path id="wavepath3" fill-rule="evenodd" clip-rule="evenodd" d="M141.726 45.4514L0 0V409.063H140.486H851.18H1698.23H2549.41H3400.59H4251.77H5098.82H5950V189.243C5938.41 191.46 5926.82 193.683 5915.25 195.905C5642.01 248.332 5371.94 300.154 5098.82 265.271C4981.35 249.378 4863.23 216.296 4744.97 183.176C4580.38 137.076 4415.51 90.9028 4251.77 90.9028C4061.21 90.9028 3871.39 151.819 3682.05 212.577C3588.12 242.721 3494.31 272.826 3400.59 295.434C3115.49 363.611 2833.27 363.611 2549.41 318.16C2445.26 301.311 2340.53 278.217 2235.46 255.045C2057.07 215.705 1877.65 176.138 1698.23 166.517C1557.84 159.704 1416.73 170.738 1275.46 181.783C1134 192.843 992.382 203.916 851.18 197.094C567.058 181.858 285.398 91.5281 143.195 45.9227L141.726 45.4514Z" fill="#282A35"></path>
@@ -326,7 +327,127 @@ export default function Website() {
                     </svg>                      
                 </div>
             </div>
-            <div className="html-website-sections" id="seventeenth"></div>
+            <div className="html-website-sections" id="seventeenth">
+                <div style={{paddingTop: "50px"}}>
+                    <h2 className="html-website-section-h2">Planos de assinatura</h2>
+                </div>
+                <div>
+                    <h6 className="html-website-section-h6">Desbloqueie possibilidades com o Spaces</h6>
+                </div>
+                <div style={{position: "relative", width: "100%", marginBottom: "90px"}}>
+                    <div style={{position: "absolute", top: "20px", textAlign: "center", width: "100%"}}>
+                        Mensal&nbsp;&nbsp;&nbsp;
+                        <img id="html-website-section-seventeenth-toggle" src="https://www.w3schools.com/spaces/toggle.png"></img>
+                        &nbsp;&nbsp;&nbsp;Anual<span> (economize até 33%)</span>
+                    </div>
+                </div>
+                <main id="html-website-section-seventeenth-main">
+                    <article id="html-website-section-seventeenth-main-article">
+                        <div id="html-website-section-seventeenth-main-article-flex">
+                            <div className="html-website-section-seventeenth-main-article-columns">
+                                <div className="html-website-section-seventeenth-main-article-columns-tops">
+                                    <h2 className="html-website-section-h2" style={{marginTop: "20px"}}>Grátis</h2>
+                                    <h6 className="html-website-section-h6" style={{marginTop: "10px", marginBottom: "10px"}}>Codifique no navegador<br></br>Nenhuma configuração necessária</h6>
+                                    <img src="/images/fox.png" style={{width: "64px"}}></img>
+                                    <h6 className="html-website-section-h6" style={{marginTop: "10px", marginBottom: "10px"}}>Você terá:</h6>
+                                    <h2 className="html-website-section-h2">1</h2>
+                                    <span>Espaço básico<br></br>+</span>
+                                    <h2 className="html-website-section-h2">3</h2>                                
+                                    <span>Formulários de emprego<br></br>+</span>                              
+                                    <h2 className="html-website-section-h2">100</h2>
+                                    <img src="/images/examples/html/website/check.svg" style={{marginRight: "5px"}}></img><span>kAI tokens</span>
+                                </div>
+                                <div className="html-website-section-seventeenth-main-article-columns-lists-divs">
+                                    <ul>
+                                        <li>Meu aprendizado</li>
+                                        <li>Perfil público</li>
+                                        <li>Comunidade</li>
+                                        <li>Subdomínio</li>
+                                        <li>Certificado SSL</li>
+                                    </ul>
+                                </div>
+                                <div className="html-website-section-seventeenth-main-article-columns-footers">
+                                    <a className="html-website-section-buttons" href="">Obter</a>
+                                </div>
+                            </div>
+                            <div className="html-website-section-seventeenth-main-article-columns">
+                                <div className="html-website-section-seventeenth-main-article-columns-tops">
+                                    <h2 className="html-website-section-h2" style={{marginTop: "20px"}}>Pro</h2>
+                                    <h6 className="html-website-section-h6" style={{marginTop: "10px", marginBottom: "10px"}}>Crie e hospede seus<br></br>projetos de front-end</h6>
+                                    <div className="html-website-section-seventeenth-main-article-columns-tops-prices">
+                                        <span>R$4.99</span><span>/mês</span>
+                                    </div>
+                                    <h6 className="html-website-section-h6" style={{marginTop: "10px", marginBottom: "10px"}}>Tudo de graça + atualizado para</h6>
+                                    <h2 className="html-website-section-h2">10</h2>
+                                    <span>Espaços básicos<br></br>+</span>
+                                    <h2 className="html-website-section-h2">10</h2>                                
+                                    <span>Formulários de emprego<br></br>+</span>                              
+                                    <h2 className="html-website-section-h2">1000</h2>
+                                    <img src="/images/examples/html/website/check.svg" style={{marginRight: "5px"}}></img><span>kAI tokens</span>
+                                </div>
+                                <div className="html-website-section-seventeenth-main-article-columns-lists-divs">
+                                    <ul>
+                                        <li>Navegação sem anúncios</li>
+                                        <li>Análise de dados</li>
+                                        <li>Baixar Zip</li>
+                                        <li>Modo privado</li>
+                                        <li>Suporte prioritário</li>
+                                        <li>Suporte prioritário</li>
+                                    </ul>
+                                </div>
+                                <div className="html-website-section-seventeenth-main-article-columns-footers">
+                                    <a className="html-website-section-buttons" href="">Obter</a>
+                                </div>
+                            </div>
+                            <div className="html-website-section-seventeenth-main-article-columns invert">
+                                <div className="html-website-section-seventeenth-main-article-columns-tops">
+                                    <h2 className="html-website-section-h2 dark" style={{marginTop: "20px"}}>Premium</h2>
+                                    <h6 className="html-website-section-h6 dark" style={{marginTop: "10px", marginBottom: "10px"}}>Obtenha suporte de back-end<br></br>para criar uma aplicação web</h6>
+                                    <div className="html-website-section-seventeenth-main-article-columns-tops-prices">
+                                        <span>R$14.99</span><span>/mês</span>
+                                    </div>
+                                    <h6 className="html-website-section-h6 dark" style={{marginTop: "10px", marginBottom: "10px"}}>Tudo do <b>Pro</b> + atualizado para</h6>
+                                    <h2 className="html-website-section-h2 dark">15</h2>
+                                    <span>Espaços básicos<br></br>+</span>
+                                    <h2 className="html-website-section-h2 dark">20</h2>                                
+                                    <span>Formulários de emprego<br></br>+</span>                              
+                                    <h2 className="html-website-section-h2 dark">50000</h2>
+                                    <img src="/images/examples/html/website/check.svg" style={{marginRight: "5px"}}></img><span>kAI tokens</span>
+                                    <span><br></br>+</span>
+                                    <h2 className="html-website-section-h2 dark">1</h2>  
+                                    <h5 className="html-website-section-h5 dark">Espaço Fullstack</h5>  
+                                    <h6 className="html-website-section-h6 dark">+ Banco de dados</h6>  
+                                </div>
+                                <div className="html-website-section-seventeenth-main-article-columns-footers">
+                                    <a className="html-website-section-buttons dark" href="">Obter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div>
+                        <div>
+                            <div>
+                                <h4>NEW SUBSCRIBER DEAL</h4>
+                                <h2>25% OFF</h2>
+                                <h4>FOR A YEAR</h4>
+                            </div>
+                            <div>
+                                <h4>USE PROMO CODE:</h4><br></br>
+                                <span>SPACES25</span>
+                                <h4>&nbsp;</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Want custom domains?</h4>
+                        <p>You can also buy a domain or connect an existing one.</p>
+                        <h4>Looking to add multiple users?</h4>
+                        <a href="" target="_blank">
+                            Read here for how to get in touch
+                        </a>
+                    </div>
+                </main>
+            </div>
         </section>
     );
 };
