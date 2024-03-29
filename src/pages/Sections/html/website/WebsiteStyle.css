@@ -2,71 +2,46 @@
 .html-website-sections {
     text-align: center;
 }
+.html-website-sections[class~="light"] {
+    background-color: #DAF0E0;
+    color: #000000;
+}
+.html-website-sections[class~="dark"] {
+    background-color: #202A35;
+    color: #ffffff;
+}
+.html-website-sections[class~="blue"] {
+    background-color: #5075d0;
+    color: #ffffff;
+}
 .html-website-sections#first {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top 0px center;
     position: relative;
 }
-.html-website-sections#second {
-    background-color: #DAF0E0;
-    color: black;
-}
-.html-website-sections#third {
-    background-color: #202A35;
-    color: #ddd;
-}
-.html-website-sections#fourth {
-    background-color: #DAF0E0;
-    color: black;
-}
-.html-website-sections#fifth {
-    background-color: #202A35;
-    background-image: url("https://www.w3schools.com/images/background_in_space.gif");
-    color: #DAF0E0;
-    margin-top: -2px;
-}
-.html-website-sections#sixth {
-    background-color: #5075d0 !important;
-    color: black !important;
-}
 .html-website-sections#seventh {
-    background-color: #282A35 !important;
-    color: #ffffff !important;
     margin-top: -30px;
     padding-bottom: 80px;
 }
 .html-website-sections#eighty {
-    background-color: #DAF0E0 !important;
-    color: black !important;
     margin-top: -30px;
     padding-top: 50px;
     padding-bottom: 80px;
 }
-.html-website-sections#nineth {
-    background-color: transparent;
-    color: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-/* Sessões: 10, 12 e 14 */
+
+/* Sessões: 9, 10, 11, 12, 13, 14 e 15 */
+.html-website-sections#nineth,
 .html-website-sections#tenth,
-.html-website-sections#twelfth,
-.html-website-sections#fourteenth {
-    background-color: #DAF0E0 !important;
-    color: black !important;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-/* Sessões: 11, 13 e 15 */
 .html-website-sections#eleventh,
+.html-website-sections#twelfth,
 .html-website-sections#thirteenth,
+.html-website-sections#fourteenth,
 .html-website-sections#fifteenth {
-    background-color: #5075d0 !important;
-    color: black !important;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 /* Sessões: 16 */
 .html-website-sections#sixteenth {
     background-color: transparent;
@@ -471,43 +446,11 @@
     margin-top: -10px;
 }
 
-.html-website-section-fifth-content-top-left-h5 {
-    color: white !important;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 28px;
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
-}
-
-.html-website-section-fifth-content-top-left-p {
-    color: white !important;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-    margin-top: -14px;
-}
-
-.html-website-section-fifth-content-top-left-a {
-    background-color: #04AA6D !important;
-    color: white !important;
-    display: inline-block;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 19px;
-    padding-left: 45px;
-    padding-right: 45px;
-    border-radius: 25px;
-    text-decoration: none;
-}
-
 #html-website-section-fifth-content-top-img {
+    width: 450px;
     position: absolute;
     left: 32px;
     bottom: 0;
-    width: 450px;
-
 }
 @media screen and (max-width: 799px) {
     #html-website-section-fifth-content-top-img {
@@ -531,7 +474,7 @@
     }
 }
 
-.html-website-section-fifth-content-top-right-p {
+.html-website-section-modals {
     color: white;
     font-size: 14px;
     width: 275px;
@@ -543,13 +486,13 @@
 }
 
 #html-website-section-sixth-content-top-article {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 #html-website-section-sixth-content-top-article > div {
     width: 100%;
@@ -599,159 +542,29 @@
     padding-right: 7.5px;
 }
 
-#html-website-section-nineth-content-top-article {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#html-website-section-nineth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-nineth-content-top-article {
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    #html-website-section-nineth-content-top-article-img {
-        width: 95%;
-    }
-}
-
-#html-website-section-tenth-content-top-article {
+.html-website-section-content-tops-articles {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
-#html-website-section-tenth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-tenth-content-top-article {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    #html-website-section-tenth-content-top-article-img {
-        width: 95%;
-    }
-}
-
-/* 11 */
-#html-website-section-eleventh-content-top-article {
-    width: 90%;
-    display: flex;
+.html-website-section-content-tops-articles[class~="reverse"] {
     flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
-#html-website-section-eleventh-content-top-article-img {
+.html-website-section-content-tops-articles-img {
     width: 50%;
 }
 @media screen and (max-width: 768px) {
-    #html-website-section-eleventh-content-top-article {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    #html-website-section-eleventh-content-top-article-img {
+    .html-website-section-content-tops-articles,
+    .html-website-section-content-tops-articles[class~="reverse"] {
         width: 95%;
-    }
-}
-
-/* 12 */
-#html-website-section-twelfth-content-top-article {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-#html-website-section-twelfth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-twelfth-content-top-article {
-        width: 100%;
         flex-direction: column;
         gap: 50px;
     }
-    #html-website-section-twelfth-content-top-article-img {
-        width: 95%;
-    }
-}
 
-/* 13 */
-#html-website-section-thirteenth-content-top-article {
-    width: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-#html-website-section-thirteenth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-thirteenth-content-top-article {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    #html-website-section-thirteenth-content-top-article-img {
-        width: 95%;
-    }
-}
-
-/* 14 */
-#html-website-section-fourteenth-content-top-article {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-#html-website-section-fourteenth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-fourteenth-content-top-article {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    #html-website-section-fourteenth-content-top-article-img {
-        width: 95%;
-    }
-}
-
-/* 15 */
-#html-website-section-fifteenth-content-top-article {
-    width: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-#html-website-section-fifteenth-content-top-article-img {
-    width: 50%;
-}
-@media screen and (max-width: 768px) {
-    #html-website-section-fifteenth-content-top-article {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    #html-website-section-fifteenth-content-top-article-img {
+    .html-website-section-content-tops-articles-img {
         width: 95%;
     }
 }

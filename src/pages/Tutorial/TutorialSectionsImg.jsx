@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TutorialSectionsImg = styled.img`
-    width: auto;
+    width: ${(prop) => prop.width || "auto"};
     max-width: 100%;
     color: #f0f0f0;
     border-radius: 10px;

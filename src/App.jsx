@@ -392,6 +392,14 @@ function App() {
 					<Route path = "website" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Website"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Bootcamp */}
+					<Route path = "bootcamp" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Bootcamp"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Exame / Certificado */}
+					<Route path = "exam" element = {(
+						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Certificado"></TutorialMain>)}></Page>
+					)}></Route>
 					{/* Resumo */}
 					<Route path = "summary" element = {(
 						<Page content = {(<TutorialMain language = "html" topic = "HTML Exemplos" title = "HTML Resumo"></TutorialMain>)}></Page>

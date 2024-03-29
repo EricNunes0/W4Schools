@@ -4,6 +4,11 @@ export const TutorialSectionsA = styled.a`
     text-decoration: none;
     transition: all 0.3s ease;
 
+    &[data-type="text"] {
+        color: #f0f0f0;
+        text-decoration: underline;
+    }
+
     &[data-type="redirect"][data-wrap="true"] {
         display: flex;
         justify-content: center;

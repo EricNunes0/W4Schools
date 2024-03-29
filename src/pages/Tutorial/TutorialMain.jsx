@@ -1,4 +1,5 @@
 import "./Tutorials.css";
+import "./TutorialBootcamps.css";
 import "./TutorialExamples.css";
 import "./TutorialKickstarts.css";
 import "./TutorialStructures.css";

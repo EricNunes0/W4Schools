@@ -52,7 +52,7 @@ export default function Website() {
                     <path id="wavepath0" fill-rule="evenodd" clip-rule="evenodd" d="M0 293.923V393.09H330.556H1983.33H3966.67L5950 393.091L5950 203.02C5288.89 244.34 4627.78 194.756 3966.67 128.645C3878.52 119.83 3790.37 110.722 3702.22 101.613C3129.26 42.4069 2556.3 -16.7992 1983.33 4.6869C1322.22 29.4786 661.111 161.701 330.556 227.812L0 293.923Z" fill="#D9EEE1"></path>
                 </svg>
             </div>
-            <div className="html-website-sections" id="second">
+            <div className="html-website-sections light" id="second">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="second">
                         <h1 className="html-website-section-h1 dark">Editor de código poderoso</h1>
@@ -64,7 +64,7 @@ export default function Website() {
                     <path id="wavepath1" fill-rule="evenodd" clip-rule="evenodd" d="M0 293.923V393.09H330.556H1983.33H3966.67L5950 393.091L5950 203.02C5288.89 244.34 4627.78 194.756 3966.67 128.645C3878.52 119.83 3790.37 110.722 3702.22 101.613C3129.26 42.4069 2556.3 -16.7992 1983.33 4.6869C1322.22 29.4786 661.111 161.701 330.556 227.812L0 293.923Z" fill="#1d2a35"></path>
                 </svg>
             </div>
-            <div className="html-website-sections" id="third">
+            <div className="html-website-sections dark" id="third">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="third">
                         <h1 className="html-website-section-h1">Prática leva a perfeição</h1>
@@ -79,7 +79,7 @@ export default function Website() {
                     <path id="wavepath2" fill-rule="evenodd" clip-rule="evenodd" d="M141.726 0H0V363.61H5950L5950 181.806C5795.94 166.176 5642.96 136.068 5489.96 105.955C5359.82 80.3423 5229.67 54.7264 5098.82 38.0139C4817.85 3.93391e-06 4533.16 3.93391e-06 4251.77 38.0139C4120 54.8193 3988.58 80.6274 3857.44 106.382C3704.83 136.352 3552.59 166.25 3400.59 181.806C3115.49 210.729 2833.27 198.333 2549.41 166.517C2411.5 151.712 2272.59 133.223 2133.17 114.667C1988.55 95.4186 1843.39 76.0974 1698.23 60.7396C1417.26 28.9236 1133.39 16.5278 851.18 7.4375C566.076 0 283.452 0 141.726 0H141.726Z" fill="#D9EEE1"></path>
                 </svg>
             </div>
-            <div className="html-website-sections" id="fourth">
+            <div className="html-website-sections light" id="fourth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="fourth">
                         <h2 className="html-website-section-h2 dark">Economize tempo usando modelos prontos</h2>
@@ -113,14 +113,14 @@ export default function Website() {
                     <path id="wavepath3" fill-rule="evenodd" clip-rule="evenodd" d="M141.726 45.4514L0 0V409.063H140.486H851.18H1698.23H2549.41H3400.59H4251.77H5098.82H5950V189.243C5938.41 191.46 5926.82 193.683 5915.25 195.905C5642.01 248.332 5371.94 300.154 5098.82 265.271C4981.35 249.378 4863.23 216.296 4744.97 183.176C4580.38 137.076 4415.51 90.9028 4251.77 90.9028C4061.21 90.9028 3871.39 151.819 3682.05 212.577C3588.12 242.721 3494.31 272.826 3400.59 295.434C3115.49 363.611 2833.27 363.611 2549.41 318.16C2445.26 301.311 2340.53 278.217 2235.46 255.045C2057.07 215.705 1877.65 176.138 1698.23 166.517C1557.84 159.704 1416.73 170.738 1275.46 181.783C1134 192.843 992.382 203.916 851.18 197.094C567.058 181.858 285.398 91.5281 143.195 45.9227L141.726 45.4514Z" fill="#282A35"></path>
                 </svg>
             </div>
-            <div className="html-website-sections" id="fifth">
+            <div className="html-website-sections dark" id="fifth" style={{backgroundImage: "url('/images/examples/html/website/space-background.gif')"}}>
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="fifth">
                         <div id="html-website-section-fifth-content-top-div">
                             <div id="html-website-section-fifth-content-top-left">
                                 <h1 className="html-website-section-fifth-content-top-left-h1">k<span style={{fontSize: "150px"}}>AI</span></h1>
-                                <h5 className="html-website-section-fifth-content-top-left-h5">Just landed in <span style={{color: "#FFF4A3"}}>Spaces</span></h5>
-                                <p className="html-website-section-fifth-content-top-left-p">Aprenda a codificar com mais eficiência<br></br> e de forma inteligente com kAI - AI tutor</p>
+                                <h4 className="html-website-section-h4" style={{margin: "24px 0"}}>Acabou de chegar no <span style={{color: "#C0CAFF"}}>Spaces</span></h4>
+                                <p className="html-website-section-p">Aprenda a codificar com mais eficiência<br></br> e de forma inteligente com kAI - AI tutor</p>
                                 <a className="html-website-section-buttons" href="">Iniciar gratuitamente</a>
                             </div>
                             <img id="html-website-section-fifth-content-top-img" src="https://www.w3schools.com/images/planet2.png"></img>
@@ -129,16 +129,16 @@ export default function Website() {
                                     <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"></path>
                                     <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"></path>
                                 </svg>
-                                <p className="html-website-section-fifth-content-top-right-p">Oi! Eu sou kAI, Tutor de IA...</p>
-                                <p className="html-website-section-fifth-content-top-right-p">Sinta-se à vontade para me fazer qualquer pergunta relacionada à codificação e farei o possível para ajudá-lo.</p>
-                                <p className="html-website-section-fifth-content-top-right-p">Posso ajudá-lo a verificar se há erros no seu código, melhorar a estrutura do seu código, explicar conceitos de codificação de forma clara e compreensível e muito mais...</p>
-                                <p className="html-website-section-fifth-content-top-right-p">Posso até criar sites completos para você com base em suas informações, então o que você está esperando?</p>
+                                <p className="html-website-section-modals">Oi! Eu sou kAI, Tutor de IA...</p>
+                                <p className="html-website-section-modals">Sinta-se à vontade para me fazer qualquer pergunta relacionada à codificação e farei o possível para ajudá-lo.</p>
+                                <p className="html-website-section-modals">Posso ajudá-lo a verificar se há erros no seu código, melhorar a estrutura do seu código, explicar conceitos de codificação de forma clara e compreensível e muito mais...</p>
+                                <p className="html-website-section-modals">Posso até criar sites completos para você com base em suas informações, então o que você está esperando?</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="sixth">
+            <div className="html-website-sections blue" id="sixth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="sixth">
                         <h2 className="html-website-section-h2">Super simples de compartilhar to Share</h2>
@@ -157,9 +157,9 @@ export default function Website() {
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="seventh">
+            <div className="html-website-sections dark" id="seventh">
                 <svg style={{width: "100%", marginTop: "-150px"}} viewBox="0 0 5950 194" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M330.556 118.216L0 152.511V193.831H330.556H1983.33H3966.67H5950V0.869141C5804.56 6.95963 5659.11 13.7101 5513.67 20.4605C4998 44.3939 4482.33 68.3273 3966.67 62.8483C3674.12 60.4714 3381.57 47.8189 3089.02 35.1665C2720.46 19.2265 2351.9 3.2864 1983.33 7.89345C1322.22 16.1573 661.111 82.2684 330.556 118.216Z" fill="#282A35"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M330.556 118.216L0 152.511V193.831H330.556H1983.33H3966.67H5950V0.869141C5804.56 6.95963 5659.11 13.7101 5513.67 20.4605C4998 44.3939 4482.33 68.3273 3966.67 62.8483C3674.12 60.4714 3381.57 47.8189 3089.02 35.1665C2720.46 19.2265 2351.9 3.2864 1983.33 7.89345C1322.22 16.1573 661.111 82.2684 330.556 118.216Z" fill="#202A35"></path>
                 </svg>
                 <div className="html-website-section-contents">
                     <div>
@@ -185,7 +185,7 @@ export default function Website() {
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="eighty">
+            <div className="html-website-sections light" id="eighty">
                 <div className="html-website-section-contents">
                     <h2 className="html-website-section-h2 dark">Codificação facilitada</h2>
                     <h6 className="html-website-section-h6 dark">Tudo ao seu alcance com nosso <b>editor de código</b></h6>
@@ -202,108 +202,108 @@ export default function Website() {
                 </div>
                 <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
             </div>
-            <div className="html-website-sections" id="nineth">
+            <div className="html-website-sections dark" id="nineth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="nineth">
-                        <article id="html-website-section-nineth-content-top-article">
+                        <article className="html-website-section-content-tops-articles">
                             <div>
                                 <h6 className="html-website-section-h6">Baseado em nuvem</h6>
                                 <h3 className="html-website-section-h3">Economize tempo e dinheiro.</h3>
                                 <h6 className="html-website-section-h6">Nenhuma instalação necessária. Acesse tudo no seu navegador. Comece em segundos.</h6>
                                 <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
                             </div>
-                            <img id="html-website-section-nineth-content-top-article-img" src="https://www.w3schools.com/spaces/spaces.png"></img>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/spaces.png"></img>
                         </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="tenth">
+            <div className="html-website-sections light" id="tenth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="tenth">
-                        <div id="html-website-section-tenth-content-top-article">
-                            <img id="html-website-section-tenth-content-top-article-img" src="https://www.w3schools.com/spaces/files.png"></img>
+                        <article className="html-website-section-content-tops-articles reverse">
                             <div>
                                 <h6 className="html-website-section-h6 dark">Explorador de arquivos</h6>
                                 <h3 className="html-website-section-h3 dark">Todos os seus arquivos em um só lugar.</h3>
                                 <h6 className="html-website-section-h6 dark">Encontre e alterne facilmente entre seus arquivos de código sem sair do editor de código.</h6>
                                 <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/files.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="eleventh">
+            <div className="html-website-sections blue" id="eleventh">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="eleventh">
-                        <div id="html-website-section-eleventh-content-top-article">
-                            <img id="html-website-section-eleventh-content-top-article-img" src="https://www.w3schools.com/spaces/debug.png"></img>
+                        <article className="html-website-section-content-tops-articles">
                             <div>
                                 <h6 className="html-website-section-h6">Terminal e Log</h6>
                                 <h3 className="html-website-section-h3">Corrija seu código rapidamente.</h3>
                                 <h6 className="html-website-section-h6">Monitore seu código, depure e solucione problemas de seu trabalho durante o desenvolvimento.</h6>
                                 <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/debug.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="twelfth">
+            <div className="html-website-sections light" id="twelfth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="twelfth">
-                        <div id="html-website-section-twelfth-content-top-article">
-                            <img id="html-website-section-twelfth-content-top-article-img" src="https://www.w3schools.com/spaces/database.png"></img>
+                        <article className="html-website-section-content-tops-articles reverse">
                             <div>
                                 <h6 className="html-website-section-h6 dark">Banco de dados</h6>
                                 <h3 className="html-website-section-h3 dark">Obtenha visibilidade total dos dados.</h3>
                                 <h6 className="html-website-section-h6 dark">Encontre e visualize todos os dados armazenados no seu site. A qualquer hora, de qualquer lugar.</h6>
                                 <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/database.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="thirteenth">
+            <div className="html-website-sections blue" id="thirteenth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="thirteenth">
-                        <div id="html-website-section-thirteenth-content-top-article">
-                            <img id="html-website-section-thirteenth-content-top-article-img" src="https://www.w3schools.com/spaces/env.png"></img>
+                        <article className="html-website-section-content-tops-articles">
                             <div>
                                 <h6 className="html-website-section-h6">Gerenciamento de ambiente</h6>
                                 <h3 className="html-website-section-h3">Maior controle e segurança</h3>
                                 <h6 className="html-website-section-h6">Controle os pontos de acesso do seu site para estabelecer conexões seguras.</h6>
                                 <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/env.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="fourteenth">
+            <div className="html-website-sections light" id="fourteenth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="fourteenth">
-                        <div id="html-website-section-fourteenth-content-top-article">
-                            <img id="html-website-section-fourteenth-content-top-article-img" src="https://www.w3schools.com/spaces/package.png"></img>
+                        <article className="html-website-section-content-tops-articles reverse">
                             <div>
                                 <h6 className="html-website-section-h6 dark">Gerenciador de pacotes</h6>
                                 <h3 className="html-website-section-h3 dark">Encontre o que você precisa com mais rapidez</h3>
                                 <h6 className="html-website-section-h6 dark">Pesquise e instale frameworks e bibliotecas com apenas um clique.</h6>
                                 <a className="html-website-section-buttons" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/package.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>
-            <div className="html-website-sections" id="fifteenth">
+            <div className="html-website-sections blue" id="fifteenth">
                 <div className="html-website-section-contents">
                     <div className="html-website-section-content-tops" id="fifteenth">
-                        <div id="html-website-section-fifteenth-content-top-article">
-                            <img id="html-website-section-fifteenth-content-top-article-img" src="https://www.w3schools.com/spaces/analytics.png"></img>
+                        <article className="html-website-section-content-tops-articles">
                             <div>
                                 <h6 className="html-website-section-h6">Análise do usuário</h6>
                                 <h3 className="html-website-section-h3">Obtenha informações de tráfego</h3>
                                 <h6 className="html-website-section-h6">Aprenda com os visitantes do seu site para oferecer uma melhor experiência ao usuário.</h6>
                                 <a className="html-website-section-buttons dark" href="">Inicie gratuitamente</a>
                             </div>
-                        </div>
+                            <img className="html-website-section-content-tops-articles-img" src="https://www.w3schools.com/spaces/analytics.png"></img>
+                        </article>
                     </div>
                 </div>
             </div>

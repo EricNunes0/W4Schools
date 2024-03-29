@@ -30,6 +30,7 @@ import TutorialSectionsIframe from "./TutorialSectionsIframe";
 import TutorialSectionsImgFlex from "./TutorialSectionsImgFlex";
 import TutorialSectionsPicture from "./TutorialSectionsPicture";
 import Section from "../Sections/Section";
+import TutorialBootcamp from "./TutorialBootcamp";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -54,6 +55,8 @@ export default function TutorialSectionTags(tag, content) {
                         {sectionsLinks}
                     </div>
                 );
+            } else if(content.type === "text") {
+                return (<TutorialSectionsA data-type="text" href={content.href || content.link || ""} target={content.target || "_self"}>{content.text}</TutorialSectionsA>);
             };
         case "br":
             return (<br></br>);
@@ -89,7 +92,7 @@ export default function TutorialSectionTags(tag, content) {
         case "b":
             return (<TutorialSectionsParagraph content = {content} bold = {true}></TutorialSectionsParagraph>);
         case "button":
-            const button = (<TutorialSectionsButton data-type = {content.type} width = {content.width || null} height = {content.height || null}>{content.text}</TutorialSectionsButton>);
+            const button = (<TutorialSectionsButton data-type = {content.type} width = {content.width || null} height = {content.height || null} style={content.style || {}}>{content.text}</TutorialSectionsButton>);
             if(content.href || content.link) {
                 return (<a href={content.href || content.link || ""} target={content.target || "_self"}>{button}</a>);
             } else {
@@ -100,7 +103,7 @@ export default function TutorialSectionTags(tag, content) {
         case "iframe":
             return (<TutorialSectionsIframe content = {content}></TutorialSectionsIframe>);
         case "img":
-            return (<TutorialSectionsImg alt = {content.alt} src = {content.src} style = {content.style || {}}></TutorialSectionsImg>);
+            return (<TutorialSectionsImg alt = {content.alt} src = {content.src} width = {content.width || null} style = {content.style || {}}></TutorialSectionsImg>);
         case "map":
             return (<TutorialSectionsMaps content = {content}></TutorialSectionsMaps>)
         case "ol": case "ul":
@@ -110,7 +113,9 @@ export default function TutorialSectionTags(tag, content) {
         case "svg":
             return (<TutorialSectionsSvg content = {content}></TutorialSectionsSvg>);
         case "table":
-            return (<TutorialSectionsTables content = {content}></TutorialSectionsTables>)
+            return (<TutorialSectionsTables content = {content}></TutorialSectionsTables>);
+        case "bootcamp":
+            return (<TutorialBootcamp content = {content}></TutorialBootcamp>);
         case "color-blocks":
             return (<TutorialSectionsColorBlocks content = {content}></TutorialSectionsColorBlocks>);
         case "color-result":
