@@ -411,9 +411,13 @@ function App() {
 				</Route>
 
 				<Route path = "/tags">
-					{/* HOME */}
+					{/* Por alfabeto */}
 					<Route path = "default" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML por alfabeto"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Por categoria */}
+					<Route path = "category" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML por categoria"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(

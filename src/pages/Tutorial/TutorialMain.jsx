@@ -9,6 +9,7 @@ import "./TutorialSectionsImgFlex.css";
 import "./TutorialSectionsNote.css";
 import "./TutorialSectionsPicture.css";
 import "./TutorialSectionsRow.css";
+import "./TutorialSectionsSearch.css";
 import "./TutorialSectionsTagsFlex.css";
 import "./TutorialSectionsMaps.css";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";

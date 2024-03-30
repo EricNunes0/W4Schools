@@ -24,7 +24,7 @@ export default function TutorialSectionsTables(prop) {
     };
 
     return (
-        <table className = {`tutorial-sections-tables ${content.className || ""}`} style={styles ? styles.table : null}>
+        <table className = {`tutorial-sections-tables ${content.className || ""}`} id = {content.id || ""} style={styles ? styles.table : null}>
             {caption}
             {colgroup}
             <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>

@@ -31,6 +31,7 @@ import TutorialSectionsImgFlex from "./TutorialSectionsImgFlex";
 import TutorialSectionsPicture from "./TutorialSectionsPicture";
 import Section from "../Sections/Section";
 import TutorialBootcamp from "./TutorialBootcamp";
+import TutorialSectionsSearch from "./TutorialSectionsSearch";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -132,6 +133,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsNotes content = {content}></TutorialSectionsNotes>);
         case "row":
             return (<TutorialSectionsRow content = {content}></TutorialSectionsRow>);
+        case "search":
+            return (<TutorialSectionsSearch content = {content}></TutorialSectionsSearch>);
         case "sections":
             return (<Section content = {content}></Section>);
         case "structure":

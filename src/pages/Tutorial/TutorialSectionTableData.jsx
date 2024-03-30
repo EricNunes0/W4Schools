@@ -20,11 +20,11 @@ export default function TutorialSectionTableData(data, styles) {
 
             /* Definindo conteúdo */
             if(data.icon) {
-                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"}>
+                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>
                     <i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`}}></i>
                 </a>)];
             } else if(data.href) {
-                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"}>{data.text}</a>)];
+                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>{data.text}</a>)];
             }
 
             /* Definindo marcação */
