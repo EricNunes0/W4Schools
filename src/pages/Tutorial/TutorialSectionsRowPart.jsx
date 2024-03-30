@@ -25,7 +25,7 @@ export default function TutorialSectionsRowPart(codes) {
             case "text":
                 const bold = code.bold || false;
                 parts.push(
-                    <p className = "tutorial-sections-rows-paragraphs" data-bold = {bold}>{code.text}</p>
+                    <p className = "tutorial-sections-rows-paragraphs" data-bold = {bold} style={code.style || {}}>{code.text}</p>
                 );
                 break;
             case "link":

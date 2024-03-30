@@ -131,7 +131,7 @@ export default function TutorialSectionTags(tag, content) {
         case "note":
             return (<TutorialSectionsNotes content = {content}></TutorialSectionsNotes>);
         case "row":
-            return (<TutorialSectionsRow items = {content.items}></TutorialSectionsRow>);
+            return (<TutorialSectionsRow content = {content}></TutorialSectionsRow>);
         case "sections":
             return (<Section content = {content}></Section>);
         case "structure":

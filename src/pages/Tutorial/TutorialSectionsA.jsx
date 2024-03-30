@@ -6,6 +6,7 @@ export const TutorialSectionsA = styled.a`
 
     &[data-type="text"] {
         color: #f0f0f0;
+        font-size: 14px;
         text-decoration: underline;
     }
 
