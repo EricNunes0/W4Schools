@@ -423,6 +423,10 @@ function App() {
 					<Route path = "browser_support" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Suporte"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Atributos */}
+					<Route path = "attributes" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
