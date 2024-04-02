@@ -427,6 +427,14 @@ function App() {
 					<Route path = "attributes" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Atributos globais */}
+					<Route path = "global_attributes" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos globais"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Eventos */}
+					<Route path = "events" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Eventos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
