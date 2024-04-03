@@ -24,10 +24,12 @@ export default function TutorialSectionsTables(prop) {
     };
 
     return (
+        <div className="tutorial-sections-tables-divs">
         <table className = {`tutorial-sections-tables ${content.className || ""}`} id = {content.id || ""} style={styles ? styles.table : null}>
             {caption}
             {colgroup}
             <tbody className = "tutorial-sections-tbodies">{tableRows}</tbody>
         </table>
+        </div>
     )
 };

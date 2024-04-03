@@ -18,6 +18,7 @@ import TutorialSectionsStructure from "./TutorialSectionsStructure";
 import TutorialSectionsRow from "./TutorialSectionsRow";
 import TutorialSectionsCanvas from "./TutorialSectionsCanvas";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
+import TutorialSectionsColorNames from "./TutorialSectionsColorNames";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
 import TutorialSectionsList from "./TutorialSectionsList";
 import TutorialSectionsNotes from "./TutorialSectionsNotes";
@@ -119,6 +120,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialBootcamp content = {content}></TutorialBootcamp>);
         case "color-blocks":
             return (<TutorialSectionsColorBlocks content = {content}></TutorialSectionsColorBlocks>);
+        case "color-names":
+            return (<TutorialSectionsColorNames content = {content}></TutorialSectionsColorNames>);
         case "color-result":
             return (<TutorialSectionsColorResults content = {content}></TutorialSectionsColorResults>);
         case "example":

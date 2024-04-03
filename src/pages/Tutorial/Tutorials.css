@@ -66,13 +66,25 @@
     border-radius: 5px;
 }
 
+.tutorial-sections-tables-divs {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
 /* Tabelas */
 .tutorial-sections-tables {
     width: 100%;
+    max-width: 100%;
     background-color: #101015;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 2px;
+}
+.tutorial-sections-tbodies {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
 }
 
 /* Exemplo 1 (HTML Tabelas, Estilização, Seletor :hover) */
@@ -150,6 +162,36 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 2.5%;
+}
+
+/* Divs dos color names */
+.tutorials-sections-color-names-divs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.66%;
+}
+/* Menus dos color names */
+.tutorials-sections-color-names-menus {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.tutorials-sections-color-names:hover > .tutorials-sections-color-names-menus {
+    display: flex;
+}
+.tutorials-sections-color-names-menus > a {
+    color: unset;
+    text-decoration: none;
+    opacity: 0.7;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Divs do resultado das cores */
