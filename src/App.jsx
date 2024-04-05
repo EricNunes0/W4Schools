@@ -443,6 +443,22 @@ function App() {
 					<Route path = "canvas" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Canvas"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Áudio/Vídeo */}
+					<Route path = "audio_video" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Áudio/Vídeo"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Conjuntos de caracteres */}
+					<Route path = "character_sets" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Conjuntos de caracteres"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Doctypes */}
+					<Route path = "doctypes" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Doctypes"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* URL encode */}
+					<Route path = "urlencode" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML URL encode"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
