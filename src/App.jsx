@@ -459,9 +459,9 @@ function App() {
 					<Route path = "urlencode" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML URL encode"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* Linguagens */}
+					{/* Códigos de idiomas */}
 					<Route path = "lang_codes" element = {(
-						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Linguagens"></TutorialMain>)}></Page>
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Códigos de idiomas"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
