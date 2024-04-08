@@ -467,6 +467,10 @@ function App() {
 					<Route path = "country_codes" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Códigos de países"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* HTTP Mensagens */}
+					<Route path = "http_messages" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTTP Mensagens"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
