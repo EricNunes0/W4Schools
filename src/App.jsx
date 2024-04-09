@@ -471,6 +471,10 @@ function App() {
 					<Route path = "http_messages" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTTP Mensagens"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* HTTP Métodos */}
+					<Route path = "http_methods" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTTP Métodos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
