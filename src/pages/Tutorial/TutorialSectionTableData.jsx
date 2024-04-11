@@ -1,4 +1,6 @@
-export default function TutorialSectionTableData(data, styles) {
+import PxEmTable from "../../functions/PxEmTable";
+
+export default function TutorialSectionTableData(data, styles, tableId) {
     switch(data.tag) {
         case "th":
             /* Definindo estilo */
@@ -49,8 +51,14 @@ export default function TutorialSectionTableData(data, styles) {
                 tdStyle = styles.td || null;
             };
 
+            /* PxEmTable */
+            let onclickFunction = null;
+            if(data.PxEmTable) {
+                onclickFunction = () => PxEmTable(data.PxEmTable, tableId);
+            }
+
             return (
-                <td className = "tutorial-sections-td" colSpan = {data.colSpan || null} rowSpan = {data.rowSpan || null} style = {tdStyle} data-italic = {data.italic || false}>
+                <td className = "tutorial-sections-td" colSpan = {data.colSpan || null} rowSpan = {data.rowSpan || null} style = {tdStyle} data-italic = {data.italic || false} onClick={onclickFunction}>
                     {content || data.text}
                     {supports}
                 </td>

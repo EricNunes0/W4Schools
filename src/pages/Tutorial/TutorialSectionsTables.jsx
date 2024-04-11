@@ -8,7 +8,7 @@ export default function TutorialSectionsTables(prop) {
     let tableRows = [];
     for(let i = 0; i <= content.rows.length - 1; i++) {
         const row = content.rows[i];
-        tableRows.push(TutorialSectionTableRow(row, styles));
+        tableRows.push(TutorialSectionTableRow(row, styles, content.id));
     };
 
     /* Caption */

@@ -475,6 +475,14 @@ function App() {
 					<Route path = "http_methods" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTTP Métodos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Conversor de PX para EM */}
+					<Route path = "px_em_converter" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "Conversor de PX para EM"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Atalhos de teclado */}
+					<Route path = "keyboard_shortcuts" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "Atalhos de teclado"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
