@@ -483,6 +483,15 @@ function App() {
 					<Route path = "keyboard_shortcuts" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "Atalhos de teclado"></TutorialMain>)}></Page>
 					)}></Route>
+
+					{/* Comentário */}
+					<Route path = "comment" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Comentário"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Doctype */}
+					<Route path = "doctype" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Doctype"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
