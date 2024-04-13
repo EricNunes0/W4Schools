@@ -512,6 +512,10 @@ function App() {
 					<Route path = "applet" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag applet"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag area */}
+					<Route path = "area" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag area"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
