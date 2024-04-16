@@ -556,6 +556,10 @@ function App() {
 					<Route path = "blockquote" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag blockquote"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag body */}
+					<Route path = "body" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag body"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
