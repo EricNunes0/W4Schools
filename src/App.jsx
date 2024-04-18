@@ -439,8 +439,8 @@ function App() {
 					<Route path = "colors" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Cores"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* Canvas */}
-					<Route path = "canvas" element = {(
+					{/* Canvas (Referências) */}
+					<Route path = "ref_canvas" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Canvas"></TutorialMain>)}></Page>
 					)}></Route>
 					{/* Áudio/Vídeo */}
@@ -563,6 +563,14 @@ function App() {
 					{/* Tag br */}
 					<Route path = "br" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag br"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag button */}
+					<Route path = "button" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag button"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag canvas */}
+					<Route path = "canvas" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag canvas"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
