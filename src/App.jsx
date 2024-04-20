@@ -592,6 +592,22 @@ function App() {
 					<Route path = "col" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag col"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag colgroup */}
+					<Route path = "colgroup" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag colgroup"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag data */}
+					<Route path = "data" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag data"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag datalist */}
+					<Route path = "datalist" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag datalist"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag dd */}
+					<Route path = "dd" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag dd"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
