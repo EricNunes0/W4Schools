@@ -632,6 +632,26 @@ function App() {
 					<Route path = "div" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag div"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag dl */}
+					<Route path = "dl" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag dl"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag dt */}
+					<Route path = "dt" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag dt"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag em */}
+					<Route path = "em" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag em"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag embed */}
+					<Route path = "embed" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag embed"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag fieldset */}
+					<Route path = "fieldset" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag fieldset"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
