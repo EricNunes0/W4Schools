@@ -652,6 +652,18 @@ function App() {
 					<Route path = "fieldset" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag fieldset"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag figcaption */}
+					<Route path = "figcaption" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag figcaption"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag figure */}
+					<Route path = "figure" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag figure"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag font */}
+					<Route path = "font" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag font"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
