@@ -664,6 +664,18 @@ function App() {
 					<Route path = "font" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag font"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag footer */}
+					<Route path = "footer" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag footer"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag form */}
+					<Route path = "form" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag form"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag frame */}
+					<Route path = "frame" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag frame"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

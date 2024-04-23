@@ -32,6 +32,11 @@ export default function TutorialListItemMultiple(codes) {
                     <p className = "tutorial-sections-lists-items-paragraphs" style = {{fontWeight: code.fontWeight, paddingLeft: `${code.spacesBefore * 6}px`, paddingRight: `${code.spacesAfter * 6}px`}}>{text}</p>
                 );
                 break;
+            case "link":
+                parts.push(
+                    <a href = {code.link} target = {code.target || "_self"} className = "tutorial-sections-lists-links">{code.text}</a>
+                );
+                break;
         };
     };
 
