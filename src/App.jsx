@@ -700,6 +700,18 @@ function App() {
 					<Route path = "hr" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag hr"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag html */}
+					<Route path = "html" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag html"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag i */}
+					<Route path = "i" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag i"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag iframe */}
+					<Route path = "iframe" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag iframe"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
