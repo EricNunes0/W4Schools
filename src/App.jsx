@@ -712,6 +712,10 @@ function App() {
 					<Route path = "iframe" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag iframe"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag img */}
+					<Route path = "img" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag img"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
