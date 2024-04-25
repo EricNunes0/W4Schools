@@ -716,6 +716,10 @@ function App() {
 					<Route path = "img" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag img"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag input */}
+					<Route path = "input" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag input"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
