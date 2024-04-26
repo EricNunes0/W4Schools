@@ -720,6 +720,10 @@ function App() {
 					<Route path = "input" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag input"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag ins */}
+					<Route path = "ins" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag ins"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
