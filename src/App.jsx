@@ -736,6 +736,18 @@ function App() {
 					<Route path = "legend" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag legend"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag li */}
+					<Route path = "li" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag li"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag link */}
+					<Route path = "link" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag link"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag main */}
+					<Route path = "main" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag main"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
