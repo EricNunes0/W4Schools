@@ -768,6 +768,18 @@ function App() {
 					<Route path = "meter" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag meter"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag nav */}
+					<Route path = "nav" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag nav"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag noframes */}
+					<Route path = "noframes" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag noframes"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag noscript */}
+					<Route path = "noscript" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag noscript"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
