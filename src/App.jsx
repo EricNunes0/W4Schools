@@ -784,6 +784,26 @@ function App() {
 					<Route path = "object" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag object"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag ol */}
+					<Route path = "ol" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag ol"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag optgroup */}
+					<Route path = "optgroup" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag optgroup"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag option */}
+					<Route path = "option" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag option"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag output */}
+					<Route path = "output" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag output"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag p */}
+					<Route path = "p" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag p"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
