@@ -808,6 +808,14 @@ function App() {
 					<Route path = "param" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag param"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag picture */}
+					<Route path = "picture" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag picture"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag pre */}
+					<Route path = "pre" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag pre"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
