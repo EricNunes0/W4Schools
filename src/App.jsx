@@ -816,6 +816,10 @@ function App() {
 					<Route path = "pre" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag pre"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag progress */}
+					<Route path = "progress" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag progress"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
