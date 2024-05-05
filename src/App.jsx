@@ -840,6 +840,18 @@ function App() {
 					<Route path = "s" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag s"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag samp */}
+					<Route path = "samp" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag samp"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag script */}
+					<Route path = "script" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag script"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag search */}
+					<Route path = "search" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag search"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
