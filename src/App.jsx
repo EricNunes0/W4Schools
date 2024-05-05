@@ -868,6 +868,42 @@ function App() {
 					<Route path = "source" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag source"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag span */}
+					<Route path = "span" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag span"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag strike */}
+					<Route path = "strike" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag strike"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag strong */}
+					<Route path = "strong" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag strong"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag style */}
+					<Route path = "style" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag style"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag sub */}
+					<Route path = "sub" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag sub"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag summary */}
+					<Route path = "summary" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag summary"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag sup */}
+					<Route path = "sup" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag sup"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag svg */}
+					<Route path = "svg" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag svg"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag table */}
+					<Route path = "table" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag table"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
