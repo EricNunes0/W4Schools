@@ -916,6 +916,10 @@ function App() {
 					<Route path = "template" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag template"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag textarea */}
+					<Route path = "textarea" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag textarea"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
