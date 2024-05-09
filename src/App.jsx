@@ -948,6 +948,14 @@ function App() {
 					<Route path = "track" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag track"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag tt */}
+					<Route path = "tt" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag tt"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag u */}
+					<Route path = "u" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag u"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
