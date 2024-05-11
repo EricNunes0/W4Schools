@@ -24,7 +24,8 @@ export default function TutorialMain(prop) {
     const topic = prop.topic;
     const title = prop.title;
     const subtitle = prop.subtitle || null;
-    pageTitle(title);
+    const pageTitleText = prop.pageTitle || null;
+    pageTitle(pageTitleText || title);
     
     return (
         <div className = "tutorials">

@@ -956,6 +956,32 @@ function App() {
 					<Route path = "u" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag u"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tag ul */}
+					<Route path = "ul" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag ul"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag var */}
+					<Route path = "var" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag var"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag video */}
+					<Route path = "video" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag video"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Tag wbr */}
+					<Route path = "wbr" element = {(
+						<Page content = {(<TutorialMain language = "tags" topic = "HTML Tags" title = "Tag wbr"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Atributos */}
+					<Route path = "attributes">
+						{/* Tag a */}
+						<Route path = "a">
+							{/* Atributo download */}
+							<Route path = "download" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="download" pageTitle="Tag a - Atributo download"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

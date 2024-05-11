@@ -43,8 +43,8 @@ export default class TutorialManagePages {
     }
     getPreviousLink(language, topic, title, subtitle) {
         let link = null;
-        let datas = pages[language][topic]
-        for(let i = 0; i <= datas.length - 1; i++){
+        let datas = pages[language][topic];
+        for(let i = 0; i <= datas.length - 1; i++) {
             if(datas[i].title === title) {
                 if(datas[i].subtitles) {
                     let subtitles = datas[i].subtitles;
@@ -54,7 +54,21 @@ export default class TutorialManagePages {
                                 if(subtitles[j - 1]) {
                                     link = subtitles[j - 1].link;
                                 } else {
-                                    link = datas[i - 1] ? datas[i - 1].link : "/";
+                                    if(datas[i - 1]) {
+                                        link = datas[i - 1].link;
+                                    } else {
+                                        const previousLanguage = this.getPreviousLanguage(language);
+                                        if(previousLanguage) {
+                                            const previousTopics = Object.keys(pages[previousLanguage]);
+                                            const previousLastTopicKey = previousTopics[previousTopics.length - 1];
+                                            const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
+                                            const nextLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
+                                            link = nextLastTopicArrayLastItem.link;
+                                            console.log(link)
+                                        } else {
+                                            link = "/"
+                                        }
+                                    }
                                 };
                             };
                         };
@@ -68,12 +82,30 @@ export default class TutorialManagePages {
                         if(pages[language][previousTopic]) {
                             link = pages[language][previousTopic][pages[language][previousTopic].length - 1].link;
                         } else {
-                            link = "/";
+                            const previousLanguage = this.getPreviousLanguage(language);
+                            if(previousLanguage) {
+                                const previousTopics = Object.keys(pages[previousLanguage]);
+                                const previousLastTopicKey = previousTopics[previousTopics.length - 1];
+                                const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
+                                const nextLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
+                                link = nextLastTopicArrayLastItem.link;
+                                console.log(link)
+                            } else {
+                                link = "/"
+                            }
                         }
                     };
                 };
             };
         };
+        if(!link) {
+            const previousLanguage = this.getPreviousLanguage(language);
+            const previousTopics = Object.keys(pages[previousLanguage]);
+            const previousLastTopicKey = previousTopics[previousTopics.length - 1];
+            const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
+            link = previousLastTopicArray[previousLastTopicArray.length - 1].link;
+            console.log(link)
+        }
         return link;
     }
     getNextLink(language, topic, title, subtitle) {
@@ -100,13 +132,56 @@ export default class TutorialManagePages {
                     } else {
                         let topics = Object.keys(pages[language]);
                         let nextTopic = topics[topics.indexOf(topic) + 1];
-                        link = pages[language][nextTopic][0].link;
+                        if(nextTopic) {
+                            link = pages[language][nextTopic][0].link;
+                        } else {
+                            const nextLanguage = this.getNextLanguage(language);
+                            if(nextLanguage) {
+                                const nextTopics = Object.keys(pages[nextLanguage]);
+                                const nextLastTopicKey = nextTopics[nextTopics.length - 1];
+                                const nextLastTopicArray = pages[nextLanguage][nextLastTopicKey];
+                                const nextLastTopicArrayLastItem = nextLastTopicArray[nextLastTopicArray.length - 1];
+                                if(nextLastTopicArrayLastItem.subtitles) {
+                                    link = nextLastTopicArrayLastItem.subtitles[0].link;
+                                } else {
+                                    link = nextLastTopicArrayLastItem.link;
+                                }
+                                console.log(link)
+                            } else {
+                                link = "/"
+                            };
+                        }
                     };
                 };
             };
         };
         return link;
-    }
+    };
+    getPreviousLanguage(language) {
+        let languages = Object.keys(pages).reverse();
+        let languageCurrent = languages.length - 1;
+        for(const lang of languages) {
+            languageCurrent--;
+            if(lang === language) {
+                break;
+            }
+        };
+        let langToReturn = languages.reverse()[languageCurrent];
+        console.log(languageCurrent, langToReturn)
+        return langToReturn;
+    };
+    getNextLanguage(language) {
+        let languages = Object.keys(pages);
+        let languageCurrent = 0;
+        for(const lang of languages) {
+            languageCurrent++;
+            if(lang === language) {
+                break;
+            }
+        };
+        let langToReturn = languages[languageCurrent];
+        return langToReturn;
+    };
 
     /* Criar linhas dos exercícios/exemplos */
     convertLine(line) {
