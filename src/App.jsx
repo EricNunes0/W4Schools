@@ -980,6 +980,18 @@ function App() {
 							<Route path = "download" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="download" pageTitle="Tag a - Atributo download"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo href */}
+							<Route path = "href" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="href" pageTitle="Tag a - Atributo href"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo hreflang */}
+							<Route path = "hreflang" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="hreflang" pageTitle="Tag a - Atributo hreflang"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo media */}
+							<Route path = "media" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="media" pageTitle="Tag a - Atributo media"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
