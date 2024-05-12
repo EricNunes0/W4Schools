@@ -1023,6 +1023,10 @@ function App() {
 							<Route path = "alt" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="alt" pageTitle="Tag area - Atributo alt"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo coords */}
+							<Route path = "coords" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="coords" pageTitle="Tag area - Atributo coords"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "alt"></Navigate>
