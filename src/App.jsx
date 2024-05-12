@@ -992,6 +992,41 @@ function App() {
 							<Route path = "media" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="media" pageTitle="Tag a - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo ping */}
+							<Route path = "ping" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="ping" pageTitle="Tag a - Atributo ping"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo referrerpolicy */}
+							<Route path = "referrerpolicy" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="referrerpolicy" pageTitle="Tag a - Atributo referrerpolicy"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo rel */}
+							<Route path = "rel" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="rel" pageTitle="Tag a - Atributo rel"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo target */}
+							<Route path = "target" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="target" pageTitle="Tag a - Atributo target"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="type" pageTitle="Tag a - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "download"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag area */}
+						<Route path = "area">
+							{/* Atributo alt */}
+							<Route path = "alt" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="alt" pageTitle="Tag area - Atributo alt"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "alt"></Navigate>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
