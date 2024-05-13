@@ -1068,6 +1068,37 @@ function App() {
 								<Navigate to = "alt"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag audio */}
+						<Route path = "audio">
+							{/* Atributo autoplay */}
+							<Route path = "autoplay" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="autoplay" pageTitle="Tag audio - Atributo autoplay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo controls */}
+							<Route path = "controls" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="controls" pageTitle="Tag audio - Atributo controls"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo loop */}
+							<Route path = "loop" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="loop" pageTitle="Tag audio - Atributo loop"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo muted */}
+							<Route path = "muted" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="muted" pageTitle="Tag audio - Atributo muted"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo preload */}
+							<Route path = "preload" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="preload" pageTitle="Tag audio - Atributo preload"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="src" pageTitle="Tag audio - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "autoplay"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
