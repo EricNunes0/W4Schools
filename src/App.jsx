@@ -1099,6 +1099,43 @@ function App() {
 								<Navigate to = "autoplay"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag base */}
+						<Route path = "base">
+							{/* Atributo href */}
+							<Route path = "href" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <base>" subtitle="href" pageTitle="Tag base - Atributo href"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo target */}
+							<Route path = "target" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <base>" subtitle="target" pageTitle="Tag base - Atributo target"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "href"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag bdo */}
+						<Route path = "bdo">
+							{/* Atributo dir */}
+							<Route path = "dir" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <bdo>" subtitle="dir" pageTitle="Tag bdo - Atributo dir"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "dir"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag blockquote */}
+						<Route path = "blockquote">
+							{/* Atributo cite */}
+							<Route path = "cite" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <blockquote>" subtitle="cite" pageTitle="Tag blockquote - Atributo cite"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "cite"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
