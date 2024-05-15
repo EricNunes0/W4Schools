@@ -1136,6 +1136,25 @@ function App() {
 								<Navigate to = "cite"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag button */}
+						<Route path = "button">
+							{/* Atributo autofocus */}
+							<Route path = "autofocus" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="autofocus" pageTitle="Tag button - Atributo autofocus"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="disabled" pageTitle="Tag button - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="form" pageTitle="Tag button - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "autofocus"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
