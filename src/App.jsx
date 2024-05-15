@@ -1150,6 +1150,18 @@ function App() {
 							<Route path = "form" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="form" pageTitle="Tag button - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo formaction */}
+							<Route path = "formaction" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formaction" pageTitle="Tag button - Atributo formaction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formenctype */}
+							<Route path = "formenctype" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formenctype" pageTitle="Tag button - Atributo formenctype"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formmethod */}
+							<Route path = "formmethod" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formmethod" pageTitle="Tag button - Atributo formmethod"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "autofocus"></Navigate>
