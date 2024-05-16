@@ -1162,6 +1162,26 @@ function App() {
 							<Route path = "formmethod" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formmethod" pageTitle="Tag button - Atributo formmethod"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo formnovalidate */}
+							<Route path = "formnovalidate" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formnovalidate" pageTitle="Tag button - Atributo formnovalidate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formtarget */}
+							<Route path = "formtarget" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formtarget" pageTitle="Tag button - Atributo formtarget"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo popovertarget */}
+							<Route path = "popovertarget" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="popovertarget" pageTitle="Tag button - Atributo popovertarget"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo popovertargetaction */}
+							<Route path = "popovertargetaction" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="popovertargetaction" pageTitle="Tag button - Atributo popovertargetaction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="name" pageTitle="Tag button - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "autofocus"></Navigate>
