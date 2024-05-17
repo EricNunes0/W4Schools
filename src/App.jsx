@@ -1182,9 +1182,32 @@ function App() {
 							<Route path = "name" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="name" pageTitle="Tag button - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="type" pageTitle="Tag button - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="value" pageTitle="Tag button - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "autofocus"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag canvas */}
+						<Route path = "canvas">
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <canvas>" subtitle="height" pageTitle="Tag canvas - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <canvas>" subtitle="width" pageTitle="Tag canvas - Atributo width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "height"></Navigate>
 							)}></Route>
 						</Route>
 					</Route>
