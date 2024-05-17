@@ -1210,6 +1210,43 @@ function App() {
 								<Navigate to = "height"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag col */}
+						<Route path = "col">
+							{/* Atributo span */}
+							<Route path = "span" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <col>" subtitle="span" pageTitle="Tag col - Atributo span"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "span"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag colgroup */}
+						<Route path = "colgroup">
+							{/* Atributo span */}
+							<Route path = "span" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <colgroup>" subtitle="span" pageTitle="Tag colgroup - Atributo span"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "span"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag del */}
+						<Route path = "del">
+							{/* Atributo cite */}
+							<Route path = "cite" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <del>" subtitle="cite" pageTitle="Tag del - Atributo cite"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo datetime */}
+							<Route path = "datetime" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <del>" subtitle="datetime" pageTitle="Tag del - Atributo datetime"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "cite"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
