@@ -1247,6 +1247,70 @@ function App() {
 								<Navigate to = "cite"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag details */}
+						<Route path = "details">
+							{/* Atributo open */}
+							<Route path = "open" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <details>" subtitle="open" pageTitle="Tag details - Atributo open"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "open"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag dialog */}
+						<Route path = "dialog">
+							{/* Atributo open */}
+							<Route path = "open" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <dialog>" subtitle="open" pageTitle="Tag dialog - Atributo open"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "open"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag embed */}
+						<Route path = "embed">
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="height" pageTitle="Tag embed - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="src" pageTitle="Tag embed - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="type" pageTitle="Tag embed - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="width" pageTitle="Tag embed - Atributo width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "height"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag fieldset */}
+						<Route path = "fieldset">
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="disabled" pageTitle="Tag fieldset - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="form" pageTitle="Tag fieldset - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="name" pageTitle="Tag fieldset - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "disabled"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
