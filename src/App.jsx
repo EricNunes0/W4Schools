@@ -1365,6 +1365,60 @@ function App() {
 								<Navigate to = "xmlns"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag iframe */}
+						<Route path = "iframe">
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="height" pageTitle="Tag iframe - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="name" pageTitle="Tag iframe - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo referrerpolicy */}
+							<Route path = "referrerpolicy" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="referrerpolicy" pageTitle="Tag iframe - Atributo referrerpolicy"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo sandbox */}
+							<Route path = "sandbox" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="sandbox" pageTitle="Tag iframe - Atributo sandbox"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="src" pageTitle="Tag iframe - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo srcdoc */}
+							<Route path = "srcdoc" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="srcdoc" pageTitle="Tag iframe - Atributo srcdoc"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="width" pageTitle="Tag iframe - Atributo width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "height"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag img */}
+						<Route path = "img">
+							{/* Atributo alt */}
+							<Route path = "alt" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="alt" pageTitle="Tag img - Atributo alt"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="height" pageTitle="Tag img - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo ismap */}
+							<Route path = "ismap" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="ismap" pageTitle="Tag img - Atributo ismap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "alt"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
