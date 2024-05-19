@@ -1414,6 +1414,30 @@ function App() {
 							<Route path = "ismap" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="ismap" pageTitle="Tag img - Atributo ismap"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo loading */}
+							<Route path = "loading" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="loading" pageTitle="Tag img - Atributo loading"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo longdesc */}
+							<Route path = "longdesc" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="longdesc" pageTitle="Tag img - Atributo longdesc"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo referrerpolicy */}
+							<Route path = "referrerpolicy" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="referrerpolicy" pageTitle="Tag img - Atributo referrerpolicy"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="src" pageTitle="Tag img - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo usemap */}
+							<Route path = "usemap" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="usemap" pageTitle="Tag img - Atributo usemap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="width" pageTitle="Tag img - Atributo width"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "alt"></Navigate>

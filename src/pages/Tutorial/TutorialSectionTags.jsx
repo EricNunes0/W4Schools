@@ -33,6 +33,7 @@ import TutorialSectionsPicture from "./TutorialSectionsPicture";
 import Section from "../Sections/Section";
 import TutorialBootcamp from "./TutorialBootcamp";
 import TutorialSectionsSearch from "./TutorialSectionsSearch";
+import TutorialSectionsTips from "./TutorialSectionsTips";
 
 export default function TutorialSectionTags(tag, content) {
     switch(tag) {
@@ -144,6 +145,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsStructure content = {content}></TutorialSectionsStructure>);
         case "tags-flex":
             return <TutorialSectionsTagsFlex content = {content}></TutorialSectionsTagsFlex>
+        case "tip":
+            return (<TutorialSectionsTips content = {content}></TutorialSectionsTips>);
         case "warning":
             return (<TutorialSectionsWarning><p>{content}</p></TutorialSectionsWarning>);
         default:

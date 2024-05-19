@@ -11,6 +11,7 @@ import "./TutorialSectionsPicture.css";
 import "./TutorialSectionsRow.css";
 import "./TutorialSectionsSearch.css";
 import "./TutorialSectionsTagsFlex.css";
+import "./TutorialSectionsTip.css";
 import "./TutorialSectionsMaps.css";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";
 import TutorialHeader from "./TutorialHeader";
