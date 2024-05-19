@@ -1311,6 +1311,60 @@ function App() {
 								<Navigate to = "disabled"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag form */}
+						<Route path = "form">
+							{/* Atributo accept-charset */}
+							<Route path = "accept-charset" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="accept-charset" pageTitle="Tag form - Atributo accept-charset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo action */}
+							<Route path = "action" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="action" pageTitle="Tag form - Atributo action"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo autocomplete */}
+							<Route path = "autocomplete" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="autocomplete" pageTitle="Tag form - Atributo autocomplete"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo enctype */}
+							<Route path = "enctype" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="enctype" pageTitle="Tag form - Atributo enctype"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo method */}
+							<Route path = "method" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="method" pageTitle="Tag form - Atributo method"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="name" pageTitle="Tag form - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo novalidate */}
+							<Route path = "novalidate" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="novalidate" pageTitle="Tag form - Atributo novalidate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo rel */}
+							<Route path = "rel" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="rel" pageTitle="Tag form - Atributo rel"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo target */}
+							<Route path = "target" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="target" pageTitle="Tag form - Atributo target"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "accept-charset"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag html */}
+						<Route path = "html">
+							{/* Atributo xmlns */}
+							<Route path = "xmlns" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <html>" subtitle="xmlns" pageTitle="Tag html - Atributo xmlns"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "xmlns"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
