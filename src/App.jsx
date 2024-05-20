@@ -1443,6 +1443,45 @@ function App() {
 								<Navigate to = "alt"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag input */}
+						<Route path = "input">
+							{/* Atributo accept */}
+							<Route path = "accept" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="accept" pageTitle="Tag input - Atributo accept"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo alt */}
+							<Route path = "alt" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="alt" pageTitle="Tag input - Atributo alt"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo autocomplete */}
+							<Route path = "autocomplete" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="autocomplete" pageTitle="Tag input - Atributo autocomplete"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo autofocus */}
+							<Route path = "autofocus" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="autofocus" pageTitle="Tag input - Atributo autofocus"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo checked */}
+							<Route path = "checked" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="checked" pageTitle="Tag input - Atributo checked"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo dirname */}
+							<Route path = "dirname" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="dirname" pageTitle="Tag input - Atributo dirname"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="disabled" pageTitle="Tag input - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="form" pageTitle="Tag input - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "accept"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
