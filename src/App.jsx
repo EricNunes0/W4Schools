@@ -1477,6 +1477,30 @@ function App() {
 							<Route path = "form" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="form" pageTitle="Tag input - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo formaction */}
+							<Route path = "formaction" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formaction" pageTitle="Tag input - Atributo formaction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formenctype */}
+							<Route path = "formenctype" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formenctype" pageTitle="Tag input - Atributo formenctype"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formmethod */}
+							<Route path = "formmethod" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formmethod" pageTitle="Tag input - Atributo formmethod"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formnovalidate */}
+							<Route path = "formnovalidate" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formnovalidate" pageTitle="Tag input - Atributo formnovalidate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo formtarget */}
+							<Route path = "formtarget" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formtarget" pageTitle="Tag input - Atributo formtarget"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="height" pageTitle="Tag input - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "accept"></Navigate>
