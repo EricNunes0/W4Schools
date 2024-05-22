@@ -1501,6 +1501,30 @@ function App() {
 							<Route path = "height" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="height" pageTitle="Tag input - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo list */}
+							<Route path = "list" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="list" pageTitle="Tag input - Atributo list"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo max */}
+							<Route path = "max" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="max" pageTitle="Tag input - Atributo max"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo maxlength */}
+							<Route path = "maxlength" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="maxlength" pageTitle="Tag input - Atributo maxlength"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo min */}
+							<Route path = "min" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="min" pageTitle="Tag input - Atributo min"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo minlength */}
+							<Route path = "minlength" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="minlength" pageTitle="Tag input - Atributo minlength"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo multiple */}
+							<Route path = "multiple" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="multiple" pageTitle="Tag input - Atributo multiple"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "accept"></Navigate>
