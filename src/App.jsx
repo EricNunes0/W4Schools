@@ -1525,6 +1525,18 @@ function App() {
 							<Route path = "multiple" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="multiple" pageTitle="Tag input - Atributo multiple"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="name" pageTitle="Tag input - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo pattern */}
+							<Route path = "pattern" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="pattern" pageTitle="Tag input - Atributo pattern"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo placeholder */}
+							<Route path = "placeholder" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="placeholder" pageTitle="Tag input - Atributo placeholder"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "accept"></Navigate>
