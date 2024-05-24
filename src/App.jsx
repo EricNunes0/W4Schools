@@ -1537,6 +1537,22 @@ function App() {
 							<Route path = "placeholder" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="placeholder" pageTitle="Tag input - Atributo placeholder"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo popovertarget */}
+							<Route path = "popovertarget" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="popovertarget" pageTitle="Tag input - Atributo popovertarget"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo popovertargetaction */}
+							<Route path = "popovertargetaction" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="popovertargetaction" pageTitle="Tag input - Atributo popovertargetaction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo readonly */}
+							<Route path = "readonly" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="readonly" pageTitle="Tag input - Atributo readonly"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo required */}
+							<Route path = "required" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="required" pageTitle="Tag input - Atributo required"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "accept"></Navigate>
