@@ -1553,6 +1553,22 @@ function App() {
 							<Route path = "required" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="required" pageTitle="Tag input - Atributo required"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo size */}
+							<Route path = "size" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="size" pageTitle="Tag input - Atributo size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="src" pageTitle="Tag input - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo step */}
+							<Route path = "step" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="step" pageTitle="Tag input - Atributo step"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="type" pageTitle="Tag input - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "accept"></Navigate>
