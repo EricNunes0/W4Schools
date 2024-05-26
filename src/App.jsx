@@ -1582,6 +1582,36 @@ function App() {
 								<Navigate to = "accept"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag ins */}
+						<Route path = "ins">
+							{/* Atributo cite */}
+							<Route path = "cite" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ins>" subtitle="cite" pageTitle="Tag ins - Atributo cite"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo datetime */}
+							<Route path = "datetime" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ins>" subtitle="datetime" pageTitle="Tag ins - Atributo datetime"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "cite"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag label */}
+						<Route path = "label">
+							{/* Atributo for */}
+							<Route path = "for" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <label>" subtitle="for" pageTitle="Tag label - Atributo for"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <label>" subtitle="form" pageTitle="Tag label - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "for"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
