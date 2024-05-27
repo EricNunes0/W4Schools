@@ -1612,6 +1612,52 @@ function App() {
 								<Navigate to = "for"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag li */}
+						<Route path = "li">
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <li>" subtitle="value" pageTitle="Tag li - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "value"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag link */}
+						<Route path = "link">
+							{/* Atributo href */}
+							<Route path = "href" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="href" pageTitle="Tag link - Atributo href"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo hreflang */}
+							<Route path = "hreflang" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="hreflang" pageTitle="Tag link - Atributo hreflang"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo media */}
+							<Route path = "media" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="media" pageTitle="Tag link - Atributo media"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo referrerpolicy */}
+							<Route path = "referrerpolicy" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="referrerpolicy" pageTitle="Tag link - Atributo referrerpolicy"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo rel */}
+							<Route path = "rel" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="rel" pageTitle="Tag link - Atributo rel"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo sizes */}
+							<Route path = "sizes" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="sizes" pageTitle="Tag link - Atributo sizes"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="type" pageTitle="Tag link - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "href"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
