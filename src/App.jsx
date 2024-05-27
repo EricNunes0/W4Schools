@@ -1658,6 +1658,40 @@ function App() {
 								<Navigate to = "href"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag map */}
+						<Route path = "map">
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <map>" subtitle="name" pageTitle="Tag map - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "name"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag meta */}
+						<Route path = "meta">
+							{/* Atributo charset */}
+							<Route path = "charset" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="charset" pageTitle="Tag meta - Atributo charset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo content */}
+							<Route path = "content" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="content" pageTitle="Tag meta - Atributo content"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo http-equiv */}
+							<Route path = "http-equiv" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="http-equiv" pageTitle="Tag meta - Atributo http-equiv"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="name" pageTitle="Tag meta - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "charset"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
