@@ -1698,6 +1698,30 @@ function App() {
 							<Route path = "form" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="form" pageTitle="Tag meter - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo high */}
+							<Route path = "high" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="high" pageTitle="Tag meter - Atributo high"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo low */}
+							<Route path = "low" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="low" pageTitle="Tag meter - Atributo low"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo max */}
+							<Route path = "max" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="max" pageTitle="Tag meter - Atributo max"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo min */}
+							<Route path = "min" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="min" pageTitle="Tag meter - Atributo min"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo optimum */}
+							<Route path = "optimum" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="optimum" pageTitle="Tag meter - Atributo optimum"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="value" pageTitle="Tag meter - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "form"></Navigate>
