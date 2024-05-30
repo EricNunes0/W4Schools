@@ -1727,6 +1727,41 @@ function App() {
 								<Navigate to = "form"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag object */}
+						<Route path = "object">
+							{/* Atributo data */}
+							<Route path = "data" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="data" pageTitle="Tag object - Atributo data"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="form" pageTitle="Tag object - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="height" pageTitle="Tag object - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="name" pageTitle="Tag object - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="type" pageTitle="Tag object - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo usemap */}
+							<Route path = "usemap" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="usemap" pageTitle="Tag object - Atributo usemap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="width" pageTitle="Tag object - Atributo width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "data"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
