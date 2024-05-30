@@ -1762,6 +1762,25 @@ function App() {
 								<Navigate to = "data"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag ol */}
+						<Route path = "ol">
+							{/* Atributo reversed */}
+							<Route path = "reversed" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="reversed" pageTitle="Tag ol - Atributo reversed"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo start */}
+							<Route path = "start" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="start" pageTitle="Tag ol - Atributo start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="type" pageTitle="Tag ol - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "reversed"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
