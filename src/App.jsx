@@ -1781,6 +1781,44 @@ function App() {
 								<Navigate to = "reversed"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag optgroup */}
+						<Route path = "optgroup">
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <optgroup>" subtitle="disabled" pageTitle="Tag optgroup - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo label */}
+							<Route path = "label" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <optgroup>" subtitle="label" pageTitle="Tag optgroup - Atributo label"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "disabled"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag option */}
+						<Route path = "option">
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="disabled" pageTitle="Tag option - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo label */}
+							<Route path = "label" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="label" pageTitle="Tag option - Atributo label"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo selected */}
+							<Route path = "selected" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="selected" pageTitle="Tag option - Atributo selected"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="value" pageTitle="Tag option - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "disabled"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
