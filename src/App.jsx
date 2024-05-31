@@ -1853,6 +1853,32 @@ function App() {
 								<Navigate to = "name"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag progress */}
+						<Route path = "progress">
+							{/* Atributo max */}
+							<Route path = "max" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <progress>" subtitle="max" pageTitle="Tag progress - Atributo max"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <progress>" subtitle="value" pageTitle="Tag progress - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "max"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag q */}
+						<Route path = "q">
+							{/* Atributo cite */}
+							<Route path = "cite" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <q>" subtitle="cite" pageTitle="Tag q - Atributo cite"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "cite"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
