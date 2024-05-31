@@ -1819,6 +1819,40 @@ function App() {
 								<Navigate to = "disabled"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag output */}
+						<Route path = "output">
+							{/* Atributo for */}
+							<Route path = "for" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="for" pageTitle="Tag output - Atributo for"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="form" pageTitle="Tag output - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="name" pageTitle="Tag output - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "for"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag param */}
+						<Route path = "param">
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <param>" subtitle="name" pageTitle="Tag param - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo value */}
+							<Route path = "value" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <param>" subtitle="value" pageTitle="Tag param - Atributo value"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "name"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
