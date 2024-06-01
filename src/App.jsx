@@ -1879,6 +1879,17 @@ function App() {
 								<Navigate to = "cite"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag script */}
+						<Route path = "script">
+							{/* Atributo async  */}
+							<Route path = "async" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="async" pageTitle="Tag script - Atributo async"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "async"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
