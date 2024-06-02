@@ -1885,6 +1885,30 @@ function App() {
 							<Route path = "async" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="async" pageTitle="Tag script - Atributo async"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo crossorigin  */}
+							<Route path = "crossorigin" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="crossorigin" pageTitle="Tag script - Atributo crossorigin"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo defer  */}
+							<Route path = "defer" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="defer" pageTitle="Tag script - Atributo defer"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo integrity  */}
+							<Route path = "integrity" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="integrity" pageTitle="Tag script - Atributo integrity"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo referrerpolicy  */}
+							<Route path = "referrerpolicy" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="referrerpolicy" pageTitle="Tag script - Atributo referrerpolicy"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src  */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="src" pageTitle="Tag script - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type  */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="type" pageTitle="Tag script - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "async"></Navigate>
