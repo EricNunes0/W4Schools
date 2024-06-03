@@ -1914,6 +1914,25 @@ function App() {
 								<Navigate to = "async"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag select */}
+						<Route path = "select">
+							{/* Atributo autofocus */}
+							<Route path = "autofocus" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="autofocus" pageTitle="Tag select - Atributo autofocus"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="disabled" pageTitle="Tag select - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="form" pageTitle="Tag select - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "autofocus"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
