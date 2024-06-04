@@ -1928,9 +1928,36 @@ function App() {
 							<Route path = "form" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="form" pageTitle="Tag select - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo multiple */}
+							<Route path = "multiple" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="multiple" pageTitle="Tag select - Atributo multiple"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="name" pageTitle="Tag select - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo required */}
+							<Route path = "required" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="required" pageTitle="Tag select - Atributo required"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo size */}
+							<Route path = "size" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="size" pageTitle="Tag select - Atributo size"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "autofocus"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag source */}
+						<Route path = "source">
+							{/* Atributo media */}
+							<Route path = "media" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="media" pageTitle="Tag source - Atributo media"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "media"></Navigate>
 							)}></Route>
 						</Route>
 					</Route>
