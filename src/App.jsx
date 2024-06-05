@@ -1972,6 +1972,36 @@ function App() {
 								<Navigate to = "media"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag style */}
+						<Route path = "style">
+							{/* Atributo media */}
+							<Route path = "media" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <style>" subtitle="media" pageTitle="Tag style - Atributo media"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <style>" subtitle="type" pageTitle="Tag style - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "media"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag td */}
+						<Route path = "td">
+							{/* Atributo colspan */}
+							<Route path = "colspan" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="colspan" pageTitle="Tag td - Atributo colspan"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo headers */}
+							<Route path = "headers" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="headers" pageTitle="Tag td - Atributo headers"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "colspan"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
