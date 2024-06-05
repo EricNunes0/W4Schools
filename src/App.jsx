@@ -1955,6 +1955,18 @@ function App() {
 							<Route path = "media" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="media" pageTitle="Tag source - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="src" pageTitle="Tag source - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo srcset */}
+							<Route path = "srcset" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="srcset" pageTitle="Tag source - Atributo srcset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo type */}
+							<Route path = "type" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="type" pageTitle="Tag source - Atributo type"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "media"></Navigate>
