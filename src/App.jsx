@@ -1997,9 +1997,28 @@ function App() {
 							<Route path = "headers" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="headers" pageTitle="Tag td - Atributo headers"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo rowspan */}
+							<Route path = "rowspan" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="rowspan" pageTitle="Tag td - Atributo rowspan"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "colspan"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag textarea */}
+						<Route path = "textarea">
+							{/* Atributo autofocus */}
+							<Route path = "autofocus" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="autofocus" pageTitle="Tag textarea - Atributo autofocus"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo cols */}
+							<Route path = "cols" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="cols" pageTitle="Tag textarea - Atributo cols"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "autofocus"></Navigate>
 							)}></Route>
 						</Route>
 					</Route>
