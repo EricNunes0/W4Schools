@@ -2016,6 +2016,46 @@ function App() {
 							<Route path = "cols" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="cols" pageTitle="Tag textarea - Atributo cols"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Atributo dirname */}
+							<Route path = "dirname" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="dirname" pageTitle="Tag textarea - Atributo dirname"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="disabled" pageTitle="Tag textarea - Atributo disabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo form */}
+							<Route path = "form" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="form" pageTitle="Tag textarea - Atributo form"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo maxlength */}
+							<Route path = "maxlength" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="maxlength" pageTitle="Tag textarea - Atributo maxlength"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo name */}
+							<Route path = "name" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="name" pageTitle="Tag textarea - Atributo name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo placeholder */}
+							<Route path = "placeholder" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="placeholder" pageTitle="Tag textarea - Atributo placeholder"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo readonly */}
+							<Route path = "readonly" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="readonly" pageTitle="Tag textarea - Atributo readonly"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo required */}
+							<Route path = "required" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="required" pageTitle="Tag textarea - Atributo required"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo rows */}
+							<Route path = "rows" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="rows" pageTitle="Tag textarea - Atributo rows"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo wrap */}
+							<Route path = "wrap" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="wrap" pageTitle="Tag textarea - Atributo wrap"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
 								<Navigate to = "autofocus"></Navigate>
