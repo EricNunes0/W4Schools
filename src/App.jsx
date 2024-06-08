@@ -2099,6 +2099,44 @@ function App() {
 								<Navigate to = "datetime"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag track */}
+						<Route path = "track">
+							{/* Atributo default */}
+							<Route path = "default" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="default" pageTitle="Tag track - Atributo default"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo kind */}
+							<Route path = "kind" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="kind" pageTitle="Tag track - Atributo kind"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo label */}
+							<Route path = "label" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="label" pageTitle="Tag track - Atributo label"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="src" pageTitle="Tag track - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo srclang */}
+							<Route path = "srclang" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="srclang" pageTitle="Tag track - Atributo srclang"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "default"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag video */}
+						<Route path = "video">
+							{/* Atributo autoplay */}
+							<Route path = "autoplay" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <video>" subtitle="autoplay" pageTitle="Tag video - Atributo autoplay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "autoplay"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
