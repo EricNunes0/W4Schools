@@ -2061,6 +2061,44 @@ function App() {
 								<Navigate to = "autofocus"></Navigate>
 							)}></Route>
 						</Route>
+						{/* Tag th */}
+						<Route path = "th">
+							{/* Atributo abbr */}
+							<Route path = "abbr" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="abbr" pageTitle="Tag th - Atributo abbr"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo colspan */}
+							<Route path = "colspan" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="colspan" pageTitle="Tag th - Atributo colspan"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo headers */}
+							<Route path = "headers" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="headers" pageTitle="Tag th - Atributo headers"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo rowspan */}
+							<Route path = "rowspan" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="rowspan" pageTitle="Tag th - Atributo rowspan"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo scope */}
+							<Route path = "scope" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="scope" pageTitle="Tag th - Atributo scope"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "abbr"></Navigate>
+							)}></Route>
+						</Route>
+						{/* Tag time */}
+						<Route path = "time">
+							{/* Atributo datetime */}
+							<Route path = "datetime" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <time>" subtitle="datetime" pageTitle="Tag time - Atributo datetime"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Não encontrado */}
+							<Route path = "" element = {(
+								<Navigate to = "datetime"></Navigate>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
