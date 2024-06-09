@@ -60,10 +60,15 @@ export default class TutorialManagePages {
                                         const previousLanguage = this.getPreviousLanguage(language);
                                         if(previousLanguage) {
                                             const previousTopics = Object.keys(pages[previousLanguage]);
+                                            console.log(previousTopics)
                                             const previousLastTopicKey = previousTopics[previousTopics.length - 1];
                                             const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
-                                            const nextLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
-                                            link = nextLastTopicArrayLastItem.link;
+                                            const previousLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
+                                            if(previousLastTopicArrayLastItem.subtitles) {
+                                                link = previousLastTopicArrayLastItem.subtitles[0].link;
+                                            } else {
+                                                link = previousLastTopicArrayLastItem.link;
+                                            }
                                             console.log(link)
                                         } else {
                                             link = "/"
@@ -87,9 +92,13 @@ export default class TutorialManagePages {
                                 const previousTopics = Object.keys(pages[previousLanguage]);
                                 const previousLastTopicKey = previousTopics[previousTopics.length - 1];
                                 const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
-                                const nextLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
-                                link = nextLastTopicArrayLastItem.link;
-                                console.log(link)
+                                const previousLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
+                                if(previousLastTopicArrayLastItem.subtitles) {
+                                    link = previousLastTopicArrayLastItem.subtitles[0].link;
+                                } else {
+                                    link = previousLastTopicArrayLastItem.link;
+                                }
+                                console.log("getPreviousLink: ", link);
                             } else {
                                 link = "/"
                             }
@@ -138,15 +147,15 @@ export default class TutorialManagePages {
                             const nextLanguage = this.getNextLanguage(language);
                             if(nextLanguage) {
                                 const nextTopics = Object.keys(pages[nextLanguage]);
-                                const nextLastTopicKey = nextTopics[nextTopics.length - 1];
-                                const nextLastTopicArray = pages[nextLanguage][nextLastTopicKey];
-                                const nextLastTopicArrayLastItem = nextLastTopicArray[nextLastTopicArray.length - 1];
-                                if(nextLastTopicArrayLastItem.subtitles) {
-                                    link = nextLastTopicArrayLastItem.subtitles[0].link;
+                                const nextFirstTopicKey = nextTopics[0];
+                                const nextFirstTopicArray = pages[nextLanguage][nextFirstTopicKey];
+                                const nextFirstTopicArrayLastItem = nextFirstTopicArray[0]; // nextLastTopicArray.length - 1 para último
+                                if(nextFirstTopicArrayLastItem.subtitles) {
+                                    link = nextFirstTopicArrayLastItem.subtitles[0].link;
                                 } else {
-                                    link = nextLastTopicArrayLastItem.link;
+                                    link = nextFirstTopicArrayLastItem.link;
                                 }
-                                console.log(link)
+                                console.log("getNextLink: ", link);
                             } else {
                                 link = "/"
                             };

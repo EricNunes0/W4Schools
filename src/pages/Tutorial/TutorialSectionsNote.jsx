@@ -14,6 +14,7 @@ export const TutorialSectionsNote = styled.div`
     width: 90%;
     background-color: #ffffa0!important;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 5px;

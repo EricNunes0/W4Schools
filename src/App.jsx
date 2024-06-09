@@ -974,43 +974,48 @@ function App() {
 					)}></Route>
 					{/* Atributos */}
 					<Route path = "attributes">
+						{/* Atributo accept */}
+						<Route path = "accept" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "accept" pageTitle="Atributo accept"></TutorialMain>)}></Page>
+						)}></Route>
+
 						{/* Tag a */}
 						<Route path = "a">
 							{/* Atributo download */}
 							<Route path = "download" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="download" pageTitle="Tag a - Atributo download"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="download" pageTitle="Tag a - Atributo download"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo href */}
 							<Route path = "href" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="href" pageTitle="Tag a - Atributo href"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="href" pageTitle="Tag a - Atributo href"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo hreflang */}
 							<Route path = "hreflang" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="hreflang" pageTitle="Tag a - Atributo hreflang"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="hreflang" pageTitle="Tag a - Atributo hreflang"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo media */}
 							<Route path = "media" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="media" pageTitle="Tag a - Atributo media"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="media" pageTitle="Tag a - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo ping */}
 							<Route path = "ping" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="ping" pageTitle="Tag a - Atributo ping"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="ping" pageTitle="Tag a - Atributo ping"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="referrerpolicy" pageTitle="Tag a - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="referrerpolicy" pageTitle="Tag a - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rel */}
 							<Route path = "rel" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="rel" pageTitle="Tag a - Atributo rel"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="rel" pageTitle="Tag a - Atributo rel"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo target */}
 							<Route path = "target" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="target" pageTitle="Tag a - Atributo target"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="target" pageTitle="Tag a - Atributo target"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <a>" subtitle="type" pageTitle="Tag a - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <a>" subtitle="type" pageTitle="Tag a - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1021,47 +1026,47 @@ function App() {
 						<Route path = "area">
 							{/* Atributo alt */}
 							<Route path = "alt" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="alt" pageTitle="Tag area - Atributo alt"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="alt" pageTitle="Tag area - Atributo alt"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo coords */}
 							<Route path = "coords" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="coords" pageTitle="Tag area - Atributo coords"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="coords" pageTitle="Tag area - Atributo coords"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo download */}
 							<Route path = "download" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="download" pageTitle="Tag area - Atributo download"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="download" pageTitle="Tag area - Atributo download"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo href */}
 							<Route path = "href" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="href" pageTitle="Tag area - Atributo href"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="href" pageTitle="Tag area - Atributo href"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo hreflang */}
 							<Route path = "hreflang" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="hreflang" pageTitle="Tag area - Atributo hreflang"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="hreflang" pageTitle="Tag area - Atributo hreflang"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo media */}
 							<Route path = "media" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="media" pageTitle="Tag area - Atributo media"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="media" pageTitle="Tag area - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="referrerpolicy" pageTitle="Tag area - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="referrerpolicy" pageTitle="Tag area - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rel */}
 							<Route path = "rel" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="rel" pageTitle="Tag area - Atributo rel"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="rel" pageTitle="Tag area - Atributo rel"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo shape */}
 							<Route path = "shape" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="shape" pageTitle="Tag area - Atributo shape"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="shape" pageTitle="Tag area - Atributo shape"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo target */}
 							<Route path = "target" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="target" pageTitle="Tag area - Atributo target"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="target" pageTitle="Tag area - Atributo target"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <area>" subtitle="type" pageTitle="Tag area - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <area>" subtitle="type" pageTitle="Tag area - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1072,27 +1077,27 @@ function App() {
 						<Route path = "audio">
 							{/* Atributo autoplay */}
 							<Route path = "autoplay" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="autoplay" pageTitle="Tag audio - Atributo autoplay"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="autoplay" pageTitle="Tag audio - Atributo autoplay"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo controls */}
 							<Route path = "controls" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="controls" pageTitle="Tag audio - Atributo controls"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="controls" pageTitle="Tag audio - Atributo controls"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo loop */}
 							<Route path = "loop" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="loop" pageTitle="Tag audio - Atributo loop"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="loop" pageTitle="Tag audio - Atributo loop"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo muted */}
 							<Route path = "muted" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="muted" pageTitle="Tag audio - Atributo muted"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="muted" pageTitle="Tag audio - Atributo muted"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo preload */}
 							<Route path = "preload" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="preload" pageTitle="Tag audio - Atributo preload"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="preload" pageTitle="Tag audio - Atributo preload"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <audio>" subtitle="src" pageTitle="Tag audio - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <audio>" subtitle="src" pageTitle="Tag audio - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1103,11 +1108,11 @@ function App() {
 						<Route path = "base">
 							{/* Atributo href */}
 							<Route path = "href" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <base>" subtitle="href" pageTitle="Tag base - Atributo href"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <base>" subtitle="href" pageTitle="Tag base - Atributo href"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo target */}
 							<Route path = "target" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <base>" subtitle="target" pageTitle="Tag base - Atributo target"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <base>" subtitle="target" pageTitle="Tag base - Atributo target"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1118,7 +1123,7 @@ function App() {
 						<Route path = "bdo">
 							{/* Atributo dir */}
 							<Route path = "dir" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <bdo>" subtitle="dir" pageTitle="Tag bdo - Atributo dir"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <bdo>" subtitle="dir" pageTitle="Tag bdo - Atributo dir"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1129,7 +1134,7 @@ function App() {
 						<Route path = "blockquote">
 							{/* Atributo cite */}
 							<Route path = "cite" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <blockquote>" subtitle="cite" pageTitle="Tag blockquote - Atributo cite"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <blockquote>" subtitle="cite" pageTitle="Tag blockquote - Atributo cite"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1140,55 +1145,55 @@ function App() {
 						<Route path = "button">
 							{/* Atributo autofocus */}
 							<Route path = "autofocus" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="autofocus" pageTitle="Tag button - Atributo autofocus"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="autofocus" pageTitle="Tag button - Atributo autofocus"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="disabled" pageTitle="Tag button - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="disabled" pageTitle="Tag button - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="form" pageTitle="Tag button - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="form" pageTitle="Tag button - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formaction */}
 							<Route path = "formaction" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formaction" pageTitle="Tag button - Atributo formaction"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="formaction" pageTitle="Tag button - Atributo formaction"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formenctype */}
 							<Route path = "formenctype" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formenctype" pageTitle="Tag button - Atributo formenctype"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="formenctype" pageTitle="Tag button - Atributo formenctype"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formmethod */}
 							<Route path = "formmethod" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formmethod" pageTitle="Tag button - Atributo formmethod"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="formmethod" pageTitle="Tag button - Atributo formmethod"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formnovalidate */}
 							<Route path = "formnovalidate" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formnovalidate" pageTitle="Tag button - Atributo formnovalidate"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="formnovalidate" pageTitle="Tag button - Atributo formnovalidate"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formtarget */}
 							<Route path = "formtarget" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="formtarget" pageTitle="Tag button - Atributo formtarget"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="formtarget" pageTitle="Tag button - Atributo formtarget"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo popovertarget */}
 							<Route path = "popovertarget" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="popovertarget" pageTitle="Tag button - Atributo popovertarget"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="popovertarget" pageTitle="Tag button - Atributo popovertarget"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo popovertargetaction */}
 							<Route path = "popovertargetaction" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="popovertargetaction" pageTitle="Tag button - Atributo popovertargetaction"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="popovertargetaction" pageTitle="Tag button - Atributo popovertargetaction"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="name" pageTitle="Tag button - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="name" pageTitle="Tag button - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="type" pageTitle="Tag button - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="type" pageTitle="Tag button - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <button>" subtitle="value" pageTitle="Tag button - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <button>" subtitle="value" pageTitle="Tag button - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1199,11 +1204,11 @@ function App() {
 						<Route path = "canvas">
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <canvas>" subtitle="height" pageTitle="Tag canvas - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <canvas>" subtitle="height" pageTitle="Tag canvas - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <canvas>" subtitle="width" pageTitle="Tag canvas - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <canvas>" subtitle="width" pageTitle="Tag canvas - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1214,7 +1219,7 @@ function App() {
 						<Route path = "col">
 							{/* Atributo span */}
 							<Route path = "span" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <col>" subtitle="span" pageTitle="Tag col - Atributo span"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <col>" subtitle="span" pageTitle="Tag col - Atributo span"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1225,7 +1230,7 @@ function App() {
 						<Route path = "colgroup">
 							{/* Atributo span */}
 							<Route path = "span" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <colgroup>" subtitle="span" pageTitle="Tag colgroup - Atributo span"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <colgroup>" subtitle="span" pageTitle="Tag colgroup - Atributo span"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1236,11 +1241,11 @@ function App() {
 						<Route path = "del">
 							{/* Atributo cite */}
 							<Route path = "cite" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <del>" subtitle="cite" pageTitle="Tag del - Atributo cite"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <del>" subtitle="cite" pageTitle="Tag del - Atributo cite"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo datetime */}
 							<Route path = "datetime" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <del>" subtitle="datetime" pageTitle="Tag del - Atributo datetime"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <del>" subtitle="datetime" pageTitle="Tag del - Atributo datetime"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1251,7 +1256,7 @@ function App() {
 						<Route path = "details">
 							{/* Atributo open */}
 							<Route path = "open" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <details>" subtitle="open" pageTitle="Tag details - Atributo open"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <details>" subtitle="open" pageTitle="Tag details - Atributo open"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1262,7 +1267,7 @@ function App() {
 						<Route path = "dialog">
 							{/* Atributo open */}
 							<Route path = "open" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <dialog>" subtitle="open" pageTitle="Tag dialog - Atributo open"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <dialog>" subtitle="open" pageTitle="Tag dialog - Atributo open"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1273,19 +1278,19 @@ function App() {
 						<Route path = "embed">
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="height" pageTitle="Tag embed - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <embed>" subtitle="height" pageTitle="Tag embed - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="src" pageTitle="Tag embed - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <embed>" subtitle="src" pageTitle="Tag embed - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="type" pageTitle="Tag embed - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <embed>" subtitle="type" pageTitle="Tag embed - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <embed>" subtitle="width" pageTitle="Tag embed - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <embed>" subtitle="width" pageTitle="Tag embed - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1296,15 +1301,15 @@ function App() {
 						<Route path = "fieldset">
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="disabled" pageTitle="Tag fieldset - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <fieldset>" subtitle="disabled" pageTitle="Tag fieldset - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="form" pageTitle="Tag fieldset - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <fieldset>" subtitle="form" pageTitle="Tag fieldset - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <fieldset>" subtitle="name" pageTitle="Tag fieldset - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <fieldset>" subtitle="name" pageTitle="Tag fieldset - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1315,39 +1320,39 @@ function App() {
 						<Route path = "form">
 							{/* Atributo accept-charset */}
 							<Route path = "accept-charset" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="accept-charset" pageTitle="Tag form - Atributo accept-charset"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="accept-charset" pageTitle="Tag form - Atributo accept-charset"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo action */}
 							<Route path = "action" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="action" pageTitle="Tag form - Atributo action"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="action" pageTitle="Tag form - Atributo action"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo autocomplete */}
 							<Route path = "autocomplete" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="autocomplete" pageTitle="Tag form - Atributo autocomplete"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="autocomplete" pageTitle="Tag form - Atributo autocomplete"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo enctype */}
 							<Route path = "enctype" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="enctype" pageTitle="Tag form - Atributo enctype"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="enctype" pageTitle="Tag form - Atributo enctype"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo method */}
 							<Route path = "method" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="method" pageTitle="Tag form - Atributo method"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="method" pageTitle="Tag form - Atributo method"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="name" pageTitle="Tag form - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="name" pageTitle="Tag form - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo novalidate */}
 							<Route path = "novalidate" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="novalidate" pageTitle="Tag form - Atributo novalidate"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="novalidate" pageTitle="Tag form - Atributo novalidate"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rel */}
 							<Route path = "rel" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="rel" pageTitle="Tag form - Atributo rel"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="rel" pageTitle="Tag form - Atributo rel"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo target */}
 							<Route path = "target" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <form>" subtitle="target" pageTitle="Tag form - Atributo target"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="target" pageTitle="Tag form - Atributo target"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1358,7 +1363,7 @@ function App() {
 						<Route path = "html">
 							{/* Atributo xmlns */}
 							<Route path = "xmlns" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <html>" subtitle="xmlns" pageTitle="Tag html - Atributo xmlns"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <html>" subtitle="xmlns" pageTitle="Tag html - Atributo xmlns"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1369,31 +1374,31 @@ function App() {
 						<Route path = "iframe">
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="height" pageTitle="Tag iframe - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="height" pageTitle="Tag iframe - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="name" pageTitle="Tag iframe - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="name" pageTitle="Tag iframe - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="referrerpolicy" pageTitle="Tag iframe - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="referrerpolicy" pageTitle="Tag iframe - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo sandbox */}
 							<Route path = "sandbox" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="sandbox" pageTitle="Tag iframe - Atributo sandbox"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="sandbox" pageTitle="Tag iframe - Atributo sandbox"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="src" pageTitle="Tag iframe - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="src" pageTitle="Tag iframe - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo srcdoc */}
 							<Route path = "srcdoc" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="srcdoc" pageTitle="Tag iframe - Atributo srcdoc"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="srcdoc" pageTitle="Tag iframe - Atributo srcdoc"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <iframe>" subtitle="width" pageTitle="Tag iframe - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <iframe>" subtitle="width" pageTitle="Tag iframe - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1404,39 +1409,39 @@ function App() {
 						<Route path = "img">
 							{/* Atributo alt */}
 							<Route path = "alt" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="alt" pageTitle="Tag img - Atributo alt"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="alt" pageTitle="Tag img - Atributo alt"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="height" pageTitle="Tag img - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="height" pageTitle="Tag img - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo ismap */}
 							<Route path = "ismap" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="ismap" pageTitle="Tag img - Atributo ismap"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="ismap" pageTitle="Tag img - Atributo ismap"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo loading */}
 							<Route path = "loading" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="loading" pageTitle="Tag img - Atributo loading"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="loading" pageTitle="Tag img - Atributo loading"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo longdesc */}
 							<Route path = "longdesc" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="longdesc" pageTitle="Tag img - Atributo longdesc"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="longdesc" pageTitle="Tag img - Atributo longdesc"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="referrerpolicy" pageTitle="Tag img - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="referrerpolicy" pageTitle="Tag img - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="src" pageTitle="Tag img - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="src" pageTitle="Tag img - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo usemap */}
 							<Route path = "usemap" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="usemap" pageTitle="Tag img - Atributo usemap"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="usemap" pageTitle="Tag img - Atributo usemap"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <img>" subtitle="width" pageTitle="Tag img - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <img>" subtitle="width" pageTitle="Tag img - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1447,135 +1452,135 @@ function App() {
 						<Route path = "input">
 							{/* Atributo accept */}
 							<Route path = "accept" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="accept" pageTitle="Tag input - Atributo accept"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="accept" pageTitle="Tag input - Atributo accept"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo alt */}
 							<Route path = "alt" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="alt" pageTitle="Tag input - Atributo alt"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="alt" pageTitle="Tag input - Atributo alt"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo autocomplete */}
 							<Route path = "autocomplete" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="autocomplete" pageTitle="Tag input - Atributo autocomplete"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="autocomplete" pageTitle="Tag input - Atributo autocomplete"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo autofocus */}
 							<Route path = "autofocus" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="autofocus" pageTitle="Tag input - Atributo autofocus"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="autofocus" pageTitle="Tag input - Atributo autofocus"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo checked */}
 							<Route path = "checked" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="checked" pageTitle="Tag input - Atributo checked"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="checked" pageTitle="Tag input - Atributo checked"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo dirname */}
 							<Route path = "dirname" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="dirname" pageTitle="Tag input - Atributo dirname"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="dirname" pageTitle="Tag input - Atributo dirname"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="disabled" pageTitle="Tag input - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="disabled" pageTitle="Tag input - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="form" pageTitle="Tag input - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="form" pageTitle="Tag input - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formaction */}
 							<Route path = "formaction" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formaction" pageTitle="Tag input - Atributo formaction"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="formaction" pageTitle="Tag input - Atributo formaction"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formenctype */}
 							<Route path = "formenctype" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formenctype" pageTitle="Tag input - Atributo formenctype"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="formenctype" pageTitle="Tag input - Atributo formenctype"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formmethod */}
 							<Route path = "formmethod" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formmethod" pageTitle="Tag input - Atributo formmethod"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="formmethod" pageTitle="Tag input - Atributo formmethod"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formnovalidate */}
 							<Route path = "formnovalidate" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formnovalidate" pageTitle="Tag input - Atributo formnovalidate"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="formnovalidate" pageTitle="Tag input - Atributo formnovalidate"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo formtarget */}
 							<Route path = "formtarget" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="formtarget" pageTitle="Tag input - Atributo formtarget"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="formtarget" pageTitle="Tag input - Atributo formtarget"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="height" pageTitle="Tag input - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="height" pageTitle="Tag input - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo list */}
 							<Route path = "list" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="list" pageTitle="Tag input - Atributo list"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="list" pageTitle="Tag input - Atributo list"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo max */}
 							<Route path = "max" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="max" pageTitle="Tag input - Atributo max"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="max" pageTitle="Tag input - Atributo max"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo maxlength */}
 							<Route path = "maxlength" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="maxlength" pageTitle="Tag input - Atributo maxlength"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="maxlength" pageTitle="Tag input - Atributo maxlength"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo min */}
 							<Route path = "min" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="min" pageTitle="Tag input - Atributo min"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="min" pageTitle="Tag input - Atributo min"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo minlength */}
 							<Route path = "minlength" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="minlength" pageTitle="Tag input - Atributo minlength"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="minlength" pageTitle="Tag input - Atributo minlength"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo multiple */}
 							<Route path = "multiple" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="multiple" pageTitle="Tag input - Atributo multiple"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="multiple" pageTitle="Tag input - Atributo multiple"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="name" pageTitle="Tag input - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="name" pageTitle="Tag input - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo pattern */}
 							<Route path = "pattern" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="pattern" pageTitle="Tag input - Atributo pattern"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="pattern" pageTitle="Tag input - Atributo pattern"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo placeholder */}
 							<Route path = "placeholder" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="placeholder" pageTitle="Tag input - Atributo placeholder"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="placeholder" pageTitle="Tag input - Atributo placeholder"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo popovertarget */}
 							<Route path = "popovertarget" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="popovertarget" pageTitle="Tag input - Atributo popovertarget"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="popovertarget" pageTitle="Tag input - Atributo popovertarget"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo popovertargetaction */}
 							<Route path = "popovertargetaction" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="popovertargetaction" pageTitle="Tag input - Atributo popovertargetaction"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="popovertargetaction" pageTitle="Tag input - Atributo popovertargetaction"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo readonly */}
 							<Route path = "readonly" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="readonly" pageTitle="Tag input - Atributo readonly"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="readonly" pageTitle="Tag input - Atributo readonly"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo required */}
 							<Route path = "required" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="required" pageTitle="Tag input - Atributo required"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="required" pageTitle="Tag input - Atributo required"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo size */}
 							<Route path = "size" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="size" pageTitle="Tag input - Atributo size"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="size" pageTitle="Tag input - Atributo size"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="src" pageTitle="Tag input - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="src" pageTitle="Tag input - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo step */}
 							<Route path = "step" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="step" pageTitle="Tag input - Atributo step"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="step" pageTitle="Tag input - Atributo step"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="type" pageTitle="Tag input - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="type" pageTitle="Tag input - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="value" pageTitle="Tag input - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="value" pageTitle="Tag input - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <input>" subtitle="width" pageTitle="Tag input - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <input>" subtitle="width" pageTitle="Tag input - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1586,11 +1591,11 @@ function App() {
 						<Route path = "ins">
 							{/* Atributo cite */}
 							<Route path = "cite" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ins>" subtitle="cite" pageTitle="Tag ins - Atributo cite"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <ins>" subtitle="cite" pageTitle="Tag ins - Atributo cite"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo datetime */}
 							<Route path = "datetime" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ins>" subtitle="datetime" pageTitle="Tag ins - Atributo datetime"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <ins>" subtitle="datetime" pageTitle="Tag ins - Atributo datetime"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1601,11 +1606,11 @@ function App() {
 						<Route path = "label">
 							{/* Atributo for */}
 							<Route path = "for" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <label>" subtitle="for" pageTitle="Tag label - Atributo for"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <label>" subtitle="for" pageTitle="Tag label - Atributo for"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <label>" subtitle="form" pageTitle="Tag label - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <label>" subtitle="form" pageTitle="Tag label - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1616,7 +1621,7 @@ function App() {
 						<Route path = "li">
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <li>" subtitle="value" pageTitle="Tag li - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <li>" subtitle="value" pageTitle="Tag li - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1627,31 +1632,31 @@ function App() {
 						<Route path = "link">
 							{/* Atributo href */}
 							<Route path = "href" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="href" pageTitle="Tag link - Atributo href"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="href" pageTitle="Tag link - Atributo href"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo hreflang */}
 							<Route path = "hreflang" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="hreflang" pageTitle="Tag link - Atributo hreflang"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="hreflang" pageTitle="Tag link - Atributo hreflang"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo media */}
 							<Route path = "media" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="media" pageTitle="Tag link - Atributo media"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="media" pageTitle="Tag link - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="referrerpolicy" pageTitle="Tag link - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="referrerpolicy" pageTitle="Tag link - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rel */}
 							<Route path = "rel" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="rel" pageTitle="Tag link - Atributo rel"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="rel" pageTitle="Tag link - Atributo rel"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo sizes */}
 							<Route path = "sizes" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="sizes" pageTitle="Tag link - Atributo sizes"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="sizes" pageTitle="Tag link - Atributo sizes"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <link>" subtitle="type" pageTitle="Tag link - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <link>" subtitle="type" pageTitle="Tag link - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1662,7 +1667,7 @@ function App() {
 						<Route path = "map">
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <map>" subtitle="name" pageTitle="Tag map - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <map>" subtitle="name" pageTitle="Tag map - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1673,19 +1678,19 @@ function App() {
 						<Route path = "meta">
 							{/* Atributo charset */}
 							<Route path = "charset" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="charset" pageTitle="Tag meta - Atributo charset"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meta>" subtitle="charset" pageTitle="Tag meta - Atributo charset"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo content */}
 							<Route path = "content" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="content" pageTitle="Tag meta - Atributo content"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meta>" subtitle="content" pageTitle="Tag meta - Atributo content"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo http-equiv */}
 							<Route path = "http-equiv" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="http-equiv" pageTitle="Tag meta - Atributo http-equiv"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meta>" subtitle="http-equiv" pageTitle="Tag meta - Atributo http-equiv"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meta>" subtitle="name" pageTitle="Tag meta - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meta>" subtitle="name" pageTitle="Tag meta - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1696,31 +1701,31 @@ function App() {
 						<Route path = "meter">
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="form" pageTitle="Tag meter - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="form" pageTitle="Tag meter - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo high */}
 							<Route path = "high" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="high" pageTitle="Tag meter - Atributo high"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="high" pageTitle="Tag meter - Atributo high"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo low */}
 							<Route path = "low" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="low" pageTitle="Tag meter - Atributo low"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="low" pageTitle="Tag meter - Atributo low"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo max */}
 							<Route path = "max" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="max" pageTitle="Tag meter - Atributo max"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="max" pageTitle="Tag meter - Atributo max"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo min */}
 							<Route path = "min" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="min" pageTitle="Tag meter - Atributo min"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="min" pageTitle="Tag meter - Atributo min"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo optimum */}
 							<Route path = "optimum" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="optimum" pageTitle="Tag meter - Atributo optimum"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="optimum" pageTitle="Tag meter - Atributo optimum"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <meter>" subtitle="value" pageTitle="Tag meter - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <meter>" subtitle="value" pageTitle="Tag meter - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1731,31 +1736,31 @@ function App() {
 						<Route path = "object">
 							{/* Atributo data */}
 							<Route path = "data" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="data" pageTitle="Tag object - Atributo data"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="data" pageTitle="Tag object - Atributo data"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="form" pageTitle="Tag object - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="form" pageTitle="Tag object - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo height */}
 							<Route path = "height" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="height" pageTitle="Tag object - Atributo height"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="height" pageTitle="Tag object - Atributo height"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="name" pageTitle="Tag object - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="name" pageTitle="Tag object - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="type" pageTitle="Tag object - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="type" pageTitle="Tag object - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo usemap */}
 							<Route path = "usemap" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="usemap" pageTitle="Tag object - Atributo usemap"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="usemap" pageTitle="Tag object - Atributo usemap"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo width */}
 							<Route path = "width" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <object>" subtitle="width" pageTitle="Tag object - Atributo width"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <object>" subtitle="width" pageTitle="Tag object - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1766,15 +1771,15 @@ function App() {
 						<Route path = "ol">
 							{/* Atributo reversed */}
 							<Route path = "reversed" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="reversed" pageTitle="Tag ol - Atributo reversed"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <ol>" subtitle="reversed" pageTitle="Tag ol - Atributo reversed"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo start */}
 							<Route path = "start" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="start" pageTitle="Tag ol - Atributo start"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <ol>" subtitle="start" pageTitle="Tag ol - Atributo start"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <ol>" subtitle="type" pageTitle="Tag ol - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <ol>" subtitle="type" pageTitle="Tag ol - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1785,11 +1790,11 @@ function App() {
 						<Route path = "optgroup">
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <optgroup>" subtitle="disabled" pageTitle="Tag optgroup - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <optgroup>" subtitle="disabled" pageTitle="Tag optgroup - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo label */}
 							<Route path = "label" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <optgroup>" subtitle="label" pageTitle="Tag optgroup - Atributo label"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <optgroup>" subtitle="label" pageTitle="Tag optgroup - Atributo label"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1800,19 +1805,19 @@ function App() {
 						<Route path = "option">
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="disabled" pageTitle="Tag option - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <option>" subtitle="disabled" pageTitle="Tag option - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo label */}
 							<Route path = "label" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="label" pageTitle="Tag option - Atributo label"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <option>" subtitle="label" pageTitle="Tag option - Atributo label"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo selected */}
 							<Route path = "selected" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="selected" pageTitle="Tag option - Atributo selected"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <option>" subtitle="selected" pageTitle="Tag option - Atributo selected"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <option>" subtitle="value" pageTitle="Tag option - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <option>" subtitle="value" pageTitle="Tag option - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1823,15 +1828,15 @@ function App() {
 						<Route path = "output">
 							{/* Atributo for */}
 							<Route path = "for" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="for" pageTitle="Tag output - Atributo for"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <output>" subtitle="for" pageTitle="Tag output - Atributo for"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="form" pageTitle="Tag output - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <output>" subtitle="form" pageTitle="Tag output - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <output>" subtitle="name" pageTitle="Tag output - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <output>" subtitle="name" pageTitle="Tag output - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1842,11 +1847,11 @@ function App() {
 						<Route path = "param">
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <param>" subtitle="name" pageTitle="Tag param - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <param>" subtitle="name" pageTitle="Tag param - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <param>" subtitle="value" pageTitle="Tag param - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <param>" subtitle="value" pageTitle="Tag param - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1857,11 +1862,11 @@ function App() {
 						<Route path = "progress">
 							{/* Atributo max */}
 							<Route path = "max" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <progress>" subtitle="max" pageTitle="Tag progress - Atributo max"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <progress>" subtitle="max" pageTitle="Tag progress - Atributo max"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo value */}
 							<Route path = "value" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <progress>" subtitle="value" pageTitle="Tag progress - Atributo value"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <progress>" subtitle="value" pageTitle="Tag progress - Atributo value"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1872,7 +1877,7 @@ function App() {
 						<Route path = "q">
 							{/* Atributo cite */}
 							<Route path = "cite" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <q>" subtitle="cite" pageTitle="Tag q - Atributo cite"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <q>" subtitle="cite" pageTitle="Tag q - Atributo cite"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1883,31 +1888,31 @@ function App() {
 						<Route path = "script">
 							{/* Atributo async  */}
 							<Route path = "async" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="async" pageTitle="Tag script - Atributo async"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="async" pageTitle="Tag script - Atributo async"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo crossorigin  */}
 							<Route path = "crossorigin" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="crossorigin" pageTitle="Tag script - Atributo crossorigin"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="crossorigin" pageTitle="Tag script - Atributo crossorigin"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo defer  */}
 							<Route path = "defer" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="defer" pageTitle="Tag script - Atributo defer"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="defer" pageTitle="Tag script - Atributo defer"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo integrity  */}
 							<Route path = "integrity" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="integrity" pageTitle="Tag script - Atributo integrity"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="integrity" pageTitle="Tag script - Atributo integrity"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo referrerpolicy  */}
 							<Route path = "referrerpolicy" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="referrerpolicy" pageTitle="Tag script - Atributo referrerpolicy"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="referrerpolicy" pageTitle="Tag script - Atributo referrerpolicy"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src  */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="src" pageTitle="Tag script - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="src" pageTitle="Tag script - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type  */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <script>" subtitle="type" pageTitle="Tag script - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <script>" subtitle="type" pageTitle="Tag script - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1918,31 +1923,31 @@ function App() {
 						<Route path = "select">
 							{/* Atributo autofocus */}
 							<Route path = "autofocus" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="autofocus" pageTitle="Tag select - Atributo autofocus"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="autofocus" pageTitle="Tag select - Atributo autofocus"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="disabled" pageTitle="Tag select - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="disabled" pageTitle="Tag select - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="form" pageTitle="Tag select - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="form" pageTitle="Tag select - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo multiple */}
 							<Route path = "multiple" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="multiple" pageTitle="Tag select - Atributo multiple"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="multiple" pageTitle="Tag select - Atributo multiple"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="name" pageTitle="Tag select - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="name" pageTitle="Tag select - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo required */}
 							<Route path = "required" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="required" pageTitle="Tag select - Atributo required"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="required" pageTitle="Tag select - Atributo required"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo size */}
 							<Route path = "size" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <select>" subtitle="size" pageTitle="Tag select - Atributo size"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <select>" subtitle="size" pageTitle="Tag select - Atributo size"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1953,19 +1958,19 @@ function App() {
 						<Route path = "source">
 							{/* Atributo media */}
 							<Route path = "media" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="media" pageTitle="Tag source - Atributo media"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <source>" subtitle="media" pageTitle="Tag source - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="src" pageTitle="Tag source - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <source>" subtitle="src" pageTitle="Tag source - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo srcset */}
 							<Route path = "srcset" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="srcset" pageTitle="Tag source - Atributo srcset"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <source>" subtitle="srcset" pageTitle="Tag source - Atributo srcset"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <source>" subtitle="type" pageTitle="Tag source - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <source>" subtitle="type" pageTitle="Tag source - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1976,11 +1981,11 @@ function App() {
 						<Route path = "style">
 							{/* Atributo media */}
 							<Route path = "media" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <style>" subtitle="media" pageTitle="Tag style - Atributo media"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <style>" subtitle="media" pageTitle="Tag style - Atributo media"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo type */}
 							<Route path = "type" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <style>" subtitle="type" pageTitle="Tag style - Atributo type"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <style>" subtitle="type" pageTitle="Tag style - Atributo type"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -1991,15 +1996,15 @@ function App() {
 						<Route path = "td">
 							{/* Atributo colspan */}
 							<Route path = "colspan" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="colspan" pageTitle="Tag td - Atributo colspan"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <td>" subtitle="colspan" pageTitle="Tag td - Atributo colspan"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo headers */}
 							<Route path = "headers" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="headers" pageTitle="Tag td - Atributo headers"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <td>" subtitle="headers" pageTitle="Tag td - Atributo headers"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rowspan */}
 							<Route path = "rowspan" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <td>" subtitle="rowspan" pageTitle="Tag td - Atributo rowspan"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <td>" subtitle="rowspan" pageTitle="Tag td - Atributo rowspan"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -2010,51 +2015,51 @@ function App() {
 						<Route path = "textarea">
 							{/* Atributo autofocus */}
 							<Route path = "autofocus" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="autofocus" pageTitle="Tag textarea - Atributo autofocus"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="autofocus" pageTitle="Tag textarea - Atributo autofocus"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo cols */}
 							<Route path = "cols" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="cols" pageTitle="Tag textarea - Atributo cols"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="cols" pageTitle="Tag textarea - Atributo cols"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo dirname */}
 							<Route path = "dirname" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="dirname" pageTitle="Tag textarea - Atributo dirname"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="dirname" pageTitle="Tag textarea - Atributo dirname"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo disabled */}
 							<Route path = "disabled" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="disabled" pageTitle="Tag textarea - Atributo disabled"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="disabled" pageTitle="Tag textarea - Atributo disabled"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo form */}
 							<Route path = "form" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="form" pageTitle="Tag textarea - Atributo form"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="form" pageTitle="Tag textarea - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo maxlength */}
 							<Route path = "maxlength" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="maxlength" pageTitle="Tag textarea - Atributo maxlength"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="maxlength" pageTitle="Tag textarea - Atributo maxlength"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo name */}
 							<Route path = "name" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="name" pageTitle="Tag textarea - Atributo name"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="name" pageTitle="Tag textarea - Atributo name"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo placeholder */}
 							<Route path = "placeholder" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="placeholder" pageTitle="Tag textarea - Atributo placeholder"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="placeholder" pageTitle="Tag textarea - Atributo placeholder"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo readonly */}
 							<Route path = "readonly" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="readonly" pageTitle="Tag textarea - Atributo readonly"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="readonly" pageTitle="Tag textarea - Atributo readonly"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo required */}
 							<Route path = "required" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="required" pageTitle="Tag textarea - Atributo required"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="required" pageTitle="Tag textarea - Atributo required"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rows */}
 							<Route path = "rows" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="rows" pageTitle="Tag textarea - Atributo rows"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="rows" pageTitle="Tag textarea - Atributo rows"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo wrap */}
 							<Route path = "wrap" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <textarea>" subtitle="wrap" pageTitle="Tag textarea - Atributo wrap"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <textarea>" subtitle="wrap" pageTitle="Tag textarea - Atributo wrap"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -2065,23 +2070,23 @@ function App() {
 						<Route path = "th">
 							{/* Atributo abbr */}
 							<Route path = "abbr" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="abbr" pageTitle="Tag th - Atributo abbr"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <th>" subtitle="abbr" pageTitle="Tag th - Atributo abbr"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo colspan */}
 							<Route path = "colspan" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="colspan" pageTitle="Tag th - Atributo colspan"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <th>" subtitle="colspan" pageTitle="Tag th - Atributo colspan"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo headers */}
 							<Route path = "headers" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="headers" pageTitle="Tag th - Atributo headers"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <th>" subtitle="headers" pageTitle="Tag th - Atributo headers"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo rowspan */}
 							<Route path = "rowspan" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="rowspan" pageTitle="Tag th - Atributo rowspan"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <th>" subtitle="rowspan" pageTitle="Tag th - Atributo rowspan"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo scope */}
 							<Route path = "scope" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <th>" subtitle="scope" pageTitle="Tag th - Atributo scope"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <th>" subtitle="scope" pageTitle="Tag th - Atributo scope"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -2092,7 +2097,7 @@ function App() {
 						<Route path = "time">
 							{/* Atributo datetime */}
 							<Route path = "datetime" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <time>" subtitle="datetime" pageTitle="Tag time - Atributo datetime"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <time>" subtitle="datetime" pageTitle="Tag time - Atributo datetime"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -2103,23 +2108,23 @@ function App() {
 						<Route path = "track">
 							{/* Atributo default */}
 							<Route path = "default" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="default" pageTitle="Tag track - Atributo default"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <track>" subtitle="default" pageTitle="Tag track - Atributo default"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo kind */}
 							<Route path = "kind" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="kind" pageTitle="Tag track - Atributo kind"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <track>" subtitle="kind" pageTitle="Tag track - Atributo kind"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo label */}
 							<Route path = "label" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="label" pageTitle="Tag track - Atributo label"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <track>" subtitle="label" pageTitle="Tag track - Atributo label"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo src */}
 							<Route path = "src" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="src" pageTitle="Tag track - Atributo src"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <track>" subtitle="src" pageTitle="Tag track - Atributo src"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Atributo srclang */}
 							<Route path = "srclang" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <track>" subtitle="srclang" pageTitle="Tag track - Atributo srclang"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <track>" subtitle="srclang" pageTitle="Tag track - Atributo srclang"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
@@ -2130,7 +2135,39 @@ function App() {
 						<Route path = "video">
 							{/* Atributo autoplay */}
 							<Route path = "autoplay" element = {(
-								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "Tag <video>" subtitle="autoplay" pageTitle="Tag video - Atributo autoplay"></TutorialMain>)}></Page>
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="autoplay" pageTitle="Tag video - Atributo autoplay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo controls */}
+							<Route path = "controls" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="controls" pageTitle="Tag video - Atributo controls"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="height" pageTitle="Tag video - Atributo height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo loop */}
+							<Route path = "loop" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="loop" pageTitle="Tag video - Atributo loop"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo muted */}
+							<Route path = "muted" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="muted" pageTitle="Tag video - Atributo muted"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo poster */}
+							<Route path = "poster" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="poster" pageTitle="Tag video - Atributo poster"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo preload */}
+							<Route path = "preload" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="preload" pageTitle="Tag video - Atributo preload"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo src */}
+							<Route path = "src" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="src" pageTitle="Tag video - Atributo src"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <video>" subtitle="width" pageTitle="Tag video - Atributo width"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
 							<Route path = "" element = {(
