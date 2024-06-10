@@ -982,6 +982,22 @@ function App() {
 						<Route path = "action" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "action" pageTitle="Atributo action"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo alt */}
+						<Route path = "alt" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "alt" pageTitle="Atributo alt"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo async */}
+						<Route path = "async" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "async" pageTitle="Atributo async"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo autocomplete */}
+						<Route path = "autocomplete" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "autocomplete" pageTitle="Atributo autocomplete"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo autofocus */}
+						<Route path = "autofocus" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "autofocus" pageTitle="Atributo autofocus"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
