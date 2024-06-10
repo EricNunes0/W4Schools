@@ -427,10 +427,6 @@ function App() {
 					<Route path = "attributes" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* Atributos globais */}
-					<Route path = "global_attributes" element = {(
-						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos globais"></TutorialMain>)}></Page>
-					)}></Route>
 					{/* Eventos */}
 					<Route path = "events" element = {(
 						<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Eventos"></TutorialMain>)}></Page>
@@ -978,6 +974,26 @@ function App() {
 						<Route path = "accept" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "accept" pageTitle="Atributo accept"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo accept-charset */}
+						<Route path = "accept-charset" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "accept-charset" pageTitle="Atributo accept-charset"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo action */}
+						<Route path = "action" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "action" pageTitle="Atributo action"></TutorialMain>)}></Page>
+						)}></Route>
+						
+						{/* Atributos globais */}
+						<Route path = "global">
+							{/* Atributos globais */}
+							<Route path = "" element = {(
+								<Page content = {(<TutorialMain language = "tags" topic = "HTML Referências" title = "HTML Atributos globais"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo accesskey */}
+							<Route path = "accesskey" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "accesskey" pageTitle="Atributo accesskey"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
 
 						{/* Tag a */}
 						<Route path = "a">
