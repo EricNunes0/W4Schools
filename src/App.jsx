@@ -998,6 +998,26 @@ function App() {
 						<Route path = "autofocus" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "autofocus" pageTitle="Atributo autofocus"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo autoplay */}
+						<Route path = "autoplay" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "autoplay" pageTitle="Atributo autoplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo charset */}
+						<Route path = "charset" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "charset" pageTitle="Atributo charset"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo checked */}
+						<Route path = "checked" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "checked" pageTitle="Atributo checked"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo cite */}
+						<Route path = "cite" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "cite" pageTitle="Atributo cite"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo cols */}
+						<Route path = "cols" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "cols" pageTitle="Atributo cols"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1008,6 +1028,10 @@ function App() {
 							{/* Atributo accesskey */}
 							<Route path = "accesskey" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "accesskey" pageTitle="Atributo accesskey"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo class */}
+							<Route path = "class" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "class" pageTitle="Atributo class"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
