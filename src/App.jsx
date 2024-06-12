@@ -1018,6 +1018,34 @@ function App() {
 						<Route path = "cols" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "cols" pageTitle="Atributo cols"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo colspan */}
+						<Route path = "colspan" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "colspan" pageTitle="Atributo colspan"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo content */}
+						<Route path = "content" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "content" pageTitle="Atributo content"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo controls */}
+						<Route path = "controls" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "controls" pageTitle="Atributo controls"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo coords */}
+						<Route path = "coords" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "coords" pageTitle="Atributo coords"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo data */}
+						<Route path = "data" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "data" pageTitle="Atributo data"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo datetime */}
+						<Route path = "datetime" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "datetime" pageTitle="Atributo datetime"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo default */}
+						<Route path = "default" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "default" pageTitle="Atributo default"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1032,6 +1060,14 @@ function App() {
 							{/* Atributo class */}
 							<Route path = "class" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "class" pageTitle="Atributo class"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo contenteditable */}
+							<Route path = "contenteditable" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "contenteditable" pageTitle="Atributo contenteditable"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo data- */}
+							<Route path = "data-" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "data-" pageTitle="Atributo data-"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
