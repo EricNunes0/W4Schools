@@ -1046,6 +1046,14 @@ function App() {
 						<Route path = "default" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "default" pageTitle="Atributo default"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo defer */}
+						<Route path = "defer" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "defer" pageTitle="Atributo defer"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo dirname */}
+						<Route path = "dirname" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "dirname" pageTitle="Atributo dirname"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1068,6 +1076,10 @@ function App() {
 							{/* Atributo data- */}
 							<Route path = "data-" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "data-" pageTitle="Atributo data-"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo dir */}
+							<Route path = "dir" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "dir" pageTitle="Atributo dir"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
