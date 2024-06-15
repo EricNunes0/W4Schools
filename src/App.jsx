@@ -1054,6 +1054,22 @@ function App() {
 						<Route path = "dirname" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "dirname" pageTitle="Atributo dirname"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo disabled */}
+						<Route path = "disabled" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "disabled" pageTitle="Atributo disabled"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo download */}
+						<Route path = "download" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "download" pageTitle="Atributo download"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo enctype */}
+						<Route path = "enctype" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "enctype" pageTitle="Atributo enctype"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo for */}
+						<Route path = "for" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "for" pageTitle="Atributo for"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1080,6 +1096,14 @@ function App() {
 							{/* Atributo dir */}
 							<Route path = "dir" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "dir" pageTitle="Atributo dir"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo draggable */}
+							<Route path = "draggable" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "draggable" pageTitle="Atributo draggable"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo enterkeyhint */}
+							<Route path = "enterkeyhint" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "enterkeyhint" pageTitle="Atributo enterkeyhint"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
