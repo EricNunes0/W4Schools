@@ -1070,6 +1070,22 @@ function App() {
 						<Route path = "for" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "for" pageTitle="Atributo for"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo form */}
+						<Route path = "form" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "form" pageTitle="Atributo form"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo formaction */}
+						<Route path = "formaction" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "formaction" pageTitle="Atributo formaction"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo headers */}
+						<Route path = "headers" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "headers" pageTitle="Atributo headers"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo height */}
+						<Route path = "height" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "height" pageTitle="Atributo height"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1483,9 +1499,9 @@ function App() {
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <form>" subtitle="target" pageTitle="Tag form - Atributo target"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
-							<Route path = "" element = {(
+							{/*<Route path = "" element = {(
 								<Navigate to = "accept-charset"></Navigate>
-							)}></Route>
+							)}></Route>*/}
 						</Route>
 						{/* Tag html */}
 						<Route path = "html">
