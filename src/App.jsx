@@ -1086,6 +1086,26 @@ function App() {
 						<Route path = "height" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "height" pageTitle="Atributo height"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo high */}
+						<Route path = "high" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "high" pageTitle="Atributo high"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo href */}
+						<Route path = "href" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "href" pageTitle="Atributo href"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo hreflang */}
+						<Route path = "hreflang" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "hreflang" pageTitle="Atributo hreflang"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo http-equiv */}
+						<Route path = "http-equiv" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "http-equiv" pageTitle="Atributo http-equiv"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ismap */}
+						<Route path = "ismap" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ismap" pageTitle="Atributo ismap"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1120,6 +1140,22 @@ function App() {
 							{/* Atributo enterkeyhint */}
 							<Route path = "enterkeyhint" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "enterkeyhint" pageTitle="Atributo enterkeyhint"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo hidden */}
+							<Route path = "hidden" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "hidden" pageTitle="Atributo hidden"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo id */}
+							<Route path = "id" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "id" pageTitle="Atributo id"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo inert */}
+							<Route path = "inert" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "inert" pageTitle="Atributo inert"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo inputmode */}
+							<Route path = "inputmode" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "inputmode" pageTitle="Atributo inputmode"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
