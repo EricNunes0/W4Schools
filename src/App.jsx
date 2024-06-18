@@ -1106,6 +1106,78 @@ function App() {
 						<Route path = "ismap" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ismap" pageTitle="Atributo ismap"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo kind */}
+						<Route path = "kind" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "kind" pageTitle="Atributo kind"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo label */}
+						<Route path = "label" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "label" pageTitle="Atributo label"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo list */}
+						<Route path = "list" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "list" pageTitle="Atributo list"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo loop */}
+						<Route path = "loop" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "loop" pageTitle="Atributo loop"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo low */}
+						<Route path = "low" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "low" pageTitle="Atributo low"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo max */}
+						<Route path = "max" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "max" pageTitle="Atributo max"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo maxlength */}
+						<Route path = "maxlength" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "maxlength" pageTitle="Atributo maxlength"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo media */}
+						<Route path = "media" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "media" pageTitle="Atributo media"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo method */}
+						<Route path = "method" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "method" pageTitle="Atributo method"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo min */}
+						<Route path = "min" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "min" pageTitle="Atributo min"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo multiple */}
+						<Route path = "multiple" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "multiple" pageTitle="Atributo multiple"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo muted */}
+						<Route path = "muted" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "muted" pageTitle="Atributo muted"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo name */}
+						<Route path = "name" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "name" pageTitle="Atributo name"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo novalidate */}
+						<Route path = "novalidate" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "novalidate" pageTitle="Atributo novalidate"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onabort */}
+						<Route path = "onabort" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onabort" pageTitle="Atributo onabort"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onafterprint */}
+						<Route path = "onafterprint" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onafterprint" pageTitle="Atributo onafterprint"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onbeforeprint */}
+						<Route path = "onbeforeprint" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onbeforeprint" pageTitle="Atributo onbeforeprint"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onblur */}
+						<Route path = "onblur" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onblur" pageTitle="Atributo onblur"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1156,6 +1228,10 @@ function App() {
 							{/* Atributo inputmode */}
 							<Route path = "inputmode" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "inputmode" pageTitle="Atributo inputmode"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo lang */}
+							<Route path = "lang" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "lang" pageTitle="Atributo lang"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
@@ -1793,9 +1869,9 @@ function App() {
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos por tag" title = "Tag <label>" subtitle="form" pageTitle="Tag label - Atributo form"></TutorialMain>)}></Page>
 							)}></Route>
 							{/* Não encontrado */}
-							<Route path = "" element = {(
+							{/*<Route path = "" element = {(
 								<Navigate to = "for"></Navigate>
-							)}></Route>
+							)}></Route>*/}
 						</Route>
 						{/* Tag li */}
 						<Route path = "li">
