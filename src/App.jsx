@@ -1190,6 +1190,26 @@ function App() {
 						<Route path = "onchange" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onchange" pageTitle="Atributo onchange"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onclick */}
+						<Route path = "onclick" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onclick" pageTitle="Atributo onclick"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oncontextmenu */}
+						<Route path = "oncontextmenu" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncontextmenu" pageTitle="Atributo oncontextmenu"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oncopy */}
+						<Route path = "oncopy" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncopy" pageTitle="Atributo oncopy"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oncuechange */}
+						<Route path = "oncuechange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncuechange" pageTitle="Atributo oncuechange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oncut */}
+						<Route path = "oncut" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncut" pageTitle="Atributo oncut"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
