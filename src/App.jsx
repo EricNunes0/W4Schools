@@ -1178,6 +1178,18 @@ function App() {
 						<Route path = "onblur" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onblur" pageTitle="Atributo onblur"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo oncanplay */}
+						<Route path = "oncanplay" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncanplay" pageTitle="Atributo oncanplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oncanplaythrough */}
+						<Route path = "oncanplaythrough" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncanplaythrough" pageTitle="Atributo oncanplaythrough"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onchange */}
+						<Route path = "onchange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onchange" pageTitle="Atributo onchange"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
