@@ -1210,6 +1210,38 @@ function App() {
 						<Route path = "oncut" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oncut" pageTitle="Atributo oncut"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo ondblclick */}
+						<Route path = "ondblclick" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondblclick" pageTitle="Atributo ondblclick"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondrag */}
+						<Route path = "ondrag" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondrag" pageTitle="Atributo ondrag"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondragend */}
+						<Route path = "ondragend" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondragend" pageTitle="Atributo ondragend"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondragenter */}
+						<Route path = "ondragenter" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondragenter" pageTitle="Atributo ondragenter"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondragleave */}
+						<Route path = "ondragleave" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondragleave" pageTitle="Atributo ondragleave"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondragover */}
+						<Route path = "ondragover" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondragover" pageTitle="Atributo ondragover"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondragstart */}
+						<Route path = "ondragstart" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondragstart" pageTitle="Atributo ondragstart"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ondrop */}
+						<Route path = "ondrop" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondrop" pageTitle="Atributo ondrop"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
