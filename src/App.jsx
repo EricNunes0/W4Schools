@@ -1242,6 +1242,22 @@ function App() {
 						<Route path = "ondrop" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondrop" pageTitle="Atributo ondrop"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo ondurationchange */}
+						<Route path = "ondurationchange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ondurationchange" pageTitle="Atributo ondurationchange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onemptied */}
+						<Route path = "onemptied" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onemptied" pageTitle="Atributo onemptied"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onended */}
+						<Route path = "onended" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onended" pageTitle="Atributo onended"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onerror */}
+						<Route path = "onerror" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onerror" pageTitle="Atributo onerror"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
