@@ -1258,6 +1258,38 @@ function App() {
 						<Route path = "onerror" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onerror" pageTitle="Atributo onerror"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onfocus */}
+						<Route path = "onfocus" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onfocus" pageTitle="Atributo onfocus"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onhashchange */}
+						<Route path = "onhashchange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onhashchange" pageTitle="Atributo onhashchange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oninput */}
+						<Route path = "oninput" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oninput" pageTitle="Atributo oninput"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo oninvalid */}
+						<Route path = "oninvalid" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "oninvalid" pageTitle="Atributo oninvalid"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onkeydown */}
+						<Route path = "onkeydown" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onkeydown" pageTitle="Atributo onkeydown"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onkeypress */}
+						<Route path = "onkeypress" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onkeypress" pageTitle="Atributo onkeypress"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onkeyup */}
+						<Route path = "onkeyup" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onkeyup" pageTitle="Atributo onkeyup"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onload */}
+						<Route path = "onload" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onload" pageTitle="Atributo onload"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
