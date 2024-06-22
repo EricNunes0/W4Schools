@@ -1290,6 +1290,42 @@ function App() {
 						<Route path = "onload" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onload" pageTitle="Atributo onload"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onloadeddata */}
+						<Route path = "onloadeddata" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onloadeddata" pageTitle="Atributo onloadeddata"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onloadedmetadata */}
+						<Route path = "onloadedmetadata" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onloadedmetadata" pageTitle="Atributo onloadedmetadata"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onloadstart */}
+						<Route path = "onloadstart" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onloadstart" pageTitle="Atributo onloadstart"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmousedown */}
+						<Route path = "onmousedown" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmousedown" pageTitle="Atributo onmousedown"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmousemove */}
+						<Route path = "onmousemove" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmousemove" pageTitle="Atributo onmousemove"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmouseout */}
+						<Route path = "onmouseout" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmouseout" pageTitle="Atributo onmouseout"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmouseover */}
+						<Route path = "onmouseover" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmouseover" pageTitle="Atributo onmouseover"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmouseup */}
+						<Route path = "onmouseup" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmouseup" pageTitle="Atributo onmouseup"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onmousewheel */}
+						<Route path = "onmousewheel" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmousewheel" pageTitle="Atributo onmousewheel"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
