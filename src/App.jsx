@@ -1326,6 +1326,46 @@ function App() {
 						<Route path = "onmousewheel" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onmousewheel" pageTitle="Atributo onmousewheel"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onoffline */}
+						<Route path = "onoffline" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onoffline" pageTitle="Atributo onoffline"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ononline */}
+						<Route path = "ononline" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ononline" pageTitle="Atributo ononline"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onpageshow */}
+						<Route path = "onpageshow" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onpageshow" pageTitle="Atributo onpageshow"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onpaste */}
+						<Route path = "onpaste" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onpaste" pageTitle="Atributo onpaste"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onpause */}
+						<Route path = "onpause" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onpause" pageTitle="Atributo onpause"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onplay */}
+						<Route path = "onplay" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onplay" pageTitle="Atributo onplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onplaying */}
+						<Route path = "onplaying" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onplaying" pageTitle="Atributo onplaying"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onprogress */}
+						<Route path = "onprogress" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onprogress" pageTitle="Atributo onprogress"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onratechange */}
+						<Route path = "onratechange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onratechange" pageTitle="Atributo onratechange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onreset */}
+						<Route path = "onreset" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onreset" pageTitle="Atributo onreset"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
