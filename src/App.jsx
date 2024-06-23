@@ -1390,6 +1390,50 @@ function App() {
 						<Route path = "onselect" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onselect" pageTitle="Atributo onselect"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onstalled */}
+						<Route path = "onstalled" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onstalled" pageTitle="Atributo onstalled"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onsubmit */}
+						<Route path = "onsubmit" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onsubmit" pageTitle="Atributo onsubmit"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onsuspend */}
+						<Route path = "onsuspend" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onsuspend" pageTitle="Atributo onsuspend"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ontimeupdate */}
+						<Route path = "ontimeupdate" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ontimeupdate" pageTitle="Atributo ontimeupdate"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo ontoggle */}
+						<Route path = "ontoggle" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "ontoggle" pageTitle="Atributo ontoggle"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onunload */}
+						<Route path = "onunload" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onunload" pageTitle="Atributo onunload"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onvolumechange */}
+						<Route path = "onvolumechange" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onvolumechange" pageTitle="Atributo onvolumechange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onwaiting */}
+						<Route path = "onwaiting" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onwaiting" pageTitle="Atributo onwaiting"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onwheel */}
+						<Route path = "onwheel" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onwheel" pageTitle="Atributo onwheel"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo open */}
+						<Route path = "open" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "open" pageTitle="Atributo open"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo optimum */}
+						<Route path = "optimum" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "optimum" pageTitle="Atributo optimum"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
