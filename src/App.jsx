@@ -1366,6 +1366,30 @@ function App() {
 						<Route path = "onreset" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onreset" pageTitle="Atributo onreset"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo onresize */}
+						<Route path = "onresize" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onresize" pageTitle="Atributo onresize"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onscroll */}
+						<Route path = "onscroll" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onscroll" pageTitle="Atributo onscroll"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onsearch */}
+						<Route path = "onsearch" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onsearch" pageTitle="Atributo onsearch"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onseeked */}
+						<Route path = "onseeked" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onseeked" pageTitle="Atributo onseeked"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onseeking */}
+						<Route path = "onseeking" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onseeking" pageTitle="Atributo onseeking"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo onselect */}
+						<Route path = "onselect" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "onselect" pageTitle="Atributo onselect"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
