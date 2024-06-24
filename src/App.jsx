@@ -1434,6 +1434,42 @@ function App() {
 						<Route path = "optimum" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "optimum" pageTitle="Atributo optimum"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo pattern */}
+						<Route path = "pattern" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "pattern" pageTitle="Atributo pattern"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo placeholder */}
+						<Route path = "placeholder" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "placeholder" pageTitle="Atributo placeholder"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo popovertarget */}
+						<Route path = "popovertarget" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "popovertarget" pageTitle="Atributo popovertarget"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo popovertargetaction */}
+						<Route path = "popovertargetaction" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "popovertargetaction" pageTitle="Atributo popovertargetaction"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo poster */}
+						<Route path = "poster" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "poster" pageTitle="Atributo poster"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo preload */}
+						<Route path = "preload" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "preload" pageTitle="Atributo preload"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo readonly */}
+						<Route path = "readonly" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "readonly" pageTitle="Atributo readonly"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo rel */}
+						<Route path = "rel" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "rel" pageTitle="Atributo rel"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo required */}
+						<Route path = "required" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "required" pageTitle="Atributo required"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1488,6 +1524,10 @@ function App() {
 							{/* Atributo lang */}
 							<Route path = "lang" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "lang" pageTitle="Atributo lang"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo popover */}
+							<Route path = "popover" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "popover" pageTitle="Atributo popover"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
