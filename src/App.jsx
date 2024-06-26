@@ -1538,6 +1538,10 @@ function App() {
 						<Route path = "target" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "target" pageTitle="Atributo target"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo type */}
+						<Route path = "type" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "type" pageTitle="Atributo type"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1608,6 +1612,14 @@ function App() {
 							{/* Atributo tabindex */}
 							<Route path = "tabindex" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "tabindex" pageTitle="Atributo tabindex"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo title */}
+							<Route path = "title" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "title" pageTitle="Atributo title"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo translate */}
+							<Route path = "translate" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "translate" pageTitle="Atributo translate"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
