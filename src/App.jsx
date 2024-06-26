@@ -1470,6 +1470,74 @@ function App() {
 						<Route path = "required" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "required" pageTitle="Atributo required"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo reversed */}
+						<Route path = "reversed" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "reversed" pageTitle="Atributo reversed"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo rows */}
+						<Route path = "rows" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "rows" pageTitle="Atributo rows"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo rowspan */}
+						<Route path = "rowspan" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "rowspan" pageTitle="Atributo rowspan"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo sandbox */}
+						<Route path = "sandbox" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "sandbox" pageTitle="Atributo sandbox"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo scope */}
+						<Route path = "scope" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "scope" pageTitle="Atributo scope"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo selected */}
+						<Route path = "selected" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "selected" pageTitle="Atributo selected"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo shape */}
+						<Route path = "shape" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "shape" pageTitle="Atributo shape"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo size */}
+						<Route path = "size" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "size" pageTitle="Atributo size"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo sizes */}
+						<Route path = "sizes" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "sizes" pageTitle="Atributo sizes"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo span */}
+						<Route path = "span" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "span" pageTitle="Atributo span"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo src */}
+						<Route path = "src" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "src" pageTitle="Atributo src"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo srcdoc */}
+						<Route path = "srcdoc" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "srcdoc" pageTitle="Atributo srcdoc"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo srclang */}
+						<Route path = "srclang" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "srclang" pageTitle="Atributo srclang"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo srcset */}
+						<Route path = "srcset" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "srcset" pageTitle="Atributo srcset"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo start */}
+						<Route path = "start" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "start" pageTitle="Atributo start"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo step */}
+						<Route path = "step" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "step" pageTitle="Atributo step"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo target */}
+						<Route path = "target" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "target" pageTitle="Atributo target"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -1528,6 +1596,18 @@ function App() {
 							{/* Atributo popover */}
 							<Route path = "popover" element = {(
 								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "popover" pageTitle="Atributo popover"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo spellcheck */}
+							<Route path = "spellcheck" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "spellcheck" pageTitle="Atributo spellcheck"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo style */}
+							<Route path = "style" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "style" pageTitle="Atributo style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Atributo tabindex */}
+							<Route path = "tabindex" element = {(
+								<Page content = {(<TutorialMain language = "attributes" topic = "Atributos globais" title = "tabindex" pageTitle="Atributo tabindex"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 
