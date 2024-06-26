@@ -1542,6 +1542,22 @@ function App() {
 						<Route path = "type" element = {(
 							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "type" pageTitle="Atributo type"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Atributo usemap */}
+						<Route path = "usemap" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "usemap" pageTitle="Atributo usemap"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo value */}
+						<Route path = "value" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "value" pageTitle="Atributo value"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo width */}
+						<Route path = "width" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "width" pageTitle="Atributo width"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Atributo wrap */}
+						<Route path = "wrap" element = {(
+							<Page content = {(<TutorialMain language = "attributes" topic = "Atributos" title = "wrap" pageTitle="Atributo wrap"></TutorialMain>)}></Page>
+						)}></Route>
 						
 						{/* Atributos globais */}
 						<Route path = "global">
@@ -2818,6 +2834,13 @@ function App() {
 								<Navigate to = "autoplay"></Navigate>
 							)}></Route>
 						</Route>
+					</Route>
+					{/* Eventos */}
+					<Route path = "events">
+						{/* Evento onafterprint */}
+						<Route path = "onafterprint" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onafterprint" pageTitle="Evento onafterprint"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
