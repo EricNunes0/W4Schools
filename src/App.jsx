@@ -2837,9 +2837,92 @@ function App() {
 					</Route>
 					{/* Eventos */}
 					<Route path = "events">
+						{/* Evento de janela */}
 						{/* Evento onafterprint */}
 						<Route path = "onafterprint" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onafterprint" pageTitle="Evento onafterprint"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onbeforeprint */}
+						<Route path = "onbeforeprint" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onbeforeprint" pageTitle="Evento onbeforeprint"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onbeforeunload */}
+						<Route path = "onbeforeunload" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onbeforeunload" pageTitle="Evento onbeforeunload"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onerror */}
+						<Route path = "onerror" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onerror" pageTitle="Evento onerror"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onhashchange */}
+						<Route path = "onhashchange" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onhashchange" pageTitle="Evento onhashchange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onload */}
+						<Route path = "onload" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onload" pageTitle="Evento onload"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onoffline */}
+						<Route path = "onoffline" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onoffline" pageTitle="Evento onoffline"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ononline */}
+						<Route path = "ononline" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "ononline" pageTitle="Evento ononline"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onpageshow */}
+						<Route path = "onpageshow" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onpageshow" pageTitle="Evento onpageshow"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onresize */}
+						<Route path = "onresize" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onresize" pageTitle="Evento onresize"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onunload */}
+						<Route path = "onunload" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de janela" title = "onunload" pageTitle="Evento onunload"></TutorialMain>)}></Page>
+						)}></Route>
+						
+						{/* Evento de formulário */}
+						{/* Evento onblur */}
+						<Route path = "onblur" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onblur" pageTitle="Evento onblur"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onchange */}
+						<Route path = "onchange" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onchange" pageTitle="Evento onchange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oncontextmenu */}
+						<Route path = "oncontextmenu" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "oncontextmenu" pageTitle="Evento oncontextmenu"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onfocus */}
+						<Route path = "onfocus" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onfocus" pageTitle="Evento onfocus"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oninput */}
+						<Route path = "oninput" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "oninput" pageTitle="Evento oninput"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oninvalid */}
+						<Route path = "oninvalid" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "oninvalid" pageTitle="Evento oninvalid"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onreset */}
+						<Route path = "onreset" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onreset" pageTitle="Evento onreset"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onsearch */}
+						<Route path = "onsearch" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onsearch" pageTitle="Evento onsearch"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onselect */}
+						<Route path = "onselect" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onselect" pageTitle="Evento onselect"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onsubmit */}
+						<Route path = "onsubmit" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onsubmit" pageTitle="Evento onsubmit"></TutorialMain>)}></Page>
 						)}></Route>
 					</Route>
 				</Route>
