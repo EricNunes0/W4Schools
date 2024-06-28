@@ -2924,6 +2924,20 @@ function App() {
 						<Route path = "onsubmit" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos de formulário" title = "onsubmit" pageTitle="Evento onsubmit"></TutorialMain>)}></Page>
 						)}></Route>
+						
+						{/* Evento de teclado */}
+						{/* Evento onkeydown */}
+						<Route path = "onkeydown" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de teclado" title = "onkeydown" pageTitle="Evento onkeydown"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onkeypress */}
+						<Route path = "onkeypress" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de teclado" title = "onkeypress" pageTitle="Evento onkeypress"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onkeyup */}
+						<Route path = "onkeyup" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de teclado" title = "onkeyup" pageTitle="Evento onkeyup"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
