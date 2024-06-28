@@ -2938,6 +2938,46 @@ function App() {
 						<Route path = "onkeyup" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos de teclado" title = "onkeyup" pageTitle="Evento onkeyup"></TutorialMain>)}></Page>
 						)}></Route>
+						
+						{/* Evento de mouse */}
+						{/* Evento onclick */}
+						<Route path = "onclick" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onclick" pageTitle="Evento onclick"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondblclick */}
+						<Route path = "ondblclick" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "ondblclick" pageTitle="Evento ondblclick"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onmousedown */}
+						<Route path = "onmousedown" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onmousedown" pageTitle="Evento onmousedown"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onmousemove */}
+						<Route path = "onmousemove" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onmousemove" pageTitle="Evento onmousemove"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onmouseout */}
+						<Route path = "onmouseout" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onmouseout" pageTitle="Evento onmouseout"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onmouseover */}
+						<Route path = "onmouseover" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onmouseover" pageTitle="Evento onmouseover"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onmouseup */}
+						<Route path = "onmouseup" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onmouseup" pageTitle="Evento onmouseup"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onwheel */}
+						<Route path = "onwheel" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mouse" title = "onwheel" pageTitle="Evento onwheel"></TutorialMain>)}></Page>
+						)}></Route>
+						
+						{/* Evento de arrastar */}
+						{/* Evento ondrag */}
+						<Route path = "ondrag" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondrag" pageTitle="Evento ondrag"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
