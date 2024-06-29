@@ -3006,6 +3006,20 @@ function App() {
 						<Route path = "onscroll" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "onscroll" pageTitle="Evento onscroll"></TutorialMain>)}></Page>
 						)}></Route>
+						
+						{/* Evento da área de transferência */}
+						{/* Evento oncopy */}
+						<Route path = "oncopy" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos da área de transferência" title = "oncopy" pageTitle="Evento oncopy"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oncut */}
+						<Route path = "oncut" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos da área de transferência" title = "oncut" pageTitle="Evento oncut"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onpaste */}
+						<Route path = "onpaste" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos da área de transferência" title = "onpaste" pageTitle="Evento onpaste"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
