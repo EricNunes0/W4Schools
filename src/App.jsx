@@ -2978,6 +2978,34 @@ function App() {
 						<Route path = "ondrag" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondrag" pageTitle="Evento ondrag"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Evento ondragend */}
+						<Route path = "ondragend" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondragend" pageTitle="Evento ondragend"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondragenter */}
+						<Route path = "ondragenter" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondragenter" pageTitle="Evento ondragenter"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondragleave */}
+						<Route path = "ondragleave" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondragleave" pageTitle="Evento ondragleave"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondragover */}
+						<Route path = "ondragover" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondragover" pageTitle="Evento ondragover"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondragstart */}
+						<Route path = "ondragstart" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondragstart" pageTitle="Evento ondragstart"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondrop */}
+						<Route path = "ondrop" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "ondrop" pageTitle="Evento ondrop"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onscroll */}
+						<Route path = "onscroll" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de arrastar" title = "onscroll" pageTitle="Evento onscroll"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
