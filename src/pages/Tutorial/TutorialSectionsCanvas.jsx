@@ -52,6 +52,16 @@ function drawRect({ctx, data}) {
     ctx.fillRect(data.x, data.y, data.width, data.height);
 };
 
+function drawStrokeRect({ctx, data}) {
+    let colorToFill = getColor({ctx: ctx, color: data.color});
+    ctx.strokeStyle = colorToFill;
+    ctx.strokeRect(data.x, data.y, data.width, data.height);
+};
+
+function drawClearRect({ctx, data}) {
+    ctx.clearRect(data.x, data.y, data.width, data.height);
+};
+
 function drawText({ctx, data}) {
     ctx.font = `${data.size}px ${data.font}`;
     if(data.color) {
@@ -80,6 +90,10 @@ export default function TutorialSectionsCanvas(prop) {
             for(const draw of content.draws) {
                 if(draw.draw === "rect") {
                     drawRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "strokeRect") {
+                    drawStrokeRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "clearRect") {
+                    drawClearRect({ctx: ctx, data: draw});
                 } else if(draw.draw === "text") {
                     drawText({ctx: ctx, data: draw});
                 } else if(draw.draw === "line") {

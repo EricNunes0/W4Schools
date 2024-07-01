@@ -3120,6 +3120,14 @@ function App() {
 						<Route path = "fillrect" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de desenho" title = "fillRect()" pageTitle="Método fillRect()"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* strokeRect() */}
+						<Route path = "strokerect" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de desenho" title = "strokeRect()" pageTitle="Método strokeRect()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* clearRect() */}
+						<Route path = "clearrect" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de desenho" title = "clearRect()" pageTitle="Método clearRect()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
