@@ -3020,6 +3020,106 @@ function App() {
 						<Route path = "onpaste" element = {(
 							<Page content = {(<TutorialMain language = "events" topic = "Eventos da área de transferência" title = "onpaste" pageTitle="Evento onpaste"></TutorialMain>)}></Page>
 						)}></Route>
+						
+						{/* Evento de mídia */}
+						{/* Evento onabort */}
+						<Route path = "onabort" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onabort" pageTitle="Evento onabort"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oncanplay */}
+						<Route path = "oncanplay" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "oncanplay" pageTitle="Evento oncanplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento oncanplaythrough */}
+						<Route path = "oncanplaythrough" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "oncanplaythrough" pageTitle="Evento oncanplaythrough"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ondurationchange */}
+						<Route path = "ondurationchange" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "ondurationchange" pageTitle="Evento ondurationchange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onended */}
+						<Route path = "onended" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onended" pageTitle="Evento onended"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onerror */}
+						<Route path = "av/onerror" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onerror" pageTitle="Evento onerror"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onloadeddata */}
+						<Route path = "onloadeddata" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onloadeddata" pageTitle="Evento onloadeddata"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onloadedmetadata */}
+						<Route path = "onloadedmetadata" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onloadedmetadata" pageTitle="Evento onloadedmetadata"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onloadstart */}
+						<Route path = "onloadstart" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onloadstart" pageTitle="Evento onloadstart"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onpause */}
+						<Route path = "onpause" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onpause" pageTitle="Evento onpause"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onplay */}
+						<Route path = "onplay" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onplay" pageTitle="Evento onplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onplaying */}
+						<Route path = "onplaying" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onplaying" pageTitle="Evento onplaying"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onprogress */}
+						<Route path = "onprogress" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onprogress" pageTitle="Evento onprogress"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onratechange */}
+						<Route path = "onratechange" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onratechange" pageTitle="Evento onratechange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onseeked */}
+						<Route path = "onseeked" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onseeked" pageTitle="Evento onseeked"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onseeking */}
+						<Route path = "onseeking" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onseeking" pageTitle="Evento onseeking"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onstalled */}
+						<Route path = "onstalled" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onstalled" pageTitle="Evento onstalled"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onsuspend */}
+						<Route path = "onsuspend" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onsuspend" pageTitle="Evento onsuspend"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento ontimeupdate */}
+						<Route path = "ontimeupdate" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "ontimeupdate" pageTitle="Evento ontimeupdate"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onvolumechange */}
+						<Route path = "onvolumechange" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onvolumechange" pageTitle="Evento onvolumechange"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Evento onwaiting */}
+						<Route path = "onwaiting" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos de mídia" title = "onwaiting" pageTitle="Evento onwaiting"></TutorialMain>)}></Page>
+						)}></Route>
+						
+						{/* Evento diversos */}
+						{/* Evento ontoggle */}
+						<Route path = "ontoggle" element = {(
+							<Page content = {(<TutorialMain language = "events" topic = "Eventos diversos" title = "ontoggle" pageTitle="Evento ontoggle"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
+					{/* Canvas */}
+					<Route path = "canvas">
+						{/* Métodos de desenho */}
+						{/* fillRect() */}
+						<Route path = "fillrect" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de desenho" title = "fillRect()" pageTitle="Método fillRect()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
