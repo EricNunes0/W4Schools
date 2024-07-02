@@ -3162,6 +3162,28 @@ function App() {
 						<Route path = "stroke" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "stroke()" pageTitle="Método stroke()"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* bezierCurveTo() */}
+						<Route path = "beziercurveto" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "bezierCurveTo()" pageTitle="Método bezierCurveTo()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* arc() */}
+						<Route path = "arc" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "arc()" pageTitle="Método arc()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* arcTo() */}
+						<Route path = "arcto" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "arcTo()" pageTitle="Método arcTo()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* quadraticCurveTo() */}
+						<Route path = "quadraticcurveto" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "quadraticCurveTo()" pageTitle="Método quadraticCurveTo()"></TutorialMain>)}></Page>
+						)}></Route>
+
+						{/* Texto */}
+						{/* direction */}
+						<Route path = "direction" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "direction" pageTitle="Propriedade direction"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

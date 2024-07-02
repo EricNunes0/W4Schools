@@ -25,6 +25,7 @@ import TutorialSectionsNotes from "./TutorialSectionsNotes";
 import TutorialSectionsMaps from "./TutorialSectionsMaps";
 import TutorialSectionsTables from "./TutorialSectionsTables";
 import TutorialSectionsParagraph from "./TutorialSectionsParagraph";
+import TutorialSectionsParagraphSpan from "./TutorialSectionsParagraphSpan";
 import TutorialSectionsSvg from "./TutorialSectionsSvg";
 import TutorialSectionsTagsFlex from "./TutorialSectionsTagsFlex";
 import TutorialSectionsIframe from "./TutorialSectionsIframe";
@@ -84,6 +85,8 @@ export default function TutorialSectionTags(tag, content) {
         case "h6":
             const h6 = content.text ? (<TutorialSectionsH6 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
             return h6;
+        case "span":
+            return (<TutorialSectionsParagraphSpan content = {content}></TutorialSectionsParagraphSpan>)
         case "sub":
             const sub = content.text ? (<TutorialSectionsSub data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsSub>) : (<TutorialSectionsSub>{content}</TutorialSectionsSub>);
             return sub;

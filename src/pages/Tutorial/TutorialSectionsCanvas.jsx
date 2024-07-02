@@ -60,6 +60,22 @@ function drawLineTo({ctx, data}) {
     ctx.lineTo(data.x, data.y);
 };
 
+function drawBezierCurveTo({ctx, data}) {
+    ctx.bezierCurveTo(data.cp1x, data.cp1y, data.cp2x, data.cp2y, data.x, data.y);
+};
+
+function drawArc({ctx, data}) {
+    ctx.arc(data.x, data.y, data.r, data.s, data.e * Math.PI, data.c || false);
+};
+
+function drawArcTo({ctx, data}) {
+    ctx.arcTo(data.x1, data.y1, data.x2, data.y2, data.r);
+};
+
+function drawQuadraticCurveTo({ctx, data}) {
+    ctx.quadraticCurveTo(data.cpx, data.cpy, data.x, data.y);
+};
+
 function drawClosePath({ctx}) {
     ctx.closePath();
 };
@@ -146,6 +162,14 @@ export default function TutorialSectionsCanvas(prop) {
                     drawMoveTo({ctx: ctx, data: draw});
                 } else if(draw.draw === "lineTo") {
                     drawLineTo({ctx: ctx, data: draw});
+                } else if(draw.draw === "bezierCurveTo") {
+                    drawBezierCurveTo({ctx: ctx, data: draw});
+                } else if(draw.draw === "arc") {
+                    drawArc({ctx: ctx, data: draw});
+                } else if(draw.draw === "arcTo") {
+                    drawArcTo({ctx: ctx, data: draw});
+                } else if(draw.draw === "quadraticCurveTo") {
+                    drawQuadraticCurveTo({ctx: ctx, data: draw});
                 } else if(draw.draw === "fill") {
                     drawFill({ctx: ctx, data: draw});
                 } else if(draw.draw === "fillStyle") {
