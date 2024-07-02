@@ -39,14 +39,56 @@ function drawCircle({ctx, data}) {
 };
 
 function drawLine({ctx, data}) {
+    ctx.beginPath();
     let colorToFill = getColor({ctx: ctx, color: data.color});
-    ctx.fillStyle = colorToFill;
+    ctx.strokeStyle = colorToFill;
+    ctx.lineWidth = data.lineWidth || 1;
     ctx.moveTo(data.x0, data.y0);
     ctx.lineTo(data.x1, data.y1);
     ctx.stroke();
 };
 
+function drawBeginPath({ctx}) {
+    ctx.beginPath();
+};
+
+function drawMoveTo({ctx, data}) {
+    ctx.moveTo(data.x, data.y);
+};
+
+function drawLineTo({ctx, data}) {
+    ctx.lineTo(data.x, data.y);
+};
+
+function drawClosePath({ctx}) {
+    ctx.closePath();
+};
+
+function drawFill({ctx}) {
+    ctx.fill();
+};
+
+function drawFillStyle({ctx, data}) {
+    ctx.fillStyle = data.value;
+};
+
+function drawLineWidth({ctx, data}) {
+    ctx.lineWidth = data.value;
+};
+
+function drawStroke({ctx}) {
+    ctx.stroke();
+};
+
+function drawStrokeStyle({ctx, data}) {
+    ctx.strokeStyle = data.value;
+};
+
 function drawRect({ctx, data}) {
+    ctx.rect(data.x, data.y, data.width, data.height);
+};
+
+function drawFullRect({ctx, data}) {
     let colorToFill = getColor({ctx: ctx, color: data.color});
     ctx.fillStyle = colorToFill;
     ctx.fillRect(data.x, data.y, data.width, data.height);
@@ -90,10 +132,30 @@ export default function TutorialSectionsCanvas(prop) {
             for(const draw of content.draws) {
                 if(draw.draw === "rect") {
                     drawRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "fullRect") {
+                    drawFullRect({ctx: ctx, data: draw});
                 } else if(draw.draw === "strokeRect") {
                     drawStrokeRect({ctx: ctx, data: draw});
                 } else if(draw.draw === "clearRect") {
                     drawClearRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "beginPath") {
+                    drawBeginPath({ctx: ctx, data: draw});
+                } else if(draw.draw === "closePath") {
+                    drawClosePath({ctx: ctx, data: draw});
+                } else if(draw.draw === "moveTo") {
+                    drawMoveTo({ctx: ctx, data: draw});
+                } else if(draw.draw === "lineTo") {
+                    drawLineTo({ctx: ctx, data: draw});
+                } else if(draw.draw === "fill") {
+                    drawFill({ctx: ctx, data: draw});
+                } else if(draw.draw === "fillStyle") {
+                    drawFillStyle({ctx: ctx, data: draw});
+                } else if(draw.draw === "lineWidth") {
+                    drawLineWidth({ctx: ctx, data: draw});
+                } else if(draw.draw === "stroke") {
+                    drawStroke({ctx: ctx, data: draw});
+                } else if(draw.draw === "strokeStyle") {
+                    drawStrokeStyle({ctx: ctx, data: draw});
                 } else if(draw.draw === "text") {
                     drawText({ctx: ctx, data: draw});
                 } else if(draw.draw === "line") {

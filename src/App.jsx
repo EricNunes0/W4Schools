@@ -3128,6 +3128,40 @@ function App() {
 						<Route path = "clearrect" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de desenho" title = "clearRect()" pageTitle="Método clearRect()"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* Métodos de caminho */}
+						{/* beginPath() */}
+						<Route path = "beginpath" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "beginPath()" pageTitle="Método beginPath()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* closePath() */}
+						<Route path = "closepath" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "closePath()" pageTitle="Método closePath()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* isPointInPath() */}
+						<Route path = "ispointinpath" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "isPointInPath()" pageTitle="Método isPointInPath()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* moveTo() */}
+						<Route path = "moveto" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "moveTo()" pageTitle="Método moveTo()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* lineTo() */}
+						<Route path = "lineto" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "lineTo()" pageTitle="Método lineTo()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* fill() */}
+						<Route path = "fill" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "fill()" pageTitle="Método fill()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* rect() */}
+						<Route path = "rect" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "rect()" pageTitle="Método rect()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* stroke() */}
+						<Route path = "stroke" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Métodos de caminho" title = "stroke()" pageTitle="Método stroke()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
