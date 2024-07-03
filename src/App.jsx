@@ -3184,6 +3184,30 @@ function App() {
 						<Route path = "direction" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "direction" pageTitle="Propriedade direction"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* fillText() */}
+						<Route path = "filltext" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "fillText()" pageTitle="Método fillText()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* font */}
+						<Route path = "font" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "font" pageTitle="Propriedade font"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* measureText() */}
+						<Route path = "measuretext" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "measureText()" pageTitle="Método measureText()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* strokeText() */}
+						<Route path = "stroketext" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "strokeText()" pageTitle="Método strokeText()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* textAlign */}
+						<Route path = "textalign" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "textAlign" pageTitle="Propriedade textAlign"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* textBaseline */}
+						<Route path = "textbaseline" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "textBaseline" pageTitle="Propriedade textBaseline"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

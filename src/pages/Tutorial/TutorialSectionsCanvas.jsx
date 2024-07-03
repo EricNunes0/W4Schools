@@ -52,6 +52,21 @@ function drawBeginPath({ctx}) {
     ctx.beginPath();
 };
 
+function drawCreateLinearGradient({ctx, data}) {
+    const gradient = ctx.createLinearGradient(data.x0, data.y0, data.x1, data.y1);
+    if(data.stops) {
+        for(const stop of data.stops) {
+            gradient.addColorStop(stop.stop, stop.color);
+        };
+    };
+    ctx.fillStyle = gradient;
+    if(data.strokeStyle) {
+        if(data.strokeStyle === true) {
+            ctx.strokeStyle = gradient;
+        }
+    }
+};
+
 function drawMoveTo({ctx, data}) {
     ctx.moveTo(data.x, data.y);
 };
@@ -88,6 +103,14 @@ function drawFillStyle({ctx, data}) {
     ctx.fillStyle = data.value;
 };
 
+function drawFillText({ctx, data}) {
+    ctx.fillText(data.text, data.x, data.y, data.maxWidth);
+};
+
+function drawFont({ctx, data}) {
+    ctx.font = data.value;
+};
+
 function drawLineWidth({ctx, data}) {
     ctx.lineWidth = data.value;
 };
@@ -98,6 +121,10 @@ function drawStroke({ctx}) {
 
 function drawStrokeStyle({ctx, data}) {
     ctx.strokeStyle = data.value;
+};
+
+function drawStrokeText({ctx, data}) {
+    ctx.strokeText(data.text, data.x, data.y, data.maxWidth);
 };
 
 function drawRect({ctx, data}) {
@@ -133,7 +160,14 @@ function drawText({ctx, data}) {
         ctx.strokeStyle = strokeColor;
         ctx.strokeText(data.content, data.x, data.y);
     };
-    
+};
+
+function drawTextAlign({ctx, data}) {
+    ctx.textAlign = data.value;
+};
+
+function drawTextBaseline({ctx, data}) {
+    ctx.textBaseline = data.value;
 };
 
 export default function TutorialSectionsCanvas(prop) {
@@ -156,6 +190,8 @@ export default function TutorialSectionsCanvas(prop) {
                     drawClearRect({ctx: ctx, data: draw});
                 } else if(draw.draw === "beginPath") {
                     drawBeginPath({ctx: ctx, data: draw});
+                } else if(draw.draw === "createLinearGradient") {
+                    drawCreateLinearGradient({ctx: ctx, data: draw});
                 } else if(draw.draw === "closePath") {
                     drawClosePath({ctx: ctx, data: draw});
                 } else if(draw.draw === "moveTo") {
@@ -174,18 +210,28 @@ export default function TutorialSectionsCanvas(prop) {
                     drawFill({ctx: ctx, data: draw});
                 } else if(draw.draw === "fillStyle") {
                     drawFillStyle({ctx: ctx, data: draw});
+                } else if(draw.draw === "fillText") {
+                    drawFillText({ctx: ctx, data: draw});
+                } else if(draw.draw === "font") {
+                    drawFont({ctx: ctx, data: draw});
                 } else if(draw.draw === "lineWidth") {
                     drawLineWidth({ctx: ctx, data: draw});
                 } else if(draw.draw === "stroke") {
                     drawStroke({ctx: ctx, data: draw});
                 } else if(draw.draw === "strokeStyle") {
                     drawStrokeStyle({ctx: ctx, data: draw});
+                } else if(draw.draw === "strokeText") {
+                    drawStrokeText({ctx: ctx, data: draw});
                 } else if(draw.draw === "text") {
                     drawText({ctx: ctx, data: draw});
                 } else if(draw.draw === "line") {
                     drawLine({ctx: ctx, data: draw});
                 } else if(draw.draw === "circle") {
                     drawCircle({ctx: ctx, data: draw});
+                } else if(draw.draw === "textAlign") {
+                    drawTextAlign({ctx: ctx, data: draw});
+                } else if(draw.draw === "textBaseline") {
+                    drawTextBaseline({ctx: ctx, data: draw});
                 };
             };
         };
