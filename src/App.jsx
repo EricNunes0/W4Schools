@@ -3208,6 +3208,24 @@ function App() {
 						<Route path = "textbaseline" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Texto" title = "textBaseline" pageTitle="Propriedade textBaseline"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* Estilo */}
+						{/* addColorStop() */}
+						<Route path = "addcolorstop" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "addColorStop()" pageTitle="Método addColorStop()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* createLinearGradient() */}
+						<Route path = "createlineargradient" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "createLinearGradient()" pageTitle="Método createLinearGradient()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* createPattern() */}
+						<Route path = "createpattern" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "createPattern()" pageTitle="Método createPattern()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* createRadialGradient() */}
+						<Route path = "createradialgradient" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "createRadialGradient()" pageTitle="Método createRadialGradient()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

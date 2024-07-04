@@ -109,7 +109,7 @@ export default function TutorialSectionTags(tag, content) {
         case "iframe":
             return (<TutorialSectionsIframe content = {content}></TutorialSectionsIframe>);
         case "img":
-            return (<TutorialSectionsImg alt = {content.alt} src = {content.src} width = {content.width || null} style = {content.style || {}}></TutorialSectionsImg>);
+            return (<TutorialSectionsImg id = {content.id || null} alt = {content.alt} src = {content.src} width = {content.width || null} style = {content.style || {}}></TutorialSectionsImg>);
         case "map":
             return (<TutorialSectionsMaps content = {content}></TutorialSectionsMaps>)
         case "ol": case "ul":

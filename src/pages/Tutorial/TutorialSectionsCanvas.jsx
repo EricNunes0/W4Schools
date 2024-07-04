@@ -67,6 +67,26 @@ function drawCreateLinearGradient({ctx, data}) {
     }
 };
 
+function drawCreatePattern({ctx, data}) {
+    const pat = ctx.createPattern(document.getElementById(data.image), data.value);
+    ctx.fillStyle = pat;
+};
+
+function drawCreateRadialGradient({ctx, data}) {
+    const gradient = ctx.createRadialGradient(data.x0, data.y0, data.r0, data.x1, data.y1, data.r1);
+    if(data.stops) {
+        for(const stop of data.stops) {
+            gradient.addColorStop(stop.stop, stop.color);
+        };
+    };
+    ctx.fillStyle = gradient;
+    if(data.strokeStyle) {
+        if(data.strokeStyle === true) {
+            ctx.strokeStyle = gradient;
+        }
+    }
+};
+
 function drawMoveTo({ctx, data}) {
     ctx.moveTo(data.x, data.y);
 };
@@ -97,6 +117,10 @@ function drawClosePath({ctx}) {
 
 function drawFill({ctx}) {
     ctx.fill();
+};
+
+function drawFillRect({ctx, data}) {
+    ctx.fillRect(data.x, data.y, data.width, data.height);
 };
 
 function drawFillStyle({ctx, data}) {
@@ -192,6 +216,10 @@ export default function TutorialSectionsCanvas(prop) {
                     drawBeginPath({ctx: ctx, data: draw});
                 } else if(draw.draw === "createLinearGradient") {
                     drawCreateLinearGradient({ctx: ctx, data: draw});
+                } else if(draw.draw === "createPattern") {
+                    drawCreatePattern({ctx: ctx, data: draw});
+                } else if(draw.draw === "createRadialGradient") {
+                    drawCreateRadialGradient({ctx: ctx, data: draw});
                 } else if(draw.draw === "closePath") {
                     drawClosePath({ctx: ctx, data: draw});
                 } else if(draw.draw === "moveTo") {
@@ -208,6 +236,8 @@ export default function TutorialSectionsCanvas(prop) {
                     drawQuadraticCurveTo({ctx: ctx, data: draw});
                 } else if(draw.draw === "fill") {
                     drawFill({ctx: ctx, data: draw});
+                } else if(draw.draw === "fillRect") {
+                    drawFillRect({ctx: ctx, data: draw});
                 } else if(draw.draw === "fillStyle") {
                     drawFillStyle({ctx: ctx, data: draw});
                 } else if(draw.draw === "fillText") {
