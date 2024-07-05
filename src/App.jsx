@@ -3226,6 +3226,46 @@ function App() {
 						<Route path = "createradialgradient" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "createRadialGradient()" pageTitle="Método createRadialGradient()"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* fillStyle */}
+						<Route path = "fillstyle" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "fillStyle" pageTitle="Propriedade fillStyle"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* lineCap */}
+						<Route path = "linecap" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "lineCap" pageTitle="Propriedade lineCap"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* lineJoin */}
+						<Route path = "linejoin" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "lineJoin" pageTitle="Propriedade lineJoin"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* lineWidth */}
+						<Route path = "linewidth" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "lineWidth" pageTitle="Propriedade lineWidth"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* miterLimit */}
+						<Route path = "miterlimit" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "miterLimit" pageTitle="Propriedade miterLimit"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* shadowBlur */}
+						<Route path = "shadowblur" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "shadowBlur" pageTitle="Propriedade shadowBlur"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* shadowColor */}
+						<Route path = "shadowcolor" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "shadowColor" pageTitle="Propriedade shadowColor"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* shadowOffsetX */}
+						<Route path = "shadowoffsetx" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "shadowOffsetX" pageTitle="Propriedade shadowOffsetX"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* shadowOffsetY */}
+						<Route path = "shadowoffsety" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "shadowOffsetY" pageTitle="Propriedade shadowOffsetY"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* strokeStyle */}
+						<Route path = "strokestyle" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "strokeStyle" pageTitle="Propriedade strokeStyle"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
