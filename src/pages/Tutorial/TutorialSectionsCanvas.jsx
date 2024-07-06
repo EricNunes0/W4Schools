@@ -75,6 +75,22 @@ function drawClosePath({ctx}) {
     ctx.closePath();
 };
 
+/* drawImage() */
+function drawImage({ctx, data}) {
+    const img = document.getElementById(data.image);
+    if(data.x && data.y) {
+        if(data.width && data.height) {
+            if(data.sx && data.sy && data.swidth && data.sheight) {
+                ctx.drawImage(img, data.sx, data.sy, data.swidth, data.sheight, data.x, data.y, data.width, data.height);
+                return;
+            }
+            ctx.drawImage(img, data.x, data.y, data.width, data.height);
+            return;
+        }
+        ctx.drawImage(img, data.x, data.y);
+    };
+};
+
 /* fill() */
 function drawFill({ctx}) {
     ctx.fill();
@@ -151,6 +167,21 @@ function drawRect({ctx, data}) {
     ctx.rect(data.x, data.y, data.width, data.height);
 };
 
+/* rotate() */
+function drawRotate({ctx, data}) {
+    ctx.rotate(data.angle * Math.PI / 180);
+};
+
+/* scale() */
+function drawScale({ctx, data}) {
+    ctx.scale(data.scalewidth, data.scaleheight);
+};
+
+/* setTransform() */
+function drawSetTransform({ctx, data}) {
+    ctx.setTransform(data.a, data.b, data.c, data.d, data.e, data.f);
+};
+
 /* shadowBlur */
 function drawShadowBlur({ctx, data}) {
     ctx.shadowBlur = data.value;
@@ -210,6 +241,16 @@ function drawTextAlign({ctx, data}) {
 /* textBaseline */
 function drawTextBaseline({ctx, data}) {
     ctx.textBaseline = data.value;
+};
+
+/* transform() */
+function drawTransform({ctx, data}) {
+    ctx.transform(data.a, data.b, data.c, data.d, data.e, data.f);
+};
+
+/* translate() */
+function drawTranslate({ctx, data}) {
+    ctx.translate(data.x, data.y);
 };
 
 function getColor({ctx, color}) {
@@ -290,6 +331,8 @@ export default function TutorialSectionsCanvas(prop) {
                     drawCreateRadialGradient({ctx: ctx, data: draw});
                 } else if(draw.draw === "closePath") {
                     drawClosePath({ctx: ctx, data: draw});
+                } else if(draw.draw === "drawImage") {
+                    drawImage({ctx: ctx, data: draw});
                 } else if(draw.draw === "fill") {
                     drawFill({ctx: ctx, data: draw});
                 } else if(draw.draw === "fillRect") {
@@ -320,6 +363,12 @@ export default function TutorialSectionsCanvas(prop) {
                     drawQuadraticCurveTo({ctx: ctx, data: draw});
                 } else if(draw.draw === "rect") {
                     drawRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "rotate") {
+                    drawRotate({ctx: ctx, data: draw});
+                } else if(draw.draw === "scale") {
+                    drawScale({ctx: ctx, data: draw});
+                } else if(draw.draw === "setTransform") {
+                    drawSetTransform({ctx: ctx, data: draw});
                 } else if(draw.draw === "shadowBlur") {
                     drawShadowBlur({ctx: ctx, data: draw});
                 } else if(draw.draw === "shadowColor") {
@@ -342,6 +391,10 @@ export default function TutorialSectionsCanvas(prop) {
                     drawTextAlign({ctx: ctx, data: draw});
                 } else if(draw.draw === "textBaseline") {
                     drawTextBaseline({ctx: ctx, data: draw});
+                } else if(draw.draw === "transform") {
+                    drawTransform({ctx: ctx, data: draw});
+                } else if(draw.draw === "translate") {
+                    drawTranslate({ctx: ctx, data: draw});
                 };
             };
         };

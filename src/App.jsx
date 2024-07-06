@@ -3266,6 +3266,34 @@ function App() {
 						<Route path = "strokestyle" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Estilo" title = "strokeStyle" pageTitle="Propriedade strokeStyle"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* Transformação */}
+						{/* scale() */}
+						<Route path = "scale" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Transformação" title = "scale()" pageTitle="Método scale()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* rotate() */}
+						<Route path = "rotate" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Transformação" title = "rotate()" pageTitle="Método rotate()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* translate() */}
+						<Route path = "translate" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Transformação" title = "translate()" pageTitle="Método translate()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* transform() */}
+						<Route path = "transform" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Transformação" title = "transform()" pageTitle="Método transform()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* setTransform() */}
+						<Route path = "settransform" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Transformação" title = "setTransform()" pageTitle="Método setTransform()"></TutorialMain>)}></Page>
+						)}></Route>
+
+						{/* Imagem */}
+						{/* drawImage() */}
+						<Route path = "drawimage" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Imagem" title = "drawImage()" pageTitle="Método drawImage()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
