@@ -3330,6 +3330,20 @@ function App() {
 						<Route path = "globalcompositeoperation" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Composição" title = "globalCompositeOperation" pageTitle="Propriedade globalCompositeOperation"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* Outros */}
+						{/* clip() */}
+						<Route path = "clip" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Outros" title = "clip()" pageTitle="Método clip()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* save() */}
+						<Route path = "save" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Outros" title = "save()" pageTitle="Método save()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* restore() */}
+						<Route path = "restore" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Outros" title = "restore()" pageTitle="Método restore()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

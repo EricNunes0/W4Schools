@@ -46,7 +46,7 @@ export default function TutorialSectionsGlobalCompositeOperationExamples() {
 
 
     return (
-        <div className = "tutorial-sections-globalCompositeOperation-examples" style={{backgroundColor: "#fff", display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "flex-start", alignItems: "center", width: 500, height: 600, padding: 10, maxWidth: "100%"}}>
+        <div className = "tutorial-sections-globalCompositeOperation-examples" style={{backgroundColor: "#fff", display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "flex-start", alignItems: "center", width: 500, minHeight: 600, padding: 10, maxWidth: "100%"}}>
             {divs}
         </div>
     );

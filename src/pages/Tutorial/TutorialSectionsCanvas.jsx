@@ -32,6 +32,11 @@ function drawClearRect({ctx, data}) {
     ctx.clearRect(data.x, data.y, data.width, data.height);
 };
 
+/* clip() */
+function drawClip({ctx, data}) {
+    ctx.clip();
+};
+
 /* createImageData() */
 function drawCreateImageData({ctx, data}) {
     const imgData = ctx.createImageData(data.width, data.height);
@@ -203,9 +208,19 @@ function drawRect({ctx, data}) {
     ctx.rect(data.x, data.y, data.width, data.height);
 };
 
+/* restore() */
+function drawRestore({ctx, data}) {
+    ctx.restore();
+};
+
 /* rotate() */
 function drawRotate({ctx, data}) {
     ctx.rotate(data.angle * Math.PI / 180);
+};
+
+/* save() */
+function drawSave({ctx, data}) {
+    ctx.save();
 };
 
 /* scale() */
@@ -359,6 +374,8 @@ export default function TutorialSectionsCanvas(prop) {
                     drawCircle({ctx: ctx, data: draw});
                 } else if(draw.draw === "clearRect") {
                     drawClearRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "clip") {
+                    drawClip({ctx: ctx, data: draw});
                 } else if(draw.draw === "createImageData") {
                     drawCreateImageData({ctx: ctx, data: draw});
                 } else if(draw.draw === "createLinearGradient") {
@@ -407,8 +424,12 @@ export default function TutorialSectionsCanvas(prop) {
                     drawQuadraticCurveTo({ctx: ctx, data: draw});
                 } else if(draw.draw === "rect") {
                     drawRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "restore") {
+                    drawRestore({ctx: ctx, data: draw});
                 } else if(draw.draw === "rotate") {
                     drawRotate({ctx: ctx, data: draw});
+                } else if(draw.draw === "save") {
+                    drawSave({ctx: ctx, data: draw});
                 } else if(draw.draw === "scale") {
                     drawScale({ctx: ctx, data: draw});
                 } else if(draw.draw === "setTransform") {
