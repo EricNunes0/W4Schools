@@ -20,6 +20,7 @@ import TutorialSectionsCanvas from "./TutorialSectionsCanvas";
 import TutorialSectionsColorBlocks from "./TutorialSectionsColorBlocks";
 import TutorialSectionsColorNames from "./TutorialSectionsColorNames";
 import TutorialSectionsColorResults from "./TutorialSectionsColorResults";
+import TutorialSectionsGlobalCompositeOperationExamples from "./TutorialSectionsGlobalCompositeOperationExamples";
 import TutorialSectionsList from "./TutorialSectionsList";
 import TutorialSectionsNotes from "./TutorialSectionsNotes";
 import TutorialSectionsMaps from "./TutorialSectionsMaps";
@@ -132,6 +133,8 @@ export default function TutorialSectionTags(tag, content) {
             return (<TutorialSectionsExample content = {content}></TutorialSectionsExample>);
         case "exercise":
             return (<TutorialSectionsExercise content = {content}></TutorialSectionsExercise>);
+        case "globalCompositeOperationExamples":
+            return (<TutorialSectionsGlobalCompositeOperationExamples></TutorialSectionsGlobalCompositeOperationExamples>);
         case "img-flex":
             return (<TutorialSectionsImgFlex content = {content}></TutorialSectionsImgFlex>);
         case "kickstart":

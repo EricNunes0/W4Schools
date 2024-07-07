@@ -26,10 +26,18 @@ export default function TutorialExampleResults(prop) {
                     code = innerJoin(results.codes);
                     break;
             };
-            
+
+            let resultsTitle;
+            if(results.title === null) {
+                resultsTitle = "";
+            } else if(!results.title) {
+                resultsTitle = "Resultados";
+            } else {
+                resultsTitle = results.title;
+            }
             return (
                 <div className = "tutorials-examples-results-divs">
-                    <h1 className = "tutorials-examples-results-titles">{results.title || "Resultados"}</h1>
+                    <h1 className = "tutorials-examples-results-titles">{resultsTitle}</h1>
                     <div className = "tutorials-examples-results" dangerouslySetInnerHTML={{__html: code}}></div>
                 </div>
             );

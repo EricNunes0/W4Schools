@@ -32,6 +32,18 @@ function drawClearRect({ctx, data}) {
     ctx.clearRect(data.x, data.y, data.width, data.height);
 };
 
+/* createImageData() */
+function drawCreateImageData({ctx, data}) {
+    const imgData = ctx.createImageData(data.width, data.height);
+    for (let i = 0; i < imgData.data.length; i += 4) {
+        imgData.data[i+0] = data.r;
+        imgData.data[i+1] = data.g;
+        imgData.data[i+2] = data.b;
+        imgData.data[i+3] = data.a;
+    }
+    ctx.putImageData(imgData, 10, 10);
+};
+
 /* createLinearGradient() */
 function drawCreateLinearGradient({ctx, data}) {
     const gradient = ctx.createLinearGradient(data.x0, data.y0, data.x1, data.y1);
@@ -78,7 +90,9 @@ function drawClosePath({ctx}) {
 /* drawImage() */
 function drawImage({ctx, data}) {
     const img = document.getElementById(data.image);
-    if(data.x && data.y) {
+    function exists(value) {return value !== undefined};
+
+    if(exists(data.x) && exists(data.y)) {
         if(data.width && data.height) {
             if(data.sx && data.sy && data.swidth && data.sheight) {
                 ctx.drawImage(img, data.sx, data.sy, data.swidth, data.sheight, data.x, data.y, data.width, data.height);
@@ -114,6 +128,28 @@ function drawFillText({ctx, data}) {
 /* font */
 function drawFont({ctx, data}) {
     ctx.font = data.value;
+};
+
+/* globalAlpha */
+function drawGlobalAlpha({ctx, data}) {
+    ctx.globalAlpha = data.value;
+};
+
+/* globalCompositeOperation */
+function drawGlobalCompositeOperation({ctx, data}) {
+    ctx.globalCompositeOperation = data.value;
+};
+
+/* invertImageData */
+function drawInvertImageData({ctx, data}) {
+    const imgData = ctx.getImageData(data.x, data.y, data.width, data.height);
+    for (let i = 0; i < imgData.data.length; i += 4) {
+        imgData.data[i] = 255-imgData.data[i];
+        imgData.data[i+1] = 255-imgData.data[i+1];
+        imgData.data[i+2] = 255-imgData.data[i+2];
+        imgData.data[i+3] = 255;
+    }
+    ctx.putImageData(imgData, data.putX, data.putY);
 };
 
 /* miterLimit */
@@ -323,6 +359,8 @@ export default function TutorialSectionsCanvas(prop) {
                     drawCircle({ctx: ctx, data: draw});
                 } else if(draw.draw === "clearRect") {
                     drawClearRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "createImageData") {
+                    drawCreateImageData({ctx: ctx, data: draw});
                 } else if(draw.draw === "createLinearGradient") {
                     drawCreateLinearGradient({ctx: ctx, data: draw});
                 } else if(draw.draw === "createPattern") {
@@ -345,6 +383,12 @@ export default function TutorialSectionsCanvas(prop) {
                     drawFont({ctx: ctx, data: draw});
                 } else if(draw.draw === "fullRect") {
                     drawFullRect({ctx: ctx, data: draw});
+                } else if(draw.draw === "globalAlpha") {
+                    drawGlobalAlpha({ctx: ctx, data: draw});
+                } else if(draw.draw === "globalCompositeOperation") {
+                    drawGlobalCompositeOperation({ctx: ctx, data: draw});
+                } else if(draw.draw === "invertImageData") {
+                    drawInvertImageData({ctx: ctx, data: draw});
                 } else if(draw.draw === "miterLimit") {
                     drawMiterLimit({ctx: ctx, data: draw});
                 } else if(draw.draw === "moveTo") {

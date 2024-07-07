@@ -3294,6 +3294,42 @@ function App() {
 						<Route path = "drawimage" element = {(
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Imagem" title = "drawImage()" pageTitle="Método drawImage()"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* ImageData */}
+						{/* createImageData() */}
+						<Route path = "createimagedata" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "createImageData()" pageTitle="Método createImageData()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* getImageData() */}
+						<Route path = "getimagedata" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "getImageData()" pageTitle="Método getImageData()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* ImageData.data */}
+						<Route path = "imagedata_data" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "ImageData.data" pageTitle="Propriedade ImageData.data"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* ImageData.height */}
+						<Route path = "imagedata_height" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "ImageData.height" pageTitle="Propriedade ImageData.height"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* ImageData.width */}
+						<Route path = "imagedata_width" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "ImageData.width" pageTitle="Propriedade ImageData.width"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* putImageData() */}
+						<Route path = "putimagedata" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "ImageData" title = "putImageData()" pageTitle="Método putImageData()"></TutorialMain>)}></Page>
+						)}></Route>
+
+						{/* Composição */}
+						{/* globalAlpha */}
+						<Route path = "globalalpha" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Composição" title = "globalAlpha" pageTitle="Propriedade globalAlpha"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* globalCompositeOperation */}
+						<Route path = "globalcompositeoperation" element = {(
+							<Page content = {(<TutorialMain language = "html_canvas" topic = "Composição" title = "globalCompositeOperation" pageTitle="Propriedade globalCompositeOperation"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
