@@ -3345,6 +3345,14 @@ function App() {
 							<Page content = {(<TutorialMain language = "html_canvas" topic = "Outros" title = "restore()" pageTitle="Método restore()"></TutorialMain>)}></Page>
 						)}></Route>
 					</Route>
+					{/* Áudio/Vídeo */}
+					<Route path = "audio_video">
+						{/* Métodos */}
+						{/* addTextTrack() */}
+						<Route path = "addtexttrack" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "addTextTrack()" pageTitle="Método addTextTrack()"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
