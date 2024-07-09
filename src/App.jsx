@@ -3352,6 +3352,10 @@ function App() {
 						<Route path = "addtexttrack" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "addTextTrack()" pageTitle="Método addTextTrack()"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* canPlayType() */}
+						<Route path = "canplaytype" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "canPlayType()" pageTitle="Método canPlayType()"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
