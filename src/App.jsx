@@ -3356,6 +3356,32 @@ function App() {
 						<Route path = "canplaytype" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "canPlayType()" pageTitle="Método canPlayType()"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* load() */}
+						<Route path = "load" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "load()" pageTitle="Método load()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* play() */}
+						<Route path = "play" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "play()" pageTitle="Método play()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* pause() */}
+						<Route path = "pause" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Métodos" title = "pause()" pageTitle="Método pause()"></TutorialMain>)}></Page>
+						)}></Route>
+						
+						{/* Propriedades */}
+						{/* audioTracks */}
+						<Route path = "audiotracks" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "audioTracks" pageTitle="Propriedade audioTracks"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* autoplay */}
+						<Route path = "autoplay" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "autoplay" pageTitle="Propriedade autoplay"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* buffered */}
+						<Route path = "buffered" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "buffered" pageTitle="Propriedade buffered"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
