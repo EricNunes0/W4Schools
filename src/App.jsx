@@ -3382,6 +3382,26 @@ function App() {
 						<Route path = "buffered" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "buffered" pageTitle="Propriedade buffered"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* controller */}
+						<Route path = "controller" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "controller" pageTitle="Propriedade controller"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* controls */}
+						<Route path = "controls" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "controls" pageTitle="Propriedade controls"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* currentSrc */}
+						<Route path = "currentsrc" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "currentSrc" pageTitle="Propriedade currentSrc"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* currentTime */}
+						<Route path = "currenttime" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "currentTime" pageTitle="Propriedade currentTime"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* defaultMuted */}
+						<Route path = "defaultMuted" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "defaultMuted" pageTitle="Propriedade defaultMuted"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
