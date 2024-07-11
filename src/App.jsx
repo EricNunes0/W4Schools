@@ -3442,6 +3442,46 @@ function App() {
 						<Route path = "playbackrate" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "playbackRate" pageTitle="Propriedade playbackRate"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* played */}
+						<Route path = "played" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "played" pageTitle="Propriedade played"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* preload */}
+						<Route path = "preload" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "preload" pageTitle="Propriedade preload"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* readyState */}
+						<Route path = "readystate" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "readyState" pageTitle="Propriedade readyState"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* seekable */}
+						<Route path = "seekable" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "seekable" pageTitle="Propriedade seekable"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* seeking */}
+						<Route path = "seeking" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "seeking" pageTitle="Propriedade seeking"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* src */}
+						<Route path = "src" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "src" pageTitle="Propriedade src"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* startDate */}
+						<Route path = "startdate" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "startDate" pageTitle="Propriedade startDate"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* textTracks */}
+						<Route path = "texttracks" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "textTracks" pageTitle="Propriedade textTracks"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* videoTracks */}
+						<Route path = "videotracks" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "videoTracks" pageTitle="Propriedade videoTracks"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* volume */}
+						<Route path = "volume" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "volume" pageTitle="Propriedade volume"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
