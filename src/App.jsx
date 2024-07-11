@@ -3402,6 +3402,46 @@ function App() {
 						<Route path = "defaultMuted" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "defaultMuted" pageTitle="Propriedade defaultMuted"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* defaultPlaybackRate */}
+						<Route path = "defaultplaybackrate" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "defaultPlaybackRate" pageTitle="Propriedade defaultPlaybackRate"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* duration */}
+						<Route path = "duration" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "duration" pageTitle="Propriedade duration"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* ended */}
+						<Route path = "ended" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "ended" pageTitle="Propriedade ended"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* error */}
+						<Route path = "error" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "error" pageTitle="Propriedade error"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* loop */}
+						<Route path = "loop" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "loop" pageTitle="Propriedade loop"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* mediaGroup */}
+						<Route path = "mediagroup" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "mediaGroup" pageTitle="Propriedade mediaGroup"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* muted */}
+						<Route path = "muted" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "muted" pageTitle="Propriedade muted"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* networkState */}
+						<Route path = "networkstate" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "networkState" pageTitle="Propriedade networkState"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* paused */}
+						<Route path = "paused" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "paused" pageTitle="Propriedade paused"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* playbackRate */}
+						<Route path = "playbackrate" element = {(
+							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "playbackRate" pageTitle="Propriedade playbackRate"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
