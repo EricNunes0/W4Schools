@@ -3482,6 +3482,66 @@ function App() {
 						<Route path = "volume" element = {(
 							<Page content = {(<TutorialMain language = "html_audio_video" topic = "Propriedades" title = "volume" pageTitle="Propriedade volume"></TutorialMain>)}></Page>
 						)}></Route>
+						
+						{/* Eventos */}
+						<Route path = "events">
+							{/* abort */}
+							<Route path = "abort" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "abort" pageTitle="Evento abort"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* canplay */}
+							<Route path = "canplay" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "canplay" pageTitle="Evento canplay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* canplaythrough */}
+							<Route path = "canplaythrough" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "canplaythrough" pageTitle="Evento canplaythrough"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* durationchange */}
+							<Route path = "durationchange" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "durationchange" pageTitle="Evento durationchange"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ended */}
+							<Route path = "ended" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "ended" pageTitle="Evento ended"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* error */}
+							<Route path = "error" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "error" pageTitle="Evento error"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* loadeddata */}
+							<Route path = "loadeddata" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "loadeddata" pageTitle="Evento loadeddata"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* loadedmetadata */}
+							<Route path = "loadedmetadata" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "loadedmetadata" pageTitle="Evento loadedmetadata"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* loadstart */}
+							<Route path = "loadstart" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "loadstart" pageTitle="Evento loadstart"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* pause */}
+							<Route path = "pause" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "pause" pageTitle="Evento pause"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* play */}
+							<Route path = "play" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "play" pageTitle="Evento play"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* playing */}
+							<Route path = "playing" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "playing" pageTitle="Evento playing"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* progress */}
+							<Route path = "progress" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "progress" pageTitle="Evento progress"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ratechange */}
+							<Route path = "ratechange" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "ratechange" pageTitle="Evento ratechange"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
