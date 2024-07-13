@@ -11,13 +11,13 @@ export const HomeSectionsLearnButton = styled.a`
     text-decoration: none;
     transition: all 0.3s ease;
 
-    &[class~="learn"] {
+    &[type="learn"] {
         background-color: #7080f0;
     }
-    &[class~="reference"] {
+    &[type="reference"] {
         background-color: #304080;
     }
-    &[class~="certification"] {
+    &[type="certification"] {
         background-color: #102060;
     }
 

@@ -5,16 +5,26 @@ import { HomeSectionsTitles } from "./HomeSectionsTitles";
 
 export default function HomeSection(language) {
     return (
-        <div className = "home-sections" id = {language} data-lang = {language}>
+        <div className = "home-sections" id = {language.language} data-lang = {language.language}>
             <main className = "home-sections-mains">
                 <article className = "home-sections-articles">
                     <section className = "home-sections-articles-infos">
-                        <HomeSectionsTitles>{language}</HomeSectionsTitles>
-                        <HomeSectionsSubtitles data-lang = {language.toLocaleLowerCase()}></HomeSectionsSubtitles>
+                        <HomeSectionsTitles>{language.title}</HomeSectionsTitles>
+                        <HomeSectionsSubtitles>{language.subtitle}</HomeSectionsSubtitles>
                         <div className = "home-sections-buttons-divs display-flex-column">
-                            <HomeSectionsLearnButton className = "learn display-flex" href = {`/${language.toLocaleLowerCase()}/default`}>Aprenda {language}</HomeSectionsLearnButton>
+                            {language.buttons ? (
+                                <>
+                                    {language.buttons.map((button) => (
+                                        <HomeSectionsLearnButton type = {button.type} className = "display-flex" href = {button.href || ""}>{button.text}</HomeSectionsLearnButton>
+                                    ))
+                                    }
+                                </>
+                            ) : (<></>)
+                            }
+                            {/*
                             <HomeSectionsLearnButton className = "reference display-flex" href = {`/reference-${language.toLocaleLowerCase()}/reference`}>Referências</HomeSectionsLearnButton>
                             <HomeSectionsLearnButton className = "certification display-flex" href = {`/certifications-${language.toLocaleLowerCase()}-certificate`}>Certificados</HomeSectionsLearnButton>
+                            */}
                         </div>
                     </section>
                 </article>

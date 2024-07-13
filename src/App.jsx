@@ -3541,6 +3541,34 @@ function App() {
 							<Route path = "ratechange" element = {(
 								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "ratechange" pageTitle="Evento ratechange"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* seeked */}
+							<Route path = "seeked" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "seeked" pageTitle="Evento seeked"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* seeking */}
+							<Route path = "seeking" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "seeking" pageTitle="Evento seeking"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* stalled */}
+							<Route path = "stalled" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "stalled" pageTitle="Evento stalled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* suspend */}
+							<Route path = "suspend" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "suspend" pageTitle="Evento suspend"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* timeupdate */}
+							<Route path = "timeupdate" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "timeupdate" pageTitle="Evento timeupdate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* volumechange */}
+							<Route path = "volumechange" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "volumechange" pageTitle="Evento volumechange"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* waiting */}
+							<Route path = "waiting" element = {(
+								<Page content = {(<TutorialMain language = "html_audio_video" topic = "Eventos" title = "waiting" pageTitle="Evento waiting"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

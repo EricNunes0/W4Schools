@@ -33,7 +33,7 @@ export default function Footer() {
                         <div className = "footer-article-links-divs display-flex-column">
                             <FooterArticleLink href = "/html/default">HTML Tutorial</FooterArticleLink>
                             <FooterArticleLink href = "/css/default">CSS Tutorial</FooterArticleLink>
-                            <FooterArticleLink href = "/javascript/default">JavaScript Tutorial</FooterArticleLink>
+                            <FooterArticleLink href = "/js/default">JavaScript Tutorial</FooterArticleLink>
                             <FooterArticleLink href = "/bootstrap/default">Bootstrap Tutorial</FooterArticleLink>
                             <FooterArticleLink href = "/python/default">Python Tutorial</FooterArticleLink>
                             <FooterArticleLink href = "/sql/default">SQL Tutorial</FooterArticleLink>
@@ -50,7 +50,7 @@ export default function Footer() {
                         <div className = "footer-article-links-divs display-flex-column">
                             <FooterArticleLink href = "/html/reference">HTML Referência</FooterArticleLink>
                             <FooterArticleLink href = "/css/reference">CSS Referência</FooterArticleLink>
-                            <FooterArticleLink href = "/javascript/reference">JavaScript Referência</FooterArticleLink>
+                            <FooterArticleLink href = "/js/reference">JavaScript Referência</FooterArticleLink>
                             <FooterArticleLink href = "/sql/reference">SQL Referência</FooterArticleLink>
                             <FooterArticleLink href = "/python/reference">Python Referência</FooterArticleLink>
                             <FooterArticleLink href = "/bootstrap/reference">Bootstrap Referência</FooterArticleLink>
@@ -67,7 +67,7 @@ export default function Footer() {
                         <div className = "footer-article-links-divs display-flex-column">
                             <FooterArticleLink href = "/html/examples">HTML Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/css/examples">CSS Exemplos</FooterArticleLink>
-                            <FooterArticleLink href = "/javascript/examples">JavaScript Exemplos</FooterArticleLink>
+                            <FooterArticleLink href = "/js/examples">JavaScript Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/sql/examples">SQL Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/python/examples">Python Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/bootstrap/examples">Bootstrap Exemplos</FooterArticleLink>
@@ -84,7 +84,7 @@ export default function Footer() {
                         <div className = "footer-article-links-divs display-flex-column">
                             <FooterArticleLink href = "/html/examples">HTML Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/css/examples">CSS Exemplos</FooterArticleLink>
-                            <FooterArticleLink href = "/javascript/examples">JavaScript Exemplos</FooterArticleLink>
+                            <FooterArticleLink href = "/js/examples">JavaScript Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/sql/examples">SQL Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/python/examples">Python Exemplos</FooterArticleLink>
                             <FooterArticleLink href = "/bootstrap/examples">Bootstrap Exemplos</FooterArticleLink>
