@@ -1,6 +1,8 @@
-import pages from "../pages.json";
+import jsonSelect from "./jsonSelect";
 
-export default function pageExists(language, topicName, title, subtitle) {
+export default function pageExists(json, language, topicName, title, subtitle) {
+    let pages = jsonSelect(json);
+
     /* Buscando todos os tópicos */
     const topics = pages[language][topicName];
 

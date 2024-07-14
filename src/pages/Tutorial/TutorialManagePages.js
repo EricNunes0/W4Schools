@@ -1,10 +1,12 @@
-import pages from "../../pages.json";
 import codes from "../../codes.json";
 import { TutorialExerciseInput } from "./TutorialExerciseInput";
 import { TutorialCode } from "./TutorialCode";
+import jsonSelect from "../../functions/jsonSelect";
 
 export default class TutorialManagePages {
-    getSections(language, topic, title, subtitle) {
+    getSections(json, language, topic, title, subtitle) {
+        let pages = jsonSelect(json);
+
         let sections = null;
         if(pages[language][topic]) {
             for(const page of pages[language][topic]) {
@@ -23,7 +25,8 @@ export default class TutorialManagePages {
         };
         return sections;
     }
-    getLink(title) {
+    getLink(json, title) {
+        let pages = jsonSelect(json);
         let link = "/";
         const languages = Object.keys(pages);
         for(const language of languages) {
@@ -31,7 +34,7 @@ export default class TutorialManagePages {
             for(const topic of topics) {
                 let datas = pages[language][topic];
                 if(datas) {
-                    for(let i = 0; i <= datas.length - 1; i++){
+                    for(let i = 0; i <= datas.length - 1; i++) {
                         if(datas[i].title === title) {
                             link = datas[i] ? datas[i].link : "/";
                         };
@@ -41,7 +44,8 @@ export default class TutorialManagePages {
         };
         return link;
     }
-    getPreviousLink(language, topic, title, subtitle) {
+    getPreviousLink(json, language, topic, title, subtitle) {
+        let pages = jsonSelect(json);
         let link = null;
         let datas = pages[language][topic];
         for(let i = 0; i <= datas.length - 1; i++) {
@@ -57,10 +61,14 @@ export default class TutorialManagePages {
                                     if(datas[i - 1]) {
                                         link = datas[i - 1].link;
                                     } else {
-                                        const previousLanguage = this.getPreviousLanguage(language);
-                                        if(previousLanguage) {
+                                        const previousTopic = this.getPreviousTopic(json, language, topic);
+                                        const previousLanguage = this.getPreviousLanguage(json, language);
+                                        if(previousTopic) {
+                                            const previousTopicArray = pages[language][previousTopic];
+                                            const previousTopicArrayLastItem = previousTopicArray[previousTopicArray.length - 1];
+                                            link = previousTopicArrayLastItem.link;
+                                        } else if(previousLanguage) {
                                             const previousTopics = Object.keys(pages[previousLanguage]);
-                                            console.log(previousTopics)
                                             const previousLastTopicKey = previousTopics[previousTopics.length - 1];
                                             const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
                                             const previousLastTopicArrayLastItem = previousLastTopicArray[previousLastTopicArray.length - 1];
@@ -87,7 +95,7 @@ export default class TutorialManagePages {
                         if(pages[language][previousTopic]) {
                             link = pages[language][previousTopic][pages[language][previousTopic].length - 1].link;
                         } else {
-                            const previousLanguage = this.getPreviousLanguage(language);
+                            const previousLanguage = this.getPreviousLanguage(json, language);
                             if(previousLanguage) {
                                 const previousTopics = Object.keys(pages[previousLanguage]);
                                 const previousLastTopicKey = previousTopics[previousTopics.length - 1];
@@ -108,16 +116,19 @@ export default class TutorialManagePages {
             };
         };
         if(!link) {
-            const previousLanguage = this.getPreviousLanguage(language);
-            const previousTopics = Object.keys(pages[previousLanguage]);
-            const previousLastTopicKey = previousTopics[previousTopics.length - 1];
-            const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
-            link = previousLastTopicArray[previousLastTopicArray.length - 1].link;
-            console.log(link)
+            const previousLanguage = this.getPreviousLanguage(json, language);
+            if(previousLanguage) {
+                const previousTopics = Object.keys(pages[previousLanguage]);
+                const previousLastTopicKey = previousTopics[previousTopics.length - 1];
+                const previousLastTopicArray = pages[previousLanguage][previousLastTopicKey];
+                link = previousLastTopicArray[previousLastTopicArray.length - 1].link;
+                console.log(link)
+            }
         }
         return link;
     }
-    getNextLink(language, topic, title, subtitle) {
+    getNextLink(json, language, topic, title, subtitle) {
+        let pages = jsonSelect(json);
         let link = null;
         let datas = pages[language][topic]
         for(let i = 0; i <= datas.length - 1; i++){
@@ -144,7 +155,7 @@ export default class TutorialManagePages {
                         if(nextTopic) {
                             link = pages[language][nextTopic][0].link;
                         } else {
-                            const nextLanguage = this.getNextLanguage(language);
+                            const nextLanguage = this.getNextLanguage(json, language);
                             if(nextLanguage) {
                                 const nextTopics = Object.keys(pages[nextLanguage]);
                                 const nextFirstTopicKey = nextTopics[0];
@@ -166,7 +177,23 @@ export default class TutorialManagePages {
         };
         return link;
     };
-    getPreviousLanguage(language) {
+    /* Obter tópico anterior */
+    getPreviousTopic(json, language, topic) {
+        let pages = jsonSelect(json);
+        let topics = Object.keys(pages[language]).reverse();
+        let topicCurrent = topics.length - 1;
+        for(const tp of topics) {
+            topicCurrent--;
+            if(tp === topic) {
+                break;
+            }
+        };
+        let topicToReturn = topics.reverse()[topicCurrent];
+        //console.log(topicCurrent, topicToReturn)
+        return topicToReturn;
+    };
+    getPreviousLanguage(json, language) {
+        let pages = jsonSelect(json);
         let languages = Object.keys(pages).reverse();
         let languageCurrent = languages.length - 1;
         for(const lang of languages) {
@@ -176,10 +203,11 @@ export default class TutorialManagePages {
             }
         };
         let langToReturn = languages.reverse()[languageCurrent];
-        console.log(languageCurrent, langToReturn)
+        //console.log(languageCurrent, langToReturn)
         return langToReturn;
     };
-    getNextLanguage(language) {
+    getNextLanguage(json, language) {
+        let pages = jsonSelect(json);
         let languages = Object.keys(pages);
         let languageCurrent = 0;
         for(const lang of languages) {
@@ -197,25 +225,29 @@ export default class TutorialManagePages {
         let sectionLine = [];
         for(let i = 0; i <= line.length - 1; i++) {
             const part = line[i];
-            switch(part.type) {
-                case "code":
-                    sectionLine.push(this.lineCode(part));
-                    break;
-                case "comment":
-                    sectionLine.push(this.lineComment(part));
-                    break;
-                case "content":
-                    sectionLine.push(this.lineContent(part));
-                    break;
-                case "empty":
-                    sectionLine.push(this.lineEmpty());
-                    break;
-                case "input":
-                    sectionLine.push(this.lineInput(part));
-                    break;
-                case "value":
-                    sectionLine.push(this.lineValue(part));
-                    break;
+            if(part.type === "css") {
+                return this.lineCSS(part);
+            } else {
+                switch(part.type) {
+                    case "code":
+                        sectionLine.push(this.lineCode(part));
+                        break;
+                    case "comment":
+                        sectionLine.push(this.lineComment(part));
+                        break;
+                    case "content":
+                        sectionLine.push(this.lineContent(part));
+                        break;
+                    case "empty":
+                        sectionLine.push(this.lineEmpty());
+                        break;
+                    case "input":
+                        sectionLine.push(this.lineInput(part));
+                        break;
+                    case "value":
+                        sectionLine.push(this.lineValue(part));
+                        break;
+                };
             };
         };
         return (
@@ -291,6 +323,157 @@ export default class TutorialManagePages {
         codeText.push(this.lineCodeToHTML(content));
         return (
             <span className = "tutorial-sections-lines-parts">{codeText}</span>
+        );
+    };
+    /* CSS */
+    lineCSS(part) {
+        const selectors = part.selectors || [];
+        const wrap = part.wrap || false;
+        const declarations = part.declarations || [];
+        const tabs = part.tabs || 0;
+        const spacesBefore = part.spacesBefore || 0;
+        const spacesAfter = part.spacesAfter || 0;
+
+        /* Converter valores de declarações */
+        function declarationValueConvert(value) {
+            let result = [[value, "#c090fa", 1]];
+            if(value.type) {
+                if(value.type === "unit") {
+                    result = [[value.number, "#c090fa", 1], [value.unit, "#f565c5"]];
+                };
+            };
+            return result;
+        };
+        
+        let CSSBase;
+        let lines = [];
+        if(wrap === true) {
+            CSSBase = [
+                {   
+                    codes: [
+                        ["{", "#f0f0f0", 1]
+                    ],
+                    tabs: 0
+                },
+                {   
+                    codes: [
+                        ["}", "#f0f0f0"]
+                    ],
+                    tabs: 0
+                }
+            ];
+
+            /* Adicionando seletores */
+            if(selectors) {
+                let selectorIndex = 0;
+                for(const selector of selectors) {
+                    if(selectorIndex > 0) {
+                        CSSBase[0].codes.splice(selectorIndex, 0, [",", "#f0f0f0", 0, 1]);
+                        selectorIndex++;
+                    };
+                    CSSBase[0].codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
+                    selectorIndex++;
+                };
+            };
+
+            /* Adicionando declarações */
+            if(declarations) {
+                let declarationIndex = 1;
+                for(const declaration of declarations) {
+                    let declarationValue = declarationValueConvert(declaration.value);
+                    let declarationSyntax = [
+                        [declaration.property, "#90eaff"],
+                        [":", "#f565c5"],
+                        [";", "#f0f0f0"]
+                    ];
+
+                    /* Adicionando valores */
+                    let declarationSyntaxIndex = 2;
+                    declarationValue.forEach((value) => {
+                        declarationSyntax.splice(declarationSyntaxIndex, 0, value);
+                        declarationSyntaxIndex++;
+                    });
+
+                    CSSBase.splice(declarationIndex, 0, {
+                        codes: declarationSyntax,
+                        tabs: 1
+                    });
+                    declarationIndex++;
+                };
+            };
+            
+            CSSBase.forEach((lineBase) => {
+                let lineCode = [];
+                lineBase.codes.forEach((lineBaseCode) => {
+                    lineCode.push(this.lineCodeToHTML(lineBaseCode));
+                })
+                lines.push(
+                    <div className = "tutorial-sections-lines">
+                        <div style = {{paddingLeft: `${parseInt(40 * (tabs + lineBase.tabs))}px`}}>
+                            {lineCode}
+                        </div>
+                    </div>
+                );
+            });
+        } else {
+            CSSBase = {   
+                codes: [
+                    ["{", "#f0f0f0", 1],
+                    ["}", "#f0f0f0"]
+                ],
+                tabs: 0
+            };
+
+            /* Adicionando seletores */
+            if(selectors) {
+                let selectorIndex = 0;
+                for(const selector of selectors) {
+                    if(selectorIndex > 0) {
+                        CSSBase.codes.splice(selectorIndex, 0, [",", "#f0f0f0", 0, 1]);
+                        selectorIndex++;
+                    };
+                    CSSBase.codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
+                    selectorIndex++;
+                };
+            };
+
+            /* Adicionando declarações */
+            if(declarations) {
+                let declarationIndex = 2;
+                for(const declaration of declarations) {
+                    let declarationValue = declarationValueConvert(declaration.value);
+                    CSSBase.codes.splice(declarationIndex, 0, [declaration.property, "#90eaff", declarationIndex > 2 ? 1 : 0]);
+                    declarationIndex++;
+                    CSSBase.codes.splice(declarationIndex, 0, [":", "#f565c5"]);
+                    declarationIndex++;
+
+                    /* Adicionando valores */
+                    declarationValue.forEach((value) => {
+                        CSSBase.codes.splice(declarationIndex, 0, value);
+                        declarationIndex++;
+                    });
+                    CSSBase.codes.splice(declarationIndex, 0, [";", "#f0f0f0"]);
+                    declarationIndex++;
+                };
+            };
+            
+            let lineCodes = [];
+            CSSBase.codes.forEach((lineBase) => {
+                lineCodes.push(
+                    <div>
+                        {this.lineCodeToHTML(lineBase)}
+                    </div>
+                );
+            });
+            lines.push(<div className = "tutorial-sections-lines">
+                {lineCodes}
+            </div>)
+        };
+        
+        return (
+            <>
+                {lines}
+            </>
         );
     };
     /* Linha vazia */

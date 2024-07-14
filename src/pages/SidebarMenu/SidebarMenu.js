@@ -1,17 +1,19 @@
 import "./Sidebar.css";
 import "./SidebarLateral.css";
-import menu from "../../pages.json";
+import jsonSelect from "../../functions/jsonSelect";
 import SidebarMenuLateral from "./SidebarMenuLateral";
 import SidebarMenuTopics from "./SidebarMenuTopics";
 
 export default function SidebarMenu(prop) {
+    const json = prop.json;
     const language = prop.language;
     const title = prop.title;
     const subtitle = prop.subtitle || null;
+    let menu = jsonSelect(json);
     let menuLanguage = menu[language];
     let topics = [];
     Object.keys(menuLanguage).forEach((topicName) => {
-        topics.push(SidebarMenuTopics(language, topicName, title, subtitle));
+        topics.push(SidebarMenuTopics(json, language, topicName, title, subtitle));
     });
 
     return (

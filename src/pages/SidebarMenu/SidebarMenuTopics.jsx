@@ -1,12 +1,13 @@
+import jsonSelect from "../../functions/jsonSelect";
 import pageExists from "../../functions/pageExists";
-import menu from "../../pages.json";
 import { SidebarMenuLink } from "./SidebarMenuLink";
 import { SidebarMenuLinkSub } from "./SidebarMenuLinkSub";
 import { SidebarMenuSubtitleButton } from "./SidebarMenuSubtitleButton";
 import { SidebarMenuTitle } from "./SidebarMenuTitle";
 
-export default function SidebarMenuTopics(language, topicName, title, subtitle) {
+export default function SidebarMenuTopics(json, language, topicName, title, subtitle) {
     let links = [];
+    let menu = jsonSelect(json);
 
     function SidebarMenuLinkCreate(item) {
         if(!item.hide) {
@@ -52,7 +53,7 @@ export default function SidebarMenuTopics(language, topicName, title, subtitle) 
             }
             /* Para criar links comuns sem subtítulos */
             if(item.sections) {
-                let exists = pageExists(language, topicName, itemTitle);
+                let exists = pageExists(json, language, topicName, itemTitle);
 
                 return (
                     <SidebarMenuLink href = {itemLink} data-active = {title === itemTitle ? true : false} data-exists = {exists}>{itemBarTitle || itemTitle}</SidebarMenuLink>

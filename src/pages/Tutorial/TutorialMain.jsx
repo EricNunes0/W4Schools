@@ -21,6 +21,7 @@ import pageTitle from "../../functions/pageTitle";
 import Sidebar from "../SidebarMenu/Sidebar";
 
 export default function TutorialMain(prop) {
+    const json = prop.json;
     const language = prop.language;
     const topic = prop.topic;
     const title = prop.title;
@@ -30,11 +31,11 @@ export default function TutorialMain(prop) {
     
     return (
         <div className = "tutorials">
-            <Sidebar language = {language} title = {title} subtitle = {subtitle}></Sidebar>
+            <Sidebar json = {json} language = {language} title = {title} subtitle = {subtitle}></Sidebar>
             <main className = "tutorials-mains">
-                <TutorialHeader language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialHeader>
-                <TutorialSectionMain language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialSectionMain>
-                <TutorialFooter language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialFooter>
+                <TutorialHeader json = {json} language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialHeader>
+                <TutorialSectionMain json = {json} language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialSectionMain>
+                <TutorialFooter json = {json} language = {language} topic = {topic} title = {title} subtitle = {subtitle}></TutorialFooter>
             </main>
         </div>
     );

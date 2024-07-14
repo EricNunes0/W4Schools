@@ -37,12 +37,12 @@ import TutorialBootcamp from "./TutorialBootcamp";
 import TutorialSectionsSearch from "./TutorialSectionsSearch";
 import TutorialSectionsTips from "./TutorialSectionsTips";
 
-export default function TutorialSectionTags(tag, content) {
+export default function TutorialSectionTags(json, tag, content) {
     switch(tag) {
         case "a":
             if(content.type === "redirect" && content.wrap === true) {
-                function LinkFlex(title) {
-                    let link = new TutorialManagePages().getLink(title);
+                function LinkFlex(json, title) {
+                    let link = new TutorialManagePages().getLink(json, title);
                     return (<TutorialSectionsA href = {link} data-type = {content.type} data-wrap = {content.wrap}>{title}</TutorialSectionsA>);
                 };
 
@@ -51,7 +51,7 @@ export default function TutorialSectionTags(tag, content) {
                 for(let i = 0; i <= links.length - 1; i++) {
                     let selectedLink = links[i];
                     if(selectedLink) {
-                        sectionsLinks.push(LinkFlex(selectedLink));
+                        sectionsLinks.push(LinkFlex(json, selectedLink));
                     };
                 };
 
