@@ -341,6 +341,1256 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Introdução",
+                "link": "/css/intro",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que é o CSS?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "CSS é a linguagem que usamos para estilizar uma página da Web."
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "CSS significa \"Folhas de Estilo em Cascata\" (Cascading Style Sheets);"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outras mídias;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web de uma só vez;"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Folhas de estilo externas são armazenadas em arquivos CSS."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Demonstração CSS - Uma página HTML - Vários estilos!"
+                        },
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/pages/css/intro/intro.html",
+                                "style": {
+                                    "maxWidth": "100%"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Por que usar CSS?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "CSS é usado para definir estilos para suas páginas da web, incluindo design, layout e variações de exibição para diferentes dispositivos e tamanhos de tela."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "body",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "lightblue"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "font-family",
+                                                    "value": "verdana"
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "20",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O CSS resolveu um grande problema"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O HTML nunca foi planejado para conter tags para formatar uma página da web! Ele foi criado para descrever o conteúdo de uma página web, como:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quando tags como <font> e atributos de cor foram adicionados à especificação HTML 3.2, isso foi um pesadelo para os desenvolvedores web. O desenvolvimento de grandes sites, onde fontes e informações de cores eram adicionadas a cada página, tornou-se um processo longo e caro."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para resolver este problema, o World Wide Web Consortium (W3C) criou o CSS."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O CSS removeu a formatação de estilo da página HTML!"
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se você não sabe o que é HTML, confira: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "Tutorial de HTML",
+                                                "link": "/html/default"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS economiza muito trabalho!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As definições de estilo normalmente são salvas em arquivos .css externos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com um arquivo de folha de estilo externo, você pode alterar a aparência de um site inteiro alterando apenas um arquivo!"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Sintaxe",
+                "link": "/css/syntax",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Sintaxe"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A sintaxe CSS consiste em um seletor e um bloco de declaração."
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/examples/css/syntax/syntax.png",
+                                "alt": "Exemplo da sintaxe do CSS",
+                                "style": {
+                                    "maxWidth": "100%"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "O "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "seletor",
+                                "style": {
+                                    "color": "#50d070"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " aponta para o elemento HTML que você deseja estilizar."
+                            }
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "O "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "bloco de declaração",
+                                "style": {
+                                    "color": "#d05050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " contém uma ou mais "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "declarações",
+                                "style": {
+                                    "color": "#d09050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " separadas por ponto e vírgula."
+                            }
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "Cada "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "declaração",
+                                "style": {
+                                    "color": "#d09050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " inclui uma "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "propriedade",
+                                "style": {
+                                    "color": "#b050d0"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " e um "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valor",
+                                "style": {
+                                    "color": "#d0d050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": ", separados por dois pontos."
+                            }
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "Múltiplas "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "declarações",
+                                "style": {
+                                    "color": "#d09050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " CSS são separadas por ponto e vírgula e os "
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "blocos de declaração",
+                                "style": {
+                                    "color": "#d05050"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": " são cercados por chaves."
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo, todas as tags <p> serão alinhadas ao centro, com uma cor de texto vermelha:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h4",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "p"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um seletor no CSS (aponta para o elemento HTML que você deseja estilizar:",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "p tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ")."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma propriedade e ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "red purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é o valor da propriedade",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "text-align cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma propriedade e ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "center purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é o valor da propriedade",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Você aprenderá muito mais sobre seletores CSS e propriedades CSS nos próximos capítulos!"
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Seletores",
+                "link": "/css/selectors",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletores"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um seletor CSS seleciona os elementos HTML que você deseja estilizar."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os seletores CSS são usados ​​para \"encontrar\" (ou selecionar) os elementos HTML que você deseja estilizar."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Podemos dividir os seletores CSS em cinco categorias:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Seletores simples (selecionam elementos com base no nome, id, classe)"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Seletores combinadores",
+                                                "link": "/css/combinators"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(selecionam elementos com base em um relacionamento específico entre eles)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Seletores de pseudoclasse",
+                                                "link": "/css/pseudo_classes"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(selecionam elementos com base em um determinado estado)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Seletores de pseudoelementos",
+                                                "link": "/css/pseudo_elements"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(selecionam e estilizam uma parte de um elemento)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Seletores de atributos",
+                                                "link": "/css/attribute_selectors"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(selecionam e estilizam uma parte de um elemento)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Esta página explicará os seletores CSS mais básicos."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Seletor de elementos CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor de elementos seleciona elementos HTML com base no nome do elemento."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo, todas as tags <p> serão alinhadas ao centro, com uma cor de texto vermelha:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Seletor de id CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor de id usa o atributo id de um elemento HTML para selecionar um elemento específico."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O id de um elemento é único em uma página, então o seletor de id é usado para selecionar um elemento único!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido do id do elemento."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "O CSS abaixo será aplicado ao elemento HTML com id=\"para1\":",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#para1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Um nome de id não pode começar com um número!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Seletor de classe CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor de classe seleciona elementos HTML com um atributo de classe específico."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para selecionar elementos com uma classe específica, escreva um ponto final (.), seguido do nome da classe."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo, todos os elementos HTML com class=\"center\" serão vermelhos e alinhados ao centro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".center",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você também pode especificar que apenas elementos HTML específicos devem ser afetados por uma classe."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo, apenas as tags <p> com class=\"center\" serão vermelhos e alinhados ao centro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".center",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os elementos HTML também podem referir-se a mais de uma classe."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo a tag <p> será estilizada de acordo com class=\"center\" e class=\"large\":",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "center large",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Este parágrafo refere-se a duas classes.",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O nome de uma classe não pode começar com um número!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Seletor universal CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor universal (*) seleciona todos os elementos HTML da página."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "O CSS abaixo afetará todos os elementos HTML da página:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "*",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "blue"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Seletor de agrupamento CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor de agrupamento seleciona todos os elementos HTML com as mesmas definições de estilo."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Observe o seguinte código CSS (os elementos h1, h2 e p têm as mesmas definições de estilo):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h2",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Seria melhor agrupar os seletores, para minimizar o código."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para agrupar seletores, separe cada seletor com uma vírgula."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de CSS:",
+                                "description": "Neste exemplo agrupamos os seletores do código acima:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "selector": "h2",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exercícios de CSS"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Teste seus conhecimentos com exercícios!",
+                                "description": "Defina a cor de todos os elementos <p> como vermelho:",
+                                "answer": ["p", "color:"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answer",
+                                            "width": "10px",
+                                            "maxLength": 1,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answer",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "red",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todos os seletores simples CSS"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Seletor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Exemplo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "#id",
+                                            "href": "/css/ref/sel/id"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "#firstname"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o elemento com id=\"firstname\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ".class",
+                                            "href": "/css/ref/sel/class"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": ".intro"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o elemento com class=\"intro\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "elemento.class",
+                                            "href": "/css/ref/sel/element_class"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p.intro"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona apenas elementos <p> com class=\"intro\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "*",
+                                            "href": "/css/ref/sel/all"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "*"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "elemento",
+                                            "href": "/css/ref/sel/element"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "elemento,elemento,...",
+                                            "href": "/css/ref/sel/element_comma"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "div, p"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <div> e todos os elementos <p>"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

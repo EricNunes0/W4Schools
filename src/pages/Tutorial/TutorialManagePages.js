@@ -371,8 +371,15 @@ export default class TutorialManagePages {
                         CSSBase[0].codes.splice(selectorIndex, 0, [",", "#f0f0f0", 0, 1]);
                         selectorIndex++;
                     };
-                    CSSBase[0].codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
-                    selectorIndex++;
+                    if(selector.selectors) {
+                        for(const sel of selector.selectors) {
+                            CSSBase[0].codes.splice(selectorIndex, 0, [sel.selector, sel.color]);
+                            selectorIndex++;
+                        }
+                    } else {
+                        CSSBase[0].codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
+                        selectorIndex++;
+                    }
                 };
             };
 
@@ -425,24 +432,31 @@ export default class TutorialManagePages {
             };
 
             /* Adicionando seletores */
+            let selectorIndex = 0;
             if(selectors) {
-                let selectorIndex = 0;
                 for(const selector of selectors) {
                     if(selectorIndex > 0) {
                         CSSBase.codes.splice(selectorIndex, 0, [",", "#f0f0f0", 0, 1]);
                         selectorIndex++;
                     };
-                    CSSBase.codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
-                    selectorIndex++;
+                    if(selector.selectors) {
+                        for(const sel of selector.selectors) {
+                            CSSBase.codes.splice(selectorIndex, 0, [sel.selector, sel.color]);
+                            selectorIndex++;
+                        }
+                    } else {
+                        CSSBase.codes.splice(selectorIndex, 0, [selector.selector, selector.color]);
+                        selectorIndex++;
+                    }
                 };
             };
 
             /* Adicionando declarações */
             if(declarations) {
-                let declarationIndex = 2;
+                let declarationIndex = selectorIndex + 1;
                 for(const declaration of declarations) {
                     let declarationValue = declarationValueConvert(declaration.value);
-                    CSSBase.codes.splice(declarationIndex, 0, [declaration.property, "#90eaff", declarationIndex > 2 ? 1 : 0]);
+                    CSSBase.codes.splice(declarationIndex, 0, [declaration.property, "#90eaff", declarationIndex > selectorIndex + 1 ? 1 : 0]);
                     declarationIndex++;
                     CSSBase.codes.splice(declarationIndex, 0, [":", "#f565c5"]);
                     declarationIndex++;

@@ -3578,6 +3578,18 @@ function App() {
 					<Route path = "default" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS HOME"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Introdução */}
+					<Route path = "intro" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Introdução"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Sintaxe */}
+					<Route path = "syntax" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Sintaxe"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Seletores */}
+					<Route path = "selectors" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Seletores"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
