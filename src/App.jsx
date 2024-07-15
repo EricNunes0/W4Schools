@@ -3590,6 +3590,36 @@ function App() {
 					<Route path = "selectors" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Seletores"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Como usar */}
+					<Route path = "howto" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Como usar"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Comentários */}
+					<Route path = "comments" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Comentários"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Cores */}
+					<Route path = "colors">
+						{/* Introdução */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Cores" subtitle = "Introdução"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RGB */}
+						<Route path = "rgb" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Cores" subtitle = "RGB"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* HEX */}
+						<Route path = "hex" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Cores" subtitle = "HEX"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RGB */}
+						<Route path = "hsl" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Cores" subtitle = "HSL"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
