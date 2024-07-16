@@ -339,11 +339,23 @@ export default class TutorialManagePages {
             let result = [[value, "#c090fa", 1]];
             if(value.type) {
                 if(value.type === "color") {
-                    if(value.method === "rgba") {
+                    if(value.method === "rgb") {
+                        result = [["rgb", "#90eaff", 1], ["(", "#f0f0f0"], [value.r, "#c090fa"], [",", "#f0f0f0"], [value.g, "#c090fa", 1], [",", "#f0f0f0"], [value.b, "#c090fa", 1], [")", "#f0f0f0"]];
+                    } else if(value.method === "rgba") {
                         result = [["rgba", "#90eaff", 1], ["(", "#f0f0f0"], [value.r, "#c090fa"], [",", "#f0f0f0"], [value.g, "#c090fa", 1], [",", "#f0f0f0"], [value.b, "#c090fa", 1], [",", "#f0f0f0"], [value.a, "#c090fa", 1], [")", "#f0f0f0"]];
+                    } else if(value.method === "hsl") {
+                        result = [["hsl", "#90eaff", 1], ["(", "#f0f0f0"], [value.h, "#c090fa"], [",", "#f0f0f0"], [value.s, "#c090fa", 1], ["%", "#f565c5"], [",", "#f0f0f0"], [value.l, "#c090fa", 1], ["%", "#f565c5"], [")", "#f0f0f0"]];
                     }
                 } else if(value.type === "unit") {
-                    result = [[value.number, "#c090fa", 1], [value.unit, "#f565c5"]];
+                    if(value.values) {
+                        let vals = [];
+                        value.values.forEach((val) => {
+                            vals.push([val.number, "#c090fa", 1], [val.unit, "#f565c5"]);
+                        });
+                        result = vals;
+                    } else {
+                        result = [[value.number, "#c090fa", 1], [value.unit, "#f565c5"]];
+                    }
                 } else if(value.type === "url") {
                     result = [["url", "#90eaff", 1], ["(", "#f0f0f0"], [value.url, "#f5f565"], [")", "#f0f0f0"]];
                 };

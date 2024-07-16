@@ -3646,6 +3646,36 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Bordas */}
+					<Route path = "border">
+						{/* Bordas */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Bordas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Border Width */}
+						<Route path = "width" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Border Width"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Border Color */}
+						<Route path = "color" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Border Color"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Border Lados */}
+						<Route path = "sides" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Border Lados"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Border Abreviação */}
+						<Route path = "shorthand" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Border Abreviação"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Bordas arredondadas */}
+						<Route path = "rounded" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Bordas" subtitle = "Bordas arredondadas"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
