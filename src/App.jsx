@@ -3620,6 +3620,32 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Backgrounds */}
+					<Route path = "background">
+						{/* Background Color */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Backgrounds" subtitle = "Background Color"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Background Image */}
+						<Route path = "image" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Backgrounds" subtitle = "Background Image"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Background Repeat */}
+						<Route path = "repeat" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Backgrounds" subtitle = "Background Repeat"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Background Attachment */}
+						<Route path = "attachment" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Backgrounds" subtitle = "Background Attachment"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Background Abreviação */}
+						<Route path = "shorthand" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Backgrounds" subtitle = "Background Abreviação"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

@@ -338,8 +338,14 @@ export default class TutorialManagePages {
         function declarationValueConvert(value) {
             let result = [[value, "#c090fa", 1]];
             if(value.type) {
-                if(value.type === "unit") {
+                if(value.type === "color") {
+                    if(value.method === "rgba") {
+                        result = [["rgba", "#90eaff", 1], ["(", "#f0f0f0"], [value.r, "#c090fa"], [",", "#f0f0f0"], [value.g, "#c090fa", 1], [",", "#f0f0f0"], [value.b, "#c090fa", 1], [",", "#f0f0f0"], [value.a, "#c090fa", 1], [")", "#f0f0f0"]];
+                    }
+                } else if(value.type === "unit") {
                     result = [[value.number, "#c090fa", 1], [value.unit, "#f565c5"]];
+                } else if(value.type === "url") {
+                    result = [["url", "#90eaff", 1], ["(", "#f0f0f0"], [value.url, "#f5f565"], [")", "#f0f0f0"]];
                 };
             };
             return result;

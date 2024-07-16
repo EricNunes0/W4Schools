@@ -9,7 +9,7 @@ export default function TutorialSectionsColorBlocks(content) {
         for(const block of content.blocks) {
             let blockId = Math.floor(Math.random() * (10000 * 10000));
             let colorBlockId = `tutorials-sections-color-block-${blockId}`;
-            colorBlocks.push(<TutorialSectionsColorBlock id = {colorBlockId} style = {{backgroundColor: block.backgroundColor, color: block.color}}
+            colorBlocks.push(<TutorialSectionsColorBlock id = {colorBlockId} style = {{backgroundColor: block.backgroundColor, color: block.color, opacity: block.opacity}}
                 onClick = {
                     function() {
                         const colorBlock = document.querySelector(`#${colorBlockId}`);

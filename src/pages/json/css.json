@@ -5162,6 +5162,2223 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "CSS Backgrounds",
+                "link": "/css/background",
+                "subtitles": [
+                    {
+                        "subtitle": "Background Color",
+                        "link": "/css/background",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "As propriedades de background (fundo) CSS são usadas para adicionar efeitos de fundo aos elementos."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Nestes capítulos, você aprenderá sobre as seguintes propriedades de plano de fundo CSS:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-color cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-image cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-repeat cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-attachment cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-position cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "(propriedade abreviada)",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-color"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-color cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica a cor de fundo de um elemento."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-color:",
+                                        "description": "Definindo uma cor de fundo para uma página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "lightblue"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Com CSS, uma cor é geralmente especificada por:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um nome de cor válido - como \"red\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Um valor HEX - como \"#ff0000\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Um valor RGB - como \"rgb(255,0,0)\""
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Para obter uma lista completa de valores de cores possíveis, confira: "
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "CSS Valores de cores",
+                                                        "link": "/css/ref/colors_legal"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Outros elementos"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você pode definir a cor de fundo para qualquer elemento HTML:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-color:",
+                                        "description": "Definindo que as tags <h1>, <p> e <div> terão cores de fundo diferentes:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h1",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "green"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "lightblue"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "yellow"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Opacidade / Transparência"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "opacity cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica a opacidade/transparência de um elemento."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Pode assumir um valor de \"0.0\" a \"1.0\". Quanto menor o valor, mais transparente:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "color-blocks",
+                                    "content": {
+                                        "blocks": [
+                                            {
+                                                "text": "Opacidade 1",
+                                                "backgroundColor": "#5075d0",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Opacidade 0.6",
+                                                "backgroundColor": "#5075d0",
+                                                "color": "white",
+                                                "opacity": "0.6"
+                                            },
+                                            {
+                                                "text": "Opacidade 0.3",
+                                                "backgroundColor": "#5075d0",
+                                                "color": "white",
+                                                "opacity": "0.3"
+                                            },
+                                            {
+                                                "text": "Opacidade 0.1",
+                                                "backgroundColor": "#5075d0",
+                                                "color": "white",
+                                                "opacity": "0.1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de opacity:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "green"
+                                                        },
+                                                        {
+                                                            "property": "opacity",
+                                                            "value": "0.3"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Ao usar a propriedade opacity para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência. Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Transparência usando RGBA"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Se você não quiser aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA. O exemplo a seguir define a opacidade da cor de fundo e não do texto:"
+                                },
+                                {
+                                    "tag": "color-blocks",
+                                    "content": {
+                                        "blocks": [
+                                            {
+                                                "text": "Opacidade 100%",
+                                                "backgroundColor": "rgba(80, 117, 208, 1.0)",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Opacidade 60%",
+                                                "backgroundColor": "rgba(80, 117, 208, 0.6)",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Opacidade 30%",
+                                                "backgroundColor": "rgba(80, 117, 208, 0.3)",
+                                                "color": "white"
+                                            },
+                                            {
+                                                "text": "Opacidade 10%",
+                                                "backgroundColor": "rgba(80, 117, 208, 0.1)",
+                                                "color": "white"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você pode usar RGB como valor de cor com canal alfa (RGBA) - que especifica a opacidade de uma cor."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Um valor de cor RGBA é especificado com: rgba(vermelho, verde, azul, alfa). O parâmetro alfa é um número entre 0.0 (totalmente transparente) e 1.0 (totalmente opaco)."
+                                },
+                                {
+                                    "tag": "tip",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Para aprender mais sobre cores RGBA, confira: "
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "CSS Cores",
+                                                        "link": "/css/colors"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "comment",
+                                                    "code": "/* Fundo verde com 30% de opacidade */"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background",
+                                                            "value": {
+                                                                "type": "color",
+                                                                "method": "rgba",
+                                                                "r": 0,
+                                                                "g": 128,
+                                                                "b": 0,
+                                                                "a": 0.3
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para alterar a cor de fundo de um elemento:",
+                                        "answers": [["background", "background-color"]],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "156px",
+                                                    "maxLength": 16,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "red",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Use a propriedade para alterar a opacidade de um elemento:",
+                                        "answers": ["opacity"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "69px",
+                                                    "maxLength": 7,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "0.3",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "A propriedade background-color"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-color",
+                                                    "href": "/css/ref/props/background-color"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a cor de fundo de um elemento"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Background Image",
+                        "link": "/css/background/image",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-image"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-image cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica uma imagem que será usada como plano de fundo de um elemento."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, a imagem é repetida para cobrir todo o elemento."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-image:",
+                                        "description": "Definindo uma imagem de fundo para uma página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-image:",
+                                        "description": "Este exemplo mostra uma combinação incorreta de texto e imagem de fundo. O texto é dificilmente legível:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"bgdesert.jpg\""
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Ao usar uma imagem de fundo, use uma imagem que não perturbe o texto."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A imagem de fundo também pode ser definida para elementos específicos, como o elemento <p>:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-image:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para alterar a cor de fundo de um elemento:",
+                                        "answers": ["background-image"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "156px",
+                                                    "maxLength": 16,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "A propriedade background-image"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-image",
+                                                    "href": "/css/ref/props/background-image"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a imagem de fundo de um elemento"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Background Repeat",
+                        "link": "/css/background/repeat",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-repeat"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Por padrão, a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-image cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " repete uma imagem tanto horizontal quanto verticalmente."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Algumas imagens devem ser repetidas apenas na horizontal ou na vertical, ou ficarão estranhas, assim:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-image:",
+                                        "description": "Definindo uma imagem de fundo para uma página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"gradient_bg.png\""
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se a imagem acima for repetida apenas horizontalmente, o fundo ficará melhor."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Para isto, usaremos "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-repeat: repeat-x;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " para repetir a imagem apenas horizontalmente:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-repeat:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"gradient_bg.png\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "repeat-x"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Para repetir uma imagem verticalmente, defina background-repeat: repeat-y;"
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-repeat: no-repeat"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Mostrar a imagem de fundo apenas uma vez também é especificado pela propriedade background-repeat:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-repeat:",
+                                        "description": "Mostrando a imagem de fundo apenas uma vez:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "no-repeat"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No exemplo acima, a imagem de fundo é colocada no mesmo lugar que o texto. Queremos mudar a posição da imagem, para que não atrapalhe muito o texto."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-position"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-position cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é usada para especificar a posição da imagem de fundo."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-position:",
+                                        "description": "Posicionando a imagem de fundo no canto superior direito:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "no-repeat"
+                                                        },
+                                                        {
+                                                            "property": "background-position",
+                                                            "value": "right top"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade correta para fazer a imagem ser exibida apenas horizontalmente:",
+                                        "answers": ["background-repeat", "repeat-x"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "165px",
+                                                    "maxLength": 17,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "79px",
+                                                    "maxLength": 8,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Use a propriedade correta para posicionar a imagem:",
+                                        "answers": ["background-position"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "...",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "185px",
+                                                    "maxLength": 19,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "right top",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "As propriedades background-repeat e background-position"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-position",
+                                                    "href": "/css/ref/props/background-position"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a posição inicial de uma imagem de fundo"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-repeat",
+                                                    "href": "/css/ref/props/background-repeat"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define como uma imagem de fundo será repetida"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Background Attachment",
+                        "link": "/css/background/attachment",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background-attachment"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-attachment cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica se a imagem de fundo deve rolar ou ser fixa."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Ou seja, se rolará ou não com o resto da página."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-attachment:",
+                                        "description": "Especificando que a imagem de fundo deve ser fixa:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "no-repeat"
+                                                        },
+                                                        {
+                                                            "property": "background-position",
+                                                            "value": "right top"
+                                                        },
+                                                        {
+                                                            "property": "background-attachment",
+                                                            "value": "fixed"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background-attachment:",
+                                        "description": "Especificando que a imagem de fundo deve rolar com o restante da página:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "no-repeat"
+                                                        },
+                                                        {
+                                                            "property": "background-position",
+                                                            "value": "right top"
+                                                        },
+                                                        {
+                                                            "property": "background-attachment",
+                                                            "value": "scroll"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use o valor correto para fazer a imagem ficar fixa na página:",
+                                        "answers": ["fixed"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat: repeat-x;",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-position: right top;",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-attachment cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "50px",
+                                                    "maxLength": 5,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Use o valor correto para fazer a imagem rolar junto com a página:",
+                                        "answers": ["scroll"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-image cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-repeat: repeat-x;",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-position: right top;",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background-attachment cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "59px",
+                                                    "maxLength": 6,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "A propriedade background-attachment"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-attachment",
+                                                    "href": "/css/ref/props/background-attachment"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define se uma imagem de fundo é fixa ou rola com o resto da página"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Background Abreviação",
+                        "link": "/css/background/shorthand",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS background - propriedade abreviada"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Para encurtar o código, também é possível especificar todas as propriedades de fundo em uma única propriedade. Isso é chamado de \"propriedade abreviada\"."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em vez de escrever:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "body",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#ffffff"
+                                                        },
+                                                        {
+                                                            "property": "background-image",
+                                                            "value": {
+                                                                "type": "url",
+                                                                "url": "\"exemplo.gif\""
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-repeat",
+                                                            "value": "no-repeat"
+                                                        },
+                                                        {
+                                                            "property": "background-position",
+                                                            "value": "right top"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você pode usar apenas "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " para abreviar:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de background:",
+                                        "description": "Usando a propriedade abreviada para definir as propriedades de plano de fundo em uma declaração:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "background cyan",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "#ffffff",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "url(",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "\"exemplo.gif\"",
+                                                    "color": "#f5f565"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "parantheses right"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "no-repeat right top",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-color cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-image cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-repeat cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-attachment cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-position cyan"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Não importa se falta um dos valores da propriedade, desde que os demais estejam nesta ordem. Observe que não usamos a propriedade background-attachment nos exemplos acima, pois ela não possui valor."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Defina a cor de fundo da tag <h1> como \"lightblue\":",
+                                        "answers": [
+                                            [
+                                                "background",
+                                                "background-color"
+                                            ],
+                                            "lightblue"
+                                        ],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "156px",
+                                                    "maxLength": 16,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "88px",
+                                                    "maxLength": 9,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Este é um título",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Este é um parágrafo.",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Este é outro parágrafo.",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Todas as propriedades de background"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background",
+                                                    "href": "/css/ref/props/background"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define todas as propriedades de fundo em uma declaração"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-attachment",
+                                                    "href": "/css/ref/props/background-attachment"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define se uma imagem de fundo é fixa ou rola com o resto da página"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-clip",
+                                                    "href": "/css/ref/props/background-clip"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica a área de pintura do plano de fundo"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-color",
+                                                    "href": "/css/ref/props/background-color"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a cor de fundo de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-image",
+                                                    "href": "/css/ref/props/background-image"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a imagem de fundo de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-origin",
+                                                    "href": "/css/ref/props/background-origin"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica onde as imagens de fundo estão posicionadas"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-position",
+                                                    "href": "/css/ref/props/background-position"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a posição inicial de uma imagem de fundo"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-repeat",
+                                                    "href": "/css/ref/props/background-repeat"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define como uma imagem de fundo será repetida"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "background-size",
+                                                    "href": "/css/ref/props/background-size"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o tamanho da(s) imagem(s) de fundo"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
             }
         ]
     }
