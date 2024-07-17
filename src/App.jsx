@@ -3676,6 +3676,24 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Margens */}
+					<Route path = "margin">
+						{/* Margens */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Margens" subtitle = "Margens"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Colapso de margem */}
+						<Route path = "collapse" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Margens" subtitle = "Colapso de margem"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
+					{/* Padding */}
+					<Route path = "padding" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Padding"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

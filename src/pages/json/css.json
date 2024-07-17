@@ -9432,7 +9432,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": " tiver apenas um valores:"
+                                                        "text": " tiver apenas um valor:"
                                                     }
                                                 ]
                                             }
@@ -11172,6 +11172,2995 @@
                             ]
                         ]
                     }
+                ]
+            },
+            {
+                "title": "CSS Margens",
+                "link": "/css/margin",
+                "subtitles": [
+                    {
+                        "subtitle": "Margens",
+                        "link": "/css/margin",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "As margens são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Este elemento tem uma margem de 70px.",
+                                        "style": {
+                                            "borderColor": "#5075d0",
+                                            "borderStyle": "solid",
+                                            "borderWidth": 1,
+                                            "color": "white",
+                                            "margin": "70px",
+                                            "padding": "16px",
+                                            "textAlign": "left",
+                                            "width": "calc(100% - calc(70px * 2))"
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Margin"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "As propriedades de margem CSS são usadas para criar espaço ao redor dos elementos, fora de quaisquer bordas definidas."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Com CSS, você tem controle total sobre as margens. Existem propriedades para definir a margem para cada lado de um elemento (superior, direito, inferior e esquerdo)."
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Margin - Lados Individuais"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "O CSS possui propriedades para especificar a margem de cada lado de um elemento:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-top cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-right cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-bottom cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-left cyan"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Todas as propriedades de margem podem ter os seguintes valores:"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "auto - o navegador calcula a margem"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "length (comprimento) - especifica uma margem em px, pt, cm, etc."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "% - especifica uma margem em% da largura do elemento que contém"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "inherit (herdada) - especifica que a margem deve ser herdada do elemento pai"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "tip",
+                                    "content": "Valores negativos são permitidos."
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margens:",
+                                        "description": "Definindo margens diferentes para todos os quatro lados de um elemento <p>:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin-top",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "margin-bottom",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "margin-right",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "150",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "margin-left",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "80",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Margin - Propriedade abreviada"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para encurtar o código, é possível especificar todas as propriedades de margem em uma propriedade."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é uma propriedade abreviada para as seguintes propriedades de margem individuais:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-top cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-right cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-bottom cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin-left cyan"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Veja como funciona:"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " tiver quatro valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h5",
+                                    "content": "margin: 25px 50px 75px 100px;"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem superior: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "25px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem direita: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "50px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem inferior: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "75px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem esquerda: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "100px"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin:",
+                                        "description": "Usando a propriedade abreviada margin com quatro valores:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "25",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "50",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "75",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "100",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " tiver três valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h5",
+                                    "content": "margin: 25px 50px 75px;"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem superior: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "25px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margens direita e esquerda: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "50px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margem inferior: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "75px"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin:",
+                                        "description": "Usando a propriedade abreviada margin com três valores:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "25",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "50",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "75",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " tiver dois valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h5",
+                                    "content": "margin: 25px 50px;"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margens superior e inferior: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "25px"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Margens direita e esquerda: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "50px"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin:",
+                                        "description": "Usando a propriedade abreviada margin com dois valores:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "25",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "50",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " tiver apenas um valor:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h5",
+                                    "content": "margin: 25px;"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Todas as quatro margens: ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "25px"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin:",
+                                        "description": "Usando a propriedade abreviada margin com um valor:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "25",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "O valor auto"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você pode definir a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " como "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "auto purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Isto centraliza horizontalmente o elemento dentro de seu contêiner."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "O elemento ocupará então a largura especificada e o espaço restante será dividido igualmente entre as margens esquerda e direita."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin: auto:",
+                                        "description": "Usando margin: auto:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "300",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "auto"
+                                                        },
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid red"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "O valor inherit"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Este exemplo permite que a margem esquerda do elemento <p class=\"ex1\"> seja herdada do elemento pai (<div>):"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin-left:",
+                                        "description": "Usando margin-left: inherit:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid red"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "margin-left",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ],
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin-left",
+                                                            "value": "inherit"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para definir uma margem para todos os lados de um elemento:",
+                                        "answers": ["margin"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "59px",
+                                                    "maxLength": 6,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "20",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 2:",
+                                        "description": "Use a propriedade para definir uma margem para o lado esquerdo de um elemento:",
+                                        "answers": ["margin-left"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "107px",
+                                                    "maxLength": 11,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "40",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 3:",
+                                        "description": "Use a propriedade para definir uma margem para o lado direito de um elemento:",
+                                        "answers": ["margin-right"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "117px",
+                                                    "maxLength": 12,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "40",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 4:",
+                                        "description": "Use a propriedade para definir uma margem superior de um elemento:",
+                                        "answers": ["margin-top"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "97px",
+                                                    "maxLength": 10,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "20",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 5:",
+                                        "description": "Use a propriedade para definir uma margem inferior de um elemento:",
+                                        "answers": ["margin-bottom"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "20",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Todas as propriedades de margem"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin",
+                                                    "href": "/css/ref/props/margin"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Uma propriedade abreviada para definir todas as propriedades de margem em uma declaração"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-bottom",
+                                                    "href": "/css/ref/props/margin-bottom"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem inferior de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-left",
+                                                    "href": "/css/ref/props/margin-left"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem esquerda de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-right",
+                                                    "href": "/css/ref/props/margin-right"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem direita de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-top",
+                                                    "href": "/css/ref/props/margin-top"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem superior de um elemento"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Colapso de margem",
+                        "link": "/css/margin/collapse",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Às vezes, duas margens se transformam em uma única margem."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Colapso de margem"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "As margens superior e inferior dos elementos às vezes são recolhidas em uma única margem que é igual à maior das duas margens."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Isso não acontece nas margens esquerda e direita! Somente margens superior e inferior!"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Veja o exemplo a seguir:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de margin:",
+                                        "description": "Demonstração do colapso da margem:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h1",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "0 0"
+                                                                    },
+                                                                    {
+                                                                        "number": "50",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "0"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h2",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "20",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "0 0 0"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No exemplo acima, o elemento <h1> possui uma margem inferior de 50px e o elemento <h2> possui uma margem superior definida como 20px."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O bom senso parece sugerir que a margem vertical entre <h1> e <h2> seria um total de 70px (50px + 20px). Mas devido ao colapso da margem, a margem real acaba sendo de 50px."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Adicione uma margem esquerda de 20 pixels ao elemento <h1>.",
+                                        "answers": ["h1", "margin-left", "20px"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "20px",
+                                                    "maxLength": 2,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "107px",
+                                                    "maxLength": 11,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-3",
+                                                    "width": "40px",
+                                                    "maxLength": 4,
+                                                    "spacesBefore": 1,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "h1 tag",
+                                                    "content": "Este é um título",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Este é um parágrafo.",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p tag",
+                                                    "content": "Este é outro parágrafo.",
+                                                    "contentIndex": -3,
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Todas as propriedades de margem"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin",
+                                                    "href": "/css/ref/props/margin"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Uma propriedade abreviada para definir todas as propriedades de margem em uma declaração"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-bottom",
+                                                    "href": "/css/ref/props/margin-bottom"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem inferior de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-left",
+                                                    "href": "/css/ref/props/margin-left"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem esquerda de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-right",
+                                                    "href": "/css/ref/props/margin-right"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem direita de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "margin-top",
+                                                    "href": "/css/ref/props/margin-top"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a margem superior de um elemento"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "CSS Padding",
+                "link": "/css/padding",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "O padding (preenchimento) é usado para criar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Este elemento possui um preenchimento de 70px.",
+                                "style": {
+                                    "borderColor": "#5075d0",
+                                    "borderStyle": "solid",
+                                    "borderWidth": 1,
+                                    "color": "white",
+                                    "padding": "70px",
+                                    "textAlign": "left",
+                                    "width": "calc(100% - calc(70px * 2))"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Padding"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "As propriedades de preenchimento CSS são usadas para gerar espaço ao redor do conteúdo de um elemento, dentro de quaisquer bordas definidas."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Com CSS, você tem controle total sobre o preenchimento. Existem propriedades para definir o preenchimento de cada lado de um elemento (superior, direito, inferior e esquerdo)."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Padding - Lados Individuais"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O CSS possui propriedades para especificar o preenchimento de cada lado de um elemento:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-top cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-right cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-bottom cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-left cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Todas as propriedades de espaçamento podem ter os seguintes valores:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "length (comprimento) - especifica um espaçamento em px, pt, cm, etc."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "% - especifica um espaçamento em% da largura do elemento que contém"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "inherit (herdado) - especifica que o espaçamento deve ser herdada do elemento pai"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "Valores negativos não são permitidos."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de espaçamento:",
+                                "description": "Definindo um preenchimento diferente para todos os quatro lados de um elemento <div>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding-top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding-right",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "30",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding-bottom",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding-left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "80",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Padding - Propriedade abreviada"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Para encurtar o código, é possível especificar todas as propriedades de espaçamento em uma propriedade."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma propriedade abreviada para as seguintes propriedades de espaçamento individuais:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-top cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-right cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-bottom cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padding-left cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Veja como funciona:"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " tiver quatro valores:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h5",
+                            "content": "padding: 25px 50px 75px 100px;"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento superior: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "25px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento direito: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "50px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento inferior: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "75px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento esquerdo: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "100px"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Usando a propriedade abreviada padding com quatro valores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "25",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "50",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "75",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "100",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " tiver três valores:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h5",
+                            "content": "padding: 25px 50px 75px;"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento superior: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "25px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamentos à direita e esquerda: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "50px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento inferior: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "75px"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Usando a propriedade abreviada padding com três valores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "25",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "50",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "75",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " tiver dois valores:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h5",
+                            "content": "padding: 25px 50px;"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamento superior e inferior: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "25px"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Espaçamentos à direita e esquerda: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "50px"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Usando a propriedade abreviada padding com dois valores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "25",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "50",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " tiver apenas um valor:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h5",
+                            "content": "padding: 25px;"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Todas os quatro espaçamentos: ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "25px"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Usando a propriedade abreviada padding com um valor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "25",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Preenchimento e largura do elemento"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "width cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica a largura da área de conteúdo do elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A área de conteúdo é a parte dentro do preenchimento, borda e margem de um elemento (o modelo de caixa)."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Portanto, se um elemento tiver uma largura especificada, o preenchimento adicionado a esse elemento será adicionado à largura total do elemento. Muitas vezes este é um resultado indesejável."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Aqui, o elemento <div> recebe uma largura de 300px. No entanto, a largura real do elemento <div> será 350px (300px + 25px de preenchimento esquerdo + 25px de preenchimento direito):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "300",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "25",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para manter a largura em 300px, não importa a quantidade de preenchimento, você pode usar a propriedade box-sizing. Isto faz com que o elemento mantenha sua largura real; se você aumentar o preenchimento, o espaço de conteúdo disponível diminuirá."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padding:",
+                                "description": "Usando a propriedade box-sizing para manter a largura em 300px, independentemente da quantidade de preenchimento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "300",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "25",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "box-sizing",
+                                                    "value": "border-box"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Definindo o preenchimento esquerdo",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como definir o preenchimento esquerdo de um elemento <p>."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Definindo o preenchimento direito",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como definir o preenchimento direito de um elemento <p>."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Definindo o preenchimento superior",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como definir o preenchimento superior de um elemento <p>."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Definindo o preenchimento inferior",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como definir o preenchimento inferior de um elemento <p>."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Use a propriedade para definir um espaçamento para todos os lados de um elemento:",
+                                "answers": ["padding"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "69px",
+                                            "maxLength": 7,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "20",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 2:",
+                                "description": "Use a propriedade para definir um espaçamento para o lado esquerdo de um elemento:",
+                                "answers": ["padding-left"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "117px",
+                                            "maxLength": 12,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 3:",
+                                "description": "Use a propriedade para definir um espaçamento para o lado direito de um elemento:",
+                                "answers": ["padding-right"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "127px",
+                                            "maxLength": 13,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 4:",
+                                "description": "Use a propriedade para definir um espaçamento superior de um elemento:",
+                                "answers": ["padding-top"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "107px",
+                                            "maxLength": 11,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "20",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 5:",
+                                "description": "Use a propriedade para definir um espaçamento inferior de um elemento:",
+                                "answers": ["padding-bottom"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "136px",
+                                            "maxLength": 14,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "20",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todas as propriedades de padding"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "padding",
+                                            "href": "/css/ref/props/padding"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Uma propriedade abreviada para definir todas as propriedades de espaçamento em uma declaração"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "padding-bottom",
+                                            "href": "/css/ref/props/padding-bottom"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o espaçamento inferior de um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "padding-left",
+                                            "href": "/css/ref/props/padding-left"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o espaçamento esquerdo de um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "padding-right",
+                                            "href": "/css/ref/props/padding-right"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o espaçamento direito de um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "padding-top",
+                                            "href": "/css/ref/props/padding-top"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define o espaçamento superior de um elemento"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 ]
             }
         ]
