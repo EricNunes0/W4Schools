@@ -3694,6 +3694,10 @@ function App() {
 					<Route path = "padding" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Padding"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Height/Width */}
+					<Route path = "dimension" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Height/Width"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
