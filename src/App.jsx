@@ -3698,6 +3698,10 @@ function App() {
 					<Route path = "dimension" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Height/Width"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Box Model */}
+					<Route path = "boxmodel" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Box Model"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

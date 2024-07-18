@@ -14960,6 +14960,460 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Box Model",
+                "link": "/css/boxmodel",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Box Model"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Todos os elementos HTML podem ser considerados \"caixas\"."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No CSS, o termo \"Box Model\" (Modelo de Caixa) é usado quando se fala em design e layout."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O modelo de caixa CSS é essencialmente uma caixa que envolve cada elemento HTML. Consiste em: conteúdo, preenchimento, bordas e margens. A imagem abaixo ilustra o modelo de caixa:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color: black;font-size:14px;text-align:center;\">",
+                                        "<div style=\"background: #b08050;padding: 45px;width: calc(100% - calc(45px * 2));height: 100%;position: relative;border: 2px dashed #bbb;transition: all .25s ease-in-out;\">",
+                                        "<span style=\"position:absolute;inset:12.5px;\">Margin (Margem)</span>",
+                                        "<div style=\"background: #e0c080;padding: 45px;width: calc(100% - calc(45px * 2));height: 100%;position: relative;\">",
+                                        "<span style=\"position:absolute;inset:12.5px;\">Border (Borda)</span>",
+                                        "<div style=\"background: #bac580;padding: 45px;width: calc(100% - calc(45px * 2));height: 100%;position: relative;\">",
+                                        "<span style=\"position:absolute;inset:12.5px;\">Padding (Espaçamento)</span>",
+                                        "<div style=\"background: #8ab0c0;padding: 20px;width: calc(100% - calc(20px * 2));height: 100%;position: relative;border: 2px dashed #bbb;\">Conteúdo</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Explicação das diferentes partes:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Content (Conteúdo) ",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- O conteúdo da caixa, onde aparecem textos e imagens",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Padding (Espaçamento) ",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- Limpa uma área ao redor do conteúdo. O preenchimento é transparente",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Border (Borda) ",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- Uma borda que circunda o preenchimento e o conteúdo",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Margin (Margem) ",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "- Limpa uma área fora da fronteira. A margem é transparente",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os elementos."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de modelo de caixa:",
+                                "description": "Demonstração do modelo de caixa:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "300",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid green"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "20",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Largura e altura de um elemento"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para definir corretamente a largura e a altura de um elemento em todos os navegadores, você precisa saber como funciona o modelo de caixa."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao definir as propriedades de largura e altura de um elemento com CSS, você apenas define a largura e a altura da área de conteúdo."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para calcular a largura e altura total de um elemento, você também deve incluir o preenchimento e as bordas."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de width e height:",
+                                "description": "Este elemento <div> terá uma largura total de 350px e uma altura total de 80px:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "320",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "10",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "5",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid gray"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira o cálculo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0\">",
+                                        "<p>320px (largura da área de conteúdo)</p>",
+                                        "<p>+ 20px (preenchimento esquerdo + preenchimento direito)</p>",
+                                        "<p>+ 10px (borda esquerda + borda direita)</p>",
+                                        "<p><b>= 350px (largura total)</b></p>",
+                                        "<br>",
+                                        "<p>50px (altura da área de conteúdo)</p>",
+                                        "<p>+ 20px (preenchimento superior + preenchimento inferior)</p>",
+                                        "<p>+ 10px (borda superior + borda inferior)</p>",
+                                        "<p><b>= 80px (altura total)</b></p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A largura total de um elemento deve ser calculada assim:"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Largura total = largura + preenchimento esquerdo + preenchimento direito + borda esquerda + borda direita"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A altura total de um elemento deve ser calculada assim:"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Altura total = altura + preenchimento superior + preenchimento inferior + borda superior + borda inferior"
+                        },
+                        {
+                            "tag": "note",
+                            "content": "A propriedade margin também afeta o espaço total que a caixa ocupará na página, mas a margem não está incluída no tamanho real da caixa. A largura e altura total da caixa param na borda."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício 1:",
+                                "description": "Defina a largura do elemento <div> como \"200px\":",
+                                "answers": ["div", "width", "200px"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Lorem Ipsum..."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
