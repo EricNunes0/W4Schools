@@ -15414,6 +15414,2389 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Outline",
+                "link": "/css/outline",
+                "subtitles": [
+                    {
+                        "subtitle": "Outline",
+                        "link": "/css/outline",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Um outline (contorno) é uma linha desenhada fora da borda do elemento."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Este elemento possui uma borda branca e um contorno azul com largura de 10px.",
+                                        "style": {
+                                            "border": "2px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outline": "10px solid #5075d0",
+                                            "padding": "20px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um outline (contorno) é uma linha desenhada ao redor dos elementos, FORA das bordas, para fazer o elemento \"se destacar\"."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color: black;font-size:14px;text-align:center;\">",
+                                                "<div style=\"background: #7090d0;padding: 45px;width: calc(100% - calc(45px * 2));height: 100%;position: relative;border: 2px dashed #bbb;transition: all .25s ease-in-out;\">",
+                                                "<span style=\"position:absolute;inset:12.5px;\">Outline (Contorno)</span>",
+                                                "<div style=\"background: #a0a0a0;padding: 45px;width: calc(100% - calc(45px * 2));height: 100%;position: relative;\">",
+                                                "<span style=\"position:absolute;inset:12.5px;\">Border (Borda)</span>",
+                                                "<div style=\"background: #f0f0f0;padding: 20px;width: calc(100% - calc(20px * 2));height: 100%;position: relative;border: 2px dashed #bbb;\">",
+                                                "<span style=\"position:absolute;inset:12.5px;\">Content (Conteúdo)</span>",
+                                                "</div>",
+                                                "</div>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "O CSS tem as seguintes propriedades de outline (contorno):"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-style cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-color cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-width cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-offset cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline cyan"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "O contorno difere das bordas! Ao contrário da borda, o contorno é desenhado fora da borda do elemento e pode se sobrepor a outro conteúdo. Além disso, o contorno NÃO faz parte das dimensões do elemento; a largura e altura total do elemento não são afetadas pela largura do contorno."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline Style"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-style cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica o estilo do contorno e pode ter um dos seguintes valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dotted purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "dashed purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "solid purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "double purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "groove purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "ridge purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "inset purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outset purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "none purple"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "hidden purple"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Confira os diferentes valores de "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-style cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " no exemplo abaixo:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-style:",
+                                        "description": "Demonstração dos diferentes estilos de contorno:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".dotted",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "dotted"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".dashed",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "dashed"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".solid",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".double",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "double"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".groove",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "groove"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ridge",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "ridge"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".inset",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "inset"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".outset",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "outset"
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color: #f0f0f0;outline-style: dotted;outline-color: red;padding: 2px 4px;\">dotted</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: dashed;outline-color: red;padding: 2px 4px;\">dashed</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: solid;outline-color: red;padding: 2px 4px;\">solid</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: double;outline-color: red;padding: 2px 4px;\">double</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: groove;outline-color: red;padding: 2px 4px;\">groove</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: ridge;outline-color: red;padding: 2px 4px;\">ridge</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: inset;outline-color: red;padding: 2px 4px;\">inset</div>",
+                                                "<div style=\"color: #f0f0f0;margin-top: 16px;outline-style: outset;outline-color: red;padding: 2px 4px;\">outset</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Nota: Nenhuma das outras propriedades do contorno (sobre as quais você aprenderá mais nos próximos capítulos) terá QUALQUER efeito, a menos que a propriedade outline-style seja definida!"
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para definir um estilo de contorno:",
+                                        "answers": ["outline-style"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "solid",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Outline Width",
+                        "link": "/css/outline/width",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline Width"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-width cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica a largura do contorno."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Pode ter um dos seguintes valores:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "thin (normalmente 1px)"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "medium (normalmente 3px)"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "thick (normalmente 5px)"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Um tamanho específico (em px, pt, cm, em, etc)"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O exemplo a seguir mostra alguns contornos com larguras diferentes:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno fino.",
+                                        "style": {
+                                            "border": "1px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "red",
+                                            "outlineStyle": "solid",
+                                            "outlineWidth": "thin",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno médio.",
+                                        "style": {
+                                            "border": "1px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "red",
+                                            "outlineStyle": "solid",
+                                            "outlineWidth": "medium",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno grosso.",
+                                        "style": {
+                                            "border": "1px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "red",
+                                            "outlineStyle": "solid",
+                                            "outlineWidth": "thick",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno de 4px.",
+                                        "style": {
+                                            "border": "1px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "red",
+                                            "outlineStyle": "solid",
+                                            "outlineWidth": "4px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-width:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "red"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        },
+                                                        {
+                                                            "property": "outline-width",
+                                                            "value": "thin"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex2",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "red"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        },
+                                                        {
+                                                            "property": "outline-width",
+                                                            "value": "medium"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex3",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "red"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        },
+                                                        {
+                                                            "property": "outline-width",
+                                                            "value": "thick"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex4",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "red"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        },
+                                                        {
+                                                            "property": "outline-width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "4",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para definir o tamanho de contorno:",
+                                        "answers": ["outline-width"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "2",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Outline Color",
+                        "link": "/css/outline/color",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline Color"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-color cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica a cor do contorno."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Pode ter um dos seguintes valores:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "text",
+                                                "text": "nome - especifique um nome de cor, como \"red\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "HEX - especifique um valor hexadecimal, como \"#ff0000\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "RGB - especifique um valor RGB, como \"rgb(255,0,0)\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "HSL - especifique um valor HSL, como \"hsl(0, 100%, 50%)\""
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "invert - realiza uma inversão de cores (que garante que o contorno fique visível, independentemente da cor de fundo)"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O exemplo a seguir mostra alguns contornos diferentes com cores diferentes. Observe também que esses elementos também possuem uma borda preta fina dentro do contorno:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno vermelho sólido.",
+                                        "style": {
+                                            "border": "2px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "red",
+                                            "outlineStyle": "solid",
+                                            "outlineWidth": "4px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno azul pontilhado.",
+                                        "style": {
+                                            "border": "2px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "blue",
+                                            "outlineStyle": "dotted",
+                                            "outlineWidth": "4px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno cinza inicial.",
+                                        "style": {
+                                            "border": "2px solid white",
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outlineColor": "gray",
+                                            "outlineStyle": "outset",
+                                            "outlineWidth": "4px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-color:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "2",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "red"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex2",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "2",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "blue"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "dotted"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex3",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "2",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "gray"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "outset"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Valores hexadecimais"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "A cor do contorno também pode ser especificada usando um valor hexadecimal (HEX):"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-color:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": "#ff0000"
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Valores RGB"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Ou usando valores RGB:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-color:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": {
+                                                                "type": "color",
+                                                                "method": "rgb",
+                                                                "r": 255,
+                                                                "g": 0,
+                                                                "b": 0
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Valores HSL"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você também pode usar valores HSL:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-color:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline-color",
+                                                            "value": {
+                                                                "type": "color",
+                                                                "method": "hsl",
+                                                                "h": 0,
+                                                                "s": 100,
+                                                                "l": 50
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-style",
+                                                            "value": "solid"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você pode aprender mais sobre valores HEX, RGB e HSL em: "
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "CSS Cores",
+                                                        "link": "/css/colors"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade para definir a cor de contorno:",
+                                        "answers": ["outline-color"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "red",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Outline Abreviação",
+                        "link": "/css/outline/shorthand",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline - propriedade abreviada"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é uma propriedade abreviada para definir as seguintes propriedades de contorno:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-width cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-style cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": "(obrigatório)",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-color cyan"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é especificada como um, dois ou três valores da lista acima."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "A ordem dos valores não importa."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir mostra alguns contornos especificados com a propriedade abreviada:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno tracejado.",
+                                        "style": {
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outline": "dashed",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno vermelho pontilhado.",
+                                        "style": {
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outline": "dotted red",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno amarelo sólido de 5px.",
+                                        "style": {
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outline": "5px solid yellow",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Um contorno rosa grosso.",
+                                        "style": {
+                                            "color": "white",
+                                            "margin": "16px auto",
+                                            "outline": "ridge thick pink",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex1",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "dashed"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex2",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "dotted red"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex3",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "5",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid yellow"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "p",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": ".ex4",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "thick ridge pink"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": false
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Use a propriedade abreviada para definir o contorno:",
+                                        "answers": ["outline"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "p"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "69px",
+                                                    "maxLength": 7,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "2",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "solid red",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Outline Offset",
+                        "link": "/css/outline/offset",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Outline Offset"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "outline-offset cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " adiciona espaço entre um contorno e a borda de um elemento."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "O espaço entre um elemento e seu contorno é transparente."
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir especifica um contorno de 15px fora da borda:"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Este parágrafo tem um contorno de 15px fora da borda.",
+                                        "style": {
+                                            "border": "1px solid black",
+                                            "color": "white",
+                                            "margin": "32px auto",
+                                            "outline": "1px solid red",
+                                            "outlineOffset": "15px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-offset:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "30",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid red"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-offset",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O exemplo a seguir mostra que o espaço entre um elemento e seu contorno é transparente:"
+                                },
+                                {
+                                    "tag": "div",
+                                    "content": {
+                                        "text": "Este parágrafo tem um contorno de 15px fora da borda.",
+                                        "style": {
+                                            "background": "yellow",
+                                            "border": "1px solid black",
+                                            "color": "black",
+                                            "margin": "32px auto",
+                                            "outline": "1px solid red",
+                                            "outlineOffset": "15px",
+                                            "padding": "2px 4px",
+                                            "textAlign": "left",
+                                            "width": "98%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de outline-offset:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "margin",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "30",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background",
+                                                            "value": "yellow"
+                                                        },
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid black"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid red"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "outline-offset",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "CSS Exercícios"
+                                },
+                                {
+                                    "tag": "exercise",
+                                    "content": {
+                                        "title": "Exercício 1:",
+                                        "description": "Defina uma borda de contorno sólida de 5px para o elemento <div>.",
+                                        "answers": ["div", "outline-style", "outline-width"],
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-1",
+                                                    "width": "30px",
+                                                    "maxLength": 3,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket left",
+                                                    "spacesBefore": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "solid",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "inputType": "text",
+                                                    "name": "answers-2",
+                                                    "width": "127px",
+                                                    "maxLength": 13,
+                                                    "spacesBefore": 0,
+                                                    "spacesAfter": 0
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "colon"
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "5",
+                                                    "color": "#c090fa",
+                                                    "spacesBefore": 1
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "px",
+                                                    "color": "#f565c5"
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "semicolon"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "bracket right",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "style tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div tag open",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "null",
+                                                    "tabs": 2
+                                                },
+                                                {
+                                                    "type": "content",
+                                                    "code": "Lorem Ipsum..."
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "div tag close",
+                                                    "tabs": 1
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "body tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Todas as propriedades de outline"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "outline",
+                                                    "href": "/css/ref/props/outline"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Uma propriedade abreviada para definir a largura (outline-width), o estilo (outline-style) e a cor (outline-color) do contorno em uma declaração"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "outline-color",
+                                                    "href": "/css/ref/props/outline-color"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a cor de um contorno"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "outline-offset",
+                                                    "href": "/css/ref/props/outline-offset"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o espaço entre um contorno e a borda ou borda de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "outline-style",
+                                                    "href": "/css/ref/props/outline-style"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define o estilo de um contorno"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "outline-width",
+                                                    "href": "/css/ref/props/outline-width"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define a largura de um contorno"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
             }
         ]
     }

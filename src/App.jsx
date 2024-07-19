@@ -3702,6 +3702,32 @@ function App() {
 					<Route path = "boxmodel" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Box Model"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Outline */}
+					<Route path = "outline">
+						{/* Outline */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Outline" subtitle = "Outline"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Width */}
+						<Route path = "width" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Outline" subtitle = "Outline Width"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Color */}
+						<Route path = "color" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Outline" subtitle = "Outline Color"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Abreviação */}
+						<Route path = "shorthand" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Outline" subtitle = "Outline Abreviação"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Offset */}
+						<Route path = "offset" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Outline" subtitle = "Outline Offset"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
