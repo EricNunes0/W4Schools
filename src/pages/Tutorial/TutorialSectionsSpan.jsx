@@ -13,4 +13,8 @@ export const TutorialSectionsSpan = styled.span`
         margin-top: 25px;
         font-weight: bold;
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 12px;
+    }
 `;

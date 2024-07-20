@@ -6,4 +6,8 @@ export const TutorialExampleHeaderTitle = styled.h1`
     font-weight: 100;
     text-align: left;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
 `;

@@ -3728,6 +3728,36 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Texto */}
+					<Route path = "text">
+						{/* Cor do texto */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Cor do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Alinhamento do texto */}
+						<Route path = "align" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Alinhamento do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Decoração do texto */}
+						<Route path = "decoration" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Decoração do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Transformação do texto */}
+						<Route path = "transformation" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Transformação do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Espaçamento do texto */}
+						<Route path = "spacing" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Espaçamento do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Sombra do texto */}
+						<Route path = "shadow" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Texto" subtitle = "Sombra do texto"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

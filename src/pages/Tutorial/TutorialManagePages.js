@@ -350,7 +350,7 @@ export default class TutorialManagePages {
                     if(value.values) {
                         let vals = [];
                         value.values.forEach((val) => {
-                            vals.push([val.number, "#c090fa", 1], [val.unit, "#f565c5"]);
+                            vals.push([val.number, "#c090fa", 1], [val.unit, "#f565c5"], val.comma === true ? [",", "#f0f0f0"] : []);
                         });
                         result = vals;
                     } else {
