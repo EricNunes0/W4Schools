@@ -3758,6 +3758,44 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Fontes */}
+					<Route path = "font">
+						{/* Font Family */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Font Family"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Font Web Safe */}
+						<Route path = "websafe" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Font Web Safe"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Fontes reservas */}
+						<Route path = "fallbacks" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Fontes reservas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Estilo de fonte */}
+						<Route path = "style" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Estilo de fonte"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Tamanho de fonte */}
+						<Route path = "size" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Tamanho de fonte"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Fontes do Google */}
+						<Route path = "google" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Fontes do Google"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Pares de fontes */}
+						<Route path = "pairings" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Pares de fontes"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Font Abreviação */}
+						<Route path = "shorthand" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Fontes" subtitle = "Font Abreviação"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

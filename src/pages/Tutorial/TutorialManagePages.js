@@ -346,6 +346,14 @@ export default class TutorialManagePages {
                     } else if(value.method === "hsl") {
                         result = [["hsl", "#90eaff", 1], ["(", "#f0f0f0"], [value.h, "#c090fa"], [",", "#f0f0f0"], [value.s, "#c090fa", 1], ["%", "#f565c5"], [",", "#f0f0f0"], [value.l, "#c090fa", 1], ["%", "#f565c5"], [")", "#f0f0f0"]];
                     }
+                } else if(value.type === "multiple") {
+                    if(value.values) {
+                        let vals = [];
+                        value.values.forEach((val) => {
+                            vals.push([val.value, val.color, val.spacesBefore]);
+                        });
+                        result = vals;
+                    }
                 } else if(value.type === "unit") {
                     if(value.values) {
                         let vals = [];
@@ -497,7 +505,7 @@ export default class TutorialManagePages {
                     </div>
                 );
             });
-            lines.push(<div className = "tutorial-sections-lines">
+            lines.push(<div className = "tutorial-sections-lines" style = {{paddingLeft: `${parseInt(40 * tabs)}px`}}>
                 {lineCodes}
             </div>)
         };

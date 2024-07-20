@@ -41,7 +41,7 @@ export const SidebarMenuLinkSub = styled.a`
         background-color: #5075d0;
     }
     @media screen and (max-width: 480px) {
-        font-size: 16px;
+        font-size: 14px;
         height: 32px;
     };
 `;
