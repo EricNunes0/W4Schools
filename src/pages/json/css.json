@@ -28336,6 +28336,1212 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Listas",
+                "link": "/css/list",
+                "sections": [   
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Listas não ordenadas:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Café"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Chá"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coca Cola"
+                                    }
+                                ],
+                                "list-style-type": "circle"
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Café"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Chá"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coca Cola"
+                                    }
+                                ],
+                                "list-style-type": "square"
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Listas ordenadas:"
+                        },
+                        {
+                            "tag": "ol",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Café"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Chá"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coca Cola"
+                                    }
+                                ],
+                                "list-style-type": "circle"
+                            }
+                        },
+                        {
+                            "tag": "ol",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Café"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Chá"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coca Cola"
+                                    }
+                                ],
+                                "type": "I"
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Listas HTML e suas propriedades CSS"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No HTML, existem dois tipos principais de listas:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "ul tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (listas não ordenadas) - os itens da lista são marcados com marcadores",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "ol tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (listas ordenadas) - os itens da lista são marcados com números ou letras",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As propriedades CSS de lista permitem:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Definir diferentes marcadores de itens de lista para listas ordenadas"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Definir diferentes marcadores de itens de lista para listas não ordenadas"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Definir uma imagem como marcador de item da lista"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Adicionar cores de fundo a listas e itens de lista"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Diferentes marcadores de itens de lista"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-type cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica o tipo de marcador de item da lista."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir mostra alguns dos marcadores de itens de lista disponíveis:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de marcadores de listas:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".a",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "circle"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".b",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "square"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ol",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".c",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "upper-roman"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ol",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".d",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "lower-alpha"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Alguns dos valores são para listas não ordenadas e outros para listas ordenadas."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Uma imagem como marcador de item da lista"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-image cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica uma imagem como marcador de item da lista:",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de imagem como marcador:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ul",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-image",
+                                                    "value": {
+                                                        "type": "url",
+                                                        "url": "'sqpurple.gif'"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Posicionando os marcadores de item da lista"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-position cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica a posição dos marcadores de item da lista (marcadores)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "\"list-style-position: outside;\" significa que os marcadores estarão fora do item da lista. O início de cada linha de um item da lista será alinhado verticalmente. Este é o padrão:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Café - Uma bebida preparada a partir de grãos de café torrados..."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Chá"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coca Cola"
+                                    }
+                                ],
+                                "style": {
+                                    "width": "25%",
+                                    "listStylePosition": "outside",
+                                    "border": "1px solid white"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "\"list-style-position: inside;\" significa que os marcadores estarão dentro do item da lista. Como faz parte do item da lista, fará parte do texto e colocará o texto no início:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de posição de marcadores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".a",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-position",
+                                                    "value": "outside"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".b",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-position",
+                                                    "value": "inside"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Removendo configurações padrão"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-type:none"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também pode ser usada para remover os marcadores/marcadores."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Observe que a lista também possui margem e preenchimento padrão."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para remover isso, adicione margin:0 e padding:0 a <ul> ou <ol>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de tipo de lista:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ul",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Lista - Propriedade abreviada"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "list-style cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma propriedade abreviada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "É usado para definir todas as propriedades da lista em uma declaração:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ul",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "list-style",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "square inside",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\"sqpurple.gif\"",
+                                                                "color": "#f5f565"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao usar a propriedade abreviada, a ordem dos valores da propriedade é:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-type cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(se uma imagem de estilo de lista for especificada, o valor desta propriedade será exibido se a imagem por algum motivo não puder ser exibida)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-position cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(especifica se os marcadores de item de lista devem aparecer dentro ou fora do fluxo de conteúdo)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "list-style-image cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(especifica uma imagem como marcador de item da lista)",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se um dos valores de propriedade acima estiver faltando, o valor padrão da propriedade faltante será inserido, se houver."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando listas com cores"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Também podemos estilizar listas com cores, para torná-las um pouco mais interessantes."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Qualquer coisa adicionada à tag <ol> ou <ul> afetará a lista inteira, enquanto as propriedades adicionadas à tag <li> afetarão os itens individuais da lista:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de estilização de lista:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ol",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": "#ff9999"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "20",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ul",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": "#3399ff"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "20",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ol li",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": "#ffe5e5"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "darkred"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin-left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ul li",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": "#cce5ff"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "darkblue"
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".list-li-example-1 {background: #ffe5e5;color: darkred;padding: 5px;margin-left: 35px;}",
+                                        ".list-li-example-2 {background: #cce5ff;color: darkblue;margin: 5px;}",
+                                        "</style>",
+                                        "<div>",
+                                        "<ol style=\"background: #ff9999;margin-bottom:20px;padding: 20px;\">",
+                                        "<li class=\"list-li-example-1\">Café</li>",
+                                        "<li class=\"list-li-example-1\">Chá</li>",
+                                        "<li class=\"list-li-example-1\">Coca Cola</li>",
+                                        "</ol>",
+                                        "<ul style=\"background: #3399ff;padding: 20px;\">",
+                                        "<li class=\"list-li-example-2\">Café</li>",
+                                        "<li class=\"list-li-example-2\">Chá</li>",
+                                        "<li class=\"list-li-example-2\">Coca Cola</li>",
+                                        "</ul>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Lista personalizada com borda esquerda vermelha",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como criar uma lista com borda esquerda vermelha."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Lista com borda de largura total",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como criar uma lista com bordas sem marcadores."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Todos os diferentes marcadores de itens de lista para listas",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra todos os diferentes marcadores de itens de lista em CSS."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Defina o estilo de uma lista não ordenada como \"square\".",
+                                "answers": ["ul", "list-style-type", "square"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "20px",
+                                            "maxLength": 2,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "146px",
+                                            "maxLength": 15,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "ul tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Café",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Chá",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "li tag",
+                                            "content": "Coca Cola",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "ul tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todas as propriedades de lista"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "list-style",
+                                            "href": "/css/ref/props/list-style"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define todas as propriedades de uma lista em uma declaração"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "list-style-image",
+                                            "href": "/css/ref/props/list-style-image"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica uma imagem como marcador de item de lista"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "list-style-position",
+                                            "href": "/css/ref/props/list-style-position"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica a posição dos marcadores de item da lista (marcadores)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "list-style-type",
+                                            "href": "/css/ref/props/list-style-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o tipo de marcador de item de lista"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

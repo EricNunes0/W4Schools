@@ -31,7 +31,7 @@ export default function TutorialSectionsList(prop) {
     if(tag === "ol") {
         listTag = (<TutorialSectionsOl type = {content.type || "1"}>{items}</TutorialSectionsOl>);
     } else if(tag === "ul") {
-        listTag = (<TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"}>{items}</TutorialSectionsUl>);
+        listTag = (<TutorialSectionsUl liststyle = {content["list-style-type"] || "disc"} style = {content.style || {}}>{items}</TutorialSectionsUl>);
     };
 
     return (
