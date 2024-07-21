@@ -26273,6 +26273,2069 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Links",
+                "link": "/css/link",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Com CSS, os links podem ser estilizados de muitas maneiras diferentes."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#link-example-1 {color: #f0f0f0}",
+                                        "#link-example-1:hover {color: #5075d0}",
+                                        "#link-example-2 {color: #208020;text-decoration:none;}",
+                                        "#link-example-2:hover {color: #5075d0}",
+                                        "#link-example-3 {border: 2px solid #5075d0;color: #f0f0f0;padding:12px;text-decoration:none;}",
+                                        "#link-example-3:hover {background-color: #5075d0}",
+                                        "#link-example-4 {background-color: #5075d0;color: #f0f0f0;padding:12px;text-decoration:none;}",
+                                        "#link-example-4:hover {background-color: #3055b0}",
+                                        "</style>",
+                                        "<div style=\"max-width:100%;width:100%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px;\">",
+                                        "<a href=\"javascript:void(0)\" id=\"link-example-1\">Link de texto</a>",
+                                        "<a href=\"javascript:void(0)\" id=\"link-example-2\">Link de texto</a>",
+                                        "<a href=\"javascript:void(0)\" id=\"link-example-3\">Botão Link</a>",
+                                        "<a href=\"javascript:void(0)\" id=\"link-example-4\">Botão Link</a>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando links"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os links podem ser estilizados com qualquer propriedade CSS"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por exemplo: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "color cyan"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "font-family cyan"
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "a",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "hotpink"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Além disso, os links podem ter estilos diferentes dependendo do estado em que se encontram."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os quatro estados de links são:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:link"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Um link normal e não visitado",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:visited"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Um link que o usuário visitou",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:hover"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Um link quando o usuário passa o mouse sobre ele",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:active"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Um link no momento em que é clicado",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* link não visitado */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* link visitado */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "green"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* passe o mouse sobre o link */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "hotpink"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* link selecionado */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "blue"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao definir o estilo para vários estados de link, existem algumas regras de ordem:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:hover"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " DEVE vir depois de ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "a:link"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "a:visited"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "a:active"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " DEVE vir depois de ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "a:hover"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Text Decoration"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "text-decoration cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usada principalmente para remover sublinhados de links:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "underline"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "underline"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Background Color"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode ser usada para especificar uma cor de fundo para links:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "cyan"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "lightgreen"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "hotpink"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Botões de link"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este exemplo demonstra um exemplo mais avançado onde combinamos várias propriedades CSS para exibir links como caixas/botões:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f44336"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "14",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "25",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "inline-block"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "description": "Este exemplo demonstra como adicionar outros estilos aos hiperlinks:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".one",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".one",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".one",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ffcc00"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".two",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".two",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".two",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "150",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".three",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".three",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".three",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": "#66ff66"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".four",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".four",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".four",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "font-family",
+                                                    "value": "monospace"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".five",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".five",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".five",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "description": "Outro exemplo de como criar caixas/botões de links:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "link",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "visited",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "black"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "2",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "solid green",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "10",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "20",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "inline-block"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "green"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de links:",
+                                "description": "Este exemplo demonstra os diferentes tipos de cursores (podem ser úteis para links):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: auto",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "auto",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: crosshair",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "crosshair",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: default",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "default",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: e-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "e-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: help",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "help",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: move",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "move",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: n-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "n-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: ne-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "ne-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: nw-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "nw-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: pointer",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "pointer",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: progress",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "progress",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: s-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "s-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: se-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "se-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: sw-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "sw-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: text",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "text",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: w-resize",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "w-resize",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "style",
+                                                        "value": "cursor: wait",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "wait",
+                                            "contentIndex": -3
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "br tag open"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Defina a cor dos links para \"red\".",
+                                "answers": ["a", "color", "red"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "10px",
+                                            "maxLength": 1,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "http://www.exemplo.com",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Este é um link",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
