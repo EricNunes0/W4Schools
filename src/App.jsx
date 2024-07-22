@@ -3808,6 +3808,32 @@ function App() {
 					<Route path = "list" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Listas"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Tabelas */}
+					<Route path = "table">
+						{/* Bordas de tabela */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Tabelas" subtitle = "Bordas de tabela"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Tamanho de tabela */}
+						<Route path = "size" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Tabelas" subtitle = "Tamanho de tabela"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Alinhamento de tabela */}
+						<Route path = "align" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Tabelas" subtitle = "Alinhamento de tabela"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Estilo de tabela */}
+						<Route path = "style" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Tabelas" subtitle = "Estilo de tabela"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Responsividade */}
+						<Route path = "responsive" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Tabelas" subtitle = "Responsividade"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
