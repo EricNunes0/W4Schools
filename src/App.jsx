@@ -3842,6 +3842,10 @@ function App() {
 					<Route path = "max-width" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Max Width"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Posição */}
+					<Route path = "position" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Posição"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

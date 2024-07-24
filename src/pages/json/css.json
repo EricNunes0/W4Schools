@@ -33942,6 +33942,1141 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Posição",
+                "link": "/css/position",
+                "sections": [   
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade position"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica o tipo de método de posicionamento usado em um elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Existem cinco valores de posição diferentes:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "static purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "relative purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "fixed purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "absolute purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "sticky purple"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os elementos são então posicionados usando as propriedades top (superior), bottom (inferior), left (esquerda) e right (direita)."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Entretanto, essas propriedades não funcionarão a menos que a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " seja definida primeiro."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Eles também funcionam de forma diferente dependendo do valor da posição."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "position: static;"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os elementos HTML são posicionados como static (estáticos) por padrão."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Os elementos posicionados estáticos não são afetados pelas propriedades top, bottom, left e right."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: static;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é posicionado de forma especial."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ele é sempre posicionado de acordo com o fluxo normal da página:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Este elemento <div> tem position: static;",
+                                "style": {
+                                    "border": "3px solid #5075d0",
+                                    "color": "#f0f0f0",
+                                    "position": "static"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira o CSS usado:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de position:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".static",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "static"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "position: relative;"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: relative;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é posicionado em relação à sua posição normal."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Definir as propriedades top, right, bottom e left de um elemento relativamente posicionado fará com que ele seja ajustado fora de sua posição normal. Outros conteúdos não serão ajustados para caber em qualquer lacuna deixada pelo elemento."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Este elemento <div> tem position: relative;",
+                                "style": {
+                                    "border": "3px solid #5075d0",
+                                    "color": "#f0f0f0",
+                                    "left": "30px",
+                                    "position": "relative"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira o CSS usado:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de position:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".relative",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "30",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "position: fixed;"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: fixed;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é posicionado em relação à janela de visualização."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isso significa que ele sempre permanecerá no mesmo lugar, mesmo se a página for rolada."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um elemento fixo não deixa espaço na página onde normalmente estaria localizado."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Observe o elemento fixo no canto inferior direito da página. Aqui está o CSS usado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Este elemento <div> tem position: fixed;",
+                                "style": {
+                                    "backgroundColor": "#f0f0f0",
+                                    "border": "3px solid #5075d0",
+                                    "bottom": "0",
+                                    "color": "#000",
+                                    "position": "fixed",
+                                    "right": "0"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira o CSS usado:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de position:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".fixed",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "fixed"
+                                                },
+                                                {
+                                                    "property": "bottom",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "right",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "300",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "position: absolute;"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: absolute;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é posicionado em relação ao ancestral posicionado mais próximo"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No entanto, se um elemento posicionado de forma absoluta não tiver ancestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Elementos posicionados de forma absoluta são removidos do fluxo normal e podem se sobrepor a elementos."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Aqui está um exemplo simples:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"border:3px solid #5075d0;color:#f0f0f0;position: relative;width: 400px;height: 200px;\">",
+                                        "Este elemento &lt;div&gt; tem position: relative;",
+                                        "<div style=\"border:3px solid #5075d0;position: absolute;top: 80px;right: 0;width: 200px;height: 100px;\">",
+                                        "Este elemento &lt;div&gt; tem position: absolute;",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Confira o CSS usado:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de position:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".relative",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "400",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "200",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".absolute",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "80",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "right",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "200",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "position: sticky;"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: sticky;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é posicionado com base na posição de rolagem do usuário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um elemento fixo alterna entre relative (relativo) e fixed (fixo), dependendo da posição de rolagem. Ele é posicionado em relação até que uma determinada posição de deslocamento seja atingida na janela de visualização - então ele \"gruda\" no lugar (como position:fixed)."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/pages/css/position/sticky.html",
+                                "style": {
+                                    "height": "150px",
+                                    "maxWidth": "100%"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O Internet Explorer não suporta posicionamento fixo. O Safari requer um prefixo -webkit- (veja o exemplo abaixo). Você também deve especificar pelo menos uma posição top, right, bottom ou left para que o posicionamento fixo funcione."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Neste exemplo, o elemento adere ao topo da página (topo: 0), quando você atinge a posição de rolagem."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de position:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".sticky",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "-webkit-sticky"
+                                                },
+                                                {
+                                                    "property": "position",
+                                                    "value": "sticky"
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "blue"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #5075d0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Posicionando texto em uma imagem"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Como posicionar o texto sobre uma imagem:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": "Exemplo:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0;position:relative;text-align:center;\">",
+                                        "<img src=\"/images/examples/css/position/cinque_terre.jpg\" alt=\"Cinque Terre\" style=\"width:100%;height:auto;opacity:0.3\">",
+                                        "<div style=\"position:absolute;bottom:8px;left:16px;font-size:18px\">Canto inferior esquerdo</div>",
+                                        "<div style=\"position:absolute;top:8px;left:16px;font-size:18px\">Canto superior esquerdo</div>",
+                                        "<div style=\"position:absolute;top:8px;right:16px;font-size:18px\">Canto superior direito</div>",
+                                        "<div style=\"position:absolute;bottom:8px;right:16px;font-size:18px\">Canto inferior direito</div>",
+                                        "<div style=\"position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-size:18px\">Centro</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Definindo a forma de um elemento",
+                                                "link": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo demonstra como definir a forma de um elemento. O elemento é recortado nesta forma e exibido."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Posicione o elemento <h1> em 50px no topo e 10px na direita, relativo às bordas da janela/quadro.",
+                                "answers": ["h1", "position", "relative", "top", "right"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "20px",
+                                            "maxLength": 2,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "79px",
+                                            "maxLength": 8,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "79px",
+                                            "maxLength": 8,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-4",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-5",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é outro parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todas as propriedades de posicionamento"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "bottom",
+                                            "href": "/css/ref/props/bottom"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define a borda da margem inferior para uma caixa posicionada"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "clip",
+                                            "href": "/css/ref/props/clip"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Recorta um elemento absolutamente posicionado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "left",
+                                            "href": "/css/ref/props/left"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define a borda da margem esquerda para uma caixa posicionada"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "position",
+                                            "href": "/css/ref/props/position"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o tipo de posicionamento de um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "right",
+                                            "href": "/css/ref/props/right"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define a borda da margem direita para uma caixa posicionada"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "top",
+                                            "href": "/css/ref/props/top"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define a borda da margem superior para uma caixa posicionada"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
