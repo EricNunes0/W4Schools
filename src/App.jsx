@@ -3846,6 +3846,10 @@ function App() {
 					<Route path = "position" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Posição"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Z-index */}
+					<Route path = "z-index" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Z-index"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

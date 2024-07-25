@@ -35077,6 +35077,1169 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Z-index",
+                "link": "/css/z-index",
+                "sections": [   
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade z-index"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Quando os elementos são posicionados, eles podem se sobrepor a outros elementos."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "z-index cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica a ordem de pilha de um elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ou seja, qual elemento deve ser colocado na frente ou atrás dos demais."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um elemento pode ter uma ordem de pilha positiva ou negativa:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de z-index:",
+                                "footerHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "img",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "0",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "0",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "-1"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0;position:relative;padding:80px;overflow:auto;z-index: 0;\">",
+                                        "<h1 style=\"position:absolute;left:35px;top:15px;z-index:2;\">Este é um título</h1>",
+                                        "<img src=\"/images/examples/css/z-index/tree.png\" style=\"position:absolute;left:30px;top:15px;z-index:1;height:250px;\">",
+                                        "<p style=\"position:absolute;left:35px;top:65px;z-index:2;\">Como a imagem tem um índice z de -1, ela será colocada atrás do texto.</p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "z-index cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " só funciona em elementos posicionados."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Exemplos: position: absolute, position: relative, position: fixed, ou position: sticky."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Também funciona em itens flexíveis (elementos que são filhos diretos de elementos com display: flex)."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Outro exemplo de z-index"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de z-index:",
+                                "description": "Aqui vemos que um elemento com ordem de pilha maior está sempre acima de um elemento com ordem de pilha menor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".container",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".black-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "30",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".gray-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "lightgray"
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "60",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "70",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".green-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "lightgreen"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "270",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "-15",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "container",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "black-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa preta",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gray-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa cinza",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "green-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa verde",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sem z-index"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se dois elementos posicionados se sobrepõem sem um z-index especificado, o último elemento definido no código HTML será mostrado no topo."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo sem z-index:",
+                                "description": "O mesmo exemplo acima, mas aqui sem z-index especificado:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".container",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".black-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "30",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".gray-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "lightgray"
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "60",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "70",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".green-box",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "lightgreen"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "270",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "-15",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "container",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "black-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa preta",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gray-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa cinza",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "green-box",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Caixa verde",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Tanto o cabeçalho \"title\" quanto o parágrafo \"text\" devem ser posicionados no topo da página. Certifique-se de que o cabeçalho seja colocado no topo do parágrafo.",
+                                "answers": ["#title", "z-index", "#text", "z-index"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "position cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "absolute",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "top cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "69px",
+                                            "maxLength": 7,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-3",
+                                            "width": "50px",
+                                            "maxLength": 5,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "position cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "absolute",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "top cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-4",
+                                            "width": "69px",
+                                            "maxLength": 7,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "title",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "text",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedade CSS"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "z-index",
+                                            "href": "/css/ref/props/z-index"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Define a ordem da pilha de um elemento"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
