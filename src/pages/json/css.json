@@ -36240,6 +36240,899 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Overflow",
+                "link": "/css/overflow",
+                "sections": [   
+                    [
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mauris magna, bibendum in quam vel, gravida faucibus odio. Mauris suscipit bibendum lacus eget placerat. Vestibulum scelerisque elit fermentum leo sagittis, eget porta neque vehicula. Nullam auctor egestas mauris, non cursus est. Mauris non nibh scelerisque, faucibus est at, ornare turpis. Integer imperdiet, tellus vitae efficitur aliquet, orci lacus dapibus diam, eget eleifend nisi magna vitae odio. Maecenas molestie purus vel lorem lacinia, eu rutrum nisi sagittis. Suspendisse mollis, orci nec laoreet elementum, diam ex aliquam dolor, sit amet cursus elit risus eu nunc. Phasellus euismod sed neque nec aliquet. Morbi pellentesque enim ligula, a efficitur lectus hendrerit sed. Nam dapibus tempor nisl a malesuada. Nulla eu risus viverra, tristique mauris at, vulputate diam. Pellentesque eleifend metus ut metus vehicula, quis eleifend risus tristique.",
+                                "style": {
+                                    "background": "#5075d0",
+                                    "border": "1px solid #ccc",
+                                    "color": "#f0f0f0",
+                                    "height": "100px",
+                                    "overflow": "scroll",
+                                    "padding": "15px",
+                                    "width": "100%"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade overflow"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "overflow cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " controla o que acontece com o conteúdo que é grande demais para caber em uma área."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ou seja, ela especifica se o conteúdo deve ser cortado ou adicionado barras de rolagem quando o conteúdo de um elemento é muito grande para caber na área especificada."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "overflow cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " possui os seguintes valores:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "visible purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Padrão. O overflow (estouro) não é cortado. O conteúdo é renderizado fora da caixa do elemento",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "hidden purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - O overflow (estouro) é cortado e o restante do conteúdo ficará invisível",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "scroll purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - O overflow (estouro) e uma barra de rolagem é adicionada para ver o resto do conteúdo",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "auto purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Semelhante ao ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "scroll purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " mas adiciona barras de rolagem somente quando necessário",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "A propriedade overflow funciona apenas para elementos de bloco com altura especificada."
+                        },
+                        {
+                            "tag": "note",
+                            "content": "No OS X Lion (no Mac), as barras de rolagem ficam ocultas por padrão e são mostradas apenas quando usadas (mesmo que \"overflow:scroll\" esteja definido)."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "overflow: visible"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, o overflow é "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "visible purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (visível)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isso significa que não é cortado e é renderizado fora da caixa do elemento:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.",
+                                "style": {
+                                    "backgroundColor": "coral",
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #ccc",
+                                    "height": "110px",
+                                    "marginBottom": "140px",
+                                    "overflow": "visible",
+                                    "width": "200px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de overflow:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "200",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "65",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "coral"
+                                                },
+                                                {
+                                                    "property": "overflow",
+                                                    "value": "visible"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "overflow: hidden"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Com o valor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "hidden purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " o overflow é cortado e o restante do conteúdo fica oculto:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.",
+                                "style": {
+                                    "backgroundColor": "coral",
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #ccc",
+                                    "height": "110px",
+                                    "overflow": "hidden",
+                                    "width": "200px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de overflow:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "overflow",
+                                                    "value": "hidden"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "overflow: scroll"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Com o valor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "scroll purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " o overflow é cortado e uma barra de rolagem é adicionada para rolar dentro da caixa."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Observe que isso adicionará uma barra de rolagem horizontal e vertical (mesmo que você não precise dela):"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.",
+                                "style": {
+                                    "backgroundColor": "coral",
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #ccc",
+                                    "height": "110px",
+                                    "overflow": "scroll",
+                                    "width": "200px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de overflow:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "overflow",
+                                                    "value": "scroll"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "overflow: auto"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Com o valor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "auto purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é semelhante ao "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "scroll purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Porém, adiciona barras de rolagem somente quando necessário:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.",
+                                "style": {
+                                    "backgroundColor": "coral",
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #ccc",
+                                    "height": "110px",
+                                    "overflow": "auto",
+                                    "width": "200px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de overflow:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "overflow",
+                                                    "value": "auto"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "overflow-x e overflow-y"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode especificar se o overflow do conteúdo deve ser alterado apenas horizontalmente ou verticalmente (ou ambos)."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para isto, usamos as propriedades "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "overflow-x cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "overflow-y cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "overflow-x cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica o que fazer com as bordas esquerda/direita do conteúdo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "overflow-y cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica o que fazer com as bordas superior/inferior do conteúdo."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "div",
+                            "content": {
+                                "text": "Você pode usar a propriedade overflow quando quiser ter melhor controle do layout. A propriedade overflow especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento.",
+                                "style": {
+                                    "backgroundColor": "coral",
+                                    "color": "#f0f0f0",
+                                    "border": "1px solid #ccc",
+                                    "height": "110px",
+                                    "overflowX": "hidden",
+                                    "overflowY": "scroll",
+                                    "width": "200px"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de overflow:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "overflow-x",
+                                                    "value": "hidden"
+                                                },
+                                                {
+                                                    "property": "overflow-y",
+                                                    "value": "scroll"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Force uma barra de rolagem para um elemento <div> com class=\"intro\".",
+                                "answers": [".intro", "overflow", "scroll"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "width cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "200",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "height cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "70",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "px",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "79px",
+                                            "maxLength": 8,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "59px",
+                                            "maxLength": 6,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "intro",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Lorem ipsum dolor sit amet"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "consectetur adipiscing elit."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Phasellus imperdiet, nulla et dictum interdum,"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "nisi lorem egestas odio,"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "vitae scelerisque enim ligula venenatis dolor."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todas as propriedades de overflow"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "overflow",
+                                            "href": "/css/ref/props/overflow"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "overflow-wrap",
+                                            "href": "/css/ref/props/overflow-wrap"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica se o navegador pode ou não quebrar linhas com palavras longas, caso elas ultrapassem seu contêiner"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "overflow-x",
+                                            "href": "/css/ref/props/overflow-x"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o que fazer com as bordas esquerda/direita do conteúdo se ele ultrapassar a área de conteúdo do elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "overflow-y",
+                                            "href": "/css/ref/props/overflow-y"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o que fazer com as bordas superior/inferior do conteúdo se ele ultrapassar a área de conteúdo do elemento"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
