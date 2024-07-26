@@ -3872,6 +3872,22 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Inline-block */}
+					<Route path = "inline-block" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Inline-block"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Alinhamento */}
+					<Route path = "align" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Alinhamento"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Combinadores */}
+					<Route path = "combinators" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Combinadores"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Pseudo-classes */}
+					<Route path = "pseudo-classes" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Pseudo-classes"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
