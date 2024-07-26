@@ -37133,6 +37133,1569 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Float",
+                "link": "/css/float",
+                "subtitles": [
+                    {
+                        "subtitle": "Float",
+                        "link": "/css/float",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica como um elemento deve flutuar."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "clear cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " especifica quais elementos podem flutuar ao lado do elemento limpo e em que lado."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color: #f0f0f0;overflow:auto;\">",
+                                                "<div style=\"background-color:#5075d0;padding:16px;float:left;width:30%;opacity:0.85;text-align:center;\">",
+                                                "Float Left",
+                                                "</div>",
+                                                "<div style=\"background-color:#d05050;padding:16px;float:right;width:30%;opacity:0.85;text-align:center;\">",
+                                                "Float Right",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "A propriedade float"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é usada para posicionar e formatar conteúdo."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " pode ter um dos seguintes valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "left purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento flutua à esquerda de seu contêiner",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "right purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento flutua à direita de seu contêiner",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "none purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Padrão. O elemento não flutua (será exibido exatamente onde ocorre no texto)",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "inherit purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento herda o valor flutuante de seu pai",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em seu uso mais simples, esta propriedade pode ser usada para envolver texto em imagens."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplo - float: right;"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O exemplo a seguir especifica que uma imagem deve flutuar para a direita em um texto:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "img",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "right"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"border:1px solid #ccc;color:#f0f0f0;display:table;padding:8px 16px;\">",
+                                                "<p><img src=\"/images/examples/css/float/abacaxi.jpg\" style=\"width:170px;height:170px;float:right;margin-left:15px;margin-bottom:10px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. <span class=\"w3-hide-small\">Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</span></p>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplo - float: left;"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O exemplo a seguir especifica que uma imagem deve flutuar para a esquerda em um texto:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "img",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"border:1px solid #ccc;color:#f0f0f0;display:table;padding:8px 16px;\">",
+                                                "<p><img src=\"/images/examples/css/float/abacaxi.jpg\" style=\"width:170px;height:170px;float:left;margin-right:15px;margin-bottom:10px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. <span class=\"w3-hide-small\">Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</span></p>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplo - Sem float"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No exemplo a seguir a imagem será exibida exatamente onde ocorre no texto (float: none;):"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "img",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "none"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"border:1px solid #ccc;color:#f0f0f0;display:table;padding:8px 16px;\">",
+                                                "<p><img src=\"/images/examples/css/float/abacaxi.jpg\" style=\"max-width:185px;width:50%;float:none;vertical-align: middle;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. <span class=\"w3-hide-small\">Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...</span></p>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplo - Um float ao lado do outro"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Normalmente, os elementos div serão exibidos uns sobre os outros. No entanto, se usarmos float: left podemos deixar os elementos flutuarem próximos uns dos outros:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".div1",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background",
+                                                            "value": "red"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".div2",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background",
+                                                            "value": "yellow"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".div3",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background",
+                                                            "value": "green"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Clear",
+                        "link": "/css/float/clear",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "A propriedade clear"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Há casos onde usamos a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " e queremos o próximo elemento abaixo (não à direita ou à esquerda)."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Para estes casos, usamos a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "clear cyan"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Ela propriedade especifica o que deve acontecer com o elemento próximo a um elemento flutuante."
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "A propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "clear cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " pode ter um dos seguintes valores:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "none purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Padrão. O elemento não é colocado abaixo dos elementos flutuantes à esquerda ou à direita",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "left purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento é empurrado abaixo dos elementos flutuantes à esquerda",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "right purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento é empurrado abaixo dos elementos flutuantes à direita",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "both purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento é colocado abaixo dos elementos flutuantes esquerdo e direito",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "inherit purple"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - O elemento herda o valor clear de seu pai",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Ao limpar floats, você deve combinar clear com float: Se um elemento flutua para a esquerda, você deve limpar para a esquerda. Seu elemento flutuante continuará flutuando, mas o elemento limpo aparecerá abaixo dele na página da web."
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de clear:",
+                                        "description": "Este exemplo limpa o float para a esquerda. Aqui, significa que o elemento <div2> é colocado abaixo do elemento <div1> flutuante à esquerda:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div1",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div2",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "clear",
+                                                            "value": "left"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "O hack Clearfix"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Se um elemento flutuante for mais alto que o elemento que o contém, ele \"transbordará\" para fora de seu contêiner. Podemos então adicionar um hack clearfix para resolver este problema:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de clearfix:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".clearfix",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "overflow",
+                                                            "value": "auto"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color:#f0f0f0;display:flex;flex-direction:row;justify-content:center;align-items:center;width:100%;\">",
+                                                "<div style=\"border:1px solid #ccc;color:#f0f0f0;display:block;padding:8px 16px;\">",
+                                                "<p><img src=\"/images/examples/css/float/abacaxi.jpg\" style=\"width:170px;height:170px;float:right;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</span></p>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O overflow: auto clearfix funciona bem desde que você consiga manter o controle de suas margens e preenchimento (caso contrário, você poderá ver barras de rolagem). O novo e moderno hack clearfix, entretanto, é mais seguro de usar, e o seguinte código é usado para a maioria das páginas da web:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de clearfix:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": ".clearfix",
+                                                                    "color": "#65f040"
+                                                                },
+                                                                {
+                                                                    "selector": "::",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "after",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "content",
+                                                            "value": {
+                                                                "type": "multiple",
+                                                                "values": [
+                                                                    {
+                                                                        "value": "\"\"",
+                                                                        "color": "#f5f565",
+                                                                        "spacesBefore": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "clear",
+                                                            "value": "both"
+                                                        },
+                                                        {
+                                                            "property": "display",
+                                                            "value": "table"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Você aprenderá mais sobre o pseudoelemento ::after em um capítulo posterior."
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Exemplos",
+                        "link": "/css/float/examples",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "p",
+                                    "content": "Esta página contém exemplos comuns de float."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Grade com caixas de largura igual"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color:#000;overflow:hidden;text-align:center;\">",
+                                                "<div style=\"background-color:#bbb;float:left;padding:32px 0;width: 49.99%;\">",
+                                                "<p>Box 1</p>",
+                                                "</div>",
+                                                "<div style=\"background-color:#ccc;float:left;padding:32px 0;width: 49.99%;\">",
+                                                "<p>Box 2</p>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color:#000;overflow:hidden;text-align:center;\">",
+                                                "<div style=\"background-color:#bbb;float:left;padding:32px 0;width: 33.33%;\">",
+                                                "<p>Box 1</p>",
+                                                "</div>",
+                                                "<div style=\"background-color:#ccc;float:left;padding:32px 0;width: 33.33%;\">",
+                                                "<p>Box 2</p>",
+                                                "</div>",
+                                                "<div style=\"background-color:#ddd;float:left;padding:32px 0;width: 33.33%;\">",
+                                                "<p>Box 3</p>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Com a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " é fácil flutuar caixas de conteúdo lado a lado:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "*",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "box-sizing",
+                                                            "value": "border-box"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".box",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "33.33",
+                                                                "unit": "%"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "50",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h2",
+                                    "content": "O que é box-sizing?"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você pode criar facilmente três caixas flutuantes lado a lado. No entanto, quando você adiciona algo que aumenta a largura de cada caixa (por exemplo, preenchimento ou bordas), a caixa quebra. A propriedade box-sizing nos permite incluir o preenchimento e a borda na largura (e altura) total da caixa, garantindo que o preenchimento fique dentro da caixa e não quebre."
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você pode ler mais sobre a propriedade box-sizing em: "
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "CSS Box Sizing",
+                                                        "link": "/css/box-sizing"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Imagens lado a lado"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de float:",
+                                        "description": "A grade de caixas também pode ser usada para exibir imagens lado a lado:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".img-container",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "33.33",
+                                                                "unit": "%"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "5",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": "Resultado:",
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"overflow:auto;\">",
+                                                "<div style=\"float:left;width:33.33%;\">",
+                                                "<img src=\"/images/examples/css/display/island.jpg\" style=\"vertical-align: middle;width:100%\" alt=\"Itália\">",
+                                                "</div>",
+                                                "<div style=\"float:left;width:33.33%;\">",
+                                                "<img src=\"/images/examples/css/display/forest.jpg\" style=\"vertical-align: middle;width:100%\" alt=\"Floresta\">",
+                                                "</div>",
+                                                "<div style=\"float:left;width:33.33%;\">",
+                                                "<img src=\"/images/examples/css/display/lights.jpg\" style=\"vertical-align: middle;width:100%\" alt=\"Luzes\">",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Caixas de altura igual"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No exemplo anterior, você aprendeu como fazer caixas flutuarem lado a lado com larguras iguais. Porém, não é fácil criar caixas flutuantes com alturas iguais. Uma solução rápida, entretanto, é definir uma altura fixa, como no exemplo abaixo:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".box",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "height",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "500",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"color:#000;overflow:auto;text-align:center;\">",
+                                                "<div style=\"background-color:#bbb;float:left;height:300px;width:50%;\">",
+                                                "<h2 style=\"margin-top:32px;\">Box 1</h2>",
+                                                "<p>Some content, some content, some content</p>",
+                                                "</div>",
+                                                "<div style=\"background-color:#ccc;float:left;height:300px;width:50%;\">",
+                                                "<h2 style=\"margin-top:32px;\">Box 2</h2>",
+                                                "<p>Algum conteúdo, algum conteúdo</p>",
+                                                "<p>Algum conteúdo, algum conteúdo</p>",
+                                                "<p>Algum conteúdo, algum conteúdo</p>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "No entanto, isso não é muito flexível. Não há problema se você puder garantir que as caixas sempre terão a mesma quantidade de conteúdo. Mas muitas vezes o conteúdo não é o mesmo. Se você tentar o exemplo acima em um celular, verá que o conteúdo da segunda caixa será exibido fora da caixa. É aqui que o CSS3 Flexbox se torna útil - pois ele pode esticar automaticamente as caixas para que sejam tão longas quanto a caixa mais longa:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "description": "Usando Flexbox para criar caixas flexíveis:",
+                                        "footerHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div style=\"background-color: dodgerblue;color:#000;display: flex;flex-wrap: nowrap;overflow:auto;text-align:center;\">",
+                                                "<div style=\"background-color: #f1f1f1;color: #000;width: 50%;margin: 10px;text-align: center;line-height: 50px;font-size: 24px;\">",
+                                                "Box 1 - Este é um texto para garantir que o conteúdo fique bem alto. Este é um texto para garantir que o conteúdo fique realmente alto. Este é um texto para garantir que o conteúdo fique realmente alto.",
+                                                "</div>",
+                                                "<div style=\"background-color: #f1f1f1;color: #000;width: 50%;margin: 10px;text-align: center;line-height: 50px;font-size: 24px;\">",
+                                                "Box 2 - Minha altura seguirá o Box 1",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você pode ler mais sobre o módulo Flexbox Layout em: "
+                                                    },
+                                                    {
+                                                        "type": "link",
+                                                        "text": "CSS Flexbox",
+                                                        "link": "/css/flexbox"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Menu de navegação"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Você também pode usar "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " com uma lista de hiperlinks para criar um menu horizontal:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "description": "Usando Flexbox para criar caixas flexíveis:",
+                                        "footerHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".flexbox-example-a {display: inline-block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}",
+                                                ".flexbox-example-a:hover {background-color:#222;}",
+                                                "</style>",
+                                                "<ul style=\"list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;\">",
+                                                "<li style=\"float:left;\"><a href=\"javascript:void(0)\" class=\"flexbox-example-a\" style=\"background-color: red;\">Home</a></li>",
+                                                "<li style=\"float:left;\"><a href=\"javascript:void(0)\" class=\"flexbox-example-a\" >News</a></li>",
+                                                "<li style=\"float:left;\"><a href=\"javascript:void(0)\" class=\"flexbox-example-a\" >Contact</a></li>",
+                                                "<li style=\"float:left;\"><a href=\"javascript:void(0)\" class=\"flexbox-example-a\" >About</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplo de layout da web"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Com a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " também é possível fazer layouts web inteiros:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "iframe",
+                                    "content": {
+                                        "src": "/pages/css/float/web_layout.html",
+                                        "style": {
+                                            "height": "420px",
+                                            "maxWidth": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".header",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ".footer",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "grey"
+                                                        },
+                                                        {
+                                                            "property": "color",
+                                                            "value": "white"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".column",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "15",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": ".clearfix",
+                                                                    "color": "#65f040"
+                                                                },
+                                                                {
+                                                                    "selector": "::",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "after",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "content",
+                                                            "value": {
+                                                                "type": "multiple",
+                                                                "values": [
+                                                                    {
+                                                                        "value": "\"\"",
+                                                                        "color": "#f5f565",
+                                                                        "spacesBefore": 1
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "clear",
+                                                            "value": "both"
+                                                        },
+                                                        {
+                                                            "property": "display",
+                                                            "value": "table"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".menu",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "25",
+                                                                "unit": "%"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".content",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "75",
+                                                                "unit": "%"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Mais exemplos"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Uma imagem com borda e margens que flutua para a direita em um parágrafo",
+                                                        "link": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Deixe uma imagem flutuar para a direita em um parágrafo. Adicione bordas e margens à imagem."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Uma imagem com uma legenda que flutua para a direita",
+                                                        "link": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Deixe uma imagem com legenda flutuar para a direita."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Deixe a primeira letra de um parágrafo flutuar para a esquerda",
+                                                        "link": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Deixe a primeira letra de um parágrafo flutuar para a esquerda e estilize a letra."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "link",
+                                                        "text": "Criando um site com float",
+                                                        "link": ""
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Use float para criar uma página inicial com barra de navegação, cabeçalho, rodapé, conteúdo esquerdo e conteúdo principal."
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Todas as propriedades de float"
+                                },
+                                {
+                                    "tag": "table",
+                                    "content": {
+                                        "rows": [
+                                            [
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Propriedade"
+                                                },
+                                                {
+                                                    "tag": "th",
+                                                    "text": "Descrição"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "box-sizing",
+                                                    "href": "/css/ref/props/box-sizing"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Define como a largura e a altura de um elemento são calculadas: devem incluir preenchimento e bordas ou não"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "clear",
+                                                    "href": "/css/ref/props/clear"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o que deve acontecer com o elemento próximo a um elemento flutuante"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "float",
+                                                    "href": "/css/ref/props/float"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica se um elemento deve flutuar para a esquerda, para a direita ou não flutuar"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "overflow",
+                                                    "href": "/css/ref/props/overflow"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o que acontece se o conteúdo ultrapassar a caixa de um elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "overflow-x",
+                                                    "href": "/css/ref/props/overflow-x"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o que fazer com as bordas esquerda/direita do conteúdo se ele ultrapassar a área de conteúdo do elemento"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "tag": "td",
+                                                    "text": "overflow-y",
+                                                    "href": "/css/ref/props/overflow-y"
+                                                },
+                                                {
+                                                    "tag": "td",
+                                                    "text": "Especifica o que fazer com as bordas superior/inferior do conteúdo se ele ultrapassar a área de conteúdo do elemento"
+                                                }
+                                            ]
+                                        ],
+                                        "styles": {
+                                            "th": {
+                                                "textAlign": "left"
+                                            },
+                                            "td": {
+                                                "textAlign": "left"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
             }
         ]
     }

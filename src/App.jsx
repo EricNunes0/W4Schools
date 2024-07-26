@@ -3854,6 +3854,24 @@ function App() {
 					<Route path = "overflow" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Overflow"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Float */}
+					<Route path = "float">
+						{/* Float */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Float" subtitle = "Float"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Clear */}
+						<Route path = "clear" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Float" subtitle = "Clear"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Exemplos */}
+						<Route path = "examples" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Float" subtitle = "Exemplos"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
