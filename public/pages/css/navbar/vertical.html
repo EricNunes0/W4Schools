@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            html, body {font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+            body {margin:0;background-color:white;}
+            ul.vertical {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 25%;
+                background-color: #f1f1f1;
+                position:fixed;
+                height:100%;
+                overflow:auto;
+                min-width:80px;
+            }
+        
+            ul.vertical li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+        
+            ul.vertical li a:hover:not(.active) {
+                background-color: #555;
+                color:white;
+            }
+        
+            ul.vertical a.active {
+                background-color: #5075d0;
+                color:white;
+            }
+        
+            .main {
+                margin-left:25%;padding:1px 16px;height:500px;
+            }
+
+            @media screen and (max-width: 290px) {
+                .main {
+                    margin-left:35%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="vertical">
+            <li><a class="active" href="javascript:void(0)">Início</a></li>
+            <li><a href="javascript:void(0)">Notícias</a></li>
+            <li><a href="javascript:void(0)">Contato</a></li>
+            <li><a href="javascript:void(0)">Sobre</a></li>
+        </ul>
+    <div class="main">
+        <h2>Navegação lateral fixa em altura total</h2>
+        <h3>Tente rolar esta área e veja como o sidenav adere à página</h3>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+        <p>Um pouco de texto...</p>
+    </div>
+    </body>
+</html>

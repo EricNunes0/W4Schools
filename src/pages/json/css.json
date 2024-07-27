@@ -45437,6 +45437,2158 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Barra de navegação",
+                "link": "/css/navbar",
+                "subtitles": [
+                    {
+                        "subtitle": "Barra de navegação",
+                        "link": "/css/navbar",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Demonstração: barras de navegação"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".demo-navbar-a {display: block;color: #000;padding: 8px 0 8px 16px;text-decoration: none;}",
+                                                ".demo-navbar-a:hover {background-color:#555;color:#f0f0f0}",
+                                                ".demo-navbar-a.active {background-color:#5075d0;color: #f0f0f0;}",
+                                                ".demo-navbar-horizontal-a {display: block;color: #f0f0f0;padding: 14px 16px;text-decoration: none;}",
+                                                ".demo-navbar-horizontal-a:hover {background-color:#555;}",
+                                                ".demo-navbar-horizontal-a.active {background-color:#5075d0;}",
+                                                ".demo-navbar-horizontal-2-a {display: block;color: #444;padding: 14px 16px;text-decoration: none;}",
+                                                ".demo-navbar-horizontal-2-a:hover {background-color:#bbb;}",
+                                                ".demo-navbar-horizontal-2-a.active {background-color:#5075d0;color:#f0f0f0}",
+                                                "</style>",
+                                                "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                                "<div style=\"float:left;width:33.33%;\">",
+                                                "<p>Vertical</p>",
+                                                "<ul style=\"width:90%;list-style-type: none;margin: 0;padding: 0;width: 200px;background-color: #f1f1f1;\">",
+                                                "<li><a class=\"demo-navbar-a active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li><a class=\"demo-navbar-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li><a class=\"demo-navbar-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li><a class=\"demo-navbar-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "<div style=\"float:left;width:66.66%\">",
+                                                "<p>Horizontal</p>",
+                                                "<ul style=\"list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;\">",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-a active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li style=\"float:right;\"><a class=\"demo-navbar-horizontal-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "<br>",
+                                                "<ul style=\"list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #fff;\">",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-2-a\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-2-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li style=\"float:left;\"><a class=\"demo-navbar-horizontal-2-a active\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li style=\"float:right;\"><a class=\"demo-navbar-horizontal-2-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Barras de navegação"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Ter uma navegação fácil de usar é importante para qualquer site."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Com CSS você pode transformar menus HTML simples em barras de navegação bonitas."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Barra de navegação = lista de links"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Uma barra de navegação precisa de HTML padrão como base."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Em nossos exemplos construiremos a barra de navegação a partir de uma lista HTML padrão."
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Uma barra de navegação é basicamente uma lista de links, então usar os elementos <ul> e <li> faz todo sentido:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/default",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Início",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/news",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Notícias",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/contact",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Contato",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "/about",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Sobre",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Agora vamos remover os marcadores, as margens e o preenchimento da lista:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "list-style-type",
+                                                            "value": "none"
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": "0"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Exemplo explicado"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "list-style-type: none;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Remove os marcadores. Uma barra de navegação não precisa de marcadores de lista",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Defina ",
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "margin: 0;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " e ",
+                                                        "spacesBefore": 1,
+                                                        "spacesAfter": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "padding: 0;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " para remover as configurações padrão do navegador",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "O código no exemplo acima é o código padrão usado nas barras de navegação verticais e horizontais, sobre o qual você aprenderá mais nos próximos capítulos."
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Barra de navegação vertical",
+                        "link": "/css/navbar/vertical",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Barra de navegação vertical"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".demo-navbar-vertical {display: block;color: #000;padding: 8px 0 8px 16px;text-decoration: none;}",
+                                                ".demo-navbar-vertical:hover {background-color:#555;color:#f0f0f0}",
+                                                ".demo-navbar-vertical.active {background-color:#5075d0;color: #f0f0f0;}",
+                                                "</style>",
+                                                "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                                "<div style=\"float:left;width:100%;\">",
+                                                "<ul style=\"width:100%;list-style-type: none;margin: 0;padding: 0;background-color: #f1f1f1;\">",
+                                                "<li><a class=\"demo-navbar-vertical active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Para construir uma barra de navegação vertical, você pode estilizar os elementos <a> dentro da lista, além do código da página anterior:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "block"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "60",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Exemplo explicado"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "display: block;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Exibe os links como elementos de bloco torna clicável toda a área do link (não apenas o texto) e nos permite especificar a largura (e preenchimento, margem, altura, etc., se desejar)",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "width: 60px;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " Os elementos do bloco ocupam toda a largura disponível por padrão. Queremos especificar uma largura de 60 pixels",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Você também pode definir a largura de <ul> e remover a largura de <a>, pois eles ocuparão toda a largura disponível quando exibidos como elementos de bloco. Isso produzirá o mesmo resultado do nosso exemplo anterior:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "list-style-type",
+                                                            "value": "none"
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "60",
+                                                                "unit": "px"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "block"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplos de barras de navegação verticais"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Crie uma barra de navegação vertical básica com fundo cinza e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "list-style-type",
+                                                            "value": "none"
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "200",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#f1f1f1"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "block"
+                                                        },
+                                                        {
+                                                            "property": "color",
+                                                            "value": "#000"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "8",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "16",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "text-decoration",
+                                                            "value": "none"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "comment",
+                                                    "code": "/* Altera a cor do link ao passar o mouse */"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "li a:",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "hover",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#555"
+                                                        },
+                                                        {
+                                                            "property": "color",
+                                                            "value":  "white"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".demo-navbar-vertical {display: block;color: #000;padding: 8px 0 8px 16px;text-decoration: none;}",
+                                                ".demo-navbar-vertical:hover {background-color:#555;color:#f0f0f0}",
+                                                ".demo-navbar-vertical.active {background-color:#5075d0;color: #f0f0f0;}",
+                                                "</style>",
+                                                "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                                "<div style=\"float:left;width:100%;\">",
+                                                "<ul style=\"width:200px;list-style-type: none;margin: 0;padding: 0;background-color: #f1f1f1;\">",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Link de navegação ativo/atual"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Adicione uma classe \"active\" ao link atual para que o usuário saiba em qual página ele está:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#5075d0"
+                                                        },
+                                                        {
+                                                            "property": "color",
+                                                            "value": "white"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".demo-navbar-vertical {display: block;color: #000;padding: 8px 0 8px 16px;text-decoration: none;}",
+                                                ".demo-navbar-vertical:hover {background-color:#555;color:#f0f0f0}",
+                                                ".demo-navbar-vertical.active {background-color:#5075d0;color: #f0f0f0;}",
+                                                "</style>",
+                                                "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                                "<div style=\"float:left;width:100%;\">",
+                                                "<ul style=\"width:200px;list-style-type: none;margin: 0;padding: 0;background-color: #f1f1f1;\">",
+                                                "<li><a class=\"demo-navbar-vertical active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Centralizando links e adicionando bordas"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Adicione "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "text-align: center"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " a <li> ou <a> para centralizar os links."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Adicione a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "border cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " para <ul> adicionar uma borda ao redor da barra de navegação."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Se você também quiser bordas dentro da barra de navegação, adicione um "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "border-bottom cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " a todos os elementos <li>, exceto ao último:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid #555"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "text-align",
+                                                            "value": "center"
+                                                        },
+                                                        {
+                                                            "property": "border-bottom",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid #555"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "li:",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "last-child",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border-bottom",
+                                                            "value":  "none"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".demo-navbar-vertical {display: block;color: #000;padding: 8px 0 8px 16px;text-decoration: none;}",
+                                                ".demo-navbar-vertical:hover {background-color:#555;color:#f0f0f0}",
+                                                ".demo-navbar-vertical.active {background-color:#5075d0;color: #f0f0f0;}",
+                                                "</style>",
+                                                "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                                "<div style=\"float:left;width:100%;\">",
+                                                "<ul style=\"background-color: #f1f1f1;border: 1px solid #555;width:200px;list-style-type: none;margin: 0;padding: 0;text-align:center;\">",
+                                                "<li><a class=\"demo-navbar-vertical active\" href=\"javascript:void(0)\" style=\"border-bottom: 1px solid #555;\">Início</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\" style=\"border-bottom: 1px solid #555;\">Notícias</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\" style=\"border-bottom: 1px solid #555;\">Contato</a></li>",
+                                                "<li><a class=\"demo-navbar-vertical\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Barra de navegação vertical fixa de altura total"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Crie uma navegação lateral \"fixa\" de altura total:"
+                                },
+                                {
+                                    "tag": "iframe",
+                                    "content": {
+                                        "src": "/pages/css/navbar/vertical.html",
+                                        "style": {
+                                            "maxWidth": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação vertical:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "list-style-type",
+                                                            "value": "none"
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "25",
+                                                                "unit": "%"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#f1f1f1"
+                                                        },
+                                                        {
+                                                            "property": "height",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "%"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "position",
+                                                            "value": "fixed"
+                                                        },
+                                                        {
+                                                            "property": "overflow",
+                                                            "value": "auto"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "Este exemplo pode não funcionar corretamente em dispositivos móveis."
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "subtitle": "Barra de navegação horizontal",
+                        "link": "/css/navbar/horizontal",
+                        "sections": [
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Barra de navegação horizontal"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "exampleHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".horizontal {background-color:#101520;color:#f0f0f0;overflow:auto;text-align:center;}",
+                                                ".horizontal-ul {list-style-type:none;margin:0;padding:0;width:100%;}",
+                                                ".horizontal-li {float:left;}",
+                                                ".horizontal-li.right {float:right;}",
+                                                ".horizontal-li:hover {background-color:#202530;color: #f0f0f0;}",
+                                                ".horizontal-a {color:#f0f0f0;display:inline-block;padding:14px 16px;text-decoration:none;}",
+                                                ".horizontal-a.gray {color:#666;}",
+                                                ".horizontal-a.gray:hover {background-color:#d3d3d3;color:#666;}",
+                                                ".horizontal-a.active {background-color:#5075d0;color:#f0f0f0;}",
+                                                ".horizontal-a.active.gray:hover {background-color:#5075d0;color:#f0f0f0;}",
+                                                ".horizontal.gray {background-color:#f3f3f3;border: 1px solid #e7e7e7;}",
+                                                "</style>",
+                                                "<div class=\"horizontal\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li right\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Existem duas maneiras de criar uma barra de navegação horizontal. Usando itens de lista embutidos ou flutuantes."
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Itens da lista inline"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Uma maneira de construir uma barra de navegação horizontal é especificar os elementos <li> como inline, além do código \"padrão\" da página anterior:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "inline"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Exemplo explicado"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "display: inline;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Aqui, removemos as quebras de linha antes e depois de cada item da lista, para exibi-los em uma linha",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Itens de lista flutuante"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Outra forma de criar uma barra de navegação horizontal é flutuar os elementos <li> e especificar um layout para os links de navegação:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "block"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "8",
+                                                                "unit": "px"
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#dddddd"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Exemplo explicado"
+                                },
+                                {
+                                    "tag": "ul",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float: left;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Use float para fazer com que os elementos do bloco flutuem um ao lado do outro",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "display: block;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Especifique o preenchimento (e altura, largura, margens, etc. se desejar)",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "padding: 8px;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Especifique um preenchimento entre cada elemento <a>, para torná-los bonitos",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "background-color: #dddddd;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " - Adicione uma cor de fundo cinza a cada elemento <a>",
+                                                        "spacesBefore": 1
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "tip",
+                                    "content": "Adicione a cor de fundo a <ul> em vez de cada elemento <a> se desejar uma cor de fundo de largura total:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#dddddd"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Exemplos de barras de navegação horizontais"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Crie uma barra de navegação horizontal básica com fundo escuro e altere a cor de fundo dos links quando o usuário passar o mouse sobre eles:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "list-style-type",
+                                                            "value": "none"
+                                                        },
+                                                        {
+                                                            "property": "margin",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "overflow",
+                                                            "value": "hidden"
+                                                        },
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#333"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "float",
+                                                            "value": "left"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "display",
+                                                            "value": "block"
+                                                        },
+                                                        {
+                                                            "property": "color",
+                                                            "value": "white"
+                                                        },
+                                                        {
+                                                            "property": "text-align",
+                                                            "value": "center"
+                                                        },
+                                                        {
+                                                            "property": "padding",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "14",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "16",
+                                                                        "unit": "px"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "text-decoration",
+                                                            "value": "none"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "comment",
+                                                    "code": "/* Altere a cor do link para #555 (cinza) ao passar o mouse */"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "li a:",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "hover",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#555"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div class=\"horizontal\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Link de navegação ativo/atual"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Adicione uma classe \"active\" ao link atual para que o usuário saiba em qual página ele está:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".active",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#5075d0"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div class=\"horizontal\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Links de alinhados à direita"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Alinhe os links à direita flutuando os itens da lista para a direita com "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "float: right;"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag open"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "#home",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Início",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "#news",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Notícias",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "href",
+                                                                "value": "#contact",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Contato",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag open",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "style",
+                                                                "value": "float:right",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "tabs": 1
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "a tag",
+                                                    "attributes": {
+                                                        "index": 2,
+                                                        "items": [
+                                                            {
+                                                                "name": "class",
+                                                                "value": "active",
+                                                                "valueIndex": 3
+                                                            },
+                                                            {
+                                                                "name": "href",
+                                                                "value": "#about",
+                                                                "valueIndex": 3
+                                                            }
+                                                        ]
+                                                    },
+                                                    "content": "Sobre",
+                                                    "contentIndex": -3
+                                                },
+                                                {
+                                                    "type": "code",
+                                                    "code": "li tag close"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "code",
+                                                    "code": "ul tag close"
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div class=\"horizontal\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li right\"><a class=\"horizontal-a active\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Bordas como divisores"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Adicione a propriedade "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "border-right cyan"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " a <li> para criar divisores de link:"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "comment",
+                                                    "code": "/* Adiciona uma borda direita cinza a todos os itens da lista, exceto o último item (último filho) */"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border-right",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid #bbb"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selectors": [
+                                                                {
+                                                                    "selector": "li:",
+                                                                    "color": "#f565c5"
+                                                                },
+                                                                {
+                                                                    "selector": "last-child",
+                                                                    "color": "#65f040"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border-right",
+                                                            "value": "none"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div class=\"horizontal\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\" style=\"border-right: 1px solid #bbb;\"><a class=\"horizontal-a active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\" style=\"border-right: 1px solid #bbb;\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\" style=\"border-right: 1px solid #bbb;\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li right\"><a class=\"horizontal-a\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Barra de navegação fixa"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Faça com que a barra de navegação fique na parte superior ou inferior da página, mesmo quando o usuário rola a página:"
+                                },
+                                {
+                                    "tag": "iframe",
+                                    "content": {
+                                        "src": "/pages/css/navbar/horizontal-top.html",
+                                        "style": {
+                                            "maxWidth": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "description": "Barra de navegação horizontal fixada no topo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "position",
+                                                            "value": "fixed"
+                                                        },
+                                                        {
+                                                            "property": "top",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "%"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "iframe",
+                                    "content": {
+                                        "src": "/pages/css/navbar/horizontal-bottom.html",
+                                        "style": {
+                                            "maxWidth": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "description": "Barra de navegação horizontal fixada no fundo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "position",
+                                                            "value": "fixed"
+                                                        },
+                                                        {
+                                                            "property": "bottom",
+                                                            "value": "0"
+                                                        },
+                                                        {
+                                                            "property": "width",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "number": "100",
+                                                                "unit": "%"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "A posição fixa pode não funcionar corretamente em dispositivos móveis."
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Barra de navegação horizontal cinza"
+                                },
+                                {
+                                    "tag": "p",
+                                    "content": "Um exemplo de barra de navegação horizontal cinza com uma borda cinza fina:"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "border",
+                                                            "value": {
+                                                                "type": "unit",
+                                                                "values": [
+                                                                    {
+                                                                        "number": "1",
+                                                                        "unit": "px"
+                                                                    },
+                                                                    {
+                                                                        "number": "solid #e7e7e7"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "property": "background-color",
+                                                            "value": "#f3f3f3"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "empty"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "color",
+                                                            "value": "#666"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ],
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<div class=\"horizontal gray\">",
+                                                "<ul class=\"horizontal-ul\">",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a gray active\" href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a gray\" href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a gray\" href=\"javascript:void(0)\">Contato</a></li>",
+                                                "<li class=\"horizontal-li\"><a class=\"horizontal-a gray\" href=\"javascript:void(0)\">Sobre</a></li>",
+                                                "</ul>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "h3",
+                                    "content": "Barra de navegação sticky"
+                                },
+                                {
+                                    "tag": "row",
+                                    "content": {
+                                        "items": [
+                                            {
+                                                "type": "multiple",
+                                                "codes": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": "Adicione "
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "position: sticky;"
+                                                    },
+                                                    {
+                                                        "type": "text",
+                                                        "text": " em <ul> para criar uma barra de navegação fixa."
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Um elemento \"sticky\" alterna entre relativo e fixo, dependendo da posição de rolagem. Ele é posicionado em relação até que uma determinada posição de deslocamento seja atingida na janela de visualização - então ele \"gruda\" no lugar (como position:fixed)."
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "iframe",
+                                    "content": {
+                                        "src": "/pages/css/navbar/horizontal-sticky.html",
+                                        "style": {
+                                            "maxWidth": "100%"
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Exemplo de barra de navegação horizontal:",
+                                        "description": "Barra de navegação horizontal fixada no topo:",
+                                        "lines": [
+                                            [
+                                                {
+                                                    "type": "css",
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "ul",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ],
+                                                    "declarations": [
+                                                        {
+                                                            "property": "position",
+                                                            "value": "-webkit-sticky"
+                                                        },
+                                                        {
+                                                            "property": "position",
+                                                            "value": "sticky"
+                                                        },
+                                                        {
+                                                            "property": "top",
+                                                            "value": "0"
+                                                        }
+                                                    ],
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                },
+                                {
+                                    "tag": "note",
+                                    "content": "O Internet Explorer não suporta posicionamento fixo. O Safari requer um prefixo -webkit- (veja o exemplo acima). Você também deve especificar pelo menos uma posição superior, direita, inferior ou esquerda para que o posicionamento fixo funcione."
+                                }
+                            ],
+                            [
+                                {
+                                    "tag": "h2",
+                                    "content": "Mais exemplos"
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Navegação superior responsiva:",
+                                        "description": "Como usar consultas de mídia CSS para criar uma navegação superior responsiva.",
+                                        "footerHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<img src=\"/images/examples/css/navbar/navbar_responsive_hor.jpg\" style=\"width:100%;\">"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Navegação lateral responsiva:",
+                                        "description": "Como usar consultas de mídia CSS para criar uma navegação lateral responsiva.",
+                                        "footerHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<img src=\"/images/examples/css/navbar/navbar_responsive_ver.jpg\" style=\"width:100%;\">"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "tag": "example",
+                                    "content": {
+                                        "title": "Barra de navegação suspensa:",
+                                        "description": "Como adicionar um menu suspenso dentro de uma barra de navegação.",
+                                        "footerHide": true,
+                                        "results": {
+                                            "title": null,
+                                            "type": "innerjoin",
+                                            "codes": [
+                                                "<style>",
+                                                ".dropdown-ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #38444d;}",
+                                                ".dropdown-li {float: left;}",
+                                                ".dropdown-li a, .dropbtn {display: inline-block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}",
+                                                ".dropdown-li a:hover, .dropdown:hover .dropbtn {background-color: red;}",
+                                                ".dropdown-li.dropdown {display: inline-block;}",
+                                                ".dropdown-content {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}",
+                                                ".dropdown-content a {color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}",
+                                                ".dropdown-content a:hover {background-color: #f1f1f1;}",
+                                                ".dropdown:hover .dropdown-content {display: block;}",
+                                                "</style>",
+                                                "<div style=\"background-color:white;padding: 8px;\">",
+                                                "<ul class=\"dropdown-ul\">",
+                                                "<li class=\"dropdown-li\"><a href=\"javascript:void(0)\">Início</a></li>",
+                                                "<li class=\"dropdown-li\"><a href=\"javascript:void(0)\">Notícias</a></li>",
+                                                "<li class=\"dropdown-li dropdown\">",
+                                                "<a href=\"javascript:void(0)\" class=\"dropbtn\">Menu</a>",
+                                                "<div class=\"dropdown-content\">",
+                                                "<a href=\"javascript:void(0)\">Link 1</a>",
+                                                "<a href=\"javascript:void(0)\">Link 2</a>",
+                                                "<a href=\"javascript:void(0)\">Link 3</a>",
+                                                "</div>",
+                                                "</li>",
+                                                "</ul>",
+                                                "<h3>Menu suspenso dentro de uma barra de navegação</h3>",
+                                                "<p>Passe o mouse sobre o link \"Menu\" para ver o menu suspenso.</p>",
+                                                "</div>"
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        ]
+                    }
+                ]
             }
         ]
     }

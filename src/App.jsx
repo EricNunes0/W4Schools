@@ -3896,6 +3896,24 @@ function App() {
 					<Route path = "opacity" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Opacidade"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Barra de navegação */}
+					<Route path = "navbar">
+						{/* Barra de navegação */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Barra de navegação" subtitle = "Barra de navegação"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Barra de navegação vertical */}
+						<Route path = "vertical" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Barra de navegação" subtitle = "Barra de navegação vertical"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Barra de navegação horizontal */}
+						<Route path = "horizontal" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Barra de navegação" subtitle = "Barra de navegação horizontal"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
