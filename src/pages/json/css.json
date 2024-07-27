@@ -932,7 +932,7 @@
                                         "codes": [
                                             {
                                                 "type": "link",
-                                                "text": "Seletores de pseudoclasse",
+                                                "text": "Seletores de pseudo-classe",
                                                 "link": "/css/pseudo_classes"
                                             },
                                             {
@@ -947,7 +947,7 @@
                                         "codes": [
                                             {
                                                 "type": "link",
-                                                "text": "Seletores de pseudoelementos",
+                                                "text": "Seletores de pseudo-elementos",
                                                 "link": "/css/pseudo_elements"
                                             },
                                             {
@@ -37879,7 +37879,7 @@
                                 },
                                 {
                                     "tag": "note",
-                                    "content": "Você aprenderá mais sobre o pseudoelemento ::after em um capítulo posterior."
+                                    "content": "Você aprenderá mais sobre o pseudo-elemento ::after em um capítulo posterior."
                                 }
                             ]
                         ]
@@ -41146,7 +41146,7 @@
                         },
                         {
                             "tag": "p",
-                            "content": "Uma pseudoclasse é usada para definir um estado especial de um elemento."
+                            "content": "Uma pseudo-classe é usada para definir um estado especial de um elemento."
                         },
                         {
                             "tag": "p",
@@ -41209,7 +41209,7 @@
                         },
                         {
                             "tag": "p",
-                            "content": "A sintaxe das pseudoclasses:"
+                            "content": "A sintaxe das pseudo-classes:"
                         },
                         {
                             "tag": "example",
@@ -41249,7 +41249,7 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "Pseudoclasses âncora"
+                            "content": "Pseudo-classes âncora"
                         },
                         {
                             "tag": "p",
@@ -41408,17 +41408,17 @@
                         },
                         {
                             "tag": "note",
-                            "content": "a:hover DEVE vir depois de a:link e a:visited na definição CSS para ser eficaz! a:active DEVE vir depois de a:hover na definição CSS para ser eficaz! Nomes de pseudoclasses não diferenciam maiúsculas de minúsculas."
+                            "content": "a:hover DEVE vir depois de a:link e a:visited na definição CSS para ser eficaz! a:active DEVE vir depois de a:hover na definição CSS para ser eficaz! Nomes de pseudo-classes não diferenciam maiúsculas de minúsculas."
                         }
                     ],
                     [
                         {
                             "tag": "h2",
-                            "content": "Pseudoclasses e classes HTML"
+                            "content": "Pseudo-classes e classes HTML"
                         },
                         {
                             "tag": "p",
-                            "content": "Pseudoclasses podem ser combinadas com classes HTML:"
+                            "content": "Pseudo-classes podem ser combinadas com classes HTML:"
                         },
                         {
                             "tag": "p",
@@ -41481,7 +41481,7 @@
                                         "codes": [
                                             {
                                                 "type": "text",
-                                                "text": "Um exemplo de uso da pseudoclasse "
+                                                "text": "Um exemplo de uso da pseudo-classe "
                                             },
                                             {
                                                 "type": "code",
@@ -41630,7 +41630,7 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "A pseudoclasse :first-child"
+                            "content": "A pseudo-classe :first-child"
                         },
                         {
                             "tag": "row",
@@ -41641,7 +41641,7 @@
                                         "codes": [
                                             {
                                                 "type": "text",
-                                                "text": "A pseudoclasse "
+                                                "text": "A pseudo-classe "
                                             },
                                             {
                                                 "type": "code",
@@ -41805,7 +41805,7 @@
                                         "codes": [
                                             {
                                                 "type": "text",
-                                                "text": "A pseudoclasse "
+                                                "text": "A pseudo-classe "
                                             },
                                             {
                                                 "type": "code",
@@ -42022,7 +42022,7 @@
                                     },
                                     {
                                         "type": "text",
-                                        "text": "Este exemplo demonstra como usar a pseudoclasse :focus."
+                                        "text": "Este exemplo demonstra como usar a pseudo-classe :focus."
                                     }
                                 ]
                             }
@@ -42162,7 +42162,7 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "Todas as pseudoclasses"
+                            "content": "Todas as pseudo-classes"
                         },
                         {
                             "tag": "table",
@@ -42660,7 +42660,7 @@
                         },
                         {
                             "tag": "h2",
-                            "content": "Todas os pseudoelementos"
+                            "content": "Todos os pseudo-elementos"
                         },
                         {
                             "tag": "table",
@@ -42779,6 +42779,2660 @@
                                         "textAlign": "left"
                                     }
                                 }
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Pseudo-elementos",
+                "link": "/css/pseudo-elements",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que são Pseudo-elementos?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um pseudo-elemento CSS é usado para estilizar partes especificadas de um elemento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por exemplo, pode ser usado para:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Estilizar a primeira letra ou linha de um elemento"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Inserir conteúdo antes ou depois do conteúdo de um elemento"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A sintaxe dos pseudo-elementos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "seletor::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "pseudo-elemento",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "propriedade",
+                                                    "value": "valor"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::first-line"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::first-line"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para adicionar um estilo especial à primeira linha de um texto."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir formata a primeira linha do texto em todos os elementos <p>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "first-line",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                },
+                                                {
+                                                    "property": "font-variant",
+                                                    "value": "small-caps"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O pseudo-elemento ::first-line só pode ser aplicado a elementos de nível de bloco."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "As seguintes propriedades se aplicam ao pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::first-line"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de fonte"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de cor"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de fundo"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "word-spacing"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "letter-spacing"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "text-decoration"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "vertical-align"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "text-transform"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "line-height"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "clear"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Notação de dois pontos duplos - ::first-line | :first-line"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os dois pontos duplos substituíram a notação de dois pontos simples para pseudo-elementos em CSS3. Esta foi uma tentativa do W3C de distinguir entre pseudo-classes e pseudo-elementos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A sintaxe de dois pontos únicos foi usada para pseudo-classes e pseudo-elementos em CSS2 e CSS1."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para compatibilidade com versões anteriores, a sintaxe de dois pontos é aceitável para pseudo-elementos CSS2 e CSS1."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::first-letter"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::first-letter"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para adicionar um estilo especial à primeira letra de um texto."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir formata a primeira letra do texto em todos os elementos <p>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "first-letter",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": "xx-large"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O pseudo-elemento ::first-letter só pode ser aplicado a elementos de nível de bloco."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "As seguintes propriedades se aplicam ao pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::first-letter"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de fonte"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de cor"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de fundo"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de margin (margem)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de padding (espaçamento)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Propriedades de border (borda)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "text-decoration"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "vertical-align (somente se \"float\" for \"none\")"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "text-transform"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "line-height"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "float"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "clear"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elementos e classes HTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Pseudo-elementos podem ser combinados com classes HTML:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".intro",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "first-letter",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "200",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo acima exibirá a primeira letra dos parágrafos com class=\"intro\", em vermelho e em tamanho maior."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Múltiplos pseudo-elementos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Vários pseudo-elementos também podem ser combinados."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No exemplo a seguir, a primeira letra de um parágrafo será vermelha, em tamanho de fonte xx-large. O restante da primeira linha será azul e em versalete. O restante do parágrafo terá o tamanho e a cor da fonte padrão:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "first-letter",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#ff0000"
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "200",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "p::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "first-line",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "#0000ff"
+                                                },
+                                                {
+                                                    "property": "font-variant",
+                                                    "value": "small-caps"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::before"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::before"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode ser usado para inserir algum conteúdo antes do conteúdo de um elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir insere uma imagem antes do conteúdo de cada elemento <h1>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h1::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "before",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "url",
+                                                        "url": "\"exemplo.gif\""
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::after"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::after"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode ser usado para inserir algum conteúdo depois do conteúdo de um elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir insere uma imagem depois do conteúdo de cada elemento <h1>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h1::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "after",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "url",
+                                                        "url": "\"exemplo.gif\""
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::marker"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::marker"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " seleciona os marcadores dos itens da lista."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir estiliza os marcadores dos itens da lista:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "marker",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "23",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Pseudo-elemento ::selection"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O pseudo-elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::selection"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " corresponde à parte de um elemento que é selecionado por um usuário."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "As seguintes propriedades CSS podem ser aplicadas a "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "::selection"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ": "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "cursor cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "outline cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir torna o texto selecionado vermelho sobre fundo amarelo:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de pseudo-elemento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "selection",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Defina a cor de fundo para vermelho, na primeira linha do parágrafo com classe \"intro\".",
+                                "answers": [".intro::first-line"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "175px",
+                                            "maxLength": 18,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background-color cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "red",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "intro",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Maecenas auctor, nulla id convallis egestas,"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "augue nisi pharetra nisi, et varius ex nisi et enim."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todos os pseudo-elementos"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Seletor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Exemplo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::after",
+                                            "href": "/css/ref/sel/after"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p::after"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Insire conteúdo após cada elemento <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::before",
+                                            "href": "/css/ref/sel/before"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p::before"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Insire conteúdo antes de cada elemento <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::first-letter",
+                                            "href": "/css/ref/sel/first-letter"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p::first-letter"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona a primeira letra de cada elemento <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::first-line",
+                                            "href": "/css/ref/sel/first-line"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p::first-line"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona a primeira linha de cada elemento <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::marker",
+                                            "href": "/css/ref/sel/marker"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "::marker"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona os marcadores dos itens da lista"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "::selection",
+                                            "href": "/css/ref/sel/selection"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p::selection"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona a parte de um elemento que é selecionado por um usuário"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Todas as pseudo-classes"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Seletor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Exemplo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":active",
+                                            "href": "/css/ref/sel/active"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a::active"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o link ativo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":checked",
+                                            "href": "/css/ref/sel/checked"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:checked"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <input> verificados"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":disabled",
+                                            "href": "/css/ref/sel/disabled"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:disabled"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <input> desabilitados"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":empty",
+                                            "href": "/css/ref/sel/empty"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:empty"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todo elemento <p> que não possui filhos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":enabled",
+                                            "href": "/css/ref/sel/enabled"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:enabled"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <input> habilitados"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":first-child",
+                                            "href": "/css/ref/sel/first-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:first-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <p> que são o primeiro filho de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":first-of-type",
+                                            "href": "/css/ref/sel/first-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:first-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o primeiro elemento <p> de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":focus",
+                                            "href": "/css/ref/sel/focus"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:focus"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o elemento <input> que está em foco"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":hover",
+                                            "href": "/css/ref/sel/hover"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a:hover"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona links ao passar o mouse"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":in-range",
+                                            "href": "/css/ref/sel/in-range"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:in-range"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> com um valor dentro de um intervalo especificado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":invalid",
+                                            "href": "/css/ref/sel/invalid"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:invalid"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <input> com um valor inválido"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":lang(language)",
+                                            "href": "/css/ref/sel/lang"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:lang(it)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> com um valor de atributo lang começando com \"it\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":last-child",
+                                            "href": "/css/ref/sel/last-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:last-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <p> que são o último filho de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":last-of-type",
+                                            "href": "/css/ref/sel/last-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:last-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o último elemento <p> de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":link",
+                                            "href": "/css/ref/sel/link"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a:link"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os links não visitados"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":not(selector)",
+                                            "href": "/css/ref/sel/not"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": ":not(p)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos que não são um elemento <p>"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":nth-child(n)",
+                                            "href": "/css/ref/sel/nth-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:nth-child(2)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o segundo filho de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":nth-last-child(n)",
+                                            "href": "/css/ref/sel/nth-last-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:nth-last-child(2)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o segundo filho de seu pai, contando a partir do último filho"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":nth-last-of-type(n)",
+                                            "href": "/css/ref/sel/nth-last-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:nth-last-of-type(2)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o segundo elemento <p> de seu pai, contando a partir do último filho"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":nth-of-type(n)",
+                                            "href": "/css/ref/sel/nth-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:nth-of-type(2)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona cada elemento <p> que é o segundo elemento <p> de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":only-of-type",
+                                            "href": "/css/ref/sel/only-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:only-of-type"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todo elemento <p> que é o único elemento <p> de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":only-child",
+                                            "href": "/css/ref/sel/only-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "p:only-child"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todo elemento <p> que é filho único de seu pai"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":optional",
+                                            "href": "/css/ref/sel/optional"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:optional"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> sem nenhum atributo \"obrigatório\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":out-of-range",
+                                            "href": "/css/ref/sel/out-of-range"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:out-of-range"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> com um valor fora de um intervalo especificado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":read-only",
+                                            "href": "/css/ref/sel/read-only"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:read-only"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> com um atributo \"readonly\" especificado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":read-write",
+                                            "href": "/css/ref/sel/read-write"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:read-write"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> sem o atributo \"readonly\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":required",
+                                            "href": "/css/ref/sel/required"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:required"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona elementos <input> com um atributo \"required\" especificado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":root",
+                                            "href": "/css/ref/sel/root"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "root"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o elemento raiz do documento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":target",
+                                            "href": "/css/ref/sel/target"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "#news:target"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona o elemento #news ativo atual (clicado em uma URL que contém esse nome de âncora)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":valid",
+                                            "href": "/css/ref/sel/valid"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "input:valid"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <input> com um valor válido"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ":visited",
+                                            "href": "/css/ref/sel/visited"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a:valid"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os links visitados"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Opacidade",
+                "link": "/css/opacity",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Imagem transparente"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "opacity cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica a opacidade/transparência de um elemento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "opacity cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode assumir um valor de 0.0 a 1.0."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Quanto menor o valor, mais transparente:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "img",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "0.5"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"overflow:auto;\">",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/forest.jpg\" alt=\"Floresta\" style=\"width:100%;opacity:0.2;\">",
+                                        "<p style=\"color:#f0f0f0;text-align:center;\">opacity 0.2</p>",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/forest.jpg\" alt=\"Floresta\" style=\"width:100%;opacity:0.5\">",
+                                        "<p style=\"color:#f0f0f0;text-align:center;\">opacity 0.5</p>",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/forest.jpg\" alt=\"Floresta\" style=\"width:100%;\">",
+                                        "<p style=\"color:#f0f0f0;text-align:center;\">opacity 1<br>(padrão)</p>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Efeito de foco transparente"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "opacity cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é frequentemente usada junto com o seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": ":hover"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para alterar a opacidade ao passar o mouse:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "img",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "0.5"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "img:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "1.0"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".transparent-hover {opacity:0.5;width:100%}",
+                                        ".transparent-hover:hover {opacity:1.0}",
+                                        "</style>",
+                                        "<div style=\"overflow:auto;\">",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/lights.jpg\" alt=\"Luzes\" class=\"transparent-hover\">",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/mountains.jpg\" alt=\"Montanhas\" class=\"transparent-hover\">",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/island.jpg\" alt=\"Ilha\" class=\"transparent-hover\">",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O primeiro bloco CSS é semelhante ao código do Exemplo 1."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Além disso, adicionamos o que deve acontecer quando um usuário passa o mouse sobre uma das imagens."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Neste caso queremos que a imagem NÃO fique transparente quando o usuário passar o mouse sobre ela."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O CSS para isso é opacity:1;."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quando o ponteiro do mouse se afastar da imagem, a imagem ficará transparente novamente."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um exemplo de efeito de foco invertido:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "img:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "0.5"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".transparent-hover-2 {opacity:1.0;width:100%}",
+                                        ".transparent-hover-2:hover {opacity:0.5}",
+                                        "</style>",
+                                        "<div style=\"overflow:auto;\">",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/lights.jpg\" alt=\"Luzes\" class=\"transparent-hover-2\">",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/mountains.jpg\" alt=\"Montanhas\" class=\"transparent-hover-2\">",
+                                        "</div>",
+                                        "<div style=\"float:left;padding:0 1.6%;width:30%;\">",
+                                        "<img src=\"/images/examples/css/display/island.jpg\" alt=\"Ilha\" class=\"transparent-hover-2\">",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Caixa transparente"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Ao usar a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "opacity cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar transparência ao plano de fundo de um elemento, todos os seus elementos filhos herdam a mesma transparência."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isso pode dificultar a leitura do texto dentro de um elemento totalmente transparente:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "0.3"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"display:table;text-align:center;width:100%\">",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:#5075d0;opacity:1;padding:50px;color:black\"><p>opacity 1</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:#5075d0;opacity:0.6;padding:50px;color:black\"><p>opacity 0.6</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:#5075d0;opacity:0.3;padding:50px;color:black\"><p>opacity 0.3</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:#5075d0;opacity:0.1;padding:50px;color:black\"><p>opacity 0.1</p></div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Transparência usando RGBA"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Se você não quiser aplicar opacidade aos elementos filhos, como no exemplo acima, use valores de cores RGBA. O exemplo a seguir define a opacidade da cor de fundo e não do texto:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "div",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "color",
+                                                        "method": "rgba",
+                                                        "r": 80,
+                                                        "g": 117,
+                                                        "b": 208,
+                                                        "a": 0.3
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"display:table;text-align:center;width:100%\">",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:rgba(80, 117, 208, 1.0);padding:50px;color:black\"><p>100% de opacidade</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:rgba(80, 117, 208, 0.6);padding:50px;color:black\"><p>60% de opacidade</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:rgba(80, 117, 208, 0.3);padding:50px;color:black\"><p>30% de opacidade</p></div>",
+                                        "</div>",
+                                        "<div style=\"display: table-cell;\">",
+                                        "<div style=\"background-color:rgba(80, 117, 208, 0.1);padding:50px;color:black\"><p>10% de opacidade</p></div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você aprendeu em nosso capítulo "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Cores",
+                                                "link": "/css/colors"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " que pode usar RGB como valor de cor."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Além do RGB, você pode usar um valor de cor RGB com canal alfa (RGBA) - que especifica a opacidade de uma cor."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um valor de cor RGBA é especificado com: rgba(vermelho, verde, azul, alfa). O parâmetro alfa é um número entre 0,0 (totalmente transparente) e 1,0 (totalmente opaco)."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você aprenderá mais sobre cores RGBA em: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Cores",
+                                                "link": "/css/css3_colors"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Texto em caixa transparente"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de opacity:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".background",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "klematis.jpg",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".transbox",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "30",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#ffffff"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "opacity",
+                                                    "value": "0.6"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".transbox ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "p",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "font-weight",
+                                                    "value": "bold"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "#000000"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "background",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "transbox",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é algum texto colocado na caixa transparente.",
+                                            "contentIndex": -3,
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"background: url('/images/examples/css/opacity/klematis.jpg') repeat;border: 2px solid black;\">",
+                                        "<div style=\"margin: 30px;background-color: #ffffff;border: 1px solid black;opacity: 0.6;\">",
+                                        "<p style=\"font-weight:bold;margin:5%;\">Este é algum texto colocado na caixa transparente.</p>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Primeiro, criamos um elemento <div> (class=\"background\") com uma imagem de fundo e uma borda."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Depois criamos outra <div> (class=\"transbox\") dentro da primeira <div>."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O <div class=\"transbox\"> tem uma cor de fundo e uma borda - o div é transparente."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Dentro do <div> transparente, adicionamos algum texto dentro de um elemento <p>."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Use CSS para definir a transparência da imagem para 50%.",
+                                "answers": ["opacity", "0.5"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "69px",
+                                            "maxLength": 7,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-2",
+                                            "width": "30px",
+                                            "maxLength": 3,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "klematis.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "150",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "113",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
                             }
                         }
                     ]

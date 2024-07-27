@@ -3888,6 +3888,14 @@ function App() {
 					<Route path = "pseudo-classes" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Pseudo-classes"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Pseudo-elementos */}
+					<Route path = "pseudo-elements" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Pseudo-elementos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Opacidade */}
+					<Route path = "opacity" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Opacidade"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
