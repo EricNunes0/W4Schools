@@ -50376,6 +50376,1078 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Seletores de atributos",
+                "link": "/css/attribute_selectors",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilize elementos HTML com atributos específicos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "É possível estilizar elementos HTML que possuem atributos ou valores de atributos específicos."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos com um atributo especificado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos <a> com um atributo de destino:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "target",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos com um atributo e valor especificados."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos <a> com um atributo target=\"_blank\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "target",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"_blank\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo~=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo~=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos com um valor de atributo contendo uma palavra especificada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos com um atributo title que contém uma lista de palavras separadas por espaços, uma das quais é \"flower\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "title",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "~=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"flower\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "5",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid yellow"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo acima irá combinar elementos com title=\"flower\", title=\"summer flower\" e title=\"flower new\", mas não title=\"my-flower\" ou title=\"flowers\"."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo|=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo|=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos com o atributo especificado, cujo valor pode ser exatamente o valor especificado, ou o valor especificado seguido por um hífen (-)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O valor deve ser uma palavra inteira, isoladamente, como class=\"top\", ou seguida de um hífen( - ), como class=\"top-text\"."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "class",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "|=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"top\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo^=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo^=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos com o atributo especificado, cujo valor começa com o valor especificado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que começa com \"top\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O valor não precisa ser uma palavra inteira!"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "class",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "^=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"top\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo$=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo$=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos cujo valor do atributo termina com um valor especificado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que termina com \"test\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O valor não precisa ser uma palavra inteira!"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "class",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "$=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"test\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Seletor [atributo*=\"valor\"]"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "[atributo*=\"valor\"]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usado para selecionar elementos cujo valor do atributo contém um valor especificado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir seleciona todos os elementos com um valor de atributo de classe que contém \"te\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O valor não precisa ser uma palavra inteira!"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "class",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "*=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"te\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando formulários"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os seletores de atributos podem ser úteis para estilizar formulários sem classe ou ID:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de seletor de atributos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"text\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "150",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                },
+                                                {
+                                                    "property": "margin-bottom",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "10",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "\"button\"",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "120",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin-left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Visite o "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "Tutorial de Formulários",
+                                                "link": "/css/form"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para obter mais exemplos de como estilizar formulários com CSS."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Defina a cor de fundo como \"red\" para elementos <a> que possuem um atributo target.",
+                                "answers": ["a[target]"],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "88px",
+                                            "maxLength": 9,
+                                            "spacesBefore": 0,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background-color cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "red",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "http://www.exemplo.com",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "exemplo.com",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "http://www.disney.com",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "disney.com",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "http://www.wikipedia.org",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_top",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "wikipedia.org",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todos os seletores de atributos"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Seletor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Exemplo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição do exemplo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo]",
+                                            "href": "/css/ref/sel/attribute"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "[target]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos com um atributo target"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo=valor]",
+                                            "href": "/css/ref/sel/attribute_value"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "[target=\"_blank\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos com target=\"_blank\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo~=valor]",
+                                            "href": "/css/ref/sel/attribute_value_contains"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "[title~=\"flower\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos com um atributo title que contém uma lista de palavras separadas por espaços, uma das quais é \"flower\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo|=valor]",
+                                            "href": "/css/ref/sel/attribute_value_lang"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "[lang|=\"en\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos com um valor de atributo lang começando com \"en\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo^=valor]",
+                                            "href": "/css/ref/sel/attr_begin"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a[href^=\"https\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <a> com um valor de atributo href começando com \"https\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo$=valor]",
+                                            "href": "/css/ref/sel/attr_end"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a[href$=\".pdf\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <a> com um valor de atributo href terminando com \".pdf\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "[atributo*=valor]",
+                                            "href": "/css/ref/sel/attr_contain"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "a[href*=\"exemplo\"]"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Seleciona todos os elementos <a> com um valor de atributo href contendo a substring \"exemplo\""
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

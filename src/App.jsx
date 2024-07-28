@@ -3926,6 +3926,10 @@ function App() {
 					<Route path = "image_sprites" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Sprites de imagens"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Seletores de atributos */}
+					<Route path = "attribute_selectors" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Seletores de atributos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
