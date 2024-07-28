@@ -48759,6 +48759,1623 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Galeria de imagens",
+                "link": "/css/image_gallery",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "O CSS pode ser usado para criar uma galeria de imagens."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".responsive {float: left;outline:1px solid #eee;margin: 0 1.25%;width: 22.5%;}",
+                                        ".responsive:hover {outline:1px solid #888;}",
+                                        ".responsive-div-img {border:1px solid #eee;float: left;}",
+                                        ".responsive-img {height:auto;width:100%;}",
+                                        "@media screen and (max-width: 768px) {",
+                                        ".responsive {margin: 0 2.5%;width: 45%;}",
+                                        "}",
+                                        "@media screen and (max-width: 480px) {",
+                                        ".responsive {margin: 5px 0;width: 100%;}",
+                                        "}",
+                                        "</style>",
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto;text-align:center;\">",
+                                        "<div class=\"responsive\">",
+                                        "<div class=\"responsive-div-img\">",
+                                        "<a href=\"/images/examples/css/display/island.jpg\" target=\"_blank\">",
+                                        "<img src=\"/images/examples/css/display/island.jpg\" alt=\"Ilha\" class=\"responsive-img\">",
+                                        "</a>",
+                                        "<div class=\"desc\">Adicione uma descrição da imagem aqui</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<div class=\"responsive\">",
+                                        "<div class=\"responsive-div-img\">",
+                                        "<a href=\"/images/examples/css/display/forest.jpg\" target=\"_blank\">",
+                                        "<img src=\"/images/examples/css/display/forest.jpg\" alt=\"Floresta\" class=\"responsive-img\">",
+                                        "</a>",
+                                        "<div class=\"desc\">Adicione uma descrição da imagem aqui</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<div class=\"responsive\">",
+                                        "<div class=\"responsive-div-img\">",
+                                        "<a href=\"/images/examples/css/display/lights.jpg\" target=\"_blank\">",
+                                        "<img src=\"/images/examples/css/display/lights.jpg\" alt=\"Luzes\" class=\"responsive-img\">",
+                                        "</a>",
+                                        "<div class=\"desc\">Adicione uma descrição da imagem aqui</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<div class=\"responsive\">",
+                                        "<div class=\"responsive-div-img\">",
+                                        "<a href=\"/images/examples/css/display/mountains.jpg\" target=\"_blank\">",
+                                        "<img src=\"/images/examples/css/display/mountains.jpg\" alt=\"Montanhas\" class=\"responsive-img\">",
+                                        "</a>",
+                                        "<div class=\"desc\">Adicione uma descrição da imagem aqui</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Galeria de imagens"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A seguinte galeria de imagens é criada com CSS:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de galeria de imagens:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".gallery",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #ccc"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "float",
+                                                    "value": "left"
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "180",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".gallery",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #777"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".gallery ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "img",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": "auto"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": ".desc",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "15",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gallery",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "island.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "island.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Ilha",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "600",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "400",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "desc",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Adicione uma descrição da imagem aqui",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gallery",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "forest.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "forest.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Floresta",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "600",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "400",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "desc",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Adicione uma descrição da imagem aqui",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gallery",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "lights.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "lights.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Luzes",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "600",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "400",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "desc",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Adicione uma descrição da imagem aqui",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "gallery",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "mountains.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "target",
+                                                        "value": "_blank",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "img tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "mountains.jpg",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "alt",
+                                                        "value": "Montanhas",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "width",
+                                                        "value": "600",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "height",
+                                                        "value": "400",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag close",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "desc",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Adicione uma descrição da imagem aqui",
+                                            "contentIndex": -3,
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Galeria de imagens responsivas",
+                                "description": "Como usar consultas de mídia CSS para criar uma galeria de imagens responsiva que ficará bem em desktops, tablets e smartphones.",
+                                "footerHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<img src=\"/images/examples/css/image_gallery/responsive_img_gallery.jpg\" style=\"width:100%\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Sprites de imagens",
+                "link": "/css/image_sprites",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sprites de imagens"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um sprite de imagem é uma coleção de imagens colocadas em uma única imagem."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma página da web com muitas imagens pode demorar muito para carregar e gerar várias solicitações de servidor."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O uso de sprites de imagem reduzirá o número de solicitações do servidor e economizará a largura de banda."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sprites de imagens – Exemplo simples"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Em vez de usar três imagens separadas, usamos esta imagem única (\"nav_sprites.png\")"
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/examples/css/image_sprites/nav_sprites.png"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com CSS, podemos mostrar apenas a parte da imagem que precisamos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No exemplo a seguir, o CSS especifica qual parte da imagem \"nav_sprites.png\" mostrar:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de sprites de imagens:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#home",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "46",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "44",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "<img id=\"home\" src=\"img_trans.gif\"> - Define apenas uma pequena imagem transparente porque o atributo src não pode ficar vazio. A imagem exibida será a imagem de fundo que especificamos em CSS"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "width: 46px; height: 44px; - Define a parte da imagem que queremos usar"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "background: url(nav_sprites.png) 0 0; - Define a imagem de fundo e sua posição (0px esquerdo, 0px superior)"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Esta é a maneira mais fácil de usar sprites de imagem, agora queremos expandi-la usando links e efeitos de foco."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sprites de imagens - Criando uma lista de navegação"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Queremos usar a imagem sprite (\"nav_sprites.png\") para criar uma lista de navegação."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Usaremos uma lista HTML, pois ela pode ser um link e também suporta uma imagem de fundo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de sprites de imagens:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#navlist",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#navlist ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "margin",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "property": "list-style",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "top",
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#navlist ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "li",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#navlist ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "44",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#home",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "0",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "46",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#prev",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "63",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "43",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "-47",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#next",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "129",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "43",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "-91",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "#navlist {position:relative;} - a posição é definida como relativa para permitir o posicionamento absoluto dentro dela"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#navlist li {margin:0;padding:0;list-style:none;position:absolute;top:0;} - margem e preenchimento são definidos como 0, estilo de lista é removido e todos os itens da lista são posicionados de forma absoluta"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#navlist li, #navlist a {height:44px;display:block;} - a altura de todas as imagens é 44px"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora comece a posicionar e estilizar cada parte específica:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "#home {left:0px;width:46px;} - Posicionado totalmente à esquerda e a largura da imagem é 46px"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#home {background:url(nav_sprites.png) 0 0;} - Define a imagem de fundo e sua posição (0px esquerdo, 0px superior)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#prev {left:63px;width:43px;} - Posicionado 63px à direita (#home largura 46px + algum espaço extra entre os itens) e a largura é 43px"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#prev {background:url('nav_sprites.png') -47px 0;} - Define a imagem de fundo 47px à direita (#home largura 46px + divisor de linha 1px)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#next {left:129px;width:43px;} - Posicionado 129px à direita (o início de #prev é 63px + #prev largura 43px + espaço extra) e a largura é 43px"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "#next {background:url('nav_sprites.png') -91px 0;} - Define a imagem de fundo 91px à direita (#home largura 46px + divisor de linha 1px + #prev largura 43px + divisor de linha 1px)"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Sprites de imagens – Efeito de foco"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora queremos adicionar um efeito de foco à nossa lista de navegação."
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "O seletor :hover pode ser usado em todos os elementos, não apenas em links."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Nossa nova imagem (\"nav_sprites_hover.png\") contém três imagens de navegação e três imagens para usar para efeitos de foco:"
+                        },
+                        {
+                            "tag": "img",
+                            "content": {
+                                "src": "/images/examples/css/image_sprites/nav_sprites_hover.png"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Como esta é uma única imagem e não seis arquivos separados, não haverá atraso no carregamento quando o usuário passar o mouse sobre a imagem."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Adicionamos apenas três linhas de código para adicionar o efeito de foco:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de sprites de imagens:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#home ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites_hover.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "-45",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#prev ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites_hover.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "-47",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "-45",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#next ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "nav_sprites_hover.png",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "-91",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "-45",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "#home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;} - Para todas as três imagens flutuantes, especificamos a mesma posição de fundo, apenas 45px mais abaixo"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

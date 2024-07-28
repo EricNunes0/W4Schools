@@ -3918,6 +3918,14 @@ function App() {
 					<Route path = "dropdowns" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Dropdowns"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Galeria de imagens */}
+					<Route path = "image_gallery" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Galeria de imagens"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Sprites de imagens */}
+					<Route path = "image_sprites" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Sprites de imagens"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
