@@ -47589,6 +47589,1176 @@
                         ]
                     }
                 ]
+            },
+            {
+                "title": "CSS Dropdowns",
+                "link": "/css/dropdowns",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Demonstração: menus suspensos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode criar um menu suspenso flutuante com CSS."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Passe o mouse sobre os exemplos abaixo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".dropdown-content {background-color:#13131F;display: none;position: absolute;min-width: 100%;overflow: auto;box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);z-index: 1;}",
+                                        ".dropdown-content a {color: black;display: block;padding: 12px 16px;text-decoration: none;}",
+                                        ".dropdown-content.white a {background-color:#f9f9f9;color:#000;}",
+                                        ".dropdown2:hover .dropdown-content {display: block;}",
+                                        ".dropbtn {background-color: #5075d0;color: white;padding: 16px;font-size: 16px;border: none;cursor: pointer;}",
+                                        "</style>",
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto;padding-bottom:150px;\">",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;top:15px;\">",
+                                        "<span class=\"dropspan\">Dropdown Text</span>",
+                                        "<div class=\"dropdown-content\" style=\"padding:8px 16px;min-width:150px;text-align:center\">",
+                                        "<p>Hello World!</p>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;\">",
+                                        "<button class=\"dropbtn\" style=\"font-size:12px;\">Dropdown Menu</button>",
+                                        "<div class=\"dropdown-content white\">",
+                                        "<a href=\"javascript:void(0)\">Link 1</a>",
+                                        "<a href=\"javascript:void(0)\">Link 2</a>",
+                                        "<a href=\"javascript:void(0)\">Link 3</a>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;\">",
+                                        "<span style=\"bottom:15px;position:relative;\">Outro: </span><img class=\"dropimg\" src=\"/images/examples/css/display/island.jpg\" alt=\"Illha\" width=\"100\" height=\"50\">",
+                                        "<div class=\"dropdown-content right\">",
+                                        "<div class=\"img\">",
+                                        "<img src=\"/images/examples/css/display/island.jpg\" alt=\"Ilha\" width=\"200\" height=\"100\">",
+                                        "<div class=\"w3-white\" style=\"padding:15px;text-align:center;\">Beautiful Cinque Terre</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Menu suspenso básico"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Criando uma caixa suspensa que aparece quando o usuário move o mouse sobre um elemento:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de dropdown:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropdown",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropdown-content",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "display",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f9f9f9"
+                                                },
+                                                {
+                                                    "property": "min-width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "160",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "box-shadow",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "8",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "16",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "rgba",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0.2",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "12",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "16",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "1"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".dropdown",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover .dropdown-content",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "dropdown",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "span tag",
+                                            "content": "Passe o mouse sobre mim",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "dropdown-content",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Hello World!",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Use qualquer elemento para abrir o conteúdo suspenso, por exemplo. um elemento <span> ou <button>."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Use um elemento contêiner (como <div>) para criar o conteúdo suspenso e adicione o que quiser dentro dele."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Envolva um elemento <div> em torno dos elementos para posicionar o conteúdo suspenso corretamente com CSS."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A classe .dropdown usa "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: relative;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", que é necessária quando queremos que o conteúdo do menu suspenso seja colocado logo abaixo do botão suspenso, usando "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "position: absolute;"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A classe .dropdown-content contém o conteúdo suspenso real. Ele está oculto por padrão e será exibido ao passar o mouse (veja abaixo). Observe que a largura mínima está definida como 160px. Sinta-se à vontade para mudar isso. Dica: se você quiser que a largura do conteúdo do menu suspenso seja tão larga quanto o botão do menu suspenso, defina a largura como 100% (e overflow:auto para permitir a rolagem em telas pequenas)."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Em vez de usar uma borda, usamos a propriedade CSS box-shadow para fazer o menu suspenso parecer um \"cartão\"."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O seletor :hover é usado para mostrar o menu suspenso quando o usuário move o mouse sobre o botão suspenso."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Menu suspenso"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Criando um menu suspenso que permita ao usuário escolher uma opção em uma lista:"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este exemplo é semelhante ao anterior, exceto que adicionamos links dentro da caixa suspensa e os estilizamos para caber em um botão suspenso estilizado:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de dropdown:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Estilizando o botão suspenso */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropbtn",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#5075d0"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "16",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "16",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "cursor",
+                                                    "value": "pointer"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* O contêiner <div> - necessário para posicionar o conteúdo do menu suspenso */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropdown",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "inline-block"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Conteúdo suspenso (oculto por padrão) */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropdown-content",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "display",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f9f9f9"
+                                                },
+                                                {
+                                                    "property": "min-width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "160",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "box-shadow",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "8",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "16",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": "rgba",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "0.2",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "z-index",
+                                                    "value": "1"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Links dentro do menu suspenso */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".dropdown-content ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "black"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "12",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "16",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Muda a cor dos links suspensos ao passar o mouse */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".dropdown-content ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f1f1f1"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Mostra o menu suspenso ao passar o mouse */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".dropdown",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover .dropdown-content",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Altera a cor de fundo do botão suspenso quando o conteúdo do menu suspenso é mostrado */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".dropdown",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover .dropbtn",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#3055b0"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "dropdown",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "dropbtn",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Dropdown",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag open",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "dropdown-content",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "#",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Link 1",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "#",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Link 2",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "a tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "href",
+                                                        "value": "#",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Link 3",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "div tag close"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto;padding-bottom:200px\">",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;\">",
+                                        "<button class=\"dropbtn\" style=\"font-size:12px;\">Dropdown Menu</button>",
+                                        "<div class=\"dropdown-content white\">",
+                                        "<a href=\"javascript:void(0)\">Link 1</a>",
+                                        "<a href=\"javascript:void(0)\">Link 2</a>",
+                                        "<a href=\"javascript:void(0)\">Link 3</a>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Conteúdo suspenso alinhado à direita"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você quiser que o menu suspenso vá da direita para a esquerda, em vez da esquerda para a direita, adicione right: 0;"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de dropdown:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".dropdown-content",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "right",
+                                                    "value": "0"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto;padding-bottom:200px\">",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;\">",
+                                        "<button class=\"dropbtn\" style=\"font-size:12px;\">Dropdown Menu</button>",
+                                        "<div class=\"dropdown-content white\">",
+                                        "<a href=\"javascript:void(0)\">Link 1</a>",
+                                        "<a href=\"javascript:void(0)\">Link 2</a>",
+                                        "<a href=\"javascript:void(0)\">Link 3</a>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto;padding-bottom:200px\">",
+                                        "<div style=\"float:left;position:relative;width:33.33%;\">",
+                                        "<div class=\"dropdown2\" style=\"display:inline-block;position:relative;\">",
+                                        "<p>Passe o mouse sobre a imagem: </p><img class=\"dropimg\" src=\"/images/examples/css/display/island.jpg\" alt=\"Illha\" width=\"100\" height=\"50\">",
+                                        "<div class=\"dropdown-content right\">",
+                                        "<div class=\"img\">",
+                                        "<img src=\"/images/examples/css/display/island.jpg\" alt=\"Ilha\" width=\"200\" height=\"100\">",
+                                        "<div class=\"w3-white\" style=\"padding:15px;text-align:center;\">Beautiful Cinque Terre</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Barra de navegação suspensa:",
+                                "description": "Como adicionar um menu suspenso dentro de uma barra de navegação.",
+                                "footerHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".dropdown-ul {list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #38444d;}",
+                                        ".dropdown-li {float: left;}",
+                                        ".dropdown-li a, .drop-button {display: inline-block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}",
+                                        ".dropdown-li a:hover, .dropdown:hover .drop-button {background-color: red;}",
+                                        ".dropdown-li.dropdown {display: inline-block;}",
+                                        ".dropdown-menu {display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}",
+                                        ".dropdown-menu a {color: black;padding: 12px 16px;text-decoration: none;display: block;text-align: left;}",
+                                        ".dropdown-menu a:hover {background-color: #f1f1f1;}",
+                                        ".dropdown:hover .dropdown-menu {display: block;}",
+                                        "</style>",
+                                        "<div style=\"background-color:white;padding: 8px;\">",
+                                        "<ul class=\"dropdown-ul\">",
+                                        "<li class=\"dropdown-li\"><a href=\"javascript:void(0)\">Início</a></li>",
+                                        "<li class=\"dropdown-li\"><a href=\"javascript:void(0)\">Notícias</a></li>",
+                                        "<li class=\"dropdown-li dropdown\">",
+                                        "<a href=\"javascript:void(0)\" class=\"drop-button\">Menu</a>",
+                                        "<div class=\"dropdown-menu\">",
+                                        "<a href=\"javascript:void(0)\">Link 1</a>",
+                                        "<a href=\"javascript:void(0)\">Link 2</a>",
+                                        "<a href=\"javascript:void(0)\">Link 3</a>",
+                                        "</div>",
+                                        "</li>",
+                                        "</ul>",
+                                        "<h3>Menu suspenso dentro de uma barra de navegação</h3>",
+                                        "<p>Passe o mouse sobre o link \"Menu\" para ver o menu suspenso.</p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
