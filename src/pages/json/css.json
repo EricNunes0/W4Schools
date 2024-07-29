@@ -51448,6 +51448,1659 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Formulários",
+                "link": "/css/form",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Formulários"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A aparência de um formulário HTML pode ser melhorada com CSS:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".form-input {border: 1px solid #ccc;border-radius: 4px;box-shadow: inset 0 1px 3px #ddd;display: inline-block;margin: 8px 0;-webkit-box-sizing: border-box;box-sizing: border-box;padding-left: 20px;padding-right: 20px;padding-top: 12px;padding-bottom: 12px;width: 100%;}",
+                                        ".form-button {background-color: #5075d0;color: #f0f0f0;border: none;border-radius: 5px;box-sizing: border-box;display: inline-block;font-size: 14px;margin-top:16px;padding: 12px 18px;vertical-align: middle;overflow: hidden;text-decoration: none;text-align: center;cursor: pointer;white-space: nowrap;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;width:100%;}",
+                                        ".form-button:hover {background-color: #3055b0}",
+                                        "</style>",
+                                        "<div style=\"border-radius:5px;background-color:#f2f2f2;padding:40px;\">",
+                                        "<form action=\"/action_page.php\" class=\"test\">",
+                                        "<label for=\"first-name\">Primeiro nome:</label>",
+                                        "<input type=\"text\" class=\"form-input\" id=\"first-name\" name=\"first-name\" placeholder=\"Seu primeiro nome...\">",
+                                        "<label for=\"last-name\">Último nome:</label>",
+                                        "<input type=\"text\" class=\"form-input\" id=\"last-name\" name=\"last-name\" placeholder=\"Seu último nome...\">",
+                                        "<label for=\"country\">Country</label>",
+                                        "<select class=\"form-input\" id=\"country\" name=\"country\">",
+                                        "<option value=\"australia\">Austrália</option>",
+                                        "<option value=\"canada\">Canadá</option>",
+                                        "<option value=\"usa\">EUA</option>",
+                                        "</select>",
+                                        "<a target=\"_blank\" href=\"\" class=\"form-button\">Tente você mesmo</a>",
+                                        "</form>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando campos de entrada"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "width cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para determinar a largura do campo de entrada:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "input",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<label for=\"first-name-1\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-1\" name=\"first-name-1\" style=\"width:100%;\">"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo acima se aplica a todos os elementos <input>. Se quiser estilizar apenas um tipo de entrada específico, você pode usar seletores de atributos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "input[type=text]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - selecionará apenas campos de texto"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "input[type=password]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - selecionará apenas campos de senha"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "input[type=number]"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - selecionará apenas campos de número"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "etc..."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada espaçados"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar espaço dentro do campo de texto."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "Quando você tem muitas entradas uma após a outra, você também pode querer adicionar alguma margem, para adicionar mais espaço fora delas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "12",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "20",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "8",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "0",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "box-sizing",
+                                                    "value": "border-box"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<label for=\"first-name-2\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-2\" name=\"first-name-2\" style=\"width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;\">",
+                                        "<label for=\"last-name-2\" style=\"color:#f0f0f0;\">Último nome:</label>",
+                                        "<input type=\"text\" id=\"last-name-2\" name=\"last-name-2\" style=\"width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;\">"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Observe que definimos a propriedade box-sizing como border-box. Isso garante que o preenchimento e eventualmente as bordas sejam incluídos na largura e altura totais dos elementos."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Leia mais sobre a propriedade box-sizing em: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Box Sizing",
+                                                "link": "/css/box-sizing"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada com bordas"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "border cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para alterar o tamanho e a cor da borda."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Além disso, use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "border-radius cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar cantos arredondados:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid red"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border-radius",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "4",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<label for=\"first-name-3\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-3\" name=\"first-name-3\" style=\"width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: 2px solid red;border-radius: 4px;\">"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "border-bottom cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar apenas uma borda inferior:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "border-bottom",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid red"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<label for=\"first-name-4\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-4\" name=\"first-name-4\" style=\"width:100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-bottom: 2px solid red;\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada coloridos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar uma cor de fundo ao campo de entrada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Além disso, use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para alterar a cor do texto:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#5075d0"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<label for=\"first-name-5\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-5\" name=\"first-name-5\" value=\"Eric\" style=\"width:100%;padding: 12px 20px;margin: 8px 0;background-color:#5075d0;box-sizing: border-box;color:#f0f0f0;\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada focados"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Por padrão, alguns navegadores adicionam um contorno azul ao redor da entrada quando ela fica em foco (clicada)."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode remover esse comportamento adicionando "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "outline: none;"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para a entrada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use o seletor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": ":focus"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para fazer algo com o campo de entrada quando ele receber o foco:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "focus",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "lightblue"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#first-name-6:focus {background-color:lightblue;}",
+                                        "</style>",
+                                        "<label for=\"first-name-6\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-6\" name=\"first-name-6\" style=\"box-sizing: border-box;width:100%;padding: 12px 20px;margin: 8px 0;\">"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "focus",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "3",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #555"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#first-name-7:focus {border: 3px solid #555;}",
+                                        "</style>",
+                                        "<label for=\"first-name-7\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-7\" name=\"first-name-7\" style=\"box-sizing: border-box;width:100%;padding: 12px 20px;margin: 8px 0;outline:none\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada com ícone/imagem"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-image cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para adicionar um ícone dentro da entrada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-position cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para posicionar o ícone."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Observe também que adicionamos um grande preenchimento à esquerda para reservar o espaço do ícone:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "background-image",
+                                                    "value": {
+                                                        "type": "url",
+                                                        "url": "'searchicon.png'"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-position",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "10",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "10",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": "no-repeat"
+                                                },
+                                                {
+                                                    "property": "padding-left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "40",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#first-name-8 {background-color:white;background-image: url('/svgs/search.svg');background-position: 10px 10px;background-repeat: no-repeat;background-size:20px 20px;box-sizing: border-box;margin: 8px 0;padding: 12px 20px;padding-left: 40px;width:100%;}",
+                                        "</style>",
+                                        "<label for=\"first-name-8\" style=\"color:#f0f0f0;\">Primeiro nome:</label>",
+                                        "<input type=\"text\" id=\"first-name-8\" name=\"first-name-8\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Campos de entrada de pesquisa animados"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Usamos a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "transition cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para animar a largura da entrada de pesquisa quando ela recebe o foco."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você aprenderá mais sobre a propriedade de transição em: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Transições",
+                                                "link": "/css/transitions"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de input:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "transition",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "width 0.4",
+                                                                "unit": "s"
+                                                            },
+                                                            {
+                                                                "number": "ease-in-out"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "text",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "focus",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#first-name-9 {background-color:white;background-image: url('/svgs/search.svg');background-position: 10px 10px;background-repeat: no-repeat;background-size:20px 20px;box-sizing: border-box;margin: 8px 0;padding: 12px 20px;padding-left: 40px;transition: width 0.4s ease-in-out;width:130px;}",
+                                        "#first-name-9:focus {width:100%;}",
+                                        "</style>",
+                                        "<label for=\"first-name-9\" style=\"color:#f0f0f0;\">Primeiro nome:</label><br>",
+                                        "<input type=\"text\" id=\"first-name-9\" name=\"first-name-9\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando áreas de texto"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Use a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "resize cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para evitar que as áreas de texto sejam redimensionadas pelo usuário."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de textarea:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "textarea",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "150",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "12",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "20",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "box-sizing",
+                                                    "value": "border-box"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid #ccc"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border-radius",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "4",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f8f8f8"
+                                                },
+                                                {
+                                                    "property": "resize",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#textarea-1 {width: 100%;height: 150px;padding: 12px 20px;box-sizing: border-box;border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;}",
+                                        "</style>",
+                                        "<textarea id=\"textarea-1\" name=\"textarea-1\" placeholder=\"Escreva um comentário\">"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando menus de seleção"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de select:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "select",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "16",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "20",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "border-radius",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "4",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#f1f1f1"
+                                                },
+                                                {
+                                                    "property": "resize",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        "#select-1 {width: 100%;padding: 16px 20px;border: none;border-radius: 4px;background-color: #f1f1f1;}",
+                                        "</style>",
+                                        "<select id=\"select-1\" name=\"select-1\">",
+                                        "<option value=\"usa\">Australia</option>",
+                                        "<option value=\"usa\">Canada</option>",
+                                        "<option value=\"usa\">USA</option>",
+                                        "</select>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Estilizando botões"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de botões:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "button",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "submit",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "input",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "type",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "reset",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#5075d0"
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "16",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "32",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "property": "margin",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "4",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "2",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "cursor",
+                                                    "value": "pointer"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "* Dica: use width: 100% para ter botões com largura total */"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".buttons-1 {background-color: #5075d0;border: none;color: white;padding: 16px 32px;text-decoration: none;margin: 4px 2px;cursor: pointer;}",
+                                        "</style>",
+                                        "<input type=\"button\" value=\"Botão\" class=\"buttons-1\">",
+                                        "<input type=\"button\" value=\"Botão\" class=\"buttons-1\" style=\"width: 100%;\">"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para saber mais sobre como estilizar botões com CSS, veja: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Botões",
+                                                "link": "/css/buttons"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Formulário responsivo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Redimensione a janela do navegador para ver o efeito. Quando a tela tiver menos de 600 px de largura, empilhe as duas colunas uma sobre a outra, em vez de uma ao lado da outra."
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir usa "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "media queries",
+                                                "link": "/css/mediaqueries"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para criar um formulário responsivo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você aprenderá mais sobre isso em um capítulo posterior."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/pages/css/form/responsive.html",
+                                "style": {
+                                    "maxWidth": "100%",
+                                    "width": "100%"
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
