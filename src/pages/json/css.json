@@ -53755,6 +53755,2811 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Layout de site",
+                "link": "/css/website_layout",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Layout de site"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um site geralmente é dividido em cabeçalhos, menus, conteúdo e rodapé:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".layout-1-header {background-color: #333;margin-bottom: 8px;padding: 30px 0;text-align: center;}",
+                                        ".layout-1-content {background-color: #333;box-sizing:border-box;float:left;overflow:auto;}",
+                                        ".layout-1-footer {background-color: #333;box-sizing:border-box;margin-bottom: 8px;padding: 30px 0;text-align: center;}",
+                                        "@media screen and (max-width: 480px) {",
+                                        ".layout-1-hide-small {display:none;}",
+                                        "}",
+                                        "</style>",
+                                        "<div style=\"color:#f0f0f0;font-size:12px;overflow:auto\">",
+                                        "<div class=\"layout-1-header\" style=\"margin-bottom:8px;padding:30px 0;text-align:center\">Cabeçalho</div>",
+                                        "<div class=\"layout-1-header\" style=\"margin-bottom:8px;padding:12px 0;text-align:center\">Menu de navegação</div>",
+                                        "<div style=\"display:table;text-align:center;width:100%\">",
+                                        "<div class=\"layout-1-content\" style=\"border-right: 8px solid #101015;height:250px;padding:108px 15px 100px 15px;width: 16.66666%;\"><span class=\"layout-1-hide-small\">Conteúdo</span></div>",
+                                        "<div class=\"layout-1-content\" style=\"border-right: 8px solid #101015;height:250px;padding:108px 15px 100px 15px;width: 66.66666%;\">Conteúdo principal</div>",
+                                        "<div class=\"layout-1-content\" style=\"height:250px;padding:108px 15px 100px 15px;width: 16.66666%;\"><span class=\"layout-1-hide-small\">Conteúdo</span></div>",
+                                        "</div>",
+                                        "<div class=\"layout-1-footer\" style=\"margin-top:8px;padding:18px 0;text-align:center\">Rodapé</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem vários designs de layout diferentes para você escolher. Porém, a estrutura acima é uma das mais comuns e iremos examiná-la mais de perto neste tutorial."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Header (Cabeçalho)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um cabeçalho geralmente está localizado na parte superior do site (ou logo abaixo do menu de navegação superior). Geralmente contém um logotipo ou o nome do site:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de cabeçalho:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".header",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#F1F1F1"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "20",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".header-1 {background-color: #F1F1F1;text-align: center;padding: 20px;}",
+                                        "</style>",
+                                        "<div class=\"header-1\">",
+                                        "<h2>Cabeçalho</h2>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Barra de navegação"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma barra de navegação contém uma lista de links para ajudar os visitantes a navegar pelo seu site:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de barra de navegação:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* O contêiner da barra de navegação */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".topnav",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "overflow",
+                                                    "value": "hidden"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#333"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Links da barra de navegação */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".topnav ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "float",
+                                                    "value": "left"
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "block"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "#f2f2f2"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "14",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "16",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "text-decoration",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Links - muda de cor ao passar o mouse */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".topnav ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a:",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "hover",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#ddd"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "black"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".navbar-1 {background-color: #000;overflow:hidden;text-align: center;}",
+                                        ".navbar-a-1 {border: none;color:#f0f0f0;display: block;float: left;outline: 0;padding: 16px 16px;text-decoration:none;width: auto;}",
+                                        ".navbar-a-1:hover {background-color: #ccc !important;color: #000 !important;}",
+                                        "</style>",
+                                        "<div class=\"navbar-1\">",
+                                        "<a class=\"navbar-a-1\" href=\"javascript:void(0)\">Link</a>",
+                                        "<a class=\"navbar-a-1\" href=\"javascript:void(0)\">Link</a>",
+                                        "<a class=\"navbar-a-1\" href=\"javascript:void(0)\">Link</a>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Conteúdo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O layout nesta seção geralmente depende dos usuários-alvo. O layout mais comum é um (ou uma combinação deles) dos seguintes:"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "1 coluna ",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(geralmente usada para navegadores móveis)"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "2 colunas ",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(geralmente usada para tablets e laptops)"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "3 colunas ",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "(geralmente usada apenas para desktops)"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".content-row {box-sizing:border-box;overflow:auto;width:100%;}",
+                                        ".content-col {box-sizing: border-box;float:left;padding: 0 12px;width:33.33%;}",
+                                        ".content-card {background-color: #1a2530;box-sizing: border-box;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);float:left;padding:16px;width:100%;}",
+                                        ".content-p {color:#f0f0f0;margin-bottom: 1.2em;}",
+                                        ".content-col-header {background-color: #3a4550;float: left;width: 100%;}",
+                                        ".content-col-footer {background-color: #3a4550;float: left;width: 100%;}",
+                                        ".content-col-50 {background-color: #3a4550;box-sizing: border-box;float: left;width: 50%;}",
+                                        ".content-col-33 {background-color: #3a4550;box-sizing: border-box;float: left;width: 33.33%;}",
+                                        "@media screen and (max-width: 600px) {",
+                                        ".content-col {width:100%;}",
+                                        "}",
+                                        "@media screen and (min-width: 600px) {",
+                                        ".content-hide-p {display:none;}",
+                                        "}",
+                                        "</style>",
+                                        "<div class=\"content-row\">",
+                                        "<div class=\"content-col\">",
+                                        "<div class=\"content-card\"><p class=\"content-p\">1 coluna:</p>",
+                                        "<div style=\"overflow:hidden\">",
+                                        "<div class=\"content-col-header\" style=\"margin-bottom:8px;height:20px;\"></div>",
+                                        "<div class=\"content-col-header\" style=\"height:120px;\"></div>",
+                                        "<div class=\"content-col-footer\" style=\"margin-top:8px;height:20px;\"></div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<p class=\"content-hide-p\" style=\"margin:8px 0\">&nbsp;</p>",
+                                        "<div class=\"content-col\">",
+                                        "<div class=\"content-card\"><p class=\"content-p\">2 colunas:</p>",
+                                        "<div style=\"overflow:hidden\">",
+                                        "<div class=\"content-col-header\" style=\"margin-bottom:8px;height:20px;\"></div>",
+                                        "<div class=\"content-row\">",
+                                        "<div class=\"content-col-50\" style=\"border-right:8px solid #1a2530;height:120px;\"></div>",
+                                        "<div class=\"content-col-50\" style=\"height:120px;\"></div>",
+                                        "</div>",
+                                        "<div class=\"content-col-footer\" style=\"margin-top:8px;height:20px;\"></div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "<p class=\"content-hide-p\" style=\"margin:8px 0\">&nbsp;</p>",
+                                        "<div class=\"content-col\">",
+                                        "<div class=\"content-card\"><p class=\"content-p\">3 colunas:</p>",
+                                        "<div style=\"overflow:hidden\">",
+                                        "<div class=\"content-col-header\" style=\"margin-bottom:8px;height:20px;\"></div>",
+                                        "<div class=\"content-row\">",
+                                        "<div class=\"content-col-33\" style=\"border-right:8px solid #1a2530;height:120px;\"></div>",
+                                        "<div class=\"content-col-33\" style=\"border-right:8px solid #1a2530;height:120px;\"></div>",
+                                        "<div class=\"content-col-33\" style=\"height:120px;\"></div>",
+                                        "</div>",
+                                        "<div class=\"content-col-footer\" style=\"margin-top:8px;height:20px;\"></div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Criaremos um layout de 3 colunas e mudaremos para um layout de 1 coluna em telas menores:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de conteúdo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Crie três colunas iguais que flutuam uma ao lado da outra */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "float",
+                                                    "value": "left"
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "33.33",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Limpe os floats após as colunas */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": ".row",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": ":",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "after",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "\"\"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "display",
+                                                    "value": "table"
+                                                },
+                                                {
+                                                    "property": "clear",
+                                                    "value": "both"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Layout responsivo - faz com que as três colunas"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "sejam empilhadas umas sobre as outras em vez de uma ao lado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "da outra em telas menores (600px de largura ou menos) */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "media query 600px"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".content-example-col {box-sizing:border-box;float:left;padding: 8px 16px;width:33.33%}",
+                                        "</style>",
+                                        "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                        "<div class=\"content-example-col\"><h2>Coluna</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p></div>",
+                                        "<div class=\"content-example-col\"><h2>Coluna</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p></div>",
+                                        "<div class=\"content-example-col\"><h2>Coluna</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p></div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "Para criar um layout de 2 colunas, altere a largura para 50%. Para criar um layout de 4 colunas, use 25%, etc."
+                        },
+                        {
+                            "tag": "tip",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para saber mais sobre como @media funciona, confira: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Media Queries",
+                                                "link": "/css/mediaqueries"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "Uma forma mais moderna de criar layouts de colunas é usar CSS Flexbox. No entanto, não é compatível com o Internet Explorer 10 e versões anteriores. Se você precisar de suporte ao IE6-10, use floats (como mostrado acima)."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para saber mais sobre o módulo de layout de caixa flexível, confira: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "CSS Flexbox",
+                                                "link": "/css/flexbox"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Colunas desiguais"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O conteúdo principal é a maior e mais importante parte do seu site."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "É comum com larguras de colunas desiguais, de modo que a maior parte do espaço é reservada para o conteúdo principal."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O conteúdo secundário (se houver) é frequentemente usado como uma navegação alternativa ou para especificar informações relevantes ao conteúdo principal."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Altere as larguras como quiser, lembre-se apenas que deve somar 100% no total:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de colunas desiguais:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "float",
+                                                    "value": "left"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Coluna esquerda e direita */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column.side",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "25",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Coluna do meio */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column.middle",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Layout responsivo - faz com que as três colunas sejam"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "empilhadas umas sobre as outras em vez de uma ao lado da outra */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "media query 600px"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".column.side",
+                                                    "color": "#65f040"
+                                                },
+                                                {
+                                                    "selector": ".column.middle",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "%"
+                                                    }
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".content-column {box-sizing:border-box;float:left;padding: 8px 16px;width:33.33%}",
+                                        ".content-column.side {width:25%}",
+                                        ".content-column.middle {width:50%}",
+                                        "@media screen and (max-width: 600px) {",
+                                        ".content-column.side, .content-column.middle {width:100%}",
+                                        "}",
+                                        "</style>",
+                                        "<div style=\"color:#f0f0f0;overflow:auto;\">",
+                                        "<div class=\"content-column side\"><h2>Lateral</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>",
+                                        "<div class=\"content-column middle\"><h2>Principal</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p></div>",
+                                        "<div class=\"content-column side\"><h2>Lateral</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Footer (Rodapé)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O rodapé é colocado na parte inferior da sua página. Geralmente contém informações como direitos autorais e informações de contato:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de rodapé:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".footer",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#F1F1F1"
+                                                },
+                                                {
+                                                    "property": "text-align",
+                                                    "value": "center"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "10",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".footer-1 {background-color: #F1F1F1;text-align: center;padding: 10px;}",
+                                        "</style>",
+                                        "<div class=\"footer-1\">",
+                                        "<p>Rodapé</p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Layout de site responsivo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Usando parte do código CSS acima, criamos um layout de site responsivo, que varia entre duas colunas e colunas de largura total, dependendo da largura da tela:"
+                        },
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/pages/css/website_layout/responsive.html",
+                                "style": {
+                                    "maxWidth": "100%"
+                                }
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Unidades",
+                "link": "/css/units",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Unidades"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O CSS possui diversas unidades diferentes para expressar um comprimento."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Muitas propriedades CSS assumem valores de \"comprimento\", como: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "width cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "margin cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padding cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "font-size cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", etc."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Comprimento é um número seguido por uma unidade de comprimento, como: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "10px"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "2em"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", etc."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de comprimento:",
+                                "description": "Definindo valores de comprimento diferentes, usando px (pixels):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "60",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "font-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "25",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "line-height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Um espaço em branco não pode aparecer entre o número e a unidade. Porém, se o valor for 0, a unidade poderá ser omitida."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para algumas propriedades CSS, comprimentos negativos são permitidos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem dois tipos de unidades de comprimento: absolutas e relativas."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Comprimentos absolutos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As unidades de comprimento absolutas são fixas e um comprimento expresso em qualquer uma delas aparecerá exatamente nesse tamanho."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Unidades de comprimento absolutas não são recomendadas para uso na tela, porque os tamanhos das telas variam muito. No entanto, eles podem ser usados ​​se o meio de saída for conhecido, como no layout de impressão."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Unidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "cm"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "centímetros"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "mm"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "milímetros"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "in"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "polegadas (1 pol. = 96px = 2,54 cm)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "px *"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "pixels (1px = 1/96 de 1 polegada)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "pt"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "pontos (1pt = 1/72 de 1 polegada)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "pc"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "picas (1pc = 12 pt)"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "* Pixels (px) são relativos ao dispositivo de visualização. Para dispositivos com baixo dpi, 1px é um pixel do dispositivo (ponto) da tela. Para impressoras e telas de alta resolução, 1px implica vários pixels de dispositivo."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Comprimentos relativos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As unidades de comprimento relativas especificam um comprimento relativo a outra propriedade de comprimento. As unidades de comprimento relativas são melhor dimensionadas entre diferentes mídias de renderização."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Unidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "em"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação ao tamanho da fonte do elemento (2em significa 2 vezes o tamanho da fonte atual)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "ex"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação à altura x da fonte atual (raramente usada)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "ch"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação à largura do \"0\" (zero)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "rem"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação ao tamanho da fonte do elemento raiz"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vw"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Relativo a 1% da largura da janela de visualização*"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vh"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Relativo a 1% da altura da janela de visualização*"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vmin"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação a 1% da dimensão menor da janela de visualização*"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vmax"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação a 1% da dimensão maior da janela de visualização*"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "%"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Em relação ao elemento pai"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "As unidades em e rem são práticas na criação de layouts perfeitamente escaláveis! * Viewport = o tamanho da janela do navegador. Se a janela de visualização tiver 50 cm de largura, 1vw = 0,5 cm."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Suporte dos navegadores"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os números na tabela especificam a primeira versão do navegador que suporta totalmente a unidade de comprimento."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Unidade de comprimento"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "em, ex, %, px, cm, mm, in, pt, pc"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "3.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "3.5",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "ch"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "27.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "9.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "7.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "rem"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "4.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "9.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "3.6",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "4.1",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "11.6",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vh, vw"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "9.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "19.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "6.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vmin"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "12.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "19.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "6.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "vmax"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "26.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "16.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "19.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "7.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "20.0",
+                                            "style": {
+                                                "color": "#80f080"
+                                            }
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Especificidade",
+                "link": "/css/specificity",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que é especificidade?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se houver duas ou mais regras CSS que apontem para o mesmo elemento, o seletor com maior valor de especificidade \"ganhará\", e sua declaração de estilo será aplicada a esse elemento HTML."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Pense na especificidade como uma pontuação/classificação que determina qual declaração de estilo será aplicada a um elemento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Veja os seguintes exemplos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo 1:",
+                                "description": "Neste exemplo, usamos o elemento \"p\" como seletor e especificamos uma cor vermelha para este elemento. O texto ficará vermelho:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Hello World!",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora veja o exemplo 2:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo 2:",
+                                "description": "Neste exemplo, adicionamos um seletor de classe (chamado \"test\") e especificamos uma cor verde para esta classe. O texto agora será verde (embora tenhamos especificado uma cor vermelha para o seletor de elemento \"p\"). Isso ocorre porque o seletor de classe recebe maior prioridade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".test",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "green"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "class",
+                                                        "value": "test",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Hello World!",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora veja o exemplo 3:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo 3:",
+                                "description": "Neste exemplo, adicionamos o seletor de id (denominado \"demo\"). O texto agora ficará azul, porque o seletor de id tem maior prioridade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#demo",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "blue"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".test",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "green"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "demo",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "class",
+                                                        "value": "test",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Hello World!",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora veja o exemplo 4:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo 4:",
+                                "description": "Neste exemplo, adicionamos um estilo embutido para o elemento \"p\". O texto agora será rosa, porque o estilo in-line tem a maior prioridade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#demo",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "blue"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".test",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "green"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "tabs": 3,
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "demo",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "class",
+                                                        "value": "test",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "color: pink;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Hello World!",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Hierarquia de especificidade"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Cada seletor CSS tem seu lugar na hierarquia de especificidade."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem quatro categorias que definem o nível de especificidade de um seletor:"
+                        },
+                        {
+                            "tag": "ol",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Estilos inline (embutidos)",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Exemplo: <h1 style=\"color: pink;\">",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "IDs",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Exemplo: #navbar",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Classes, pseudo-classes, seletores de atributos",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Exemplo: .test, :hover, [href]",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Elementos e pseudo-elementos",
+                                                "fontWeight": "bold"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Exemplo: h1, ::before",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Como calcular a especificidade?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Memorize como calcular a especificidade!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Comece em 0, adicione 100 para cada valor de ID, adicione 10 para cada valor de classe (ou pseudo-classe ou seletor de atributos), adicione 1 para cada seletor de elemento ou pseudo-elemento."
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O estilo inline recebe um valor de especificidade de 1000 e sempre recebe a prioridade mais alta!"
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Há uma exceção a esta regra: se você usar a regra !important, ela substituirá até mesmo os estilos embutidos!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A tabela abaixo mostra alguns exemplos de como calcular valores de especificidade:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Seletor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor de especificidade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Cálculo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "p"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "p.test"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "11"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1 + 10"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "p#demo"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "101"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1 + 100"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "<p style=\"color: pink;\">"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1000"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1000"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "#demo"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "100"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "100"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ".test"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "10"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "p.test1.test2"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "21"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1 + 10 + 10"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "#navbar p#demo"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "201"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "100 + 1 + 100"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "*"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "0"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "0 (o seletor universal é ignorado)"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O seletor com o maior valor de especificidade vencerá e terá efeito!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Considere estes três fragmentos de código:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de especificidade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "A: h1"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "B: h1#content"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "C: "
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "content",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "style",
+                                                        "value": "color: pink;",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Cabeçalho",
+                                            "contentIndex": -3,
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A especificidade de A é 1 (seletor de um elemento)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A especificidade de B é 101 (uma referência de ID + um seletor de elemento)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A especificidade de C é 1000 (estilo inline)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Como a terceira regra (C) possui o maior valor de especificidade (1000), esta declaração de estilo será aplicada."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Mais exemplos de regras de especificidade"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Especificidade igual: a última regra vence - Se a mesma regra for escrita duas vezes na folha de estilo externa, a última regra vence:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de especificidade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "b",
+                            "content": "Os seletores de ID têm uma especificidade maior que os seletores de atributos. Observe as três linhas de código a seguir:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de especificidade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "#a",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "green"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#a",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "div",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "[",
+                                                            "color": "#f0f0f0"
+                                                        },
+                                                        {
+                                                            "selector": "id",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "=",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f5f565"
+                                                        },
+                                                        {
+                                                            "selector": "]",
+                                                            "color": "#f0f0f0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "blue"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A primeira regra é mais específica que as outras duas e, portanto, será aplicada."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Os seletores contextuais são mais específicos do que um seletor de elemento único - A folha de estilos incorporada está mais próxima do elemento a ser estilizado. Então na seguinte situação:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de especificidade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* Do arquivo CSS externo: */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#content ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "h1",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "/* No arquivo HTML: */"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#content ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "h1",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "tabs": 1,
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A última regra será aplicada."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Um seletor de classe supera qualquer número de seletores de elemento - um seletor de classe como .intro supera h1, p, div, etc:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de especificidade:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".intro",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red"
+                                                }
+                                            ],
+                                            "wrap": false
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "p",
+                            "content": "O seletor universal (*) e os valores herdados têm especificidade 0 - O seletor universal (*) e os valores herdados são ignorados!"
+                        }
+                    ]
+                ]
             }
         ]
     }
