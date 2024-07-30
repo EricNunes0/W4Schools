@@ -53101,6 +53101,660 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Contadores",
+                "link": "/css/counters",
+                "sections": [
+                    [
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<style>",
+                                        ".counter-container {background: #5075d0;color:#f0f0f0;counter-reset: section;margin:auto;padding: 10px;font: 400 12px / 1.8 'Lato', sans-serif;max-width: 500px;}",
+                                        ".counter-container h3 {font-family: 'Segoe UI', Arial, sans-serif;font-size: 24px;font-weight: 400;margin: 10px 0;}",
+                                        ".counter-container h3:before {counter-increment: section;content: counter(section);display: inline-block;color: white;background: #555;border: 5px solid #555;padding: 1px 15px;margin-right: 16px;border-radius: 50%;}",
+                                        "</style>",
+                                        "<div>",
+                                        "<div class=\"counter-container\">",
+                                        "<h3>Pizza</h3>",
+                                        "<h3>Hamburger</h3>",
+                                        "<h3>Hotdogs</h3>",
+                                        "</div>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os contadores são \"variáveis\" mantidas por CSS cujos valores podem ser incrementados por regras CSS (para rastrear quantas vezes são usados). Os contadores permitem ajustar a aparência do conteúdo com base em seu posicionamento no documento."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Numeração automática com contadores"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os contadores CSS são como \"variáveis\". Os valores das variáveis ​​podem ser incrementados por regras CSS (que rastrearão quantas vezes elas são usadas)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para trabalhar com contadores CSS usaremos as seguintes propriedades:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "counter-reset cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Cria ou redefine um contador",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "counter-increment cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Incrementa um valor de contador",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "content cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Insere o conteúdo gerado",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "counter()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ou ",
+                                                "spacesBefore": 1,
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "counters()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " - Adiciona o valor de um contador a um elemento",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para usar um contador CSS, ele deve primeiro ser criado com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "counter-reset cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir cria um contador para a página (no seletor de corpo), depois incrementa o valor do contador para cada elemento <h2> e adiciona \"Seção <valor do contador>:\" ao início de cada elemento <h2>:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de contador:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "body",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-reset",
+                                                    "value": "section"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h2::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "before",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-increment",
+                                                    "value": "section"
+                                                },
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "\"Seção \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "counter",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "section",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\": \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Aninhando contadores"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo a seguir cria um contador para a página (seção) e um contador para cada elemento <h1> (subseção)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O contador \"section\" será contado para cada elemento <h1> com \"Seção <valor do contador section>.\", e o contador \"subsection\" será contado para cada elemento <h2> com \"<valor do contador section>.\" >.<valor do contador subsection>\":"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de contadores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "body",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-reset",
+                                                    "value": "section"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "h1",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-reset",
+                                                    "value": "subsection"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h1::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "before",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-increment",
+                                                    "value": "section"
+                                                },
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "\"Seção \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "counter",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "section",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\": \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "h2::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "before",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-increment",
+                                                    "value": "subsection"
+                                                },
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "counter",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "section",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\".\"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "counter",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "subsection",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\" \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Um contador também pode ser útil para criar listas delineadas porque uma nova instância de um contador é criada automaticamente em elementos filhos."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Aqui usamos a função "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "counters()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para inserir uma string entre diferentes níveis de contadores aninhados:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de contadores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "ol",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-reset",
+                                                    "value": "section"
+                                                },
+                                                {
+                                                    "property": "list-style-type",
+                                                    "value": "none"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "li::",
+                                                            "color": "#f565c5"
+                                                        },
+                                                        {
+                                                            "selector": "before",
+                                                            "color": "#65f040"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "counter-increment",
+                                                    "value": "section"
+                                                },
+                                                {
+                                                    "property": "content",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "counters",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "section",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\".\"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "\" \"",
+                                                                "color": "#f5f565",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades do contador"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "content",
+                                            "href": "/css/ref/gen/content"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Usado com os pseudoelementos ::before e ::after, para inserir conteúdo gerado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "counter-increment",
+                                            "href": "/css/ref/gen/counter-increment"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Incrementa um ou mais valores de contador"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "counter-reset",
+                                            "href": "/css/ref/gen/counter-reset"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Cria ou redefine um ou mais contadores"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "counter()",
+                                            "href": "/css/ref/func/counter"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna o valor atual do contador nomeado"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

@@ -3934,6 +3934,10 @@ function App() {
 					<Route path = "form" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Formulários"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Contadores */}
+					<Route path = "counters" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Contadores"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
