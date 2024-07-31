@@ -56560,6 +56560,1277 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS !important",
+                "link": "/css/important",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O que é !important?"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A regra "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é usada para adicionar mais importância a uma propriedade/valor do que o normal."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se você usar a regra "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ela substituirá TODAS as regras de estilo anteriores para aquela propriedade específica naquele elemento!"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Vamos ver um exemplo:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de !important:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#myid",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "blue"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],[
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".myclass",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "gray"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red",
+                                                    "important": true
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Exemplo explicado"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "No exemplo acima, todos os três parágrafos terão uma cor de fundo vermelha, mesmo que o seletor de ID e o seletor de classe tenham uma especificidade maior."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A regra "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " substitui a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-color cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em ambos os casos."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "!important sobre !important"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A única maneira de substituir uma regra "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é incluir outra regra "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em uma declaração com a mesma (ou superior) especificidade no código-fonte."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Porém, isto gera um problema: isso torna o código CSS confuso e a depuração mais difícil, especialmente se você tiver uma folha de estilos grande!"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Aqui criamos um exemplo simples. Não fica muito claro, quando você olha o código fonte CSS, qual cor é considerada mais importante:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de !important:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#myid",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "blue",
+                                                    "important": true
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],[
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".myclass",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "gray",
+                                                    "important": true
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "p",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "red",
+                                                    "important": true
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "É necessário conhecer a "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " antes de implementá-la."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode ver isso em algum código-fonte CSS."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "No entanto, não o use a menos que seja absolutamente necessário."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Talvez um ou dois usos para !important"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma maneira de usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é se você precisar substituir um estilo que não pode ser substituído de nenhuma outra forma."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isso pode acontecer se você estiver trabalhando em um sistema de gerenciamento de conteúdo (CMS) e não puder editar o código CSS."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Em seguida, você pode definir alguns estilos personalizados para substituir alguns dos estilos CMS."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Outra maneira de usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "!important"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é:"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Suponha que você queira uma aparência especial para todos os botões de uma página."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Aqui, os botões são estilizados com uma cor de fundo cinza, texto branco e algum preenchimento e borda:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de !important:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".button",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#8c8c8c"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A aparência de um botão às vezes pode mudar se o colocarmos dentro de outro elemento com maior especificidade e as propriedades entrarem em conflito. Aqui está um exemplo disso:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de !important:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".button",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#8c8c8c"
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#myDiv ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para \"forçar\" todos os botões a terem a mesma aparência, não importa o que aconteça, podemos adicionar a regra !important às propriedades do botão, assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de !important:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".button",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "#8c8c8c",
+                                                    "important": true
+                                                },
+                                                {
+                                                    "property": "color",
+                                                    "value": "white",
+                                                    "important": true
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    },
+                                                    "important": true
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "important": true
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selectors": [
+                                                        {
+                                                            "selector": "#myDiv ",
+                                                            "color": "#65f040"
+                                                        },
+                                                        {
+                                                            "selector": "a",
+                                                            "color": "#f565c5"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "color",
+                                                    "value": "red"
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "CSS Funções matemáticas",
+                "link": "/css/math_functions",
+                "sections": [
+                    [
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "As funções matemáticas CSS permitem que expressões matemáticas sejam usadas como valores de propriedades."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Aqui explicaremos as funções: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "calc()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "max()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "min()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A função calc()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A função "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "calc()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " realiza um cálculo a ser usado como valor da propriedade."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "calc cyan"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(expressão)"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "expressão",
+                                            "italic": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Obrigatório. Uma expressão matemática. O resultado será usado como valor. Os seguintes operadores podem ser usados: + - * /"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Vamos ver um exemplo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de calc():",
+                                "description": "Usando calc() para calcular a largura de um elemento <div>:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "position",
+                                                    "value": "absolute"
+                                                },
+                                                {
+                                                    "property": "left",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "50",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "calc",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "100",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": "%",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "100",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "1",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "5",
+                                                        "unit": "px"
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A função max()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A função "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "max()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " usa o maior valor, de uma lista de valores separados por vírgula, como o valor da propriedade."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "max cyan"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(valor1, valor2, ...)"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "valor1, valor2, ...",
+                                            "italic": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Obrigatório. Uma lista de valores separados por vírgula – onde o maior valor é escolhido"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Vamos ver um exemplo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de max():",
+                                "description": "Usando max() para definir a largura de #div1 para o valor maior, 50% ou 300px:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "max",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "50",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": "%",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "300",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A função min()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A função "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "min()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " usa o menor valor, de uma lista de valores separados por vírgula, como o valor da propriedade."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "min cyan"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(valor1, valor2, ...)"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "valor1, valor2, ...",
+                                            "italic": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Obrigatório. Uma lista de valores separados por vírgula – onde o menor valor é escolhido"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Vamos ver um exemplo:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de min():",
+                                "description": "Usando min() para definir a largura de #div1 para o valor menor, 50% ou 300px:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "declarations": [
+                                                {
+                                                    "property": "background-color",
+                                                    "value": "yellow"
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "100",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "width",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "min",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "50",
+                                                                "color": "#c090fa"
+                                                            },
+                                                            {
+                                                                "value": "%",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "300",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "px",
+                                                                "color": "#f565c5"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ],
+                                            "wrap": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Todas as funções matemáticas"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Função"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "calc()",
+                                            "href": "/css/ref/func/calc"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Permite realizar cálculos para determinar valores de propriedades CSS"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "max()",
+                                            "href": "/css/ref/func/max"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Usa o maior valor, de uma lista de valores separados por vírgula, como o valor da propriedade"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "min()",
+                                            "href": "/css/ref/func/min"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Usa o menor valor, de uma lista de valores separados por vírgula, como o valor da propriedade"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

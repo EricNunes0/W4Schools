@@ -426,6 +426,12 @@ export default class TutorialManagePages {
                         declarationSyntax.splice(declarationSyntaxIndex, 0, value);
                         declarationSyntaxIndex++;
                     });
+                    
+                    /* Adicionando !important */
+                    if(declaration.important === true) {
+                        declarationSyntax.splice(declarationSyntaxIndex, 0, ["!important", "#f565c5", 1]);
+                        declarationSyntaxIndex++;
+                    }
 
                     CSSBase.splice(declarationIndex, 0, {
                         codes: declarationSyntax,

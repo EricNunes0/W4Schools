@@ -3950,6 +3950,14 @@ function App() {
 					<Route path = "specificity" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Especificidade"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* !important */}
+					<Route path = "important" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS !important"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Funções matemáticas */}
+					<Route path = "math_functions" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Funções matemáticas"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
