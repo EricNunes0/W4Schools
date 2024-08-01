@@ -59846,6 +59846,1465 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "CSS Múltiplos fundos",
+                "link": "/css/backgrounds",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Neste capítulo você aprenderá como adicionar várias imagens de fundo a um elemento."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você também aprenderá sobre as seguintes propriedades:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "background-size cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "background-origin cyan"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "background-clip cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Múltiplos fundos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O CSS permite adicionar múltiplas imagens de fundo para um elemento, através da propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-image cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As diferentes imagens de fundo são separadas por vírgulas e as imagens são empilhadas umas sobre as outras, onde a primeira imagem está mais próxima do visualizador."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo a seguir tem duas imagens de fundo, a primeira imagem é uma flor (alinhada na parte inferior e à direita) e a segunda imagem é um fundo de papel (alinhado no canto superior esquerdo):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de múltiplos fundos:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#example1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background-image",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": "),",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "paper.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-position",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "right bottom",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "left top",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "no-repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Várias imagens de fundo podem ser especificadas usando as propriedades de fundo individuais (como acima) ou a propriedade abreviada de fundo."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir usa a propriedade abreviada "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (mesmo resultado do exemplo acima):"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#example1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "right bottom no-repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "paper.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "left top repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tamanho do plano de fundo"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-size cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " permite especificar o tamanho das imagens de fundo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O tamanho pode ser especificado em comprimentos, porcentagens ou usando uma das duas palavras-chave: conter ou cobrir."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir redimensiona uma imagem de fundo para um tamanho muito menor que a imagem original (usando pixels):"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"border:1px solid #ccc;box-sizing:border-box;color:#f0f0f0;margin:15px;padding:15px;\">",
+                                        "<h2 style=\"margin:10px 0;\">Lorem Ipsum Dolor</h2>",
+                                        "<p style=\"margin:10px 0;\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>",
+                                        "<p style=\"margin:10px 0;\">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Aqui está o código:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-size:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "100",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "80",
+                                                                "unit": "px"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": "no-repeat"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Os outros dois valores possíveis para o tamanho do plano de fundo são "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "contain purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "cover purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "contain purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " dimensiona a imagem de fundo para ser o maior possível."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Mas tanto sua largura quanto sua altura devem caber dentro da área de conteúdo."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Como tal, dependendo das proporções da imagem de fundo e da área de posicionamento do fundo, pode haver algumas áreas do fundo que não são cobertas pela imagem de fundo."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "cover purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " dimensiona a imagem de fundo para que a área de conteúdo seja completamente coberta pela imagem de fundo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Tanto sua largura quanto sua altura são iguais ou excedem a área de conteúdo."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Como tal, algumas partes da imagem de fundo podem não ser visíveis na área de posicionamento de fundo."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir ilustra o uso de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "contain purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "cover purple"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-size:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": "contain"
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": "no-repeat"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#div2",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": "cover"
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": "no-repeat"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Definindo tamanhos de múltiplas imagens de fundo"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-size cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também aceita vários valores para o tamanho do plano de fundo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Usando uma lista separada por vírgula."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo a seguir tem três imagens de plano de fundo especificadas, com valores de tamanho de plano de fundo diferentes para cada imagem:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-size:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#example1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "tree.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "left top no-repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "right bottom no-repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": ",",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "paper.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "left top repeat",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "50",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "130",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "auto"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Imagem de fundo em tamanho completo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Agora queremos ter uma imagem de fundo em um site que cubra toda a janela do navegador o tempo todo."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os requisitos são os seguintes:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Preencher a página inteira com a imagem (sem espaços em branco)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Dimensionar a imagem conforme necessário"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Centralizar imagem na página"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Não causar barras de rolagem"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo a seguir mostra como fazer isso; Use o elemento <html> (o elemento <html> tem sempre pelo menos a altura da janela do navegador). Em seguida, defina um fundo fixo e centralizado nele. Em seguida, ajuste seu tamanho com a propriedade background-size:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-size:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "html",
+                                                    "color": "#f565c5"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "man.jpg",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "no-repeat center fixed",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": "cover"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Imagem principal"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você também pode usar diferentes propriedades de plano de fundo em um <div> para criar uma imagem principal (uma imagem grande com texto) e colocá-la onde desejar."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de imagem principal:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": ".hero-image",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "man.jpg",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "no-repeat center",
+                                                                "color": "#c090fa",
+                                                                "spacesBefore": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-size",
+                                                    "value": "cover"
+                                                },
+                                                {
+                                                    "property": "height",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "500",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "position",
+                                                    "value": "relative"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade background-origin"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-origin cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica onde a imagem de fundo está posicionada."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A propriedade assume três valores diferentes:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "border-box - a imagem de fundo começa no canto superior esquerdo da borda"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "padding-box - (padrão) a imagem de fundo começa no canto superior esquerdo da borda do preenchimento"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "content-box - a imagem de fundo começa no canto superior esquerdo do conteúdo"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir ilustra a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-origin cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-origin:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#example1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "10",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "solid black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": {
+                                                        "type": "multiple",
+                                                        "values": [
+                                                            {
+                                                                "value": "url",
+                                                                "color": "#90eaff",
+                                                                "spacesBefore": 1
+                                                            },
+                                                            {
+                                                                "value": "(",
+                                                                "color": "#f0f0f0"
+                                                            },
+                                                            {
+                                                                "value": "flower.gif",
+                                                                "color": "#ffba70"
+                                                            },
+                                                            {
+                                                                "value": ")",
+                                                                "color": "#f0f0f0"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background-repeat",
+                                                    "value": "no-repeat"
+                                                },
+                                                {
+                                                    "property": "background-origin",
+                                                    "value": "content-box"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade background-clip"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-origin cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " especifica a área de pintura do plano de fundo."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A propriedade assume três valores diferentes:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "border-box - (padrão) o fundo é pintado na borda externa da borda"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "padding-box - o fundo é pintado na borda externa do preenchimento"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "content-box - o fundo é pintado dentro da caixa de conteúdo"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O exemplo a seguir ilustra a propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "background-clip cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de background-clip:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "css",
+                                            "selectors": [
+                                                {
+                                                    "selector": "#example1",
+                                                    "color": "#65f040"
+                                                }
+                                            ],
+                                            "wrap": true,
+                                            "declarations": [
+                                                {
+                                                    "property": "border",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "values": [
+                                                            {
+                                                                "number": "10",
+                                                                "unit": "px"
+                                                            },
+                                                            {
+                                                                "number": "dotted black"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "property": "padding",
+                                                    "value": {
+                                                        "type": "unit",
+                                                        "number": "35",
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                {
+                                                    "property": "background",
+                                                    "value": "yellow"
+                                                },
+                                                {
+                                                    "property": "background-clip",
+                                                    "value": "content-box"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "CSS Exercícios"
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "title": "Exercício:",
+                                "description": "Adicione duas imagens de fundo ao elemento <body>: \"img1.gif\" e \"img2.gif\". Certifique-se de que img2.gif seja exibido acima de img1.gif.",
+                                "answers": [
+                                    [
+                                        "url(img2.gif), url(img1.gif)",
+                                        "url('img2.gif'), url(img1.gif)",
+                                        "url(img2.gif), url('img1.gif')",
+                                        "url('img2.gif'), url('img1.gif')"
+                                    ]
+                                ],
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "background-image cyan",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "input",
+                                            "inputType": "text",
+                                            "name": "answers-1",
+                                            "width": "309px",
+                                            "maxLength": 32,
+                                            "spacesBefore": 1,
+                                            "spacesAfter": 0
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "style tag close"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Este é um título",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é um parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Este é outro parágrafo.",
+                                            "contentIndex": -3,
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades avançadas de plano de fundo"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "background",
+                                            "href": "/css/ref/props/background"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Uma propriedade abreviada para definir todas as propriedades de fundo em uma declaração"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "background-clip",
+                                            "href": "/css/ref/props/background-clip"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica a área de pintura do plano de fundo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "background-image",
+                                            "href": "/css/ref/props/background-image"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica uma ou mais imagens de fundo para um elemento"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "background-origin",
+                                            "href": "/css/ref/props/background-origin"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica onde as imagens de fundo estão posicionadas"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "background-size",
+                                            "href": "/css/ref/props/background-size"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Especifica o tamanho da(s) imagem(s) de fundo"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

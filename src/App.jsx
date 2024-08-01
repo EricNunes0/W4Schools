@@ -3967,6 +3967,10 @@ function App() {
 					<Route path = "border_images" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Imagens de borda"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Múltiplos fundos */}
+					<Route path = "backgrounds" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Múltiplos fundos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
