@@ -3958,6 +3958,15 @@ function App() {
 					<Route path = "math_functions" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Tutorial" title = "CSS Funções matemáticas"></TutorialMain>)}></Page>
 					)}></Route>
+					
+					{/* Bordas arredondadas */}
+					<Route path = "borders" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Bordas arredondadas"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Imagens de borda */}
+					<Route path = "border_images" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Imagens de borda"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
