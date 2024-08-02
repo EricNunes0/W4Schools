@@ -3971,6 +3971,32 @@ function App() {
 					<Route path = "backgrounds" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Múltiplos fundos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Cores */}
+					<Route path = "css3_colors" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Cores"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Palavras-chave de cores */}
+					<Route path = "colors_keywords" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Palavras-chave de cores"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Gradientes */}
+					<Route path = "gradients">
+						{/* Gradientes lineares */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Gradientes" subtitle = "Gradientes lineares"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Gradientes radiais */}
+						<Route path = "radial" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Gradientes" subtitle = "Gradientes radiais"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Gradientes cônicos */}
+						<Route path = "conic" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Gradientes" subtitle = "Gradientes cônicos"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
