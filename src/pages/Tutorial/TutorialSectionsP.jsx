@@ -10,7 +10,7 @@ export const TutorialSectionsP = styled.p`
     transition: all 0.3s ease;
 
     &[data-bold="true"] {
-        margin-top: 25px;
+        margin-top: 10px/*25px*/;
         font-weight: bold;
     }
 

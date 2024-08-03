@@ -3997,6 +3997,32 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Sombras */}
+					<Route path = "shadows">
+						{/* Efeitos de sombra */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Sombras" subtitle = "Efeitos de sombra"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Box Shadow */}
+						<Route path = "box" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Sombras" subtitle = "Box Shadow"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
+					{/* Efeitos de texto */}
+					<Route path = "text_effects" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Efeitos de texto"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Web Fonts */}
+					<Route path = "fonts" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Web Fonts"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Transformações 2D */}
+					<Route path = "2dtransforms" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Transformações 2D"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
