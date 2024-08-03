@@ -4023,6 +4023,10 @@ function App() {
 					<Route path = "2dtransforms" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Transformações 2D"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Transformações 3D */}
+					<Route path = "3dtransforms" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Transformações 3D"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
