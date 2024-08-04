@@ -4027,6 +4027,14 @@ function App() {
 					<Route path = "3dtransforms" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Transformações 3D"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Transições */}
+					<Route path = "transitions" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Transições"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Animações */}
+					<Route path = "animations" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Animações"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
