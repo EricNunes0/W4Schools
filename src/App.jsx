@@ -4039,6 +4039,14 @@ function App() {
 					<Route path = "tooltip" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Dicas de ferramentas"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Estilizando imagens */}
+					<Route path = "images" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Estilizando imagens"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Reflexão de imagem */}
+					<Route path = "image_reflection" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Reflexão de imagem"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
