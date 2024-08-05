@@ -4047,6 +4047,14 @@ function App() {
 					<Route path = "image_reflection" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Reflexão de imagem"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* object-fit */}
+					<Route path = "object-fit" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS object-fit"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* object-position */}
+					<Route path = "object-position" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS object-position"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
