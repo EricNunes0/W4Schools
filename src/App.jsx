@@ -4055,6 +4055,14 @@ function App() {
 					<Route path = "object-position" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS object-position"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Mascaramento */}
+					<Route path = "masking" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Mascaramento"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Botões */}
+					<Route path = "buttons" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Botões"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
