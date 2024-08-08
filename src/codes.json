@@ -5115,6 +5115,11 @@
             ["var", "#f565c5"]
         ]
     ],
+    "var cyan": [
+        [
+            ["var", "#90eaff"]
+        ]
+    ],
     "var tag": [
         [
             ["<", "#ffffff"],
@@ -5143,6 +5148,24 @@
         [
             ["<", "#ffffff"],
             ["var", "#f565c5"]
+        ]
+    ],
+    "var(": [
+        [
+            ["var", "#90eaff"],
+            ["(", "#f0f0f0"]
+        ]
+    ],
+    "var()": [
+        [
+            ["var", "#90eaff"],
+            ["()", "#f0f0f0"]
+        ]
+    ],
+    "var();": [
+        [
+            ["var", "#90eaff"],
+            ["();", "#f0f0f0"]
         ]
     ],
     "video": [
@@ -7649,6 +7672,19 @@
             ["media", "#f565c5"]
         ]
     ],
+    "media query min-width 450px": [
+        [
+            ["@media ", "#f565c5"],
+            ["screen ", "#c090fa"],
+            ["and ", "#f565c5"],
+            ["(", "#f0f0f0"],
+            ["min-width", "#90eaff"],
+            [": ", "#f565c5"],
+            ["450", "#c090fa"],
+            ["px", "#f565c5"],
+            [")", "#f0f0f0"]
+        ]
+    ],
     "media query 500px": [
         [
             ["@media ", "#f565c5"],
@@ -9941,6 +9977,12 @@
             ["lang", "#65f040"]
         ]
     ],
+    ":root": [
+        [
+            [":", "#f565c5"],
+            ["root", "#65f040"]
+        ]
+    ],
     "::after": [
         [
             ["::", "#f565c5"],
@@ -11345,6 +11387,29 @@
             ["document", "#c090fa"],
             [".", "#f0f0f0"],
             ["importNode", "#65f040"],
+            ["()", "#f0f0f0"]
+        ]
+    ],
+    "document.querySelector": [
+        [
+            ["document", "#c090fa"],
+            [".", "#f0f0f0"],
+            ["querySelector", "#65f040"]
+        ]
+    ],
+    "document.querySelector(": [
+        [
+            ["document", "#c090fa"],
+            [".", "#f0f0f0"],
+            ["querySelector", "#65f040"],
+            ["(", "#f0f0f0"]
+        ]
+    ],
+    "document.querySelector()": [
+        [
+            ["document", "#c090fa"],
+            [".", "#f0f0f0"],
+            ["querySelector", "#65f040"],
             ["()", "#f0f0f0"]
         ]
     ],

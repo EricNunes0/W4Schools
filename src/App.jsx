@@ -4075,6 +4075,28 @@ function App() {
 					<Route path = "user_interface" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Interface de usuário"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Variáveis */}
+					<Route path = "variables">
+						{/* Função var() */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Variáveis" subtitle = "Função var()"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Substituindo variáveis */}
+						<Route path = "overriding" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Variáveis" subtitle = "Substituindo variáveis"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Alterando variáveis ​​com JavaScript */}
+						<Route path = "javascript" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Variáveis" subtitle = "Alterando variáveis ​​com JavaScript"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Variáveis ​​em Media Queries */}
+						<Route path = "mediaqueries" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Variáveis" subtitle = "Variáveis ​​em Media Queries"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

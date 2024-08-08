@@ -368,6 +368,8 @@ export default class TutorialManagePages {
                     }
                 } else if(value.type === "url") {
                     result = [["url", "#90eaff", 1], ["(", "#f0f0f0"], [value.url, "#f5f565"], [")", "#f0f0f0"]];
+                } else if(value.type === "var") {
+                    result = [["var", "#90eaff", 1], ["(", "#f0f0f0"], [value.name, "#f0f0f0"], [")", "#f0f0f0"]];
                 };
             };
             return result;
