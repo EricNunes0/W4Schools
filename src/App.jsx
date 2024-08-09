@@ -4097,6 +4097,18 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					{/* Box Sizing */}
+					<Route path = "box-sizing" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Box Sizing"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Media Queries */}
+					<Route path = "mediaqueries" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Media Queries"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Exemplos de MQ */}
+					<Route path = "mediaqueries_ex" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Exemplos de MQ"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
