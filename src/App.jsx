@@ -4109,6 +4109,28 @@ function App() {
 					<Route path = "mediaqueries_ex" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Exemplos de MQ"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Flexbox */}
+					<Route path = "flexbox">
+						{/* Flexbox */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Flexbox" subtitle = "CSS Flexbox"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Flex Container */}
+						<Route path = "container" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Flexbox" subtitle = "CSS Flex Container" pageTitle = "CSS Flexbox Container"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Flex Itens */}
+						<Route path = "items" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Flexbox" subtitle = "CSS Flex Itens" pageTitle = "CSS Flexbox Itens"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Responsivo */}
+						<Route path = "responsive" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Avançado" title = "CSS Flexbox" subtitle = "CSS Flex Responsivo" pageTitle = "CSS Flexbox Responsivo"></TutorialMain>)}></Page>
+						)}></Route>
+						<Route path = "*" element = {(
+							<Navigate to = ""></Navigate>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
