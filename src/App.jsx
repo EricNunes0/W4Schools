@@ -4131,6 +4131,22 @@ function App() {
 							<Navigate to = ""></Navigate>
 						)}></Route>
 					</Route>
+					
+					{/* CSS Responsivo */}
+					<Route path = "rwd">
+						{/* RWD Intro */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Intro"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RWD Viewport */}
+						<Route path = "viewport" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Viewport"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RWD Grid View */}
+						<Route path = "grid" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Grid View" pageTitle = "RWD Grid"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
