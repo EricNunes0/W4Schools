@@ -4154,6 +4154,18 @@ function App() {
 						<Route path = "images" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Imagens"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* RWD Vídeos */}
+						<Route path = "videos" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Vídeos"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RWD Frameworks */}
+						<Route path = "frameworks" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Frameworks"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* RWD Templates */}
+						<Route path = "templates" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Templates"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
