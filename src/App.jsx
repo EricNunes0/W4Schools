@@ -4146,6 +4146,10 @@ function App() {
 						<Route path = "grid" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Grid View" pageTitle = "RWD Grid"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* RWD Media Queries */}
+						<Route path = "mediaqueries" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Media Queries" pageTitle = "RWD Media Queries"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
