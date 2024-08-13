@@ -4167,6 +4167,14 @@ function App() {
 							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Responsivo" title = "RWD Templates"></TutorialMain>)}></Page>
 						)}></Route>
 					</Route>
+					
+					{/* CSS Grid */}
+					<Route path = "grid">
+						{/* Grid Intro */}
+						<Route path = "" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Grid" title = "Grid Intro"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
