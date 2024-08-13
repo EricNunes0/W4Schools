@@ -4174,6 +4174,10 @@ function App() {
 						<Route path = "" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Grid" title = "Grid Intro"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Grid Container */}
+						<Route path = "container" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Grid" title = "Grid Container"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
