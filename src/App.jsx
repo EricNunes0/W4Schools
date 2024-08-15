@@ -4183,6 +4183,16 @@ function App() {
 							<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Grid" title = "Grid Item"></TutorialMain>)}></Page>
 						)}></Route>
 					</Route>
+					
+					{/* SASS */}
+					<Route path = "sass" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS SASS" title = "SASS Tutorial"></TutorialMain>)}></Page>
+					)}></Route>
+					
+					{/* Templates */}
+					<Route path = "templates" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Templates"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
