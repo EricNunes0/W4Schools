@@ -61,7 +61,7 @@ export default function TutorialSectionTags(json, tag, content) {
                     </div>
                 );
             } else if(content.type === "text") {
-                return (<TutorialSectionsA data-type="text" href={content.href || content.link || ""} target={content.target || "_self"}>{content.text}</TutorialSectionsA>);
+                return (<TutorialSectionsA data-type="text" href={content.href || content.link || ""} target={content.target || "_self"} style={content.style || {}}>{content.text}</TutorialSectionsA>);
             };
         case "br":
             return (<br></br>);
