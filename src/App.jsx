@@ -392,6 +392,10 @@ function App() {
 					<Route path = "website" element = {(
 						<Page content = {(<TutorialMain json = "html" language = "html" topic = "HTML Exemplos" title = "HTML Website"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* Preparação para entrevista */}
+					<Route path = "interview_prep" element = {(
+						<Page content = {(<TutorialMain json = "html" language = "html" topic = "HTML Exemplos" title = "HTML Preparação para entrevista"></TutorialMain>)}></Page>
+					)}></Route>
 					{/* Bootcamp */}
 					<Route path = "bootcamp" element = {(
 						<Page content = {(<TutorialMain json = "html" language = "html" topic = "HTML Exemplos" title = "HTML Bootcamp"></TutorialMain>)}></Page>
@@ -4196,6 +4200,38 @@ function App() {
 					{/* Exemplos */}
 					<Route path = "examples" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Exemplos"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Editor */}
+					<Route path = "editor" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Editor"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Snippets */}
+					<Route path = "snippets" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Snippets"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Quiz */}
+					<Route path = "quiz" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Quiz"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Exercícios */}
+					<Route path = "exercises" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Exercícios"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Website */}
+					<Route path = "website" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Website"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Preparação para entrevista */}
+					<Route path = "interview_prep" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Preparação para entrevista"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Bootcamp */}
+					<Route path = "bootcamp" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Bootcamp"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* Certificado */}
+					<Route path = "exam" element = {(
+						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Certificado"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
