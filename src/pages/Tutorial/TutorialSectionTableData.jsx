@@ -22,9 +22,27 @@ export default function TutorialSectionTableData(data, styles, tableId) {
 
             /* Definindo conteúdo */
             if(data.icon) {
-                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>
-                    <i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`}}></i>
-                </a>)];
+                if(data.text) {
+                    if(data.href) {
+                        content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>
+                            <i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`, margin: "unset"}}></i>
+                            <span>{data.text}</span>
+                        </a>)];
+                    } else {
+                        content = [(<p className = "tutorial-sections-td-links" style={data.style || {}}>
+                            <i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`, margin: "unset"}}></i>
+                            <span>{data.text}</span>
+                        </p>)];
+                    }
+                } else {
+                    if(data.href) {
+                        content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>
+                            <i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`}}></i>
+                        </a>)];
+                    } else {
+                        content = [(<i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`}}></i>)];
+                    }
+                }
             } else if(data.href) {
                 content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>{data.text}</a>)];
             }

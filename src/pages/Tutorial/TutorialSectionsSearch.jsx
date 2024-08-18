@@ -6,8 +6,8 @@ export default function TutorialSectionsSearch(prop) {
         const tableFor = content.for;
         const filter = content.filter;
         
-        function getTable() {
-            return document.querySelector(tableFor) || null;
+        function getTable(forTable) {
+            return document.querySelector(forTable) || null;
         };
         function getDatasContents(datas) {
             let dataList = [];
@@ -40,46 +40,53 @@ export default function TutorialSectionsSearch(prop) {
             row.style.removeProperty("display");
         };
 
-        const searchHandle = (e) => {
-            if(tableFor) {
-                const table = getTable();
-                if(table) {
-                    const tableRows = table.querySelector("tbody").querySelectorAll("tr");
-                    const direction = filter.direction || null;
-                    const from = filter.from;
-                    const value = e.target.value.toLowerCase();
-                    if(direction) {
-                        switch(direction) {
-                            case "horizontal":
-                                const filterRow = tableRows[from.row || 0];
-                                const datas = filterRow.querySelectorAll("th").length !== 0 ? filterRow.querySelectorAll("th") : filterRow.querySelectorAll("td");
-                                const datasContents = getDatasContents(datas);
-                                const headers = filter.headers;
-
-                                for(const header of headers) {
-                                    if(datasContents.includes(header)) {
-                                        for(const row of tableRows) {
-                                            const rowColumns  = getRowColumns(row);
-                                            for(const column of rowColumns) {
-                                                if(column[1] === from.column) {
-                                                    let columnText = getColumnTextContent(column[0])
-                                                    if(!columnText.includes(value)) {
-                                                        hideRow(row);
-                                                    } else {
-                                                        showRow(row);
-                                                    };
+        const tableAddFilter = (e, tableFor) => {
+            const table = getTable(tableFor);
+            if(table) {
+                const tableRows = table.querySelector("tbody").querySelectorAll("tr");
+                const direction = filter.direction || null;
+                const from = filter.from;
+                const value = e.target.value.toLowerCase();
+                if(direction) {
+                    switch(direction) {
+                        case "horizontal":
+                            const filterRow = tableRows[from.row || 0];
+                            const datas = filterRow.querySelectorAll("th").length !== 0 ? filterRow.querySelectorAll("th") : filterRow.querySelectorAll("td");
+                            const datasContents = getDatasContents(datas);
+                            const headers = filter.headers;
+                            for(const header of headers) {
+                                if(datasContents.includes(header)) {
+                                    for(const row of tableRows) {
+                                        const rowColumns  = getRowColumns(row);
+                                        for(const column of rowColumns) {
+                                            if(column[1] === from.column) {
+                                                let columnText = getColumnTextContent(column[0])
+                                                if(!columnText.includes(value)) {
+                                                    hideRow(row);
+                                                } else {
+                                                    showRow(row);
                                                 };
                                             };
                                         };
-                                    }
+                                    };
                                 }
-
-                                break;
-                            default:
-                                break;
-                        };
+                            }
+                            break;
+                        default:
+                            break;
                     };
                 };
+            };
+        }
+        const searchHandle = (e) => {
+            if(tableFor) {
+                if(typeof tableFor == "string") {
+                    tableAddFilter(e, tableFor);
+                } else if(typeof tableFor == "object") {
+                    for(const f of tableFor) {
+                        tableAddFilter(e, f);
+                    }
+                }
             };
         };
 
