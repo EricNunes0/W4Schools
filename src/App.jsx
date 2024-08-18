@@ -4233,6 +4233,14 @@ function App() {
 					<Route path = "exam" element = {(
 						<Page content = {(<TutorialMain json = "css" language = "css" topic = "CSS Exemplos" title = "CSS Certificado"></TutorialMain>)}></Page>
 					)}></Route>
+
+					{/* Referências */ }
+					<Route path = "ref">
+						{/* Referência */}
+						<Route path = "default" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Referência"></TutorialMain>)}></Page>
+						)}></Route>
+					</Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
