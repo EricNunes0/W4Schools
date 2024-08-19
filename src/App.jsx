@@ -4248,6 +4248,10 @@ function App() {
 						<Route path = "selectors" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Seletores"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Funções */}
+						<Route path = "functions" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Funções"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
