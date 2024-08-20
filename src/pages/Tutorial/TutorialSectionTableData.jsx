@@ -43,8 +43,20 @@ export default function TutorialSectionTableData(data, styles, tableId) {
                         content = [(<i className = "tutorial-sections-td-icons" style = {{backgroundImage: `url("${data.icon || ""}")`}}></i>)];
                     }
                 }
-            } else if(data.href) {
-                content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>{data.text}</a>)];
+            } else if(data.href) { /* Com href */
+                if(data.text) { /* Com href e text */
+                    content = [(
+                        <div style={data.style || {display: "block", width: "100%"}}>
+                            <a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={{display: "block", width: "100%"}}>
+                                <p style={data.style || {}}>{data.text}</p>
+                            </a>
+                        </div>
+                    )];
+                } else { /* Apenas href */
+                    content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>{data.text}</a>)];
+                }
+            } else if(data.text) { /* Com text */
+                content = [(<p style={data.style || {}}>{data.text}</p>)];
             }
 
             /* Definindo marcação */

@@ -4252,6 +4252,22 @@ function App() {
 						<Route path = "functions" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Funções"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Referência auditiva */}
+						<Route path = "aural" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Referência auditiva"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Fontes seguras da Web */}
+						<Route path = "websafe_fonts" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Fontes seguras da Web"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Fontes reservas */}
+						<Route path = "fonts_fallbacks" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Fontes reservas"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Animável */}
+						<Route path = "animatable" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Animável"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
