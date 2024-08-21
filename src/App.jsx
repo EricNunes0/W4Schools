@@ -4268,6 +4268,18 @@ function App() {
 						<Route path = "animatable" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Animável"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Unidades */}
+						<Route path = "units" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Unidades"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Conversor de PX para EM */}
+						<Route path = "pxtoemconversion" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Conversor de PX para EM"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Cores */}
+						<Route path = "colors" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Cores"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(

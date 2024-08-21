@@ -56,7 +56,7 @@ export default function TutorialSectionTableData(data, styles, tableId) {
                     content = [(<a className = "tutorial-sections-td-links" href = {data.href || ""} target = {data.target || "_self"} style={data.style || {}}>{data.text}</a>)];
                 }
             } else if(data.text) { /* Com text */
-                content = [(<p style={data.style || {}}>{data.text}</p>)];
+                content = [(<p>{data.text}</p>)];
             }
 
             /* Definindo marcação */
