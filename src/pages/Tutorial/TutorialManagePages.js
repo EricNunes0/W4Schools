@@ -348,6 +348,8 @@ export default class TutorialManagePages {
                     } else if(value.method === "hsla") {
                         result = [["hsla", "#90eaff", 1], ["(", "#f0f0f0"], [value.h, "#c090fa"], [",", "#f0f0f0"], [value.s, "#c090fa", 1], ["%", "#f565c5"], [",", "#f0f0f0"], [value.l, "#c090fa", 1], ["%", "#f565c5"], [",", "#f0f0f0"], [value.a, "#c090fa", 1], [")", "#f0f0f0"]];
                     }
+                } else if(value.type === "content") {
+                    result = [[value.content, "#f5f565", 1]];
                 } else if(value.type === "multiple") {
                     if(value.values) {
                         let vals = [];
