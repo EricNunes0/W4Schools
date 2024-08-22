@@ -4280,6 +4280,10 @@ function App() {
 						<Route path = "colors" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Cores"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Valores de cores */}
+						<Route path = "colors_legal" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Valores de cores"></TutorialMain>)}></Page>
+						)}></Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
