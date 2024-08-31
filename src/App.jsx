@@ -4292,6 +4292,18 @@ function App() {
 						<Route path = "entities" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Entidades"></TutorialMain>)}></Page>
 						)}></Route>
+
+						{/* Propriedades */}
+						<Route path = "props">
+							{/* accent-color */}
+							<Route path = "accent-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS accent-color" pageTitle = "CSS Propriedade accent-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* align-content */}
+							<Route path = "align-content" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS align-content" pageTitle = "CSS Propriedade align-content"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
 					</Route>
 				</Route>
 				<Route path = "*" element = {(
