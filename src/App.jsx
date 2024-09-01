@@ -4319,6 +4319,42 @@ function App() {
 							<Route path = "animation" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation" pageTitle = "CSS Propriedade animation"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* animation-delay */}
+							<Route path = "animation-delay" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-delay" pageTitle = "CSS Propriedade animation-delay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-direction */}
+							<Route path = "animation-direction" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-direction" pageTitle = "CSS Propriedade animation-direction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-duration */}
+							<Route path = "animation-duration" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-duration" pageTitle = "CSS Propriedade animation-duration"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-fill-mode */}
+							<Route path = "animation-fill-mode" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-fill-mode" pageTitle = "CSS Propriedade animation-fill-mode"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-iteration-count */}
+							<Route path = "animation-iteration-count" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-iteration-count" pageTitle = "CSS Propriedade animation-iteration-count"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-name */}
+							<Route path = "animation-name" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-name" pageTitle = "CSS Propriedade animation-name"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-play-state */}
+							<Route path = "animation-play-state" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-play-state" pageTitle = "CSS Propriedade animation-play-state"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation-timing-function */}
+							<Route path = "animation-timing-function" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation-timing-function" pageTitle = "CSS Propriedade animation-timing-function"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* aspect-ratio */}
+							<Route path = "aspect-ratio" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS aspect-ratio" pageTitle = "CSS Propriedade aspect-ratio"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
