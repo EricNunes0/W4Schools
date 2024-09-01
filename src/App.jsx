@@ -4303,6 +4303,22 @@ function App() {
 							<Route path = "align-content" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS align-content" pageTitle = "CSS Propriedade align-content"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* align-items */}
+							<Route path = "align-items" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS align-items" pageTitle = "CSS Propriedade align-items"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* align-self */}
+							<Route path = "align-self" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS align-self" pageTitle = "CSS Propriedade align-self"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* all */}
+							<Route path = "all" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS all" pageTitle = "CSS Propriedade all"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* animation */}
+							<Route path = "animation" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS animation" pageTitle = "CSS Propriedade animation"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
