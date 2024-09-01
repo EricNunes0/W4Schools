@@ -4355,6 +4355,22 @@ function App() {
 							<Route path = "aspect-ratio" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS aspect-ratio" pageTitle = "CSS Propriedade aspect-ratio"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* backdrop-filter */}
+							<Route path = "backdrop-filter" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS backdrop-filter" pageTitle = "CSS Propriedade backdrop-filter"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* backface-visibility */}
+							<Route path = "backface-visibility" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS backface-visibility" pageTitle = "CSS Propriedade backface-visibility"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background */}
+							<Route path = "background" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background" pageTitle = "CSS Propriedade background"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-attachment */}
+							<Route path = "background-attachment" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-attachment" pageTitle = "CSS Propriedade background-attachment"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

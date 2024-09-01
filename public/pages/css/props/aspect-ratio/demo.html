@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            #div1 {
+                position: relative;
+                height: 150px;
+                width: 200px;
+                margin: 30px;
+                padding: 30px;
+                border: 1px solid black;
+            }
+            
+            #div2 {
+                padding: 5px;
+                width: 70px;
+                position: absolute;
+                border: 1px solid black;
+                color: #f0f0f0;
+                background-color: #5075d0;
+                overflow: hidden;
+                aspect-ratio: 1/1;
+            }
+        </style>
+        <script>
+            function changeAspRat() {
+                let width = document.getElementById('inpWidth').value;
+                let aspRatWidth = document.getElementById('inpRatWidth').value;
+                let aspRatHeight = document.getElementById('inpRatHeight').value;
+                document.getElementById('div2').style.width = width+'px';
+                document.getElementById('div2').style.aspectRatio = aspRatWidth+"/"+aspRatHeight;
+                document.getElementById('pAspRat').innerHTML = 'width: ' + width + 'px;<br>apect-ratio: ' + aspRatWidth+"/"+aspRatHeight +';';     
+            }
+        </script>
+    </head>
+    <body>
+        <p>Brinque com propriedades de proporção e largura.</p>
+        <div id="div1">
+            <div id="div2">HELLO</div>
+        </div>
+        <p>Proporção e largura</p>
+        <p>
+            Largura:<br><input type="range" min="50" max="100" value="75" step="1" oninput="changeAspRat()" id="inpWidth">
+        </p>
+        <p>
+            Número da largura da proporção (aspect-ratio):<br><input type="range" min="1" max="16" value="1" step="0.5" oninput="changeAspRat()" id="inpRatWidth">
+        </p>
+        <p>
+            Número de altura da proporção (aspect-ratio):<br><input type="range" min="1" max="9" value="1" step="0.5" oninput="changeAspRat()" id="inpRatHeight">
+        </p>
+        <p id="pAspRat">
+            Largura: 70px;<br>
+            Proporção (aspect-ratio): 1/1;
+        </p>
+    </body>
+</html>
