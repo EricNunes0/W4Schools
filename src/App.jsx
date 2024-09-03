@@ -4371,6 +4371,10 @@ function App() {
 							<Route path = "background-attachment" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-attachment" pageTitle = "CSS Propriedade background-attachment"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* background-blend-mode */}
+							<Route path = "background-blend-mode" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-blend-mode" pageTitle = "CSS Propriedade background-blend-mode"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
