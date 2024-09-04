@@ -4375,6 +4375,14 @@ function App() {
 							<Route path = "background-blend-mode" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-blend-mode" pageTitle = "CSS Propriedade background-blend-mode"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* background-clip */}
+							<Route path = "background-clip" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-clip" pageTitle = "CSS Propriedade background-clip"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-color */}
+							<Route path = "background-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-color" pageTitle = "CSS Propriedade background-color"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
