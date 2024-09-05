@@ -4383,6 +4383,26 @@ function App() {
 							<Route path = "background-color" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-color" pageTitle = "CSS Propriedade background-color"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* background-image */}
+							<Route path = "background-image" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-image" pageTitle = "CSS Propriedade background-image"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-origin */}
+							<Route path = "background-origin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-origin" pageTitle = "CSS Propriedade background-origin"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-position */}
+							<Route path = "background-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-position" pageTitle = "CSS Propriedade background-position"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-position-x */}
+							<Route path = "background-position-x" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-position-x" pageTitle = "CSS Propriedade background-position-x"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-position-y */}
+							<Route path = "background-position-y" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-position-y" pageTitle = "CSS Propriedade background-position-y"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
