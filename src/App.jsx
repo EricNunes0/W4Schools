@@ -4403,6 +4403,14 @@ function App() {
 							<Route path = "background-position-y" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-position-y" pageTitle = "CSS Propriedade background-position-y"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* background-repeat */}
+							<Route path = "background-repeat" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-repeat" pageTitle = "CSS Propriedade background-repeat"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* background-size */}
+							<Route path = "background-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-size" pageTitle = "CSS Propriedade background-size"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
