@@ -4411,6 +4411,18 @@ function App() {
 							<Route path = "background-size" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS background-size" pageTitle = "CSS Propriedade background-size"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* block-size */}
+							<Route path = "block-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS block-size" pageTitle = "CSS Propriedade block-size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border */}
+							<Route path = "border" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border" pageTitle = "CSS Propriedade border"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block */}
+							<Route path = "border-block" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block" pageTitle = "CSS Propriedade border-block"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
