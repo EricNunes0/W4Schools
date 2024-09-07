@@ -4423,6 +4423,26 @@ function App() {
 							<Route path = "border-block" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block" pageTitle = "CSS Propriedade border-block"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-block-color */}
+							<Route path = "border-block-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-color" pageTitle = "CSS Propriedade border-block-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-end */}
+							<Route path = "border-block-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-end" pageTitle = "CSS Propriedade border-block-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-end-color */}
+							<Route path = "border-block-end-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-end-color" pageTitle = "CSS Propriedade border-block-end-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-end-style */}
+							<Route path = "border-block-end-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-end-style" pageTitle = "CSS Propriedade border-block-end-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-end-width */}
+							<Route path = "border-block-end-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-end-width" pageTitle = "CSS Propriedade border-block-end-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
