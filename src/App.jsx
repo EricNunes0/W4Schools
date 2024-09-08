@@ -4443,6 +4443,30 @@ function App() {
 							<Route path = "border-block-end-width" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-end-width" pageTitle = "CSS Propriedade border-block-end-width"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-block-start */}
+							<Route path = "border-block-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-start" pageTitle = "CSS Propriedade border-block-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-start-color */}
+							<Route path = "border-block-start-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-start-color" pageTitle = "CSS Propriedade border-block-start-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-start-style */}
+							<Route path = "border-block-start-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-start-style" pageTitle = "CSS Propriedade border-block-start-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-start-width */}
+							<Route path = "border-block-start-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-start-width" pageTitle = "CSS Propriedade border-block-start-width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-style */}
+							<Route path = "border-block-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-style" pageTitle = "CSS Propriedade border-block-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-block-width */}
+							<Route path = "border-block-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-width" pageTitle = "CSS Propriedade border-block-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
