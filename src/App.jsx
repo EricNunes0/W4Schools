@@ -4467,6 +4467,30 @@ function App() {
 							<Route path = "border-block-width" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-block-width" pageTitle = "CSS Propriedade border-block-width"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-bottom */}
+							<Route path = "border-bottom" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom" pageTitle = "CSS Propriedade border-bottom"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-bottom-color */}
+							<Route path = "border-bottom-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-color" pageTitle = "CSS Propriedade border-bottom-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-bottom-left-radius */}
+							<Route path = "border-bottom-left-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-left-radius" pageTitle = "CSS Propriedade border-bottom-left-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-bottom-right-radius */}
+							<Route path = "border-bottom-right-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-right-radius" pageTitle = "CSS Propriedade border-bottom-right-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-bottom-style */}
+							<Route path = "border-bottom-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-style" pageTitle = "CSS Propriedade border-bottom-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-bottom-width */}
+							<Route path = "border-bottom-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-width" pageTitle = "CSS Propriedade border-bottom-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
