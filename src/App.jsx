@@ -4491,6 +4491,46 @@ function App() {
 							<Route path = "border-bottom-width" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-bottom-width" pageTitle = "CSS Propriedade border-bottom-width"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-collapse */}
+							<Route path = "border-collapse" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-collapse" pageTitle = "CSS Propriedade border-collapse"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-color */}
+							<Route path = "border-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-color" pageTitle = "CSS Propriedade border-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-end-end-radius */}
+							<Route path = "border-end-end-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-end-end-radius" pageTitle = "CSS Propriedade border-end-end-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-end-start-radius */}
+							<Route path = "border-end-start-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-end-start-radius" pageTitle = "CSS Propriedade border-end-start-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image */}
+							<Route path = "border-image" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image" pageTitle = "CSS Propriedade border-image"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image-outset */}
+							<Route path = "border-image-outset" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-outset" pageTitle = "CSS Propriedade border-image-outset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image-repeat */}
+							<Route path = "border-image-repeat" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-repeat" pageTitle = "CSS Propriedade border-image-repeat"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image-slice */}
+							<Route path = "border-image-slice" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-slice" pageTitle = "CSS Propriedade border-image-slice"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image-source */}
+							<Route path = "border-image-source" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-source" pageTitle = "CSS Propriedade border-image-source"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-image-width */}
+							<Route path = "border-image-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-width" pageTitle = "CSS Propriedade border-image-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
