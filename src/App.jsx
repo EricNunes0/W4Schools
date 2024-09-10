@@ -4531,6 +4531,30 @@ function App() {
 							<Route path = "border-image-width" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-image-width" pageTitle = "CSS Propriedade border-image-width"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-inline */}
+							<Route path = "border-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline" pageTitle = "CSS Propriedade border-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-inline-color */}
+							<Route path = "border-inline-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline-color" pageTitle = "CSS Propriedade border-inline-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-inline-end */}
+							<Route path = "border-inline-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline-end" pageTitle = "CSS Propriedade border-inline-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-inline-end-color */}
+							<Route path = "border-inline-end-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline-end-color" pageTitle = "CSS Propriedade border-inline-end-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-inline-end-style */}
+							<Route path = "border-inline-end-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline-end-style" pageTitle = "CSS Propriedade border-inline-end-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-inline-end-width */}
+							<Route path = "border-inline-end-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-inline-end-width" pageTitle = "CSS Propriedade border-inline-end-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
