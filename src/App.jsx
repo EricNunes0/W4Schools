@@ -4615,6 +4615,22 @@ function App() {
 							<Route path = "border-right-width" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-right-width" pageTitle = "CSS Propriedade border-right-width"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-spacing */}
+							<Route path = "border-spacing" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-spacing" pageTitle = "CSS Propriedade border-spacing"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-start-end-radius */}
+							<Route path = "border-start-end-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-start-end-radius" pageTitle = "CSS Propriedade border-start-end-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-start-start-radius */}
+							<Route path = "border-start-start-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-start-start-radius" pageTitle = "CSS Propriedade border-start-start-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-style */}
+							<Route path = "border-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-style" pageTitle = "CSS Propriedade border-style"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
