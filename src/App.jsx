@@ -4599,6 +4599,22 @@ function App() {
 							<Route path = "border-radius" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-radius" pageTitle = "CSS Propriedade border-radius"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-right */}
+							<Route path = "border-right" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-right" pageTitle = "CSS Propriedade border-right"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-right-color */}
+							<Route path = "border-right-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-right-color" pageTitle = "CSS Propriedade border-right-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-right-style */}
+							<Route path = "border-right-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-right-style" pageTitle = "CSS Propriedade border-right-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-right-width */}
+							<Route path = "border-right-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-right-width" pageTitle = "CSS Propriedade border-right-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
