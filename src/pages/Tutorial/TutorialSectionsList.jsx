@@ -10,14 +10,36 @@ export default function TutorialSectionsList(prop) {
     for(let i = 0; i <= content.items.length - 1; i++) {
         const item = content.items[i];
         let liContent;
+        let ulChild;
         if(item.type === "multiple") {
             liContent = TutorialListItemMultiple(item.codes);
         } else if(item.type === "text") {
             liContent = (<TutorialSectionsListParagraph fontweight = {item.fontWeight || ""}>{item.text}</TutorialSectionsListParagraph>);
+            if(item.ul) {
+                ulChild = (
+                    <ul style={{paddingInlineStart: "40px"}}>
+                        {item.ul.items ? (
+                            <>
+                                {item.ul.items.map((li) => (
+                                    <>
+                                        {li.type === "text" ? (<>
+                                            <li><TutorialSectionsListParagraph fontweight = {li.fontWeight || ""}>{li.text}</TutorialSectionsListParagraph></li>
+                                        </>) : (<></>)}
+                                        {li.type === "multiple" ? (<>
+                                            <li>{TutorialListItemMultiple(li.codes)}</li>
+                                        </>) : (<></>)}
+                                    </>
+                                ))}
+                            </>
+                        ) : (<></>)}
+                    </ul>
+                );
+            }
         };
-        items.push(
-            <li className = "tutorial-sections-lists-items">{liContent}</li>
-        );
+        items.push(<li className = "tutorial-sections-lists-items">
+            {liContent}
+            {ulChild}
+        </li>);
     };
 
     /* Imagem lateral */

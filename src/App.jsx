@@ -4631,6 +4631,34 @@ function App() {
 							<Route path = "border-style" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-style" pageTitle = "CSS Propriedade border-style"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* border-top */}
+							<Route path = "border-top" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top" pageTitle = "CSS Propriedade border-top"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-top-color */}
+							<Route path = "border-top-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top-color" pageTitle = "CSS Propriedade border-top-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-top-left-radius */}
+							<Route path = "border-top-left-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top-left-radius" pageTitle = "CSS Propriedade border-top-left-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-top-right-radius */}
+							<Route path = "border-top-right-radius" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top-right-radius" pageTitle = "CSS Propriedade border-top-right-radius"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-top-style */}
+							<Route path = "border-top-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top-style" pageTitle = "CSS Propriedade border-top-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-top-width */}
+							<Route path = "border-top-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-top-width" pageTitle = "CSS Propriedade border-top-width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* border-width */}
+							<Route path = "border-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "CSS border-width" pageTitle = "CSS Propriedade border-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
