@@ -11,11 +11,11 @@ export const NavigationRightButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     border: unset;
     border-radius: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.3s;
 
     &:hover {

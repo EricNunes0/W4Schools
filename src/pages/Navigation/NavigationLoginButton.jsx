@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavigationLoginButton = styled.button`
     position: relative;
-    width: 150px;
+    width: 170px;
     height: 40px;
     background-color: #7080a0;
     color: #ffffff;

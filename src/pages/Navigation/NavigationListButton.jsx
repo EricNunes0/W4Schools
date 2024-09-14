@@ -5,6 +5,7 @@ export const NavigationListButton = styled.button`
     width: 100px;
     height: 50px;
     background-color: transparent;
+    box-sizing: content-box;
     color: #f0f0f0;
     font-size: 14px;
     display: flex;
@@ -12,8 +13,8 @@ export const NavigationListButton = styled.button`
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
     transition: all 0.3s;
 
@@ -33,9 +34,6 @@ export const NavigationListButton = styled.button`
 
     &::after {
         content: "";
-        position: absolute;
-        top: 30px;
-        left: calc(100px / 2 - calc(20px / 2));
         display: block;
         background-color: #f0f0f0;
         clip-path: polygon(50% 70%, 12% 35%, 87% 35%);

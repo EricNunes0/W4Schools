@@ -4,7 +4,7 @@ export const NavigationSignupButton = styled.button`
     position: absolute;
     z-index: 1;
     inset: 0;
-    width: 90px;
+    width: 110px;
     height: 40px;
     background-color: #3040a0;
     color: #ffffff;

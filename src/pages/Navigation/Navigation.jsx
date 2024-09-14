@@ -53,8 +53,8 @@ export default function Navigation(prop) {
                         </div>
                         <div id = "navigation-sign-div">
                             <div id = "navigation-sign-area">
-                                <NavigationSignupButton>Sign up</NavigationSignupButton>
-                                <NavigationLoginButton>Log in</NavigationLoginButton>
+                                <NavigationSignupButton>Cadastrar</NavigationSignupButton>
+                                <NavigationLoginButton>Entrar</NavigationLoginButton>
                             </div>
                         </div>
                     </section>
