@@ -4703,6 +4703,26 @@ function App() {
 							<Route path = "charset_rule" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@charset" pageTitle = "CSS Regra @charset"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* clear */}
+							<Route path = "clear" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "clear" pageTitle = "CSS Propriedade clear"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* clip */}
+							<Route path = "clip" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "clip" pageTitle = "CSS Propriedade clip"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* clip-path */}
+							<Route path = "clip-path" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "clip-path" pageTitle = "CSS Propriedade clip-path"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* color */}
+							<Route path = "color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "color" pageTitle = "CSS Propriedade color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* color-scheme */}
+							<Route path = "color-scheme" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "color-scheme" pageTitle = "CSS Propriedade color-scheme"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
