@@ -4723,6 +4723,10 @@ function App() {
 							<Route path = "color-scheme" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "color-scheme" pageTitle = "CSS Propriedade color-scheme"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* column-count */}
+							<Route path = "column-count" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-count" pageTitle = "CSS Propriedade column-count"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
