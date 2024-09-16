@@ -4727,6 +4727,18 @@ function App() {
 							<Route path = "column-count" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-count" pageTitle = "CSS Propriedade column-count"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* column-fill */}
+							<Route path = "column-fill" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-fill" pageTitle = "CSS Propriedade column-fill"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* column-gap */}
+							<Route path = "column-gap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-gap" pageTitle = "CSS Propriedade column-gap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* column-rule */}
+							<Route path = "column-rule" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-rule" pageTitle = "CSS Propriedade column-rule"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
