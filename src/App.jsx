@@ -4739,6 +4739,18 @@ function App() {
 							<Route path = "column-rule" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-rule" pageTitle = "CSS Propriedade column-rule"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* column-rule-color */}
+							<Route path = "column-rule-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-rule-color" pageTitle = "CSS Propriedade column-rule-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* column-rule-style */}
+							<Route path = "column-rule-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-rule-style" pageTitle = "CSS Propriedade column-rule-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* column-rule-width */}
+							<Route path = "column-rule-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "column-rule-width" pageTitle = "CSS Propriedade column-rule-width"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
