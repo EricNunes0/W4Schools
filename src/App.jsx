@@ -4763,6 +4763,26 @@ function App() {
 							<Route path = "columns" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "columns" pageTitle = "CSS Propriedade columns"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* content */}
+							<Route path = "content" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "content" pageTitle = "CSS Propriedade content"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counter-increment */}
+							<Route path = "counter-increment" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "counter-increment" pageTitle = "CSS Propriedade counter-increment"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counter-reset */}
+							<Route path = "counter-reset" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "counter-reset" pageTitle = "CSS Propriedade counter-reset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counter-set */}
+							<Route path = "counter-set" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "counter-set" pageTitle = "CSS Propriedade counter-set"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* cursor */}
+							<Route path = "cursor" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "cursor" pageTitle = "CSS Propriedade cursor"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

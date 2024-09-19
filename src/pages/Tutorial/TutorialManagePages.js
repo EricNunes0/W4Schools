@@ -309,7 +309,7 @@ export default class TutorialManagePages {
     };
     /* Comentários */
     lineComment(part) {
-        const content = [part.code, "#6070a0", part.spacesBefore || 0, part.spacesAfter || 0];
+        const content = [part.code, "#6070a0", part.spacesBefore || 0, part.spacesAfter || 0, part.italic || null];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));
         return (
@@ -318,7 +318,7 @@ export default class TutorialManagePages {
     };
     /* Conteúdos */
     lineContent(part) {
-        const content = [part.code, part.color || "#ffffff", part.spacesBefore || 0, 0];
+        const content = [part.code, part.color || "#ffffff", part.spacesBefore || 0, 0, part.italic || null];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));
         return (
@@ -543,7 +543,7 @@ export default class TutorialManagePages {
     };
     /* Valores de atributos */
     lineValue(part) {
-        const content = [part.code, "#f5f565", part.spacesBefore || 0, part.spacesAfter || 0];
+        const content = [part.code, "#f5f565", part.spacesBefore || 0, part.spacesAfter || 0, part.italic || null];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));
         return (
@@ -584,6 +584,7 @@ export default class TutorialManagePages {
         content[1]: cor,
         content[2]: espaços antes do texto,
         content[3]: espaços depois do texto
+        content[4]: itálico
         */
 
         for(let i = 0; i <= content[2] - 1; i++) {
@@ -593,7 +594,7 @@ export default class TutorialManagePages {
             content[0] = `${content[0]}\xa0`;
         };
         return (
-            <TutorialCode className = "tutorial-codes" style = {{color: content[1]}}>{content[0]}</TutorialCode>
+            <TutorialCode className = "tutorial-codes" style = {{color: content[1], fontStyle: content[4] && content[4] === true ? "italic" : null}}>{content[0]}</TutorialCode>
         );
     };
     /* Converter inputs em HTML */
