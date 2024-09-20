@@ -4783,6 +4783,18 @@ function App() {
 							<Route path = "cursor" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "cursor" pageTitle = "CSS Propriedade cursor"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* direction */}
+							<Route path = "direction" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "direction" pageTitle = "CSS Propriedade direction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* display */}
+							<Route path = "display" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "display" pageTitle = "CSS Propriedade display"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* empty-cells */}
+							<Route path = "empty-cells" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "empty-cells" pageTitle = "CSS Propriedade empty-cells"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
