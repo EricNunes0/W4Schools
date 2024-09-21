@@ -4795,6 +4795,18 @@ function App() {
 							<Route path = "empty-cells" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "empty-cells" pageTitle = "CSS Propriedade empty-cells"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* filter */}
+							<Route path = "filter" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "filter" pageTitle = "CSS Propriedade filter"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex */}
+							<Route path = "flex" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex" pageTitle = "CSS Propriedade flex"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex-basis */}
+							<Route path = "flex-basis" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-basis" pageTitle = "CSS Propriedade flex-basis"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

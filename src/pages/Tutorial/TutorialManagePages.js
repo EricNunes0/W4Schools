@@ -291,7 +291,7 @@ export default class TutorialManagePages {
                 codes[0][0][2] = spacesBefore;
             };
             if(spacesAfter) {
-                codes[0][0][3] = spacesAfter;
+                codes[0][codes[0].length - 1][3] = spacesAfter;
             };
 
             for(let code of codes) {
@@ -318,7 +318,7 @@ export default class TutorialManagePages {
     };
     /* Conteúdos */
     lineContent(part) {
-        const content = [part.code, part.color || "#ffffff", part.spacesBefore || 0, 0, part.italic || null];
+        const content = [part.code, part.color || "#ffffff", part.spacesBefore || 0, part.spacesAfter || 0, part.italic || null];
         let codeText = [];
         codeText.push(this.lineCodeToHTML(content));
         return (
