@@ -4807,6 +4807,30 @@ function App() {
 							<Route path = "flex-basis" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-basis" pageTitle = "CSS Propriedade flex-basis"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* flex-direction */}
+							<Route path = "flex-direction" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-direction" pageTitle = "CSS Propriedade flex-direction"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex-flow */}
+							<Route path = "flex-flow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-flow" pageTitle = "CSS Propriedade flex-flow"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex-grow */}
+							<Route path = "flex-grow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-grow" pageTitle = "CSS Propriedade flex-grow"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex-shrink */}
+							<Route path = "flex-shrink" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-shrink" pageTitle = "CSS Propriedade flex-shrink"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* flex-wrap */}
+							<Route path = "flex-wrap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "flex-wrap" pageTitle = "CSS Propriedade flex-wrap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* float */}
+							<Route path = "float" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "float" pageTitle = "CSS Propriedade float"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
