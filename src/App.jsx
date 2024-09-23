@@ -4831,6 +4831,10 @@ function App() {
 							<Route path = "float" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "float" pageTitle = "CSS Propriedade float"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* font */}
+							<Route path = "font" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font" pageTitle = "CSS Propriedade font"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
