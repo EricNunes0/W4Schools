@@ -4835,6 +4835,14 @@ function App() {
 							<Route path = "font" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font" pageTitle = "CSS Propriedade font"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* @font-face */}
+							<Route path = "font-face_rule" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@font-face" pageTitle = "CSS Regra @font-face"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-family */}
+							<Route path = "font-family" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-family" pageTitle = "CSS Propriedade font-family"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
