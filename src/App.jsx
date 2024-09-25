@@ -4843,6 +4843,14 @@ function App() {
 							<Route path = "font-family" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-family" pageTitle = "CSS Propriedade font-family"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* font-feature-settings */}
+							<Route path = "font-feature-settings" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-feature-settings" pageTitle = "CSS Propriedade font-feature-settings"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-kerning */}
+							<Route path = "font-kerning" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-kerning" pageTitle = "CSS Propriedade font-kerning"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
