@@ -4851,6 +4851,34 @@ function App() {
 							<Route path = "font-kerning" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-kerning" pageTitle = "CSS Propriedade font-kerning"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* font-size */}
+							<Route path = "font-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-size" pageTitle = "CSS Propriedade font-size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-size-adjust */}
+							<Route path = "font-size-adjust" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-size-adjust" pageTitle = "CSS Propriedade font-size-adjust"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-stretch */}
+							<Route path = "font-stretch" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-stretch" pageTitle = "CSS Propriedade font-stretch"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-style */}
+							<Route path = "font-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-style" pageTitle = "CSS Propriedade font-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-variant */}
+							<Route path = "font-variant" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-variant" pageTitle = "CSS Propriedade font-variant"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-variant-caps */}
+							<Route path = "font-variant-caps" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-variant-caps" pageTitle = "CSS Propriedade font-variant-caps"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-weight */}
+							<Route path = "font-weight" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-weight" pageTitle = "CSS Propriedade font-weight"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
