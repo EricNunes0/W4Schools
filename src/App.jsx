@@ -4879,6 +4879,14 @@ function App() {
 							<Route path = "font-weight" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "font-weight" pageTitle = "CSS Propriedade font-weight"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* gap */}
+							<Route path = "gap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "gap" pageTitle = "CSS Propriedade gap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid */}
+							<Route path = "grid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid" pageTitle = "CSS Propriedade grid"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
