@@ -4887,6 +4887,10 @@ function App() {
 							<Route path = "grid" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid" pageTitle = "CSS Propriedade grid"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* grid-area */}
+							<Route path = "grid-area" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-area" pageTitle = "CSS Propriedade grid-area"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
