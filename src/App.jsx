@@ -4891,6 +4891,18 @@ function App() {
 							<Route path = "grid-area" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-area" pageTitle = "CSS Propriedade grid-area"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* grid-auto-columns */}
+							<Route path = "grid-auto-columns" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-auto-columns" pageTitle = "CSS Propriedade grid-auto-columns"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-auto-flow */}
+							<Route path = "grid-auto-flow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-auto-flow" pageTitle = "CSS Propriedade grid-auto-flow"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-auto-rows */}
+							<Route path = "grid-auto-rows" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-auto-rows" pageTitle = "CSS Propriedade grid-auto-rows"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
