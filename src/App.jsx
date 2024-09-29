@@ -4943,6 +4943,30 @@ function App() {
 							<Route path = "grid-template-rows" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-template-rows" pageTitle = "CSS Propriedade grid-template-rows"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* hanging-punctuation */}
+							<Route path = "hanging-punctuation" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "hanging-punctuation" pageTitle = "CSS Propriedade hanging-punctuation"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* height */}
+							<Route path = "height" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "height" pageTitle = "CSS Propriedade height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* hyphens */}
+							<Route path = "hyphens" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "hyphens" pageTitle = "CSS Propriedade hyphens"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* hyphenate-character */}
+							<Route path = "hyphenate-character" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "hyphenate-character" pageTitle = "CSS Propriedade hyphenate-character"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* image-rendering */}
+							<Route path = "image-rendering" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "image-rendering" pageTitle = "CSS Propriedade image-rendering"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* @import */}
+							<Route path = "import_rule" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@import" pageTitle = "CSS Regra @import"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
