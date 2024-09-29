@@ -4903,6 +4903,46 @@ function App() {
 							<Route path = "grid-auto-rows" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-auto-rows" pageTitle = "CSS Propriedade grid-auto-rows"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* grid-column */}
+							<Route path = "grid-column" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-column" pageTitle = "CSS Propriedade grid-column"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-column-end */}
+							<Route path = "grid-column-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-column-end" pageTitle = "CSS Propriedade grid-column-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-column-start */}
+							<Route path = "grid-column-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-column-start" pageTitle = "CSS Propriedade grid-column-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-row */}
+							<Route path = "grid-row" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-row" pageTitle = "CSS Propriedade grid-row"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-row-end */}
+							<Route path = "grid-row-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-row-end" pageTitle = "CSS Propriedade grid-row-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-row-start */}
+							<Route path = "grid-row-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-row-start" pageTitle = "CSS Propriedade grid-row-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-template */}
+							<Route path = "grid-template" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-template" pageTitle = "CSS Propriedade grid-template"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-template-areas */}
+							<Route path = "grid-template-areas" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-template-areas" pageTitle = "CSS Propriedade grid-template-areas"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-template-columns */}
+							<Route path = "grid-template-columns" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-template-columns" pageTitle = "CSS Propriedade grid-template-columns"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* grid-template-rows */}
+							<Route path = "grid-template-rows" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "grid-template-rows" pageTitle = "CSS Propriedade grid-template-rows"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
