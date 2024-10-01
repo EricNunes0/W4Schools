@@ -4967,6 +4967,10 @@ function App() {
 							<Route path = "import_rule" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@import" pageTitle = "CSS Regra @import"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* initial-letter */}
+							<Route path = "initial-letter" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "initial-letter" pageTitle = "CSS Propriedade initial-letter"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
