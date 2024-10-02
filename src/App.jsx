@@ -4983,6 +4983,26 @@ function App() {
 							<Route path = "inset-block" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-block" pageTitle = "CSS Propriedade inset-block"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* inset-block-end */}
+							<Route path = "inset-block-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-block-end" pageTitle = "CSS Propriedade inset-block-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* inset-block-start */}
+							<Route path = "inset-block-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-block-start" pageTitle = "CSS Propriedade inset-block-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* inset-inline */}
+							<Route path = "inset-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-inline" pageTitle = "CSS Propriedade inset-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* inset-inline-end */}
+							<Route path = "inset-inline-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-inline-end" pageTitle = "CSS Propriedade inset-inline-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* inset-inline-start */}
+							<Route path = "inset-inline-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-inline-start" pageTitle = "CSS Propriedade inset-inline-start"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
