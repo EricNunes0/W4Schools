@@ -5003,6 +5003,14 @@ function App() {
 							<Route path = "inset-inline-start" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "inset-inline-start" pageTitle = "CSS Propriedade inset-inline-start"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* isolation */}
+							<Route path = "isolation" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "isolation" pageTitle = "CSS Propriedade isolation"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* justify-content */}
+							<Route path = "justify-content" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "justify-content" pageTitle = "CSS Propriedade justify-content"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
