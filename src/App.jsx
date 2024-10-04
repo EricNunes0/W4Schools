@@ -5011,6 +5011,14 @@ function App() {
 							<Route path = "justify-content" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "justify-content" pageTitle = "CSS Propriedade justify-content"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* justify-items */}
+							<Route path = "justify-items" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "justify-items" pageTitle = "CSS Propriedade justify-items"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* justify-self */}
+							<Route path = "justify-self" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "justify-self" pageTitle = "CSS Propriedade justify-self"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
