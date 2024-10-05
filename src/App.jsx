@@ -5019,6 +5019,22 @@ function App() {
 							<Route path = "justify-self" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "justify-self" pageTitle = "CSS Propriedade justify-self"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* @keyframes */}
+							<Route path = "animation-keyframes" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@keyframes" pageTitle = "CSS Regra @keyframes"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* left */}
+							<Route path = "left" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "left" pageTitle = "CSS Propriedade left"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* letter-spacing */}
+							<Route path = "letter-spacing" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "letter-spacing" pageTitle = "CSS Propriedade letter-spacing"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* line-height */}
+							<Route path = "line-height" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "line-height" pageTitle = "CSS Propriedade line-height"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

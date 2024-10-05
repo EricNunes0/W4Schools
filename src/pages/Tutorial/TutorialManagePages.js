@@ -504,6 +504,13 @@ export default class TutorialManagePages {
                         CSSBase.codes.splice(declarationIndex, 0, value);
                         declarationIndex++;
                     });
+
+                    /* Adicionando !important */
+                    if(declaration.important === true) {
+                        CSSBase.codes.splice(declarationIndex, 0, ["!important", "#f565c5", 1]);
+                        declarationIndex++;
+                    }
+
                     CSSBase.codes.splice(declarationIndex, 0, [";", "#f0f0f0"]);
                     declarationIndex++;
                 };
