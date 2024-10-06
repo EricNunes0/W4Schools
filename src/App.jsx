@@ -5035,6 +5035,22 @@ function App() {
 							<Route path = "line-height" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "line-height" pageTitle = "CSS Propriedade line-height"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* list-style */}
+							<Route path = "list-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "list-style" pageTitle = "CSS Propriedade list-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* list-style-image */}
+							<Route path = "list-style-image" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "list-style-image" pageTitle = "CSS Propriedade list-style-image"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* list-style-position */}
+							<Route path = "list-style-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "list-style-position" pageTitle = "CSS Propriedade list-style-position"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* list-style-type */}
+							<Route path = "list-style-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "list-style-type" pageTitle = "CSS Propriedade list-style-type"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
