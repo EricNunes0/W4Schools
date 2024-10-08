@@ -5055,6 +5055,10 @@ function App() {
 							<Route path = "margin" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin" pageTitle = "CSS Propriedade margin"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* margin-block */}
+							<Route path = "margin-block" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-block" pageTitle = "CSS Propriedade margin-block"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
