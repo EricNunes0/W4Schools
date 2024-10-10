@@ -5067,6 +5067,22 @@ function App() {
 							<Route path = "margin-block-start" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-block-start" pageTitle = "CSS Propriedade margin-block-start"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* margin-bottom */}
+							<Route path = "margin-bottom" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-bottom" pageTitle = "CSS Propriedade margin-bottom"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* margin-inline */}
+							<Route path = "margin-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-inline" pageTitle = "CSS Propriedade margin-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* margin-inline-end */}
+							<Route path = "margin-inline-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-inline-end" pageTitle = "CSS Propriedade margin-inline-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* margin-inline-start */}
+							<Route path = "margin-inline-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-inline-start" pageTitle = "CSS Propriedade margin-inline-start"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
