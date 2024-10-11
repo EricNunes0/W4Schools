@@ -5083,6 +5083,18 @@ function App() {
 							<Route path = "margin-inline-start" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-inline-start" pageTitle = "CSS Propriedade margin-inline-start"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* margin-left */}
+							<Route path = "margin-left" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-left" pageTitle = "CSS Propriedade margin-left"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* margin-right */}
+							<Route path = "margin-right" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-right" pageTitle = "CSS Propriedade margin-right"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* margin-top */}
+							<Route path = "margin-top" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-top" pageTitle = "CSS Propriedade margin-top"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
