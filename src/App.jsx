@@ -5095,6 +5095,26 @@ function App() {
 							<Route path = "margin-top" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "margin-top" pageTitle = "CSS Propriedade margin-top"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* marker */}
+							<Route path = "marker" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "marker" pageTitle = "CSS Propriedade marker"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* marker-end */}
+							<Route path = "marker-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "marker-end" pageTitle = "CSS Propriedade marker-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* marker-mid */}
+							<Route path = "marker-mid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "marker-mid" pageTitle = "CSS Propriedade marker-mid"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* marker-start */}
+							<Route path = "marker-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "marker-start" pageTitle = "CSS Propriedade marker-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* mask */}
+							<Route path = "mask" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask" pageTitle = "CSS Propriedade mask"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
