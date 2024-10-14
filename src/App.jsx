@@ -5123,6 +5123,10 @@ function App() {
 							<Route path = "mask-composite" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-composite" pageTitle = "CSS Propriedade mask-composite"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* mask-image */}
+							<Route path = "mask-image" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-image" pageTitle = "CSS Propriedade mask-image"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
