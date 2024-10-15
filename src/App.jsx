@@ -5127,6 +5127,22 @@ function App() {
 							<Route path = "mask-image" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-image" pageTitle = "CSS Propriedade mask-image"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* mask-mode */}
+							<Route path = "mask-mode" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-mode" pageTitle = "CSS Propriedade mask-mode"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* mask-origin */}
+							<Route path = "mask-origin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-origin" pageTitle = "CSS Propriedade mask-origin"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* mask-position */}
+							<Route path = "mask-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-position" pageTitle = "CSS Propriedade mask-position"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* mask-repeat */}
+							<Route path = "mask-repeat" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-repeat" pageTitle = "CSS Propriedade mask-repeat"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
