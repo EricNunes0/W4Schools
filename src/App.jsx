@@ -5151,6 +5151,10 @@ function App() {
 							<Route path = "mask-type" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mask-type" pageTitle = "CSS Propriedade mask-type"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* max-block-size */}
+							<Route path = "max-block-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-block-size" pageTitle = "CSS Propriedade max-block-size"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
