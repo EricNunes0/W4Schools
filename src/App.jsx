@@ -5155,6 +5155,14 @@ function App() {
 							<Route path = "max-block-size" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-block-size" pageTitle = "CSS Propriedade max-block-size"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* max-height */}
+							<Route path = "max-height" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-height" pageTitle = "CSS Propriedade max-height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* max-inline-size */}
+							<Route path = "max-inline-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-inline-size" pageTitle = "CSS Propriedade max-inline-size"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
