@@ -5163,6 +5163,14 @@ function App() {
 							<Route path = "max-inline-size" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-inline-size" pageTitle = "CSS Propriedade max-inline-size"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* max-width */}
+							<Route path = "max-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "max-width" pageTitle = "CSS Propriedade max-width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* @media */}
+							<Route path = "mediaquery" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@media" pageTitle = "CSS Regra @media"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
