@@ -5171,6 +5171,26 @@ function App() {
 							<Route path = "mediaquery" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@media" pageTitle = "CSS Regra @media"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* min-block-size */}
+							<Route path = "min-block-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "min-block-size" pageTitle = "CSS Propriedade min-block-size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* min-inline-size */}
+							<Route path = "min-inline-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "min-inline-size" pageTitle = "CSS Propriedade min-inline-size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* min-height */}
+							<Route path = "min-height" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "min-height" pageTitle = "CSS Propriedade min-height"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* min-width */}
+							<Route path = "min-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "min-width" pageTitle = "CSS Propriedade min-width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* mix-blend-mode */}
+							<Route path = "mix-blend-mode" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mix-blend-mode" pageTitle = "CSS Propriedade mix-blend-mode"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
