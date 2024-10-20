@@ -5191,6 +5191,14 @@ function App() {
 							<Route path = "mix-blend-mode" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "mix-blend-mode" pageTitle = "CSS Propriedade mix-blend-mode"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* object-fit */}
+							<Route path = "object-fit" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "object-fit" pageTitle = "CSS Propriedade object-fit"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* object-position */}
+							<Route path = "object-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "object-position" pageTitle = "CSS Propriedade object-position"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
