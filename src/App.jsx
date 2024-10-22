@@ -5203,6 +5203,22 @@ function App() {
 							<Route path = "offset" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset" pageTitle = "CSS Propriedade offset"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* offset-anchor */}
+							<Route path = "offset-anchor" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-anchor" pageTitle = "CSS Propriedade offset-anchor"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* offset-distance */}
+							<Route path = "offset-distance" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-distance" pageTitle = "CSS Propriedade offset-distance"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* offset-path */}
+							<Route path = "offset-path" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-path" pageTitle = "CSS Propriedade offset-path"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* offset-position */}
+							<Route path = "offset-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-position" pageTitle = "CSS Propriedade offset-position"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
