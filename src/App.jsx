@@ -5219,6 +5219,10 @@ function App() {
 							<Route path = "offset-position" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-position" pageTitle = "CSS Propriedade offset-position"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* offset-rotate */}
+							<Route path = "offset-rotate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-rotate" pageTitle = "CSS Propriedade offset-rotate"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
