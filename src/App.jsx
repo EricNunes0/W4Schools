@@ -5227,6 +5227,14 @@ function App() {
 							<Route path = "opacity" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "opacity" pageTitle = "CSS Propriedade opacity"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* order */}
+							<Route path = "order" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "order" pageTitle = "CSS Propriedade order"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* orphans */}
+							<Route path = "orphans" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "orphans" pageTitle = "CSS Propriedade orphans"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
