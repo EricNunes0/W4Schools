@@ -5223,6 +5223,10 @@ function App() {
 							<Route path = "offset-rotate" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "offset-rotate" pageTitle = "CSS Propriedade offset-rotate"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* opacity */}
+							<Route path = "opacity" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "opacity" pageTitle = "CSS Propriedade opacity"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
