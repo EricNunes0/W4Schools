@@ -5235,6 +5235,46 @@ function App() {
 							<Route path = "orphans" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "orphans" pageTitle = "CSS Propriedade orphans"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* outline */}
+							<Route path = "outline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "outline" pageTitle = "CSS Propriedade outline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* outline-color */}
+							<Route path = "outline-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "outline-color" pageTitle = "CSS Propriedade outline-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* outline-offset */}
+							<Route path = "outline-offset" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "outline-offset" pageTitle = "CSS Propriedade outline-offset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* outline-style */}
+							<Route path = "outline-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "outline-style" pageTitle = "CSS Propriedade outline-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* outline-width */}
+							<Route path = "outline-width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "outline-width" pageTitle = "CSS Propriedade outline-width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overflow */}
+							<Route path = "overflow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow" pageTitle = "CSS Propriedade overflow"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overflow-anchor */}
+							<Route path = "overflow-anchor" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow-anchor" pageTitle = "CSS Propriedade overflow-anchor"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overflow-wrap */}
+							<Route path = "overflow-wrap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow-wrap" pageTitle = "CSS Propriedade overflow-wrap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overflow-x */}
+							<Route path = "overflow-x" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow-x" pageTitle = "CSS Propriedade overflow-x"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overflow-y */}
+							<Route path = "overflow-y" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow-y" pageTitle = "CSS Propriedade overflow-y"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
