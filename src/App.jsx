@@ -5275,6 +5275,34 @@ function App() {
 							<Route path = "overflow-y" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overflow-y" pageTitle = "CSS Propriedade overflow-y"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* overscroll-behavior */}
+							<Route path = "overscroll-behavior" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overscroll-behavior" pageTitle = "CSS Propriedade overscroll-behavior"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overscroll-behavior-block */}
+							<Route path = "overscroll-behavior-block" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overscroll-behavior-block" pageTitle = "CSS Propriedade overscroll-behavior-block"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overscroll-behavior-inline */}
+							<Route path = "overscroll-behavior-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overscroll-behavior-inline" pageTitle = "CSS Propriedade overscroll-behavior-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overscroll-behavior-x */}
+							<Route path = "overscroll-behavior-x" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overscroll-behavior-x" pageTitle = "CSS Propriedade overscroll-behavior-x"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* overscroll-behavior-y */}
+							<Route path = "overscroll-behavior-y" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "overscroll-behavior-y" pageTitle = "CSS Propriedade overscroll-behavior-y"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding */}
+							<Route path = "padding" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding" pageTitle = "CSS Propriedade padding"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-block */}
+							<Route path = "padding-block" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-block" pageTitle = "CSS Propriedade padding-block"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
