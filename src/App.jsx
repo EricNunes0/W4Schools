@@ -5303,6 +5303,30 @@ function App() {
 							<Route path = "padding-block" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-block" pageTitle = "CSS Propriedade padding-block"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* padding-block-end */}
+							<Route path = "padding-block-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-block-end" pageTitle = "CSS Propriedade padding-block-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-block-start */}
+							<Route path = "padding-block-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-block-start" pageTitle = "CSS Propriedade padding-block-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-bottom */}
+							<Route path = "padding-bottom" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-bottom" pageTitle = "CSS Propriedade padding-bottom"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-inline */}
+							<Route path = "padding-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-inline" pageTitle = "CSS Propriedade padding-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-inline-end */}
+							<Route path = "padding-inline-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-inline-end" pageTitle = "CSS Propriedade padding-inline-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-inline-start */}
+							<Route path = "padding-inline-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-inline-start" pageTitle = "CSS Propriedade padding-inline-start"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
