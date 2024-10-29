@@ -5327,6 +5327,22 @@ function App() {
 							<Route path = "padding-inline-start" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-inline-start" pageTitle = "CSS Propriedade padding-inline-start"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* padding-left */}
+							<Route path = "padding-left" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-left" pageTitle = "CSS Propriedade padding-left"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-right */}
+							<Route path = "padding-right" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-right" pageTitle = "CSS Propriedade padding-right"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* padding-top */}
+							<Route path = "padding-top" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "padding-top" pageTitle = "CSS Propriedade padding-top"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* page-break-after */}
+							<Route path = "page-break-after" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "page-break-after" pageTitle = "CSS Propriedade page-break-after"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
