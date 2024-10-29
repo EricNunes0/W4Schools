@@ -5343,6 +5343,18 @@ function App() {
 							<Route path = "page-break-after" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "page-break-after" pageTitle = "CSS Propriedade page-break-after"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* page-break-before */}
+							<Route path = "page-break-before" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "page-break-before" pageTitle = "CSS Propriedade page-break-before"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* page-break-inside */}
+							<Route path = "page-break-inside" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "page-break-inside" pageTitle = "CSS Propriedade page-break-inside"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* paint-order */}
+							<Route path = "paint-order" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "paint-order" pageTitle = "CSS Propriedade paint-order"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
