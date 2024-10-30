@@ -5355,6 +5355,26 @@ function App() {
 							<Route path = "paint-order" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "paint-order" pageTitle = "CSS Propriedade paint-order"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* perspective */}
+							<Route path = "perspective" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "perspective" pageTitle = "CSS Propriedade perspective"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* perspective-origin */}
+							<Route path = "perspective-origin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "perspective-origin" pageTitle = "CSS Propriedade perspective-origin"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* place-content */}
+							<Route path = "place-content" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "place-content" pageTitle = "CSS Propriedade place-content"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* place-items */}
+							<Route path = "place-items" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "place-items" pageTitle = "CSS Propriedade place-items"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* place-self */}
+							<Route path = "place-self" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "place-self" pageTitle = "CSS Propriedade place-self"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
