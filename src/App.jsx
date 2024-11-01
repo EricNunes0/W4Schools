@@ -5375,6 +5375,18 @@ function App() {
 							<Route path = "place-self" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "place-self" pageTitle = "CSS Propriedade place-self"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* pointer-events */}
+							<Route path = "pointer-events" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "pointer-events" pageTitle = "CSS Propriedade pointer-events"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* position */}
+							<Route path = "position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "position" pageTitle = "CSS Propriedade position"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* @property */}
+							<Route path = "property_rule" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@property" pageTitle = "CSS Regra @property"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
