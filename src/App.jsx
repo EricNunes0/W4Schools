@@ -5391,6 +5391,34 @@ function App() {
 							<Route path = "quotes" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "quotes" pageTitle = "CSS Propriedade quotes"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* resize */}
+							<Route path = "resize" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "resize" pageTitle = "CSS Propriedade resize"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* right */}
+							<Route path = "right" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "right" pageTitle = "CSS Propriedade right"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotate */}
+							<Route path = "rotate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "rotate" pageTitle = "CSS Propriedade rotate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* row-gap */}
+							<Route path = "row-gap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "row-gap" pageTitle = "CSS Propriedade row-gap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scale */}
+							<Route path = "scale" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scale" pageTitle = "CSS Propriedade scale"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-behavior */}
+							<Route path = "scroll-behavior" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-behavior" pageTitle = "CSS Propriedade scroll-behavior"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin */}
+							<Route path = "scroll-margin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin" pageTitle = "CSS Propriedade scroll-margin"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
