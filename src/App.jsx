@@ -5419,6 +5419,34 @@ function App() {
 							<Route path = "scroll-margin" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin" pageTitle = "CSS Propriedade scroll-margin"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* scroll-margin-block */}
+							<Route path = "scroll-margin-block" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-block" pageTitle = "CSS Propriedade scroll-margin-block"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-block-end */}
+							<Route path = "scroll-margin-block-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-block-end" pageTitle = "CSS Propriedade scroll-margin-block-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-block-start */}
+							<Route path = "scroll-margin-block-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-block-start" pageTitle = "CSS Propriedade scroll-margin-block-start"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-bottom */}
+							<Route path = "scroll-margin-bottom" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-bottom" pageTitle = "CSS Propriedade scroll-margin-bottom"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-inline */}
+							<Route path = "scroll-margin-inline" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-inline" pageTitle = "CSS Propriedade scroll-margin-inline"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-inline-end */}
+							<Route path = "scroll-margin-inline-end" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-inline-end" pageTitle = "CSS Propriedade scroll-margin-inline-end"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-margin-inline-start */}
+							<Route path = "scroll-margin-inline-start" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-margin-inline-start" pageTitle = "CSS Propriedade scroll-margin-inline-start"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
