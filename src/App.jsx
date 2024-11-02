@@ -5387,6 +5387,10 @@ function App() {
 							<Route path = "property_rule" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@property" pageTitle = "CSS Regra @property"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* quotes */}
+							<Route path = "quotes" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "quotes" pageTitle = "CSS Propriedade quotes"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
