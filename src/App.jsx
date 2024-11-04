@@ -5507,6 +5507,14 @@ function App() {
 							<Route path = "scroll-snap-align" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-snap-align" pageTitle = "CSS Propriedade scroll-snap-align"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* scroll-snap-stop */}
+							<Route path = "scroll-snap-stop" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-snap-stop" pageTitle = "CSS Propriedade scroll-snap-stop"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scroll-snap-type */}
+							<Route path = "scroll-snap-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-snap-type" pageTitle = "CSS Propriedade scroll-snap-type"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
