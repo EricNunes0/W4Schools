@@ -5503,6 +5503,10 @@ function App() {
 							<Route path = "scroll-padding-top" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-padding-top" pageTitle = "CSS Propriedade scroll-padding-top"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* scroll-snap-align */}
+							<Route path = "scroll-snap-align" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-snap-align" pageTitle = "CSS Propriedade scroll-snap-align"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
