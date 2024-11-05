@@ -5515,6 +5515,18 @@ function App() {
 							<Route path = "scroll-snap-type" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scroll-snap-type" pageTitle = "CSS Propriedade scroll-snap-type"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* scrollbar-color */}
+							<Route path = "scrollbar-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scrollbar-color" pageTitle = "CSS Propriedade scrollbar-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* tab-size */}
+							<Route path = "tab-size" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "tab-size" pageTitle = "CSS Propriedade tab-size"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* table-layout */}
+							<Route path = "table-layout" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "table-layout" pageTitle = "CSS Propriedade table-layout"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
