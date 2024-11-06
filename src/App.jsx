@@ -5527,6 +5527,14 @@ function App() {
 							<Route path = "table-layout" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "table-layout" pageTitle = "CSS Propriedade table-layout"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* text-align */}
+							<Route path = "text-align" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-align" pageTitle = "CSS Propriedade text-align"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-align-last */}
+							<Route path = "text-align-last" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-align-last" pageTitle = "CSS Propriedade text-align-last"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
