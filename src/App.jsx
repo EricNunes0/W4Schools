@@ -5555,6 +5555,38 @@ function App() {
 							<Route path = "text-decoration-thickness" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration-thickness" pageTitle = "CSS Propriedade text-decoration-thickness"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* text-emphasis */}
+							<Route path = "text-emphasis" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-emphasis" pageTitle = "CSS Propriedade text-emphasis"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-emphasis-color */}
+							<Route path = "text-emphasis-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-emphasis-color" pageTitle = "CSS Propriedade text-emphasis-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-emphasis-position */}
+							<Route path = "text-emphasis-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-emphasis-position" pageTitle = "CSS Propriedade text-emphasis-position"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-emphasis-style */}
+							<Route path = "text-emphasis-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-emphasis-style" pageTitle = "CSS Propriedade text-emphasis-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-indent */}
+							<Route path = "text-indent" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-indent" pageTitle = "CSS Propriedade text-indent"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-justify */}
+							<Route path = "text-justify" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-justify" pageTitle = "CSS Propriedade text-justify"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-orientation */}
+							<Route path = "text-orientation" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-orientation" pageTitle = "CSS Propriedade text-orientation"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-overflow */}
+							<Route path = "text-overflow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-overflow" pageTitle = "CSS Propriedade text-overflow"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
