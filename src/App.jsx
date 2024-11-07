@@ -5535,6 +5535,26 @@ function App() {
 							<Route path = "text-align-last" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-align-last" pageTitle = "CSS Propriedade text-align-last"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* text-decoration */}
+							<Route path = "text-decoration" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration" pageTitle = "CSS Propriedade text-decoration"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-decoration-color */}
+							<Route path = "text-decoration-color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration-color" pageTitle = "CSS Propriedade text-decoration-color"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-decoration-line */}
+							<Route path = "text-decoration-line" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration-line" pageTitle = "CSS Propriedade text-decoration-line"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-decoration-style */}
+							<Route path = "text-decoration-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration-style" pageTitle = "CSS Propriedade text-decoration-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-decoration-thickness */}
+							<Route path = "text-decoration-thickness" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-decoration-thickness" pageTitle = "CSS Propriedade text-decoration-thickness"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
