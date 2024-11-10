@@ -5595,6 +5595,14 @@ function App() {
 							<Route path = "text-transform" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-transform" pageTitle = "CSS Propriedade text-transform"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* text-underline-offset */}
+							<Route path = "text-underline-offset" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-underline-offset" pageTitle = "CSS Propriedade text-underline-offset"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* text-underline-position */}
+							<Route path = "text-underline-position" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-underline-position" pageTitle = "CSS Propriedade text-underline-position"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
