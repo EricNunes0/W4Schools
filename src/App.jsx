@@ -5591,6 +5591,10 @@ function App() {
 							<Route path = "text-shadow" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-shadow" pageTitle = "CSS Propriedade text-shadow"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* text-transform */}
+							<Route path = "text-transform" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-transform" pageTitle = "CSS Propriedade text-transform"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
