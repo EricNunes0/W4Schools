@@ -5603,6 +5603,14 @@ function App() {
 							<Route path = "text-underline-position" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "text-underline-position" pageTitle = "CSS Propriedade text-underline-position"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* top */}
+							<Route path = "top" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "top" pageTitle = "CSS Propriedade top"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* transform */}
+							<Route path = "transform" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transform" pageTitle = "CSS Propriedade transform"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
