@@ -5615,6 +5615,10 @@ function App() {
 							<Route path = "transform-origin" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transform-origin" pageTitle = "CSS Propriedade transform-origin"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* transform-style */}
+							<Route path = "transform-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transform-style" pageTitle = "CSS Propriedade transform-style"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
