@@ -5619,6 +5619,22 @@ function App() {
 							<Route path = "transform-style" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transform-style" pageTitle = "CSS Propriedade transform-style"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* transition */}
+							<Route path = "transition" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition" pageTitle = "CSS Propriedade transition"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* transition-delay */}
+							<Route path = "transition-delay" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition-delay" pageTitle = "CSS Propriedade transition-delay"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* transition-duration */}
+							<Route path = "transition-duration" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition-duration" pageTitle = "CSS Propriedade transition-duration"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* transition-property */}
+							<Route path = "transition-property" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition-property" pageTitle = "CSS Propriedade transition-property"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
