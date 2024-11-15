@@ -350,6 +350,8 @@ export default class TutorialManagePages {
                     }
                 } else if(value.type === "content") {
                     result = [[value.content, "#f5f565", 1]];
+                } else if(value.type === "cubic-bezier") {
+                    result = [["cubic-bezier", "#90eaff", 1], ["(", "#f0f0f0"], [value.x1, "#c090fa"], [",", "#f0f0f0"], [value.y1, "#c090fa", 1], [",", "#f0f0f0"], [value.x2, "#c090fa", 1], [",", "#f0f0f0"], [value.y2, "#c090fa", 1], [")", "#f0f0f0"]];
                 } else if(value.type === "multiple") {
                     if(value.values) {
                         let vals = [];

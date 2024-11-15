@@ -5635,6 +5635,26 @@ function App() {
 							<Route path = "transition-property" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition-property" pageTitle = "CSS Propriedade transition-property"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* transition-timing-function */}
+							<Route path = "transition-timing-function" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "transition-timing-function" pageTitle = "CSS Propriedade transition-timing-function"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* translate */}
+							<Route path = "translate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "translate" pageTitle = "CSS Propriedade translate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* unicode-bidi */}
+							<Route path = "unicode-bidi" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "unicode-bidi" pageTitle = "CSS Propriedade unicode-bidi"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* user-select */}
+							<Route path = "user-select" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "user-select" pageTitle = "CSS Propriedade user-select"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* vertical-align */}
+							<Route path = "vertical-align" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "vertical-align" pageTitle = "CSS Propriedade vertical-align"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
