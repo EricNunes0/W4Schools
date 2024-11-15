@@ -5655,6 +5655,26 @@ function App() {
 							<Route path = "vertical-align" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "vertical-align" pageTitle = "CSS Propriedade vertical-align"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* visibility */}
+							<Route path = "visibility" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "visibility" pageTitle = "CSS Propriedade visibility"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* white-space */}
+							<Route path = "white-space" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "white-space" pageTitle = "CSS Propriedade white-space"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* widows */}
+							<Route path = "widows" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "widows" pageTitle = "CSS Propriedade widows"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* width */}
+							<Route path = "width" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "width" pageTitle = "CSS Propriedade width"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* word-break */}
+							<Route path = "word-break" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "word-break" pageTitle = "CSS Propriedade word-break"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
