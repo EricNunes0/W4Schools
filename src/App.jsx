@@ -5675,6 +5675,26 @@ function App() {
 							<Route path = "word-break" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "word-break" pageTitle = "CSS Propriedade word-break"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* word-spacing */}
+							<Route path = "word-spacing" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "word-spacing" pageTitle = "CSS Propriedade word-spacing"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* word-wrap */}
+							<Route path = "word-wrap" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "word-wrap" pageTitle = "CSS Propriedade word-wrap"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* writing-mode */}
+							<Route path = "writing-mode" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "writing-mode" pageTitle = "CSS Propriedade writing-mode"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* z-index */}
+							<Route path = "z-index" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "z-index" pageTitle = "CSS Propriedade z-index"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* zoom */}
+							<Route path = "zoom" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "zoom" pageTitle = "CSS Propriedade zoom"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
