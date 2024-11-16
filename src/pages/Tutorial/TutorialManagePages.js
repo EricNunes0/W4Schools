@@ -338,7 +338,9 @@ export default class TutorialManagePages {
         function declarationValueConvert(value) {
             let result = [[value, "#c090fa", 1]];
             if(value.type) {
-                if(value.type === "color") {
+                if(value.type === "circle") {
+                    result = [["circle", "#90eaff", 1], ["(", "#f0f0f0"], [value.number, "#c090fa"], [value.unit, "#f565c5"], [")", "#f0f0f0"]];
+                } else if(value.type === "color") {
                     if(value.method === "rgb") {
                         result = [["rgb", "#90eaff", 1], ["(", "#f0f0f0"], [value.r, "#c090fa"], [",", "#f0f0f0"], [value.g, "#c090fa", 1], [",", "#f0f0f0"], [value.b, "#c090fa", 1], [")", "#f0f0f0"]];
                     } else if(value.method === "rgba") {

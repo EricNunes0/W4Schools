@@ -5519,6 +5519,10 @@ function App() {
 							<Route path = "scrollbar-color" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "scrollbar-color" pageTitle = "CSS Propriedade scrollbar-color"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* shape-outside */}
+							<Route path = "shape-outside" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "shape-outside" pageTitle = "CSS Propriedade shape-outside"></TutorialMain>)}></Page>
+							)}></Route>
 							{/* tab-size */}
 							<Route path = "tab-size" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "tab-size" pageTitle = "CSS Propriedade tab-size"></TutorialMain>)}></Page>
@@ -5694,6 +5698,45 @@ function App() {
 							{/* zoom */}
 							<Route path = "zoom" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "zoom" pageTitle = "CSS Propriedade zoom"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
+						{/* At-Rules */}
+						<Route path = "atrule">
+							{/* container */}
+							<Route path = "container" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@container" pageTitle = "CSS Regra @container"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counter-style */}
+							<Route path = "counter-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@counter-style" pageTitle = "CSS Regra @counter-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* font-palette-values */}
+							<Route path = "font-palette-values" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@font-palette-values" pageTitle = "CSS Regra @font-palette-values"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* layer */}
+							<Route path = "layer" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@layer" pageTitle = "CSS Regra @layer"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* namespace */}
+							<Route path = "namespace" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@namespace" pageTitle = "CSS Regra @namespace"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* page */}
+							<Route path = "page" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@page" pageTitle = "CSS Regra @page"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scope */}
+							<Route path = "scope" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@scope" pageTitle = "CSS Regra @scope"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* starting-style */}
+							<Route path = "starting-style" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@starting-style" pageTitle = "CSS Regra @starting-style"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* supports */}
+							<Route path = "supports" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@supports" pageTitle = "CSS Regra @supports"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 					</Route>
