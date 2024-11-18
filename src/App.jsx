@@ -4248,6 +4248,22 @@ function App() {
 						<Route path = "selectors" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Seletores"></TutorialMain>)}></Page>
 						)}></Route>
+						{/* Combinadores */}
+						<Route path = "combinators" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Combinadores"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Pseudo-classes */}
+						<Route path = "pseudo-classes" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Pseudo-classes"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* Pseudo-elementos */}
+						<Route path = "pseudo-elements" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Pseudo-elementos"></TutorialMain>)}></Page>
+						)}></Route>
+						{/* At-rules */}
+						<Route path = "atrules" element = {(
+							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS At-rules"></TutorialMain>)}></Page>
+						)}></Route>
 						{/* Funções */}
 						<Route path = "functions" element = {(
 							<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Referências" title = "CSS Funções"></TutorialMain>)}></Page>
@@ -5737,6 +5753,29 @@ function App() {
 							{/* supports */}
 							<Route path = "supports" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref" topic = "CSS Propriedades" title = "@supports" pageTitle = "CSS Regra @supports"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
+						{/* Seletores */ }
+						<Route path = "sel">
+							{/* elemento */}
+							<Route path = "element" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores simples" title = "elemento" pageTitle = "CSS Seletor elemento"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* #id */}
+							<Route path = "id" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores simples" title = "#id" pageTitle = "CSS Seletor #id"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* * */}
+							<Route path = "all" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores simples" title = "*" pageTitle = "CSS Seletor *"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* .class */}
+							<Route path = "class" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores simples" title = ".class" pageTitle = "CSS Seletor .class"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* [atributo] */}
+							<Route path = "attribute" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo]" pageTitle = "CSS Seletor [atributo]"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 					</Route>
