@@ -5773,9 +5773,43 @@ function App() {
 							<Route path = "class" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores simples" title = ".class" pageTitle = "CSS Seletor .class"></TutorialMain>)}></Page>
 							)}></Route>
-							{/* [atributo] */}
-							<Route path = "attribute" element = {(
-								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo]" pageTitle = "CSS Seletor [atributo]"></TutorialMain>)}></Page>
+							{/* Seletor de atributos */}
+							<Route path = "attribute">
+								{/* [atributo] */}
+								<Route path = "" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo]" pageTitle = "CSS Seletor [atributo]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo=valor] */}
+								<Route path = "value" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo=valor]" pageTitle = "CSS Seletor [atributo=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo~=valor] */}
+								<Route path = "value_contains" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo~=valor]" pageTitle = "CSS Seletor [atributo~=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo|=valor] */}
+								<Route path = "value_lang" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo|=valor]" pageTitle = "CSS Seletor [atributo|=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo^=valor] */}
+								<Route path = "begin" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo^=valor]" pageTitle = "CSS Seletor [atributo^=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo$=valor] */}
+								<Route path = "end" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo$=valor]" pageTitle = "CSS Seletor [atributo$=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								{/* [atributo*=valor] */}
+								<Route path = "contain" element = {(
+									<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletores de atributos" title = "[atributo*=valor]" pageTitle = "CSS Seletor [atributo*=valor]"></TutorialMain>)}></Page>
+								)}></Route>
+								<Route path = "*" element = {(
+									<Navigate to = ""></Navigate>
+								)}></Route>
+							</Route>
+							{/* Seletor de aninhamento (&) */}
+							<Route path = "nesting" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletor de aninhamento" title = "&" pageTitle = "CSS Seletor &"></TutorialMain>)}></Page>
 							)}></Route>
 						</Route>
 					</Route>
