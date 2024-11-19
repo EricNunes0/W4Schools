@@ -5811,6 +5811,26 @@ function App() {
 							<Route path = "nesting" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Seletor de aninhamento" title = "&" pageTitle = "CSS Seletor &"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Combinador filho (>) */}
+							<Route path = "element_gt" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Combinador filho (>)" pageTitle = "CSS Combinador filho (>)"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Combinador descendente ( ) */}
+							<Route path = "element_element" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Combinador descendente ( )" pageTitle = "CSS Combinador descendente ( )"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Combinador de próximo irmão (+) */}
+							<Route path = "element_plus" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Combinador de próximo irmão (+)" pageTitle = "CSS Combinador de próximo irmão (+)"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Lista de seletores (,) */}
+							<Route path = "element_comma" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Lista de seletores (,)" pageTitle = "CSS Lista de seletores (,)"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* Combinador de irmãos subsequentes (~) */}
+							<Route path = "gen_sibling" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Combinador de irmãos subsequentes (~)" pageTitle = "CSS Combinador de irmãos subsequentes (~)"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
