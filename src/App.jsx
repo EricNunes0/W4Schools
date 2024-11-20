@@ -5831,6 +5831,38 @@ function App() {
 							<Route path = "gen_sibling" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Combinadores" title = "Combinador de irmãos subsequentes (~)" pageTitle = "CSS Combinador de irmãos subsequentes (~)"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :active */}
+							<Route path = "active" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":active" pageTitle = "CSS Pseudo-classe :active"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :any-link */}
+							<Route path = "any-link" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":any-link" pageTitle = "CSS Pseudo-classe :any-link"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :autofill */}
+							<Route path = "autofill" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":autofill" pageTitle = "CSS Pseudo-classe :autofill"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :checked */}
+							<Route path = "checked" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":checked" pageTitle = "CSS Pseudo-classe :checked"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :default */}
+							<Route path = "default" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":default" pageTitle = "CSS Pseudo-classe :default"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :defined */}
+							<Route path = "defined" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":defined" pageTitle = "CSS Pseudo-classe :defined"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :dir() */}
+							<Route path = "dir" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":dir()" pageTitle = "CSS Pseudo-classe :dir()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :disabled */}
+							<Route path = "disabled" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":disabled" pageTitle = "CSS Pseudo-classe :disabled"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
