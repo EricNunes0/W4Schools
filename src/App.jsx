@@ -5863,6 +5863,46 @@ function App() {
 							<Route path = "disabled" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":disabled" pageTitle = "CSS Pseudo-classe :disabled"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :empty */}
+							<Route path = "empty" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":empty" pageTitle = "CSS Pseudo-classe :empty"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :enabled */}
+							<Route path = "enabled" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":enabled" pageTitle = "CSS Pseudo-classe :enabled"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :first */}
+							<Route path = "first" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":first" pageTitle = "CSS Pseudo-classe :first"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :first-child */}
+							<Route path = "first-child" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":first-child" pageTitle = "CSS Pseudo-classe :first-child"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :first-of-type */}
+							<Route path = "first-of-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":first-of-type" pageTitle = "CSS Pseudo-classe :first-of-type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :focus */}
+							<Route path = "focus" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":focus" pageTitle = "CSS Pseudo-classe :focus"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :focus-visible */}
+							<Route path = "focus-visible" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":focus-visible" pageTitle = "CSS Pseudo-classe :focus-visible"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :focus-within */}
+							<Route path = "focus-within" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":focus-within" pageTitle = "CSS Pseudo-classe :focus-within"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :fullscreen */}
+							<Route path = "fullscreen" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":fullscreen" pageTitle = "CSS Pseudo-classe :fullscreen"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :has() */}
+							<Route path = "has" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":has()" pageTitle = "CSS Pseudo-classe :has()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
