@@ -5903,6 +5903,10 @@ function App() {
 							<Route path = "has" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":has()" pageTitle = "CSS Pseudo-classe :has()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :hover */}
+							<Route path = "hover" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":hover" pageTitle = "CSS Pseudo-classe :hover"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
