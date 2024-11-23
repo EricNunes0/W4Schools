@@ -5907,6 +5907,54 @@ function App() {
 							<Route path = "hover" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":hover" pageTitle = "CSS Pseudo-classe :hover"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :in-range */}
+							<Route path = "in-range" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":in-range" pageTitle = "CSS Pseudo-classe :in-range"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :indeterminate */}
+							<Route path = "indeterminate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":indeterminate" pageTitle = "CSS Pseudo-classe :indeterminate"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :invalid */}
+							<Route path = "invalid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":invalid" pageTitle = "CSS Pseudo-classe :invalid"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :is() */}
+							<Route path = "is" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":is()" pageTitle = "CSS Pseudo-classe :is()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :lang() */}
+							<Route path = "lang" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":lang()" pageTitle = "CSS Pseudo-classe :lang()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :last-child */}
+							<Route path = "last-child" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":last-child" pageTitle = "CSS Pseudo-classe :last-child"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :last-of-type */}
+							<Route path = "last-of-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":last-of-type" pageTitle = "CSS Pseudo-classe :last-of-type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :left */}
+							<Route path = "left" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":left" pageTitle = "CSS Pseudo-classe :left"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :link */}
+							<Route path = "link" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":link" pageTitle = "CSS Pseudo-classe :link"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :modal */}
+							<Route path = "modal" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":modal" pageTitle = "CSS Pseudo-classe :modal"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :not() */}
+							<Route path = "not" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":not()" pageTitle = "CSS Pseudo-classe :not()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :nth-child() */}
+							<Route path = "nth-child" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-child()" pageTitle = "CSS Pseudo-classe :nth-child()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
