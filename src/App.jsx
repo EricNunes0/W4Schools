@@ -5967,6 +5967,34 @@ function App() {
 							<Route path = "nth-of-type" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-of-type()" pageTitle = "CSS Pseudo-classe :nth-of-type()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :only-child */}
+							<Route path = "only-child" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":only-child" pageTitle = "CSS Pseudo-classe :only-child"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :only-of-type */}
+							<Route path = "only-of-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":only-of-type" pageTitle = "CSS Pseudo-classe :only-of-type"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :optional */}
+							<Route path = "optional" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":optional" pageTitle = "CSS Pseudo-classe :optional"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :out-of-range */}
+							<Route path = "out-of-range" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":out-of-range" pageTitle = "CSS Pseudo-classe :out-of-range"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :placeholder-shown */}
+							<Route path = "placeholder-shown" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":placeholder-shown" pageTitle = "CSS Pseudo-classe :placeholder-shown"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :popover-open */}
+							<Route path = "popover-open" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":popover-open" pageTitle = "CSS Pseudo-classe :popover-open"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :read-only */}
+							<Route path = "read-only" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":read-only" pageTitle = "CSS Pseudo-classe :read-only"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
