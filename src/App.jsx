@@ -5955,6 +5955,18 @@ function App() {
 							<Route path = "nth-child" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-child()" pageTitle = "CSS Pseudo-classe :nth-child()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :nth-last-child() */}
+							<Route path = "nth-last-child" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-last-child()" pageTitle = "CSS Pseudo-classe :nth-last-child()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :nth-last-of-type() */}
+							<Route path = "nth-last-of-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-last-of-type()" pageTitle = "CSS Pseudo-classe :nth-last-of-type()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :nth-of-type() */}
+							<Route path = "nth-of-type" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":nth-of-type()" pageTitle = "CSS Pseudo-classe :nth-of-type()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
