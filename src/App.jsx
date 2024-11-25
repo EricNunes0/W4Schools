@@ -5995,6 +5995,22 @@ function App() {
 							<Route path = "read-only" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":read-only" pageTitle = "CSS Pseudo-classe :read-only"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :read-write */}
+							<Route path = "read-write" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":read-write" pageTitle = "CSS Pseudo-classe :read-write"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :required */}
+							<Route path = "required" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":required" pageTitle = "CSS Pseudo-classe :required"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :right */}
+							<Route path = "right" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":right" pageTitle = "CSS Pseudo-classe :right"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :root */}
+							<Route path = "root" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":root" pageTitle = "CSS Pseudo-classe :root"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
