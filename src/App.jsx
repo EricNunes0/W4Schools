@@ -6011,6 +6011,10 @@ function App() {
 							<Route path = "root" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":root" pageTitle = "CSS Pseudo-classe :root"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :target */}
+							<Route path = "target" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":target" pageTitle = "CSS Pseudo-classe :target"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
