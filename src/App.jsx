@@ -6015,6 +6015,26 @@ function App() {
 							<Route path = "target" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":target" pageTitle = "CSS Pseudo-classe :target"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* :user-invalid */}
+							<Route path = "user-invalid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":user-invalid" pageTitle = "CSS Pseudo-classe :user-invalid"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :user-valid */}
+							<Route path = "user-valid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":user-valid" pageTitle = "CSS Pseudo-classe :user-valid"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :valid */}
+							<Route path = "valid" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":valid" pageTitle = "CSS Pseudo-classe :valid"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :visited */}
+							<Route path = "visited" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":visited" pageTitle = "CSS Pseudo-classe :visited"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* :where() */}
+							<Route path = "where" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":where()" pageTitle = "CSS Pseudo-classe :where()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
