@@ -6035,6 +6035,10 @@ function App() {
 							<Route path = "where" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-classes" title = ":where()" pageTitle = "CSS Pseudo-classe :where()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* Pseudo-elementos ::after */}
+							<Route path = "after" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::after" pageTitle = "CSS Pseudo-elemento ::after"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
