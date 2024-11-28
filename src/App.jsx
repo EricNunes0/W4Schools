@@ -6063,6 +6063,33 @@ function App() {
 							<Route path = "grammar-error" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::grammar-error" pageTitle = "CSS Pseudo-elemento ::grammar-error"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* ::highlight() */}
+							<Route path = "highlight" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::highlight()" pageTitle = "CSS Pseudo-elemento ::highlight()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::marker */}
+							<Route path = "marker" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::marker" pageTitle = "CSS Pseudo-elemento ::marker"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::placeholder */}
+							<Route path = "placeholder" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::placeholder" pageTitle = "CSS Pseudo-elemento ::placeholder"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::selection */}
+							<Route path = "selection" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::selection" pageTitle = "CSS Pseudo-elemento ::selection"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::spelling-error */}
+							<Route path = "spelling-error" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::spelling-error" pageTitle = "CSS Pseudo-elemento ::spelling-error"></TutorialMain>)}></Page>
+							)}></Route>
+						</Route>
+						{/* Funções */ }
+						<Route path = "func">
+							{/* acos() */}
+							<Route path = "acos" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "acos()" pageTitle = "CSS Função acos()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
