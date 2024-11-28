@@ -6039,6 +6039,30 @@ function App() {
 							<Route path = "after" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::after" pageTitle = "CSS Pseudo-elemento ::after"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* ::backdrop */}
+							<Route path = "backdrop" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::backdrop" pageTitle = "CSS Pseudo-elemento ::backdrop"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::before */}
+							<Route path = "before" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::before" pageTitle = "CSS Pseudo-elemento ::before"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::file-selector-button */}
+							<Route path = "file-selector-button" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::file-selector-button" pageTitle = "CSS Pseudo-elemento ::file-selector-button"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::first-letter */}
+							<Route path = "first-letter" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::first-letter" pageTitle = "CSS Pseudo-elemento ::first-letter"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::first-line */}
+							<Route path = "first-line" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::first-line" pageTitle = "CSS Pseudo-elemento ::first-line"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ::grammar-error */}
+							<Route path = "grammar-error" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Pseudo-elementos" title = "::grammar-error" pageTitle = "CSS Pseudo-elemento ::grammar-error"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
