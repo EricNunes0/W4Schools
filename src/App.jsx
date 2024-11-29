@@ -6090,6 +6090,26 @@ function App() {
 							<Route path = "acos" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "acos()" pageTitle = "CSS Função acos()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* asin() */}
+							<Route path = "asin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "asin()" pageTitle = "CSS Função asin()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* atan() */}
+							<Route path = "atan" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "atan()" pageTitle = "CSS Função atan()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* atan2() */}
+							<Route path = "atan2" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "atan2()" pageTitle = "CSS Função atan2()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* attr() */}
+							<Route path = "attr" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "attr()" pageTitle = "CSS Função attr()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* blur() */}
+							<Route path = "blur" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "blur()" pageTitle = "CSS Função blur()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
