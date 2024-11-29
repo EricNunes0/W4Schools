@@ -6110,6 +6110,18 @@ function App() {
 							<Route path = "blur" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "blur()" pageTitle = "CSS Função blur()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* brightness() */}
+							<Route path = "brightness" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "brightness()" pageTitle = "CSS Função brightness()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* calc() */}
+							<Route path = "calc" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "calc()" pageTitle = "CSS Função calc()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* circle() */}
+							<Route path = "circle" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "circle()" pageTitle = "CSS Função circle()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
