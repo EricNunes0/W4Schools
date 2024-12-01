@@ -6134,6 +6134,26 @@ function App() {
 							<Route path = "conic-gradient" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "conic-gradient()" pageTitle = "CSS Função conic-gradient()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* contrast() */}
+							<Route path = "contrast" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "contrast()" pageTitle = "CSS Função contrast()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* cos() */}
+							<Route path = "cos" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "cos()" pageTitle = "CSS Função cos()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counter() */}
+							<Route path = "counter" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "counter()" pageTitle = "CSS Função counter()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* counters() */}
+							<Route path = "counters" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "counters()" pageTitle = "CSS Função counters()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* cubic-bezier() */}
+							<Route path = "cubic-bezier" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "cubic-bezier()" pageTitle = "CSS Função cubic-bezier()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
