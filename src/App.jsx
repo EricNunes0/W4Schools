@@ -6122,6 +6122,18 @@ function App() {
 							<Route path = "circle" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "circle()" pageTitle = "CSS Função circle()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* color() */}
+							<Route path = "color" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "color()" pageTitle = "CSS Função color()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* color-mix() */}
+							<Route path = "color-mix" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "color-mix()" pageTitle = "CSS Função color-mix()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* conic-gradient() */}
+							<Route path = "conic-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "conic-gradient()" pageTitle = "CSS Função conic-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
