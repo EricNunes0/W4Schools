@@ -6154,6 +6154,22 @@ function App() {
 							<Route path = "cubic-bezier" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "cubic-bezier()" pageTitle = "CSS Função cubic-bezier()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* drop-shadow() */}
+							<Route path = "drop-shadow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "drop-shadow()" pageTitle = "CSS Função drop-shadow()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* ellipse() */}
+							<Route path = "ellipse" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "ellipse()" pageTitle = "CSS Função ellipse()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* exp() */}
+							<Route path = "exp" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "exp()" pageTitle = "CSS Função exp()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* fit-content() */}
+							<Route path = "fit-content" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "fit-content()" pageTitle = "CSS Função fit-content()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
