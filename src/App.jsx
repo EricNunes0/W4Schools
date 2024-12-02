@@ -6170,6 +6170,14 @@ function App() {
 							<Route path = "fit-content" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "fit-content()" pageTitle = "CSS Função fit-content()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* grayscale() */}
+							<Route path = "grayscale" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "grayscale()" pageTitle = "CSS Função grayscale()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* hsl() */}
+							<Route path = "hsl" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "hsl()" pageTitle = "CSS Função hsl()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
