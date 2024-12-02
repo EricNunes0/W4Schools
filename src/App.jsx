@@ -6178,6 +6178,22 @@ function App() {
 							<Route path = "hsl" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "hsl()" pageTitle = "CSS Função hsl()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* hue-rotate() */}
+							<Route path = "hue-rotate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "hue-rotate()" pageTitle = "CSS Função hue-rotate()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* hwb() */}
+							<Route path = "hwb" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "hwb()" pageTitle = "CSS Função hwb()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* hypot() */}
+							<Route path = "hypot" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "hypot()" pageTitle = "CSS Função hypot()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* inset() */}
+							<Route path = "inset" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "inset()" pageTitle = "CSS Função inset()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
