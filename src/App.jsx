@@ -6194,6 +6194,26 @@ function App() {
 							<Route path = "inset" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "inset()" pageTitle = "CSS Função inset()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* invert() */}
+							<Route path = "invert" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "invert()" pageTitle = "CSS Função invert()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* lab() */}
+							<Route path = "lab" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "lab()" pageTitle = "CSS Função lab()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* lch() */}
+							<Route path = "lch" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "lch()" pageTitle = "CSS Função lch()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* light-dark() */}
+							<Route path = "light-dark" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "light-dark()" pageTitle = "CSS Função light-dark()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* linear-gradient() */}
+							<Route path = "linear-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "linear-gradient()" pageTitle = "CSS Função linear-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
