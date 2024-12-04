@@ -6214,6 +6214,30 @@ function App() {
 							<Route path = "linear-gradient" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "linear-gradient()" pageTitle = "CSS Função linear-gradient()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* log() */}
+							<Route path = "log" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "log()" pageTitle = "CSS Função log()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* matrix() */}
+							<Route path = "matrix" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "matrix()" pageTitle = "CSS Função matrix()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* matrix3d() */}
+							<Route path = "matrix3d" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "matrix3d()" pageTitle = "CSS Função matrix3d()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* max() */}
+							<Route path = "max" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "max()" pageTitle = "CSS Função max()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* min() */}
+							<Route path = "min" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "min()" pageTitle = "CSS Função min()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* minmax() */}
+							<Route path = "minmax" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "minmax()" pageTitle = "CSS Função minmax()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>

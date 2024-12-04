@@ -360,6 +360,10 @@ export default class TutorialManagePages {
                     result = [[value.content, "#f5f565", 1]];
                 } else if(value.type === "cubic-bezier") {
                     result = [["cubic-bezier", "#90eaff", 1], ["(", "#f0f0f0"], [value.x1, "#c090fa"], [",", "#f0f0f0"], [value.y1, "#c090fa", 1], [",", "#f0f0f0"], [value.x2, "#c090fa", 1], [",", "#f0f0f0"], [value.y2, "#c090fa", 1], [")", "#f0f0f0"]];
+                } else if(value.type === "matrix") {
+                    result = [["matrix", "#90eaff", 1], ["(", "#f0f0f0"], [value.scaleX, "#c090fa"], [",", "#f0f0f0"], [value.skewY, "#c090fa", 1], [",", "#f0f0f0"], [value.skewX, "#c090fa", 1], [",", "#f0f0f0"], [value.scaleY, "#c090fa", 1], [",", "#f0f0f0"], [value.translateX, "#c090fa", 1], [",", "#f0f0f0"], [value.translateY, "#c090fa", 1], [")", "#f0f0f0"]];
+                } else if(value.type === "matrix3d") {
+                    result = [["matrix3d", "#90eaff", 1], ["(", "#f0f0f0"], [value.a1, "#c090fa"], [",", "#f0f0f0"], [value.b1, "#c090fa", 1], [",", "#f0f0f0"], [value.c1, "#c090fa", 1], [",", "#f0f0f0"], [value.d1, "#c090fa", 1], [",", "#f0f0f0"], [value.a2, "#c090fa", 1], [",", "#f0f0f0"], [value.b2, "#c090fa", 1], [",", "#f0f0f0"], [value.c2, "#c090fa", 1], [",", "#f0f0f0"], [value.d2, "#c090fa", 1], [",", "#f0f0f0"], [value.a3, "#c090fa", 1], [",", "#f0f0f0"], [value.b3, "#c090fa", 1], [",", "#f0f0f0"], [value.c3, "#c090fa", 1], [",", "#f0f0f0"], [value.d3, "#c090fa", 1], [",", "#f0f0f0"], [value.a4, "#c090fa", 1], [",", "#f0f0f0"], [value.b4, "#c090fa", 1], [",", "#f0f0f0"], [value.c4, "#c090fa", 1], [",", "#f0f0f0"], [value.d4, "#c090fa", 1], [")", "#f0f0f0"]];
                 } else if(value.type === "multiple") {
                     if(value.values) {
                         let vals = [];
