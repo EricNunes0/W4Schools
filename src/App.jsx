@@ -6238,6 +6238,34 @@ function App() {
 							<Route path = "minmax" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "minmax()" pageTitle = "CSS Função minmax()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* mod() */}
+							<Route path = "mod" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "mod()" pageTitle = "CSS Função mod()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* oklab() */}
+							<Route path = "oklab" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "oklab()" pageTitle = "CSS Função oklab()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* oklch() */}
+							<Route path = "oklch" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "oklch()" pageTitle = "CSS Função oklch()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* opacity() */}
+							<Route path = "opacity" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "opacity()" pageTitle = "CSS Função opacity()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* polygon() */}
+							<Route path = "polygon" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "polygon()" pageTitle = "CSS Função polygon()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* pow() */}
+							<Route path = "pow" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "pow()" pageTitle = "CSS Função pow()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* radial-gradient() */}
+							<Route path = "radial-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "radial-gradient()" pageTitle = "CSS Função radial-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
