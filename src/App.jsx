@@ -6266,6 +6266,30 @@ function App() {
 							<Route path = "radial-gradient" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "radial-gradient()" pageTitle = "CSS Função radial-gradient()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* ray() */}
+							<Route path = "ray" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "ray()" pageTitle = "CSS Função ray()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rem() */}
+							<Route path = "rem" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rem()" pageTitle = "CSS Função rem()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* repeat() */}
+							<Route path = "repeat" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "repeat()" pageTitle = "CSS Função repeat()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* repeating-conic-gradient() */}
+							<Route path = "repeating-conic-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "repeating-conic-gradient()" pageTitle = "CSS Função repeating-conic-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* repeating-linear-gradient() */}
+							<Route path = "repeating-linear-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "repeating-linear-gradient()" pageTitle = "CSS Função repeating-linear-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* repeating-radial-gradient() */}
+							<Route path = "repeating-radial-gradient" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "repeating-radial-gradient()" pageTitle = "CSS Função repeating-radial-gradient()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
