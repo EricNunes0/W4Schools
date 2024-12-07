@@ -386,6 +386,16 @@ export default class TutorialManagePages {
                     } else {
                         result = [[value.number, "#c090fa", 1], [value.unit, "#f565c5"]];
                     }
+                } else if(value.type === "rotate") {
+                    result = [["rotate", "#90eaff", 1], ["(", "#f0f0f0"], [value.angle, "#c090fa"], ["deg", "#f565c5"], [")", "#f0f0f0"]];
+                } else if(value.type === "rotate3d") {
+                    result = [["rotate3d", "#90eaff", 1], ["(", "#f0f0f0"], [value.x, "#c090fa"], [",", "#f0f0f0"], [value.y, "#c090fa", 1], [",", "#f0f0f0"], [value.z, "#c090fa", 1], [",", "#f0f0f0"], [value.angle, "#c090fa", 1], ["deg", "#f565c5"], [")", "#f0f0f0"]];
+                } else if(value.type === "rotateX") {
+                    result = [["rotateX", "#90eaff", 1], ["(", "#f0f0f0"], [value.angle, "#c090fa"], ["deg", "#f565c5"], [")", "#f0f0f0"]];
+                } else if(value.type === "rotateY") {
+                    result = [["rotateY", "#90eaff", 1], ["(", "#f0f0f0"], [value.angle, "#c090fa"], ["deg", "#f565c5"], [")", "#f0f0f0"]];
+                } else if(value.type === "rotateZ") {
+                    result = [["rotateZ", "#90eaff", 1], ["(", "#f0f0f0"], [value.angle, "#c090fa"], ["deg", "#f565c5"], [")", "#f0f0f0"]];
                 } else if(value.type === "url") {
                     result = [["url", "#90eaff", 1], ["(", "#f0f0f0"], [value.url, "#f5f565"], [")", "#f0f0f0"]];
                 } else if(value.type === "var") {

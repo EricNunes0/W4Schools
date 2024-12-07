@@ -6290,6 +6290,74 @@ function App() {
 							<Route path = "repeating-radial-gradient" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "repeating-radial-gradient()" pageTitle = "CSS Função repeating-radial-gradient()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* rgb() */}
+							<Route path = "rgb" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rgb()" pageTitle = "CSS Função rgb()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotate() */}
+							<Route path = "rotate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rotate()" pageTitle = "CSS Função rotate()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotate3d() */}
+							<Route path = "rotate3d" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rotate3d()" pageTitle = "CSS Função rotate3d()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotateX() */}
+							<Route path = "rotatex" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rotateX()" pageTitle = "CSS Função rotateX()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotateY() */}
+							<Route path = "rotatey" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rotateY()" pageTitle = "CSS Função rotateY()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* rotateZ() */}
+							<Route path = "rotatez" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "rotateZ()" pageTitle = "CSS Função rotateZ()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* round() */}
+							<Route path = "round" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "round()" pageTitle = "CSS Função round()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* saturate() */}
+							<Route path = "saturate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "saturate()" pageTitle = "CSS Função saturate()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scale() */}
+							<Route path = "scale" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "scale()" pageTitle = "CSS Função scale()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scale3d() */}
+							<Route path = "scale3d" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "scale3d()" pageTitle = "CSS Função scale3d()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scaleX() */}
+							<Route path = "scalex" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "scaleX()" pageTitle = "CSS Função scaleX()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* scaleY() */}
+							<Route path = "scaley" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "scaleY()" pageTitle = "CSS Função scaleY()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* sepia() */}
+							<Route path = "sepia" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "sepia()" pageTitle = "CSS Função sepia()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* sin() */}
+							<Route path = "sin" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "sin()" pageTitle = "CSS Função sin()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* skew() */}
+							<Route path = "skew" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "skew()" pageTitle = "CSS Função skew()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* skewX() */}
+							<Route path = "skewx" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "skewX()" pageTitle = "CSS Função skewX()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* skewY() */}
+							<Route path = "skewy" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "skewY()" pageTitle = "CSS Função skewY()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
 				</Route>
