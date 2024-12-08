@@ -35,6 +35,9 @@ export const NavigationRightButton = styled.button`
     &[data-right="jobs"]::before {
         background-image: url("/svgs/briefcase.svg");
     }
+    &[data-right="teachers"]::before {
+        background-image: url("/svgs/teachers.svg");
+    }
     &[data-right="spaces"]::before {
         background-image: url("/svgs/code.svg");
     }

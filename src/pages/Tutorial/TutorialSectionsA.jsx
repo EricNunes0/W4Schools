@@ -9,6 +9,9 @@ export const TutorialSectionsA = styled.a`
         font-size: 14px;
         text-decoration: underline;
     }
+    &[data-type="text"]:hover {
+        color: #5075d0;
+    }
 
     &[data-type="redirect"][data-wrap="true"] {
         display: flex;

@@ -137,6 +137,15 @@ export default function TutorialSectionTags(json, tag, content) {
             return (<TutorialSectionsGlobalCompositeOperationExamples></TutorialSectionsGlobalCompositeOperationExamples>);
         case "img-flex":
             return (<TutorialSectionsImgFlex content = {content}></TutorialSectionsImgFlex>);
+        case "js-info-start":
+            return (
+                <div style={{backgroundColor: `#1a2a40`, paddingTop: "32px", paddingBottom: "32px"}}>
+                    <TutorialSectionsParagraph content = {"JavaScript é a linguagem de programação mais popular do mundo."}></TutorialSectionsParagraph>
+                    <TutorialSectionsParagraph content = {"JavaScript é a linguagem de programação da Web."}></TutorialSectionsParagraph>
+                    <TutorialSectionsParagraph content = {"JavaScript é fácil de aprender."}></TutorialSectionsParagraph>
+                    <TutorialSectionsParagraph content = {"Este tutorial ensinará JavaScript do básico ao avançado."}></TutorialSectionsParagraph>
+                </div>
+            );
         case "kickstart":
             return (<TutorialKickstart link = {content.link} language = {content.language}></TutorialKickstart>);
         case "note":

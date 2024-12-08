@@ -1,5 +1,6 @@
 import HTMLJSON from "../pages/json/html.json";
 import CSSJSON from "../pages/json/css.json";
+import JSJSON from "../pages/json/js.json";
 
 export default function jsonSelect(lang) {
     let jsonSelected = null;
@@ -9,6 +10,9 @@ export default function jsonSelect(lang) {
         },
         css: {
             json: CSSJSON
+        },
+        js: {
+            json: JSJSON
         }
     };
 

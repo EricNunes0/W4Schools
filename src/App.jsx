@@ -6358,8 +6358,47 @@ function App() {
 							<Route path = "skewy" element = {(
 								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "skewY()" pageTitle = "CSS Função skewY()"></TutorialMain>)}></Page>
 							)}></Route>
+							{/* sqrt() */}
+							<Route path = "sqrt" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "sqrt()" pageTitle = "CSS Função sqrt()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* steps() */}
+							<Route path = "steps" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "steps()" pageTitle = "CSS Função steps()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* tan() */}
+							<Route path = "tan" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "tan()" pageTitle = "CSS Função tan()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* translate() */}
+							<Route path = "translate" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "translate()" pageTitle = "CSS Função translate()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* translateX() */}
+							<Route path = "translatex" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "translateX()" pageTitle = "CSS Função translateX()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* translateY() */}
+							<Route path = "translatey" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "translateY()" pageTitle = "CSS Função translateY()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* url() */}
+							<Route path = "url" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "url()" pageTitle = "CSS Função url()"></TutorialMain>)}></Page>
+							)}></Route>
+							{/* var() */}
+							<Route path = "var" element = {(
+								<Page content = {(<TutorialMain json = "css" language = "css_ref_sel" topic = "CSS Funções" title = "var()" pageTitle = "CSS Função var()"></TutorialMain>)}></Page>
+							)}></Route>
 						</Route>
 					</Route>
+				</Route>
+
+				<Route path = "/js">
+					{/* HOME */}
+					<Route path = "default" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS HOME"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

@@ -47,7 +47,8 @@ export default function Navigation(prop) {
                     </section>
                     <section className = "navigation-header-sections" id = "right">
                         <div id = "navigation-right-buttons-div">
-                            <NavigationRightButton data-right = "jobs">Trabalhos</NavigationRightButton>
+                            {/*<NavigationRightButton data-right = "jobs">Trabalhos</NavigationRightButton>*/}
+                            <NavigationRightButton data-right = "teachers">Educacional</NavigationRightButton>
                             <NavigationRightButton data-right = "spaces">Espaços</NavigationRightButton>
                             <NavigationRightButton data-right = "certified">Certificados</NavigationRightButton>
                         </div>
