@@ -481,6 +481,308 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Introdução",
+                "link": "/js/intro",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "p",
+                                        "content": "Esta página contém alguns exemplos do que o JavaScript pode fazer."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript pode alterar o conteúdo HTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um dos muitos métodos JavaScript HTML é "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "getElementById()."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O exemplo abaixo \"encontra\" um elemento HTML (com id=\"demo\") e altera o conteúdo do elemento (innerHTML) para \"Olá, JavaScript\":"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = \"Olá, JavaScript\";"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "JavaScript aceita aspas duplas e simples:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById('demo').innerHTML = 'Olá, JavaScript';"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript pode alterar valores de atributos HTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Neste exemplo, o JavaScript altera o valor do atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "src green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (fonte) de uma tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "img tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": "A lâmpada",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div style=\"text-align:center;background-color:white!important;padding-top: 16px !important;padding-bottom: 16px !important;\">",
+                                        "<button onclick=\"document.getElementById('bulb-image').src='/images/examples/js/intro/bulbon.gif'\" style=\"all:revert;font: inherit;\">Acender a luz</button>",
+                                        "<img id=\"bulb-image\" border=\"0\" src=\"/images/examples/js/intro/bulbon.gif\" style=\"vertical-align: middle;width:100px;\">",
+                                        "<button onclick=\"document.getElementById('bulb-image').src='/images/examples/js/intro/bulboff.gif'\" style=\"all:revert;font: inherit;\">Apagar a luz</button>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript pode alterar estilos HTML (CSS)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Alterar o estilo de um elemento HTML é uma variante de alterar um atributo HTML:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").style.fontSize = \"35px\";"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript pode ocultar elementos HTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Ocultar elementos HTML pode ser feito alterando o estilo de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "display"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").style.display = \"none\";"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript pode exibir elementos HTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A exibição de elementos HTML ocultos também pode ser feita alterando o estilo de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "display"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").style.display = \"block\";"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Você sabia?"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "JavaScript e "
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Java",
+                                "link": "/java/default"
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " são linguagens completamente diferentes, tanto em conceito quanto em design."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "JavaScript foi inventado por Brendan Eich em 1995 e tornou-se um padrão ECMA em 1997."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "ECMA-262 é o nome oficial do padrão. ECMAScript é o nome oficial da linguagem."
+                        },
+                        {
+                            "tag": "button",
+                            "content": {
+                                "type": 1,
+                                "text": "Versões do JavaScript »",
+                                "link": "/js/versions",
+                                "style": {
+                                    "width": "180px",
+                                    "maxWidth": "100%"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "JAVA é a abreviação de JavaScript. Verdadeiro ou falso?",
+                                "answers": ["Falso"],
+                                "options": ["Verdadeiro", "Falso"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

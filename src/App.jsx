@@ -6395,9 +6395,13 @@ function App() {
 				</Route>
 
 				<Route path = "/js">
-					{/* HOME */}
+					{/* JS HOME */}
 					<Route path = "default" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS HOME" pageTitle = "JavaScript Tutorial"></TutorialMain>)}></Page>
+					)}></Route>
+					{/* JS Introdução */}
+					<Route path = "intro" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Introdução" pageTitle = "JavaScript Introdução"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
