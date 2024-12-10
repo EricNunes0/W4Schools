@@ -3,11 +3,44 @@
         "JS Tutorial": [
             {
                 "title": "JS HOME",
-                "link": "/css/default",
+                "link": "/js/default",
                 "sections": [
                     [
                         {
-                            "tag": "js-info-start"
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "p",
+                                        "content": "JavaScript é a linguagem de programação mais popular do mundo."
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "JavaScript é a linguagem de programação da Web."
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "JavaScript é fácil de aprender."
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "Este tutorial ensinará JavaScript do básico ao avançado."
+                                    },
+                                    {
+                                        "tag": "button",
+                                        "content": {
+                                            "type": 1,
+                                            "text": "Comece a aprender JavaScript agora »",
+                                            "link": "/js/intro",
+                                            "style": {
+                                                "width": "300px",
+                                                "maxWidth": "100%",
+                                                "height": "45px"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
                         },
                         {
                             "tag": "h2",
@@ -15,115 +48,24 @@
                         },
                         {
                             "tag": "p",
-                            "content": "Este tutorial CSS contém centenas de exemplos de CSS."
-                        },
-                        {
-                            "tag": "p",
-                            "content": "Com nosso editor online, você pode editar o CSS e clicar em um botão para ver o resultado."
+                            "content": "Com nosso editor \"Experimente você mesmo\", você pode editar o código-fonte e visualizar o resultado."
                         },
                         {
                             "tag": "example",
                             "content": {
-                                "title": "Exemplo de CSS:",
-                                "lines": [
-                                    [
-                                        {
-                                            "type": "css",
-                                            "selectors": [
-                                                {
-                                                    "selector": "body",
-                                                    "color": "#f565c5"
-                                                }
-                                            ],
-                                            "wrap": true,
-                                            "declarations": [
-                                                {
-                                                    "property": "background-color",
-                                                    "value": "lightblue"
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "empty"
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "css",
-                                            "selectors": [
-                                                {
-                                                    "selector": "h1",
-                                                    "color": "#f565c5"
-                                                }
-                                            ],
-                                            "wrap": true,
-                                            "declarations": [
-                                                {
-                                                    "property": "color",
-                                                    "value": "white"
-                                                },
-                                                {
-                                                    "property": "text-align",
-                                                    "value": "center"
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "empty"
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "css",
-                                            "selectors": [
-                                                {
-                                                    "selector": "p",
-                                                    "color": "#f565c5"
-                                                }
-                                            ],
-                                            "wrap": true,
-                                            "declarations": [
-                                                {
-                                                    "property": "font-family",
-                                                    "value": "verdana"
-                                                },
-                                                {
-                                                    "property": "font-size",
-                                                    "value": {
-                                                        "type": "unit",
-                                                        "number": "20",
-                                                        "unit": "px"
-                                                    }
-                                                }
-                                            ]
-                                        }
+                                "title": "Exemplo de JavaScript:",
+                                "footerHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<div class=\"w3-padding w3-white notranslate\">",
+                                        "<h2 style=\"color:#f0f0f0;\">Meu Primeiro JavaScript</h2>",
+                                        "<button type=\"button\" style=\"all:revert;cursor:pointer;margin:10px 0;\" onclick=\"document.getElementById('demo').innerHTML=Date()\">Clique em mim para exibir data e hora</button>",
+                                        "<p id=\"demo\" style=\"color:#f0f0f0;\"></p>",
+                                        "</div>"
                                     ]
-                                ]
-                            }
-                        },
-                        {
-                            "tag": "b",
-                            "content": "Clique no botão \"Copiar\" para copiar o código HTML."
-                        }
-                    ],
-                    [
-                        {
-                            "tag": "h2",
-                            "content": "Exemplos de CSS"
-                        },
-                        {
-                            "tag": "p",
-                            "content": "Aprenda com mais de 300 exemplos! Com nosso editor, você pode editar o CSS e clicar em um botão para visualizar o resultado."
-                        },
-                        {
-                            "tag": "button",
-                            "content": {
-                                "text": "Ver exemplos!",
-                                "type": 0
+                                }
                             }
                         }
                     ],
@@ -152,7 +94,6 @@
                                     "fontSize": "20px"
                                 }
                             }
-                            
                         },
                         {
                             "tag": "span",
@@ -162,103 +103,175 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "CSS Modelos"
+                            "content": "Aprenda por exemplos"
                         },
                         {
                             "tag": "p",
-                            "content": "Criamos alguns modelos responsivos para você usar."
+                            "content": "Exemplos valem melhor que 1000 palavras. Os exemplos costumam ser mais fáceis de entender do que as explicações em texto."
                         },
                         {
                             "tag": "p",
-                            "content": "Você é livre para modificar, salvar, compartilhar e usá-los em todos os seus projetos."
+                            "content": "Este tutorial complementa todas as explicações com exemplos esclarecedores do tipo \"Experimente você mesmo\"."
                         },
                         {
-                            "tag": "a",
+                            "tag": "p",
+                            "content": "Se você experimentar todos os exemplos, aprenderá muito sobre JavaScript, em muito pouco tempo!"
+                        },
+                        {
+                            "tag": "button",
                             "content": {
-                                "type": "text",
-                                "text": "Modelos CSS grátis!",
-                                "href": "/"
+                                "type": 1,
+                                "text": "Exemplos de JavaScript »",
+                                "link": "/js/examples",
+                                "style": {
+                                    "width": "200px",
+                                    "maxWidth": "100%",
+                                    "height": "40px"
+                                }
                             }
                         }
                     ],
                     [
                         {
                             "tag": "h2",
-                            "content": "Exercícios de CSS"
+                            "content": "Por que estudar JavaScript?"
                         },
                         {
-                            "tag": "exercise",
+                            "tag": "span",
+                            "content": "JavaScript é uma das "
+                            
+                        },
+                        {
+                            "tag": "span",
                             "content": {
-                                "title": "Teste seus conhecimentos com exercícios!",
-                                "description": "Defina a cor de todos os elementos <p> como vermelho:",
-                                "answer": ["p", "color:"],
-                                "lines": [
-                                    [
-                                        {
-                                            "type": "code",
-                                            "code": "style tag open"
+                                "text": "3 linguagens",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " que todos os desenvolvedores web "
+                            
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "devem",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " aprender:"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "1. "
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "HTML",
+                                "link": "/html/default",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para definir o conteúdo das páginas web"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "2. "
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "CSS",
+                                "link": "/css/default",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para especificar o layout das páginas da web"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "3. "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "JavaScript",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para programar o comportamento das páginas web"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "p",
+                                        "content": "Este tutorial cobre todas as versões do JavaScript:"
+                                    },
+                                    {
+                                        "tag": "ul",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "O JavaScript original ES1 ES2 ES3 (1997-1999)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "A primeira revisão principal ES5 (2009)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "A segunda revisão ES6 (2015)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "As adições anuais (2016, 2017 ... 2021, 2022)"
+                                                }
+                                            ]
                                         }
-                                    ],
-                                    [
-                                        {
-                                            "type": "code",
-                                            "code": "null",
-                                            "tabs": 1
-                                        },
-                                        {
-                                            "type": "input",
-                                            "inputType": "text",
-                                            "name": "answer",
-                                            "width": "10px",
-                                            "maxLength": 1,
-                                            "spacesBefore": 0,
-                                            "spacesAfter": 0
-                                        },
-                                        {
-                                            "type": "code",
-                                            "code": "bracket left",
-                                            "spacesBefore": 1
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "code",
-                                            "code": "null",
-                                            "tabs": 2
-                                        },
-                                        {
-                                            "type": "input",
-                                            "inputType": "text",
-                                            "name": "answer",
-                                            "width": "59px",
-                                            "maxLength": 6,
-                                            "spacesBefore": 0,
-                                            "spacesAfter": 0
-                                        },
-                                        {
-                                            "type": "content",
-                                            "code": "red",
-                                            "color": "#c090fa",
-                                            "spacesBefore": 1
-                                        },
-                                        {
-                                            "type": "code",
-                                            "code": "semicolon"
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "code",
-                                            "code": "bracket right",
-                                            "tabs": 1
-                                        }
-                                    ],
-                                    [
-                                        {
-                                            "type": "code",
-                                            "code": "style tag close"
-                                        }
-                                    ]
+                                    }
                                 ]
                             }
                         }
@@ -266,18 +279,124 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "Quiz de CSS"
+                            "content": "Velocidade de aprendizagem"
                         },
                         {
                             "tag": "p",
-                            "content": "Teste suas habilidades em CSS com nosso quiz!"
+                            "content": "Neste tutorial, a velocidade de aprendizado é sua escolha."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Tudo depende de você."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você estiver com dificuldades, faça uma pausa ou releia o material."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Certifique-se "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "sempre",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " de compreender "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "todos",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " os exemplos do tipo \"Experimente você mesmo\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A única maneira de se tornar um programador inteligente é: Praticar. Praticar. Praticar. Programar. Programar. Programar!"
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exercícios de JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Muitos capítulos deste tutorial terminam com um exercício onde você pode verificar seu nível de conhecimento."
+                        },
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é a sintaxe correta para atribuir um valor a uma variável?",
+                                "answers": ["x = 5"],
+                                "options": ["x : 5", "x = 5", "x == 5", "x -> 5"]
+                            }
                         },
                         {
                             "tag": "button",
                             "content": {
-                                "text": "Iniciar quiz!",
-                                "type": 1
+                                "type": 1,
+                                "text": "Veja todos os exercícios de JavaScript",
+                                "link": "/js/exercises",
+                                "style": {
+                                    "width": "300px",
+                                    "maxWidth": "100%",
+                                    "height": "45px"
+                                }
                             }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Perguntas mais frequentes"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Como obtenho JavaScript?"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Onde posso baixar JavaScript?"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O JavaScript é gratuito?"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "b",
+                            "content": "Você não precisa obter ou baixar JavaScript."
+                        },
+                        {
+                            "tag": "b",
+                            "content": "O JavaScript já está em execução no seu navegador, no seu computador, no seu tablet e no seu smartphone."
+                        },
+                        {
+                            "tag": "b",
+                            "content": "JavaScript é gratuito para todos."
                         }
                     ],
                     [
@@ -308,38 +427,56 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "Referências"
+                            "content": "Referências JavaScript"
                         },
                         {
                             "tag": "p",
-                            "content": "Aqui você encontrará referências CSS completas de todas as propriedades e seletores com sintaxe, exemplos, suporte ao navegador e muito mais."
+                            "content": "W3Schools mantém uma referência completa de JavaScript, incluindo todos os HTML e objetos de navegador."
                         },
                         {
-                            "tag": "a",
+                            "tag": "p",
+                            "content": "A referência contém exemplos para todas as propriedades, métodos e eventos e é continuamente atualizada de acordo com os mais recentes padrões da web."
+                        },
+                        {
+                            "tag": "button",
                             "content": {
-                                "type": "redirect",
-                                "wrap": true,
-                                "links": [
-                                    "CSS Propriedades",
-                                    "CSS Seletores",
-                                    "CSS Suporte dos navegadores",
-                                    "CSS Funções",
-                                    "CSS Animável",
-                                    "CSS Auditivo",
-                                    "CSS Fontes seguras",
-                                    "CSS Unidades",
-                                    "Conversor de PX para EM",
-                                    "CSS Cores",
-                                    "CSS Valores padrões",
-                                    "CSS Entidades"
-                                ]
+                                "type": 1,
+                                "text": "Referência completa de JavaScript »",
+                                "link": "/js/exercises",
+                                "style": {
+                                    "width": "300px",
+                                    "maxWidth": "100%",
+                                    "height": "45px"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Teste de questionário JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Teste suas habilidades em JavaScript na W3Schools!"
+                        },
+                        {
+                            "tag": "button",
+                            "content": {
+                                "text": "Iniciar quiz de JavaScript!",
+                                "type": 1,
+                                "link": "/js/quiz",
+                                "style": {
+                                    "width": "200px",
+                                    "maxWidth": "100%"
+                                }
                             }
                         },
                         {
                             "tag": "kickstart",
                             "content": {
-                                "language": "CSS",
-                                "link": "/certifications/css-certificate"
+                                "language": "JavaScript",
+                                "link": "/certifications/js-certificate"
                             }
                         }
                     ]

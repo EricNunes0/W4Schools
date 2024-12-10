@@ -137,13 +137,29 @@ export default function TutorialSectionTags(json, tag, content) {
             return (<TutorialSectionsGlobalCompositeOperationExamples></TutorialSectionsGlobalCompositeOperationExamples>);
         case "img-flex":
             return (<TutorialSectionsImgFlex content = {content}></TutorialSectionsImgFlex>);
-        case "js-info-start":
+        case "info":
+            let items = [];
+            for(const item of content.items) {
+                switch(item.tag) {
+                    case "p":
+                        items.push(<TutorialSectionsParagraph content = {item.content}></TutorialSectionsParagraph>);
+                        break;
+                    case "button":
+                        const button = (<TutorialSectionsButton data-type = {item.content.type} width = {item.content.width || null} height = {item.content.height || null} style={item.content.style || {}}>{item.content.text}</TutorialSectionsButton>);
+                        if(item.content.href || item.content.link) {
+                            items.push(<a href={item.content.href || item.content.link || ""} target={item.content.target || "_self"}>{button}</a>);
+                        } else {
+                            items.push(button);
+                        };
+                        break;
+                    case "ol": case "ul":
+                        items.push(<TutorialSectionsList tag = {item.tag} content = {item.content}></TutorialSectionsList>);
+                        break;
+                }
+            }
             return (
-                <div style={{backgroundColor: `#1a2a40`, paddingTop: "32px", paddingBottom: "32px"}}>
-                    <TutorialSectionsParagraph content = {"JavaScript é a linguagem de programação mais popular do mundo."}></TutorialSectionsParagraph>
-                    <TutorialSectionsParagraph content = {"JavaScript é a linguagem de programação da Web."}></TutorialSectionsParagraph>
-                    <TutorialSectionsParagraph content = {"JavaScript é fácil de aprender."}></TutorialSectionsParagraph>
-                    <TutorialSectionsParagraph content = {"Este tutorial ensinará JavaScript do básico ao avançado."}></TutorialSectionsParagraph>
+                <div style={{backgroundColor: `#1a2a40`, padding: "32px"}}>
+                    {items}
                 </div>
             );
         case "kickstart":
