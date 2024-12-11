@@ -783,6 +783,926 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Para onde",
+                "link": "/js/whereto",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A tag <script>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Em HTML, o código JavaScript é inserido entre as tags "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "script tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "script tag close"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = \"Meu primeiro JavaScript\";",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exemplos antigos de JavaScript podem usar um atributo type: <script type=\"text/javascript\">."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O atributo type não é obrigatório. JavaScript é a linguagem de script padrão em HTML."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Funções e eventos JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma função JavaScript é um bloco de código JavaScript que pode ser executado quando \"chamado\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por exemplo, uma função pode ser chamada quando ocorre um evento, como quando o usuário clica em um botão."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você aprenderá muito mais sobre funções e eventos em capítulos posteriores."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript em <head> ou <body>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode colocar qualquer número de scripts em um documento HTML."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Os scripts podem ser colocados na seção "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ou na seção "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag close"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de uma página HTML, ou em ambos."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript em <head>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Neste exemplo, uma função JavaScript é colocada na seção "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de uma página HTML."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A função é invocada (chamada) quando um botão é clicado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "() {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = \"Parágrafo alterado.\";",
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "head tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Demonstração de JavaScript no Head",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "demo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Um parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "button",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "myFunction()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Experimente",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript em <body>"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Neste exemplo, uma função JavaScript é colocada na seção "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de uma página HTML."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A função é invocada (chamada) quando um botão é clicado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h2 tag",
+                                            "content": "Demonstração de JavaScript no Head",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "demo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Um parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "button",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "myFunction()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Experimente",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "tabs": 3
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "() {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = \"Parágrafo alterado.\";",
+                                            "tabs": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "tip",
+                            "content": "Colocar scripts na parte inferior do elemento <body> melhora a velocidade de exibição, porque a interpretação do script retarda a exibição."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript externo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os scripts também podem ser colocados em arquivos externos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function myFunction() {"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = \"Parágrafo alterado.\";",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Scripts externos são práticos quando o mesmo código é usado em muitas páginas web diferentes."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Os arquivos JavaScript têm a extensão de arquivo "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": ".js",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Para usar um script externo:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Coloque o nome do arquivo de script no atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "src green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (fonte) de uma tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "script tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "myScript.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode colocar uma referência de script externo em "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "head tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ou "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "body tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " como desejar."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O script se comportará como se estivesse localizado exatamente onde a tag "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "script tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " está localizada."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Scripts externos não podem conter tags "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "script tag open"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Vantagens externas do JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Colocar scripts em arquivos externos tem algumas vantagens:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Ele separa HTML e código"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Torna HTML e JavaScript mais fáceis de ler e manter"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Arquivos JavaScript armazenados em cache podem acelerar o carregamento da página"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para adicionar vários arquivos de script a uma página - use várias tags de script:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "myScript1.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "myScript2.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referências externas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um script externo pode ser referenciado de três maneiras diferentes:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Com um URL completo (um endereço da web completo)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Com um caminho de arquivo (como /js/)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Sem nenhum caminho"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Este exemplo usa um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "URL completo",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para vincular myScript.js:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "https://www.w4schools.com/js/myScript.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Este exemplo usa um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "caminho de arquivo",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para vincular myScript.js:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "/js/myScript.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este exemplo não usa nenhum caminho para vincular ao myScript.js:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "src",
+                                                        "value": "myScript.js",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Você pode ler mais sobre caminhos de arquivos no capítulo "
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "HTML Caminhos de arquivos."
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Em HTML, JavaScripts devem ser inseridos dentro de quais tags HTML?",
+                                "answers": ["<script> e </script>"],
+                                "options": ["<script> e </script>", "<javascript> e </javascript>", "<head> e </head>"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
