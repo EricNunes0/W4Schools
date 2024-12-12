@@ -1703,6 +1703,854 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Output",
+                "link": "/js/output",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Possibilidades de exibição do JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O JavaScript pode \"exibir\" dados de diferentes maneiras:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Escrevendo em um elemento HTML, usando ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "innerHTML"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Escrevendo na saída HTML usando ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "document.write()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Escrevendo em uma caixa de alerta, usando ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "window.alert()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Escrevendo no console do navegador, usando ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "console.log()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando innerHTML"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para acessar um elemento HTML, JavaScript pode usar o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "document.getElementById(id)"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "id green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " define o elemento HTML."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A propriedade "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "innerHTML"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " define o conteúdo HTML:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha primeira página da web",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Meu primeiro parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "id",
+                                                        "value": "demo",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML = 5 + 6;",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Alterar a propriedade innerHTML de um elemento HTML é uma forma comum de exibir dados em HTML."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando document.write()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para fins de teste, é conveniente usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "document.write()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha primeira página da web",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Meu primeiro parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.write(5 + 6);",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "Usar document.write() após o carregamento de um documento HTML excluirá todo o HTML existente:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha primeira página da web",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Meu primeiro parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "type",
+                                                        "value": "button",
+                                                        "valueIndex": 3
+                                                    },
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "document.write(5 + 6)",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Experimente",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O método document.write() deve ser usado apenas para teste."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando window.alert()"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode usar uma caixa de alerta para exibir dados:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha primeira página da web",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Meu primeiro parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "window.alert(5 + 6);",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode pular a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "window purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Em JavaScript, o objeto window é o objeto de escopo global. Isso significa que variáveis, propriedades e métodos, por padrão, pertencem ao objeto janela."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Isso também significa que especificar a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "window purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é opcional:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "h1 tag",
+                                            "content": "Minha primeira página da web",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "p tag",
+                                            "content": "Meu primeiro parágrafo",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "alert(5 + 6);",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando console.log()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para fins de depuração, você pode chamar o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "console.log()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " no navegador para exibir dados."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Você aprenderá mais sobre depuração em um capítulo posterior."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag open",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "console.log(5 + 6);",
+                                            "tabs": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "script tag close",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript Print"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "JavaScript não possui nenhum objeto ou método de impressão."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você não pode acessar dispositivos de saída em JavaScript."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A única exceção é que você pode chamar o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "window.print()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " no navegador para imprimir o conteúdo da janela atual."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de JavaScript:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "doctype"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag open"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag open",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "window.print()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Imprimir esta página",
+                                            "contentIndex": -3,
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "body tag close",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "html tag close"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "O que NÃO é uma sintaxe correta para escrever saída em JavaScript?",
+                                "answers": ["body.html()"],
+                                "options": ["window.alert()", "console.log()", "body.html()", "document.write()"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
