@@ -152,6 +152,30 @@ export default function TutorialSectionTags(json, tag, content) {
                             items.push(button);
                         };
                         break;
+                    case "h1":
+                        const h1 = item.content.text ? (<TutorialSectionsH1 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{item.content}</TutorialSectionsH1>);
+                        items.push(h1);
+                        break;
+                    case "h2":
+                        const h2 = item.content.text ? (<TutorialSectionsH2 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH2>) : (<TutorialSectionsH2>{item.content}</TutorialSectionsH2>);
+                        items.push(h2);
+                        break;
+                    case "h3":
+                        const h3 = item.content.text ? (<TutorialSectionsH3 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH3>) : (<TutorialSectionsH3>{item.content}</TutorialSectionsH3>);
+                        items.push(h3);
+                        break;
+                    case "h4":
+                        const h4 = item.content.text ? (<TutorialSectionsH4 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH4>) : (<TutorialSectionsH4>{item.content}</TutorialSectionsH4>);
+                        items.push(h4);
+                        break;
+                    case "h5":
+                        const h5 = item.content.text ? (<TutorialSectionsH5 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH5>) : (<TutorialSectionsH5>{item.content}</TutorialSectionsH5>);
+                        items.push(h5);
+                        break;
+                    case "h6":
+                        const h6 = item.content.text ? (<TutorialSectionsH6 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null} style = {{fontWeight: item.content.fontWeight || null, fontStyle: item.content.fontStyle || null}}>{item.content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
+                        items.push(h6);
+                        break;
                     case "ol": case "ul":
                         items.push(<TutorialSectionsList tag = {item.tag} content = {item.content}></TutorialSectionsList>);
                         break;
