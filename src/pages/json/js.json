@@ -7606,6 +7606,2088 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Let",
+                "link": "/js/let",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "ul",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "A palavra-chave ",
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "let"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " foi introduzida no ",
+                                                            "spacesBefore": 1,
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "link",
+                                                            "text": "ES6 (2015)",
+                                                            "link": "/js/es6"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Variáveis ​​declaradas com ",
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "let"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " tem ",
+                                                            "spacesBefore": 1
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": "escopo de bloco",
+                                                            "fontWeight": "bold",
+                                                            "spacesBefore": 1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Variáveis ​​declaradas com ",
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "let"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " devem ser ",
+                                                            "spacesBefore": 1
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": "declaradas",
+                                                            "fontWeight": "bold",
+                                                            "spacesBefore": 1
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " antes do uso",
+                                                            "spacesBefore": 1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Variáveis ​​declaradas com ",
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "let"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " não podem ser ",
+                                                            "spacesBefore": 1
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": "redeclaradas",
+                                                            "fontWeight": "bold",
+                                                            "spacesBefore": 1
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " no mesmo escopo",
+                                                            "spacesBefore": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Escopo de bloco"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Antes do ES6 (2015), o JavaScript não tinha "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "escopo do bloco",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "JavaScript tinha "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "escopo global",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " e "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "escopo de função",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "ES6 introduziu as duas novas palavras-chave JavaScript: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Essas duas palavras-chave forneceram "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "escopo do bloco",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " em JavaScript:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de escopo de bloco:",
+                                "description": "Variáveis ​​declaradas dentro de um bloco { } não podem ser acessadas de fora do bloco:",
+                                "footerHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// x NÃO pode ser usado aqui"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Escopo global"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​declaradas com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " sempre possuem "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "escopo global",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​declaradas com a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " NÃO podem ter escopo de bloco:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de escopo global:",
+                                "description": "Variáveis ​​declaradas com var dentro de um bloco { } podem ser acessadas de fora do bloco:",
+                                "footerHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// x PODE ser usado aqui"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Não pode ser redeclarado"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​definidas com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "não podem",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "ser declaradas novamente."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você não pode declarar novamente acidentalmente uma variável declarada com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Com let você não pode fazer isso:",
+                                "footerHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​definidas com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "podem",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "ser declaradas novamente."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Com var você pode fazer isso:",
+                                "footerHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Redeclarando variáveis"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Redeclarar uma variável usando a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode causar problemas."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Redeclarar uma variável dentro de um bloco também redeclarará a variável fora do bloco:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com var:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 10"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 2"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 2"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Redeclarar uma variável usando a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode resolver esse problema."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Redeclarar uma variável dentro de um bloco não irá declarar novamente a variável fora do bloco:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com let:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 10"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 2"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aqui x é 10"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Diferença entre var, let e const"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": ""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Escopo"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Redeclarar"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Reatribuir"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Hoisting"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Vincula com this"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "var"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "let"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "const"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "supports": false
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "O que é bom?"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " têm ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "escopo de bloco.",
+                                                "bold": true,
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não podem ser ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "redeclarados.",
+                                                "bold": true,
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " devem ser ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "declarados",
+                                                "bold": true,
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " antes do uso.",
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não se ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "vinculam",
+                                                "bold": true,
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " a ",
+                                                "spacesBefore": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "this purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "não são içados.",
+                                                "bold": true,
+                                                "spacesBefore": 1
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "O que não é bom?"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não precisa ser declarado.",
+                                                "spacesAfter": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é içado.",
+                                                "spacesAfter": 1
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se vincula a ",
+                                                "spacesAfter": 1
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "this purple"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "As palavras-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não são suportadas no Internet Explorer 11 ou versões anteriores."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A tabela a seguir define as primeiras versões de navegadores com suporte total:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 49"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 12"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 36"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 11"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 36"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Março de 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Julho de 2015"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Janeiro de 2015"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Setembro de 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Março de 2016"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Redeclarando"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Redeclarar uma variável JavaScript com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é permitido em qualquer lugar do programa:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com var:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Agora x é 2"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Agora x é 3"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", NÃO é permitido redeclarar uma variável no mesmo bloco:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com var e let:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Não permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Não permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Não permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Redeclarar uma variável com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", em outro bloco, é permitido:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com var e let:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket left"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Permitido",
+                                            "spacesBefore": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Permitir Hoisting"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​definidas com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "var"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são elevadas ao topo e podem ser inicializadas a qualquer momento."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Significado: você pode usar a variável antes de ser declarada:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com var:",
+                                "description": "Isso é OK:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "carName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "var"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "carName;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se você quiser aprender mais sobre içamento, estude o capítulo"
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "JavaScript Hoisting.",
+                                                "link": "/js/hoisting"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Variáveis ​​definidas com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também são içadas para o topo do bloco, mas não inicializadas."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Significado: usar uma variável "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "let"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " antes de ser declarada resultará em um ReferenceError:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variáveis com let:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "carName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "carName",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é o uso correto da palavra-chave let?",
+                                "answers": ["let x = 5;"],
+                                "options": ["let x = 5;", "x let 5;", "let 5 into x;", "x = 5(let);"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
