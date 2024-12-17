@@ -87,7 +87,7 @@ export default function TutorialSectionTags(json, tag, content) {
             const h6 = content.text ? (<TutorialSectionsH6 data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsH6>) : (<TutorialSectionsH6>{content}</TutorialSectionsH6>);
             return h6;
         case "span":
-            return (<TutorialSectionsParagraphSpan content = {content}></TutorialSectionsParagraphSpan>)
+            return (<TutorialSectionsParagraphSpan content = {content}></TutorialSectionsParagraphSpan>);
         case "sub":
             const sub = content.text ? (<TutorialSectionsSub data-css = {content.css} color = {content.color || null} fontsize = {content.fontSize || null} fontweight = {content.fontWeight || null} style = {{fontWeight: content.fontWeight || null, fontStyle: content.fontStyle || null}}>{content.text}</TutorialSectionsSub>) : (<TutorialSectionsSub>{content}</TutorialSectionsSub>);
             return sub;
@@ -141,6 +141,9 @@ export default function TutorialSectionTags(json, tag, content) {
             let items = [];
             for(const item of content.items) {
                 switch(item.tag) {
+                    case "br":
+                        items.push(<br></br>);
+                        break;
                     case "p":
                         items.push(<TutorialSectionsParagraph content = {item.content}></TutorialSectionsParagraph>);
                         break;
@@ -178,6 +181,9 @@ export default function TutorialSectionTags(json, tag, content) {
                         break;
                     case "ol": case "ul":
                         items.push(<TutorialSectionsList tag = {item.tag} content = {item.content}></TutorialSectionsList>);
+                        break;
+                    case "span":
+                        items.push(<TutorialSectionsParagraphSpan content = {item.content}></TutorialSectionsParagraphSpan>);
                         break;
                 }
             }

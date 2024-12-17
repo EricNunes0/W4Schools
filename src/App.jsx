@@ -6435,6 +6435,10 @@ function App() {
 					<Route path = "const" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Const" pageTitle = "JavaScript Const"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Operadores */}
+					<Route path = "operators" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Operadores" pageTitle = "JavaScript Operadores"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
