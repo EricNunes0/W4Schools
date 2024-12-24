@@ -6455,6 +6455,10 @@ function App() {
 					<Route path = "functions" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Funções" pageTitle = "JavaScript Funções"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Objetos */}
+					<Route path = "objects" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Objetos" pageTitle = "JavaScript Objetos"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

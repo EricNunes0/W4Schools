@@ -22361,6 +22361,2668 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Objetos",
+                "link": "/js/objects",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "h2",
+                                        "content": "Objetos da vida real"
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "Na vida real, objetos são coisas como: casas, carros, pessoas, animais ou quaisquer outros assuntos."
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "Aqui está um exemplo de objeto carro:"
+                                    },
+                                    {
+                                        "tag": "example",
+                                        "content": {
+                                            "exampleHide": true,
+                                            "results": {
+                                                "title": null,
+                                                "type": "innerjoin",
+                                                "codes": [
+                                                    "<style>",
+                                                    ".object-table {background-color:rgba(255, 255, 255, 0.1);box-sizing: border-box;border: 1px solid #38444d;border-collapse: collapse;border-spacing: 0;color:#f0f0f0;width: 100%;margin:0 0;}",
+                                                    ".object-table-th {text-align: left;padding:8px;}",
+                                                    ".object-table-td {border-top:#AAA 1px solid;border-left:#AAA 1px solid;text-align: left;padding:8px;}",
+                                                    ".object-table-td-img {width:280px;height:200px;}",
+                                                    ".object-table-img {width:280px;height:200px;}",
+                                                    "@media screen and (max-width: 1080px) {",
+                                                    ".object-table-td-img {width:200px;height:170px;}",
+                                                    ".object-table-img {width:200px;height:170px;}",
+                                                    "}",
+                                                    "@media screen and (max-width: 768px) {",
+                                                    ".object-table-th {font-size:10px;}",
+                                                    ".object-table-td {font-size:10px;}",
+                                                    ".object-table-td-img {width:120px;height:80px;}",
+                                                    ".object-table-img {width:120px;height:80px;}",
+                                                    "}",
+                                                    "@media screen and (max-width: 570px) {",
+                                                    ".object-table-th {font-size:8px;}",
+                                                    ".object-table-td {font-size:8px;}",
+                                                    ".object-table-td-img {width:80px;height:50px;}",
+                                                    ".object-table-img {width:80px;height:50px;}",
+                                                    "}",
+                                                    "</style>",
+                                                    "<table class=\"object-table\">",
+                                                    "<tbody><tr></tr>",
+                                                    "<tr style=\"background-color:rgba(255, 255, 255, 0.3);\">",
+                                                    "<th class=\"object-table-th\">",
+                                                    "Objeto",
+                                                    "</th>",
+                                                    "<th class=\"object-table-th\">",
+                                                    "Propriedades",
+                                                    "</th>",
+                                                    "<th class=\"object-table-th\">",
+                                                    "Métodos",
+                                                    "</th>",
+                                                    "</tr>",
+                                                    "<tr>",
+                                                    "<td class=\"object-table-td-img\" rowspan=\"4\" style=\"padding:0px\">",
+                                                    "<img class=\"object-table-img\" src=\"/images/examples/js/objects/objectexplained.jpg\">",
+                                                    "</td>",
+                                                    "<td class=\"object-table-td\">car.name = Fiat</td>",
+                                                    "<td class=\"object-table-td\">car.start()</td>",
+                                                    "</tr>",
+                                                    "<tr>",
+                                                    "<td class=\"object-table-td\">car.model = 500</td>",
+                                                    "<td class=\"object-table-td\">car.drive()</td>",
+                                                    "</tr>",
+                                                    "<tr>",
+                                                    "<td class=\"object-table-td\">car.weight = 850kg</td>",
+                                                    "<td class=\"object-table-td\">car.brake()</td>",
+                                                    "</tr>",
+                                                    "<tr>",
+                                                    "<td class=\"object-table-td\">car.color = white</td>",
+                                                    "<td class=\"object-table-td\">car.stop()</td>",
+                                                    "</tr>",
+                                                    "</tbody></table>"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades do objeto"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um carro da vida real tem "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "propriedades",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " como peso e cor:"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "car.name = Fiat, car.model = 500, car.weight = 850kg, car.color = white."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Os objetos Carro têm as mesmas "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "propriedades",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ", mas os "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valores",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " diferem de carro para carro."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Métodos do objeto"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um carro da vida real possui "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "métodos",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " como iniciar e parar:"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "car.start(), car.drive(), car.brake(), car.stop()."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Os objetos Carro possuem os mesmos "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "métodos",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ", mas os métodos são executados "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "em momentos diferentes",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Variáveis"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As variáveis ​​JavaScript são contêineres para valores de dados."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Este código atribui um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valor simples",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " (Fiat) a uma "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "variável",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " chamada car:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de variável:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "car",
+                                            "value": "\"Fiat\""
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Objetos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Objetos também são variáveis. Mas os objetos podem conter muitos valores."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Este código atribui "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "muitos valores",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " (Fiat, 500, branco) a um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "objeto",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " chamado car:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "car",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{type",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Fiat\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", model",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"500\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", color",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"white\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "É uma prática usar a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para declarar objetos."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Saiba mais sobre como usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " com objetos no capítulo: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "JS Const.",
+                                                "link": "/js/const"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h1",
+                            "content": "Definição de objeto"
+                        },
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "h3",
+                                        "content": "Como definir um objeto JavaScript"
+                                    },
+                                    {
+                                        "tag": "ul",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Usando um Literal de Objeto"
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Usando a palavra-chave ",
+                                                            "spacesAfter": 1
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "new"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Usando um construtor de objetos"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "p",
+                            "content": "Objeto Literal"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "objeto literal",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " é uma lista de pares "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "nome:valor",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " entre chaves "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "{}",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "{firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os pares \"nome:valor\" também são chamados de pares \"chave:valor\"."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "objetos literais também são chamados de objetos inicializadores."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Criando um objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Estes exemplos criam um objeto JavaScript com 4 propriedades:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{firstName",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "description": "Espaços e quebras de linha não são importantes. Um inicializador de objeto pode abranger várias linhas:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "description": "Este exemplo cria um objeto JavaScript vazio e adiciona 4 propriedades:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{};",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// //Adicionando propriedades"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando a palavra-chave new"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este exemplo cria um novo objeto JavaScript usando new Object() e adiciona 4 propriedades:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "description": "Este exemplo cria um objeto JavaScript vazio e adiciona 4 propriedades:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Object();",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// //Adicionando propriedades"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os exemplos acima fazem exatamente o mesmo."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Porém, não há necessidade de usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Object()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para legibilidade, simplicidade e velocidade de execução, use o método de objeto literal."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades do objeto"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Os "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valores nomeados",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ", em objetos JavaScript, são chamados de "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "propriedades",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "firstName"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "John"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "lastName"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Doe"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "age"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "50"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "eyeColor"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "blue"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Objetos escritos como pares nome-valor são semelhantes a:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Arrays associativas em PHP"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Dicionários em Python"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Tabelas hash em C"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Mapas hash em Java"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Hashes em Ruby e Perl"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acessando Propriedades do Objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode acessar as propriedades do objeto de duas maneiras:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "nomeDoObjeto.nomeDaPropriedade",
+                                            "color": "#f0f0f0",
+                                            "italic": true
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "nomeDoObjeto[",
+                                            "color": "#f0f0f0",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"nomeDaPropriedade\"",
+                                            "color": "#f5f565",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0",
+                                            "italic": true
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de propriedades do objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person.lastName;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de propriedades do objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"lastName\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Métodos de objetos"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Métodos são "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "ações",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " que podem ser executadas em objetos."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Métodos são "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "definições de funções",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " armazenadas como "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valores de propriedade",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "firstName"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "John"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "lastName"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Doe"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "age"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "50"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "eyeColor"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "blue"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "fullName"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "function() {return this.firstName + \" \" + this.lastName;}"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "id",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5566",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fullName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "() {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "No exemplo acima, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "this purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se refere ao objeto person:"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "this.firstName",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " significa a propriedade "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "firstName",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "person.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "this.lastName",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " significa a propriedade "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "lastName",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "person.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "No JavaScript, os objetos são reis."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você entende objetos, você entende JavaScript."
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Objetos",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são contêineres para "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Propriedades",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " de "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Métodos.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Propriedades",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são denominadas "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Valores.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Métodos",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Funções",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " armazenadas como "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Propriedades.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Propriedades",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " podem ser valores primitivos, funções ou até mesmo outros objetos."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Em JavaScript, quase \"tudo\" é um objeto."
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Objetos são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Maths são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Funções são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Datas são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Arrays são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Mapas são objetos"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Conjuntos são objetos"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Todos os valores JavaScript, exceto os primitivos, são objetos."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Primitivos"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valor primitivo",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " é um valor que não possui propriedades ou métodos."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "3.14",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " é um valor primitivo"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "tipo de dados primitivo",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " são dados que possuem um valor primitivo."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "JavaScript define 7 tipos de tipos de dados primitivos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "string"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "number"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "boolean"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "null"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "undefined"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "symbol"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "bigint"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h3",
+                            "content": "Imutável"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os valores primitivos são imutáveis ​​(são codificados e não podem ser alterados)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "se x = 3.14, você pode alterar o valor de x, mas não pode alterar o valor de 3.14."
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Tipo"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Comentário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\"Hello\""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "string"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "\"Hello\" é sempre \"Hello\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "3.14"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "number"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "3.14 é sempre 3.14"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "true"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "boolean"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "true é sempre true"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "false"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "boolean"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "false é sempre false"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "null"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "null (object)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "null é sempre null"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "undefined"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "undefined"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "undefined é sempre undefined"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Objetos JavaScript são mutáveis"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os objetos são mutáveis: são endereçados por referência, não por valor."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se person for um objeto, a instrução a seguir não criará uma cópia de person:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "O objeto x "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "não é uma cópia",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " de person. O objeto x "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "é",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " person."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O objeto x e o objeto pessoa compartilham o mesmo endereço de memória."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Quaisquer alterações em x também mudarão person:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando uma cópia"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Muda age em ambos"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Você aprenderá muito mais sobre objetos nos capítulos seguintes."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Considere o seguinte objeto e responda: Quantas propriedades o objeto possui?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "car",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "brand",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "'Volvo'",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "model",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "'EX90'",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "drive",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function() {",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return true;",
+                                            "tabs": 2
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right",
+                                            "tabs": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ],
+                                "answers": ["2"],
+                                "options": ["0", "1", "2", "3"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

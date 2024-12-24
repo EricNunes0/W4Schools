@@ -244,6 +244,9 @@ export default class TutorialManagePages {
                     case "input":
                         sectionLine.push(this.lineInput(part));
                         break;
+                    case "js-var":
+                        sectionLine.push(this.lineJSVariable(part));
+                        break;
                     case "value":
                         sectionLine.push(this.lineValue(part));
                         break;
@@ -562,6 +565,52 @@ export default class TutorialManagePages {
                 {lines}
             </>
         );
+    };
+    /* Variáveis JavaScript */
+    lineJSVariable(part) {
+        let code = [];
+        code.push(
+            <div>
+                {this.lineCodeToHTML([part.keyword, "#f565c5"])}
+            </div>
+        );
+        let nameColor;
+        if(part.keyword == "const") {
+            nameColor = "#c090fa";
+        } else {
+            nameColor = "#f0f0f0";
+        }
+        code.push(
+            <div>
+                {this.lineCodeToHTML([part.name, nameColor, 1])}
+            </div>
+        );
+        code.push(
+            <div>
+                {this.lineCodeToHTML(["=", "#f565c5", 1])}
+            </div>
+        );
+        let value;
+        if(typeof part.value == "string") {
+            value = this.lineCodeToHTML([part.value, "#f5f565", 1]);
+        } else if(typeof part.value == "number") {
+            value = this.lineCodeToHTML([part.value, "#c090fa", 1]);
+        }
+        code.push(
+            <div>
+                {value}
+            </div>
+        );
+        code.push(
+            <div>
+                {this.lineCodeToHTML([";", "#f0f0f0"])}
+            </div>
+        );
+        return (
+            <>
+                {code}
+            </>
+        )
     };
     /* Linha vazia */
     lineEmpty() {

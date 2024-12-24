@@ -155,6 +155,9 @@ export default function TutorialSectionTags(json, tag, content) {
                             items.push(button);
                         };
                         break;
+                    case "example":
+                        items.push(<TutorialSectionsExample content = {item.content}></TutorialSectionsExample>);
+                        break;
                     case "h1":
                         const h1 = item.content.text ? (<TutorialSectionsH1 data-css = {item.content.css} color = {item.content.color || null} fontsize = {item.content.fontSize || null} fontweight = {item.content.fontWeight || null}>{item.content.text}</TutorialSectionsH1>) : (<TutorialSectionsH1>{item.content}</TutorialSectionsH1>);
                         items.push(h1);
