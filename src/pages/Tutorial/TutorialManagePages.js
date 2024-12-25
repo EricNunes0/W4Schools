@@ -569,11 +569,13 @@ export default class TutorialManagePages {
     /* Variáveis JavaScript */
     lineJSVariable(part) {
         let code = [];
-        code.push(
-            <div>
-                {this.lineCodeToHTML([part.keyword, "#f565c5"])}
-            </div>
-        );
+        if(part.keyword !== null) {
+            code.push(
+                <div>
+                    {this.lineCodeToHTML([part.keyword, "#f565c5"])}
+                </div>
+            );
+        }
         let nameColor;
         if(part.keyword == "const") {
             nameColor = "#c090fa";
@@ -582,7 +584,7 @@ export default class TutorialManagePages {
         }
         code.push(
             <div>
-                {this.lineCodeToHTML([part.name, nameColor, 1])}
+                {this.lineCodeToHTML([part.name, nameColor, part.keyword !== null ? 1 : 0])}
             </div>
         );
         code.push(
