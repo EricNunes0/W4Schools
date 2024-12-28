@@ -6471,6 +6471,10 @@ function App() {
 					<Route path = "object_display" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Exibição do objeto" pageTitle = "JavaScript Exibição"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Construtores do objeto */}
+					<Route path = "object_constructors" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Construtores do objeto" pageTitle = "JavaScript Construtores"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

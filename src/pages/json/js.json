@@ -28642,6 +28642,2083 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Construtores do objeto",
+                "link": "/js/object_constructors",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "h2",
+                                        "content": "Funções do construtor de objetos"
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "Às vezes precisamos criar muitos objetos do mesmo "
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": {
+                                            "text": "tipo",
+                                            "style": {
+                                                "fontWeight": "bold"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "."
+                                    },
+                                    {
+                                        "tag": "br"
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "Para criar um "
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": {
+                                            "text": "tipo de objeto",
+                                            "style": {
+                                                "fontWeight": "bold"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": ", usamos uma "
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": {
+                                            "text": "função construtora de objeto",
+                                            "style": {
+                                                "fontWeight": "bold"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "."
+                                    },
+                                    {
+                                        "tag": "br"
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "É considerada uma boa prática nomear funções construtoras com a primeira letra maiúscula."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eye",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eye",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Na função construtora, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "this purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não tem valor."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O valor "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "this purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se tornará o novo objeto quando um novo objeto for criado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Veja também:",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "JavaScript palavra-chave this",
+                                                "link": "/js/this"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Agora podemos usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Person()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para criar muitos novos objetos Person:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFather",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Person(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "50",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"blue\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myMother",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Person(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Sally\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Rally\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "48",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"green\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "mySister",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Person(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Anna\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Rally\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "18",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"green\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "mySelf",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Person(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Johnny\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Rally\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "22",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"green\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Valores padrão de propriedade"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valor",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " dado a uma propriedade será um "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "valor padrão",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " para todos os objetos criados pelo construtor:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eyecolor",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eyecolor",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".nationality",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"English\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicionando uma propriedade a um objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Adicionar uma propriedade a um objeto criado é fácil:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myFather",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".nationality",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"English\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A nova propriedade será adicionada a "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "myFather.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Não para quaisquer outros "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "objetos Person.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicionando uma propriedade a um construtor"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Você "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "NÃO"
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " pode adicionar uma nova propriedade a um construtor de objeto:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".nationality",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"English\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para adicionar uma nova propriedade, você deve adicioná-la à função construtora prototype:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".prototype.nationality",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"English\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Métodos de função construtora"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Uma função construtora também pode ter "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "métodos",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ":"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eyecolor",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "last",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".eyeColor",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "eyecolor",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".fullName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function() {",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 2
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".firstName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicionando um método a um objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Adicionar um método a um objeto criado é fácil:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myMother",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".changeName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O novo método será adicionado a "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "myMother.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Não para quaisquer outros "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "objetos Person.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Adicionando um método a um construtor"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você não pode adicionar um novo método a uma função construtora de objeto."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este código produzirá um TypeError:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".changeName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myMother",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "changeName",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<code style=\"color:#ff9999\">TypeError: myMother.changeName is not a function</code>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A adição de um novo método deve ser feita ao protótipo da função construtora:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtor:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "Person",
+                                            "color": "#90eaff"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".prototype.changeName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "this purple",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myMother",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "changeName",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Doe\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "A função changeName() atribui o valor de name à propriedade lastName da pessoa, substituindo this por myMother."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Construtores JavaScript integrados"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O JavaScript possui construtores integrados para todos os objetos nativos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de construtores:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Object()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Array()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Map()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 7
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Set()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 7
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Date()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 6
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new RegExp()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "new Function()"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um ​​novo objeto Object",
+                                            "spacesBefore": 2
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O objeto Math() não está na lista. Math é um objeto global. A palavra-chave new não pode ser usada no Math."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Você sabia?"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar objetos literais "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "{ }",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em vez de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Object()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar arrays literais "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "[ ]",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em vez de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Array()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar padrões literais "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "/()/",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em vez de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new RegExp()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar expressões de função "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "() {}",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em vez de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Function()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "\"\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// String primitiva",
+                                            "spacesBefore": 12
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Número primitivo",
+                                            "spacesBefore": 13
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "false"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Booleano primitivo",
+                                            "spacesBefore": 9
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "{};",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Objeto object",
+                                            "spacesBefore": 12
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "[];",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Objeto array",
+                                            "spacesBefore": 12
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "()",
+                                            "color": "#ffba6a"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Objeto regexp",
+                                            "spacesBefore": 11
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(){};",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Função",
+                                            "spacesBefore": 2
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa do objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa, acesse nosso:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa do objeto JavaScript.",
+                                "link": "/js/ref/obj/object"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos do objeto."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é a sintaxe correta para adicionar uma nova propriedade ao construtor do objeto Person?",
+                                "answers": ["Person.prototype.hometown = 'Roma';"],
+                                "options": ["Person.hometown = 'Roma';", "Person.prototype.hometown = 'Roma';", "new Person.hometown = 'Roma';", "Person['hometown'] = 'Roma';"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
