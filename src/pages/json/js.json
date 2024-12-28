@@ -27202,6 +27202,1446 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Exibição do objeto",
+                "link": "/js/object_display",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Como exibir objetos JavaScript?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Exibir um objeto JavaScript produzirá [object Object]."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "city",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"New York\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ";",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Algumas soluções para exibir objetos JavaScript são:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Exibindo as propriedades do objeto por nome"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Exibindo as propriedades do objeto em um loop"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Exibindo o objeto usando Object.values()"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Exibindo o objeto usando JSON.stringify()"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exibindo Propriedades do Objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As propriedades de um objeto podem ser exibidas como uma string:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "city",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"New York\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Exibindo propriedades"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\",\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\",\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".city;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Exibindo propriedades em um loop"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As propriedades de um objeto podem ser coletadas em um loop:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "city",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"New York\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Construindo um texto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "for"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "in",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[x]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Exibindo o texto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você deve usar "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "person[x]",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " no loop."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "person.x",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não funcionará (porque "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "x",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é a variável do loop)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando Object.values()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Object.values()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " cria um array a partir dos valores das propriedades:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "city",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"New York\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando uma array"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myArray",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Object.values(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Exibindo o texto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myArray",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando Object.entries()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Object.entries()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " simplifica o uso de objetos em loops:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{Bananas",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "300",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", Oranges",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "200",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", Apples",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "500",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ";",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "for"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[fruit, value]",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "of",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Object.entries(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ")) {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruit",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\": \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"<br>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando JSON.stringify()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Objetos JavaScript podem ser convertidos em uma string com o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "JSON.stringify();"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "JSON.stringify()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " está incluído no JavaScript e é compatível com todos os principais navegadores."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O resultado será uma string escrita em notação JSON:"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "{\"name\":\"John\",\"age\":50,\"city\":\"New York\"}"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Criando um objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "city",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"New York\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// \"Stringificando\" o objeto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myString",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "JSON.stringify(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// Exibindo a string"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myString;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa do objeto"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa, acesse nosso:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa do objeto JavaScript.",
+                                "link": "/js/ref/obj/object"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos do objeto."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Apenas um dos métodos a seguir é um método Object integrado, qual?",
+                                "answers": ["entries()"],
+                                "options": ["return()", "all()", "entries()", "methods()"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
