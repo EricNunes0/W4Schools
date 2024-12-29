@@ -13,6 +13,7 @@ import "./TutorialSectionsSearch.css";
 import "./TutorialSectionsTagsFlex.css";
 import "./TutorialSectionsTip.css";
 import "./TutorialSectionsMaps.css";
+import "./TutorialSectionsWarning.css";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";
 import TutorialHeader from "./TutorialHeader";
 import TutorialSectionMain from "./TutorialSectionMain";

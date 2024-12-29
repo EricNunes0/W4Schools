@@ -30719,6 +30719,1862 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Eventos",
+                "link": "/js/events",
+                "sections": [
+                    [
+                        {
+                            "tag": "span",
+                            "content": "Eventos HTML são "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "\"coisas\"",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " que acontecem aos elementos HTML."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Quando JavaScript é usado em páginas HTML, o JavaScript pode "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "\"reagir\"",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " a esses eventos."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Eventos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Um evento HTML pode ser algo que o navegador faz ou algo que um usuário faz."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Aqui estão alguns exemplos de eventos HTML:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Uma página da web HTML terminou de carregar"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um campo de entrada HTML foi alterado"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Um botão HTML foi clicado"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Muitas vezes, quando os eventos acontecem, você pode querer fazer alguma coisa."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O JavaScript permite executar código quando eventos são detectados."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "O HTML permite que atributos do manipulador de eventos, "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "com código JavaScript",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ", sejam adicionados aos elementos HTML."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com aspas simples:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "<",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "elemento",
+                                            "color": "#f565c5",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "evento",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "'",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "código JavaScript",
+                                            "color": "#f5f565",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "'",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ">",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com aspas duplas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "<",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "elemento",
+                                            "color": "#f565c5",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "evento",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "código JavaScript",
+                                            "color": "#f5f565",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ">",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "No exemplo a seguir, um atributo "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "onclick green"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (com código) é adicionado a um elemento "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "button tag open"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de evento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "document.getElementById('demo').innerHTML = Date()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Que horas são?",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No exemplo acima, o código JavaScript altera o conteúdo do elemento com id=\"demo\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No próximo exemplo, o código altera o conteúdo do seu próprio elemento (usando this.innerHTML):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de evento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "this.innerHTML = Date()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Que horas são?",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "O código JavaScript geralmente tem várias linhas. É mais comum ver atributos de eventos chamando funções:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de evento:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "button tag",
+                                            "attributes": {
+                                                "index": 2,
+                                                "items": [
+                                                    {
+                                                        "name": "onclick",
+                                                        "value": "displayDate()",
+                                                        "valueIndex": 3
+                                                    }
+                                                ]
+                                            },
+                                            "content": "Que horas são?",
+                                            "contentIndex": -3
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "HTML Eventos comuns"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Aqui está uma lista de alguns eventos HTML comuns:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Eventos",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "25%"
+                                            }
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "75%"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onchange"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Um elemento HTML foi alterado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onclick"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O usuário clica em um elemento HTML"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onmouseover"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O usuário move o mouse sobre um elemento HTML"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onmouseout"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O usuário afasta o mouse de um elemento HTML"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onkeydown"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O usuário pressiona uma tecla do teclado"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "onload"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O navegador terminou de carregar a página"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A lista é muito mais longa: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "Referência de Eventos JavaScript HTML DOM.",
+                                                "link": "/js/ref/dom/obj/event"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Manipuladores de eventos JavaScript"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os manipuladores de eventos podem ser usados ​​para manipular e verificar a entrada do usuário, as ações do usuário e as ações do navegador:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Coisas que devem ser feitas sempre que uma página carrega"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Coisas que devem ser feitas quando a página é fechada"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ação que deve ser executada quando um usuário clica em um botão"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Conteúdo que deve ser verificado quando um usuário insere dados"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "E mais..."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Muitos métodos diferentes podem ser usados ​​para permitir que o JavaScript funcione com eventos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Atributos de eventos HTML podem executar código JavaScript diretamente"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Atributos de eventos HTML podem chamar funções JavaScript"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode atribuir suas próprias funções de manipulador de eventos a elementos HTML"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Você pode impedir que eventos sejam enviados ou manipulados"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "E mais..."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Você aprenderá muito mais sobre eventos e manipuladores de eventos nos capítulos HTML DOM."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é o atributo de evento HTML correto para executar algo quando um usuário clica em um elemento?",
+                                "answers": ["onclick"],
+                                "options": ["ontap", "onmouseclick", "clickme", "onclick"]
+                            }
+                        }
+                    ]
+                ]
+            },
+            {
+                "title": "JS Strings",
+                "link": "/js/strings",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "span",
+                                        "content": "Strings servem para "
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": {
+                                            "text": "armazenar texto",
+                                            "style": {
+                                                "fontWeight": "bold"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "tag": "br"
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": "Strings são escritas "
+                                    },
+                                    {
+                                        "tag": "span",
+                                        "content": {
+                                            "text": "com aspas",
+                                            "style": {
+                                                "fontWeight": "bold"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Usando aspas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma string JavaScript contém zero ou mais caracteres escritos entre aspas."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"John Doe\""
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode usar aspas simples ou duplas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "carName1",
+                                            "value": "\"Volvo XC60\""
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aspas duplas",
+                                            "spacesBefore": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "carName2",
+                                            "value": "'Volvo XC60'"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Aspas simples",
+                                            "spacesBefore": 3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Strings criadas com aspas simples ou duplas funcionam da mesma forma."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Não há diferença entre elas."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Aspas dentro de aspas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode usar aspas dentro de uma string, desde que elas não correspondam às aspas ao redor da string:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "answer1",
+                                            "value": "\"It's alright\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "answer2",
+                                            "value": "\"O nome dele é 'Eric'\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "answer3",
+                                            "value": "'O nome dele é \"Eric\"'"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Template Strings"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings foram introduzidos com ES6 (JavaScript 2016)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings são strings entre crases (`Eexemplo de template string`)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings permitem aspas simples e duplas dentro de uma string:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de template string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "`O nome dele é \"Eric\"`"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Template strings não são suportados no Internet Explorer."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Tamanho da string"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para encontrar o comprimento de uma string, use a propriedade interna length:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "length",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.length;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Caracteres de escape"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Como as strings devem ser escritas entre aspas, o JavaScript interpretará mal esta string:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caractere de escape:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Somos os chamados \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Vikings",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" do norte.\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A string será cortada para \"Somos os chamados\"."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para resolver esse problema, você pode usar um caractere de escape de barra invertida."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O caractere de escape de barra invertida (\\) transforma caracteres especiais em caracteres de string:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Código"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Resultado"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\'"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "'"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Aspas simples"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\\""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "\""
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Aspas duplas"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\\\"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "\\"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Barra invertida"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caractere de escape:",
+                                "description": "\\\" insere aspas duplas em uma string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Somos os chamados",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\\\"",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Vikings",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\\\"",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "do norte.\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caractere de escape:",
+                                "description": "\\' insere aspas simples em uma string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"It",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\\'",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "s alright.\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de caractere de escape:",
+                                "description": "\\\\ insere uma barra invertida em uma string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"O caractere ",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\\\\",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "é chamado de barra invertida.\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Seis outras sequências de escape são válidas em JavaScript:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Código",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "25%"
+                                            }
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Resultado",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "75%"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\b"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Backspace"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\f"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Feed de formulário"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\n"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Nova linha"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\r"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorno de transporte"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\t"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Tabulador Horizontal"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "\\v"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Tabulador Vertical"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os 6 caracteres de escape acima foram originalmente projetados para controlar máquinas de escrever, teletipos e aparelhos de fax. Eles não fazem nenhum sentido em HTML."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Quebrando linhas longas"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para facilitar a leitura, os programadores geralmente gostam de evitar longas linhas de código."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Uma maneira segura de dividir uma "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "instrução",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " é após um operador:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de quebra de linha:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello Dolly!\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Uma maneira segura de quebrar uma "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "string",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " é usando a adição de strings:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de quebra de string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML ="
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "\"Dolly!\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Template Strings"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings foram introduzidos com ES6 (JavaScript 2016)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings são strings entre crases (`Eexemplo de template string`)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Template Strings permitem strings multilinhas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de template string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "`A rápida raposa",
+                                            "color": "#f5f565"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "marrom salta",
+                                            "color": "#f5f565"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "sobre o cachorro",
+                                            "color": "#f5f565"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "preguiçoso`",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Os template strings não são suportados no Internet Explorer."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Strings como objetos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Normalmente, strings JavaScript são valores primitivos, criados a partir de literais:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": "\"John\""
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Mas strings também podem ser definidas como objetos com a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de string como objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": "\"John\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "warning",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Não crie objetos String."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " complica o código e diminui a velocidade de execução."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Objetos string podem produzir resultados inesperados:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Ao usar o operador ==, x e y são iguais:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": "\"John\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Ao usar o operador ===, x e y NÃO são iguais:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": "\"John\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Observe a diferença entre (x==y) e (x===y)."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "(x == y) true (verdadeiro) ou false (falso)?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "(x === y) true (verdadeiro) ou false (falso)?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new String(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"John\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Comparar dois objetos JavaScript "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "sempre",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "false",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (falso)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa de string"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa de String, acesse:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa de string JavaScript.",
+                                "link": "/js/ref/obj/string"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos de string."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual das opções a seguir NÃO é uma string JavaScript legal?",
+                                "answers": ["\"\"Hello world!\"\""],
+                                "options": ["\"Hello world!\"", "\"\"Hello world!\"\"", "'Hello world!'", "`Hello world!`"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

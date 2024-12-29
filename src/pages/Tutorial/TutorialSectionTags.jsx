@@ -36,6 +36,7 @@ import Section from "../Sections/Section";
 import TutorialBootcamp from "./TutorialBootcamp";
 import TutorialSectionsSearch from "./TutorialSectionsSearch";
 import TutorialSectionsTips from "./TutorialSectionsTips";
+import TutorialSectionsWarnings from "./TutorialSectionsWarnings";
 
 export default function TutorialSectionTags(json, tag, content) {
     switch(tag) {
@@ -212,7 +213,7 @@ export default function TutorialSectionTags(json, tag, content) {
         case "tip":
             return (<TutorialSectionsTips content = {content}></TutorialSectionsTips>);
         case "warning":
-            return (<TutorialSectionsWarning><p>{content}</p></TutorialSectionsWarning>);
+            return (<TutorialSectionsWarnings content = {content}></TutorialSectionsWarnings>);
         default:
             return (
                 <div>
