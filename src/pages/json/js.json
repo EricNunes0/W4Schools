@@ -32575,6 +32575,2627 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Strings Métodos",
+                "link": "/js/string_methods",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "h2",
+                                        "content": "Métodos básicos de string"
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "content": "Strings Javascript são primitivas e imutáveis: todos os métodos de string produzem uma nova string sem alterar a string original."
+                                    },
+                                    {
+                                        "tag": "ul",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String length",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String charAt()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String charCodeAt()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String at()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String [ ]",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String slice()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String substring()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String substr()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "tag": "h2",
+                                        "content": "Veja também:"
+                                    },
+                                    {
+                                        "tag": "ul",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String Métodos de Pesquisa",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String Templates",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String toUpperCase()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String toLowerCase()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String concat()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String trim()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String trimStart()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String trimEnd()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String padStart()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String padEnd()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String repeat()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String replace()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String replaceAll()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "link",
+                                                            "text": "String split()",
+                                                            "link": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String Length"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A propriedade length retorna o comprimento de uma string:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de propriedade length:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "length",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.length;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Extraindo caracteres de string"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem 4 métodos para extrair caracteres de string:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O método at(posição)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método charAt(posição)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método charCodeAt(posição)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Usando acesso à propriedade [] como em arrays"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String charAt()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "charAt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o caractere em um índice (posição) especificado em uma string:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de método charAt():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"HELLO WORLD\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "char",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "charAt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String charCodeAt()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "charCodeAt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o código do caractere em um índice especificado em uma string:"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método retorna um código UTF-16 (um número inteiro entre 0 e 65535)."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de método charCodeAt():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"HELLO WORLD\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "char",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "charCodeAt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String at()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ES2022",
+                                                "link": "/js/2022"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " introduziu o método string "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "at()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de método at():",
+                                "description": "Obtendo a terceira letra do nome:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "const",
+                                            "name": "name",
+                                            "value": "\"W4schools\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "letter",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "at("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Obtendo a terceira letra do nome:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "const",
+                                            "name": "name",
+                                            "value": "\"W4schools\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "letter",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "name",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "at()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o caractere em um índice (posição) especificado em uma string."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "at()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é compatível com todos os navegadores modernos desde março de 2022:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "at()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma nova adição ao JavaScript."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Ele permite o uso de índices negativos, enquanto "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "charAt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Agora você pode usar "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "myString.at(-2)",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " em vez de "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "charAt(myString.length-2).",
+                                                "bold": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "at()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do ES2022."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O JavaScript 2022 (ES2022) é compatível com todos os navegadores modernos desde março de 2023:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 94"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 94"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 93"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 16.4"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 79"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2021"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2021"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Out 2021"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Out 2021"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acesso à propriedade [ ]"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de [ ]:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"HELLO WORLD\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "char",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O acesso à propriedade pode ser um pouco "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "imprevisível:",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "• Faz com que as strings pareçam arrays (mas não são)"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "• Se nenhum caractere for encontrado, [] retornará indefinido, enquanto charAt() retornará uma string vazia."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "• É somente leitura. str[0] = \"A\" não dá erro (mas não funciona!)"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de [ ]:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"HELLO WORLD\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"A\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Não dá erro, mas não funciona",
+                                            "spacesBefore": 4
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Extraindo partes de string"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Existem 3 métodos para extrair uma parte de uma string:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "slice(start, end)",
+                                        "fontWeight": "bold"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "substring(start, end)",
+                                        "fontWeight": "bold"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "substr(start, end)",
+                                        "fontWeight": "bold"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String slice()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "slice()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " extrai uma parte de uma string e retorna a parte extraída em uma nova string."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método usa 2 parâmetros: posição inicial e posição final (fim não incluído)."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de slice():",
+                                "description": "Cortando uma parte de uma string da posição 7 à posição 13:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "slice("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "7",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "13",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O JavaScript conta posições a partir de zero."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A primeira posição é 0."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A segunda posição é 1."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de slice():",
+                                "description": "Se você omitir o segundo parâmetro, o método cortará o restante da string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "slice("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "7",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de slice():",
+                                "description": "Se um parâmetro for negativo, a posição é contada a partir do final da string:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "slice("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "-12",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de slice():",
+                                "description": "Este exemplo corta uma parte de uma string da posição -12 à posição -6:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "slice("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "-12",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "-6",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String substring()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "substring()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é semelhante a "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "slice()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A diferença é que valores iniciais e finais menores que 0 são tratados como 0 em "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "substring()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de substring():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "str",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "str.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "substring("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "7",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "13",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se você omitir o segundo parâmetro, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "substring()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " cortará o resto da string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String substr()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "substr()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é semelhante a "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "slice()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "A diferença é que o segundo parâmetro especifica o comprimento da parte extraída."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de substr():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "str",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "str.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "substr("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "7",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ",",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "6",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se você omitir o segundo parâmetro, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "substr()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " cortará o resto da string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de substr():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "str",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "str.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "substr("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "7",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se o primeiro parâmetro for negativo, a posição conta a partir do final da string."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de substr():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "str",
+                                            "value": "\"Apple, Banana, Kiwi\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "part",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "str.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "substr("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "-4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Convertendo para maiúsculas e minúsculas"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma string é convertida para maiúscula com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "toUpperCase()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma string é convertida para minúscula com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "toLowerCase()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String toUpperCase()"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de toUpperCase():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"Hello World!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "toUpperCase();"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String toLowerCase()"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de toLowerCase():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"Hello World!\""
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// String",
+                                            "spacesBefore": 7
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "toLowerCase();"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// text2 é text1 convertido para inferior",
+                                            "spacesBefore": 2
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String concat()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "concat()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " une duas ou mais strings:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de concat():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"Hello\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text2",
+                                            "value": "\"World\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text3",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "concat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", text2);",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "concat()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " pode ser usado em vez do sinal de mais."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Essas duas linhas fazem o mesmo:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de concat():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"World!\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Hello\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".concat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"World!\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Todos os métodos de string retornam uma nova string. Eles não modificam a string original."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "De modo formal:"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Strings são imutáveis: Strings não podem ser alteradas, apenas substituídas."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String trim()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trim()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " remove espaços em branco de ambos os lados de uma string:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de trim():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"      Hello World!      \""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "trim();"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String trimStart()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2019",
+                                                "link": "/js/2019"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " adicionou o método String "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ao JavaScript."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " funciona como "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trim()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " mas remove espaços em branco apenas do início de uma string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de trimStart():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"      Hello World!      \""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "trimStart();"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "String "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é compatível com todos os navegadores modernos desde janeiro de 2020:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 66"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 79"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 61"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 12"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 50"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jan 2020"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2018"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String trimEnd()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2019",
+                                                "link": "/js/2019"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " adicionou o método String "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " ao JavaScript."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " funciona como "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trim()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " mas remove espaços em branco apenas do final de uma string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de trimEnd():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text1",
+                                            "value": "\"      Hello World!      \""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text1.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "trimEnd();"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "String "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "trimEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é compatível com todos os navegadores modernos desde janeiro de 2020:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 66"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 79"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 61"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 12"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 50"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jan 2020"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2018"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String Padding"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2017",
+                                                "link": "/js/2017"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " adicionou dois novos métodos de string ao JavaScript: "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para suportar preenchimento no início e no final de uma string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa de string"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa de String, acesse:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa de string JavaScript.",
+                                "link": "/js/ref/obj/string"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos de string."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual das opções a seguir NÃO é uma string JavaScript legal?",
+                                "answers": ["\"\"Hello world!\"\""],
+                                "options": ["\"Hello world!\"", "\"\"Hello world!\"\"", "'Hello world!'", "`Hello world!`"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
