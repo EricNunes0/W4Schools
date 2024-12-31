@@ -6483,9 +6483,9 @@ function App() {
 					<Route path = "strings" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Strings" pageTitle = "JavaScript Strings"></TutorialMain>)}></Page>
 					)}></Route>
-					{/* JS Strings Métodos */}
+					{/* JS Métodos de String */}
 					<Route path = "string_methods" element = {(
-						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Strings Métodos" pageTitle = "JavaScript Strings Métodos"></TutorialMain>)}></Page>
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Métodos de String" pageTitle = "JavaScript Métodos de String"></TutorialMain>)}></Page>
 					)}></Route>
 				</Route>
 				<Route path = "*" element = {(

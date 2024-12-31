@@ -32577,7 +32577,7 @@
                 ]
             },
             {
-                "title": "JS Strings Métodos",
+                "title": "JS Métodos de String",
                 "link": "/js/string_methods",
                 "sections": [
                     [
@@ -35163,6 +35163,2314 @@
                     [
                         {
                             "tag": "h2",
+                            "content": "String padStart()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " preenche uma string desde o início."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ele preenche uma string com outra string (várias vezes) até atingir um determinado comprimento."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padStart():",
+                                "description": "Preenchendo uma string com \"0\" até atingir o comprimento 4:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"5\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padStart("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"0\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padStart():",
+                                "description": "Preenchendo uma string com \"x\" até atingir o comprimento 4:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"5\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padStart("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"x\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um método de string."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para preencher um número, primeiro converta o número em uma string."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Veja o exemplo abaixo."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padStart():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "numb",
+                                            "value": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numb.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "toString();"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padStart("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"0\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2017.",
+                                                "link": "/js/2017"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES2017 é compatível com todos os navegadores modernos desde setembro de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 58"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 52"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 11"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 45"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2017"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padStart()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String padEnd()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " preenche uma string do final."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Ele preenche uma string com outra string (várias vezes) até atingir um determinado comprimento."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padEnd():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"5\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padEnd("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"0\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padEnd():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"5\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padEnd("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"x\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "padEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um método de string."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para preencher um número, primeiro converta o número em uma string."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Veja o exemplo abaixo."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de padEnd():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "numb",
+                                            "value": 5
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numb.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "toString();"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "padded",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "padEnd("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"0\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2017.",
+                                                "link": "/js/2017"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES2017 é compatível com todos os navegadores modernos desde setembro de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 58"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 52"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 11"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 45"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2017"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "padEnd()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String repeat()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O método repeat() retorna uma string com um número de cópias de uma string."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método repeat() retorna uma nova string."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O método repeat() não altera a string original."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de repeat():",
+                                "description": "Criando cópias de um texto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Hello world!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "result",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "repeat",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de repeat():",
+                                "description": "Criando cópias de um texto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Hello world!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "result",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "repeat",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "string",
+                                            "color": "#f0f0f0",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "repeat",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "contagem",
+                                            "color": "#c090fa",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Parâmetros"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Parâmetro",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "25%"
+                                            }
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "75%"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "contagem",
+                                            "italic": true
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Obrigatório. O número de cópias desejadas."
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Valor de retorno"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Tipo",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "25%"
+                                            }
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição",
+                                            "style": {
+                                                "textAlign": "left",
+                                                "width": "75%"
+                                            }
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "String"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Uma nova string contendo as cópias."
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "repeat() é um "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "recurso ES6",
+                                                "link": "/js/es6"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (JavaScript 2015)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES6 é totalmente compatível com todos os navegadores modernos desde junho de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 51"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 54"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 38"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2016"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "repeat() não é compatível com o Internet Explorer."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Substituindo o conteúdo da string"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " substitui um valor especificado por outro valor em uma string:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replace():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Visite a Microsoft!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "newText",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replace",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Microsoft\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"W4Schools\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não altera a string em que é chamado."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna uma nova string."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " substitui "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "apenas a primeira",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " correspondência."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Se você quiser substituir todas as correspondências, use uma expressão regular com o sinalizador /g definido. Veja exemplos abaixo."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " substitui "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "apenas a primeira",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " correspondência."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replace():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Visite a Microsoft!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "newText",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replace",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Microsoft\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"W4Schools\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Por padrão, o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replace()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " diferencia maiúsculas de minúsculas."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Escrever MICROSOFT (com letras maiúsculas) não funcionará:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replace():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Visite a Microsoft!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "newText",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replace",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"MICROSOFT\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"W4Schools\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Para substituir sem distinção entre maiúsculas e minúsculas, use uma "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "expressão regular",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " com um sinalizador /i (sem distinção entre maiúsculas e minúsculas):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replace():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Visite a Microsoft!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "newText",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replace",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "MICROSOFT",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "i",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"W4Schools\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Expressões regulares são escritas sem aspas."
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Para substituir todas as correspondências, use uma "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "expressão regular",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " com um sinalizador /g (correspondência global):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replace():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "text",
+                                            "value": "\"Visite a Microsoft e Microsoft!\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "newText",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replace",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Microsoft",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "g",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"W4Schools\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você aprenderá muito mais sobre expressões regulares no capítulo "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "Expressões Regulares JavaScript.",
+                                                "link": "/js/regexp"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "String replaceAll()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Em 2021, o JavaScript introduziu o método string "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replaceAll()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replaceAll():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replaceAll",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Cats\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Dogs\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replaceAll",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"cats\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"dogs\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "replaceAll()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " permite especificar uma expressão regular em vez de uma string a ser substituída."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Se o parâmetro for uma expressão regular, o sinalizador global (g) deverá ser definido, caso contrário, um TypeError será lançado."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de replaceAll():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replaceAll",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "Cats",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "g",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Dogs\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "replaceAll",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cats",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "/",
+                                            "color": "#ff5555"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "g",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"dogs\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "replaceAll()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ES2021.",
+                                                "link": "/js/2021"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "replaceAll()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não funciona no Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Convertendo uma String em um Array"
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Se quiser trabalhar com uma string como um array, você pode convertê-la em um array."
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "String split()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma string pode ser convertida em um array com o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "split()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de split():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "split",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\",\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "split",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\" \"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "split",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"|\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se o separador for omitido, o array retornado conterá toda a string no índice [0]."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se o separador for \"\", o array retornado será um array de caracteres únicos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de split():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text.",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "split",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
                             "content": "Referência completa de string"
                         },
                         {
@@ -35189,9 +37497,19 @@
                                 "id": 0,
                                 "type": "radio",
                                 "title": "Exercício",
-                                "description": "Qual das opções a seguir NÃO é uma string JavaScript legal?",
-                                "answers": ["\"\"Hello world!\"\""],
-                                "options": ["\"Hello world!\"", "\"\"Hello world!\"\"", "'Hello world!'", "`Hello world!`"]
+                                "description": "Considere a seguinte string e responda: Qual das seguintes afirmações retorna 'fun'?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": "'Having fun?'"
+                                        }
+                                    ]
+                                ],
+                                "answers": ["x.slice(7, 10)"],
+                                "options": ["x.slice(7, 10)", "x.substring(7, 9)", "x.substr(7, 10)"]
                             }
                         }
                     ]
