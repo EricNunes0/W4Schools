@@ -40302,6 +40302,396 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Números",
+                "link": "/js/numbers",
+                "sections": [
+                    [
+                        {
+                            "tag": "p",
+                            "content": "O JavaScript possui apenas um tipo de número. Os números podem ser escritos com ou sem decimais."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de números:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 3.14
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um número com decimais",
+                                            "spacesBefore": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "y",
+                                            "value": 3
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Um número com decimais",
+                                            "spacesBefore": 7
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Números extragrandes ou extrapequenos podem ser escritos com notação científica (expoente):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de números:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 123e5
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// 12300000",
+                                            "spacesBefore": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "y",
+                                            "value": 123e-5
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// 0.00123",
+                                            "spacesBefore": 5
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Números são sempre float de 64 bits"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao contrário de muitas outras linguagens de programação, JavaScript não define diferentes tipos de números, como inteiros, curtos, longos, ponto flutuante, etc."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os números JavaScript são sempre armazenados como números de ponto flutuante de precisão dupla, seguindo o padrão internacional IEEE 754."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Este formato armazena números em 64 bits, onde o número (a fração) é armazenado nos bits 0 a 51, o expoente nos bits 52 a 62 e o sinal no bit 63:"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Valor (também conhecido como Fração/Mantissa)"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Expoente"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Sinal"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "52 bits (0 - 51)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "11 bits (52 - 62)"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "1 bit (63)"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Precisão de Inteiros"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Inteiros (números sem ponto ou notação de expoente) têm precisão de até 15 dígitos."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de números:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 999999999999999
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// x será 999999999999999",
+                                            "spacesBefore": 4
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9999999999999999",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// y será 10000000000000000",
+                                            "spacesBefore": 3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O número máximo de decimais é 17."
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Precisão de Flutuantes"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "A aritmética de ponto flutuante nem sempre é 100% precisa:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0.2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0.1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Para resolver o problema acima, ajuda multiplicar e dividir:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0.2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "*",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0.1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "*",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ")",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "/",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa de números"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa de Number, acesse:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa de Number JavaScript.",
+                                "link": "/js/ref/obj/number"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos de Number."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Como são os back-ticks usados ​​para template strings em JavaScript?",
+                                "answers": ["` `"],
+                                "options": ["\" \"", "' '", "` `", "/ \\"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
