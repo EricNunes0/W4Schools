@@ -43704,48 +43704,67 @@
                     [
                         {
                             "tag": "h2",
-                            "content": "Referência completa de números"
+                            "content": "Decimais BigInt"
                         },
                         {
-                            "tag": "p",
-                            "content": "Para uma referência completa de Number, acesse:"
-                        },
-                        {
-                            "tag": "a",
+                            "tag": "row",
                             "content": {
-                                "type": "text",
-                                "text": "Referência completa de Number JavaScript.",
-                                "link": "/js/ref/obj/number"
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Um "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não pode ter decimais."
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         },
                         {
-                            "tag": "p",
-                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos de Number."
-                        }
-                    ],
-                    [
-                        {
-                            "tag": "exercise",
+                            "tag": "example",
                             "content": {
-                                "id": 0,
-                                "type": "radio",
-                                "title": "Exercício",
-                                "description": "Considere o seguinte código e responda: Qual será o resultado de z?",
+                                "title": "Exemplo de divisão BigInt:",
                                 "lines": [
                                     [
                                         {
-                                            "type": "js-var",
-                                            "keyword": "let",
-                                            "name": "x",
-                                            "value": 10
-                                        }
-                                    ],
-                                    [
+                                            "type": "code",
+                                            "code": "let"
+                                        },
                                         {
-                                            "type": "js-var",
-                                            "keyword": "let",
-                                            "name": "y",
-                                            "value": 20
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
                                         }
                                     ],
                                     [
@@ -43755,7 +43774,7 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "z",
+                                            "code": "y",
                                             "color": "#f0f0f0",
                                             "spacesBefore": 1
                                         },
@@ -43772,19 +43791,756 @@
                                         },
                                         {
                                             "type": "code",
-                                            "code": "sum sign",
+                                            "code": "/",
                                             "spacesBefore": 1
                                         },
                                         {
                                             "type": "content",
-                                            "code": "y;",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "Erro: Não é possível misturar BigInt e outros tipos, use conversão explícita."
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de divisão BigInt:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
                                             "color": "#f0f0f0",
                                             "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x)",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "/",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "BigInt hexadecimal, octal e binário"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também pode ser escrito em notação hexadecimal, octal ou binária:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de hexadecimal, octal e binário:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "hex",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0x20000000000003",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "oct",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0o400000000000000003",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "bin",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0b100000000000000000000000000000000000000000000000000011",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Curiosidade de Precisão"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O arredondamento pode comprometer a segurança do programa:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de MAX_SAFE_INTEGER:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "9007199254740992",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "===",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9007199254740993",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// retorna true (verdadeiro)!!!"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é compatível com todos os navegadores desde setembro de 2020:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 67"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 79"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 68"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 14"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 54"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2018"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jan 2020"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jul 2019"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2020"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2018"
                                         }
                                     ]
                                 ],
-                                "answers": ["30"],
-                                "options": ["30", "1020", "30.00"]
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Inteiros Seguros Mínimos e Máximos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ES6",
+                                                "link": "/js/es6"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " adicionou propriedades max e min ao objeto Number:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "MAX_SAFE_INTEGER purple"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "MIN_SAFE_INTEGER purple"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de MAX_SAFE_INTEGER:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MAX_SAFE_INTEGER",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de MIN_SAFE_INTEGER:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MIN_SAFE_INTEGER",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Novos métodos de Number"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ES6",
+                                                "link": "/js/es6"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também adicionou 2 novos métodos ao objeto Number:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isInteger()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isSafeInteger()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O método Number.isInteger()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isInteger()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "true"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se o argumento for um número inteiro."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de isInteger():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10.5",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O método Number.isSafeInteger()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Um número inteiro seguro é um número inteiro que pode ser representado exatamente como um número de precisão dupla."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isSafeInteger()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "true"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se o argumento for um número inteiro seguro."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de isSafeInteger():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isSafeInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isSafeInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "12345678901234567890",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Inteiros seguros são todos números inteiros de -(2⁵³ - 1) a +(2⁵³ - 1)."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isto é seguro: 9007199254740991."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isto não é seguro: 9007199254740992."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é uma sintaxe JavaScript legal para criar um número BigInt?",
+                                "answers": ["1234567890123456789n"],
+                                "options": ["1234567890123456789m", "1234567890123456789max", "1234567890123456789n"]
                             }
                         }
                     ]
