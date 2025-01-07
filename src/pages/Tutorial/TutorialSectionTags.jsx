@@ -186,6 +186,9 @@ export default function TutorialSectionTags(json, tag, content) {
                     case "ol": case "ul":
                         items.push(<TutorialSectionsList tag = {item.tag} content = {item.content}></TutorialSectionsList>);
                         break;
+                    case "row":
+                        items.push(<TutorialSectionsRow content = {item.content}></TutorialSectionsRow>);
+                        break;
                     case "span":
                         items.push(<TutorialSectionsParagraphSpan content = {item.content}></TutorialSectionsParagraphSpan>);
                         break;

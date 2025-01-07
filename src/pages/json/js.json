@@ -43044,6 +43044,751 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS BigInt",
+                "link": "/js/bigint",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "row",
+                                        "content": {
+                                            "items": [
+                                                {
+                                                    "type": "multiple",
+                                                    "codes": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Variáveis ​​JavaScript "
+                                                        },
+                                                        {
+                                                            "type": "code",
+                                                            "code": "BigInt cyan"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": " são usadas para armazenar valores inteiros grandes que são grandes demais para serem representados por um número JavaScript normal."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Precisão de inteiro"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os inteiros JavaScript são precisos apenas até 15 dígitos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de precisão de inteiros:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 999999999999999
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9999999999999999",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Em JavaScript, todos os números são armazenados em formato de ponto flutuante de 64 bits (padrão IEEE 754)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com este padrão, números inteiros grandes não podem ser representados com exatidão e serão arredondados."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por causa disso, JavaScript só pode representar números inteiros com segurança:"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Até "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "9007199254740991",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " +(2⁵³-1)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "e"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Até "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "-9007199254740991",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " -(2⁵³-1)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Valores inteiros fora desse intervalo perdem precisão."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Como criar um BigInt"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Para criar um "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ", acrescente n ao final de um número inteiro ou chame "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de BigInt:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 999999999999999
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9999999999999999",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de BigInt:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1234567890123456789012345",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "BigInt(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1234567890123456789012345",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "BigInt: um novo tipo de dados"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O tipo JavaScript de "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é \"bigint\":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de BigInt:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "BigInt(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "999999999999999",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "type",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "typeof",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é o segundo tipo de dados numéricos em JavaScript (depois de \"number\")."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Com "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " o número total de tipos de dados suportados em JavaScript é 8:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "ol",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "String"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Number"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Bigint"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Boolean"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Undefined"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Null"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Symbol"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Object"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Operadores BigInt"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Operadores que podem ser usados ​​em um número JavaScript também podem ser usados ​​em um "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de multiplicação BigInt:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9007199254740995",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9007199254740995",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "n",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "*",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Aritmética entre "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é permitida (a conversão de tipo perde informações)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O deslocamento à direita não assinado (>>>) não pode ser feito em um "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "BigInt cyan"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (ele não possui largura fixa)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Referência completa de números"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Para uma referência completa de Number, acesse:"
+                        },
+                        {
+                            "tag": "a",
+                            "content": {
+                                "type": "text",
+                                "text": "Referência completa de Number JavaScript.",
+                                "link": "/js/ref/obj/number"
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A referência contém descrições e exemplos de todas as propriedades e métodos de Number."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Considere o seguinte código e responda: Qual será o resultado de z?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "x",
+                                            "value": 10
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "y",
+                                            "value": 20
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "z",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ],
+                                "answers": ["30"],
+                                "options": ["30", "1020", "30.00"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }

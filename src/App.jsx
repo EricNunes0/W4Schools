@@ -6499,6 +6499,10 @@ function App() {
 					<Route path = "numbers" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Números" pageTitle = "JavaScript Números"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS BigInt */}
+					<Route path = "bigint" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS BigInt" pageTitle = "JavaScript BigInt"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
