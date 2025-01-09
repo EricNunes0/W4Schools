@@ -45641,14 +45641,1264 @@
                     ],
                     [
                         {
+                            "tag": "h2",
+                            "content": "Método Number() usado em datas"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " também pode converter uma data em um número."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"1970-01-01\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "));",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Date()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o número de milissegundos desde 1.1.1970."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O número de milissegundos entre 1970-01-02 e 1970-01-01 é 86400000:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"1970-01-02\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "));",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"2017-09-30\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "));",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método parseInt()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "parseInt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " analisa uma string e retorna um número inteiro."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Espaços são permitidos."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Apenas o primeiro número é retornado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de parseInt():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"-10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"-10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 20 30\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 years\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"years 10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se o número não puder ser convertido, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "NaN"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (Not a Number) será retornado."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método parseFloat()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "parseFloat()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " analisa uma string e retorna um número."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Espaços são permitidos."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Apenas o primeiro número é retornado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de parseFloat():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 20 30\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 years\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"years 10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se o número não puder ser convertido, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "NaN"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (Not a Number) será retornado."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Métodos de objetos de números"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Esses "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "métodos de objeto",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": " pertencem ao objeto "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "Number",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": "."
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "br"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Método"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Number.isInteger()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna verdadeiro se o argumento for um número inteiro"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Number.isSafeInteger()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna verdadeiro se o argumento for um número inteiro seguro"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Number.parseFloat()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Converte uma string em um número"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Number.parseInt()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Converte uma string em um número inteiro"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Métodos de números não podem ser usados ​​em variáveis!",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Os métodos numéricos acima pertencem ao "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "objeto Number.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Esses métodos só podem ser acessados ​​como "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isInteger()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Usar X.isInteger() onde X é uma variável resultará em um erro:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "TypeError X.isInteger is not a function.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método Number.isInteger()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isInteger()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "true"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se o argumento for um número inteiro."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.isInteger():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10.5",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método Number.isSafeInteger()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Um número inteiro seguro é um número inteiro que pode ser representado exatamente como um número de precisão dupla."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.isSafeInteger()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "true"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " se o argumento for um número inteiro seguro."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.isSafeInteger():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isSafeInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.isSafeInteger("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "12345678901234567890",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Inteiros seguros são todos números inteiros de -(2⁵³ - 1) a +(2⁵³ - 1)."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isto é seguro: 9007199254740991."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isto não é seguro: 9007199254740992."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método Number.parseFloat()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.parseFloat()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " analisa uma string e retorna um número."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Espaços são permitidos."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Apenas o primeiro número é retornado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.parseFloat():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 20 30\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 years\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseFloat("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"years 10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se o número não puder ser convertido, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "NaN"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (Not a Number) será retornado."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Os métodos de "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "Number",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.parseInt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.parseFloat()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são iguais aos"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "métodos "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "globais",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "parseInt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "parseFloat()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O objetivo é a modularização de globais (para facilitar o uso do mesmo código JavaScript fora do navegador)."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método Number.parseInt()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.parseInt()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " analisa uma string e retorna um número inteiro."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Espaços são permitidos."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Apenas o primeiro número é retornado:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.parseInt():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"-10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"-10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10.33\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 20 30\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"10 years\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "Number.parseInt("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"years 10\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Se o número não puder ser convertido, "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "NaN"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (Not a Number) será retornado."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Referência completa de Number",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para obter uma referência completa do número, visite nosso:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa do número JavaScript.",
+                                                "link": "/js/ref/obj/number"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A referência contém descrições e exemplos de todas as propriedades e métodos de Number."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
                             "tag": "exercise",
                             "content": {
                                 "id": 0,
                                 "type": "radio",
                                 "title": "Exercício",
-                                "description": "Qual é uma sintaxe JavaScript legal para criar um número BigInt?",
-                                "answers": ["1234567890123456789n"],
-                                "options": ["1234567890123456789m", "1234567890123456789max", "1234567890123456789n"]
+                                "description": "Qual é um método JavaScript legal para retornar um número como uma string?",
+                                "answers": ["toString()"],
+                                "options": ["intToString()", "toString()", "stringify()"]
                             }
                         }
                     ]
