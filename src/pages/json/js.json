@@ -46903,6 +46903,943 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Propriedades de Números",
+                "link": "/js/number_properties",
+                "sections": [
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades de números"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Propriedade"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "EPSILON"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "A diferença entre 1 e o menor número > 1."
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "MAX_VALUE"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O maior número possível em JavaScript"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "MIN_VALUE"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O menor número possível em JavaScript"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "MAX_SAFE_INTEGER"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O número inteiro seguro máximo (2⁵³ - 1)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "MIN_SAFE_INTEGER"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "O número inteiro seguro minímo -(2⁵³ - 1)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "POSITIVE_INFINITY"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Infinito (retornado no estouro)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "NEGATIVE_INFINITY"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Infinito negativo (retornado no estouro)"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "NaN"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Um valor \"Não é um número\""
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript EPSILON"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.EPSILON"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é a diferença entre o menor número de ponto flutuante maior que 1 e 1."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.EPSILON:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.EPSILON",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.EPSILON"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ES6.",
+                                                "link": "/js/es6"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Não funciona no Internet Explorer."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript MAX_VALUE"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MAX_VALUE"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma constante que representa o maior número possível em JavaScript."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.MAX_VALUE:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MAX_VALUE",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Propriedades de número não podem ser usadas em variáveis",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "As propriedades numéricas pertencem ao "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "objeto Number.",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Essas propriedades só podem ser acessadas como "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MAX_VALUE"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Usar x.MAX_VALUE, onde x é uma variável ou um valor, retornará "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "undefined"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.MAX_VALUE:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "6",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "x.MAX_VALUE",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript MIN_VALUE"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MIN_VALUE"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma constante que representa o menor número possível em JavaScript."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.MIN_VALUE:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MIN_VALUE",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript MAX_SAFE_INTEGER"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MAX_SAFE_INTEGER"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " representa o número inteiro seguro máximo em JavaScript."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MAX_SAFE_INTEGER"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é (2⁵³ - 1)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.MAX_SAFE_INTEGER:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MAX_SAFE_INTEGER",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript MIN_SAFE_INTEGER"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MIN_SAFE_INTEGER"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " representa o número inteiro seguro mínimo em JavaScript."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "Number.MIN_SAFE_INTEGER"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é -(2⁵³ - 1)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.MIN_SAFE_INTEGER:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.MIN_SAFE_INTEGER",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "MAX_SAFE_INTEGER purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " e "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "MIN_SAFE_INTEGER purple"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " são recursos do"
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ES6.",
+                                                "link": "/js/es6"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Eles não funcionam no Internet Explorer."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript POSITIVE_INFINITY"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.POSITIVE_INFINITY:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.POSITIVE_INFINITY",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.POSITIVE_INFINITY:",
+                                "description": "POSITIVE_INFINITY é retornado em caso de estouro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "/",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript NEGATIVE_INFINITY"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.NEGATIVE_INFINITY:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.NEGATIVE_INFINITY",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.NEGATIVE_INFINITY:",
+                                "description": "NEGATIVE_INFINITY é retornado em caso de estouro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "-1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "/",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "JavaScript NaN - Not a Number"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "NaN"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é uma palavra reservada em JavaScript para um número que não é válido."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.NaN:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Number.NaN",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Number.NaN:",
+                                "description": "Tentando fazer aritmética com uma string não numérica resultará em NaN (não é um número):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "100",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "/",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Referência completa de Number",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para obter uma referência completa do número, visite nosso:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa do número JavaScript.",
+                                                "link": "/js/ref/obj/number"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A referência contém descrições e exemplos de todas as propriedades e métodos de Number."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é o nome da propriedade para retornar o maior número possível em JavaScript?",
+                                "answers": ["MAX_VALUE"],
+                                "options": ["POSSIBLE_MAX", "MAX_POSSIBLE", "MAX_VALUE", "MAX_POSITIVE"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
