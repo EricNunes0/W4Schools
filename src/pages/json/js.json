@@ -47840,6 +47840,2505 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Arrays",
+                "link": "/js/arrays",
+                "sections": [
+                    [
+                        {
+                            "tag": "info",
+                            "content": {
+                                "items": [
+                                    {
+                                        "tag": "p",
+                                        "content": "Um array é uma variável especial que pode conter mais de um valor:"
+                                    },
+                                    {
+                                        "tag": "example",
+                                        "content": {
+                                            "exampleHide": true,
+                                            "lines": [
+                                                [
+                                                    {
+                                                        "type": "code",
+                                                        "code": "const"
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "cars",
+                                                        "color": "#c090fa",
+                                                        "spacesBefore": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "equal sign",
+                                                        "spacesBefore": 1
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "[",
+                                                        "color": "#f0f0f0",
+                                                        "spacesBefore": 1
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "\"Saab\"",
+                                                        "color": "#f5f565"
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "comma"
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "\"Volvo\"",
+                                                        "color": "#f5f565",
+                                                        "spacesBefore": 1
+                                                    },
+                                                    {
+                                                        "type": "code",
+                                                        "code": "comma"
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "\"BMW\"",
+                                                        "color": "#f5f565",
+                                                        "spacesBefore": 1
+                                                    },
+                                                    {
+                                                        "type": "content",
+                                                        "code": "];",
+                                                        "color": "#f0f0f0"
+                                                    }
+                                                ]
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Por que usar arrays?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você tiver uma lista de itens (uma lista de nomes de carros, por exemplo), armazenar os carros em variáveis ​​únicas poderia ser assim:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "car1",
+                                            "value": "\"Saab\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "car2",
+                                            "value": "\"Volvo\""
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "js-var",
+                                            "keyword": "let",
+                                            "name": "car3",
+                                            "value": "\"BMW\""
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "No entanto, e se você quiser percorrer os carros e encontrar um específico? E se você não tivesse 3 carros, mas 300?"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A solução é uma array!"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Uma array pode conter muitos valores sob um único nome e você pode acessar os valores referindo-se a um número de índice."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Criando uma array"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Usar um array literal é a maneira mais fácil de criar um array JavaScript."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Sintaxe:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "nome_do_array",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "item1",
+                                            "color": "#f0f0f0",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "item2",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "...",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "É uma prática comum declarar arrays com a palavra-chave "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Saiba mais sobre "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "const"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " com arrays no capítulo: "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "JS Array Const.",
+                                                "link": "/js/array_const"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Espaços e quebras de linha não são importantes. Uma declaração pode abranger várias linhas:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você também pode criar um array e depois fornecer os elementos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[];",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando a palavra-chave new"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O exemplo a seguir também cria um Array e atribui valores a ele:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de new Array():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Array(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os dois exemplos acima fazem exatamente o mesmo."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Não há necessidade de usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "new Array()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para simplicidade, legibilidade e velocidade de execução, use o método literal de array."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acessando Elementos do Array"
+                        },
+                        {
+                            "tag": "span",
+                            "content": "Você acessa um elemento do array referindo-se ao "
+                        },
+                        {
+                            "tag": "span",
+                            "content": {
+                                "text": "número do índice",
+                                "style": {
+                                    "fontWeight": "bold"
+                                }
+                            }
+                        },
+                        {
+                            "tag": "span",
+                            "content": ":"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "car",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os índices de um array começam com 0."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "[0] é o primeiro elemento. [1] é o segundo elemento."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Alterando um elemento de array"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Esta declaração altera o valor do primeiro elemento em cars:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Opel\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Opel\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Convertendo um array em uma string"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método JavaScript "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "toString()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " converte um array em uma string de valores de array (separados por vírgula)."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".toString();"
+                                        }
+                                    ]
+                                ],
+                                "results": {
+                                    "title": "Resultado:",
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<span style=\"color:#f0f0f0;\">Banana,Orange,Apple,Mango</span>"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acesse o array completo"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Com JavaScript, o array completo pode ser acessado referindo-se ao nome do array:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Saab\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Volvo\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"BMW\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Arrays são objetos"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Arrays são um tipo especial de objetos."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O operador "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "typeof"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "em JavaScript retorna \"object\" para arrays."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Porém, arrays JavaScript são melhor descritos como arrays."
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Arrays usam "
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": "números",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para acessar seus \"elementos\"."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Neste exemplo, person[0] retorna John:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Eric\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Nunes\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "46",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os objetos usam nomes para acessar seus \"membros\". Neste exemplo, person.firstName retorna John:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de objeto:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "person",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "{firstName",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Eric\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", lastName",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Nunes\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ", age",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "colon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "46",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "};",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Elementos do array podem ser objetos"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Variáveis ​​JavaScript podem ser objetos. Matrizes são tipos especiais de objetos."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Por causa disso, você pode ter variáveis ​​de tipos diferentes no mesmo Array."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Você pode ter objetos em um Array. Você pode ter funções em um Array. Você pode ter arrays em um Array:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myArray",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Date.now",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myArray",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "myArray",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myCars",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Propriedades e métodos de array"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A verdadeira força dos arrays JavaScript são as propriedades e métodos integrados do array:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".length",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Retorna o número de elementos",
+                                            "spacesBefore": 3
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "cars",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "sort",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "()",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// Classifica o array",
+                                            "spacesBefore": 3
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os métodos de array serão abordados nos próximos capítulos."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "A propriedade length"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A propriedade length de um array retorna o comprimento de um array (o número de elementos do array)."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de propriedade length:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "length",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".length;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "A propriedade length é sempre um a mais que o índice mais alto da matriz."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acessando o primeiro elemento da array"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruit",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Acessando o último elemento da array"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruit",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".length",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "-",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Elementos da array em loop"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Uma maneira de percorrer um array é usar um loop "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "for"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": ":"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fLen",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".length;",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"<ul>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "for"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "i",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "0",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "i",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow left pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fLen; i",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "++"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"<li>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[i]",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"</li>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"</ul>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você também pode usar a função "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Array.forEach()"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de array:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Banana\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"<ul>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ".",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "forEach",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"</ul>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "null",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "text",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "+=",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"<li>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "sum sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"</li>\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é o nome da propriedade para retornar o maior número possível em JavaScript?",
+                                "answers": ["MAX_VALUE"],
+                                "options": ["POSSIBLE_MAX", "MAX_POSSIBLE", "MAX_VALUE", "MAX_POSITIVE"]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
