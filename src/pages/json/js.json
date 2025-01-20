@@ -59321,12 +59321,1447 @@
                     ],
                     [
                         {
+                            "tag": "h2",
+                            "content": "Array find()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "find()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o valor do primeiro elemento do array que passa em uma função de teste."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo encontra (retorna o valor) do primeiro elemento maior que 18:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de find():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numbers",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "16",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "25",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "29",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numbers",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".find("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "index",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "array",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "18",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Observe que a função leva 3 argumentos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O valor do item"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O índice do item"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A própria array"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "find()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2016.",
+                                                "link": "/js/2016"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES6 é totalmente compatível com todos os navegadores modernos desde junho de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 51"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 54"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 38"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2016"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "find()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Array findIndex()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "findIndex()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna o índice do primeiro elemento do array que passa em uma função de teste."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Este exemplo encontra o índice do primeiro elemento maior que 18:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de findIndex():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numbers",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "16",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "25",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "29",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "first",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "numbers",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".findIndex("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myFunction",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "index",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "array",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "value",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "18",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Observe que a função leva 3 argumentos:"
+                        },
+                        {
+                            "tag": "ul",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "O valor do item"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O índice do item"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A própria array"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "findIndex()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2016.",
+                                                "link": "/js/2016"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES6 é totalmente compatível com todos os navegadores modernos desde junho de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 51"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 54"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 38"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2016"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "findIndex()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Array findLast()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "ES2023 adicionou o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "findLast()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " que começará no final de um array e retornará o valor do primeiro elemento que satisfaça uma condição."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de findLast():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "temp",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "27",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "28",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "42",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "35",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "high",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "temp",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".findLast("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "=>",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "findLast()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do ES2023."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "É compatível com todos os navegadores modernos desde julho de 2023:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 110"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 110"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 115"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 16.4"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 96"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Fev 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Fev 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jul 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2023"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Array findLastIndex()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "findLastIndex()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " encontra o índice do último elemento que satisfaz uma condição."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de findLastIndex():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "temp",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "27",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "28",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "42",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "35",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "30",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "pos",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "temp",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".findLastIndex("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "=>",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "findLastIndex()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do ES2023."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "É compatível com todos os navegadores modernos desde julho de 2023:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 110"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 110"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 115"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 16.4"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 96"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Fev 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Fev 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jul 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2023"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2023"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Referência completa de array",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para uma referência completa do Array, acesse:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de array JavaScript.",
+                                                "link": "/js/ref/obj/array"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A referência contém descrições e exemplos de todas as propriedades e métodos do Array."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
                             "tag": "exercise",
                             "content": {
                                 "id": 0,
                                 "type": "radio",
                                 "title": "Exercício",
-                                "description": "Depois de executar o seguinte código, responda: Como será a array de fruits?",
+                                "description": "Depois de executar o seguinte código, qual será o resultado de x?",
                                 "lines": [
                                     [
                                         {
@@ -59352,7 +60787,7 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "'Banana'",
+                                            "code": "'Maçã'",
                                             "color": "#f5f565"
                                         },
                                         {
@@ -59371,7 +60806,7 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "'Maçã'",
+                                            "code": "'Manga'",
                                             "color": "#f5f565",
                                             "spacesBefore": 1
                                         },
@@ -59383,18 +60818,44 @@
                                     ],
                                     [
                                         {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
                                             "type": "content",
-                                            "code": "fruits",
-                                            "color": "#c090fa"
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
                                         },
                                         {
                                             "type": "code",
-                                            "code": ".pop();"
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".indexOf("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "'Laranja'",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
                                         }
                                     ]
                                 ],
-                                "answers": ["['Banana', 'Laranja']"],
-                                "options": ["['', 'Banana', 'Laranja', 'Maçã']", "['Banana', 'Laranja']", "['Laranja', 'Maçã']"]
+                                "answers": ["1"],
+                                "options": ["0", "1", "true"]
                             }
                         }
                     ]
