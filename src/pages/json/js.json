@@ -59016,6 +59016,311 @@
                     ],
                     [
                         {
+                            "tag": "h2",
+                            "content": "Array includes()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "ECMAScript 2016 introduziu o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "includes()"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Isso nos permite verificar se um elemento está presente em um array (incluindo NaN, ao contrário de indexOf)."
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de includes():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Laranja\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "fruits",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".includes("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "comment",
+                                            "code": "// retorna true",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h4",
+                            "content": "Sintaxe"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "array",
+                                            "color": "#c090fa",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".includes("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "item-de-pesquisa",
+                                            "color": "#c090fa",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ")",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Array.includes() permite verificar valores NaN. Ao contrário de Array.indexOf()."
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "includes()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um recurso do "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "ECMAScript 2016.",
+                                                "link": "/js/2016"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES 2016 é totalmente compatível com todos os navegadores modernos desde março de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 52"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 52"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10.1"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 39"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Jul 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mar 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Aug 2016"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "includes()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
                             "tag": "exercise",
                             "content": {
                                 "id": 0,
