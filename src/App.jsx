@@ -6523,6 +6523,10 @@ function App() {
 					<Route path = "array_search" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Pesquisa de Array" pageTitle = "JavaScript Pesquisa de Array"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Classificação de Array */}
+					<Route path = "array_sort" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Classificação de Array" pageTitle = "JavaScript Classificação de Array"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
