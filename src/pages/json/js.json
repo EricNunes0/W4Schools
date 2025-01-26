@@ -63155,6 +63155,582 @@
                     ],
                     [
                         {
+                            "tag": "h2",
+                            "content": "Encontre Min ou Max com sort()"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Depois de classificar uma array, você pode usar o índice para obter os valores mais altos e mais baixos."
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de classificação em ordem crescente:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "points",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "100",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "25",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "points",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".sort("
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "a",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "b",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "return"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "a",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "-",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "b",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "});",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// agora points[0] contém o valor mais baixo"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// e points[points.length-1] contém o valor mais alto"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de classificação em ordem decrescente:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "points",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "40",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "100",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "5",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "25",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "10",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "content",
+                                            "code": "points",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".sort("
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "a",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "b",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "return"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "b",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "-",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "a",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "});",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// agora points[0] contém o valor mais alto"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "comment",
+                                            "code": "// e points[points.length-1] contém o valor mais baixo"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "Classificar um array inteiro é um método muito ineficiente se você deseja apenas encontrar o valor mais alto (ou mais baixo)."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando Math.min() em um array"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Math.min.apply"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para encontrar o número mais baixo em uma array:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Math.min.apply():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myArrayMin",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "arr",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Math.min.apply(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "null purple"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "arr",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Math.min.apply(null, [1, 2, 3]) é equivalente a Math.min(1, 2, 3)."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Usando Math.max() em um array"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Você pode usar "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "Math.max.apply"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " para encontrar o número mais alto em uma array:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de Math.max.apply():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myArrayMin",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "arr",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "Math.max.apply(",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "null purple"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "arr",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Math.max.apply(null, [1, 2, 3]) é equivalente a Math.max(1, 2, 3)."
+                        }
+                    ],
+                    [
+                        {
                             "tag": "exercise",
                             "content": {
                                 "id": 0,
