@@ -69749,12 +69749,14 @@
                     ],
                     [
                         {
-                            "tag": "exercise",
+                            "tag": "h2",
+                            "content": "Array.entries()"
+                        },
+                        {
+                            "tag": "example",
                             "content": {
-                                "id": 0,
-                                "type": "radio",
-                                "title": "Exercício",
-                                "description": "Depois de executar o seguinte código, qual será o resultado da array \"fruits\"?",
+                                "title": "Exemplo de Array.entries():",
+                                "description": "Criando um Array Iterator e, em seguida, iterando sobre os pares chave/valor:",
                                 "lines": [
                                     [
                                         {
@@ -69780,7 +69782,7 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "'Maçã'",
+                                            "code": "\"Banana\"",
                                             "color": "#f5f565"
                                         },
                                         {
@@ -69789,7 +69791,7 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "'Laranja'",
+                                            "code": "\"Laranja\"",
                                             "color": "#f5f565",
                                             "spacesBefore": 1
                                         },
@@ -69799,7 +69801,17 @@
                                         },
                                         {
                                             "type": "content",
-                                            "code": "'Banana'",
+                                            "code": "\"Maçã\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Manga\"",
                                             "color": "#f5f565",
                                             "spacesBefore": 1
                                         },
@@ -69811,18 +69823,1137 @@
                                     ],
                                     [
                                         {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "f",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
                                             "type": "content",
                                             "code": "fruits",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".entries();"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "for"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "of",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "f",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "document.getElementById(\"demo\").innerHTML +=",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x;",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "entries()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna um objeto Array Iterator com pares chave/valor:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "[0, \"Banana\"]"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "[1, \"Laranja\"]"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "[2, \"Maçã\"]"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "[3, \"Manga\"]"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "entries()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não altera o array original."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "entries()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "recurso do ES6",
+                                                "link": "/js/es6"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (JavaScript 2015)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES6 é totalmente compatível com todos os navegadores modernos desde junho de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 51"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 54"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 38"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2016"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "entries()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Método with()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "ES2023",
+                                                "link": "/js/2023"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " adicionou o método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "with()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " como uma forma segura de atualizar elementos em um array sem alterar o array original."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de with():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "months",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Janeiro\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Fevereiro\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Março\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Abril\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myMonths",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "months",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".with("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "2",
                                             "color": "#c090fa"
                                         },
                                         {
                                             "type": "code",
-                                            "code": ".reverse();"
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Março\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Array Spread (...)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O operador ... expande um iterável (como um array) em mais elementos:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de operador (...):",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q1",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Jan\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Fev\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Mar\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q2",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Abr\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Mai\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Jun\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q3",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Jul\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Aug\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Set\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q4",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Out\"",
+                                            "color": "#f5f565"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Nov\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "\"Dez\"",
+                                            "color": "#f5f565",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "empty"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "year",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "...",
+                                            "color": "#f565c5"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q1",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "...",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q2",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "...",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q3",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "...",
+                                            "color": "#f565c5",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "q4",
+                                            "color": "#c090fa"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "h2",
+                            "content": "Suporte aos navegadores"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "... pink"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " é um "
+                                            },
+                                            {
+                                                "type": "link",
+                                                "text": "recurso do ES6",
+                                                "link": "/js/es6"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " (JavaScript 2015)."
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "ES6 é totalmente compatível com todos os navegadores modernos desde junho de 2017:"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/chrome.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/edge.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/firefox.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/safari.svg"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "icon": "/svgs/browsers/opera.svg"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Chrome 51"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Edge 15"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Firefox 54"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Safari 10"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Opera 38"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "Mai 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Abr 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2017"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Set 2016"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Jun 2016"
                                         }
                                     ]
                                 ],
-                                "answers": ["['Banana', 'Laranja', 'Maçã']"],
-                                "options": ["['Laranja', 'Banana', 'Maçã']", "['Banana', 'Laranja', 'Maçã']", "['Maçã', 'Banana', 'Laranja']", "['Laranja', 'Maçã', 'Banana']"]
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "center"
+                                    },
+                                    "td": {
+                                        "textAlign": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "code",
+                                                "code": "... pink"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " não é compatível com o Internet Explorer."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Referência completa de array",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para uma referência completa do Array, acesse:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de array JavaScript.",
+                                                "link": "/js/ref/obj/array"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A referência contém descrições e exemplos de todas as propriedades e métodos do Array."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Depois de executar o seguinte código, qual será o resultado de \"y\"?",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "[",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "45",
+                                            "color":"#c090fa"
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "4",
+                                            "color":"#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "9",
+                                            "color":"#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "16",
+                                            "color":"#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "comma"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "25",
+                                            "color":"#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "];",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "y",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "x",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".every("
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myfunc",
+                                            "color": "#65f040"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ");",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "function"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "myfunc",
+                                            "color": "#65f040",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "(",
+                                            "color": "#f0f0f0"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "val",
+                                            "color": "#ffba6a",
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": ") {",
+                                            "color": "#f0f0f0"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "return",
+                                            "tabs": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "val",
+                                            "color": "#ffba6a",
+                                            "spacesBefore": 1,
+                                            "italic": true
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "arrow right pink",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "20",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "semicolon"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "bracket right"
+                                        }
+                                    ]
+                                ],
+                                "answers": ["false"],
+                                "options": ["[45, 25]", "false", "[]", "NaN"]
                             }
                         }
                     ]
