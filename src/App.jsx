@@ -6535,6 +6535,10 @@ function App() {
 					<Route path = "array_const" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Array Const" pageTitle = "JavaScript Array Const"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Datas */}
+					<Route path = "dates" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Datas" pageTitle = "JavaScript Datas"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>

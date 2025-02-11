@@ -73231,6 +73231,142 @@
                         }
                     ]
                 ]
+            },
+            {
+                "title": "JS Datas",
+                "link": "/js/dates",
+                "sections": [
+                    [
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Objetos de data",
+                                                "bold": true
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " nos permitem trabalhar com datas:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "exampleHide": true,
+                                "results": {
+                                    "title": null,
+                                    "type": "innerjoin",
+                                    "codes": [
+                                        "<button onclick=\"document.querySelector('#date1-div').style.display='block';let d = new Date();",
+                                        "document.querySelector('#date1').innerHTML = d;",
+                                        "document.querySelector('#date1-year').innerHTML = d.getFullYear();",
+                                        "document.querySelector('#date1-month').innerHTML = d.getMonth() + 1;",
+                                        "document.querySelector('#date1-day').innerHTML = d.getDate();",
+                                        "document.querySelector('#date1-hours').innerHTML = d.getHours();",
+                                        "document.querySelector('#date1-minutes').innerHTML = d.getMinutes();",
+                                        "document.querySelector('#date1-seconds').innerHTML = d.getSeconds();",
+                                        "\" style=\"padding:8px;\">Clique aqui!</button>",
+                                        "<div id=\"date1-div\" style=\"display:none;\">",
+                                        "<p id=\"date1\" style=\"color:#f0f0f0;\">a</p>",
+                                        "<div id=\"date1-buttons-div\" style=\"width:100%;background-color:#f0f0f0;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;\">",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Ano: <span id=\"date1-year\"></span></div>",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Mês: <span id=\"date1-month\"></span></div>",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Dia: <span id=\"date1-day\"></span></div>",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Horas: <span id=\"date1-hours\"></span></div>",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Minutos: <span id=\"date1-minutes\"></span></div>",
+                                        "<div style=\"background-color:#5075d0;border-radius:4px;color:#f0f0f0;margin:8px;padding:8px;text-align:center;width:12.5%;\">Segundos: <span id=\"date1-seconds\"></span></div>",
+                                        "</p>",
+                                        "</div>"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de data:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date();",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de data:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"2022-03-25\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "text",
+                                        "text": "Os objetos de data são estáticos. O \"relógio\" não está \"funcionando\"."
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "O relógio do computador está correndo, os objetos de data não."
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                ]
             }
         ]
     }
