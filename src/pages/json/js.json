@@ -76034,6 +76034,96 @@
                             "tag": "note",
                             "content": "Os fusos horários irão variar o resultado acima entre 31 de dezembro de 2014 e 01 de janeiro de 2015."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Datas ISO (data-hora)"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As datas ISO podem ser escritas com horas, minutos e segundos adicionados (AAAA-MM-DDTHH:MM:SSZ):"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"2015-03-25T12:00:00Z\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A data e a hora são separadas por T maiúsculo."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A hora UTC é definida com uma letra maiúscula Z."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Se você quiser modificar a hora relativa ao UTC, remova o Z e adicione +HH:MM ou -HH:MM:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"2015-03-25T12:00:00-06:30\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": "UTC (Hora Universal Coordenada) é igual a GMT (Hora Média de Greenwich)."
+                        },
+                        {
+                            "tag": "warning",
+                            "content": "A omissão de T ou Z em uma sequência de data e hora pode fornecer resultados diferentes em navegadores diferentes."
+                        }
                     ]
                 ]
             }
