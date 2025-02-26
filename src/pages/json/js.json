@@ -76124,6 +76124,163 @@
                             "tag": "warning",
                             "content": "A omissão de T ou Z em uma sequência de data e hora pode fornecer resultados diferentes em navegadores diferentes."
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Fusos horários"
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao definir uma data, sem especificar o fuso horário, o JavaScript usará o fuso horário do navegador."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Ao obter uma data, sem especificar o fuso horário, o resultado é convertido para o fuso horário do navegador."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Em outras palavras: se uma data/hora for criada em GMT (horário médio de Greenwich), a data/hora será convertida para CDT (horário de verão central dos EUA) se um usuário navegar a partir da região central dos EUA."
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Datas curtas em JavaScript."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "As datas abreviadas são escritas com uma sintaxe \"MM/DD/AAAA\" como esta:"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"03/25/2015\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "AVISOS!"
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "Em alguns navegadores, meses ou dias sem zeros à esquerda podem produzir um erro:",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"2015-3-25\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "O comportamento de \"AAAA/MM/DD\" é indefinido. Alguns navegadores tentarão adivinhar o formato. Alguns retornarão NaN.",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"2015/03/25\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": null,
+                                "description": "O comportamento de \"DD-MM-AAAA\" também é indefinido. Alguns navegadores tentarão adivinhar o formato. Alguns retornarão NaN.",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "const"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "new Date(\"25-03-2015\");",
+                                            "spacesBefore": 1
+                                        }
+                                    ]
+                                ]
+                            }
+                        }
                     ]
                 ]
             }
