@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+                --transparent: rgba(0, 0, 0, 1);
+                --clock-height: 200px;
+                --clock-width: 200px;
+                --clock-circle-size: 20px;
+                --digits-size: 25px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 250px;
+                height: 275px;
+                overflow: hidden;
+            }
+
+            #demo {
+                color: black;
+                font-family: "Atkinson Hyperlegible Mono", serif;;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            #clock {
+                position: relative;
+                background: radial-gradient(#fff, #ddd);
+                border: 2px solid #666;
+                border-radius: 50%;
+                width: var(--clock-width);
+                height: var(--clock-height);
+                margin: auto;
+            }
+            #circle {
+                position: absolute;
+                top: calc(var(--clock-height) / 2 - calc(var(--clock-circle-size) - calc(var(--clock-circle-size) / 4)));
+                left: calc(var(--clock-width) / 2 - calc(var(--clock-circle-size) - calc(var(--clock-circle-size) / 4)));
+                width: var(--clock-circle-size);
+                height: var(--clock-circle-size);
+                background-color: #000;
+                border: calc(var(--clock-circle-size) / 4) solid #fff;
+                outline: calc(var(--clock-circle-size) / 8) solid #000;
+                border-radius: 50%;
+            }
+
+            /* Dígitos */
+            #digits-div {
+                position: absolute;
+                width: var(--clock-width);
+                height: var(--clock-height);
+                border-radius: 50%;
+            }
+            .digits {
+                position: absolute;
+                top: calc(var(--clock-height) / 2);
+                left: calc(var(--clock-width) / 2);
+                width: 2px;
+                height: calc(var(--clock-height) / 2);
+                rotate: 180deg;
+                transform-origin: 0% 0%;
+            }
+            .numbers {
+                position: absolute;
+                top: calc(100% - var(--digits-size));
+                left: calc(100% - calc(var(--digits-size) / 2));
+                width: var(--digits-size);
+                height: var(--digits-size);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Atkinson Hyperlegible Mono", serif;;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            /* Linhas */
+            #lines-div {
+                position: absolute;
+                width: var(--clock-width);
+                height: var(--clock-height);
+                border-radius: 50%;
+            }
+            .lines {
+                position: absolute;
+                top: calc(var(--clock-height) / 2);
+                left: calc(var(--clock-width) / 2);
+                width: 2px;
+                height: calc(var(--clock-height) / 2);
+                rotate: 180deg;
+                transform-origin: 0% 0%;
+            }
+            .lines::after {
+                content: "";
+                position: absolute;
+                top: calc(100% - 5px - 10px);
+                left: 0px;
+                width: 1px;
+                height: 15px;
+                background-color: #AAA;
+            }
+
+            /* Ponteiros */
+            .pointers {
+                position: absolute;
+                top: calc(var(--clock-height) / 2);
+                left: calc(var(--clock-width) / 2 - 5px);
+                rotate: 180deg;
+                transform-origin: 5px 0px;
+                width: 10px;
+                clip-path: polygon(50% 100%, 25% 0, 75% 0);
+            }
+            .pointers#hour {
+                background: #000;
+                height: calc(var(--clock-height) / 3);
+            }
+            .pointers#min {
+                background: #000;
+                height: calc(var(--clock-height) / 2.5);
+            }
+            .pointers#seg {
+                background: #A00;
+                height: calc(var(--clock-height) / 2.25);
+            }
+            .pointers#seg::before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 100%;
+                background: #A50;
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+
+            button[type="button"] {
+                width: 100px;
+                height: 35px;
+                background-color: #5075d0;
+                border: unset;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                margin: 10px;
+                transition: all 0.3s ease;
+            }
+            button[type="button"]:hover {
+                transform: scale(1.1);
+            }
+        </style>
+        <link rel="stylesheet" href="styles/clock.css" />
+        <link rel="stylesheet" href="styles/digits.css" />
+        <link rel="stylesheet" href="styles/lines.css" />
+        <link rel="stylesheet" href="styles/pointers.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <p id="demo"></p>
+            <div id="clock">
+                <div id="lines-div"></div>
+                <div id="digits-div"></div>
+                <div id="circle"></div>
+                <div class="pointers" id="hour"></div>
+                <div class="pointers" id="min"></div>
+                <div class="pointers" id="seg"></div>
+            </div>
+            <div id="buttons-div">
+                <button type="button" onclick="changeUTC(0)">
+                    <span>Horário local</span>
+                </button>
+                <button type="button" onclick="changeUTC(1)">
+                    <span>Horário UTC</span>
+                </button>
+            </div>
+        </div>
+        <script type="text/javascript" src="functions/addNumbers.js"></script>
+        <script type="text/javascript" src="functions/addSecondsLines.js"></script>
+        <script>
+            const hour = document.querySelector("#hour");
+            const min = document.querySelector("#min");
+            const seg = document.querySelector("#seg");
+            const digitsDiv = document.querySelector("#digits-div");
+            const linesDiv = document.querySelector("#lines-div");
+            let isUTC = false;
+
+            function addNumbers() {
+                for(let i = 1; i <= 12; i++) {
+                    let digit = document.createElement("div");
+                    digit.className = "digits";
+                    digit.style.transform = `rotate(${i * (360 / 12)}deg)`;
+                    let number = document.createElement("span");
+                    number.className = "numbers";
+                    number.textContent = i;
+                    number.style.transform = `rotate(${(180 - (i * 30))}deg)`;
+                    digit.appendChild(number);
+                    digitsDiv.appendChild(digit);
+                }
+            }
+
+            function addSecondsLines() {
+                for(let i = 1; i <= 60; i++) {
+                    let line = document.createElement("div");
+                    line.className = "lines";
+                    line.style.transform = `rotate(${i * (360 / 60)}deg)`;
+                    linesDiv.appendChild(line);
+                }
+            }
+
+            function changeUTC(i) {
+                if(i == 0) {
+                    isUTC = false;
+                } else {
+                    isUTC = true;
+                }
+            }
+
+            /* Formatando minutos e segundos */
+            function minAndSecFormat(num) {
+                let newNum = num;
+                if(`${num}`.length == 1) {
+                    newNum = `0${num}`;
+                }
+                return newNum;
+            }
+
+            /* Adicionando linhas dos segundos */
+            addSecondsLines();
+
+            /* Adicionando números */
+            addNumbers();
+            
+            /* Fazendo o relógio funcionar */
+            setInterval(function() {
+                const d = new Date();
+                let h = isUTC ? d.getUTCHours() : d.getHours();
+                let m = isUTC ? d.getUTCMinutes() : d.getMinutes();
+                let s = isUTC ? d.getUTCSeconds() : d.getSeconds();
+                document.getElementById("demo").innerHTML = `${h}:${minAndSecFormat(m)}:${minAndSecFormat(s)}`;
+                hour.style.transform = `rotate(${h * (360 / (24 / 2))}deg)`;
+                min.style.transform = `rotate(${m * (360 / 60)}deg)`;
+                seg.style.transform = `rotate(${s * (360 / 60)}deg)`;
+            }, 100);
+        </script>
+    </body>
+</html>

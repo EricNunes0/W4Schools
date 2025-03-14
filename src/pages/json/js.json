@@ -79132,6 +79132,288 @@
                                 ]
                             }
                         }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "Métodos de obtenção de data UTC"
+                        },
+                        {
+                            "tag": "table",
+                            "content": {
+                                "rows": [
+                                    [
+                                        {
+                                            "tag": "th",
+                                            "text": "Método"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Mesmo que"
+                                        },
+                                        {
+                                            "tag": "th",
+                                            "text": "Descrição"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCDate()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getDate()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna a data UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCFullYear()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getFullYear()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna o ano UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCMonth()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getMonth()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna o mês UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCDay()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getDay()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna o dia UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCHours()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getHours()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna a hora UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCMinutes()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getMinutes()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna os minutos UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCSeconds()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getSeconds()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna os segundos UTC"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "tag": "td",
+                                            "text": "getUTCMilliseconds()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "getMilliseconds()"
+                                        },
+                                        {
+                                            "tag": "td",
+                                            "text": "Retorna os milissegundos UTC"
+                                        }
+                                    ]
+                                ],
+                                "styles": {
+                                    "th": {
+                                        "textAlign": "left"
+                                    },
+                                    "td": {
+                                        "textAlign": "left"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "tag": "p",
+                            "content": "Os métodos UTC usam o horário UTC (Tempo Universal Coordenado)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "O horário UTC é o mesmo que o GMT (Horário de Greenwich)."
+                        },
+                        {
+                            "tag": "p",
+                            "content": "A diferença entre o horário local e o horário UTC pode ser de até 24 horas."
+                        },
+                        {
+                            "tag": "iframe",
+                            "content": {
+                                "src": "/pages/js/date_methods/clock.html",
+                                "style": {
+                                    "width": "250px",
+                                    "height": "275px"
+                                }
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "h2",
+                            "content": "O método getTimezoneOffset()"
+                        },
+                        {
+                            "tag": "row",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "O método "
+                                            },
+                                            {
+                                                "type": "code",
+                                                "code": "getTimezoneOffset()"
+                                            },
+                                            {
+                                                "type": "text",
+                                                "text": " retorna a diferença (em minutos) entre o horário local e o horário UTC:"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "example",
+                            "content": {
+                                "title": "Exemplo de getTimezoneOffset():",
+                                "lines": [
+                                    [
+                                        {
+                                            "type": "code",
+                                            "code": "let"
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "diff",
+                                            "color": "#f0f0f0",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": "equal sign",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "content",
+                                            "code": "d",
+                                            "color": "#c090fa",
+                                            "spacesBefore": 1
+                                        },
+                                        {
+                                            "type": "code",
+                                            "code": ".getTimezoneOffset();"
+                                        }
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "tag": "note",
+                            "content": {
+                                "items": [
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "text",
+                                                "text": "Referência completa de data JavaScript",
+                                                "bold": true
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Para uma referência completa de data, acesse:"
+                                    },
+                                    {
+                                        "type": "multiple",
+                                        "codes": [
+                                            {
+                                                "type": "link",
+                                                "text": "Referência completa de data JavaScript.",
+                                                "link": "/js/ref/obj/date"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "A referência contém descrições e exemplos de todas as propriedades e métodos de Date."
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    [
+                        {
+                            "tag": "exercise",
+                            "content": {
+                                "id": 0,
+                                "type": "radio",
+                                "title": "Exercício",
+                                "description": "Qual é o valor de retorno de getDay()?",
+                                "answers": ["Um número entre 0 e 6"],
+                                "options": ["Um número entre 1 e 31", "Um número entre 0 e 30", "Um número entre 1 e 7", "Um número entre 0 e 6"]
+                            }
+                        }
                     ]
                 ]
             }
