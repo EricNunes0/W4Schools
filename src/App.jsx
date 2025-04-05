@@ -6563,6 +6563,10 @@ function App() {
 					<Route path = "booleans" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Booleanos" pageTitle = "JavaScript Booleanos"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Comparações */}
+					<Route path = "comparisons" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Comparações" pageTitle = "JavaScript Comparações"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
