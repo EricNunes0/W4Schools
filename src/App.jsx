@@ -6571,6 +6571,10 @@ function App() {
 					<Route path = "if_else" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS If Else" pageTitle = "JavaScript If Else"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Switch */}
+					<Route path = "switch" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Switch" pageTitle = "JavaScript Switch"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
