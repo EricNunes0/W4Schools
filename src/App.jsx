@@ -6575,6 +6575,10 @@ function App() {
 					<Route path = "switch" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Switch" pageTitle = "JavaScript Switch"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Loop For */}
+					<Route path = "loop_for" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Loop For" pageTitle = "JavaScript Loop For"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
