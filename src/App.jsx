@@ -6591,6 +6591,10 @@ function App() {
 					<Route path = "loop_while" element = {(
 						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Loop While" pageTitle = "JavaScript Loop While"></TutorialMain>)}></Page>
 					)}></Route>
+					{/* JS Break */}
+					<Route path = "break" element = {(
+						<Page content = {(<TutorialMain json = "js" language = "js" topic = "JS Tutorial" title = "JS Break" pageTitle = "JavaScript Break"></TutorialMain>)}></Page>
+					)}></Route>
 				</Route>
 				<Route path = "*" element = {(
 					<NotFound></NotFound>
